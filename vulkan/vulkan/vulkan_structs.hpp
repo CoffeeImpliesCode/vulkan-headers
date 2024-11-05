@@ -43711,6 +43711,130 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = HdrMetadataEXT;
   };
 
+  struct HdrVividDynamicMetadataHUAWEI
+  {
+    using NativeType = VkHdrVividDynamicMetadataHUAWEI;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eHdrVividDynamicMetadataHUAWEI;
+
+#if !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR
+      HdrVividDynamicMetadataHUAWEI( size_t dynamicMetadataSize_ = {}, const void * pDynamicMetadata_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , dynamicMetadataSize{ dynamicMetadataSize_ }
+      , pDynamicMetadata{ pDynamicMetadata_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR HdrVividDynamicMetadataHUAWEI( HdrVividDynamicMetadataHUAWEI const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    HdrVividDynamicMetadataHUAWEI( VkHdrVividDynamicMetadataHUAWEI const & rhs ) VULKAN_HPP_NOEXCEPT
+      : HdrVividDynamicMetadataHUAWEI( *reinterpret_cast<HdrVividDynamicMetadataHUAWEI const *>( &rhs ) )
+    {
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    template <typename T>
+    HdrVividDynamicMetadataHUAWEI( VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const T> const & dynamicMetadata_, const void * pNext_ = nullptr )
+      : pNext( pNext_ ), dynamicMetadataSize( dynamicMetadata_.size() * sizeof( T ) ), pDynamicMetadata( dynamicMetadata_.data() )
+    {
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    HdrVividDynamicMetadataHUAWEI & operator=( HdrVividDynamicMetadataHUAWEI const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_STRUCT_CONSTRUCTORS*/
+
+    HdrVividDynamicMetadataHUAWEI & operator=( VkHdrVividDynamicMetadataHUAWEI const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::HdrVividDynamicMetadataHUAWEI const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 HdrVividDynamicMetadataHUAWEI & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 HdrVividDynamicMetadataHUAWEI & setDynamicMetadataSize( size_t dynamicMetadataSize_ ) VULKAN_HPP_NOEXCEPT
+    {
+      dynamicMetadataSize = dynamicMetadataSize_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 HdrVividDynamicMetadataHUAWEI & setPDynamicMetadata( const void * pDynamicMetadata_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pDynamicMetadata = pDynamicMetadata_;
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    template <typename T>
+    HdrVividDynamicMetadataHUAWEI & setDynamicMetadata( VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const T> const & dynamicMetadata_ ) VULKAN_HPP_NOEXCEPT
+    {
+      dynamicMetadataSize = dynamicMetadata_.size() * sizeof( T );
+      pDynamicMetadata    = dynamicMetadata_.data();
+      return *this;
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+#endif   /*VULKAN_HPP_NO_STRUCT_SETTERS*/
+
+    operator VkHdrVividDynamicMetadataHUAWEI const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkHdrVividDynamicMetadataHUAWEI *>( this );
+    }
+
+    operator VkHdrVividDynamicMetadataHUAWEI &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkHdrVividDynamicMetadataHUAWEI *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, size_t const &, const void * const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, dynamicMetadataSize, pDynamicMetadata );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( HdrVividDynamicMetadataHUAWEI const & ) const = default;
+#else
+    bool operator==( HdrVividDynamicMetadataHUAWEI const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( dynamicMetadataSize == rhs.dynamicMetadataSize ) &&
+             ( pDynamicMetadata == rhs.pDynamicMetadata );
+#  endif
+    }
+
+    bool operator!=( HdrVividDynamicMetadataHUAWEI const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType               = StructureType::eHdrVividDynamicMetadataHUAWEI;
+    const void *                        pNext               = {};
+    size_t                              dynamicMetadataSize = {};
+    const void *                        pDynamicMetadata    = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eHdrVividDynamicMetadataHUAWEI>
+  {
+    using Type = HdrVividDynamicMetadataHUAWEI;
+  };
+
   struct HeadlessSurfaceCreateInfoEXT
   {
     using NativeType = VkHeadlessSurfaceCreateInfoEXT;
@@ -71437,6 +71561,102 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   using PhysicalDeviceGroupPropertiesKHR = PhysicalDeviceGroupProperties;
+
+  struct PhysicalDeviceHdrVividFeaturesHUAWEI
+  {
+    using NativeType = VkPhysicalDeviceHdrVividFeaturesHUAWEI;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceHdrVividFeaturesHUAWEI;
+
+#if !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceHdrVividFeaturesHUAWEI( VULKAN_HPP_NAMESPACE::Bool32 hdrVivid_ = {}, void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , hdrVivid{ hdrVivid_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceHdrVividFeaturesHUAWEI( PhysicalDeviceHdrVividFeaturesHUAWEI const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceHdrVividFeaturesHUAWEI( VkPhysicalDeviceHdrVividFeaturesHUAWEI const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceHdrVividFeaturesHUAWEI( *reinterpret_cast<PhysicalDeviceHdrVividFeaturesHUAWEI const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceHdrVividFeaturesHUAWEI & operator=( PhysicalDeviceHdrVividFeaturesHUAWEI const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_STRUCT_CONSTRUCTORS*/
+
+    PhysicalDeviceHdrVividFeaturesHUAWEI & operator=( VkPhysicalDeviceHdrVividFeaturesHUAWEI const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceHdrVividFeaturesHUAWEI const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceHdrVividFeaturesHUAWEI & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceHdrVividFeaturesHUAWEI & setHdrVivid( VULKAN_HPP_NAMESPACE::Bool32 hdrVivid_ ) VULKAN_HPP_NOEXCEPT
+    {
+      hdrVivid = hdrVivid_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_STRUCT_SETTERS*/
+
+    operator VkPhysicalDeviceHdrVividFeaturesHUAWEI const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceHdrVividFeaturesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceHdrVividFeaturesHUAWEI &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceHdrVividFeaturesHUAWEI *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, VULKAN_HPP_NAMESPACE::Bool32 const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, hdrVivid );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceHdrVividFeaturesHUAWEI const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceHdrVividFeaturesHUAWEI const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( hdrVivid == rhs.hdrVivid );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceHdrVividFeaturesHUAWEI const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType    = StructureType::ePhysicalDeviceHdrVividFeaturesHUAWEI;
+    void *                              pNext    = {};
+    VULKAN_HPP_NAMESPACE::Bool32        hdrVivid = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceHdrVividFeaturesHUAWEI>
+  {
+    using Type = PhysicalDeviceHdrVividFeaturesHUAWEI;
+  };
 
   struct PhysicalDeviceHostImageCopyFeaturesEXT
   {
