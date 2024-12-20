@@ -4483,17 +4483,37 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AcquireProfilingLockInfoKHR;
   };
 
+  typedef void *( VKAPI_PTR * PFN_AllocationFunction )( void *                                      pUserData,
+                                                        size_t                                      size,
+                                                        size_t                                      alignment,
+                                                        VULKAN_HPP_NAMESPACE::SystemAllocationScope allocationScope );
+
+  typedef void *( VKAPI_PTR * PFN_ReallocationFunction )(
+    void * pUserData, void * pOriginal, size_t size, size_t alignment, VULKAN_HPP_NAMESPACE::SystemAllocationScope allocationScope );
+
+  typedef void( VKAPI_PTR * PFN_FreeFunction )( void * pUserData, void * pMemory );
+
+  typedef void( VKAPI_PTR * PFN_InternalAllocationNotification )( void *                                       pUserData,
+                                                                  size_t                                       size,
+                                                                  VULKAN_HPP_NAMESPACE::InternalAllocationType allocationType,
+                                                                  VULKAN_HPP_NAMESPACE::SystemAllocationScope  allocationScope );
+
+  typedef void( VKAPI_PTR * PFN_InternalFreeNotification )( void *                                       pUserData,
+                                                            size_t                                       size,
+                                                            VULKAN_HPP_NAMESPACE::InternalAllocationType allocationType,
+                                                            VULKAN_HPP_NAMESPACE::SystemAllocationScope  allocationScope );
+
   struct AllocationCallbacks
   {
     using NativeType = VkAllocationCallbacks;
 
 #if !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR AllocationCallbacks( void *                               pUserData_             = {},
-                                              PFN_vkAllocationFunction             pfnAllocation_         = {},
-                                              PFN_vkReallocationFunction           pfnReallocation_       = {},
-                                              PFN_vkFreeFunction                   pfnFree_               = {},
-                                              PFN_vkInternalAllocationNotification pfnInternalAllocation_ = {},
-                                              PFN_vkInternalFreeNotification       pfnInternalFree_       = {} ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR AllocationCallbacks( void *                                                   pUserData_             = {},
+                                              VULKAN_HPP_NAMESPACE::PFN_AllocationFunction             pfnAllocation_         = {},
+                                              VULKAN_HPP_NAMESPACE::PFN_ReallocationFunction           pfnReallocation_       = {},
+                                              VULKAN_HPP_NAMESPACE::PFN_FreeFunction                   pfnFree_               = {},
+                                              VULKAN_HPP_NAMESPACE::PFN_InternalAllocationNotification pfnInternalAllocation_ = {},
+                                              VULKAN_HPP_NAMESPACE::PFN_InternalFreeNotification       pfnInternalFree_       = {} ) VULKAN_HPP_NOEXCEPT
       : pUserData{ pUserData_ }
       , pfnAllocation{ pfnAllocation_ }
       , pfnReallocation{ pfnReallocation_ }
@@ -4508,6 +4528,33 @@ namespace VULKAN_HPP_NAMESPACE
     AllocationCallbacks( VkAllocationCallbacks const & rhs ) VULKAN_HPP_NOEXCEPT : AllocationCallbacks( *reinterpret_cast<AllocationCallbacks const *>( &rhs ) )
     {
     }
+
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic push
+#    if defined( __clang__ )
+#      pragma clang diagnostic ignored "-Wunknown-warning-option"
+#    endif
+#    pragma GCC diagnostic ignored "-Wcast-function-type"
+#  endif
+    VULKAN_HPP_DEPRECATED( "This constructor is deprecated. Use the one taking function pointer types from the vk-namespace instead." )
+
+    AllocationCallbacks( void *                               pUserData_,
+                         PFN_vkAllocationFunction             pfnAllocation_,
+                         PFN_vkReallocationFunction           pfnReallocation_       = {},
+                         PFN_vkFreeFunction                   pfnFree_               = {},
+                         PFN_vkInternalAllocationNotification pfnInternalAllocation_ = {},
+                         PFN_vkInternalFreeNotification       pfnInternalFree_       = {} ) VULKAN_HPP_NOEXCEPT
+      : AllocationCallbacks( pUserData_,
+                             reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_AllocationFunction>( pfnAllocation_ ),
+                             reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_ReallocationFunction>( pfnReallocation_ ),
+                             reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_FreeFunction>( pfnFree_ ),
+                             reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_InternalAllocationNotification>( pfnInternalAllocation_ ),
+                             reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_InternalFreeNotification>( pfnInternalFree_ ) )
+    {
+    }
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic pop
+#  endif
 
     AllocationCallbacks & operator=( AllocationCallbacks const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_STRUCT_CONSTRUCTORS*/
@@ -4525,35 +4572,74 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks & setPfnAllocation( PFN_vkAllocationFunction pfnAllocation_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks & setPfnAllocation( VULKAN_HPP_NAMESPACE::PFN_AllocationFunction pfnAllocation_ ) VULKAN_HPP_NOEXCEPT
     {
       pfnAllocation = pfnAllocation_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks & setPfnReallocation( PFN_vkReallocationFunction pfnReallocation_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks & setPfnReallocation( VULKAN_HPP_NAMESPACE::PFN_ReallocationFunction pfnReallocation_ ) VULKAN_HPP_NOEXCEPT
     {
       pfnReallocation = pfnReallocation_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks & setPfnFree( PFN_vkFreeFunction pfnFree_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks & setPfnFree( VULKAN_HPP_NAMESPACE::PFN_FreeFunction pfnFree_ ) VULKAN_HPP_NOEXCEPT
     {
       pfnFree = pfnFree_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks & setPfnInternalAllocation( PFN_vkInternalAllocationNotification pfnInternalAllocation_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks &
+      setPfnInternalAllocation( VULKAN_HPP_NAMESPACE::PFN_InternalAllocationNotification pfnInternalAllocation_ ) VULKAN_HPP_NOEXCEPT
     {
       pfnInternalAllocation = pfnInternalAllocation_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks & setPfnInternalFree( PFN_vkInternalFreeNotification pfnInternalFree_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 AllocationCallbacks & setPfnInternalFree( VULKAN_HPP_NAMESPACE::PFN_InternalFreeNotification pfnInternalFree_ ) VULKAN_HPP_NOEXCEPT
     {
       pfnInternalFree = pfnInternalFree_;
       return *this;
     }
+
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic push
+#    if defined( __clang__ )
+#      pragma clang diagnostic ignored "-Wunknown-warning-option"
+#    endif
+#    pragma GCC diagnostic ignored "-Wcast-function-type"
+#  endif
+    VULKAN_HPP_DEPRECATED( "This setter is deprecated. Use the one taking a function pointer type from the vk-namespace instead." )
+
+    AllocationCallbacks & setPfnAllocation( PFN_vkAllocationFunction pfnAllocation_ ) VULKAN_HPP_NOEXCEPT
+    {
+      return setPfnAllocation( reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_AllocationFunction>( pfnAllocation_ ) );
+    }
+
+    VULKAN_HPP_DEPRECATED( "This setter is deprecated. Use the one taking a function pointer type from the vk-namespace instead." )
+
+    AllocationCallbacks & setPfnReallocation( PFN_vkReallocationFunction pfnReallocation_ ) VULKAN_HPP_NOEXCEPT
+    {
+      return setPfnReallocation( reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_ReallocationFunction>( pfnReallocation_ ) );
+    }
+
+    VULKAN_HPP_DEPRECATED( "This setter is deprecated. Use the one taking a function pointer type from the vk-namespace instead." )
+
+    AllocationCallbacks & setPfnInternalAllocation( PFN_vkInternalAllocationNotification pfnInternalAllocation_ ) VULKAN_HPP_NOEXCEPT
+    {
+      return setPfnInternalAllocation( reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_InternalAllocationNotification>( pfnInternalAllocation_ ) );
+    }
+
+    VULKAN_HPP_DEPRECATED( "This setter is deprecated. Use the one taking a function pointer type from the vk-namespace instead." )
+
+    AllocationCallbacks & setPfnInternalFree( PFN_vkInternalFreeNotification pfnInternalFree_ ) VULKAN_HPP_NOEXCEPT
+    {
+      return setPfnInternalFree( reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_InternalFreeNotification>( pfnInternalFree_ ) );
+    }
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic pop
+#  endif
 #endif /*VULKAN_HPP_NO_STRUCT_SETTERS*/
 
     operator VkAllocationCallbacks const &() const VULKAN_HPP_NOEXCEPT
@@ -4571,11 +4657,11 @@ namespace VULKAN_HPP_NAMESPACE
     auto
 #  else
     std::tuple<void * const &,
-               PFN_vkAllocationFunction const &,
-               PFN_vkReallocationFunction const &,
-               PFN_vkFreeFunction const &,
-               PFN_vkInternalAllocationNotification const &,
-               PFN_vkInternalFreeNotification const &>
+               VULKAN_HPP_NAMESPACE::PFN_AllocationFunction const &,
+               VULKAN_HPP_NAMESPACE::PFN_ReallocationFunction const &,
+               VULKAN_HPP_NAMESPACE::PFN_FreeFunction const &,
+               VULKAN_HPP_NAMESPACE::PFN_InternalAllocationNotification const &,
+               VULKAN_HPP_NAMESPACE::PFN_InternalFreeNotification const &>
 #  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
@@ -4599,12 +4685,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
   public:
-    void *                               pUserData             = {};
-    PFN_vkAllocationFunction             pfnAllocation         = {};
-    PFN_vkReallocationFunction           pfnReallocation       = {};
-    PFN_vkFreeFunction                   pfnFree               = {};
-    PFN_vkInternalAllocationNotification pfnInternalAllocation = {};
-    PFN_vkInternalFreeNotification       pfnInternalFree       = {};
+    void *                                                   pUserData             = {};
+    VULKAN_HPP_NAMESPACE::PFN_AllocationFunction             pfnAllocation         = {};
+    VULKAN_HPP_NAMESPACE::PFN_ReallocationFunction           pfnReallocation       = {};
+    VULKAN_HPP_NAMESPACE::PFN_FreeFunction                   pfnFree               = {};
+    VULKAN_HPP_NAMESPACE::PFN_InternalAllocationNotification pfnInternalAllocation = {};
+    VULKAN_HPP_NAMESPACE::PFN_InternalFreeNotification       pfnInternalFree       = {};
   };
 
   struct AmigoProfilingSubmitInfoSEC
@@ -21679,6 +21765,15 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DebugMarkerObjectTagInfoEXT;
   };
 
+  typedef VULKAN_HPP_NAMESPACE::Bool32( VKAPI_PTR * PFN_DebugReportCallbackEXT )( VULKAN_HPP_NAMESPACE::DebugReportFlagsEXT      flags,
+                                                                                  VULKAN_HPP_NAMESPACE::DebugReportObjectTypeEXT objectType,
+                                                                                  uint64_t                                       object,
+                                                                                  size_t                                         location,
+                                                                                  int32_t                                        messageCode,
+                                                                                  const char *                                   pLayerPrefix,
+                                                                                  const char *                                   pMessage,
+                                                                                  void *                                         pUserData );
+
   struct DebugReportCallbackCreateInfoEXT
   {
     using NativeType = VkDebugReportCallbackCreateInfoEXT;
@@ -21687,10 +21782,10 @@ namespace VULKAN_HPP_NAMESPACE
     static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eDebugReportCallbackCreateInfoEXT;
 
 #if !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR DebugReportCallbackCreateInfoEXT( VULKAN_HPP_NAMESPACE::DebugReportFlagsEXT flags_       = {},
-                                                           PFN_vkDebugReportCallbackEXT              pfnCallback_ = {},
-                                                           void *                                    pUserData_   = {},
-                                                           const void *                              pNext_       = nullptr ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR DebugReportCallbackCreateInfoEXT( VULKAN_HPP_NAMESPACE::DebugReportFlagsEXT        flags_       = {},
+                                                           VULKAN_HPP_NAMESPACE::PFN_DebugReportCallbackEXT pfnCallback_ = {},
+                                                           void *                                           pUserData_   = {},
+                                                           const void *                                     pNext_       = nullptr ) VULKAN_HPP_NOEXCEPT
       : pNext{ pNext_ }
       , flags{ flags_ }
       , pfnCallback{ pfnCallback_ }
@@ -21704,6 +21799,26 @@ namespace VULKAN_HPP_NAMESPACE
       : DebugReportCallbackCreateInfoEXT( *reinterpret_cast<DebugReportCallbackCreateInfoEXT const *>( &rhs ) )
     {
     }
+
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic push
+#    if defined( __clang__ )
+#      pragma clang diagnostic ignored "-Wunknown-warning-option"
+#    endif
+#    pragma GCC diagnostic ignored "-Wcast-function-type"
+#  endif
+    VULKAN_HPP_DEPRECATED( "This constructor is deprecated. Use the one taking function pointer types from the vk-namespace instead." )
+
+    DebugReportCallbackCreateInfoEXT( VULKAN_HPP_NAMESPACE::DebugReportFlagsEXT flags_,
+                                      PFN_vkDebugReportCallbackEXT              pfnCallback_,
+                                      void *                                    pUserData_ = {},
+                                      const void *                              pNext_     = nullptr ) VULKAN_HPP_NOEXCEPT
+      : DebugReportCallbackCreateInfoEXT( flags_, reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_DebugReportCallbackEXT>( pfnCallback_ ), pUserData_, pNext_ )
+    {
+    }
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic pop
+#  endif
 
     DebugReportCallbackCreateInfoEXT & operator=( DebugReportCallbackCreateInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_STRUCT_CONSTRUCTORS*/
@@ -21727,7 +21842,8 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 DebugReportCallbackCreateInfoEXT & setPfnCallback( PFN_vkDebugReportCallbackEXT pfnCallback_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 DebugReportCallbackCreateInfoEXT &
+      setPfnCallback( VULKAN_HPP_NAMESPACE::PFN_DebugReportCallbackEXT pfnCallback_ ) VULKAN_HPP_NOEXCEPT
     {
       pfnCallback = pfnCallback_;
       return *this;
@@ -21738,6 +21854,23 @@ namespace VULKAN_HPP_NAMESPACE
       pUserData = pUserData_;
       return *this;
     }
+
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic push
+#    if defined( __clang__ )
+#      pragma clang diagnostic ignored "-Wunknown-warning-option"
+#    endif
+#    pragma GCC diagnostic ignored "-Wcast-function-type"
+#  endif
+    VULKAN_HPP_DEPRECATED( "This setter is deprecated. Use the one taking a function pointer type from the vk-namespace instead." )
+
+    DebugReportCallbackCreateInfoEXT & setPfnCallback( PFN_vkDebugReportCallbackEXT pfnCallback_ ) VULKAN_HPP_NOEXCEPT
+    {
+      return setPfnCallback( reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_DebugReportCallbackEXT>( pfnCallback_ ) );
+    }
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic pop
+#  endif
 #endif /*VULKAN_HPP_NO_STRUCT_SETTERS*/
 
     operator VkDebugReportCallbackCreateInfoEXT const &() const VULKAN_HPP_NOEXCEPT
@@ -21757,7 +21890,7 @@ namespace VULKAN_HPP_NAMESPACE
     std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &,
                const void * const &,
                VULKAN_HPP_NAMESPACE::DebugReportFlagsEXT const &,
-               PFN_vkDebugReportCallbackEXT const &,
+               VULKAN_HPP_NAMESPACE::PFN_DebugReportCallbackEXT const &,
                void * const &>
 #  endif
       reflect() const VULKAN_HPP_NOEXCEPT
@@ -21781,11 +21914,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
   public:
-    VULKAN_HPP_NAMESPACE::StructureType       sType       = StructureType::eDebugReportCallbackCreateInfoEXT;
-    const void *                              pNext       = {};
-    VULKAN_HPP_NAMESPACE::DebugReportFlagsEXT flags       = {};
-    PFN_vkDebugReportCallbackEXT              pfnCallback = {};
-    void *                                    pUserData   = {};
+    VULKAN_HPP_NAMESPACE::StructureType              sType       = StructureType::eDebugReportCallbackCreateInfoEXT;
+    const void *                                     pNext       = {};
+    VULKAN_HPP_NAMESPACE::DebugReportFlagsEXT        flags       = {};
+    VULKAN_HPP_NAMESPACE::PFN_DebugReportCallbackEXT pfnCallback = {};
+    void *                                           pUserData   = {};
   };
 
   template <>
@@ -22313,6 +22446,12 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DebugUtilsMessengerCallbackDataEXT;
   };
 
+  typedef VULKAN_HPP_NAMESPACE::Bool32( VKAPI_PTR * PFN_DebugUtilsMessengerCallbackEXT )(
+    VULKAN_HPP_NAMESPACE::DebugUtilsMessageSeverityFlagBitsEXT       messageSeverity,
+    VULKAN_HPP_NAMESPACE::DebugUtilsMessageTypeFlagsEXT              messageTypes,
+    const VULKAN_HPP_NAMESPACE::DebugUtilsMessengerCallbackDataEXT * pCallbackData,
+    void *                                                           pUserData );
+
   struct DebugUtilsMessengerCreateInfoEXT
   {
     using NativeType = VkDebugUtilsMessengerCreateInfoEXT;
@@ -22321,12 +22460,12 @@ namespace VULKAN_HPP_NAMESPACE
     static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eDebugUtilsMessengerCreateInfoEXT;
 
 #if !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR DebugUtilsMessengerCreateInfoEXT( VULKAN_HPP_NAMESPACE::DebugUtilsMessengerCreateFlagsEXT flags_           = {},
-                                                           VULKAN_HPP_NAMESPACE::DebugUtilsMessageSeverityFlagsEXT messageSeverity_ = {},
-                                                           VULKAN_HPP_NAMESPACE::DebugUtilsMessageTypeFlagsEXT     messageType_     = {},
-                                                           PFN_vkDebugUtilsMessengerCallbackEXT                    pfnUserCallback_ = {},
-                                                           void *                                                  pUserData_       = {},
-                                                           const void *                                            pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR DebugUtilsMessengerCreateInfoEXT( VULKAN_HPP_NAMESPACE::DebugUtilsMessengerCreateFlagsEXT  flags_           = {},
+                                                           VULKAN_HPP_NAMESPACE::DebugUtilsMessageSeverityFlagsEXT  messageSeverity_ = {},
+                                                           VULKAN_HPP_NAMESPACE::DebugUtilsMessageTypeFlagsEXT      messageType_     = {},
+                                                           VULKAN_HPP_NAMESPACE::PFN_DebugUtilsMessengerCallbackEXT pfnUserCallback_ = {},
+                                                           void *                                                   pUserData_       = {},
+                                                           const void *                                             pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
       : pNext{ pNext_ }
       , flags{ flags_ }
       , messageSeverity{ messageSeverity_ }
@@ -22342,6 +22481,33 @@ namespace VULKAN_HPP_NAMESPACE
       : DebugUtilsMessengerCreateInfoEXT( *reinterpret_cast<DebugUtilsMessengerCreateInfoEXT const *>( &rhs ) )
     {
     }
+
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic push
+#    if defined( __clang__ )
+#      pragma clang diagnostic ignored "-Wunknown-warning-option"
+#    endif
+#    pragma GCC diagnostic ignored "-Wcast-function-type"
+#  endif
+    VULKAN_HPP_DEPRECATED( "This constructor is deprecated. Use the one taking function pointer types from the vk-namespace instead." )
+
+    DebugUtilsMessengerCreateInfoEXT( VULKAN_HPP_NAMESPACE::DebugUtilsMessengerCreateFlagsEXT flags_,
+                                      VULKAN_HPP_NAMESPACE::DebugUtilsMessageSeverityFlagsEXT messageSeverity_,
+                                      VULKAN_HPP_NAMESPACE::DebugUtilsMessageTypeFlagsEXT     messageType_,
+                                      PFN_vkDebugUtilsMessengerCallbackEXT                    pfnUserCallback_,
+                                      void *                                                  pUserData_ = {},
+                                      const void *                                            pNext_     = nullptr ) VULKAN_HPP_NOEXCEPT
+      : DebugUtilsMessengerCreateInfoEXT( flags_,
+                                          messageSeverity_,
+                                          messageType_,
+                                          reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_DebugUtilsMessengerCallbackEXT>( pfnUserCallback_ ),
+                                          pUserData_,
+                                          pNext_ )
+    {
+    }
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic pop
+#  endif
 
     DebugUtilsMessengerCreateInfoEXT & operator=( DebugUtilsMessengerCreateInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_STRUCT_CONSTRUCTORS*/
@@ -22379,7 +22545,8 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 DebugUtilsMessengerCreateInfoEXT & setPfnUserCallback( PFN_vkDebugUtilsMessengerCallbackEXT pfnUserCallback_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 DebugUtilsMessengerCreateInfoEXT &
+      setPfnUserCallback( VULKAN_HPP_NAMESPACE::PFN_DebugUtilsMessengerCallbackEXT pfnUserCallback_ ) VULKAN_HPP_NOEXCEPT
     {
       pfnUserCallback = pfnUserCallback_;
       return *this;
@@ -22390,6 +22557,23 @@ namespace VULKAN_HPP_NAMESPACE
       pUserData = pUserData_;
       return *this;
     }
+
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic push
+#    if defined( __clang__ )
+#      pragma clang diagnostic ignored "-Wunknown-warning-option"
+#    endif
+#    pragma GCC diagnostic ignored "-Wcast-function-type"
+#  endif
+    VULKAN_HPP_DEPRECATED( "This setter is deprecated. Use the one taking a function pointer type from the vk-namespace instead." )
+
+    DebugUtilsMessengerCreateInfoEXT & setPfnUserCallback( PFN_vkDebugUtilsMessengerCallbackEXT pfnUserCallback_ ) VULKAN_HPP_NOEXCEPT
+    {
+      return setPfnUserCallback( reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_DebugUtilsMessengerCallbackEXT>( pfnUserCallback_ ) );
+    }
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic pop
+#  endif
 #endif /*VULKAN_HPP_NO_STRUCT_SETTERS*/
 
     operator VkDebugUtilsMessengerCreateInfoEXT const &() const VULKAN_HPP_NOEXCEPT
@@ -22411,7 +22595,7 @@ namespace VULKAN_HPP_NAMESPACE
                VULKAN_HPP_NAMESPACE::DebugUtilsMessengerCreateFlagsEXT const &,
                VULKAN_HPP_NAMESPACE::DebugUtilsMessageSeverityFlagsEXT const &,
                VULKAN_HPP_NAMESPACE::DebugUtilsMessageTypeFlagsEXT const &,
-               PFN_vkDebugUtilsMessengerCallbackEXT const &,
+               VULKAN_HPP_NAMESPACE::PFN_DebugUtilsMessengerCallbackEXT const &,
                void * const &>
 #  endif
       reflect() const VULKAN_HPP_NOEXCEPT
@@ -22436,13 +22620,13 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
   public:
-    VULKAN_HPP_NAMESPACE::StructureType                     sType           = StructureType::eDebugUtilsMessengerCreateInfoEXT;
-    const void *                                            pNext           = {};
-    VULKAN_HPP_NAMESPACE::DebugUtilsMessengerCreateFlagsEXT flags           = {};
-    VULKAN_HPP_NAMESPACE::DebugUtilsMessageSeverityFlagsEXT messageSeverity = {};
-    VULKAN_HPP_NAMESPACE::DebugUtilsMessageTypeFlagsEXT     messageType     = {};
-    PFN_vkDebugUtilsMessengerCallbackEXT                    pfnUserCallback = {};
-    void *                                                  pUserData       = {};
+    VULKAN_HPP_NAMESPACE::StructureType                      sType           = StructureType::eDebugUtilsMessengerCreateInfoEXT;
+    const void *                                             pNext           = {};
+    VULKAN_HPP_NAMESPACE::DebugUtilsMessengerCreateFlagsEXT  flags           = {};
+    VULKAN_HPP_NAMESPACE::DebugUtilsMessageSeverityFlagsEXT  messageSeverity = {};
+    VULKAN_HPP_NAMESPACE::DebugUtilsMessageTypeFlagsEXT      messageType     = {};
+    VULKAN_HPP_NAMESPACE::PFN_DebugUtilsMessengerCallbackEXT pfnUserCallback = {};
+    void *                                                   pUserData       = {};
   };
 
   template <>
@@ -27842,6 +28026,120 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceCreateInfo;
   };
 
+  struct DeviceMemoryReportCallbackDataEXT
+  {
+    using NativeType = VkDeviceMemoryReportCallbackDataEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eDeviceMemoryReportCallbackDataEXT;
+
+#if !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR DeviceMemoryReportCallbackDataEXT(
+      VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT     flags_          = {},
+      VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT type_           = VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT::eAllocate,
+      uint64_t                                             memoryObjectId_ = {},
+      VULKAN_HPP_NAMESPACE::DeviceSize                     size_           = {},
+      VULKAN_HPP_NAMESPACE::ObjectType                     objectType_     = VULKAN_HPP_NAMESPACE::ObjectType::eUnknown,
+      uint64_t                                             objectHandle_   = {},
+      uint32_t                                             heapIndex_      = {},
+      void *                                               pNext_          = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , flags{ flags_ }
+      , type{ type_ }
+      , memoryObjectId{ memoryObjectId_ }
+      , size{ size_ }
+      , objectType{ objectType_ }
+      , objectHandle{ objectHandle_ }
+      , heapIndex{ heapIndex_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR DeviceMemoryReportCallbackDataEXT( DeviceMemoryReportCallbackDataEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    DeviceMemoryReportCallbackDataEXT( VkDeviceMemoryReportCallbackDataEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : DeviceMemoryReportCallbackDataEXT( *reinterpret_cast<DeviceMemoryReportCallbackDataEXT const *>( &rhs ) )
+    {
+    }
+
+    DeviceMemoryReportCallbackDataEXT & operator=( DeviceMemoryReportCallbackDataEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_STRUCT_CONSTRUCTORS*/
+
+    DeviceMemoryReportCallbackDataEXT & operator=( VkDeviceMemoryReportCallbackDataEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::DeviceMemoryReportCallbackDataEXT const *>( &rhs );
+      return *this;
+    }
+
+    operator VkDeviceMemoryReportCallbackDataEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkDeviceMemoryReportCallbackDataEXT *>( this );
+    }
+
+    operator VkDeviceMemoryReportCallbackDataEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkDeviceMemoryReportCallbackDataEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &,
+               void * const &,
+               VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT const &,
+               VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT const &,
+               uint64_t const &,
+               VULKAN_HPP_NAMESPACE::DeviceSize const &,
+               VULKAN_HPP_NAMESPACE::ObjectType const &,
+               uint64_t const &,
+               uint32_t const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, flags, type, memoryObjectId, size, objectType, objectHandle, heapIndex );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( DeviceMemoryReportCallbackDataEXT const & ) const = default;
+#else
+    bool operator==( DeviceMemoryReportCallbackDataEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( flags == rhs.flags ) && ( type == rhs.type ) && ( memoryObjectId == rhs.memoryObjectId ) &&
+             ( size == rhs.size ) && ( objectType == rhs.objectType ) && ( objectHandle == rhs.objectHandle ) && ( heapIndex == rhs.heapIndex );
+#  endif
+    }
+
+    bool operator!=( DeviceMemoryReportCallbackDataEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType                  sType          = StructureType::eDeviceMemoryReportCallbackDataEXT;
+    void *                                               pNext          = {};
+    VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT     flags          = {};
+    VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT type           = VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT::eAllocate;
+    uint64_t                                             memoryObjectId = {};
+    VULKAN_HPP_NAMESPACE::DeviceSize                     size           = {};
+    VULKAN_HPP_NAMESPACE::ObjectType                     objectType     = VULKAN_HPP_NAMESPACE::ObjectType::eUnknown;
+    uint64_t                                             objectHandle   = {};
+    uint32_t                                             heapIndex      = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eDeviceMemoryReportCallbackDataEXT>
+  {
+    using Type = DeviceMemoryReportCallbackDataEXT;
+  };
+
+  typedef void( VKAPI_PTR * PFN_DeviceMemoryReportCallbackEXT )( const VULKAN_HPP_NAMESPACE::DeviceMemoryReportCallbackDataEXT * pCallbackData,
+                                                                 void *                                                          pUserData );
+
   struct DeviceDeviceMemoryReportCreateInfoEXT
   {
     using NativeType = VkDeviceDeviceMemoryReportCreateInfoEXT;
@@ -27850,10 +28148,10 @@ namespace VULKAN_HPP_NAMESPACE
     static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eDeviceDeviceMemoryReportCreateInfoEXT;
 
 #if !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR DeviceDeviceMemoryReportCreateInfoEXT( VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT flags_           = {},
-                                                                PFN_vkDeviceMemoryReportCallbackEXT              pfnUserCallback_ = {},
-                                                                void *                                           pUserData_       = {},
-                                                                const void *                                     pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR DeviceDeviceMemoryReportCreateInfoEXT( VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT        flags_           = {},
+                                                                VULKAN_HPP_NAMESPACE::PFN_DeviceMemoryReportCallbackEXT pfnUserCallback_ = {},
+                                                                void *                                                  pUserData_       = {},
+                                                                const void *                                            pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
       : pNext{ pNext_ }
       , flags{ flags_ }
       , pfnUserCallback{ pfnUserCallback_ }
@@ -27867,6 +28165,29 @@ namespace VULKAN_HPP_NAMESPACE
       : DeviceDeviceMemoryReportCreateInfoEXT( *reinterpret_cast<DeviceDeviceMemoryReportCreateInfoEXT const *>( &rhs ) )
     {
     }
+
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic push
+#    if defined( __clang__ )
+#      pragma clang diagnostic ignored "-Wunknown-warning-option"
+#    endif
+#    pragma GCC diagnostic ignored "-Wcast-function-type"
+#  endif
+    VULKAN_HPP_DEPRECATED( "This constructor is deprecated. Use the one taking function pointer types from the vk-namespace instead." )
+
+    DeviceDeviceMemoryReportCreateInfoEXT( VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT flags_,
+                                           PFN_vkDeviceMemoryReportCallbackEXT              pfnUserCallback_,
+                                           void *                                           pUserData_ = {},
+                                           const void *                                     pNext_     = nullptr ) VULKAN_HPP_NOEXCEPT
+      : DeviceDeviceMemoryReportCreateInfoEXT( flags_,
+                                               reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_DeviceMemoryReportCallbackEXT>( pfnUserCallback_ ),
+                                               pUserData_,
+                                               pNext_ )
+    {
+    }
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic pop
+#  endif
 
     DeviceDeviceMemoryReportCreateInfoEXT & operator=( DeviceDeviceMemoryReportCreateInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_STRUCT_CONSTRUCTORS*/
@@ -27891,7 +28212,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
     VULKAN_HPP_CONSTEXPR_14 DeviceDeviceMemoryReportCreateInfoEXT &
-      setPfnUserCallback( PFN_vkDeviceMemoryReportCallbackEXT pfnUserCallback_ ) VULKAN_HPP_NOEXCEPT
+      setPfnUserCallback( VULKAN_HPP_NAMESPACE::PFN_DeviceMemoryReportCallbackEXT pfnUserCallback_ ) VULKAN_HPP_NOEXCEPT
     {
       pfnUserCallback = pfnUserCallback_;
       return *this;
@@ -27902,6 +28223,23 @@ namespace VULKAN_HPP_NAMESPACE
       pUserData = pUserData_;
       return *this;
     }
+
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic push
+#    if defined( __clang__ )
+#      pragma clang diagnostic ignored "-Wunknown-warning-option"
+#    endif
+#    pragma GCC diagnostic ignored "-Wcast-function-type"
+#  endif
+    VULKAN_HPP_DEPRECATED( "This setter is deprecated. Use the one taking a function pointer type from the vk-namespace instead." )
+
+    DeviceDeviceMemoryReportCreateInfoEXT & setPfnUserCallback( PFN_vkDeviceMemoryReportCallbackEXT pfnUserCallback_ ) VULKAN_HPP_NOEXCEPT
+    {
+      return setPfnUserCallback( reinterpret_cast<VULKAN_HPP_NAMESPACE::PFN_DeviceMemoryReportCallbackEXT>( pfnUserCallback_ ) );
+    }
+#  if defined( __clang__ ) || defined( __GNUC__ )
+#    pragma GCC diagnostic pop
+#  endif
 #endif /*VULKAN_HPP_NO_STRUCT_SETTERS*/
 
     operator VkDeviceDeviceMemoryReportCreateInfoEXT const &() const VULKAN_HPP_NOEXCEPT
@@ -27921,7 +28259,7 @@ namespace VULKAN_HPP_NAMESPACE
     std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &,
                const void * const &,
                VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT const &,
-               PFN_vkDeviceMemoryReportCallbackEXT const &,
+               VULKAN_HPP_NAMESPACE::PFN_DeviceMemoryReportCallbackEXT const &,
                void * const &>
 #  endif
       reflect() const VULKAN_HPP_NOEXCEPT
@@ -27946,11 +28284,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
   public:
-    VULKAN_HPP_NAMESPACE::StructureType              sType           = StructureType::eDeviceDeviceMemoryReportCreateInfoEXT;
-    const void *                                     pNext           = {};
-    VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT flags           = {};
-    PFN_vkDeviceMemoryReportCallbackEXT              pfnUserCallback = {};
-    void *                                           pUserData       = {};
+    VULKAN_HPP_NAMESPACE::StructureType                     sType           = StructureType::eDeviceDeviceMemoryReportCreateInfoEXT;
+    const void *                                            pNext           = {};
+    VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT        flags           = {};
+    VULKAN_HPP_NAMESPACE::PFN_DeviceMemoryReportCallbackEXT pfnUserCallback = {};
+    void *                                                  pUserData       = {};
   };
 
   template <>
@@ -30634,117 +30972,6 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceMemoryOverallocationCreateInfoAMD;
   };
 
-  struct DeviceMemoryReportCallbackDataEXT
-  {
-    using NativeType = VkDeviceMemoryReportCallbackDataEXT;
-
-    static const bool                                  allowDuplicate = false;
-    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eDeviceMemoryReportCallbackDataEXT;
-
-#if !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR DeviceMemoryReportCallbackDataEXT(
-      VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT     flags_          = {},
-      VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT type_           = VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT::eAllocate,
-      uint64_t                                             memoryObjectId_ = {},
-      VULKAN_HPP_NAMESPACE::DeviceSize                     size_           = {},
-      VULKAN_HPP_NAMESPACE::ObjectType                     objectType_     = VULKAN_HPP_NAMESPACE::ObjectType::eUnknown,
-      uint64_t                                             objectHandle_   = {},
-      uint32_t                                             heapIndex_      = {},
-      void *                                               pNext_          = nullptr ) VULKAN_HPP_NOEXCEPT
-      : pNext{ pNext_ }
-      , flags{ flags_ }
-      , type{ type_ }
-      , memoryObjectId{ memoryObjectId_ }
-      , size{ size_ }
-      , objectType{ objectType_ }
-      , objectHandle{ objectHandle_ }
-      , heapIndex{ heapIndex_ }
-    {
-    }
-
-    VULKAN_HPP_CONSTEXPR DeviceMemoryReportCallbackDataEXT( DeviceMemoryReportCallbackDataEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
-
-    DeviceMemoryReportCallbackDataEXT( VkDeviceMemoryReportCallbackDataEXT const & rhs ) VULKAN_HPP_NOEXCEPT
-      : DeviceMemoryReportCallbackDataEXT( *reinterpret_cast<DeviceMemoryReportCallbackDataEXT const *>( &rhs ) )
-    {
-    }
-
-    DeviceMemoryReportCallbackDataEXT & operator=( DeviceMemoryReportCallbackDataEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
-#endif /*VULKAN_HPP_NO_STRUCT_CONSTRUCTORS*/
-
-    DeviceMemoryReportCallbackDataEXT & operator=( VkDeviceMemoryReportCallbackDataEXT const & rhs ) VULKAN_HPP_NOEXCEPT
-    {
-      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::DeviceMemoryReportCallbackDataEXT const *>( &rhs );
-      return *this;
-    }
-
-    operator VkDeviceMemoryReportCallbackDataEXT const &() const VULKAN_HPP_NOEXCEPT
-    {
-      return *reinterpret_cast<const VkDeviceMemoryReportCallbackDataEXT *>( this );
-    }
-
-    operator VkDeviceMemoryReportCallbackDataEXT &() VULKAN_HPP_NOEXCEPT
-    {
-      return *reinterpret_cast<VkDeviceMemoryReportCallbackDataEXT *>( this );
-    }
-
-#if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &,
-               void * const &,
-               VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT const &,
-               VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT const &,
-               uint64_t const &,
-               VULKAN_HPP_NAMESPACE::DeviceSize const &,
-               VULKAN_HPP_NAMESPACE::ObjectType const &,
-               uint64_t const &,
-               uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
-    {
-      return std::tie( sType, pNext, flags, type, memoryObjectId, size, objectType, objectHandle, heapIndex );
-    }
-#endif
-
-#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( DeviceMemoryReportCallbackDataEXT const & ) const = default;
-#else
-    bool operator==( DeviceMemoryReportCallbackDataEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
-    {
-#  if defined( VULKAN_HPP_USE_REFLECT )
-      return this->reflect() == rhs.reflect();
-#  else
-      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( flags == rhs.flags ) && ( type == rhs.type ) && ( memoryObjectId == rhs.memoryObjectId ) &&
-             ( size == rhs.size ) && ( objectType == rhs.objectType ) && ( objectHandle == rhs.objectHandle ) && ( heapIndex == rhs.heapIndex );
-#  endif
-    }
-
-    bool operator!=( DeviceMemoryReportCallbackDataEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
-    {
-      return !operator==( rhs );
-    }
-#endif
-
-  public:
-    VULKAN_HPP_NAMESPACE::StructureType                  sType          = StructureType::eDeviceMemoryReportCallbackDataEXT;
-    void *                                               pNext          = {};
-    VULKAN_HPP_NAMESPACE::DeviceMemoryReportFlagsEXT     flags          = {};
-    VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT type           = VULKAN_HPP_NAMESPACE::DeviceMemoryReportEventTypeEXT::eAllocate;
-    uint64_t                                             memoryObjectId = {};
-    VULKAN_HPP_NAMESPACE::DeviceSize                     size           = {};
-    VULKAN_HPP_NAMESPACE::ObjectType                     objectType     = VULKAN_HPP_NAMESPACE::ObjectType::eUnknown;
-    uint64_t                                             objectHandle   = {};
-    uint32_t                                             heapIndex      = {};
-  };
-
-  template <>
-  struct CppType<StructureType, StructureType::eDeviceMemoryReportCallbackDataEXT>
-  {
-    using Type = DeviceMemoryReportCallbackDataEXT;
-  };
-
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
   union DeviceOrHostAddressConstAMDX
   {
@@ -31301,6 +31528,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceQueueShaderCoreControlCreateInfoARM;
   };
 
+  typedef PFN_vkVoidFunction( VKAPI_PTR * PFN_GetInstanceProcAddrLUNARG )( VULKAN_HPP_NAMESPACE::Instance instance, const char * pName );
+
   struct DirectDriverLoadingInfoLUNARG
   {
     using NativeType = VkDirectDriverLoadingInfoLUNARG;
@@ -31310,7 +31539,7 @@ namespace VULKAN_HPP_NAMESPACE
 
 #if !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
     VULKAN_HPP_CONSTEXPR DirectDriverLoadingInfoLUNARG( VULKAN_HPP_NAMESPACE::DirectDriverLoadingFlagsLUNARG flags_                  = {},
-                                                        PFN_vkGetInstanceProcAddrLUNARG                      pfnGetInstanceProcAddr_ = {},
+                                                        VULKAN_HPP_NAMESPACE::PFN_GetInstanceProcAddrLUNARG  pfnGetInstanceProcAddr_ = {},
                                                         void *                                               pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
       : pNext{ pNext_ }
       , flags{ flags_ }
@@ -31348,7 +31577,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
     VULKAN_HPP_CONSTEXPR_14 DirectDriverLoadingInfoLUNARG &
-      setPfnGetInstanceProcAddr( PFN_vkGetInstanceProcAddrLUNARG pfnGetInstanceProcAddr_ ) VULKAN_HPP_NOEXCEPT
+      setPfnGetInstanceProcAddr( VULKAN_HPP_NAMESPACE::PFN_GetInstanceProcAddrLUNARG pfnGetInstanceProcAddr_ ) VULKAN_HPP_NOEXCEPT
     {
       pfnGetInstanceProcAddr = pfnGetInstanceProcAddr_;
       return *this;
@@ -31372,7 +31601,7 @@ namespace VULKAN_HPP_NAMESPACE
     std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &,
                void * const &,
                VULKAN_HPP_NAMESPACE::DirectDriverLoadingFlagsLUNARG const &,
-               PFN_vkGetInstanceProcAddrLUNARG const &>
+               VULKAN_HPP_NAMESPACE::PFN_GetInstanceProcAddrLUNARG const &>
 #  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
@@ -31398,7 +31627,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::StructureType                  sType                  = StructureType::eDirectDriverLoadingInfoLUNARG;
     void *                                               pNext                  = {};
     VULKAN_HPP_NAMESPACE::DirectDriverLoadingFlagsLUNARG flags                  = {};
-    PFN_vkGetInstanceProcAddrLUNARG                      pfnGetInstanceProcAddr = {};
+    VULKAN_HPP_NAMESPACE::PFN_GetInstanceProcAddrLUNARG  pfnGetInstanceProcAddr = {};
   };
 
   template <>
