@@ -20,6 +20,7 @@ namespace VULKAN_HPP_NAMESPACE
   //=== STRUCTS ===
   //===============
 
+  // wrapper struct for struct VkAabbPositionsKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAabbPositionsKHR.html
   struct AabbPositionsKHR
   {
     using NativeType = VkAabbPositionsKHR;
@@ -181,6 +182,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkAccelerationStructureGeometryTrianglesDataKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureGeometryTrianglesDataKHR.html
   struct AccelerationStructureGeometryTrianglesDataKHR
   {
     using NativeType = VkAccelerationStructureGeometryTrianglesDataKHR;
@@ -328,6 +331,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureGeometryTrianglesDataKHR;
   };
 
+  // wrapper struct for struct VkAccelerationStructureGeometryAabbsDataKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureGeometryAabbsDataKHR.html
   struct AccelerationStructureGeometryAabbsDataKHR
   {
     using NativeType = VkAccelerationStructureGeometryAabbsDataKHR;
@@ -420,6 +425,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureGeometryAabbsDataKHR;
   };
 
+  // wrapper struct for struct VkAccelerationStructureGeometryInstancesDataKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureGeometryInstancesDataKHR.html
   struct AccelerationStructureGeometryInstancesDataKHR
   {
     using NativeType = VkAccelerationStructureGeometryInstancesDataKHR;
@@ -576,6 +583,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkAccelerationStructureGeometryKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureGeometryKHR.html
   struct AccelerationStructureGeometryKHR
   {
     using NativeType = VkAccelerationStructureGeometryKHR;
@@ -722,6 +731,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkAccelerationStructureBuildGeometryInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureBuildGeometryInfoKHR.html
   struct AccelerationStructureBuildGeometryInfoKHR
   {
     using NativeType = VkAccelerationStructureBuildGeometryInfoKHR;
@@ -948,6 +959,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureBuildGeometryInfoKHR;
   };
 
+  // wrapper struct for struct VkAccelerationStructureBuildRangeInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureBuildRangeInfoKHR.html
   struct AccelerationStructureBuildRangeInfoKHR
   {
     using NativeType = VkAccelerationStructureBuildRangeInfoKHR;
@@ -1054,6 +1067,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t transformOffset = {};
   };
 
+  // wrapper struct for struct VkAccelerationStructureBuildSizesInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureBuildSizesInfoKHR.html
   struct AccelerationStructureBuildSizesInfoKHR
   {
     using NativeType = VkAccelerationStructureBuildSizesInfoKHR;
@@ -1148,6 +1163,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureBuildSizesInfoKHR;
   };
 
+  // wrapper struct for struct VkAccelerationStructureCaptureDescriptorDataInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureCaptureDescriptorDataInfoEXT.html
   struct AccelerationStructureCaptureDescriptorDataInfoEXT
   {
     using NativeType = VkAccelerationStructureCaptureDescriptorDataInfoEXT;
@@ -1262,6 +1279,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureCaptureDescriptorDataInfoEXT;
   };
 
+  // wrapper struct for struct VkAccelerationStructureCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureCreateInfoKHR.html
   struct AccelerationStructureCreateInfoKHR
   {
     using NativeType = VkAccelerationStructureCreateInfoKHR;
@@ -1414,6 +1433,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkGeometryTrianglesNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeometryTrianglesNV.html
   struct GeometryTrianglesNV
   {
     using NativeType = VkGeometryTrianglesNV;
@@ -1627,6 +1647,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GeometryTrianglesNV;
   };
 
+  // wrapper struct for struct VkGeometryAABBNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeometryAABBNV.html
   struct GeometryAABBNV
   {
     using NativeType = VkGeometryAABBNV;
@@ -1754,6 +1775,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GeometryAABBNV;
   };
 
+  // wrapper struct for struct VkGeometryDataNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeometryDataNV.html
   struct GeometryDataNV
   {
     using NativeType = VkGeometryDataNV;
@@ -1838,6 +1860,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::GeometryAABBNV      aabbs     = {};
   };
 
+  // wrapper struct for struct VkGeometryNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeometryNV.html
   struct GeometryNV
   {
     using NativeType = VkGeometryNV;
@@ -1954,6 +1977,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GeometryNV;
   };
 
+  // wrapper struct for struct VkAccelerationStructureInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureInfoNV.html
   struct AccelerationStructureInfoNV
   {
     using NativeType = VkAccelerationStructureInfoNV;
@@ -2120,6 +2144,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureInfoNV;
   };
 
+  // wrapper struct for struct VkAccelerationStructureCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureCreateInfoNV.html
   struct AccelerationStructureCreateInfoNV
   {
     using NativeType = VkAccelerationStructureCreateInfoNV;
@@ -2229,6 +2255,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureCreateInfoNV;
   };
 
+  // wrapper struct for struct VkAccelerationStructureDeviceAddressInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureDeviceAddressInfoKHR.html
   struct AccelerationStructureDeviceAddressInfoKHR
   {
     using NativeType = VkAccelerationStructureDeviceAddressInfoKHR;
@@ -2327,6 +2355,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureDeviceAddressInfoKHR;
   };
 
+  // wrapper struct for struct VkAccelerationStructureGeometryLinearSweptSpheresDataNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureGeometryLinearSweptSpheresDataNV.html
   struct AccelerationStructureGeometryLinearSweptSpheresDataNV
   {
     using NativeType = VkAccelerationStructureGeometryLinearSweptSpheresDataNV;
@@ -2534,6 +2564,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureGeometryLinearSweptSpheresDataNV;
   };
 
+  // wrapper struct for struct VkAccelerationStructureGeometryMotionTrianglesDataNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureGeometryMotionTrianglesDataNV.html
   struct AccelerationStructureGeometryMotionTrianglesDataNV
   {
     using NativeType = VkAccelerationStructureGeometryMotionTrianglesDataNV;
@@ -2616,6 +2648,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureGeometryMotionTrianglesDataNV;
   };
 
+  // wrapper struct for struct VkAccelerationStructureGeometrySpheresDataNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureGeometrySpheresDataNV.html
   struct AccelerationStructureGeometrySpheresDataNV
   {
     using NativeType = VkAccelerationStructureGeometrySpheresDataNV;
@@ -2780,6 +2814,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureGeometrySpheresDataNV;
   };
 
+  // wrapper struct for struct VkTransformMatrixKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkTransformMatrixKHR.html
   struct TransformMatrixKHR
   {
     using NativeType = VkTransformMatrixKHR;
@@ -2854,6 +2889,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using TransformMatrixNV = TransformMatrixKHR;
 
+  // wrapper struct for struct VkAccelerationStructureInstanceKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureInstanceKHR.html
   struct AccelerationStructureInstanceKHR
   {
     using NativeType = VkAccelerationStructureInstanceKHR;
@@ -2987,6 +3024,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using AccelerationStructureInstanceNV = AccelerationStructureInstanceKHR;
 
+  // wrapper struct for struct VkAccelerationStructureMatrixMotionInstanceNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureMatrixMotionInstanceNV.html
   struct AccelerationStructureMatrixMotionInstanceNV
   {
     using NativeType = VkAccelerationStructureMatrixMotionInstanceNV;
@@ -3132,6 +3171,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t                                 accelerationStructureReference = {};
   };
 
+  // wrapper struct for struct VkAccelerationStructureMemoryRequirementsInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureMemoryRequirementsInfoNV.html
   struct AccelerationStructureMemoryRequirementsInfoNV
   {
     using NativeType = VkAccelerationStructureMemoryRequirementsInfoNV;
@@ -3245,6 +3286,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureMemoryRequirementsInfoNV;
   };
 
+  // wrapper struct for struct VkAccelerationStructureMotionInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureMotionInfoNV.html
   struct AccelerationStructureMotionInfoNV
   {
     using NativeType = VkAccelerationStructureMotionInfoNV;
@@ -3355,6 +3398,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureMotionInfoNV;
   };
 
+  // wrapper struct for struct VkSRTDataNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSRTDataNV.html
   struct SRTDataNV
   {
     using NativeType = VkSRTDataNV;
@@ -3582,6 +3626,8 @@ namespace VULKAN_HPP_NAMESPACE
     float tz  = {};
   };
 
+  // wrapper struct for struct VkAccelerationStructureSRTMotionInstanceNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureSRTMotionInstanceNV.html
   struct AccelerationStructureSRTMotionInstanceNV
   {
     using NativeType = VkAccelerationStructureSRTMotionInstanceNV;
@@ -3791,6 +3837,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkAccelerationStructureMotionInstanceNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureMotionInstanceNV.html
   struct AccelerationStructureMotionInstanceNV
   {
     using NativeType = VkAccelerationStructureMotionInstanceNV;
@@ -3875,6 +3923,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::AccelerationStructureMotionInstanceDataNV  data  = {};
   };
 
+  // wrapper struct for struct VkMicromapUsageEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMicromapUsageEXT.html
   struct MicromapUsageEXT
   {
     using NativeType = VkMicromapUsageEXT;
@@ -3967,6 +4016,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkAccelerationStructureTrianglesDisplacementMicromapNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureTrianglesDisplacementMicromapNV.html
   struct AccelerationStructureTrianglesDisplacementMicromapNV
   {
     using NativeType = VkAccelerationStructureTrianglesDisplacementMicromapNV;
@@ -4302,6 +4353,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
+  // wrapper struct for struct VkAccelerationStructureTrianglesOpacityMicromapEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureTrianglesOpacityMicromapEXT.html
   struct AccelerationStructureTrianglesOpacityMicromapEXT
   {
     using NativeType = VkAccelerationStructureTrianglesOpacityMicromapEXT;
@@ -4512,6 +4565,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureTrianglesOpacityMicromapEXT;
   };
 
+  // wrapper struct for struct VkAccelerationStructureVersionInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureVersionInfoKHR.html
   struct AccelerationStructureVersionInfoKHR
   {
     using NativeType = VkAccelerationStructureVersionInfoKHR;
@@ -4608,6 +4663,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureVersionInfoKHR;
   };
 
+  // wrapper struct for struct VkAcquireNextImageInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAcquireNextImageInfoKHR.html
   struct AcquireNextImageInfoKHR
   {
     using NativeType = VkAcquireNextImageInfoKHR;
@@ -4748,6 +4804,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AcquireNextImageInfoKHR;
   };
 
+  // wrapper struct for struct VkAcquireProfilingLockInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAcquireProfilingLockInfoKHR.html
   struct AcquireProfilingLockInfoKHR
   {
     using NativeType = VkAcquireProfilingLockInfoKHR;
@@ -4874,6 +4931,7 @@ namespace VULKAN_HPP_NAMESPACE
                                                             VULKAN_HPP_NAMESPACE::InternalAllocationType allocationType,
                                                             VULKAN_HPP_NAMESPACE::SystemAllocationScope  allocationScope );
 
+  // wrapper struct for struct VkAllocationCallbacks, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAllocationCallbacks.html
   struct AllocationCallbacks
   {
     using NativeType = VkAllocationCallbacks;
@@ -5064,6 +5122,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::PFN_InternalFreeNotification       pfnInternalFree       = {};
   };
 
+  // wrapper struct for struct VkAmigoProfilingSubmitInfoSEC, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAmigoProfilingSubmitInfoSEC.html
   struct AmigoProfilingSubmitInfoSEC
   {
     using NativeType = VkAmigoProfilingSubmitInfoSEC;
@@ -5170,6 +5229,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AmigoProfilingSubmitInfoSEC;
   };
 
+  // wrapper struct for struct VkComponentMapping, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkComponentMapping.html
   struct ComponentMapping
   {
     using NativeType = VkComponentMapping;
@@ -5276,6 +5336,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkAndroidHardwareBufferFormatProperties2ANDROID, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAndroidHardwareBufferFormatProperties2ANDROID.html
   struct AndroidHardwareBufferFormatProperties2ANDROID
   {
     using NativeType = VkAndroidHardwareBufferFormatProperties2ANDROID;
@@ -5405,6 +5467,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkAndroidHardwareBufferFormatPropertiesANDROID, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAndroidHardwareBufferFormatPropertiesANDROID.html
   struct AndroidHardwareBufferFormatPropertiesANDROID
   {
     using NativeType = VkAndroidHardwareBufferFormatPropertiesANDROID;
@@ -5533,6 +5597,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkAndroidHardwareBufferFormatResolvePropertiesANDROID, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAndroidHardwareBufferFormatResolvePropertiesANDROID.html
   struct AndroidHardwareBufferFormatResolvePropertiesANDROID
   {
     using NativeType = VkAndroidHardwareBufferFormatResolvePropertiesANDROID;
@@ -5621,6 +5687,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkAndroidHardwareBufferPropertiesANDROID, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAndroidHardwareBufferPropertiesANDROID.html
   struct AndroidHardwareBufferPropertiesANDROID
   {
     using NativeType = VkAndroidHardwareBufferPropertiesANDROID;
@@ -5709,6 +5777,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkAndroidHardwareBufferUsageANDROID, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAndroidHardwareBufferUsageANDROID.html
   struct AndroidHardwareBufferUsageANDROID
   {
     using NativeType = VkAndroidHardwareBufferUsageANDROID;
@@ -5793,6 +5863,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkAndroidSurfaceCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAndroidSurfaceCreateInfoKHR.html
   struct AndroidSurfaceCreateInfoKHR
   {
     using NativeType = VkAndroidSurfaceCreateInfoKHR;
@@ -5903,6 +5974,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
+  // wrapper struct for struct VkAntiLagPresentationInfoAMD, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAntiLagPresentationInfoAMD.html
   struct AntiLagPresentationInfoAMD
   {
     using NativeType = VkAntiLagPresentationInfoAMD;
@@ -6009,6 +6081,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AntiLagPresentationInfoAMD;
   };
 
+  // wrapper struct for struct VkAntiLagDataAMD, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAntiLagDataAMD.html
   struct AntiLagDataAMD
   {
     using NativeType = VkAntiLagDataAMD;
@@ -6127,6 +6200,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AntiLagDataAMD;
   };
 
+  // wrapper struct for struct VkApplicationInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkApplicationInfo.html
   struct ApplicationInfo
   {
     using NativeType = VkApplicationInfo;
@@ -6282,6 +6356,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ApplicationInfo;
   };
 
+  // wrapper struct for struct VkAttachmentDescription, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAttachmentDescription.html
   struct AttachmentDescription
   {
     using NativeType = VkAttachmentDescription;
@@ -6443,6 +6518,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ImageLayout                finalLayout    = VULKAN_HPP_NAMESPACE::ImageLayout::eUndefined;
   };
 
+  // wrapper struct for struct VkAttachmentDescription2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAttachmentDescription2.html
   struct AttachmentDescription2
   {
     using NativeType = VkAttachmentDescription2;
@@ -6626,6 +6702,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using AttachmentDescription2KHR = AttachmentDescription2;
 
+  // wrapper struct for struct VkAttachmentDescriptionStencilLayout, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAttachmentDescriptionStencilLayout.html
   struct AttachmentDescriptionStencilLayout
   {
     using NativeType = VkAttachmentDescriptionStencilLayout;
@@ -6739,6 +6817,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using AttachmentDescriptionStencilLayoutKHR = AttachmentDescriptionStencilLayout;
 
+  // wrapper struct for struct VkAttachmentReference, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAttachmentReference.html
   struct AttachmentReference
   {
     using NativeType = VkAttachmentReference;
@@ -6825,6 +6904,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ImageLayout layout     = VULKAN_HPP_NAMESPACE::ImageLayout::eUndefined;
   };
 
+  // wrapper struct for struct VkAttachmentReference2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAttachmentReference2.html
   struct AttachmentReference2
   {
     using NativeType = VkAttachmentReference2;
@@ -6947,6 +7027,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using AttachmentReference2KHR = AttachmentReference2;
 
+  // wrapper struct for struct VkAttachmentReferenceStencilLayout, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAttachmentReferenceStencilLayout.html
   struct AttachmentReferenceStencilLayout
   {
     using NativeType = VkAttachmentReferenceStencilLayout;
@@ -7046,6 +7128,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using AttachmentReferenceStencilLayoutKHR = AttachmentReferenceStencilLayout;
 
+  // wrapper struct for struct VkAttachmentSampleCountInfoAMD, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAttachmentSampleCountInfoAMD.html
   struct AttachmentSampleCountInfoAMD
   {
     using NativeType = VkAttachmentSampleCountInfoAMD;
@@ -7194,6 +7277,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using AttachmentSampleCountInfoNV = AttachmentSampleCountInfoAMD;
 
+  // wrapper struct for struct VkExtent2D, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExtent2D.html
   struct Extent2D
   {
     using NativeType = VkExtent2D;
@@ -7277,6 +7361,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t height = {};
   };
 
+  // wrapper struct for struct VkSampleLocationEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSampleLocationEXT.html
   struct SampleLocationEXT
   {
     using NativeType = VkSampleLocationEXT;
@@ -7360,6 +7445,7 @@ namespace VULKAN_HPP_NAMESPACE
     float y = {};
   };
 
+  // wrapper struct for struct VkSampleLocationsInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSampleLocationsInfoEXT.html
   struct SampleLocationsInfoEXT
   {
     using NativeType = VkSampleLocationsInfoEXT;
@@ -7519,6 +7605,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SampleLocationsInfoEXT;
   };
 
+  // wrapper struct for struct VkAttachmentSampleLocationsEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkAttachmentSampleLocationsEXT.html
   struct AttachmentSampleLocationsEXT
   {
     using NativeType = VkAttachmentSampleLocationsEXT;
@@ -7607,6 +7694,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::SampleLocationsInfoEXT sampleLocationsInfo = {};
   };
 
+  // wrapper struct for struct VkBaseInStructure, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBaseInStructure.html
   struct BaseInStructure
   {
     using NativeType = VkBaseInStructure;
@@ -7685,6 +7773,7 @@ namespace VULKAN_HPP_NAMESPACE
     const struct VULKAN_HPP_NAMESPACE::BaseInStructure * pNext = {};
   };
 
+  // wrapper struct for struct VkBaseOutStructure, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBaseOutStructure.html
   struct BaseOutStructure
   {
     using NativeType = VkBaseOutStructure;
@@ -7763,6 +7852,8 @@ namespace VULKAN_HPP_NAMESPACE
     struct VULKAN_HPP_NAMESPACE::BaseOutStructure * pNext = {};
   };
 
+  // wrapper struct for struct VkBindAccelerationStructureMemoryInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindAccelerationStructureMemoryInfoNV.html
   struct BindAccelerationStructureMemoryInfoNV
   {
     using NativeType = VkBindAccelerationStructureMemoryInfoNV;
@@ -7930,6 +8021,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BindAccelerationStructureMemoryInfoNV;
   };
 
+  // wrapper struct for struct VkBindBufferMemoryDeviceGroupInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindBufferMemoryDeviceGroupInfo.html
   struct BindBufferMemoryDeviceGroupInfo
   {
     using NativeType = VkBindBufferMemoryDeviceGroupInfo;
@@ -8055,6 +8148,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BindBufferMemoryDeviceGroupInfoKHR = BindBufferMemoryDeviceGroupInfo;
 
+  // wrapper struct for struct VkBindBufferMemoryInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindBufferMemoryInfo.html
   struct BindBufferMemoryInfo
   {
     using NativeType = VkBindBufferMemoryInfo;
@@ -8176,6 +8270,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BindBufferMemoryInfoKHR = BindBufferMemoryInfo;
 
+  // wrapper struct for struct VkBindDescriptorBufferEmbeddedSamplersInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindDescriptorBufferEmbeddedSamplersInfoEXT.html
   struct BindDescriptorBufferEmbeddedSamplersInfoEXT
   {
     using NativeType = VkBindDescriptorBufferEmbeddedSamplersInfoEXT;
@@ -8296,6 +8392,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BindDescriptorBufferEmbeddedSamplersInfoEXT;
   };
 
+  // wrapper struct for struct VkBindDescriptorSetsInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindDescriptorSetsInfo.html
   struct BindDescriptorSetsInfo
   {
     using NativeType = VkBindDescriptorSetsInfo;
@@ -8497,6 +8594,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BindDescriptorSetsInfoKHR = BindDescriptorSetsInfo;
 
+  // wrapper struct for struct VkOffset2D, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkOffset2D.html
   struct Offset2D
   {
     using NativeType = VkOffset2D;
@@ -8580,6 +8678,7 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t y = {};
   };
 
+  // wrapper struct for struct VkRect2D, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRect2D.html
   struct Rect2D
   {
     using NativeType = VkRect2D;
@@ -8663,6 +8762,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Extent2D extent = {};
   };
 
+  // wrapper struct for struct VkBindImageMemoryDeviceGroupInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindImageMemoryDeviceGroupInfo.html
   struct BindImageMemoryDeviceGroupInfo
   {
     using NativeType = VkBindImageMemoryDeviceGroupInfo;
@@ -8829,6 +8930,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BindImageMemoryDeviceGroupInfoKHR = BindImageMemoryDeviceGroupInfo;
 
+  // wrapper struct for struct VkBindImageMemoryInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindImageMemoryInfo.html
   struct BindImageMemoryInfo
   {
     using NativeType = VkBindImageMemoryInfo;
@@ -8949,6 +9051,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BindImageMemoryInfoKHR = BindImageMemoryInfo;
 
+  // wrapper struct for struct VkBindImageMemorySwapchainInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindImageMemorySwapchainInfoKHR.html
   struct BindImageMemorySwapchainInfoKHR
   {
     using NativeType = VkBindImageMemorySwapchainInfoKHR;
@@ -9055,6 +9159,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BindImageMemorySwapchainInfoKHR;
   };
 
+  // wrapper struct for struct VkBindImagePlaneMemoryInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindImagePlaneMemoryInfo.html
   struct BindImagePlaneMemoryInfo
   {
     using NativeType = VkBindImagePlaneMemoryInfo;
@@ -9154,6 +9259,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BindImagePlaneMemoryInfoKHR = BindImagePlaneMemoryInfo;
 
+  // wrapper struct for struct VkBindIndexBufferIndirectCommandEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindIndexBufferIndirectCommandEXT.html
   struct BindIndexBufferIndirectCommandEXT
   {
     using NativeType = VkBindIndexBufferIndirectCommandEXT;
@@ -9251,6 +9358,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::IndexType     indexType     = VULKAN_HPP_NAMESPACE::IndexType::eUint16;
   };
 
+  // wrapper struct for struct VkBindIndexBufferIndirectCommandNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindIndexBufferIndirectCommandNV.html
   struct BindIndexBufferIndirectCommandNV
   {
     using NativeType = VkBindIndexBufferIndirectCommandNV;
@@ -9348,6 +9457,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::IndexType     indexType     = VULKAN_HPP_NAMESPACE::IndexType::eUint16;
   };
 
+  // wrapper struct for struct VkBindMemoryStatus, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindMemoryStatus.html
   struct BindMemoryStatus
   {
     using NativeType = VkBindMemoryStatus;
@@ -9443,6 +9553,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BindMemoryStatusKHR = BindMemoryStatus;
 
+  // wrapper struct for struct VkBindPipelineIndirectCommandNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindPipelineIndirectCommandNV.html
   struct BindPipelineIndirectCommandNV
   {
     using NativeType = VkBindPipelineIndirectCommandNV;
@@ -9521,6 +9633,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceAddress pipelineAddress = {};
   };
 
+  // wrapper struct for struct VkBindShaderGroupIndirectCommandNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindShaderGroupIndirectCommandNV.html
   struct BindShaderGroupIndirectCommandNV
   {
     using NativeType = VkBindShaderGroupIndirectCommandNV;
@@ -9596,6 +9710,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t groupIndex = {};
   };
 
+  // wrapper struct for struct VkSparseMemoryBind, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSparseMemoryBind.html
   struct SparseMemoryBind
   {
     using NativeType = VkSparseMemoryBind;
@@ -9712,6 +9827,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::SparseMemoryBindFlags flags          = {};
   };
 
+  // wrapper struct for struct VkSparseBufferMemoryBindInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSparseBufferMemoryBindInfo.html
   struct SparseBufferMemoryBindInfo
   {
     using NativeType = VkSparseBufferMemoryBindInfo;
@@ -9826,6 +9942,8 @@ namespace VULKAN_HPP_NAMESPACE
     const VULKAN_HPP_NAMESPACE::SparseMemoryBind * pBinds    = {};
   };
 
+  // wrapper struct for struct VkSparseImageOpaqueMemoryBindInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSparseImageOpaqueMemoryBindInfo.html
   struct SparseImageOpaqueMemoryBindInfo
   {
     using NativeType = VkSparseImageOpaqueMemoryBindInfo;
@@ -9940,6 +10058,7 @@ namespace VULKAN_HPP_NAMESPACE
     const VULKAN_HPP_NAMESPACE::SparseMemoryBind * pBinds    = {};
   };
 
+  // wrapper struct for struct VkImageSubresource, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageSubresource.html
   struct ImageSubresource
   {
     using NativeType = VkImageSubresource;
@@ -10032,6 +10151,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                               arrayLayer = {};
   };
 
+  // wrapper struct for struct VkOffset3D, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkOffset3D.html
   struct Offset3D
   {
     using NativeType = VkOffset3D;
@@ -10125,6 +10245,7 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t z = {};
   };
 
+  // wrapper struct for struct VkExtent3D, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExtent3D.html
   struct Extent3D
   {
     using NativeType = VkExtent3D;
@@ -10218,6 +10339,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t depth  = {};
   };
 
+  // wrapper struct for struct VkSparseImageMemoryBind, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSparseImageMemoryBind.html
   struct SparseImageMemoryBind
   {
     using NativeType = VkSparseImageMemoryBind;
@@ -10347,6 +10469,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::SparseMemoryBindFlags flags        = {};
   };
 
+  // wrapper struct for struct VkSparseImageMemoryBindInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSparseImageMemoryBindInfo.html
   struct SparseImageMemoryBindInfo
   {
     using NativeType = VkSparseImageMemoryBindInfo;
@@ -10461,6 +10584,7 @@ namespace VULKAN_HPP_NAMESPACE
     const VULKAN_HPP_NAMESPACE::SparseImageMemoryBind * pBinds    = {};
   };
 
+  // wrapper struct for struct VkBindSparseInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindSparseInfo.html
   struct BindSparseInfo
   {
     using NativeType = VkBindSparseInfo;
@@ -10735,6 +10859,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BindSparseInfo;
   };
 
+  // wrapper struct for struct VkBindVertexBufferIndirectCommandEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindVertexBufferIndirectCommandEXT.html
   struct BindVertexBufferIndirectCommandEXT
   {
     using NativeType = VkBindVertexBufferIndirectCommandEXT;
@@ -10831,6 +10957,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                            stride        = {};
   };
 
+  // wrapper struct for struct VkBindVertexBufferIndirectCommandNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindVertexBufferIndirectCommandNV.html
   struct BindVertexBufferIndirectCommandNV
   {
     using NativeType = VkBindVertexBufferIndirectCommandNV;
@@ -10927,6 +11055,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                            stride        = {};
   };
 
+  // wrapper struct for struct VkBindVideoSessionMemoryInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBindVideoSessionMemoryInfoKHR.html
   struct BindVideoSessionMemoryInfoKHR
   {
     using NativeType = VkBindVideoSessionMemoryInfoKHR;
@@ -11057,6 +11187,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BindVideoSessionMemoryInfoKHR;
   };
 
+  // wrapper struct for struct VkBlitImageCubicWeightsInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBlitImageCubicWeightsInfoQCOM.html
   struct BlitImageCubicWeightsInfoQCOM
   {
     using NativeType = VkBlitImageCubicWeightsInfoQCOM;
@@ -11155,6 +11287,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BlitImageCubicWeightsInfoQCOM;
   };
 
+  // wrapper struct for struct VkImageSubresourceLayers, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageSubresourceLayers.html
   struct ImageSubresourceLayers
   {
     using NativeType = VkImageSubresourceLayers;
@@ -11260,6 +11393,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                               layerCount     = {};
   };
 
+  // wrapper struct for struct VkImageBlit2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageBlit2.html
   struct ImageBlit2
   {
     using NativeType = VkImageBlit2;
@@ -11389,6 +11523,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImageBlit2KHR = ImageBlit2;
 
+  // wrapper struct for struct VkBlitImageInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBlitImageInfo2.html
   struct BlitImageInfo2
   {
     using NativeType = VkBlitImageInfo2;
@@ -11578,6 +11713,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BlitImageInfo2KHR = BlitImageInfo2;
 
+  // wrapper struct for struct VkBufferCaptureDescriptorDataInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferCaptureDescriptorDataInfoEXT.html
   struct BufferCaptureDescriptorDataInfoEXT
   {
     using NativeType = VkBufferCaptureDescriptorDataInfoEXT;
@@ -11675,6 +11812,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkBufferCollectionBufferCreateInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferCollectionBufferCreateInfoFUCHSIA.html
   struct BufferCollectionBufferCreateInfoFUCHSIA
   {
     using NativeType = VkBufferCollectionBufferCreateInfoFUCHSIA;
@@ -11784,6 +11923,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkBufferCollectionConstraintsInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferCollectionConstraintsInfoFUCHSIA.html
   struct BufferCollectionConstraintsInfoFUCHSIA
   {
     using NativeType = VkBufferCollectionConstraintsInfoFUCHSIA;
@@ -11929,6 +12070,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkBufferCollectionCreateInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferCollectionCreateInfoFUCHSIA.html
   struct BufferCollectionCreateInfoFUCHSIA
   {
     using NativeType = VkBufferCollectionCreateInfoFUCHSIA;
@@ -12033,6 +12176,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkBufferCollectionImageCreateInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferCollectionImageCreateInfoFUCHSIA.html
   struct BufferCollectionImageCreateInfoFUCHSIA
   {
     using NativeType = VkBufferCollectionImageCreateInfoFUCHSIA;
@@ -12142,6 +12287,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkSysmemColorSpaceFUCHSIA, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSysmemColorSpaceFUCHSIA.html
   struct SysmemColorSpaceFUCHSIA
   {
     using NativeType = VkSysmemColorSpaceFUCHSIA;
@@ -12240,6 +12386,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkBufferCollectionPropertiesFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferCollectionPropertiesFUCHSIA.html
   struct BufferCollectionPropertiesFUCHSIA
   {
     using NativeType = VkBufferCollectionPropertiesFUCHSIA;
@@ -12383,6 +12531,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
+  // wrapper struct for struct VkBufferCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferCreateInfo.html
   struct BufferCreateInfo
   {
     using NativeType = VkBufferCreateInfo;
@@ -12558,6 +12707,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkBufferConstraintsInfoFUCHSIA, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferConstraintsInfoFUCHSIA.html
   struct BufferConstraintsInfoFUCHSIA
   {
     using NativeType = VkBufferConstraintsInfoFUCHSIA;
@@ -12681,6 +12831,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
+  // wrapper struct for struct VkBufferCopy, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferCopy.html
   struct BufferCopy
   {
     using NativeType = VkBufferCopy;
@@ -12774,6 +12925,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize size      = {};
   };
 
+  // wrapper struct for struct VkBufferCopy2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferCopy2.html
   struct BufferCopy2
   {
     using NativeType = VkBufferCopy2;
@@ -12892,6 +13044,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BufferCopy2KHR = BufferCopy2;
 
+  // wrapper struct for struct VkBufferDeviceAddressCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferDeviceAddressCreateInfoEXT.html
   struct BufferDeviceAddressCreateInfoEXT
   {
     using NativeType = VkBufferDeviceAddressCreateInfoEXT;
@@ -12989,6 +13143,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BufferDeviceAddressCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkBufferDeviceAddressInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferDeviceAddressInfo.html
   struct BufferDeviceAddressInfo
   {
     using NativeType = VkBufferDeviceAddressInfo;
@@ -13088,6 +13243,7 @@ namespace VULKAN_HPP_NAMESPACE
   using BufferDeviceAddressInfoEXT = BufferDeviceAddressInfo;
   using BufferDeviceAddressInfoKHR = BufferDeviceAddressInfo;
 
+  // wrapper struct for struct VkBufferImageCopy, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferImageCopy.html
   struct BufferImageCopy
   {
     using NativeType = VkBufferImageCopy;
@@ -13214,6 +13370,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Extent3D               imageExtent       = {};
   };
 
+  // wrapper struct for struct VkBufferImageCopy2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferImageCopy2.html
   struct BufferImageCopy2
   {
     using NativeType = VkBufferImageCopy2;
@@ -13364,6 +13521,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BufferImageCopy2KHR = BufferImageCopy2;
 
+  // wrapper struct for struct VkBufferMemoryBarrier, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferMemoryBarrier.html
   struct BufferMemoryBarrier
   {
     using NativeType = VkBufferMemoryBarrier;
@@ -13524,6 +13682,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BufferMemoryBarrier;
   };
 
+  // wrapper struct for struct VkBufferMemoryBarrier2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferMemoryBarrier2.html
   struct BufferMemoryBarrier2
   {
     using NativeType = VkBufferMemoryBarrier2;
@@ -13707,6 +13866,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BufferMemoryBarrier2KHR = BufferMemoryBarrier2;
 
+  // wrapper struct for struct VkBufferMemoryRequirementsInfo2, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferMemoryRequirementsInfo2.html
   struct BufferMemoryRequirementsInfo2
   {
     using NativeType = VkBufferMemoryRequirementsInfo2;
@@ -13805,6 +13966,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BufferMemoryRequirementsInfo2KHR = BufferMemoryRequirementsInfo2;
 
+  // wrapper struct for struct VkBufferOpaqueCaptureAddressCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferOpaqueCaptureAddressCreateInfo.html
   struct BufferOpaqueCaptureAddressCreateInfo
   {
     using NativeType = VkBufferOpaqueCaptureAddressCreateInfo;
@@ -13903,6 +14066,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BufferOpaqueCaptureAddressCreateInfoKHR = BufferOpaqueCaptureAddressCreateInfo;
 
+  // wrapper struct for struct VkBufferUsageFlags2CreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferUsageFlags2CreateInfo.html
   struct BufferUsageFlags2CreateInfo
   {
     using NativeType = VkBufferUsageFlags2CreateInfo;
@@ -14001,6 +14165,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using BufferUsageFlags2CreateInfoKHR = BufferUsageFlags2CreateInfo;
 
+  // wrapper struct for struct VkBufferViewCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkBufferViewCreateInfo.html
   struct BufferViewCreateInfo
   {
     using NativeType = VkBufferViewCreateInfo;
@@ -14141,6 +14306,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BufferViewCreateInfo;
   };
 
+  // wrapper struct for struct VkStridedDeviceAddressNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkStridedDeviceAddressNV.html
   struct StridedDeviceAddressNV
   {
     using NativeType = VkStridedDeviceAddressNV;
@@ -14228,6 +14394,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize    strideInBytes = {};
   };
 
+  // wrapper struct for struct VkBuildPartitionedAccelerationStructureIndirectCommandNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBuildPartitionedAccelerationStructureIndirectCommandNV.html
   struct BuildPartitionedAccelerationStructureIndirectCommandNV
   {
     using NativeType = VkBuildPartitionedAccelerationStructureIndirectCommandNV;
@@ -14330,6 +14498,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::StridedDeviceAddressNV                   argData  = {};
   };
 
+  // wrapper struct for struct VkPartitionedAccelerationStructureInstancesInputNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPartitionedAccelerationStructureInstancesInputNV.html
   struct PartitionedAccelerationStructureInstancesInputNV
   {
     using NativeType = VkPartitionedAccelerationStructureInstancesInputNV;
@@ -14475,6 +14645,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PartitionedAccelerationStructureInstancesInputNV;
   };
 
+  // wrapper struct for struct VkBuildPartitionedAccelerationStructureInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkBuildPartitionedAccelerationStructureInfoNV.html
   struct BuildPartitionedAccelerationStructureInfoNV
   {
     using NativeType = VkBuildPartitionedAccelerationStructureInfoNV;
@@ -14630,6 +14802,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = BuildPartitionedAccelerationStructureInfoNV;
   };
 
+  // wrapper struct for struct VkCalibratedTimestampInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCalibratedTimestampInfoKHR.html
   struct CalibratedTimestampInfoKHR
   {
     using NativeType = VkCalibratedTimestampInfoKHR;
@@ -14729,6 +14902,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CalibratedTimestampInfoEXT = CalibratedTimestampInfoKHR;
 
+  // wrapper struct for struct VkCheckpointData2NV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCheckpointData2NV.html
   struct CheckpointData2NV
   {
     using NativeType = VkCheckpointData2NV;
@@ -14811,6 +14985,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CheckpointData2NV;
   };
 
+  // wrapper struct for struct VkCheckpointDataNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCheckpointDataNV.html
   struct CheckpointDataNV
   {
     using NativeType = VkCheckpointDataNV;
@@ -14956,6 +15131,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ArrayWrapper1D<uint32_t, 4> uint32;
   };
 
+  // wrapper struct for struct VkClearDepthStencilValue, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkClearDepthStencilValue.html
   struct ClearDepthStencilValue
   {
     using NativeType = VkClearDepthStencilValue;
@@ -15085,6 +15261,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkClearAttachment, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkClearAttachment.html
   struct ClearAttachment
   {
     using NativeType = VkClearAttachment;
@@ -15160,6 +15337,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ClearValue       clearValue      = {};
   };
 
+  // wrapper struct for struct VkClearRect, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkClearRect.html
   struct ClearRect
   {
     using NativeType = VkClearRect;
@@ -15251,6 +15429,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                     layerCount     = {};
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV.html
   struct ClusterAccelerationStructureBuildClustersBottomLevelInfoNV
   {
     using NativeType = VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV;
@@ -15356,6 +15536,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceAddress clusterReferences       = {};
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV.html
   struct ClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV
   {
     using NativeType = VkClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV;
@@ -15456,6 +15638,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t geometryFlags : 3;
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureBuildTriangleClusterInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureBuildTriangleClusterInfoNV.html
   struct ClusterAccelerationStructureBuildTriangleClusterInfoNV
   {
     using NativeType = VkClusterAccelerationStructureBuildTriangleClusterInfoNV;
@@ -15732,6 +15916,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceAddress                                               opacityMicromapIndexBuffer        = {};
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV.html
   struct ClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV
   {
     using NativeType = VkClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV;
@@ -16049,6 +16235,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceAddress                                               instantiationBoundingBoxLimit     = {};
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureClustersBottomLevelInputNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureClustersBottomLevelInputNV.html
   struct ClusterAccelerationStructureClustersBottomLevelInputNV
   {
     using NativeType = VkClusterAccelerationStructureClustersBottomLevelInputNV;
@@ -16161,6 +16349,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ClusterAccelerationStructureClustersBottomLevelInputNV;
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureTriangleClusterInputNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureTriangleClusterInputNV.html
   struct ClusterAccelerationStructureTriangleClusterInputNV
   {
     using NativeType = VkClusterAccelerationStructureTriangleClusterInputNV;
@@ -16350,6 +16540,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ClusterAccelerationStructureTriangleClusterInputNV;
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureMoveObjectsInputNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureMoveObjectsInputNV.html
   struct ClusterAccelerationStructureMoveObjectsInputNV
   {
     using NativeType = VkClusterAccelerationStructureMoveObjectsInputNV;
@@ -16541,6 +16733,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureInputInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureInputInfoNV.html
   struct ClusterAccelerationStructureInputInfoNV
   {
     using NativeType = VkClusterAccelerationStructureInputInfoNV;
@@ -16668,6 +16862,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ClusterAccelerationStructureInputInfoNV;
   };
 
+  // wrapper struct for struct VkStridedDeviceAddressRegionKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkStridedDeviceAddressRegionKHR.html
   struct StridedDeviceAddressRegionKHR
   {
     using NativeType = VkStridedDeviceAddressRegionKHR;
@@ -16764,6 +16960,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize    size          = {};
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureCommandsInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureCommandsInfoNV.html
   struct ClusterAccelerationStructureCommandsInfoNV
   {
     using NativeType = VkClusterAccelerationStructureCommandsInfoNV;
@@ -16924,6 +17122,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ClusterAccelerationStructureCommandsInfoNV;
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureInstantiateClusterInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureInstantiateClusterInfoNV.html
   struct ClusterAccelerationStructureInstantiateClusterInfoNV
   {
     using NativeType = VkClusterAccelerationStructureInstantiateClusterInfoNV;
@@ -17048,6 +17248,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::StridedDeviceAddressNV vertexBuffer           = {};
   };
 
+  // wrapper struct for struct VkClusterAccelerationStructureMoveObjectsInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkClusterAccelerationStructureMoveObjectsInfoNV.html
   struct ClusterAccelerationStructureMoveObjectsInfoNV
   {
     using NativeType = VkClusterAccelerationStructureMoveObjectsInfoNV;
@@ -17128,6 +17330,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceAddress srcAccelerationStructure = {};
   };
 
+  // wrapper struct for struct VkCoarseSampleLocationNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCoarseSampleLocationNV.html
   struct CoarseSampleLocationNV
   {
     using NativeType = VkCoarseSampleLocationNV;
@@ -17222,6 +17425,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t sample = {};
   };
 
+  // wrapper struct for struct VkCoarseSampleOrderCustomNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCoarseSampleOrderCustomNV.html
   struct CoarseSampleOrderCustomNV
   {
     using NativeType = VkCoarseSampleOrderCustomNV;
@@ -17355,6 +17559,7 @@ namespace VULKAN_HPP_NAMESPACE
     const VULKAN_HPP_NAMESPACE::CoarseSampleLocationNV * pSampleLocations    = {};
   };
 
+  // wrapper struct for struct VkColorBlendAdvancedEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkColorBlendAdvancedEXT.html
   struct ColorBlendAdvancedEXT
   {
     using NativeType = VkColorBlendAdvancedEXT;
@@ -17474,6 +17679,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Bool32          clampResults     = {};
   };
 
+  // wrapper struct for struct VkColorBlendEquationEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkColorBlendEquationEXT.html
   struct ColorBlendEquationEXT
   {
     using NativeType = VkColorBlendEquationEXT;
@@ -17603,6 +17809,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::BlendOp     alphaBlendOp        = VULKAN_HPP_NAMESPACE::BlendOp::eAdd;
   };
 
+  // wrapper struct for struct VkCommandBufferAllocateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCommandBufferAllocateInfo.html
   struct CommandBufferAllocateInfo
   {
     using NativeType = VkCommandBufferAllocateInfo;
@@ -17723,6 +17930,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CommandBufferAllocateInfo;
   };
 
+  // wrapper struct for struct VkCommandBufferInheritanceInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCommandBufferInheritanceInfo.html
   struct CommandBufferInheritanceInfo
   {
     using NativeType = VkCommandBufferInheritanceInfo;
@@ -17875,6 +18083,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CommandBufferInheritanceInfo;
   };
 
+  // wrapper struct for struct VkCommandBufferBeginInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCommandBufferBeginInfo.html
   struct CommandBufferBeginInfo
   {
     using NativeType = VkCommandBufferBeginInfo;
@@ -17985,6 +18194,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CommandBufferBeginInfo;
   };
 
+  // wrapper struct for struct VkCommandBufferInheritanceConditionalRenderingInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCommandBufferInheritanceConditionalRenderingInfoEXT.html
   struct CommandBufferInheritanceConditionalRenderingInfoEXT
   {
     using NativeType = VkCommandBufferInheritanceConditionalRenderingInfoEXT;
@@ -18085,6 +18296,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CommandBufferInheritanceConditionalRenderingInfoEXT;
   };
 
+  // wrapper struct for struct VkCommandBufferInheritanceRenderPassTransformInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCommandBufferInheritanceRenderPassTransformInfoQCOM.html
   struct CommandBufferInheritanceRenderPassTransformInfoQCOM
   {
     using NativeType = VkCommandBufferInheritanceRenderPassTransformInfoQCOM;
@@ -18199,6 +18412,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CommandBufferInheritanceRenderPassTransformInfoQCOM;
   };
 
+  // wrapper struct for struct VkCommandBufferInheritanceRenderingInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCommandBufferInheritanceRenderingInfo.html
   struct CommandBufferInheritanceRenderingInfo
   {
     using NativeType = VkCommandBufferInheritanceRenderingInfo;
@@ -18399,6 +18614,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CommandBufferInheritanceRenderingInfoKHR = CommandBufferInheritanceRenderingInfo;
 
+  // wrapper struct for struct VkViewport, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkViewport.html
   struct Viewport
   {
     using NativeType = VkViewport;
@@ -18516,6 +18732,8 @@ namespace VULKAN_HPP_NAMESPACE
     float maxDepth = {};
   };
 
+  // wrapper struct for struct VkCommandBufferInheritanceViewportScissorInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCommandBufferInheritanceViewportScissorInfoNV.html
   struct CommandBufferInheritanceViewportScissorInfoNV
   {
     using NativeType = VkCommandBufferInheritanceViewportScissorInfoNV;
@@ -18639,6 +18857,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CommandBufferInheritanceViewportScissorInfoNV;
   };
 
+  // wrapper struct for struct VkCommandBufferSubmitInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCommandBufferSubmitInfo.html
   struct CommandBufferSubmitInfo
   {
     using NativeType = VkCommandBufferSubmitInfo;
@@ -18747,6 +18966,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CommandBufferSubmitInfoKHR = CommandBufferSubmitInfo;
 
+  // wrapper struct for struct VkCommandPoolCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCommandPoolCreateInfo.html
   struct CommandPoolCreateInfo
   {
     using NativeType = VkCommandPoolCreateInfo;
@@ -18853,6 +19073,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CommandPoolCreateInfo;
   };
 
+  // wrapper struct for struct VkSpecializationMapEntry, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSpecializationMapEntry.html
   struct SpecializationMapEntry
   {
     using NativeType = VkSpecializationMapEntry;
@@ -18947,6 +19168,7 @@ namespace VULKAN_HPP_NAMESPACE
     size_t   size       = {};
   };
 
+  // wrapper struct for struct VkSpecializationInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSpecializationInfo.html
   struct SpecializationInfo
   {
     using NativeType = VkSpecializationInfo;
@@ -19081,6 +19303,8 @@ namespace VULKAN_HPP_NAMESPACE
     const void *                                         pData         = {};
   };
 
+  // wrapper struct for struct VkPipelineShaderStageCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineShaderStageCreateInfo.html
   struct PipelineShaderStageCreateInfo
   {
     using NativeType = VkPipelineShaderStageCreateInfo;
@@ -19237,6 +19461,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineShaderStageCreateInfo;
   };
 
+  // wrapper struct for struct VkComputePipelineCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkComputePipelineCreateInfo.html
   struct ComputePipelineCreateInfo
   {
     using NativeType = VkComputePipelineCreateInfo;
@@ -19377,6 +19602,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ComputePipelineCreateInfo;
   };
 
+  // wrapper struct for struct VkComputePipelineIndirectBufferInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkComputePipelineIndirectBufferInfoNV.html
   struct ComputePipelineIndirectBufferInfoNV
   {
     using NativeType = VkComputePipelineIndirectBufferInfoNV;
@@ -19498,6 +19725,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ComputePipelineIndirectBufferInfoNV;
   };
 
+  // wrapper struct for struct VkConditionalRenderingBeginInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkConditionalRenderingBeginInfoEXT.html
   struct ConditionalRenderingBeginInfoEXT
   {
     using NativeType = VkConditionalRenderingBeginInfoEXT;
@@ -19617,6 +19846,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ConditionalRenderingBeginInfoEXT;
   };
 
+  // wrapper struct for struct VkConformanceVersion, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkConformanceVersion.html
   struct ConformanceVersion
   {
     using NativeType = VkConformanceVersion;
@@ -19718,6 +19948,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ConformanceVersionKHR = ConformanceVersion;
 
+  // wrapper struct for struct VkConvertCooperativeVectorMatrixInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkConvertCooperativeVectorMatrixInfoNV.html
   struct ConvertCooperativeVectorMatrixInfoNV
   {
     using NativeType = VkConvertCooperativeVectorMatrixInfoNV;
@@ -19929,6 +20161,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ConvertCooperativeVectorMatrixInfoNV;
   };
 
+  // wrapper struct for struct VkCooperativeMatrixFlexibleDimensionsPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCooperativeMatrixFlexibleDimensionsPropertiesNV.html
   struct CooperativeMatrixFlexibleDimensionsPropertiesNV
   {
     using NativeType = VkCooperativeMatrixFlexibleDimensionsPropertiesNV;
@@ -20056,6 +20290,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CooperativeMatrixFlexibleDimensionsPropertiesNV;
   };
 
+  // wrapper struct for struct VkCooperativeMatrixPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCooperativeMatrixPropertiesKHR.html
   struct CooperativeMatrixPropertiesKHR
   {
     using NativeType = VkCooperativeMatrixPropertiesKHR;
@@ -20175,6 +20411,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CooperativeMatrixPropertiesKHR;
   };
 
+  // wrapper struct for struct VkCooperativeMatrixPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCooperativeMatrixPropertiesNV.html
   struct CooperativeMatrixPropertiesNV
   {
     using NativeType = VkCooperativeMatrixPropertiesNV;
@@ -20289,6 +20527,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CooperativeMatrixPropertiesNV;
   };
 
+  // wrapper struct for struct VkCooperativeVectorPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCooperativeVectorPropertiesNV.html
   struct CooperativeVectorPropertiesNV
   {
     using NativeType = VkCooperativeVectorPropertiesNV;
@@ -20444,6 +20684,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CooperativeVectorPropertiesNV;
   };
 
+  // wrapper struct for struct VkCopyAccelerationStructureInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyAccelerationStructureInfoKHR.html
   struct CopyAccelerationStructureInfoKHR
   {
     using NativeType = VkCopyAccelerationStructureInfoKHR;
@@ -20564,6 +20806,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CopyAccelerationStructureInfoKHR;
   };
 
+  // wrapper struct for struct VkCopyAccelerationStructureToMemoryInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyAccelerationStructureToMemoryInfoKHR.html
   struct CopyAccelerationStructureToMemoryInfoKHR
   {
     using NativeType = VkCopyAccelerationStructureToMemoryInfoKHR;
@@ -20667,6 +20911,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CopyAccelerationStructureToMemoryInfoKHR;
   };
 
+  // wrapper struct for struct VkCopyBufferInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyBufferInfo2.html
   struct CopyBufferInfo2
   {
     using NativeType = VkCopyBufferInfo2;
@@ -20815,6 +21060,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CopyBufferInfo2KHR = CopyBufferInfo2;
 
+  // wrapper struct for struct VkCopyBufferToImageInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyBufferToImageInfo2.html
   struct CopyBufferToImageInfo2
   {
     using NativeType = VkCopyBufferToImageInfo2;
@@ -20983,6 +21229,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CopyBufferToImageInfo2KHR = CopyBufferToImageInfo2;
 
+  // wrapper struct for struct VkCopyCommandTransformInfoQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyCommandTransformInfoQCOM.html
   struct CopyCommandTransformInfoQCOM
   {
     using NativeType = VkCopyCommandTransformInfoQCOM;
@@ -21081,6 +21328,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CopyCommandTransformInfoQCOM;
   };
 
+  // wrapper struct for struct VkCopyDescriptorSet, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyDescriptorSet.html
   struct CopyDescriptorSet
   {
     using NativeType = VkCopyDescriptorSet;
@@ -21239,6 +21487,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CopyDescriptorSet;
   };
 
+  // wrapper struct for struct VkImageCopy2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageCopy2.html
   struct ImageCopy2
   {
     using NativeType = VkImageCopy2;
@@ -21378,6 +21627,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImageCopy2KHR = ImageCopy2;
 
+  // wrapper struct for struct VkCopyImageInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyImageInfo2.html
   struct CopyImageInfo2
   {
     using NativeType = VkCopyImageInfo2;
@@ -21554,6 +21804,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CopyImageInfo2KHR = CopyImageInfo2;
 
+  // wrapper struct for struct VkCopyImageToBufferInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyImageToBufferInfo2.html
   struct CopyImageToBufferInfo2
   {
     using NativeType = VkCopyImageToBufferInfo2;
@@ -21722,6 +21973,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CopyImageToBufferInfo2KHR = CopyImageToBufferInfo2;
 
+  // wrapper struct for struct VkCopyImageToImageInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyImageToImageInfo.html
   struct CopyImageToImageInfo
   {
     using NativeType = VkCopyImageToImageInfo;
@@ -21915,6 +22167,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CopyImageToImageInfoEXT = CopyImageToImageInfo;
 
+  // wrapper struct for struct VkImageToMemoryCopy, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageToMemoryCopy.html
   struct ImageToMemoryCopy
   {
     using NativeType = VkImageToMemoryCopy;
@@ -22066,6 +22319,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImageToMemoryCopyEXT = ImageToMemoryCopy;
 
+  // wrapper struct for struct VkCopyImageToMemoryInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyImageToMemoryInfo.html
   struct CopyImageToMemoryInfo
   {
     using NativeType = VkCopyImageToMemoryInfo;
@@ -22234,6 +22488,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CopyImageToMemoryInfoEXT = CopyImageToMemoryInfo;
 
+  // wrapper struct for struct VkCopyMemoryIndirectCommandNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryIndirectCommandNV.html
   struct CopyMemoryIndirectCommandNV
   {
     using NativeType = VkCopyMemoryIndirectCommandNV;
@@ -22330,6 +22585,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize    size       = {};
   };
 
+  // wrapper struct for struct VkCopyMemoryToAccelerationStructureInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryToAccelerationStructureInfoKHR.html
   struct CopyMemoryToAccelerationStructureInfoKHR
   {
     using NativeType = VkCopyMemoryToAccelerationStructureInfoKHR;
@@ -22434,6 +22691,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CopyMemoryToAccelerationStructureInfoKHR;
   };
 
+  // wrapper struct for struct VkCopyMemoryToImageIndirectCommandNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryToImageIndirectCommandNV.html
   struct CopyMemoryToImageIndirectCommandNV
   {
     using NativeType = VkCopyMemoryToImageIndirectCommandNV;
@@ -22564,6 +22823,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Extent3D               imageExtent       = {};
   };
 
+  // wrapper struct for struct VkMemoryToImageCopy, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryToImageCopy.html
   struct MemoryToImageCopy
   {
     using NativeType = VkMemoryToImageCopy;
@@ -22715,6 +22975,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MemoryToImageCopyEXT = MemoryToImageCopy;
 
+  // wrapper struct for struct VkCopyMemoryToImageInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryToImageInfo.html
   struct CopyMemoryToImageInfo
   {
     using NativeType = VkCopyMemoryToImageInfo;
@@ -22883,6 +23144,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CopyMemoryToImageInfoEXT = CopyMemoryToImageInfo;
 
+  // wrapper struct for struct VkCopyMemoryToMicromapInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryToMicromapInfoEXT.html
   struct CopyMemoryToMicromapInfoEXT
   {
     using NativeType = VkCopyMemoryToMicromapInfoEXT;
@@ -22984,6 +23246,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CopyMemoryToMicromapInfoEXT;
   };
 
+  // wrapper struct for struct VkCopyMicromapInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMicromapInfoEXT.html
   struct CopyMicromapInfoEXT
   {
     using NativeType = VkCopyMicromapInfoEXT;
@@ -23102,6 +23365,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CopyMicromapInfoEXT;
   };
 
+  // wrapper struct for struct VkCopyMicromapToMemoryInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMicromapToMemoryInfoEXT.html
   struct CopyMicromapToMemoryInfoEXT
   {
     using NativeType = VkCopyMicromapToMemoryInfoEXT;
@@ -23203,6 +23467,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CopyMicromapToMemoryInfoEXT;
   };
 
+  // wrapper struct for struct VkCuFunctionCreateInfoNVX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCuFunctionCreateInfoNVX.html
   struct CuFunctionCreateInfoNVX
   {
     using NativeType = VkCuFunctionCreateInfoNVX;
@@ -23317,6 +23582,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CuFunctionCreateInfoNVX;
   };
 
+  // wrapper struct for struct VkCuLaunchInfoNVX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCuLaunchInfoNVX.html
   struct CuLaunchInfoNVX
   {
     using NativeType = VkCuLaunchInfoNVX;
@@ -23574,6 +23840,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CuLaunchInfoNVX;
   };
 
+  // wrapper struct for struct VkCuModuleCreateInfoNVX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCuModuleCreateInfoNVX.html
   struct CuModuleCreateInfoNVX
   {
     using NativeType = VkCuModuleCreateInfoNVX;
@@ -23696,6 +23963,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CuModuleCreateInfoNVX;
   };
 
+  // wrapper struct for struct VkCuModuleTexturingModeCreateInfoNVX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCuModuleTexturingModeCreateInfoNVX.html
   struct CuModuleTexturingModeCreateInfoNVX
   {
     using NativeType = VkCuModuleTexturingModeCreateInfoNVX;
@@ -23794,6 +24063,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkCudaFunctionCreateInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCudaFunctionCreateInfoNV.html
   struct CudaFunctionCreateInfoNV
   {
     using NativeType = VkCudaFunctionCreateInfoNV;
@@ -23910,6 +24180,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkCudaLaunchInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCudaLaunchInfoNV.html
   struct CudaLaunchInfoNV
   {
     using NativeType = VkCudaLaunchInfoNV;
@@ -24169,6 +24440,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkCudaModuleCreateInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCudaModuleCreateInfoNV.html
   struct CudaModuleCreateInfoNV
   {
     using NativeType = VkCudaModuleCreateInfoNV;
@@ -24293,6 +24565,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkD3D12FenceSubmitInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkD3D12FenceSubmitInfoKHR.html
   struct D3D12FenceSubmitInfoKHR
   {
     using NativeType = VkD3D12FenceSubmitInfoKHR;
@@ -24458,6 +24731,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
+  // wrapper struct for struct VkDebugMarkerMarkerInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDebugMarkerMarkerInfoEXT.html
   struct DebugMarkerMarkerInfoEXT
   {
     using NativeType = VkDebugMarkerMarkerInfoEXT;
@@ -24573,6 +24847,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DebugMarkerMarkerInfoEXT;
   };
 
+  // wrapper struct for struct VkDebugMarkerObjectNameInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDebugMarkerObjectNameInfoEXT.html
   struct DebugMarkerObjectNameInfoEXT
   {
     using NativeType = VkDebugMarkerObjectNameInfoEXT;
@@ -24705,6 +24980,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DebugMarkerObjectNameInfoEXT;
   };
 
+  // wrapper struct for struct VkDebugMarkerObjectTagInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDebugMarkerObjectTagInfoEXT.html
   struct DebugMarkerObjectTagInfoEXT
   {
     using NativeType = VkDebugMarkerObjectTagInfoEXT;
@@ -24877,6 +25153,8 @@ namespace VULKAN_HPP_NAMESPACE
                                                                                   const char *                                   pMessage,
                                                                                   void *                                         pUserData );
 
+  // wrapper struct for struct VkDebugReportCallbackCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDebugReportCallbackCreateInfoEXT.html
   struct DebugReportCallbackCreateInfoEXT
   {
     using NativeType = VkDebugReportCallbackCreateInfoEXT;
@@ -25030,6 +25308,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DebugReportCallbackCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkDebugUtilsLabelEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDebugUtilsLabelEXT.html
   struct DebugUtilsLabelEXT
   {
     using NativeType = VkDebugUtilsLabelEXT;
@@ -25142,6 +25421,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DebugUtilsLabelEXT;
   };
 
+  // wrapper struct for struct VkDebugUtilsObjectNameInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDebugUtilsObjectNameInfoEXT.html
   struct DebugUtilsObjectNameInfoEXT
   {
     using NativeType = VkDebugUtilsObjectNameInfoEXT;
@@ -25270,6 +25550,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DebugUtilsObjectNameInfoEXT;
   };
 
+  // wrapper struct for struct VkDebugUtilsMessengerCallbackDataEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDebugUtilsMessengerCallbackDataEXT.html
   struct DebugUtilsMessengerCallbackDataEXT
   {
     using NativeType = VkDebugUtilsMessengerCallbackDataEXT;
@@ -25555,6 +25837,8 @@ namespace VULKAN_HPP_NAMESPACE
     const VULKAN_HPP_NAMESPACE::DebugUtilsMessengerCallbackDataEXT * pCallbackData,
     void *                                                           pUserData );
 
+  // wrapper struct for struct VkDebugUtilsMessengerCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDebugUtilsMessengerCreateInfoEXT.html
   struct DebugUtilsMessengerCreateInfoEXT
   {
     using NativeType = VkDebugUtilsMessengerCreateInfoEXT;
@@ -25738,6 +26022,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DebugUtilsMessengerCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkDebugUtilsObjectTagInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDebugUtilsObjectTagInfoEXT.html
   struct DebugUtilsObjectTagInfoEXT
   {
     using NativeType = VkDebugUtilsObjectTagInfoEXT;
@@ -25905,6 +26190,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DebugUtilsObjectTagInfoEXT;
   };
 
+  // wrapper struct for struct VkDecompressMemoryRegionNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDecompressMemoryRegionNV.html
   struct DecompressMemoryRegionNV
   {
     using NativeType = VkDecompressMemoryRegionNV;
@@ -26025,6 +26311,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::MemoryDecompressionMethodFlagsNV decompressionMethod = {};
   };
 
+  // wrapper struct for struct VkDedicatedAllocationBufferCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDedicatedAllocationBufferCreateInfoNV.html
   struct DedicatedAllocationBufferCreateInfoNV
   {
     using NativeType = VkDedicatedAllocationBufferCreateInfoNV;
@@ -26123,6 +26411,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DedicatedAllocationBufferCreateInfoNV;
   };
 
+  // wrapper struct for struct VkDedicatedAllocationImageCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDedicatedAllocationImageCreateInfoNV.html
   struct DedicatedAllocationImageCreateInfoNV
   {
     using NativeType = VkDedicatedAllocationImageCreateInfoNV;
@@ -26221,6 +26511,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DedicatedAllocationImageCreateInfoNV;
   };
 
+  // wrapper struct for struct VkDedicatedAllocationMemoryAllocateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDedicatedAllocationMemoryAllocateInfoNV.html
   struct DedicatedAllocationMemoryAllocateInfoNV
   {
     using NativeType = VkDedicatedAllocationMemoryAllocateInfoNV;
@@ -26327,6 +26619,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DedicatedAllocationMemoryAllocateInfoNV;
   };
 
+  // wrapper struct for struct VkMemoryBarrier2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryBarrier2.html
   struct MemoryBarrier2
   {
     using NativeType = VkMemoryBarrier2;
@@ -26456,6 +26749,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MemoryBarrier2KHR = MemoryBarrier2;
 
+  // wrapper struct for struct VkImageSubresourceRange, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageSubresourceRange.html
   struct ImageSubresourceRange
   {
     using NativeType = VkImageSubresourceRange;
@@ -26571,6 +26865,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                               layerCount     = {};
   };
 
+  // wrapper struct for struct VkImageMemoryBarrier2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageMemoryBarrier2.html
   struct ImageMemoryBarrier2
   {
     using NativeType = VkImageMemoryBarrier2;
@@ -26776,6 +27071,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImageMemoryBarrier2KHR = ImageMemoryBarrier2;
 
+  // wrapper struct for struct VkDependencyInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDependencyInfo.html
   struct DependencyInfo
   {
     using NativeType = VkDependencyInfo;
@@ -26995,6 +27291,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DependencyInfoKHR = DependencyInfo;
 
+  // wrapper struct for struct VkDepthBiasInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDepthBiasInfoEXT.html
   struct DepthBiasInfoEXT
   {
     using NativeType = VkDepthBiasInfoEXT;
@@ -27108,6 +27405,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DepthBiasInfoEXT;
   };
 
+  // wrapper struct for struct VkDepthBiasRepresentationInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDepthBiasRepresentationInfoEXT.html
   struct DepthBiasRepresentationInfoEXT
   {
     using NativeType = VkDepthBiasRepresentationInfoEXT;
@@ -27220,6 +27519,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DepthBiasRepresentationInfoEXT;
   };
 
+  // wrapper struct for struct VkDepthClampRangeEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDepthClampRangeEXT.html
   struct DepthClampRangeEXT
   {
     using NativeType = VkDepthClampRangeEXT;
@@ -27303,6 +27603,7 @@ namespace VULKAN_HPP_NAMESPACE
     float maxDepthClamp = {};
   };
 
+  // wrapper struct for struct VkDescriptorAddressInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorAddressInfoEXT.html
   struct DescriptorAddressInfoEXT
   {
     using NativeType = VkDescriptorAddressInfoEXT;
@@ -27422,6 +27723,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DescriptorAddressInfoEXT;
   };
 
+  // wrapper struct for struct VkDescriptorBufferBindingInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorBufferBindingInfoEXT.html
   struct DescriptorBufferBindingInfoEXT
   {
     using NativeType = VkDescriptorBufferBindingInfoEXT;
@@ -27531,6 +27834,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DescriptorBufferBindingInfoEXT;
   };
 
+  // wrapper struct for struct VkDescriptorBufferBindingPushDescriptorBufferHandleEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorBufferBindingPushDescriptorBufferHandleEXT.html
   struct DescriptorBufferBindingPushDescriptorBufferHandleEXT
   {
     using NativeType = VkDescriptorBufferBindingPushDescriptorBufferHandleEXT;
@@ -27630,6 +27935,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DescriptorBufferBindingPushDescriptorBufferHandleEXT;
   };
 
+  // wrapper struct for struct VkDescriptorBufferInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorBufferInfo.html
   struct DescriptorBufferInfo
   {
     using NativeType = VkDescriptorBufferInfo;
@@ -27726,6 +28032,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize range  = {};
   };
 
+  // wrapper struct for struct VkDescriptorImageInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorImageInfo.html
   struct DescriptorImageInfo
   {
     using NativeType = VkDescriptorImageInfo;
@@ -27943,6 +28250,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkDescriptorGetInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorGetInfoEXT.html
   struct DescriptorGetInfoEXT
   {
     using NativeType = VkDescriptorGetInfoEXT;
@@ -28034,6 +28342,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DescriptorGetInfoEXT;
   };
 
+  // wrapper struct for struct VkDescriptorPoolSize, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorPoolSize.html
   struct DescriptorPoolSize
   {
     using NativeType = VkDescriptorPoolSize;
@@ -28118,6 +28427,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                             descriptorCount = {};
   };
 
+  // wrapper struct for struct VkDescriptorPoolCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorPoolCreateInfo.html
   struct DescriptorPoolCreateInfo
   {
     using NativeType = VkDescriptorPoolCreateInfo;
@@ -28268,6 +28578,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DescriptorPoolCreateInfo;
   };
 
+  // wrapper struct for struct VkDescriptorPoolInlineUniformBlockCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorPoolInlineUniformBlockCreateInfo.html
   struct DescriptorPoolInlineUniformBlockCreateInfo
   {
     using NativeType = VkDescriptorPoolInlineUniformBlockCreateInfo;
@@ -28368,6 +28680,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DescriptorPoolInlineUniformBlockCreateInfoEXT = DescriptorPoolInlineUniformBlockCreateInfo;
 
+  // wrapper struct for struct VkDescriptorSetAllocateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorSetAllocateInfo.html
   struct DescriptorSetAllocateInfo
   {
     using NativeType = VkDescriptorSetAllocateInfo;
@@ -28507,6 +28820,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DescriptorSetAllocateInfo;
   };
 
+  // wrapper struct for struct VkDescriptorSetBindingReferenceVALVE, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorSetBindingReferenceVALVE.html
   struct DescriptorSetBindingReferenceVALVE
   {
     using NativeType = VkDescriptorSetBindingReferenceVALVE;
@@ -28614,6 +28929,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DescriptorSetBindingReferenceVALVE;
   };
 
+  // wrapper struct for struct VkDescriptorSetLayoutBinding, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorSetLayoutBinding.html
   struct DescriptorSetLayoutBinding
   {
     using NativeType = VkDescriptorSetLayoutBinding;
@@ -28757,6 +29073,8 @@ namespace VULKAN_HPP_NAMESPACE
     const VULKAN_HPP_NAMESPACE::Sampler *  pImmutableSamplers = {};
   };
 
+  // wrapper struct for struct VkDescriptorSetLayoutBindingFlagsCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorSetLayoutBindingFlagsCreateInfo.html
   struct DescriptorSetLayoutBindingFlagsCreateInfo
   {
     using NativeType = VkDescriptorSetLayoutBindingFlagsCreateInfo;
@@ -28885,6 +29203,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DescriptorSetLayoutBindingFlagsCreateInfoEXT = DescriptorSetLayoutBindingFlagsCreateInfo;
 
+  // wrapper struct for struct VkDescriptorSetLayoutCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorSetLayoutCreateInfo.html
   struct DescriptorSetLayoutCreateInfo
   {
     using NativeType = VkDescriptorSetLayoutCreateInfo;
@@ -29025,6 +29345,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DescriptorSetLayoutCreateInfo;
   };
 
+  // wrapper struct for struct VkDescriptorSetLayoutHostMappingInfoVALVE, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorSetLayoutHostMappingInfoVALVE.html
   struct DescriptorSetLayoutHostMappingInfoVALVE
   {
     using NativeType = VkDescriptorSetLayoutHostMappingInfoVALVE;
@@ -29130,6 +29452,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DescriptorSetLayoutHostMappingInfoVALVE;
   };
 
+  // wrapper struct for struct VkDescriptorSetLayoutSupport, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorSetLayoutSupport.html
   struct DescriptorSetLayoutSupport
   {
     using NativeType = VkDescriptorSetLayoutSupport;
@@ -29214,6 +29537,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DescriptorSetLayoutSupportKHR = DescriptorSetLayoutSupport;
 
+  // wrapper struct for struct VkDescriptorSetVariableDescriptorCountAllocateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorSetVariableDescriptorCountAllocateInfo.html
   struct DescriptorSetVariableDescriptorCountAllocateInfo
   {
     using NativeType = VkDescriptorSetVariableDescriptorCountAllocateInfo;
@@ -29342,6 +29667,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DescriptorSetVariableDescriptorCountAllocateInfoEXT = DescriptorSetVariableDescriptorCountAllocateInfo;
 
+  // wrapper struct for struct VkDescriptorSetVariableDescriptorCountLayoutSupport, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorSetVariableDescriptorCountLayoutSupport.html
   struct DescriptorSetVariableDescriptorCountLayoutSupport
   {
     using NativeType = VkDescriptorSetVariableDescriptorCountLayoutSupport;
@@ -29429,6 +29756,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DescriptorSetVariableDescriptorCountLayoutSupportEXT = DescriptorSetVariableDescriptorCountLayoutSupport;
 
+  // wrapper struct for struct VkDescriptorUpdateTemplateEntry, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorUpdateTemplateEntry.html
   struct DescriptorUpdateTemplateEntry
   {
     using NativeType = VkDescriptorUpdateTemplateEntry;
@@ -29555,6 +29884,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DescriptorUpdateTemplateEntryKHR = DescriptorUpdateTemplateEntry;
 
+  // wrapper struct for struct VkDescriptorUpdateTemplateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDescriptorUpdateTemplateCreateInfo.html
   struct DescriptorUpdateTemplateCreateInfo
   {
     using NativeType = VkDescriptorUpdateTemplateCreateInfo;
@@ -29770,6 +30101,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DescriptorUpdateTemplateCreateInfoKHR = DescriptorUpdateTemplateCreateInfo;
 
+  // wrapper struct for struct VkDeviceAddressBindingCallbackDataEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceAddressBindingCallbackDataEXT.html
   struct DeviceAddressBindingCallbackDataEXT
   {
     using NativeType = VkDeviceAddressBindingCallbackDataEXT;
@@ -29902,6 +30235,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceAddressBindingCallbackDataEXT;
   };
 
+  // wrapper struct for struct VkDeviceBufferMemoryRequirements, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceBufferMemoryRequirements.html
   struct DeviceBufferMemoryRequirements
   {
     using NativeType = VkDeviceBufferMemoryRequirements;
@@ -30001,6 +30336,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DeviceBufferMemoryRequirementsKHR = DeviceBufferMemoryRequirements;
 
+  // wrapper struct for struct VkDeviceQueueCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceQueueCreateInfo.html
   struct DeviceQueueCreateInfo
   {
     using NativeType = VkDeviceQueueCreateInfo;
@@ -30154,6 +30490,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceQueueCreateInfo;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFeatures, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFeatures.html
   struct PhysicalDeviceFeatures
   {
     using NativeType = VkPhysicalDeviceFeatures;
@@ -30864,6 +31201,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Bool32 inheritedQueries                        = {};
   };
 
+  // wrapper struct for struct VkDeviceCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceCreateInfo.html
   struct DeviceCreateInfo
   {
     using NativeType = VkDeviceCreateInfo;
@@ -31129,6 +31467,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceCreateInfo;
   };
 
+  // wrapper struct for struct VkDeviceMemoryReportCallbackDataEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceMemoryReportCallbackDataEXT.html
   struct DeviceMemoryReportCallbackDataEXT
   {
     using NativeType = VkDeviceMemoryReportCallbackDataEXT;
@@ -31243,6 +31583,8 @@ namespace VULKAN_HPP_NAMESPACE
   typedef void( VKAPI_PTR * PFN_DeviceMemoryReportCallbackEXT )( const VULKAN_HPP_NAMESPACE::DeviceMemoryReportCallbackDataEXT * pCallbackData,
                                                                  void *                                                          pUserData );
 
+  // wrapper struct for struct VkDeviceDeviceMemoryReportCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceDeviceMemoryReportCreateInfoEXT.html
   struct DeviceDeviceMemoryReportCreateInfoEXT
   {
     using NativeType = VkDeviceDeviceMemoryReportCreateInfoEXT;
@@ -31400,6 +31742,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceDeviceMemoryReportCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkDeviceDiagnosticsConfigCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceDiagnosticsConfigCreateInfoNV.html
   struct DeviceDiagnosticsConfigCreateInfoNV
   {
     using NativeType = VkDeviceDiagnosticsConfigCreateInfoNV;
@@ -31497,6 +31841,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceDiagnosticsConfigCreateInfoNV;
   };
 
+  // wrapper struct for struct VkDeviceEventInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceEventInfoEXT.html
   struct DeviceEventInfoEXT
   {
     using NativeType = VkDeviceEventInfoEXT;
@@ -31591,6 +31936,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceEventInfoEXT;
   };
 
+  // wrapper struct for struct VkDeviceFaultAddressInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceFaultAddressInfoEXT.html
   struct DeviceFaultAddressInfoEXT
   {
     using NativeType = VkDeviceFaultAddressInfoEXT;
@@ -31688,6 +32034,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize                addressPrecision = {};
   };
 
+  // wrapper struct for struct VkDeviceFaultCountsEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceFaultCountsEXT.html
   struct DeviceFaultCountsEXT
   {
     using NativeType = VkDeviceFaultCountsEXT;
@@ -31804,6 +32151,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceFaultCountsEXT;
   };
 
+  // wrapper struct for struct VkDeviceFaultVendorInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceFaultVendorInfoEXT.html
   struct DeviceFaultVendorInfoEXT
   {
     using NativeType = VkDeviceFaultVendorInfoEXT;
@@ -31932,6 +32280,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t                                                            vendorFaultData = {};
   };
 
+  // wrapper struct for struct VkDeviceFaultInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceFaultInfoEXT.html
   struct DeviceFaultInfoEXT
   {
     using NativeType = VkDeviceFaultInfoEXT;
@@ -32081,6 +32430,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceFaultInfoEXT;
   };
 
+  // wrapper struct for struct VkDeviceFaultVendorBinaryHeaderVersionOneEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceFaultVendorBinaryHeaderVersionOneEXT.html
   struct DeviceFaultVendorBinaryHeaderVersionOneEXT
   {
     using NativeType = VkDeviceFaultVendorBinaryHeaderVersionOneEXT;
@@ -32275,6 +32626,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                                                      apiVersion            = {};
   };
 
+  // wrapper struct for struct VkDeviceGroupBindSparseInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceGroupBindSparseInfo.html
   struct DeviceGroupBindSparseInfo
   {
     using NativeType = VkDeviceGroupBindSparseInfo;
@@ -32383,6 +32735,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DeviceGroupBindSparseInfoKHR = DeviceGroupBindSparseInfo;
 
+  // wrapper struct for struct VkDeviceGroupCommandBufferBeginInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceGroupCommandBufferBeginInfo.html
   struct DeviceGroupCommandBufferBeginInfo
   {
     using NativeType = VkDeviceGroupCommandBufferBeginInfo;
@@ -32481,6 +32835,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DeviceGroupCommandBufferBeginInfoKHR = DeviceGroupCommandBufferBeginInfo;
 
+  // wrapper struct for struct VkDeviceGroupDeviceCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceGroupDeviceCreateInfo.html
   struct DeviceGroupDeviceCreateInfo
   {
     using NativeType = VkDeviceGroupDeviceCreateInfo;
@@ -32609,6 +32964,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DeviceGroupDeviceCreateInfoKHR = DeviceGroupDeviceCreateInfo;
 
+  // wrapper struct for struct VkDeviceGroupPresentCapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceGroupPresentCapabilitiesKHR.html
   struct DeviceGroupPresentCapabilitiesKHR
   {
     using NativeType = VkDeviceGroupPresentCapabilitiesKHR;
@@ -32698,6 +33055,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceGroupPresentCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkDeviceGroupPresentInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceGroupPresentInfoKHR.html
   struct DeviceGroupPresentInfoKHR
   {
     using NativeType = VkDeviceGroupPresentInfoKHR;
@@ -32837,6 +33195,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceGroupPresentInfoKHR;
   };
 
+  // wrapper struct for struct VkDeviceGroupRenderPassBeginInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceGroupRenderPassBeginInfo.html
   struct DeviceGroupRenderPassBeginInfo
   {
     using NativeType = VkDeviceGroupRenderPassBeginInfo;
@@ -32979,6 +33339,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DeviceGroupRenderPassBeginInfoKHR = DeviceGroupRenderPassBeginInfo;
 
+  // wrapper struct for struct VkDeviceGroupSubmitInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceGroupSubmitInfo.html
   struct DeviceGroupSubmitInfo
   {
     using NativeType = VkDeviceGroupSubmitInfo;
@@ -33186,6 +33547,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DeviceGroupSubmitInfoKHR = DeviceGroupSubmitInfo;
 
+  // wrapper struct for struct VkDeviceGroupSwapchainCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceGroupSwapchainCreateInfoKHR.html
   struct DeviceGroupSwapchainCreateInfoKHR
   {
     using NativeType = VkDeviceGroupSwapchainCreateInfoKHR;
@@ -33283,6 +33646,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceGroupSwapchainCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkImageCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageCreateInfo.html
   struct ImageCreateInfo
   {
     using NativeType = VkImageCreateInfo;
@@ -33558,6 +33922,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageCreateInfo;
   };
 
+  // wrapper struct for struct VkDeviceImageMemoryRequirements, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceImageMemoryRequirements.html
   struct DeviceImageMemoryRequirements
   {
     using NativeType = VkDeviceImageMemoryRequirements;
@@ -33670,6 +34036,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DeviceImageMemoryRequirementsKHR = DeviceImageMemoryRequirements;
 
+  // wrapper struct for struct VkImageSubresource2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageSubresource2.html
   struct ImageSubresource2
   {
     using NativeType = VkImageSubresource2;
@@ -33766,6 +34133,7 @@ namespace VULKAN_HPP_NAMESPACE
   using ImageSubresource2EXT = ImageSubresource2;
   using ImageSubresource2KHR = ImageSubresource2;
 
+  // wrapper struct for struct VkDeviceImageSubresourceInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceImageSubresourceInfo.html
   struct DeviceImageSubresourceInfo
   {
     using NativeType = VkDeviceImageSubresourceInfo;
@@ -33877,6 +34245,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DeviceImageSubresourceInfoKHR = DeviceImageSubresourceInfo;
 
+  // wrapper struct for struct VkDeviceMemoryOpaqueCaptureAddressInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceMemoryOpaqueCaptureAddressInfo.html
   struct DeviceMemoryOpaqueCaptureAddressInfo
   {
     using NativeType = VkDeviceMemoryOpaqueCaptureAddressInfo;
@@ -33976,6 +34346,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DeviceMemoryOpaqueCaptureAddressInfoKHR = DeviceMemoryOpaqueCaptureAddressInfo;
 
+  // wrapper struct for struct VkDeviceMemoryOverallocationCreateInfoAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceMemoryOverallocationCreateInfoAMD.html
   struct DeviceMemoryOverallocationCreateInfoAMD
   {
     using NativeType = VkDeviceMemoryOverallocationCreateInfoAMD;
@@ -34120,6 +34492,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
+  // wrapper struct for struct VkDevicePipelineBinaryInternalCacheControlKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDevicePipelineBinaryInternalCacheControlKHR.html
   struct DevicePipelineBinaryInternalCacheControlKHR
   {
     using NativeType = VkDevicePipelineBinaryInternalCacheControlKHR;
@@ -34218,6 +34592,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DevicePipelineBinaryInternalCacheControlKHR;
   };
 
+  // wrapper struct for struct VkDevicePrivateDataCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDevicePrivateDataCreateInfo.html
   struct DevicePrivateDataCreateInfo
   {
     using NativeType = VkDevicePrivateDataCreateInfo;
@@ -34316,6 +34691,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using DevicePrivateDataCreateInfoEXT = DevicePrivateDataCreateInfo;
 
+  // wrapper struct for struct VkDeviceQueueGlobalPriorityCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceQueueGlobalPriorityCreateInfo.html
   struct DeviceQueueGlobalPriorityCreateInfo
   {
     using NativeType = VkDeviceQueueGlobalPriorityCreateInfo;
@@ -34418,6 +34795,7 @@ namespace VULKAN_HPP_NAMESPACE
   using DeviceQueueGlobalPriorityCreateInfoEXT = DeviceQueueGlobalPriorityCreateInfo;
   using DeviceQueueGlobalPriorityCreateInfoKHR = DeviceQueueGlobalPriorityCreateInfo;
 
+  // wrapper struct for struct VkDeviceQueueInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceQueueInfo2.html
   struct DeviceQueueInfo2
   {
     using NativeType = VkDeviceQueueInfo2;
@@ -34535,6 +34913,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DeviceQueueInfo2;
   };
 
+  // wrapper struct for struct VkDeviceQueueShaderCoreControlCreateInfoARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDeviceQueueShaderCoreControlCreateInfoARM.html
   struct DeviceQueueShaderCoreControlCreateInfoARM
   {
     using NativeType = VkDeviceQueueShaderCoreControlCreateInfoARM;
@@ -34633,6 +35013,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   typedef PFN_vkVoidFunction( VKAPI_PTR * PFN_GetInstanceProcAddrLUNARG )( VULKAN_HPP_NAMESPACE::Instance instance, const char * pName );
 
+  // wrapper struct for struct VkDirectDriverLoadingInfoLUNARG, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDirectDriverLoadingInfoLUNARG.html
   struct DirectDriverLoadingInfoLUNARG
   {
     using NativeType = VkDirectDriverLoadingInfoLUNARG;
@@ -34739,6 +35121,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DirectDriverLoadingInfoLUNARG;
   };
 
+  // wrapper struct for struct VkDirectDriverLoadingListLUNARG, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDirectDriverLoadingListLUNARG.html
   struct DirectDriverLoadingListLUNARG
   {
     using NativeType = VkDirectDriverLoadingListLUNARG;
@@ -34876,6 +35260,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_DIRECTFB_EXT )
+  // wrapper struct for struct VkDirectFBSurfaceCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDirectFBSurfaceCreateInfoEXT.html
   struct DirectFBSurfaceCreateInfoEXT
   {
     using NativeType = VkDirectFBSurfaceCreateInfoEXT;
@@ -34997,6 +35382,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_DIRECTFB_EXT*/
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkDispatchGraphCountInfoAMDX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDispatchGraphCountInfoAMDX.html
   struct DispatchGraphCountInfoAMDX
   {
     using NativeType = VkDispatchGraphCountInfoAMDX;
@@ -35077,6 +35463,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkDispatchGraphInfoAMDX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDispatchGraphInfoAMDX.html
   struct DispatchGraphInfoAMDX
   {
     using NativeType = VkDispatchGraphInfoAMDX;
@@ -35165,6 +35552,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
+  // wrapper struct for struct VkDispatchIndirectCommand, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDispatchIndirectCommand.html
   struct DispatchIndirectCommand
   {
     using NativeType = VkDispatchIndirectCommand;
@@ -35259,6 +35647,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t z = {};
   };
 
+  // wrapper struct for struct VkDisplayEventInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayEventInfoEXT.html
   struct DisplayEventInfoEXT
   {
     using NativeType = VkDisplayEventInfoEXT;
@@ -35356,6 +35745,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayEventInfoEXT;
   };
 
+  // wrapper struct for struct VkDisplayModeParametersKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayModeParametersKHR.html
   struct DisplayModeParametersKHR
   {
     using NativeType = VkDisplayModeParametersKHR;
@@ -35442,6 +35832,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                       refreshRate   = {};
   };
 
+  // wrapper struct for struct VkDisplayModeCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayModeCreateInfoKHR.html
   struct DisplayModeCreateInfoKHR
   {
     using NativeType = VkDisplayModeCreateInfoKHR;
@@ -35551,6 +35942,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayModeCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkDisplayModePropertiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayModePropertiesKHR.html
   struct DisplayModePropertiesKHR
   {
     using NativeType = VkDisplayModePropertiesKHR;
@@ -35624,6 +36016,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DisplayModeParametersKHR parameters  = {};
   };
 
+  // wrapper struct for struct VkDisplayModeProperties2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayModeProperties2KHR.html
   struct DisplayModeProperties2KHR
   {
     using NativeType = VkDisplayModeProperties2KHR;
@@ -35707,6 +36100,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayModeProperties2KHR;
   };
 
+  // wrapper struct for struct VkDisplayModeStereoPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayModeStereoPropertiesNV.html
   struct DisplayModeStereoPropertiesNV
   {
     using NativeType = VkDisplayModeStereoPropertiesNV;
@@ -35789,6 +36184,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayModeStereoPropertiesNV;
   };
 
+  // wrapper struct for struct VkDisplayNativeHdrSurfaceCapabilitiesAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayNativeHdrSurfaceCapabilitiesAMD.html
   struct DisplayNativeHdrSurfaceCapabilitiesAMD
   {
     using NativeType = VkDisplayNativeHdrSurfaceCapabilitiesAMD;
@@ -35872,6 +36269,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayNativeHdrSurfaceCapabilitiesAMD;
   };
 
+  // wrapper struct for struct VkDisplayPlaneCapabilitiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayPlaneCapabilitiesKHR.html
   struct DisplayPlaneCapabilitiesKHR
   {
     using NativeType = VkDisplayPlaneCapabilitiesKHR;
@@ -35976,6 +36374,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Extent2D                  maxDstExtent   = {};
   };
 
+  // wrapper struct for struct VkDisplayPlaneCapabilities2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayPlaneCapabilities2KHR.html
   struct DisplayPlaneCapabilities2KHR
   {
     using NativeType = VkDisplayPlaneCapabilities2KHR;
@@ -36059,6 +36458,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayPlaneCapabilities2KHR;
   };
 
+  // wrapper struct for struct VkDisplayPlaneInfo2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayPlaneInfo2KHR.html
   struct DisplayPlaneInfo2KHR
   {
     using NativeType = VkDisplayPlaneInfo2KHR;
@@ -36164,6 +36564,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayPlaneInfo2KHR;
   };
 
+  // wrapper struct for struct VkDisplayPlanePropertiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayPlanePropertiesKHR.html
   struct DisplayPlanePropertiesKHR
   {
     using NativeType = VkDisplayPlanePropertiesKHR;
@@ -36237,6 +36638,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                         currentStackIndex = {};
   };
 
+  // wrapper struct for struct VkDisplayPlaneProperties2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayPlaneProperties2KHR.html
   struct DisplayPlaneProperties2KHR
   {
     using NativeType = VkDisplayPlaneProperties2KHR;
@@ -36320,6 +36722,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayPlaneProperties2KHR;
   };
 
+  // wrapper struct for struct VkDisplayPowerInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayPowerInfoEXT.html
   struct DisplayPowerInfoEXT
   {
     using NativeType = VkDisplayPowerInfoEXT;
@@ -36416,6 +36819,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayPowerInfoEXT;
   };
 
+  // wrapper struct for struct VkDisplayPresentInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayPresentInfoKHR.html
   struct DisplayPresentInfoKHR
   {
     using NativeType = VkDisplayPresentInfoKHR;
@@ -36535,6 +36939,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayPresentInfoKHR;
   };
 
+  // wrapper struct for struct VkDisplayPropertiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayPropertiesKHR.html
   struct DisplayPropertiesKHR
   {
     using NativeType = VkDisplayPropertiesKHR;
@@ -36647,6 +37052,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Bool32                   persistentContent    = {};
   };
 
+  // wrapper struct for struct VkDisplayProperties2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayProperties2KHR.html
   struct DisplayProperties2KHR
   {
     using NativeType = VkDisplayProperties2KHR;
@@ -36730,6 +37136,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplayProperties2KHR;
   };
 
+  // wrapper struct for struct VkDisplaySurfaceCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplaySurfaceCreateInfoKHR.html
   struct DisplaySurfaceCreateInfoKHR
   {
     using NativeType = VkDisplaySurfaceCreateInfoKHR;
@@ -36902,6 +37309,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplaySurfaceCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkDisplaySurfaceStereoCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplaySurfaceStereoCreateInfoNV.html
   struct DisplaySurfaceStereoCreateInfoNV
   {
     using NativeType = VkDisplaySurfaceStereoCreateInfoNV;
@@ -37000,6 +37409,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DisplaySurfaceStereoCreateInfoNV;
   };
 
+  // wrapper struct for struct VkDrawIndexedIndirectCommand, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDrawIndexedIndirectCommand.html
   struct DrawIndexedIndirectCommand
   {
     using NativeType = VkDrawIndexedIndirectCommand;
@@ -37115,6 +37525,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t firstInstance = {};
   };
 
+  // wrapper struct for struct VkDrawIndirectCommand, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDrawIndirectCommand.html
   struct DrawIndirectCommand
   {
     using NativeType = VkDrawIndirectCommand;
@@ -37220,6 +37631,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t firstInstance = {};
   };
 
+  // wrapper struct for struct VkDrawIndirectCountIndirectCommandEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDrawIndirectCountIndirectCommandEXT.html
   struct DrawIndirectCountIndirectCommandEXT
   {
     using NativeType = VkDrawIndirectCountIndirectCommandEXT;
@@ -37316,6 +37729,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                            commandCount  = {};
   };
 
+  // wrapper struct for struct VkDrawMeshTasksIndirectCommandEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDrawMeshTasksIndirectCommandEXT.html
   struct DrawMeshTasksIndirectCommandEXT
   {
     using NativeType = VkDrawMeshTasksIndirectCommandEXT;
@@ -37411,6 +37826,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t groupCountZ = {};
   };
 
+  // wrapper struct for struct VkDrawMeshTasksIndirectCommandNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDrawMeshTasksIndirectCommandNV.html
   struct DrawMeshTasksIndirectCommandNV
   {
     using NativeType = VkDrawMeshTasksIndirectCommandNV;
@@ -37497,6 +37914,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t firstTask = {};
   };
 
+  // wrapper struct for struct VkDrmFormatModifierProperties2EXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDrmFormatModifierProperties2EXT.html
   struct DrmFormatModifierProperties2EXT
   {
     using NativeType = VkDrmFormatModifierProperties2EXT;
@@ -37574,6 +37993,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::FormatFeatureFlags2 drmFormatModifierTilingFeatures = {};
   };
 
+  // wrapper struct for struct VkDrmFormatModifierPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDrmFormatModifierPropertiesEXT.html
   struct DrmFormatModifierPropertiesEXT
   {
     using NativeType = VkDrmFormatModifierPropertiesEXT;
@@ -37651,6 +38072,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::FormatFeatureFlags drmFormatModifierTilingFeatures = {};
   };
 
+  // wrapper struct for struct VkDrmFormatModifierPropertiesList2EXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDrmFormatModifierPropertiesList2EXT.html
   struct DrmFormatModifierPropertiesList2EXT
   {
     using NativeType = VkDrmFormatModifierPropertiesList2EXT;
@@ -37738,6 +38161,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DrmFormatModifierPropertiesList2EXT;
   };
 
+  // wrapper struct for struct VkDrmFormatModifierPropertiesListEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDrmFormatModifierPropertiesListEXT.html
   struct DrmFormatModifierPropertiesListEXT
   {
     using NativeType = VkDrmFormatModifierPropertiesListEXT;
@@ -37825,6 +38250,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = DrmFormatModifierPropertiesListEXT;
   };
 
+  // wrapper struct for struct VkEventCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkEventCreateInfo.html
   struct EventCreateInfo
   {
     using NativeType = VkEventCreateInfo;
@@ -37918,6 +38344,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = EventCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelineLibraryCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineLibraryCreateInfoKHR.html
   struct PipelineLibraryCreateInfoKHR
   {
     using NativeType = VkPipelineLibraryCreateInfoKHR;
@@ -38043,6 +38470,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkExecutionGraphPipelineCreateInfoAMDX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExecutionGraphPipelineCreateInfoAMDX.html
   struct ExecutionGraphPipelineCreateInfoAMDX
   {
     using NativeType = VkExecutionGraphPipelineCreateInfoAMDX;
@@ -38240,6 +38669,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkExecutionGraphPipelineScratchSizeAMDX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExecutionGraphPipelineScratchSizeAMDX.html
   struct ExecutionGraphPipelineScratchSizeAMDX
   {
     using NativeType = VkExecutionGraphPipelineScratchSizeAMDX;
@@ -38361,6 +38792,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
+  // wrapper struct for struct VkExportFenceCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportFenceCreateInfo.html
   struct ExportFenceCreateInfo
   {
     using NativeType = VkExportFenceCreateInfo;
@@ -38461,6 +38893,8 @@ namespace VULKAN_HPP_NAMESPACE
   using ExportFenceCreateInfoKHR = ExportFenceCreateInfo;
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkExportFenceWin32HandleInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportFenceWin32HandleInfoKHR.html
   struct ExportFenceWin32HandleInfoKHR
   {
     using NativeType = VkExportFenceWin32HandleInfoKHR;
@@ -38577,6 +39011,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
+  // wrapper struct for struct VkExportMemoryAllocateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMemoryAllocateInfo.html
   struct ExportMemoryAllocateInfo
   {
     using NativeType = VkExportMemoryAllocateInfo;
@@ -38676,6 +39111,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ExportMemoryAllocateInfoKHR = ExportMemoryAllocateInfo;
 
+  // wrapper struct for struct VkExportMemoryAllocateInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMemoryAllocateInfoNV.html
   struct ExportMemoryAllocateInfoNV
   {
     using NativeType = VkExportMemoryAllocateInfoNV;
@@ -38775,6 +39211,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkExportMemoryWin32HandleInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMemoryWin32HandleInfoKHR.html
   struct ExportMemoryWin32HandleInfoKHR
   {
     using NativeType = VkExportMemoryWin32HandleInfoKHR;
@@ -38892,6 +39330,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkExportMemoryWin32HandleInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMemoryWin32HandleInfoNV.html
   struct ExportMemoryWin32HandleInfoNV
   {
     using NativeType = VkExportMemoryWin32HandleInfoNV;
@@ -38999,6 +39439,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkExportMetalBufferInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMetalBufferInfoEXT.html
   struct ExportMetalBufferInfoEXT
   {
     using NativeType = VkExportMetalBufferInfoEXT;
@@ -39107,6 +39548,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkExportMetalCommandQueueInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMetalCommandQueueInfoEXT.html
   struct ExportMetalCommandQueueInfoEXT
   {
     using NativeType = VkExportMetalCommandQueueInfoEXT;
@@ -39215,6 +39658,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkExportMetalDeviceInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMetalDeviceInfoEXT.html
   struct ExportMetalDeviceInfoEXT
   {
     using NativeType = VkExportMetalDeviceInfoEXT;
@@ -39313,6 +39757,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkExportMetalIOSurfaceInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMetalIOSurfaceInfoEXT.html
   struct ExportMetalIOSurfaceInfoEXT
   {
     using NativeType = VkExportMetalIOSurfaceInfoEXT;
@@ -39420,6 +39865,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkExportMetalObjectCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMetalObjectCreateInfoEXT.html
   struct ExportMetalObjectCreateInfoEXT
   {
     using NativeType = VkExportMetalObjectCreateInfoEXT;
@@ -39521,6 +39968,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkExportMetalObjectsInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMetalObjectsInfoEXT.html
   struct ExportMetalObjectsInfoEXT
   {
     using NativeType = VkExportMetalObjectsInfoEXT;
@@ -39608,6 +40056,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkExportMetalSharedEventInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMetalSharedEventInfoEXT.html
   struct ExportMetalSharedEventInfoEXT
   {
     using NativeType = VkExportMetalSharedEventInfoEXT;
@@ -39730,6 +40180,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkExportMetalTextureInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportMetalTextureInfoEXT.html
   struct ExportMetalTextureInfoEXT
   {
     using NativeType = VkExportMetalTextureInfoEXT;
@@ -39871,6 +40322,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
+  // wrapper struct for struct VkExportSemaphoreCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportSemaphoreCreateInfo.html
   struct ExportSemaphoreCreateInfo
   {
     using NativeType = VkExportSemaphoreCreateInfo;
@@ -39972,6 +40424,8 @@ namespace VULKAN_HPP_NAMESPACE
   using ExportSemaphoreCreateInfoKHR = ExportSemaphoreCreateInfo;
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkExportSemaphoreWin32HandleInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExportSemaphoreWin32HandleInfoKHR.html
   struct ExportSemaphoreWin32HandleInfoKHR
   {
     using NativeType = VkExportSemaphoreWin32HandleInfoKHR;
@@ -40088,6 +40542,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
+  // wrapper struct for struct VkExtensionProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExtensionProperties.html
   struct ExtensionProperties
   {
     using NativeType = VkExtensionProperties;
@@ -40164,6 +40619,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                                                               specVersion   = {};
   };
 
+  // wrapper struct for struct VkExternalMemoryProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalMemoryProperties.html
   struct ExternalMemoryProperties
   {
     using NativeType = VkExternalMemoryProperties;
@@ -40245,6 +40701,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ExternalMemoryPropertiesKHR = ExternalMemoryProperties;
 
+  // wrapper struct for struct VkExternalBufferProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalBufferProperties.html
   struct ExternalBufferProperties
   {
     using NativeType = VkExternalBufferProperties;
@@ -40330,6 +40787,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ExternalBufferPropertiesKHR = ExternalBufferProperties;
 
+  // wrapper struct for struct VkExternalFenceProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalFenceProperties.html
   struct ExternalFenceProperties
   {
     using NativeType = VkExternalFenceProperties;
@@ -40427,6 +40885,7 @@ namespace VULKAN_HPP_NAMESPACE
   using ExternalFencePropertiesKHR = ExternalFenceProperties;
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkExternalFormatANDROID, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalFormatANDROID.html
   struct ExternalFormatANDROID
   {
     using NativeType = VkExternalFormatANDROID;
@@ -40525,6 +40984,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #if defined( VK_USE_PLATFORM_SCREEN_QNX )
+  // wrapper struct for struct VkExternalFormatQNX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalFormatQNX.html
   struct ExternalFormatQNX
   {
     using NativeType = VkExternalFormatQNX;
@@ -40619,6 +41079,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_SCREEN_QNX*/
 
+  // wrapper struct for struct VkExternalImageFormatProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalImageFormatProperties.html
   struct ExternalImageFormatProperties
   {
     using NativeType = VkExternalImageFormatProperties;
@@ -40704,6 +41166,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ExternalImageFormatPropertiesKHR = ExternalImageFormatProperties;
 
+  // wrapper struct for struct VkImageFormatProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageFormatProperties.html
   struct ImageFormatProperties
   {
     using NativeType = VkImageFormatProperties;
@@ -40791,6 +41254,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize       maxResourceSize = {};
   };
 
+  // wrapper struct for struct VkExternalImageFormatPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalImageFormatPropertiesNV.html
   struct ExternalImageFormatPropertiesNV
   {
     using NativeType = VkExternalImageFormatPropertiesNV;
@@ -40875,6 +41340,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ExternalMemoryHandleTypeFlagsNV compatibleHandleTypes         = {};
   };
 
+  // wrapper struct for struct VkExternalMemoryAcquireUnmodifiedEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalMemoryAcquireUnmodifiedEXT.html
   struct ExternalMemoryAcquireUnmodifiedEXT
   {
     using NativeType = VkExternalMemoryAcquireUnmodifiedEXT;
@@ -40973,6 +41440,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ExternalMemoryAcquireUnmodifiedEXT;
   };
 
+  // wrapper struct for struct VkExternalMemoryBufferCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalMemoryBufferCreateInfo.html
   struct ExternalMemoryBufferCreateInfo
   {
     using NativeType = VkExternalMemoryBufferCreateInfo;
@@ -41073,6 +41542,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ExternalMemoryBufferCreateInfoKHR = ExternalMemoryBufferCreateInfo;
 
+  // wrapper struct for struct VkExternalMemoryImageCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalMemoryImageCreateInfo.html
   struct ExternalMemoryImageCreateInfo
   {
     using NativeType = VkExternalMemoryImageCreateInfo;
@@ -41173,6 +41644,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ExternalMemoryImageCreateInfoKHR = ExternalMemoryImageCreateInfo;
 
+  // wrapper struct for struct VkExternalMemoryImageCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalMemoryImageCreateInfoNV.html
   struct ExternalMemoryImageCreateInfoNV
   {
     using NativeType = VkExternalMemoryImageCreateInfoNV;
@@ -41271,6 +41744,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ExternalMemoryImageCreateInfoNV;
   };
 
+  // wrapper struct for struct VkExternalSemaphoreProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalSemaphoreProperties.html
   struct ExternalSemaphoreProperties
   {
     using NativeType = VkExternalSemaphoreProperties;
@@ -41367,6 +41841,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ExternalSemaphorePropertiesKHR = ExternalSemaphoreProperties;
 
+  // wrapper struct for struct VkFenceCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkFenceCreateInfo.html
   struct FenceCreateInfo
   {
     using NativeType = VkFenceCreateInfo;
@@ -41460,6 +41935,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = FenceCreateInfo;
   };
 
+  // wrapper struct for struct VkFenceGetFdInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkFenceGetFdInfoKHR.html
   struct FenceGetFdInfoKHR
   {
     using NativeType = VkFenceGetFdInfoKHR;
@@ -41568,6 +42044,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkFenceGetWin32HandleInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkFenceGetWin32HandleInfoKHR.html
   struct FenceGetWin32HandleInfoKHR
   {
     using NativeType = VkFenceGetWin32HandleInfoKHR;
@@ -41679,6 +42156,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
+  // wrapper struct for struct VkFilterCubicImageViewImageFormatPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkFilterCubicImageViewImageFormatPropertiesEXT.html
   struct FilterCubicImageViewImageFormatPropertiesEXT
   {
     using NativeType = VkFilterCubicImageViewImageFormatPropertiesEXT;
@@ -41765,6 +42244,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = FilterCubicImageViewImageFormatPropertiesEXT;
   };
 
+  // wrapper struct for struct VkFormatProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkFormatProperties.html
   struct FormatProperties
   {
     using NativeType = VkFormatProperties;
@@ -41841,6 +42321,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::FormatFeatureFlags bufferFeatures        = {};
   };
 
+  // wrapper struct for struct VkFormatProperties2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkFormatProperties2.html
   struct FormatProperties2
   {
     using NativeType = VkFormatProperties2;
@@ -41922,6 +42403,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using FormatProperties2KHR = FormatProperties2;
 
+  // wrapper struct for struct VkFormatProperties3, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkFormatProperties3.html
   struct FormatProperties3
   {
     using NativeType = VkFormatProperties3;
@@ -42015,6 +42497,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using FormatProperties3KHR = FormatProperties3;
 
+  // wrapper struct for struct VkFragmentShadingRateAttachmentInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkFragmentShadingRateAttachmentInfoKHR.html
   struct FragmentShadingRateAttachmentInfoKHR
   {
     using NativeType = VkFragmentShadingRateAttachmentInfoKHR;
@@ -42127,6 +42611,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = FragmentShadingRateAttachmentInfoKHR;
   };
 
+  // wrapper struct for struct VkFrameBoundaryEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkFrameBoundaryEXT.html
   struct FrameBoundaryEXT
   {
     using NativeType = VkFrameBoundaryEXT;
@@ -42356,6 +42841,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = FrameBoundaryEXT;
   };
 
+  // wrapper struct for struct VkFramebufferAttachmentImageInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkFramebufferAttachmentImageInfo.html
   struct FramebufferAttachmentImageInfo
   {
     using NativeType = VkFramebufferAttachmentImageInfo;
@@ -42548,6 +43035,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using FramebufferAttachmentImageInfoKHR = FramebufferAttachmentImageInfo;
 
+  // wrapper struct for struct VkFramebufferAttachmentsCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkFramebufferAttachmentsCreateInfo.html
   struct FramebufferAttachmentsCreateInfo
   {
     using NativeType = VkFramebufferAttachmentsCreateInfo;
@@ -42683,6 +43172,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using FramebufferAttachmentsCreateInfoKHR = FramebufferAttachmentsCreateInfo;
 
+  // wrapper struct for struct VkFramebufferCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkFramebufferCreateInfo.html
   struct FramebufferCreateInfo
   {
     using NativeType = VkFramebufferCreateInfo;
@@ -42874,6 +43364,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = FramebufferCreateInfo;
   };
 
+  // wrapper struct for struct VkFramebufferMixedSamplesCombinationNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkFramebufferMixedSamplesCombinationNV.html
   struct FramebufferMixedSamplesCombinationNV
   {
     using NativeType = VkFramebufferMixedSamplesCombinationNV;
@@ -42973,6 +43465,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = FramebufferMixedSamplesCombinationNV;
   };
 
+  // wrapper struct for struct VkGeneratedCommandsInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeneratedCommandsInfoEXT.html
   struct GeneratedCommandsInfoEXT
   {
     using NativeType = VkGeneratedCommandsInfoEXT;
@@ -43178,6 +43671,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GeneratedCommandsInfoEXT;
   };
 
+  // wrapper struct for struct VkIndirectCommandsStreamNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectCommandsStreamNV.html
   struct IndirectCommandsStreamNV
   {
     using NativeType = VkIndirectCommandsStreamNV;
@@ -43265,6 +43759,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize offset = {};
   };
 
+  // wrapper struct for struct VkGeneratedCommandsInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeneratedCommandsInfoNV.html
   struct GeneratedCommandsInfoNV
   {
     using NativeType = VkGeneratedCommandsInfoNV;
@@ -43547,6 +44042,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GeneratedCommandsInfoNV;
   };
 
+  // wrapper struct for struct VkGeneratedCommandsMemoryRequirementsInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeneratedCommandsMemoryRequirementsInfoEXT.html
   struct GeneratedCommandsMemoryRequirementsInfoEXT
   {
     using NativeType = VkGeneratedCommandsMemoryRequirementsInfoEXT;
@@ -43679,6 +44176,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GeneratedCommandsMemoryRequirementsInfoEXT;
   };
 
+  // wrapper struct for struct VkGeneratedCommandsMemoryRequirementsInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeneratedCommandsMemoryRequirementsInfoNV.html
   struct GeneratedCommandsMemoryRequirementsInfoNV
   {
     using NativeType = VkGeneratedCommandsMemoryRequirementsInfoNV;
@@ -43812,6 +44311,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GeneratedCommandsMemoryRequirementsInfoNV;
   };
 
+  // wrapper struct for struct VkGeneratedCommandsPipelineInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeneratedCommandsPipelineInfoEXT.html
   struct GeneratedCommandsPipelineInfoEXT
   {
     using NativeType = VkGeneratedCommandsPipelineInfoEXT;
@@ -43908,6 +44409,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GeneratedCommandsPipelineInfoEXT;
   };
 
+  // wrapper struct for struct VkGeneratedCommandsShaderInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkGeneratedCommandsShaderInfoEXT.html
   struct GeneratedCommandsShaderInfoEXT
   {
     using NativeType = VkGeneratedCommandsShaderInfoEXT;
@@ -44032,6 +44535,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GeneratedCommandsShaderInfoEXT;
   };
 
+  // wrapper struct for struct VkLatencyTimingsFrameReportNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkLatencyTimingsFrameReportNV.html
   struct LatencyTimingsFrameReportNV
   {
     using NativeType = VkLatencyTimingsFrameReportNV;
@@ -44189,6 +44693,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = LatencyTimingsFrameReportNV;
   };
 
+  // wrapper struct for struct VkGetLatencyMarkerInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkGetLatencyMarkerInfoNV.html
   struct GetLatencyMarkerInfoNV
   {
     using NativeType = VkGetLatencyMarkerInfoNV;
@@ -44313,6 +44818,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GetLatencyMarkerInfoNV;
   };
 
+  // wrapper struct for struct VkVertexInputBindingDescription, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVertexInputBindingDescription.html
   struct VertexInputBindingDescription
   {
     using NativeType = VkVertexInputBindingDescription;
@@ -44410,6 +44917,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::VertexInputRate inputRate = VULKAN_HPP_NAMESPACE::VertexInputRate::eVertex;
   };
 
+  // wrapper struct for struct VkVertexInputAttributeDescription, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVertexInputAttributeDescription.html
   struct VertexInputAttributeDescription
   {
     using NativeType = VkVertexInputAttributeDescription;
@@ -44515,6 +45024,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                     offset   = {};
   };
 
+  // wrapper struct for struct VkPipelineVertexInputStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineVertexInputStateCreateInfo.html
   struct PipelineVertexInputStateCreateInfo
   {
     using NativeType = VkPipelineVertexInputStateCreateInfo;
@@ -44699,6 +45210,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineVertexInputStateCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelineInputAssemblyStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineInputAssemblyStateCreateInfo.html
   struct PipelineInputAssemblyStateCreateInfo
   {
     using NativeType = VkPipelineInputAssemblyStateCreateInfo;
@@ -44822,6 +45335,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineInputAssemblyStateCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelineTessellationStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineTessellationStateCreateInfo.html
   struct PipelineTessellationStateCreateInfo
   {
     using NativeType = VkPipelineTessellationStateCreateInfo;
@@ -44932,6 +45447,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineTessellationStateCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelineViewportStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineViewportStateCreateInfo.html
   struct PipelineViewportStateCreateInfo
   {
     using NativeType = VkPipelineViewportStateCreateInfo;
@@ -45107,6 +45624,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineViewportStateCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelineRasterizationStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRasterizationStateCreateInfo.html
   struct PipelineRasterizationStateCreateInfo
   {
     using NativeType = VkPipelineRasterizationStateCreateInfo;
@@ -45323,6 +45842,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineRasterizationStateCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelineMultisampleStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineMultisampleStateCreateInfo.html
   struct PipelineMultisampleStateCreateInfo
   {
     using NativeType = VkPipelineMultisampleStateCreateInfo;
@@ -45488,6 +46009,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineMultisampleStateCreateInfo;
   };
 
+  // wrapper struct for struct VkStencilOpState, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkStencilOpState.html
   struct StencilOpState
   {
     using NativeType = VkStencilOpState;
@@ -45624,6 +46146,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                        reference   = {};
   };
 
+  // wrapper struct for struct VkPipelineDepthStencilStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineDepthStencilStateCreateInfo.html
   struct PipelineDepthStencilStateCreateInfo
   {
     using NativeType = VkPipelineDepthStencilStateCreateInfo;
@@ -45829,6 +46353,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineDepthStencilStateCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelineColorBlendAttachmentState, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineColorBlendAttachmentState.html
   struct PipelineColorBlendAttachmentState
   {
     using NativeType = VkPipelineColorBlendAttachmentState;
@@ -45985,6 +46511,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ColorComponentFlags colorWriteMask      = {};
   };
 
+  // wrapper struct for struct VkPipelineColorBlendStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineColorBlendStateCreateInfo.html
   struct PipelineColorBlendStateCreateInfo
   {
     using NativeType = VkPipelineColorBlendStateCreateInfo;
@@ -46166,6 +46694,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineColorBlendStateCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelineDynamicStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineDynamicStateCreateInfo.html
   struct PipelineDynamicStateCreateInfo
   {
     using NativeType = VkPipelineDynamicStateCreateInfo;
@@ -46305,6 +46835,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineDynamicStateCreateInfo;
   };
 
+  // wrapper struct for struct VkGraphicsPipelineCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkGraphicsPipelineCreateInfo.html
   struct GraphicsPipelineCreateInfo
   {
     using NativeType = VkGraphicsPipelineCreateInfo;
@@ -46647,6 +47178,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GraphicsPipelineCreateInfo;
   };
 
+  // wrapper struct for struct VkGraphicsPipelineLibraryCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkGraphicsPipelineLibraryCreateInfoEXT.html
   struct GraphicsPipelineLibraryCreateInfoEXT
   {
     using NativeType = VkGraphicsPipelineLibraryCreateInfoEXT;
@@ -46744,6 +47277,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GraphicsPipelineLibraryCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkGraphicsShaderGroupCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkGraphicsShaderGroupCreateInfoNV.html
   struct GraphicsShaderGroupCreateInfoNV
   {
     using NativeType = VkGraphicsShaderGroupCreateInfoNV;
@@ -46901,6 +47436,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GraphicsShaderGroupCreateInfoNV;
   };
 
+  // wrapper struct for struct VkGraphicsPipelineShaderGroupsCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkGraphicsPipelineShaderGroupsCreateInfoNV.html
   struct GraphicsPipelineShaderGroupsCreateInfoNV
   {
     using NativeType = VkGraphicsPipelineShaderGroupsCreateInfoNV;
@@ -47066,6 +47603,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = GraphicsPipelineShaderGroupsCreateInfoNV;
   };
 
+  // wrapper struct for struct VkXYColorEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkXYColorEXT.html
   struct XYColorEXT
   {
     using NativeType = VkXYColorEXT;
@@ -47149,6 +47687,7 @@ namespace VULKAN_HPP_NAMESPACE
     float y = {};
   };
 
+  // wrapper struct for struct VkHdrMetadataEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkHdrMetadataEXT.html
   struct HdrMetadataEXT
   {
     using NativeType = VkHdrMetadataEXT;
@@ -47327,6 +47866,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = HdrMetadataEXT;
   };
 
+  // wrapper struct for struct VkHdrVividDynamicMetadataHUAWEI, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkHdrVividDynamicMetadataHUAWEI.html
   struct HdrVividDynamicMetadataHUAWEI
   {
     using NativeType = VkHdrVividDynamicMetadataHUAWEI;
@@ -47451,6 +47992,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = HdrVividDynamicMetadataHUAWEI;
   };
 
+  // wrapper struct for struct VkHeadlessSurfaceCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkHeadlessSurfaceCreateInfoEXT.html
   struct HeadlessSurfaceCreateInfoEXT
   {
     using NativeType = VkHeadlessSurfaceCreateInfoEXT;
@@ -47548,6 +48090,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = HeadlessSurfaceCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkHostImageCopyDevicePerformanceQuery, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkHostImageCopyDevicePerformanceQuery.html
   struct HostImageCopyDevicePerformanceQuery
   {
     using NativeType = VkHostImageCopyDevicePerformanceQuery;
@@ -47637,6 +48181,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using HostImageCopyDevicePerformanceQueryEXT = HostImageCopyDevicePerformanceQuery;
 
+  // wrapper struct for struct VkHostImageLayoutTransitionInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkHostImageLayoutTransitionInfo.html
   struct HostImageLayoutTransitionInfo
   {
     using NativeType = VkHostImageLayoutTransitionInfo;
@@ -47771,6 +48317,7 @@ namespace VULKAN_HPP_NAMESPACE
   using HostImageLayoutTransitionInfoEXT = HostImageLayoutTransitionInfo;
 
 #if defined( VK_USE_PLATFORM_IOS_MVK )
+  // wrapper struct for struct VkIOSSurfaceCreateInfoMVK, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkIOSSurfaceCreateInfoMVK.html
   struct IOSSurfaceCreateInfoMVK
   {
     using NativeType = VkIOSSurfaceCreateInfoMVK;
@@ -47878,6 +48425,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_IOS_MVK*/
 
+  // wrapper struct for struct VkImageAlignmentControlCreateInfoMESA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageAlignmentControlCreateInfoMESA.html
   struct ImageAlignmentControlCreateInfoMESA
   {
     using NativeType = VkImageAlignmentControlCreateInfoMESA;
@@ -47974,6 +48523,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageAlignmentControlCreateInfoMESA;
   };
 
+  // wrapper struct for struct VkImageBlit, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageBlit.html
   struct ImageBlit
   {
     using NativeType = VkImageBlit;
@@ -48080,6 +48630,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ArrayWrapper1D<VULKAN_HPP_NAMESPACE::Offset3D, 2> dstOffsets     = {};
   };
 
+  // wrapper struct for struct VkImageCaptureDescriptorDataInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageCaptureDescriptorDataInfoEXT.html
   struct ImageCaptureDescriptorDataInfoEXT
   {
     using NativeType = VkImageCaptureDescriptorDataInfoEXT;
@@ -48176,6 +48728,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageCaptureDescriptorDataInfoEXT;
   };
 
+  // wrapper struct for struct VkImageCompressionControlEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageCompressionControlEXT.html
   struct ImageCompressionControlEXT
   {
     using NativeType = VkImageCompressionControlEXT;
@@ -48319,6 +48872,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageCompressionControlEXT;
   };
 
+  // wrapper struct for struct VkImageCompressionPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageCompressionPropertiesEXT.html
   struct ImageCompressionPropertiesEXT
   {
     using NativeType = VkImageCompressionPropertiesEXT;
@@ -48410,6 +48965,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkImageFormatConstraintsInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageFormatConstraintsInfoFUCHSIA.html
   struct ImageFormatConstraintsInfoFUCHSIA
   {
     using NativeType = VkImageFormatConstraintsInfoFUCHSIA;
@@ -48594,6 +49151,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkImageConstraintsInfoFUCHSIA, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageConstraintsInfoFUCHSIA.html
   struct ImageConstraintsInfoFUCHSIA
   {
     using NativeType = VkImageConstraintsInfoFUCHSIA;
@@ -48753,6 +49311,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
+  // wrapper struct for struct VkImageCopy, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageCopy.html
   struct ImageCopy
   {
     using NativeType = VkImageCopy;
@@ -48869,6 +49428,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Extent3D               extent         = {};
   };
 
+  // wrapper struct for struct VkSubresourceLayout, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubresourceLayout.html
   struct SubresourceLayout
   {
     using NativeType = VkSubresourceLayout;
@@ -48985,6 +49545,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize depthPitch = {};
   };
 
+  // wrapper struct for struct VkImageDrmFormatModifierExplicitCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageDrmFormatModifierExplicitCreateInfoEXT.html
   struct ImageDrmFormatModifierExplicitCreateInfoEXT
   {
     using NativeType = VkImageDrmFormatModifierExplicitCreateInfoEXT;
@@ -49130,6 +49692,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageDrmFormatModifierExplicitCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkImageDrmFormatModifierListCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageDrmFormatModifierListCreateInfoEXT.html
   struct ImageDrmFormatModifierListCreateInfoEXT
   {
     using NativeType = VkImageDrmFormatModifierListCreateInfoEXT;
@@ -49255,6 +49819,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageDrmFormatModifierListCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkImageDrmFormatModifierPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageDrmFormatModifierPropertiesEXT.html
   struct ImageDrmFormatModifierPropertiesEXT
   {
     using NativeType = VkImageDrmFormatModifierPropertiesEXT;
@@ -49337,6 +49903,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageDrmFormatModifierPropertiesEXT;
   };
 
+  // wrapper struct for struct VkImageFormatListCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageFormatListCreateInfo.html
   struct ImageFormatListCreateInfo
   {
     using NativeType = VkImageFormatListCreateInfo;
@@ -49463,6 +50030,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImageFormatListCreateInfoKHR = ImageFormatListCreateInfo;
 
+  // wrapper struct for struct VkImageFormatProperties2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageFormatProperties2.html
   struct ImageFormatProperties2
   {
     using NativeType = VkImageFormatProperties2;
@@ -49548,6 +50116,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImageFormatProperties2KHR = ImageFormatProperties2;
 
+  // wrapper struct for struct VkImageMemoryBarrier, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageMemoryBarrier.html
   struct ImageMemoryBarrier
   {
     using NativeType = VkImageMemoryBarrier;
@@ -49717,6 +50286,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageMemoryBarrier;
   };
 
+  // wrapper struct for struct VkImageMemoryRequirementsInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageMemoryRequirementsInfo2.html
   struct ImageMemoryRequirementsInfo2
   {
     using NativeType = VkImageMemoryRequirementsInfo2;
@@ -49816,6 +50386,8 @@ namespace VULKAN_HPP_NAMESPACE
   using ImageMemoryRequirementsInfo2KHR = ImageMemoryRequirementsInfo2;
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkImagePipeSurfaceCreateInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImagePipeSurfaceCreateInfoFUCHSIA.html
   struct ImagePipeSurfaceCreateInfoFUCHSIA
   {
     using NativeType = VkImagePipeSurfaceCreateInfoFUCHSIA;
@@ -49935,6 +50507,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
+  // wrapper struct for struct VkImagePlaneMemoryRequirementsInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImagePlaneMemoryRequirementsInfo.html
   struct ImagePlaneMemoryRequirementsInfo
   {
     using NativeType = VkImagePlaneMemoryRequirementsInfo;
@@ -50035,6 +50609,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImagePlaneMemoryRequirementsInfoKHR = ImagePlaneMemoryRequirementsInfo;
 
+  // wrapper struct for struct VkImageResolve, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageResolve.html
   struct ImageResolve
   {
     using NativeType = VkImageResolve;
@@ -50151,6 +50726,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Extent3D               extent         = {};
   };
 
+  // wrapper struct for struct VkImageResolve2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageResolve2.html
   struct ImageResolve2
   {
     using NativeType = VkImageResolve2;
@@ -50290,6 +50866,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImageResolve2KHR = ImageResolve2;
 
+  // wrapper struct for struct VkImageSparseMemoryRequirementsInfo2, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageSparseMemoryRequirementsInfo2.html
   struct ImageSparseMemoryRequirementsInfo2
   {
     using NativeType = VkImageSparseMemoryRequirementsInfo2;
@@ -50388,6 +50966,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImageSparseMemoryRequirementsInfo2KHR = ImageSparseMemoryRequirementsInfo2;
 
+  // wrapper struct for struct VkImageStencilUsageCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageStencilUsageCreateInfo.html
   struct ImageStencilUsageCreateInfo
   {
     using NativeType = VkImageStencilUsageCreateInfo;
@@ -50487,6 +51066,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ImageStencilUsageCreateInfoEXT = ImageStencilUsageCreateInfo;
 
+  // wrapper struct for struct VkImageSwapchainCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageSwapchainCreateInfoKHR.html
   struct ImageSwapchainCreateInfoKHR
   {
     using NativeType = VkImageSwapchainCreateInfoKHR;
@@ -50583,6 +51163,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageSwapchainCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkImageViewASTCDecodeModeEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageViewASTCDecodeModeEXT.html
   struct ImageViewASTCDecodeModeEXT
   {
     using NativeType = VkImageViewASTCDecodeModeEXT;
@@ -50680,6 +51261,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageViewASTCDecodeModeEXT;
   };
 
+  // wrapper struct for struct VkImageViewAddressPropertiesNVX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageViewAddressPropertiesNVX.html
   struct ImageViewAddressPropertiesNVX
   {
     using NativeType = VkImageViewAddressPropertiesNVX;
@@ -50767,6 +51350,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageViewAddressPropertiesNVX;
   };
 
+  // wrapper struct for struct VkImageViewCaptureDescriptorDataInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageViewCaptureDescriptorDataInfoEXT.html
   struct ImageViewCaptureDescriptorDataInfoEXT
   {
     using NativeType = VkImageViewCaptureDescriptorDataInfoEXT;
@@ -50864,6 +51449,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageViewCaptureDescriptorDataInfoEXT;
   };
 
+  // wrapper struct for struct VkImageViewCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageViewCreateInfo.html
   struct ImageViewCreateInfo
   {
     using NativeType = VkImageViewCreateInfo;
@@ -51014,6 +51600,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageViewCreateInfo;
   };
 
+  // wrapper struct for struct VkImageViewHandleInfoNVX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageViewHandleInfoNVX.html
   struct ImageViewHandleInfoNVX
   {
     using NativeType = VkImageViewHandleInfoNVX;
@@ -51134,6 +51721,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageViewHandleInfoNVX;
   };
 
+  // wrapper struct for struct VkImageViewMinLodCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageViewMinLodCreateInfoEXT.html
   struct ImageViewMinLodCreateInfoEXT
   {
     using NativeType = VkImageViewMinLodCreateInfoEXT;
@@ -51230,6 +51818,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageViewMinLodCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkImageViewSampleWeightCreateInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageViewSampleWeightCreateInfoQCOM.html
   struct ImageViewSampleWeightCreateInfoQCOM
   {
     using NativeType = VkImageViewSampleWeightCreateInfoQCOM;
@@ -51350,6 +51940,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageViewSampleWeightCreateInfoQCOM;
   };
 
+  // wrapper struct for struct VkImageViewSlicedCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageViewSlicedCreateInfoEXT.html
   struct ImageViewSlicedCreateInfoEXT
   {
     using NativeType = VkImageViewSlicedCreateInfoEXT;
@@ -51455,6 +52046,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImageViewSlicedCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkImageViewUsageCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImageViewUsageCreateInfo.html
   struct ImageViewUsageCreateInfo
   {
     using NativeType = VkImageViewUsageCreateInfo;
@@ -51554,6 +52146,8 @@ namespace VULKAN_HPP_NAMESPACE
   using ImageViewUsageCreateInfoKHR = ImageViewUsageCreateInfo;
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkImportAndroidHardwareBufferInfoANDROID, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportAndroidHardwareBufferInfoANDROID.html
   struct ImportAndroidHardwareBufferInfoANDROID
   {
     using NativeType = VkImportAndroidHardwareBufferInfoANDROID;
@@ -51651,6 +52245,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
+  // wrapper struct for struct VkImportFenceFdInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportFenceFdInfoKHR.html
   struct ImportFenceFdInfoKHR
   {
     using NativeType = VkImportFenceFdInfoKHR;
@@ -51783,6 +52378,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkImportFenceWin32HandleInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportFenceWin32HandleInfoKHR.html
   struct ImportFenceWin32HandleInfoKHR
   {
     using NativeType = VkImportFenceWin32HandleInfoKHR;
@@ -51927,6 +52524,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkImportMemoryBufferCollectionFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMemoryBufferCollectionFUCHSIA.html
   struct ImportMemoryBufferCollectionFUCHSIA
   {
     using NativeType = VkImportMemoryBufferCollectionFUCHSIA;
@@ -52034,6 +52633,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
+  // wrapper struct for struct VkImportMemoryFdInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMemoryFdInfoKHR.html
   struct ImportMemoryFdInfoKHR
   {
     using NativeType = VkImportMemoryFdInfoKHR;
@@ -52141,6 +52741,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ImportMemoryFdInfoKHR;
   };
 
+  // wrapper struct for struct VkImportMemoryHostPointerInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMemoryHostPointerInfoEXT.html
   struct ImportMemoryHostPointerInfoEXT
   {
     using NativeType = VkImportMemoryHostPointerInfoEXT;
@@ -52251,6 +52853,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkImportMemoryMetalHandleInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMemoryMetalHandleInfoEXT.html
   struct ImportMemoryMetalHandleInfoEXT
   {
     using NativeType = VkImportMemoryMetalHandleInfoEXT;
@@ -52362,6 +52966,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkImportMemoryWin32HandleInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMemoryWin32HandleInfoKHR.html
   struct ImportMemoryWin32HandleInfoKHR
   {
     using NativeType = VkImportMemoryWin32HandleInfoKHR;
@@ -52485,6 +53091,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkImportMemoryWin32HandleInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMemoryWin32HandleInfoNV.html
   struct ImportMemoryWin32HandleInfoNV
   {
     using NativeType = VkImportMemoryWin32HandleInfoNV;
@@ -52594,6 +53202,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkImportMemoryZirconHandleInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMemoryZirconHandleInfoFUCHSIA.html
   struct ImportMemoryZirconHandleInfoFUCHSIA
   {
     using NativeType = VkImportMemoryZirconHandleInfoFUCHSIA;
@@ -52716,6 +53326,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkImportMetalBufferInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMetalBufferInfoEXT.html
   struct ImportMetalBufferInfoEXT
   {
     using NativeType = VkImportMetalBufferInfoEXT;
@@ -52814,6 +53425,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkImportMetalIOSurfaceInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMetalIOSurfaceInfoEXT.html
   struct ImportMetalIOSurfaceInfoEXT
   {
     using NativeType = VkImportMetalIOSurfaceInfoEXT;
@@ -52912,6 +53524,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkImportMetalSharedEventInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMetalSharedEventInfoEXT.html
   struct ImportMetalSharedEventInfoEXT
   {
     using NativeType = VkImportMetalSharedEventInfoEXT;
@@ -53010,6 +53624,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkImportMetalTextureInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportMetalTextureInfoEXT.html
   struct ImportMetalTextureInfoEXT
   {
     using NativeType = VkImportMetalTextureInfoEXT;
@@ -53118,6 +53733,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
 #if defined( VK_USE_PLATFORM_SCREEN_QNX )
+  // wrapper struct for struct VkImportScreenBufferInfoQNX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportScreenBufferInfoQNX.html
   struct ImportScreenBufferInfoQNX
   {
     using NativeType = VkImportScreenBufferInfoQNX;
@@ -53215,6 +53831,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_SCREEN_QNX*/
 
+  // wrapper struct for struct VkImportSemaphoreFdInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportSemaphoreFdInfoKHR.html
   struct ImportSemaphoreFdInfoKHR
   {
     using NativeType = VkImportSemaphoreFdInfoKHR;
@@ -53348,6 +53965,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkImportSemaphoreWin32HandleInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportSemaphoreWin32HandleInfoKHR.html
   struct ImportSemaphoreWin32HandleInfoKHR
   {
     using NativeType = VkImportSemaphoreWin32HandleInfoKHR;
@@ -53492,6 +54111,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkImportSemaphoreZirconHandleInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkImportSemaphoreZirconHandleInfoFUCHSIA.html
   struct ImportSemaphoreZirconHandleInfoFUCHSIA
   {
     using NativeType = VkImportSemaphoreZirconHandleInfoFUCHSIA;
@@ -53637,6 +54258,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
+  // wrapper struct for struct VkIndirectCommandsExecutionSetTokenEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectCommandsExecutionSetTokenEXT.html
   struct IndirectCommandsExecutionSetTokenEXT
   {
     using NativeType = VkIndirectCommandsExecutionSetTokenEXT;
@@ -53725,6 +54348,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ShaderStageFlags                shaderStages = {};
   };
 
+  // wrapper struct for struct VkIndirectCommandsIndexBufferTokenEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectCommandsIndexBufferTokenEXT.html
   struct IndirectCommandsIndexBufferTokenEXT
   {
     using NativeType = VkIndirectCommandsIndexBufferTokenEXT;
@@ -53806,6 +54431,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::IndirectCommandsInputModeFlagBitsEXT mode = VULKAN_HPP_NAMESPACE::IndirectCommandsInputModeFlagBitsEXT::eVulkanIndexBuffer;
   };
 
+  // wrapper struct for struct VkPushConstantRange, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPushConstantRange.html
   struct PushConstantRange
   {
     using NativeType = VkPushConstantRange;
@@ -53898,6 +54524,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                               size       = {};
   };
 
+  // wrapper struct for struct VkIndirectCommandsPushConstantTokenEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectCommandsPushConstantTokenEXT.html
   struct IndirectCommandsPushConstantTokenEXT
   {
     using NativeType = VkIndirectCommandsPushConstantTokenEXT;
@@ -53977,6 +54605,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::PushConstantRange updateRange = {};
   };
 
+  // wrapper struct for struct VkIndirectCommandsVertexBufferTokenEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectCommandsVertexBufferTokenEXT.html
   struct IndirectCommandsVertexBufferTokenEXT
   {
     using NativeType = VkIndirectCommandsVertexBufferTokenEXT;
@@ -54133,6 +54763,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkIndirectCommandsLayoutTokenEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectCommandsLayoutTokenEXT.html
   struct IndirectCommandsLayoutTokenEXT
   {
     using NativeType = VkIndirectCommandsLayoutTokenEXT;
@@ -54235,6 +54867,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = IndirectCommandsLayoutTokenEXT;
   };
 
+  // wrapper struct for struct VkIndirectCommandsLayoutCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectCommandsLayoutCreateInfoEXT.html
   struct IndirectCommandsLayoutCreateInfoEXT
   {
     using NativeType = VkIndirectCommandsLayoutCreateInfoEXT;
@@ -54417,6 +55051,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = IndirectCommandsLayoutCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkIndirectCommandsLayoutTokenNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectCommandsLayoutTokenNV.html
   struct IndirectCommandsLayoutTokenNV
   {
     using NativeType = VkIndirectCommandsLayoutTokenNV;
@@ -54720,6 +55356,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = IndirectCommandsLayoutTokenNV;
   };
 
+  // wrapper struct for struct VkIndirectCommandsLayoutCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectCommandsLayoutCreateInfoNV.html
   struct IndirectCommandsLayoutCreateInfoNV
   {
     using NativeType = VkIndirectCommandsLayoutCreateInfoNV;
@@ -54911,6 +55549,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = IndirectCommandsLayoutCreateInfoNV;
   };
 
+  // wrapper struct for struct VkIndirectExecutionSetPipelineInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectExecutionSetPipelineInfoEXT.html
   struct IndirectExecutionSetPipelineInfoEXT
   {
     using NativeType = VkIndirectExecutionSetPipelineInfoEXT;
@@ -55017,6 +55657,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = IndirectExecutionSetPipelineInfoEXT;
   };
 
+  // wrapper struct for struct VkIndirectExecutionSetShaderLayoutInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectExecutionSetShaderLayoutInfoEXT.html
   struct IndirectExecutionSetShaderLayoutInfoEXT
   {
     using NativeType = VkIndirectExecutionSetShaderLayoutInfoEXT;
@@ -55142,6 +55784,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = IndirectExecutionSetShaderLayoutInfoEXT;
   };
 
+  // wrapper struct for struct VkIndirectExecutionSetShaderInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectExecutionSetShaderInfoEXT.html
   struct IndirectExecutionSetShaderInfoEXT
   {
     using NativeType = VkIndirectExecutionSetShaderInfoEXT;
@@ -55406,6 +56050,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkIndirectExecutionSetCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkIndirectExecutionSetCreateInfoEXT.html
   struct IndirectExecutionSetCreateInfoEXT
   {
     using NativeType = VkIndirectExecutionSetCreateInfoEXT;
@@ -55498,6 +56144,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = IndirectExecutionSetCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkInitializePerformanceApiInfoINTEL, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkInitializePerformanceApiInfoINTEL.html
   struct InitializePerformanceApiInfoINTEL
   {
     using NativeType = VkInitializePerformanceApiInfoINTEL;
@@ -55594,6 +56242,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = InitializePerformanceApiInfoINTEL;
   };
 
+  // wrapper struct for struct VkInputAttachmentAspectReference, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkInputAttachmentAspectReference.html
   struct InputAttachmentAspectReference
   {
     using NativeType = VkInputAttachmentAspectReference;
@@ -55692,6 +56342,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using InputAttachmentAspectReferenceKHR = InputAttachmentAspectReference;
 
+  // wrapper struct for struct VkInstanceCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkInstanceCreateInfo.html
   struct InstanceCreateInfo
   {
     using NativeType = VkInstanceCreateInfo;
@@ -55909,6 +56560,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = InstanceCreateInfo;
   };
 
+  // wrapper struct for struct VkLatencySleepInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkLatencySleepInfoNV.html
   struct LatencySleepInfoNV
   {
     using NativeType = VkLatencySleepInfoNV;
@@ -56011,6 +56663,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = LatencySleepInfoNV;
   };
 
+  // wrapper struct for struct VkLatencySleepModeInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkLatencySleepModeInfoNV.html
   struct LatencySleepModeInfoNV
   {
     using NativeType = VkLatencySleepModeInfoNV;
@@ -56131,6 +56784,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = LatencySleepModeInfoNV;
   };
 
+  // wrapper struct for struct VkLatencySubmissionPresentIdNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkLatencySubmissionPresentIdNV.html
   struct LatencySubmissionPresentIdNV
   {
     using NativeType = VkLatencySubmissionPresentIdNV;
@@ -56227,6 +56881,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = LatencySubmissionPresentIdNV;
   };
 
+  // wrapper struct for struct VkLatencySurfaceCapabilitiesNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkLatencySurfaceCapabilitiesNV.html
   struct LatencySurfaceCapabilitiesNV
   {
     using NativeType = VkLatencySurfaceCapabilitiesNV;
@@ -56351,6 +57006,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = LatencySurfaceCapabilitiesNV;
   };
 
+  // wrapper struct for struct VkLayerProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkLayerProperties.html
   struct LayerProperties
   {
     using NativeType = VkLayerProperties;
@@ -56439,6 +57095,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE>    description           = {};
   };
 
+  // wrapper struct for struct VkLayerSettingEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkLayerSettingEXT.html
   struct LayerSettingEXT
   {
     using NativeType = VkLayerSettingEXT;
@@ -56703,6 +57360,7 @@ namespace VULKAN_HPP_NAMESPACE
     const void *                              pValues      = {};
   };
 
+  // wrapper struct for struct VkLayerSettingsCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkLayerSettingsCreateInfoEXT.html
   struct LayerSettingsCreateInfoEXT
   {
     using NativeType = VkLayerSettingsCreateInfoEXT;
@@ -56828,6 +57486,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_MACOS_MVK )
+  // wrapper struct for struct VkMacOSSurfaceCreateInfoMVK, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMacOSSurfaceCreateInfoMVK.html
   struct MacOSSurfaceCreateInfoMVK
   {
     using NativeType = VkMacOSSurfaceCreateInfoMVK;
@@ -56936,6 +57595,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_MACOS_MVK*/
 
+  // wrapper struct for struct VkMappedMemoryRange, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMappedMemoryRange.html
   struct MappedMemoryRange
   {
     using NativeType = VkMappedMemoryRange;
@@ -57052,6 +57712,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MappedMemoryRange;
   };
 
+  // wrapper struct for struct VkMemoryAllocateFlagsInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryAllocateFlagsInfo.html
   struct MemoryAllocateFlagsInfo
   {
     using NativeType = VkMemoryAllocateFlagsInfo;
@@ -57160,6 +57821,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MemoryAllocateFlagsInfoKHR = MemoryAllocateFlagsInfo;
 
+  // wrapper struct for struct VkMemoryAllocateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryAllocateInfo.html
   struct MemoryAllocateInfo
   {
     using NativeType = VkMemoryAllocateInfo;
@@ -57263,6 +57925,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MemoryAllocateInfo;
   };
 
+  // wrapper struct for struct VkMemoryBarrier, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryBarrier.html
   struct MemoryBarrier
   {
     using NativeType = VkMemoryBarrier;
@@ -57369,6 +58032,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MemoryBarrier;
   };
 
+  // wrapper struct for struct VkMemoryBarrierAccessFlags3KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryBarrierAccessFlags3KHR.html
   struct MemoryBarrierAccessFlags3KHR
   {
     using NativeType = VkMemoryBarrierAccessFlags3KHR;
@@ -57478,6 +58142,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MemoryBarrierAccessFlags3KHR;
   };
 
+  // wrapper struct for struct VkMemoryDedicatedAllocateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryDedicatedAllocateInfo.html
   struct MemoryDedicatedAllocateInfo
   {
     using NativeType = VkMemoryDedicatedAllocateInfo;
@@ -57586,6 +58251,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MemoryDedicatedAllocateInfoKHR = MemoryDedicatedAllocateInfo;
 
+  // wrapper struct for struct VkMemoryDedicatedRequirements, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryDedicatedRequirements.html
   struct MemoryDedicatedRequirements
   {
     using NativeType = VkMemoryDedicatedRequirements;
@@ -57675,6 +58341,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MemoryDedicatedRequirementsKHR = MemoryDedicatedRequirements;
 
+  // wrapper struct for struct VkMemoryFdPropertiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryFdPropertiesKHR.html
   struct MemoryFdPropertiesKHR
   {
     using NativeType = VkMemoryFdPropertiesKHR;
@@ -57758,6 +58425,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkMemoryGetAndroidHardwareBufferInfoANDROID, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryGetAndroidHardwareBufferInfoANDROID.html
   struct MemoryGetAndroidHardwareBufferInfoANDROID
   {
     using NativeType = VkMemoryGetAndroidHardwareBufferInfoANDROID;
@@ -57856,6 +58525,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
+  // wrapper struct for struct VkMemoryGetFdInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryGetFdInfoKHR.html
   struct MemoryGetFdInfoKHR
   {
     using NativeType = VkMemoryGetFdInfoKHR;
@@ -57964,6 +58634,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkMemoryGetMetalHandleInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryGetMetalHandleInfoEXT.html
   struct MemoryGetMetalHandleInfoEXT
   {
     using NativeType = VkMemoryGetMetalHandleInfoEXT;
@@ -58076,6 +58747,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
+  // wrapper struct for struct VkMemoryGetRemoteAddressInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryGetRemoteAddressInfoNV.html
   struct MemoryGetRemoteAddressInfoNV
   {
     using NativeType = VkMemoryGetRemoteAddressInfoNV;
@@ -58188,6 +58860,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkMemoryGetWin32HandleInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryGetWin32HandleInfoKHR.html
   struct MemoryGetWin32HandleInfoKHR
   {
     using NativeType = VkMemoryGetWin32HandleInfoKHR;
@@ -58301,6 +58974,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkMemoryGetZirconHandleInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryGetZirconHandleInfoFUCHSIA.html
   struct MemoryGetZirconHandleInfoFUCHSIA
   {
     using NativeType = VkMemoryGetZirconHandleInfoFUCHSIA;
@@ -58413,6 +59088,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
+  // wrapper struct for struct VkMemoryHeap, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryHeap.html
   struct MemoryHeap
   {
     using NativeType = VkMemoryHeap;
@@ -58482,6 +59158,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::MemoryHeapFlags flags = {};
   };
 
+  // wrapper struct for struct VkMemoryHostPointerPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryHostPointerPropertiesEXT.html
   struct MemoryHostPointerPropertiesEXT
   {
     using NativeType = VkMemoryHostPointerPropertiesEXT;
@@ -58564,6 +59242,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MemoryHostPointerPropertiesEXT;
   };
 
+  // wrapper struct for struct VkMemoryMapInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryMapInfo.html
   struct MemoryMapInfo
   {
     using NativeType = VkMemoryMapInfo;
@@ -58693,6 +59372,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MemoryMapInfoKHR = MemoryMapInfo;
 
+  // wrapper struct for struct VkMemoryMapPlacedInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryMapPlacedInfoEXT.html
   struct MemoryMapPlacedInfoEXT
   {
     using NativeType = VkMemoryMapPlacedInfoEXT;
@@ -58790,6 +59470,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkMemoryMetalHandlePropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryMetalHandlePropertiesEXT.html
   struct MemoryMetalHandlePropertiesEXT
   {
     using NativeType = VkMemoryMetalHandlePropertiesEXT;
@@ -58873,6 +59555,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
+  // wrapper struct for struct VkMemoryOpaqueCaptureAddressAllocateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryOpaqueCaptureAddressAllocateInfo.html
   struct MemoryOpaqueCaptureAddressAllocateInfo
   {
     using NativeType = VkMemoryOpaqueCaptureAddressAllocateInfo;
@@ -58971,6 +59655,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MemoryOpaqueCaptureAddressAllocateInfoKHR = MemoryOpaqueCaptureAddressAllocateInfo;
 
+  // wrapper struct for struct VkMemoryPriorityAllocateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryPriorityAllocateInfoEXT.html
   struct MemoryPriorityAllocateInfoEXT
   {
     using NativeType = VkMemoryPriorityAllocateInfoEXT;
@@ -59067,6 +59753,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MemoryPriorityAllocateInfoEXT;
   };
 
+  // wrapper struct for struct VkMemoryRequirements, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryRequirements.html
   struct MemoryRequirements
   {
     using NativeType = VkMemoryRequirements;
@@ -59140,6 +59827,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                         memoryTypeBits = {};
   };
 
+  // wrapper struct for struct VkMemoryRequirements2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryRequirements2.html
   struct MemoryRequirements2
   {
     using NativeType = VkMemoryRequirements2;
@@ -59223,6 +59911,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MemoryRequirements2KHR = MemoryRequirements2;
 
+  // wrapper struct for struct VkMemoryType, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryType.html
   struct MemoryType
   {
     using NativeType = VkMemoryType;
@@ -59292,6 +59981,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                                  heapIndex     = {};
   };
 
+  // wrapper struct for struct VkMemoryUnmapInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryUnmapInfo.html
   struct MemoryUnmapInfo
   {
     using NativeType = VkMemoryUnmapInfo;
@@ -59401,6 +60091,8 @@ namespace VULKAN_HPP_NAMESPACE
   using MemoryUnmapInfoKHR = MemoryUnmapInfo;
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkMemoryWin32HandlePropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryWin32HandlePropertiesKHR.html
   struct MemoryWin32HandlePropertiesKHR
   {
     using NativeType = VkMemoryWin32HandlePropertiesKHR;
@@ -59485,6 +60177,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkMemoryZirconHandlePropertiesFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryZirconHandlePropertiesFUCHSIA.html
   struct MemoryZirconHandlePropertiesFUCHSIA
   {
     using NativeType = VkMemoryZirconHandlePropertiesFUCHSIA;
@@ -59569,6 +60263,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
 #if defined( VK_USE_PLATFORM_METAL_EXT )
+  // wrapper struct for struct VkMetalSurfaceCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMetalSurfaceCreateInfoEXT.html
   struct MetalSurfaceCreateInfoEXT
   {
     using NativeType = VkMetalSurfaceCreateInfoEXT;
@@ -59679,6 +60374,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_METAL_EXT*/
 
+  // wrapper struct for struct VkMicromapBuildInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMicromapBuildInfoEXT.html
   struct MicromapBuildInfoEXT
   {
     using NativeType = VkMicromapBuildInfoEXT;
@@ -59918,6 +60614,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MicromapBuildInfoEXT;
   };
 
+  // wrapper struct for struct VkMicromapBuildSizesInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMicromapBuildSizesInfoEXT.html
   struct MicromapBuildSizesInfoEXT
   {
     using NativeType = VkMicromapBuildSizesInfoEXT;
@@ -60038,6 +60735,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MicromapBuildSizesInfoEXT;
   };
 
+  // wrapper struct for struct VkMicromapCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMicromapCreateInfoEXT.html
   struct MicromapCreateInfoEXT
   {
     using NativeType = VkMicromapCreateInfoEXT;
@@ -60188,6 +60886,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MicromapCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkMicromapTriangleEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMicromapTriangleEXT.html
   struct MicromapTriangleEXT
   {
     using NativeType = VkMicromapTriangleEXT;
@@ -60281,6 +60980,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint16_t format           = {};
   };
 
+  // wrapper struct for struct VkMicromapVersionInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMicromapVersionInfoEXT.html
   struct MicromapVersionInfoEXT
   {
     using NativeType = VkMicromapVersionInfoEXT;
@@ -60377,6 +61077,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MicromapVersionInfoEXT;
   };
 
+  // wrapper struct for struct VkMultiDrawIndexedInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMultiDrawIndexedInfoEXT.html
   struct MultiDrawIndexedInfoEXT
   {
     using NativeType = VkMultiDrawIndexedInfoEXT;
@@ -60471,6 +61172,7 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t  vertexOffset = {};
   };
 
+  // wrapper struct for struct VkMultiDrawInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMultiDrawInfoEXT.html
   struct MultiDrawInfoEXT
   {
     using NativeType = VkMultiDrawInfoEXT;
@@ -60554,6 +61256,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t vertexCount = {};
   };
 
+  // wrapper struct for struct VkMultisamplePropertiesEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMultisamplePropertiesEXT.html
   struct MultisamplePropertiesEXT
   {
     using NativeType = VkMultisamplePropertiesEXT;
@@ -60636,6 +61339,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MultisamplePropertiesEXT;
   };
 
+  // wrapper struct for struct VkMultisampledRenderToSingleSampledInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMultisampledRenderToSingleSampledInfoEXT.html
   struct MultisampledRenderToSingleSampledInfoEXT
   {
     using NativeType = VkMultisampledRenderToSingleSampledInfoEXT;
@@ -60749,6 +61454,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MultisampledRenderToSingleSampledInfoEXT;
   };
 
+  // wrapper struct for struct VkMultiviewPerViewAttributesInfoNVX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMultiviewPerViewAttributesInfoNVX.html
   struct MultiviewPerViewAttributesInfoNVX
   {
     using NativeType = VkMultiviewPerViewAttributesInfoNVX;
@@ -60857,6 +61564,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MultiviewPerViewAttributesInfoNVX;
   };
 
+  // wrapper struct for struct VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM.html
   struct MultiviewPerViewRenderAreasRenderPassBeginInfoQCOM
   {
     using NativeType = VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM;
@@ -60986,6 +61695,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = MultiviewPerViewRenderAreasRenderPassBeginInfoQCOM;
   };
 
+  // wrapper struct for struct VkMutableDescriptorTypeListEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMutableDescriptorTypeListEXT.html
   struct MutableDescriptorTypeListEXT
   {
     using NativeType = VkMutableDescriptorTypeListEXT;
@@ -61093,6 +61803,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MutableDescriptorTypeListVALVE = MutableDescriptorTypeListEXT;
 
+  // wrapper struct for struct VkMutableDescriptorTypeCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkMutableDescriptorTypeCreateInfoEXT.html
   struct MutableDescriptorTypeCreateInfoEXT
   {
     using NativeType = VkMutableDescriptorTypeCreateInfoEXT;
@@ -61229,6 +61941,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using MutableDescriptorTypeCreateInfoVALVE = MutableDescriptorTypeCreateInfoEXT;
 
+  // wrapper struct for struct VkOpaqueCaptureDescriptorDataCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkOpaqueCaptureDescriptorDataCreateInfoEXT.html
   struct OpaqueCaptureDescriptorDataCreateInfoEXT
   {
     using NativeType = VkOpaqueCaptureDescriptorDataCreateInfoEXT;
@@ -61327,6 +62041,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = OpaqueCaptureDescriptorDataCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkOpticalFlowExecuteInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkOpticalFlowExecuteInfoNV.html
   struct OpticalFlowExecuteInfoNV
   {
     using NativeType = VkOpticalFlowExecuteInfoNV;
@@ -61465,6 +62180,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = OpticalFlowExecuteInfoNV;
   };
 
+  // wrapper struct for struct VkOpticalFlowImageFormatInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkOpticalFlowImageFormatInfoNV.html
   struct OpticalFlowImageFormatInfoNV
   {
     using NativeType = VkOpticalFlowImageFormatInfoNV;
@@ -61562,6 +62278,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = OpticalFlowImageFormatInfoNV;
   };
 
+  // wrapper struct for struct VkOpticalFlowImageFormatPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkOpticalFlowImageFormatPropertiesNV.html
   struct OpticalFlowImageFormatPropertiesNV
   {
     using NativeType = VkOpticalFlowImageFormatPropertiesNV;
@@ -61645,6 +62363,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = OpticalFlowImageFormatPropertiesNV;
   };
 
+  // wrapper struct for struct VkOpticalFlowSessionCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkOpticalFlowSessionCreateInfoNV.html
   struct OpticalFlowSessionCreateInfoNV
   {
     using NativeType = VkOpticalFlowSessionCreateInfoNV;
@@ -61830,6 +62550,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = OpticalFlowSessionCreateInfoNV;
   };
 
+  // wrapper struct for struct VkOpticalFlowSessionCreatePrivateDataInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkOpticalFlowSessionCreatePrivateDataInfoNV.html
   struct OpticalFlowSessionCreatePrivateDataInfoNV
   {
     using NativeType = VkOpticalFlowSessionCreatePrivateDataInfoNV;
@@ -61945,6 +62667,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = OpticalFlowSessionCreatePrivateDataInfoNV;
   };
 
+  // wrapper struct for struct VkOutOfBandQueueTypeInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkOutOfBandQueueTypeInfoNV.html
   struct OutOfBandQueueTypeInfoNV
   {
     using NativeType = VkOutOfBandQueueTypeInfoNV;
@@ -62042,6 +62765,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = OutOfBandQueueTypeInfoNV;
   };
 
+  // wrapper struct for struct VkPartitionedAccelerationStructureFlagsNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPartitionedAccelerationStructureFlagsNV.html
   struct PartitionedAccelerationStructureFlagsNV
   {
     using NativeType = VkPartitionedAccelerationStructureFlagsNV;
@@ -62140,6 +62865,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PartitionedAccelerationStructureFlagsNV;
   };
 
+  // wrapper struct for struct VkPartitionedAccelerationStructureUpdateInstanceDataNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPartitionedAccelerationStructureUpdateInstanceDataNV.html
   struct PartitionedAccelerationStructureUpdateInstanceDataNV
   {
     using NativeType = VkPartitionedAccelerationStructureUpdateInstanceDataNV;
@@ -62242,6 +62969,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceAddress accelerationStructure               = {};
   };
 
+  // wrapper struct for struct VkPartitionedAccelerationStructureWriteInstanceDataNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPartitionedAccelerationStructureWriteInstanceDataNV.html
   struct PartitionedAccelerationStructureWriteInstanceDataNV
   {
     using NativeType = VkPartitionedAccelerationStructureWriteInstanceDataNV;
@@ -62418,6 +63147,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceAddress                                   accelerationStructure               = {};
   };
 
+  // wrapper struct for struct VkPartitionedAccelerationStructureWritePartitionTranslationDataNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPartitionedAccelerationStructureWritePartitionTranslationDataNV.html
   struct PartitionedAccelerationStructureWritePartitionTranslationDataNV
   {
     using NativeType = VkPartitionedAccelerationStructureWritePartitionTranslationDataNV;
@@ -62512,6 +63243,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ArrayWrapper1D<float, 3> partitionTranslation = {};
   };
 
+  // wrapper struct for struct VkPastPresentationTimingGOOGLE, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPastPresentationTimingGOOGLE.html
   struct PastPresentationTimingGOOGLE
   {
     using NativeType = VkPastPresentationTimingGOOGLE;
@@ -62595,6 +63327,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t presentMargin       = {};
   };
 
+  // wrapper struct for struct VkPerformanceConfigurationAcquireInfoINTEL, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerformanceConfigurationAcquireInfoINTEL.html
   struct PerformanceConfigurationAcquireInfoINTEL
   {
     using NativeType = VkPerformanceConfigurationAcquireInfoINTEL;
@@ -62696,6 +63430,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PerformanceConfigurationAcquireInfoINTEL;
   };
 
+  // wrapper struct for struct VkPerformanceCounterDescriptionKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerformanceCounterDescriptionKHR.html
   struct PerformanceCounterDescriptionKHR
   {
     using NativeType = VkPerformanceCounterDescriptionKHR;
@@ -62806,6 +63542,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PerformanceCounterDescriptionKHR;
   };
 
+  // wrapper struct for struct VkPerformanceCounterKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerformanceCounterKHR.html
   struct PerformanceCounterKHR
   {
     using NativeType = VkPerformanceCounterKHR;
@@ -62979,6 +63716,7 @@ namespace VULKAN_HPP_NAMESPACE
     double   float64;
   };
 
+  // wrapper struct for struct VkPerformanceMarkerInfoINTEL, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerformanceMarkerInfoINTEL.html
   struct PerformanceMarkerInfoINTEL
   {
     using NativeType = VkPerformanceMarkerInfoINTEL;
@@ -63075,6 +63813,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PerformanceMarkerInfoINTEL;
   };
 
+  // wrapper struct for struct VkPerformanceOverrideInfoINTEL, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerformanceOverrideInfoINTEL.html
   struct PerformanceOverrideInfoINTEL
   {
     using NativeType = VkPerformanceOverrideInfoINTEL;
@@ -63195,6 +63934,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PerformanceOverrideInfoINTEL;
   };
 
+  // wrapper struct for struct VkPerformanceQuerySubmitInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerformanceQuerySubmitInfoKHR.html
   struct PerformanceQuerySubmitInfoKHR
   {
     using NativeType = VkPerformanceQuerySubmitInfoKHR;
@@ -63291,6 +64032,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PerformanceQuerySubmitInfoKHR;
   };
 
+  // wrapper struct for struct VkPerformanceStreamMarkerInfoINTEL, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerformanceStreamMarkerInfoINTEL.html
   struct PerformanceStreamMarkerInfoINTEL
   {
     using NativeType = VkPerformanceStreamMarkerInfoINTEL;
@@ -63458,6 +64201,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkPerformanceValueINTEL, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerformanceValueINTEL.html
   struct PerformanceValueINTEL
   {
     using NativeType = VkPerformanceValueINTEL;
@@ -63514,6 +64258,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::PerformanceValueDataINTEL data = {};
   };
 
+  // wrapper struct for struct VkPhysicalDevice16BitStorageFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevice16BitStorageFeatures.html
   struct PhysicalDevice16BitStorageFeatures
   {
     using NativeType = VkPhysicalDevice16BitStorageFeatures;
@@ -63651,6 +64397,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDevice16BitStorageFeaturesKHR = PhysicalDevice16BitStorageFeatures;
 
+  // wrapper struct for struct VkPhysicalDevice4444FormatsFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevice4444FormatsFeaturesEXT.html
   struct PhysicalDevice4444FormatsFeaturesEXT
   {
     using NativeType = VkPhysicalDevice4444FormatsFeaturesEXT;
@@ -63757,6 +64505,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevice4444FormatsFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDevice8BitStorageFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevice8BitStorageFeatures.html
   struct PhysicalDevice8BitStorageFeatures
   {
     using NativeType = VkPhysicalDevice8BitStorageFeatures;
@@ -63882,6 +64632,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDevice8BitStorageFeaturesKHR = PhysicalDevice8BitStorageFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceASTCDecodeFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceASTCDecodeFeaturesEXT.html
   struct PhysicalDeviceASTCDecodeFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceASTCDecodeFeaturesEXT;
@@ -63980,6 +64732,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceASTCDecodeFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceAccelerationStructureFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceAccelerationStructureFeaturesKHR.html
   struct PhysicalDeviceAccelerationStructureFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceAccelerationStructureFeaturesKHR;
@@ -64136,6 +64890,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceAccelerationStructureFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceAccelerationStructurePropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceAccelerationStructurePropertiesKHR.html
   struct PhysicalDeviceAccelerationStructurePropertiesKHR
   {
     using NativeType = VkPhysicalDeviceAccelerationStructurePropertiesKHR;
@@ -64265,6 +65021,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceAccelerationStructurePropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceAddressBindingReportFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceAddressBindingReportFeaturesEXT.html
   struct PhysicalDeviceAddressBindingReportFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceAddressBindingReportFeaturesEXT;
@@ -64364,6 +65122,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceAddressBindingReportFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceAmigoProfilingFeaturesSEC, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceAmigoProfilingFeaturesSEC.html
   struct PhysicalDeviceAmigoProfilingFeaturesSEC
   {
     using NativeType = VkPhysicalDeviceAmigoProfilingFeaturesSEC;
@@ -64461,6 +65221,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceAmigoProfilingFeaturesSEC;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceAntiLagFeaturesAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceAntiLagFeaturesAMD.html
   struct PhysicalDeviceAntiLagFeaturesAMD
   {
     using NativeType = VkPhysicalDeviceAntiLagFeaturesAMD;
@@ -64557,6 +65319,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceAntiLagFeaturesAMD;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT.html
   struct PhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT;
@@ -64659,6 +65423,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT.html
   struct PhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT;
@@ -64759,6 +65525,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT.html
   struct PhysicalDeviceBlendOperationAdvancedFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT;
@@ -64858,6 +65626,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceBlendOperationAdvancedFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT.html
   struct PhysicalDeviceBlendOperationAdvancedPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT;
@@ -64976,6 +65746,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceBlendOperationAdvancedPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceBorderColorSwizzleFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceBorderColorSwizzleFeaturesEXT.html
   struct PhysicalDeviceBorderColorSwizzleFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceBorderColorSwizzleFeaturesEXT;
@@ -65085,6 +65857,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceBorderColorSwizzleFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceBufferDeviceAddressFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceBufferDeviceAddressFeatures.html
   struct PhysicalDeviceBufferDeviceAddressFeatures
   {
     using NativeType = VkPhysicalDeviceBufferDeviceAddressFeatures;
@@ -65211,6 +65985,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceBufferDeviceAddressFeaturesKHR = PhysicalDeviceBufferDeviceAddressFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceBufferDeviceAddressFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceBufferDeviceAddressFeaturesEXT.html
   struct PhysicalDeviceBufferDeviceAddressFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceBufferDeviceAddressFeaturesEXT;
@@ -65337,6 +66113,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceBufferAddressFeaturesEXT = PhysicalDeviceBufferDeviceAddressFeaturesEXT;
 
+  // wrapper struct for struct VkPhysicalDeviceClusterAccelerationStructureFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceClusterAccelerationStructureFeaturesNV.html
   struct PhysicalDeviceClusterAccelerationStructureFeaturesNV
   {
     using NativeType = VkPhysicalDeviceClusterAccelerationStructureFeaturesNV;
@@ -65437,6 +66215,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceClusterAccelerationStructureFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceClusterAccelerationStructurePropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceClusterAccelerationStructurePropertiesNV.html
   struct PhysicalDeviceClusterAccelerationStructurePropertiesNV
   {
     using NativeType = VkPhysicalDeviceClusterAccelerationStructurePropertiesNV;
@@ -65566,6 +66346,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceClusterAccelerationStructurePropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI.html
   struct PhysicalDeviceClusterCullingShaderFeaturesHUAWEI
   {
     using NativeType = VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI;
@@ -65676,6 +66458,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceClusterCullingShaderFeaturesHUAWEI;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI.html
   struct PhysicalDeviceClusterCullingShaderPropertiesHUAWEI
   {
     using NativeType = VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI;
@@ -65777,6 +66561,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceClusterCullingShaderPropertiesHUAWEI;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI.html
   struct PhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI
   {
     using NativeType = VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI;
@@ -65877,6 +66663,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCoherentMemoryFeaturesAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCoherentMemoryFeaturesAMD.html
   struct PhysicalDeviceCoherentMemoryFeaturesAMD
   {
     using NativeType = VkPhysicalDeviceCoherentMemoryFeaturesAMD;
@@ -65975,6 +66763,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCoherentMemoryFeaturesAMD;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceColorWriteEnableFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceColorWriteEnableFeaturesEXT.html
   struct PhysicalDeviceColorWriteEnableFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceColorWriteEnableFeaturesEXT;
@@ -66073,6 +66863,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceColorWriteEnableFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCommandBufferInheritanceFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCommandBufferInheritanceFeaturesNV.html
   struct PhysicalDeviceCommandBufferInheritanceFeaturesNV
   {
     using NativeType = VkPhysicalDeviceCommandBufferInheritanceFeaturesNV;
@@ -66172,6 +66964,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCommandBufferInheritanceFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR.html
   struct PhysicalDeviceComputeShaderDerivativesFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR;
@@ -66285,6 +67079,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceComputeShaderDerivativesFeaturesNV = PhysicalDeviceComputeShaderDerivativesFeaturesKHR;
 
+  // wrapper struct for struct VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR.html
   struct PhysicalDeviceComputeShaderDerivativesPropertiesKHR
   {
     using NativeType = VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR;
@@ -66370,6 +67166,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceComputeShaderDerivativesPropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceConditionalRenderingFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceConditionalRenderingFeaturesEXT.html
   struct PhysicalDeviceConditionalRenderingFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceConditionalRenderingFeaturesEXT;
@@ -66480,6 +67278,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceConditionalRenderingFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceConservativeRasterizationPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceConservativeRasterizationPropertiesEXT.html
   struct PhysicalDeviceConservativeRasterizationPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceConservativeRasterizationPropertiesEXT;
@@ -66616,6 +67416,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceConservativeRasterizationPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCooperativeMatrix2FeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeMatrix2FeaturesNV.html
   struct PhysicalDeviceCooperativeMatrix2FeaturesNV
   {
     using NativeType = VkPhysicalDeviceCooperativeMatrix2FeaturesNV;
@@ -66795,6 +67597,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeMatrix2FeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCooperativeMatrix2PropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeMatrix2PropertiesNV.html
   struct PhysicalDeviceCooperativeMatrix2PropertiesNV
   {
     using NativeType = VkPhysicalDeviceCooperativeMatrix2PropertiesNV;
@@ -66891,6 +67695,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeMatrix2PropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCooperativeMatrixFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeMatrixFeaturesKHR.html
   struct PhysicalDeviceCooperativeMatrixFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceCooperativeMatrixFeaturesKHR;
@@ -67000,6 +67806,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeMatrixFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCooperativeMatrixFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeMatrixFeaturesNV.html
   struct PhysicalDeviceCooperativeMatrixFeaturesNV
   {
     using NativeType = VkPhysicalDeviceCooperativeMatrixFeaturesNV;
@@ -67109,6 +67917,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeMatrixFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCooperativeMatrixPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeMatrixPropertiesKHR.html
   struct PhysicalDeviceCooperativeMatrixPropertiesKHR
   {
     using NativeType = VkPhysicalDeviceCooperativeMatrixPropertiesKHR;
@@ -67192,6 +68002,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeMatrixPropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCooperativeMatrixPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeMatrixPropertiesNV.html
   struct PhysicalDeviceCooperativeMatrixPropertiesNV
   {
     using NativeType = VkPhysicalDeviceCooperativeMatrixPropertiesNV;
@@ -67275,6 +68087,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeMatrixPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCooperativeVectorFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeVectorFeaturesNV.html
   struct PhysicalDeviceCooperativeVectorFeaturesNV
   {
     using NativeType = VkPhysicalDeviceCooperativeVectorFeaturesNV;
@@ -67384,6 +68198,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeVectorFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCooperativeVectorPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeVectorPropertiesNV.html
   struct PhysicalDeviceCooperativeVectorPropertiesNV
   {
     using NativeType = VkPhysicalDeviceCooperativeVectorPropertiesNV;
@@ -67489,6 +68305,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeVectorPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCopyMemoryIndirectFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html
   struct PhysicalDeviceCopyMemoryIndirectFeaturesNV
   {
     using NativeType = VkPhysicalDeviceCopyMemoryIndirectFeaturesNV;
@@ -67586,6 +68404,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCopyMemoryIndirectFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCopyMemoryIndirectPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html
   struct PhysicalDeviceCopyMemoryIndirectPropertiesNV
   {
     using NativeType = VkPhysicalDeviceCopyMemoryIndirectPropertiesNV;
@@ -67669,6 +68489,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCopyMemoryIndirectPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCornerSampledImageFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCornerSampledImageFeaturesNV.html
   struct PhysicalDeviceCornerSampledImageFeaturesNV
   {
     using NativeType = VkPhysicalDeviceCornerSampledImageFeaturesNV;
@@ -67767,6 +68589,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCornerSampledImageFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCoverageReductionModeFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCoverageReductionModeFeaturesNV.html
   struct PhysicalDeviceCoverageReductionModeFeaturesNV
   {
     using NativeType = VkPhysicalDeviceCoverageReductionModeFeaturesNV;
@@ -67866,6 +68690,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCoverageReductionModeFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCubicClampFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCubicClampFeaturesQCOM.html
   struct PhysicalDeviceCubicClampFeaturesQCOM
   {
     using NativeType = VkPhysicalDeviceCubicClampFeaturesQCOM;
@@ -67962,6 +68788,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCubicClampFeaturesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCubicWeightsFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCubicWeightsFeaturesQCOM.html
   struct PhysicalDeviceCubicWeightsFeaturesQCOM
   {
     using NativeType = VkPhysicalDeviceCubicWeightsFeaturesQCOM;
@@ -68061,6 +68889,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDeviceCudaKernelLaunchFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCudaKernelLaunchFeaturesNV.html
   struct PhysicalDeviceCudaKernelLaunchFeaturesNV
   {
     using NativeType = VkPhysicalDeviceCudaKernelLaunchFeaturesNV;
@@ -68161,6 +68991,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDeviceCudaKernelLaunchPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCudaKernelLaunchPropertiesNV.html
   struct PhysicalDeviceCudaKernelLaunchPropertiesNV
   {
     using NativeType = VkPhysicalDeviceCudaKernelLaunchPropertiesNV;
@@ -68249,6 +69081,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
+  // wrapper struct for struct VkPhysicalDeviceCustomBorderColorFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCustomBorderColorFeaturesEXT.html
   struct PhysicalDeviceCustomBorderColorFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceCustomBorderColorFeaturesEXT;
@@ -68358,6 +69192,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCustomBorderColorFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCustomBorderColorPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCustomBorderColorPropertiesEXT.html
   struct PhysicalDeviceCustomBorderColorPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceCustomBorderColorPropertiesEXT;
@@ -68441,6 +69277,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCustomBorderColorPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV.html
   struct PhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV
   {
     using NativeType = VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV;
@@ -68542,6 +69380,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDepthBiasControlFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDepthBiasControlFeaturesEXT.html
   struct PhysicalDeviceDepthBiasControlFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceDepthBiasControlFeaturesEXT;
@@ -68676,6 +69516,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDepthBiasControlFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDepthClampControlFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDepthClampControlFeaturesEXT.html
   struct PhysicalDeviceDepthClampControlFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceDepthClampControlFeaturesEXT;
@@ -68774,6 +69616,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDepthClampControlFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDepthClampZeroOneFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDepthClampZeroOneFeaturesKHR.html
   struct PhysicalDeviceDepthClampZeroOneFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceDepthClampZeroOneFeaturesKHR;
@@ -68874,6 +69718,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceDepthClampZeroOneFeaturesEXT = PhysicalDeviceDepthClampZeroOneFeaturesKHR;
 
+  // wrapper struct for struct VkPhysicalDeviceDepthClipControlFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDepthClipControlFeaturesEXT.html
   struct PhysicalDeviceDepthClipControlFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceDepthClipControlFeaturesEXT;
@@ -68972,6 +69818,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDepthClipControlFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDepthClipEnableFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDepthClipEnableFeaturesEXT.html
   struct PhysicalDeviceDepthClipEnableFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceDepthClipEnableFeaturesEXT;
@@ -69069,6 +69917,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDepthClipEnableFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDepthStencilResolveProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDepthStencilResolveProperties.html
   struct PhysicalDeviceDepthStencilResolveProperties
   {
     using NativeType = VkPhysicalDeviceDepthStencilResolveProperties;
@@ -69170,6 +70020,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceDepthStencilResolvePropertiesKHR = PhysicalDeviceDepthStencilResolveProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT.html
   struct PhysicalDeviceDescriptorBufferDensityMapPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT;
@@ -69256,6 +70108,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDescriptorBufferDensityMapPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDescriptorBufferFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDescriptorBufferFeaturesEXT.html
   struct PhysicalDeviceDescriptorBufferFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceDescriptorBufferFeaturesEXT;
@@ -69392,6 +70246,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDescriptorBufferFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDescriptorBufferPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDescriptorBufferPropertiesEXT.html
   struct PhysicalDeviceDescriptorBufferPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceDescriptorBufferPropertiesEXT;
@@ -69669,6 +70525,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDescriptorBufferPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDescriptorIndexingFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDescriptorIndexingFeatures.html
   struct PhysicalDeviceDescriptorIndexingFeatures
   {
     using NativeType = VkPhysicalDeviceDescriptorIndexingFeatures;
@@ -70021,6 +70879,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceDescriptorIndexingFeaturesEXT = PhysicalDeviceDescriptorIndexingFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceDescriptorIndexingProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDescriptorIndexingProperties.html
   struct PhysicalDeviceDescriptorIndexingProperties
   {
     using NativeType = VkPhysicalDeviceDescriptorIndexingProperties;
@@ -70241,6 +71101,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceDescriptorIndexingPropertiesEXT = PhysicalDeviceDescriptorIndexingProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV.html
   struct PhysicalDeviceDescriptorPoolOverallocationFeaturesNV
   {
     using NativeType = VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV;
@@ -70341,6 +71203,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDescriptorPoolOverallocationFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE.html
   struct PhysicalDeviceDescriptorSetHostMappingFeaturesVALVE
   {
     using NativeType = VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE;
@@ -70441,6 +71305,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDescriptorSetHostMappingFeaturesVALVE;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV.html
   struct PhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV
   {
     using NativeType = VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV;
@@ -70568,6 +71434,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT.html
   struct PhysicalDeviceDeviceGeneratedCommandsFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT;
@@ -70678,6 +71546,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDeviceGeneratedCommandsFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV.html
   struct PhysicalDeviceDeviceGeneratedCommandsFeaturesNV
   {
     using NativeType = VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV;
@@ -70777,6 +71647,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDeviceGeneratedCommandsFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT.html
   struct PhysicalDeviceDeviceGeneratedCommandsPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT;
@@ -70932,6 +71804,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDeviceGeneratedCommandsPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV.html
   struct PhysicalDeviceDeviceGeneratedCommandsPropertiesNV
   {
     using NativeType = VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV;
@@ -71068,6 +71942,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDeviceGeneratedCommandsPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDeviceMemoryReportFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDeviceMemoryReportFeaturesEXT.html
   struct PhysicalDeviceDeviceMemoryReportFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceDeviceMemoryReportFeaturesEXT;
@@ -71166,6 +72042,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDeviceMemoryReportFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDiagnosticsConfigFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDiagnosticsConfigFeaturesNV.html
   struct PhysicalDeviceDiagnosticsConfigFeaturesNV
   {
     using NativeType = VkPhysicalDeviceDiagnosticsConfigFeaturesNV;
@@ -71264,6 +72142,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDiagnosticsConfigFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDiscardRectanglePropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDiscardRectanglePropertiesEXT.html
   struct PhysicalDeviceDiscardRectanglePropertiesEXT
   {
     using NativeType = VkPhysicalDeviceDiscardRectanglePropertiesEXT;
@@ -71347,6 +72227,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDeviceDisplacementMicromapFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDisplacementMicromapFeaturesNV.html
   struct PhysicalDeviceDisplacementMicromapFeaturesNV
   {
     using NativeType = VkPhysicalDeviceDisplacementMicromapFeaturesNV;
@@ -71447,6 +72329,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDeviceDisplacementMicromapPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDisplacementMicromapPropertiesNV.html
   struct PhysicalDeviceDisplacementMicromapPropertiesNV
   {
     using NativeType = VkPhysicalDeviceDisplacementMicromapPropertiesNV;
@@ -71532,6 +72416,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
+  // wrapper struct for struct VkPhysicalDeviceDriverProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDriverProperties.html
   struct PhysicalDeviceDriverProperties
   {
     using NativeType = VkPhysicalDeviceDriverProperties;
@@ -71644,6 +72530,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceDriverPropertiesKHR = PhysicalDeviceDriverProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceDrmPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDrmPropertiesEXT.html
   struct PhysicalDeviceDrmPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceDrmPropertiesEXT;
@@ -71751,6 +72639,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDrmPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceDynamicRenderingFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDynamicRenderingFeatures.html
   struct PhysicalDeviceDynamicRenderingFeatures
   {
     using NativeType = VkPhysicalDeviceDynamicRenderingFeatures;
@@ -71850,6 +72740,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceDynamicRenderingFeaturesKHR = PhysicalDeviceDynamicRenderingFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceDynamicRenderingLocalReadFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDynamicRenderingLocalReadFeatures.html
   struct PhysicalDeviceDynamicRenderingLocalReadFeatures
   {
     using NativeType = VkPhysicalDeviceDynamicRenderingLocalReadFeatures;
@@ -71951,6 +72843,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceDynamicRenderingLocalReadFeaturesKHR = PhysicalDeviceDynamicRenderingLocalReadFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT.html
   struct PhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT;
@@ -72053,6 +72947,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceExclusiveScissorFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExclusiveScissorFeaturesNV.html
   struct PhysicalDeviceExclusiveScissorFeaturesNV
   {
     using NativeType = VkPhysicalDeviceExclusiveScissorFeaturesNV;
@@ -72150,6 +73046,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceExclusiveScissorFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceExtendedDynamicState2FeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExtendedDynamicState2FeaturesEXT.html
   struct PhysicalDeviceExtendedDynamicState2FeaturesEXT
   {
     using NativeType = VkPhysicalDeviceExtendedDynamicState2FeaturesEXT;
@@ -72275,6 +73173,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceExtendedDynamicState2FeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceExtendedDynamicState3FeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html
   struct PhysicalDeviceExtendedDynamicState3FeaturesEXT
   {
     using NativeType = VkPhysicalDeviceExtendedDynamicState3FeaturesEXT;
@@ -72770,6 +73670,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceExtendedDynamicState3FeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceExtendedDynamicState3PropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExtendedDynamicState3PropertiesEXT.html
   struct PhysicalDeviceExtendedDynamicState3PropertiesEXT
   {
     using NativeType = VkPhysicalDeviceExtendedDynamicState3PropertiesEXT;
@@ -72869,6 +73771,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceExtendedDynamicState3PropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceExtendedDynamicStateFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExtendedDynamicStateFeaturesEXT.html
   struct PhysicalDeviceExtendedDynamicStateFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceExtendedDynamicStateFeaturesEXT;
@@ -72968,6 +73872,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceExtendedDynamicStateFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV.html
   struct PhysicalDeviceExtendedSparseAddressSpaceFeaturesNV
   {
     using NativeType = VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV;
@@ -73068,6 +73974,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceExtendedSparseAddressSpaceFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV.html
   struct PhysicalDeviceExtendedSparseAddressSpacePropertiesNV
   {
     using NativeType = VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV;
@@ -73164,6 +74072,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceExtendedSparseAddressSpacePropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceExternalBufferInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalBufferInfo.html
   struct PhysicalDeviceExternalBufferInfo
   {
     using NativeType = VkPhysicalDeviceExternalBufferInfo;
@@ -73287,6 +74197,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceExternalBufferInfoKHR = PhysicalDeviceExternalBufferInfo;
 
+  // wrapper struct for struct VkPhysicalDeviceExternalFenceInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalFenceInfo.html
   struct PhysicalDeviceExternalFenceInfo
   {
     using NativeType = VkPhysicalDeviceExternalFenceInfo;
@@ -73389,6 +74301,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PhysicalDeviceExternalFenceInfoKHR = PhysicalDeviceExternalFenceInfo;
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkPhysicalDeviceExternalFormatResolveFeaturesANDROID, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalFormatResolveFeaturesANDROID.html
   struct PhysicalDeviceExternalFormatResolveFeaturesANDROID
   {
     using NativeType = VkPhysicalDeviceExternalFormatResolveFeaturesANDROID;
@@ -73491,6 +74405,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
 #if defined( VK_USE_PLATFORM_ANDROID_KHR )
+  // wrapper struct for struct VkPhysicalDeviceExternalFormatResolvePropertiesANDROID, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalFormatResolvePropertiesANDROID.html
   struct PhysicalDeviceExternalFormatResolvePropertiesANDROID
   {
     using NativeType = VkPhysicalDeviceExternalFormatResolvePropertiesANDROID;
@@ -73591,6 +74507,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_ANDROID_KHR*/
 
+  // wrapper struct for struct VkPhysicalDeviceExternalImageFormatInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalImageFormatInfo.html
   struct PhysicalDeviceExternalImageFormatInfo
   {
     using NativeType = VkPhysicalDeviceExternalImageFormatInfo;
@@ -73692,6 +74610,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceExternalImageFormatInfoKHR = PhysicalDeviceExternalImageFormatInfo;
 
+  // wrapper struct for struct VkPhysicalDeviceExternalMemoryHostPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalMemoryHostPropertiesEXT.html
   struct PhysicalDeviceExternalMemoryHostPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceExternalMemoryHostPropertiesEXT;
@@ -73776,6 +74696,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceExternalMemoryHostPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceExternalMemoryRDMAFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalMemoryRDMAFeaturesNV.html
   struct PhysicalDeviceExternalMemoryRDMAFeaturesNV
   {
     using NativeType = VkPhysicalDeviceExternalMemoryRDMAFeaturesNV;
@@ -73875,6 +74797,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_SCREEN_QNX )
+  // wrapper struct for struct VkPhysicalDeviceExternalMemoryScreenBufferFeaturesQNX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalMemoryScreenBufferFeaturesQNX.html
   struct PhysicalDeviceExternalMemoryScreenBufferFeaturesQNX
   {
     using NativeType = VkPhysicalDeviceExternalMemoryScreenBufferFeaturesQNX;
@@ -73976,6 +74900,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_SCREEN_QNX*/
 
+  // wrapper struct for struct VkPhysicalDeviceExternalSemaphoreInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalSemaphoreInfo.html
   struct PhysicalDeviceExternalSemaphoreInfo
   {
     using NativeType = VkPhysicalDeviceExternalSemaphoreInfo;
@@ -74077,6 +75003,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceExternalSemaphoreInfoKHR = PhysicalDeviceExternalSemaphoreInfo;
 
+  // wrapper struct for struct VkPhysicalDeviceFaultFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFaultFeaturesEXT.html
   struct PhysicalDeviceFaultFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceFaultFeaturesEXT;
@@ -74185,6 +75113,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFaultFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFeatures2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFeatures2.html
   struct PhysicalDeviceFeatures2
   {
     using NativeType = VkPhysicalDeviceFeatures2;
@@ -74283,6 +75212,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceFeatures2KHR = PhysicalDeviceFeatures2;
 
+  // wrapper struct for struct VkPhysicalDeviceFloatControlsProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFloatControlsProperties.html
   struct PhysicalDeviceFloatControlsProperties
   {
     using NativeType = VkPhysicalDeviceFloatControlsProperties;
@@ -74464,6 +75395,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceFloatControlsPropertiesKHR = PhysicalDeviceFloatControlsProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMap2FeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMap2FeaturesEXT.html
   struct PhysicalDeviceFragmentDensityMap2FeaturesEXT
   {
     using NativeType = VkPhysicalDeviceFragmentDensityMap2FeaturesEXT;
@@ -74562,6 +75495,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentDensityMap2FeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMap2PropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMap2PropertiesEXT.html
   struct PhysicalDeviceFragmentDensityMap2PropertiesEXT
   {
     using NativeType = VkPhysicalDeviceFragmentDensityMap2PropertiesEXT;
@@ -74662,6 +75597,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentDensityMap2PropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapFeaturesEXT.html
   struct PhysicalDeviceFragmentDensityMapFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceFragmentDensityMapFeaturesEXT;
@@ -74786,6 +75723,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentDensityMapFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM.html
   struct PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM
   {
     using NativeType = VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM;
@@ -74886,6 +75825,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM.html
   struct PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM
   {
     using NativeType = VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM;
@@ -74971,6 +75912,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapPropertiesEXT.html
   struct PhysicalDeviceFragmentDensityMapPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceFragmentDensityMapPropertiesEXT;
@@ -75066,6 +76009,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentDensityMapPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR.html
   struct PhysicalDeviceFragmentShaderBarycentricFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR;
@@ -75168,6 +76113,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceFragmentShaderBarycentricFeaturesNV = PhysicalDeviceFragmentShaderBarycentricFeaturesKHR;
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR.html
   struct PhysicalDeviceFragmentShaderBarycentricPropertiesKHR
   {
     using NativeType = VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR;
@@ -75255,6 +76202,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentShaderBarycentricPropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html
   struct PhysicalDeviceFragmentShaderInterlockFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT;
@@ -75380,6 +76329,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentShaderInterlockFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html
   struct PhysicalDeviceFragmentShadingRateEnumsFeaturesNV
   {
     using NativeType = VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV;
@@ -75505,6 +76456,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentShadingRateEnumsFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV.html
   struct PhysicalDeviceFragmentShadingRateEnumsPropertiesNV
   {
     using NativeType = VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV;
@@ -75538,21 +76491,6 @@ namespace VULKAN_HPP_NAMESPACE
       *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceFragmentShadingRateEnumsPropertiesNV const *>( &rhs );
       return *this;
     }
-
-#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceFragmentShadingRateEnumsPropertiesNV & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceFragmentShadingRateEnumsPropertiesNV &
-      setMaxFragmentShadingRateInvocationCount( VULKAN_HPP_NAMESPACE::SampleCountFlagBits maxFragmentShadingRateInvocationCount_ ) VULKAN_HPP_NOEXCEPT
-    {
-      maxFragmentShadingRateInvocationCount = maxFragmentShadingRateInvocationCount_;
-      return *this;
-    }
-#endif /*VULKAN_HPP_NO_SETTERS*/
 
     operator VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV const &() const VULKAN_HPP_NOEXCEPT
     {
@@ -75606,6 +76544,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentShadingRateEnumsPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentShadingRateFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentShadingRateFeaturesKHR.html
   struct PhysicalDeviceFragmentShadingRateFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceFragmentShadingRateFeaturesKHR;
@@ -75729,6 +76669,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentShadingRateFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentShadingRateKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentShadingRateKHR.html
   struct PhysicalDeviceFragmentShadingRateKHR
   {
     using NativeType = VkPhysicalDeviceFragmentShadingRateKHR;
@@ -75816,6 +76758,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentShadingRateKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFragmentShadingRatePropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentShadingRatePropertiesKHR.html
   struct PhysicalDeviceFragmentShadingRatePropertiesKHR
   {
     using NativeType = VkPhysicalDeviceFragmentShadingRatePropertiesKHR;
@@ -76001,6 +76945,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentShadingRatePropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceFrameBoundaryFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFrameBoundaryFeaturesEXT.html
   struct PhysicalDeviceFrameBoundaryFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceFrameBoundaryFeaturesEXT;
@@ -76097,6 +77043,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFrameBoundaryFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceGlobalPriorityQueryFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceGlobalPriorityQueryFeatures.html
   struct PhysicalDeviceGlobalPriorityQueryFeatures
   {
     using NativeType = VkPhysicalDeviceGlobalPriorityQueryFeatures;
@@ -76198,6 +77146,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PhysicalDeviceGlobalPriorityQueryFeaturesEXT = PhysicalDeviceGlobalPriorityQueryFeatures;
   using PhysicalDeviceGlobalPriorityQueryFeaturesKHR = PhysicalDeviceGlobalPriorityQueryFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT.html
   struct PhysicalDeviceGraphicsPipelineLibraryFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT;
@@ -76297,6 +77247,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceGraphicsPipelineLibraryFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT.html
   struct PhysicalDeviceGraphicsPipelineLibraryPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT;
@@ -76409,6 +77361,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceGraphicsPipelineLibraryPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceGroupProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceGroupProperties.html
   struct PhysicalDeviceGroupProperties
   {
     using NativeType = VkPhysicalDeviceGroupProperties;
@@ -76520,6 +77474,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceGroupPropertiesKHR = PhysicalDeviceGroupProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceHdrVividFeaturesHUAWEI, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceHdrVividFeaturesHUAWEI.html
   struct PhysicalDeviceHdrVividFeaturesHUAWEI
   {
     using NativeType = VkPhysicalDeviceHdrVividFeaturesHUAWEI;
@@ -76616,6 +77572,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceHdrVividFeaturesHUAWEI;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceHostImageCopyFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceHostImageCopyFeatures.html
   struct PhysicalDeviceHostImageCopyFeatures
   {
     using NativeType = VkPhysicalDeviceHostImageCopyFeatures;
@@ -76714,6 +77672,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceHostImageCopyFeaturesEXT = PhysicalDeviceHostImageCopyFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceHostImageCopyProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceHostImageCopyProperties.html
   struct PhysicalDeviceHostImageCopyProperties
   {
     using NativeType = VkPhysicalDeviceHostImageCopyProperties;
@@ -76909,6 +77869,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceHostImageCopyPropertiesEXT = PhysicalDeviceHostImageCopyProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceHostQueryResetFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceHostQueryResetFeatures.html
   struct PhysicalDeviceHostQueryResetFeatures
   {
     using NativeType = VkPhysicalDeviceHostQueryResetFeatures;
@@ -77007,6 +77969,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceHostQueryResetFeaturesEXT = PhysicalDeviceHostQueryResetFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceIDProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceIDProperties.html
   struct PhysicalDeviceIDProperties
   {
     using NativeType = VkPhysicalDeviceIDProperties;
@@ -77111,6 +78074,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceIDPropertiesKHR = PhysicalDeviceIDProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceImage2DViewOf3DFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImage2DViewOf3DFeaturesEXT.html
   struct PhysicalDeviceImage2DViewOf3DFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceImage2DViewOf3DFeaturesEXT;
@@ -77218,6 +78183,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImage2DViewOf3DFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageAlignmentControlFeaturesMESA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageAlignmentControlFeaturesMESA.html
   struct PhysicalDeviceImageAlignmentControlFeaturesMESA
   {
     using NativeType = VkPhysicalDeviceImageAlignmentControlFeaturesMESA;
@@ -77317,6 +78284,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageAlignmentControlFeaturesMESA;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageAlignmentControlPropertiesMESA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageAlignmentControlPropertiesMESA.html
   struct PhysicalDeviceImageAlignmentControlPropertiesMESA
   {
     using NativeType = VkPhysicalDeviceImageAlignmentControlPropertiesMESA;
@@ -77417,6 +78386,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageAlignmentControlPropertiesMESA;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageCompressionControlFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageCompressionControlFeaturesEXT.html
   struct PhysicalDeviceImageCompressionControlFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceImageCompressionControlFeaturesEXT;
@@ -77516,6 +78487,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageCompressionControlFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT.html
   struct PhysicalDeviceImageCompressionControlSwapchainFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT;
@@ -77618,6 +78591,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageCompressionControlSwapchainFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageDrmFormatModifierInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageDrmFormatModifierInfoEXT.html
   struct PhysicalDeviceImageDrmFormatModifierInfoEXT
   {
     using NativeType = VkPhysicalDeviceImageDrmFormatModifierInfoEXT;
@@ -77773,6 +78748,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageDrmFormatModifierInfoEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageFormatInfo2, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageFormatInfo2.html
   struct PhysicalDeviceImageFormatInfo2
   {
     using NativeType = VkPhysicalDeviceImageFormatInfo2;
@@ -77915,6 +78892,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceImageFormatInfo2KHR = PhysicalDeviceImageFormatInfo2;
 
+  // wrapper struct for struct VkPhysicalDeviceImageProcessing2FeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageProcessing2FeaturesQCOM.html
   struct PhysicalDeviceImageProcessing2FeaturesQCOM
   {
     using NativeType = VkPhysicalDeviceImageProcessing2FeaturesQCOM;
@@ -78013,6 +78992,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageProcessing2FeaturesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageProcessing2PropertiesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageProcessing2PropertiesQCOM.html
   struct PhysicalDeviceImageProcessing2PropertiesQCOM
   {
     using NativeType = VkPhysicalDeviceImageProcessing2PropertiesQCOM;
@@ -78096,6 +79077,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageProcessing2PropertiesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageProcessingFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageProcessingFeaturesQCOM.html
   struct PhysicalDeviceImageProcessingFeaturesQCOM
   {
     using NativeType = VkPhysicalDeviceImageProcessingFeaturesQCOM;
@@ -78219,6 +79202,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageProcessingFeaturesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageProcessingPropertiesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageProcessingPropertiesQCOM.html
   struct PhysicalDeviceImageProcessingPropertiesQCOM
   {
     using NativeType = VkPhysicalDeviceImageProcessingPropertiesQCOM;
@@ -78318,6 +79303,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageProcessingPropertiesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageRobustnessFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageRobustnessFeatures.html
   struct PhysicalDeviceImageRobustnessFeatures
   {
     using NativeType = VkPhysicalDeviceImageRobustnessFeatures;
@@ -78417,6 +79404,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceImageRobustnessFeaturesEXT = PhysicalDeviceImageRobustnessFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT.html
   struct PhysicalDeviceImageSlicedViewOf3DFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT;
@@ -78515,6 +79504,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageSlicedViewOf3DFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageViewImageFormatInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageViewImageFormatInfoEXT.html
   struct PhysicalDeviceImageViewImageFormatInfoEXT
   {
     using NativeType = VkPhysicalDeviceImageViewImageFormatInfoEXT;
@@ -78614,6 +79605,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageViewImageFormatInfoEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImageViewMinLodFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImageViewMinLodFeaturesEXT.html
   struct PhysicalDeviceImageViewMinLodFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceImageViewMinLodFeaturesEXT;
@@ -78710,6 +79703,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceImageViewMinLodFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceImagelessFramebufferFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceImagelessFramebufferFeatures.html
   struct PhysicalDeviceImagelessFramebufferFeatures
   {
     using NativeType = VkPhysicalDeviceImagelessFramebufferFeatures;
@@ -78810,6 +79805,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceImagelessFramebufferFeaturesKHR = PhysicalDeviceImagelessFramebufferFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceIndexTypeUint8Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceIndexTypeUint8Features.html
   struct PhysicalDeviceIndexTypeUint8Features
   {
     using NativeType = VkPhysicalDeviceIndexTypeUint8Features;
@@ -78909,6 +79906,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PhysicalDeviceIndexTypeUint8FeaturesEXT = PhysicalDeviceIndexTypeUint8Features;
   using PhysicalDeviceIndexTypeUint8FeaturesKHR = PhysicalDeviceIndexTypeUint8Features;
 
+  // wrapper struct for struct VkPhysicalDeviceInheritedViewportScissorFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceInheritedViewportScissorFeaturesNV.html
   struct PhysicalDeviceInheritedViewportScissorFeaturesNV
   {
     using NativeType = VkPhysicalDeviceInheritedViewportScissorFeaturesNV;
@@ -79008,6 +80007,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceInheritedViewportScissorFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceInlineUniformBlockFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceInlineUniformBlockFeatures.html
   struct PhysicalDeviceInlineUniformBlockFeatures
   {
     using NativeType = VkPhysicalDeviceInlineUniformBlockFeatures;
@@ -79119,6 +80120,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceInlineUniformBlockFeaturesEXT = PhysicalDeviceInlineUniformBlockFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceInlineUniformBlockProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceInlineUniformBlockProperties.html
   struct PhysicalDeviceInlineUniformBlockProperties
   {
     using NativeType = VkPhysicalDeviceInlineUniformBlockProperties;
@@ -79232,6 +80235,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceInlineUniformBlockPropertiesEXT = PhysicalDeviceInlineUniformBlockProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceInvocationMaskFeaturesHUAWEI, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceInvocationMaskFeaturesHUAWEI.html
   struct PhysicalDeviceInvocationMaskFeaturesHUAWEI
   {
     using NativeType = VkPhysicalDeviceInvocationMaskFeaturesHUAWEI;
@@ -79329,6 +80334,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceInvocationMaskFeaturesHUAWEI;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceLayeredApiPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLayeredApiPropertiesKHR.html
   struct PhysicalDeviceLayeredApiPropertiesKHR
   {
     using NativeType = VkPhysicalDeviceLayeredApiPropertiesKHR;
@@ -79428,6 +80435,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceLayeredApiPropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceLayeredApiPropertiesListKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLayeredApiPropertiesListKHR.html
   struct PhysicalDeviceLayeredApiPropertiesListKHR
   {
     using NativeType = VkPhysicalDeviceLayeredApiPropertiesListKHR;
@@ -79556,6 +80565,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceLayeredApiPropertiesListKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceLimits, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLimits.html
   struct PhysicalDeviceLimits
   {
     using NativeType = VkPhysicalDeviceLimits;
@@ -80212,6 +81222,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize                  nonCoherentAtomSize                             = {};
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSparseProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSparseProperties.html
   struct PhysicalDeviceSparseProperties
   {
     using NativeType = VkPhysicalDeviceSparseProperties;
@@ -80305,6 +81317,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Bool32 residencyNonResidentStrict               = {};
   };
 
+  // wrapper struct for struct VkPhysicalDeviceProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceProperties.html
   struct PhysicalDeviceProperties
   {
     using NativeType = VkPhysicalDeviceProperties;
@@ -80427,6 +81440,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::PhysicalDeviceSparseProperties                         sparseProperties  = {};
   };
 
+  // wrapper struct for struct VkPhysicalDeviceProperties2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceProperties2.html
   struct PhysicalDeviceProperties2
   {
     using NativeType = VkPhysicalDeviceProperties2;
@@ -80512,6 +81526,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceProperties2KHR = PhysicalDeviceProperties2;
 
+  // wrapper struct for struct VkPhysicalDeviceLayeredApiVulkanPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLayeredApiVulkanPropertiesKHR.html
   struct PhysicalDeviceLayeredApiVulkanPropertiesKHR
   {
     using NativeType = VkPhysicalDeviceLayeredApiVulkanPropertiesKHR;
@@ -80596,6 +81612,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceLayeredApiVulkanPropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceLayeredDriverPropertiesMSFT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLayeredDriverPropertiesMSFT.html
   struct PhysicalDeviceLayeredDriverPropertiesMSFT
   {
     using NativeType = VkPhysicalDeviceLayeredDriverPropertiesMSFT;
@@ -80680,6 +81698,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceLayeredDriverPropertiesMSFT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceLegacyDitheringFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLegacyDitheringFeaturesEXT.html
   struct PhysicalDeviceLegacyDitheringFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceLegacyDitheringFeaturesEXT;
@@ -80777,6 +81797,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceLegacyDitheringFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT.html
   struct PhysicalDeviceLegacyVertexAttributesFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT;
@@ -80876,6 +81898,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceLegacyVertexAttributesFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT.html
   struct PhysicalDeviceLegacyVertexAttributesPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT;
@@ -80976,6 +82000,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceLegacyVertexAttributesPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceLineRasterizationFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLineRasterizationFeatures.html
   struct PhysicalDeviceLineRasterizationFeatures
   {
     using NativeType = VkPhysicalDeviceLineRasterizationFeatures;
@@ -81133,6 +82159,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PhysicalDeviceLineRasterizationFeaturesEXT = PhysicalDeviceLineRasterizationFeatures;
   using PhysicalDeviceLineRasterizationFeaturesKHR = PhysicalDeviceLineRasterizationFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceLineRasterizationProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLineRasterizationProperties.html
   struct PhysicalDeviceLineRasterizationProperties
   {
     using NativeType = VkPhysicalDeviceLineRasterizationProperties;
@@ -81218,6 +82246,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PhysicalDeviceLineRasterizationPropertiesEXT = PhysicalDeviceLineRasterizationProperties;
   using PhysicalDeviceLineRasterizationPropertiesKHR = PhysicalDeviceLineRasterizationProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceLinearColorAttachmentFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceLinearColorAttachmentFeaturesNV.html
   struct PhysicalDeviceLinearColorAttachmentFeaturesNV
   {
     using NativeType = VkPhysicalDeviceLinearColorAttachmentFeaturesNV;
@@ -81317,6 +82347,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceLinearColorAttachmentFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance3Properties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance3Properties.html
   struct PhysicalDeviceMaintenance3Properties
   {
     using NativeType = VkPhysicalDeviceMaintenance3Properties;
@@ -81406,6 +82438,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMaintenance3PropertiesKHR = PhysicalDeviceMaintenance3Properties;
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance4Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance4Features.html
   struct PhysicalDeviceMaintenance4Features
   {
     using NativeType = VkPhysicalDeviceMaintenance4Features;
@@ -81504,6 +82538,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMaintenance4FeaturesKHR = PhysicalDeviceMaintenance4Features;
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance4Properties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance4Properties.html
   struct PhysicalDeviceMaintenance4Properties
   {
     using NativeType = VkPhysicalDeviceMaintenance4Properties;
@@ -81589,6 +82625,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMaintenance4PropertiesKHR = PhysicalDeviceMaintenance4Properties;
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance5Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance5Features.html
   struct PhysicalDeviceMaintenance5Features
   {
     using NativeType = VkPhysicalDeviceMaintenance5Features;
@@ -81687,6 +82725,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMaintenance5FeaturesKHR = PhysicalDeviceMaintenance5Features;
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance5Properties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance5Properties.html
   struct PhysicalDeviceMaintenance5Properties
   {
     using NativeType = VkPhysicalDeviceMaintenance5Properties;
@@ -81806,6 +82846,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMaintenance5PropertiesKHR = PhysicalDeviceMaintenance5Properties;
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance6Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance6Features.html
   struct PhysicalDeviceMaintenance6Features
   {
     using NativeType = VkPhysicalDeviceMaintenance6Features;
@@ -81904,6 +82946,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMaintenance6FeaturesKHR = PhysicalDeviceMaintenance6Features;
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance6Properties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance6Properties.html
   struct PhysicalDeviceMaintenance6Properties
   {
     using NativeType = VkPhysicalDeviceMaintenance6Properties;
@@ -82001,6 +83045,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMaintenance6PropertiesKHR = PhysicalDeviceMaintenance6Properties;
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance7FeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance7FeaturesKHR.html
   struct PhysicalDeviceMaintenance7FeaturesKHR
   {
     using NativeType = VkPhysicalDeviceMaintenance7FeaturesKHR;
@@ -82097,6 +83143,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMaintenance7FeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance7PropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance7PropertiesKHR.html
   struct PhysicalDeviceMaintenance7PropertiesKHR
   {
     using NativeType = VkPhysicalDeviceMaintenance7PropertiesKHR;
@@ -82227,6 +83275,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMaintenance7PropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMaintenance8FeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMaintenance8FeaturesKHR.html
   struct PhysicalDeviceMaintenance8FeaturesKHR
   {
     using NativeType = VkPhysicalDeviceMaintenance8FeaturesKHR;
@@ -82323,6 +83373,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMaintenance8FeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMapMemoryPlacedFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMapMemoryPlacedFeaturesEXT.html
   struct PhysicalDeviceMapMemoryPlacedFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceMapMemoryPlacedFeaturesEXT;
@@ -82445,6 +83497,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMapMemoryPlacedFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMapMemoryPlacedPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMapMemoryPlacedPropertiesEXT.html
   struct PhysicalDeviceMapMemoryPlacedPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceMapMemoryPlacedPropertiesEXT;
@@ -82528,6 +83582,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMapMemoryPlacedPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMemoryBudgetPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMemoryBudgetPropertiesEXT.html
   struct PhysicalDeviceMemoryBudgetPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceMemoryBudgetPropertiesEXT;
@@ -82617,6 +83673,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMemoryBudgetPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMemoryDecompressionFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMemoryDecompressionFeaturesNV.html
   struct PhysicalDeviceMemoryDecompressionFeaturesNV
   {
     using NativeType = VkPhysicalDeviceMemoryDecompressionFeaturesNV;
@@ -82715,6 +83773,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMemoryDecompressionFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMemoryDecompressionPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMemoryDecompressionPropertiesNV.html
   struct PhysicalDeviceMemoryDecompressionPropertiesNV
   {
     using NativeType = VkPhysicalDeviceMemoryDecompressionPropertiesNV;
@@ -82803,6 +83863,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMemoryDecompressionPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMemoryPriorityFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMemoryPriorityFeaturesEXT.html
   struct PhysicalDeviceMemoryPriorityFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceMemoryPriorityFeaturesEXT;
@@ -82900,6 +83962,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMemoryPriorityFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMemoryProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMemoryProperties.html
   struct PhysicalDeviceMemoryProperties
   {
     using NativeType = VkPhysicalDeviceMemoryProperties;
@@ -83000,6 +84064,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ArrayWrapper1D<VULKAN_HPP_NAMESPACE::MemoryHeap, VK_MAX_MEMORY_HEAPS> memoryHeaps     = {};
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMemoryProperties2, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMemoryProperties2.html
   struct PhysicalDeviceMemoryProperties2
   {
     using NativeType = VkPhysicalDeviceMemoryProperties2;
@@ -83085,6 +84151,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMemoryProperties2KHR = PhysicalDeviceMemoryProperties2;
 
+  // wrapper struct for struct VkPhysicalDeviceMeshShaderFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMeshShaderFeaturesEXT.html
   struct PhysicalDeviceMeshShaderFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceMeshShaderFeaturesEXT;
@@ -83228,6 +84296,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMeshShaderFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMeshShaderFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMeshShaderFeaturesNV.html
   struct PhysicalDeviceMeshShaderFeaturesNV
   {
     using NativeType = VkPhysicalDeviceMeshShaderFeaturesNV;
@@ -83334,6 +84404,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMeshShaderFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMeshShaderPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMeshShaderPropertiesEXT.html
   struct PhysicalDeviceMeshShaderPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceMeshShaderPropertiesEXT;
@@ -83572,6 +84644,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMeshShaderPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMeshShaderPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMeshShaderPropertiesNV.html
   struct PhysicalDeviceMeshShaderPropertiesNV
   {
     using NativeType = VkPhysicalDeviceMeshShaderPropertiesNV;
@@ -83726,6 +84800,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMeshShaderPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMultiDrawFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMultiDrawFeaturesEXT.html
   struct PhysicalDeviceMultiDrawFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceMultiDrawFeaturesEXT;
@@ -83822,6 +84898,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMultiDrawFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMultiDrawPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMultiDrawPropertiesEXT.html
   struct PhysicalDeviceMultiDrawPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceMultiDrawPropertiesEXT;
@@ -83904,6 +84982,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMultiDrawPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT.html
   struct PhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT;
@@ -84006,6 +85086,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMultiviewFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMultiviewFeatures.html
   struct PhysicalDeviceMultiviewFeatures
   {
     using NativeType = VkPhysicalDeviceMultiviewFeatures;
@@ -84130,6 +85212,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMultiviewFeaturesKHR = PhysicalDeviceMultiviewFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX.html
   struct PhysicalDeviceMultiviewPerViewAttributesPropertiesNVX
   {
     using NativeType = VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX;
@@ -84215,6 +85299,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMultiviewPerViewAttributesPropertiesNVX;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM.html
   struct PhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM
   {
     using NativeType = VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM;
@@ -84315,6 +85401,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM.html
   struct PhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM
   {
     using NativeType = VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM;
@@ -84415,6 +85503,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceMultiviewProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMultiviewProperties.html
   struct PhysicalDeviceMultiviewProperties
   {
     using NativeType = VkPhysicalDeviceMultiviewProperties;
@@ -84504,6 +85594,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMultiviewPropertiesKHR = PhysicalDeviceMultiviewProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT.html
   struct PhysicalDeviceMutableDescriptorTypeFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT;
@@ -84605,6 +85697,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceMutableDescriptorTypeFeaturesVALVE = PhysicalDeviceMutableDescriptorTypeFeaturesEXT;
 
+  // wrapper struct for struct VkPhysicalDeviceNestedCommandBufferFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceNestedCommandBufferFeaturesEXT.html
   struct PhysicalDeviceNestedCommandBufferFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceNestedCommandBufferFeaturesEXT;
@@ -84729,6 +85823,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceNestedCommandBufferFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceNestedCommandBufferPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceNestedCommandBufferPropertiesEXT.html
   struct PhysicalDeviceNestedCommandBufferPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceNestedCommandBufferPropertiesEXT;
@@ -84828,6 +85924,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceNestedCommandBufferPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT.html
   struct PhysicalDeviceNonSeamlessCubeMapFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT;
@@ -84926,6 +86024,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceNonSeamlessCubeMapFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceOpacityMicromapFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceOpacityMicromapFeaturesEXT.html
   struct PhysicalDeviceOpacityMicromapFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceOpacityMicromapFeaturesEXT;
@@ -85048,6 +86148,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceOpacityMicromapFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceOpacityMicromapPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceOpacityMicromapPropertiesEXT.html
   struct PhysicalDeviceOpacityMicromapPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceOpacityMicromapPropertiesEXT;
@@ -85135,6 +86237,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceOpacityMicromapPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceOpticalFlowFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceOpticalFlowFeaturesNV.html
   struct PhysicalDeviceOpticalFlowFeaturesNV
   {
     using NativeType = VkPhysicalDeviceOpticalFlowFeaturesNV;
@@ -85231,6 +86335,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceOpticalFlowFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceOpticalFlowPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceOpticalFlowPropertiesNV.html
   struct PhysicalDeviceOpticalFlowPropertiesNV
   {
     using NativeType = VkPhysicalDeviceOpticalFlowPropertiesNV;
@@ -85372,6 +86478,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceOpticalFlowPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePCIBusInfoPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePCIBusInfoPropertiesEXT.html
   struct PhysicalDevicePCIBusInfoPropertiesEXT
   {
     using NativeType = VkPhysicalDevicePCIBusInfoPropertiesEXT;
@@ -85462,6 +86570,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePCIBusInfoPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT.html
   struct PhysicalDevicePageableDeviceLocalMemoryFeaturesEXT
   {
     using NativeType = VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT;
@@ -85562,6 +86672,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePageableDeviceLocalMemoryFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV.html
   struct PhysicalDevicePartitionedAccelerationStructureFeaturesNV
   {
     using NativeType = VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV;
@@ -85663,6 +86775,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePartitionedAccelerationStructureFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV.html
   struct PhysicalDevicePartitionedAccelerationStructurePropertiesNV
   {
     using NativeType = VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV;
@@ -85750,6 +86864,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePartitionedAccelerationStructurePropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePerStageDescriptorSetFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePerStageDescriptorSetFeaturesNV.html
   struct PhysicalDevicePerStageDescriptorSetFeaturesNV
   {
     using NativeType = VkPhysicalDevicePerStageDescriptorSetFeaturesNV;
@@ -85860,6 +86976,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePerStageDescriptorSetFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePerformanceQueryFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePerformanceQueryFeaturesKHR.html
   struct PhysicalDevicePerformanceQueryFeaturesKHR
   {
     using NativeType = VkPhysicalDevicePerformanceQueryFeaturesKHR;
@@ -85969,6 +87087,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePerformanceQueryFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePerformanceQueryPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePerformanceQueryPropertiesKHR.html
   struct PhysicalDevicePerformanceQueryPropertiesKHR
   {
     using NativeType = VkPhysicalDevicePerformanceQueryPropertiesKHR;
@@ -86052,6 +87172,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePerformanceQueryPropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePipelineBinaryFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelineBinaryFeaturesKHR.html
   struct PhysicalDevicePipelineBinaryFeaturesKHR
   {
     using NativeType = VkPhysicalDevicePipelineBinaryFeaturesKHR;
@@ -86149,6 +87271,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePipelineBinaryFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePipelineBinaryPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelineBinaryPropertiesKHR.html
   struct PhysicalDevicePipelineBinaryPropertiesKHR
   {
     using NativeType = VkPhysicalDevicePipelineBinaryPropertiesKHR;
@@ -86303,6 +87427,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePipelineBinaryPropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePipelineCreationCacheControlFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelineCreationCacheControlFeatures.html
   struct PhysicalDevicePipelineCreationCacheControlFeatures
   {
     using NativeType = VkPhysicalDevicePipelineCreationCacheControlFeatures;
@@ -86405,6 +87531,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDevicePipelineCreationCacheControlFeaturesEXT = PhysicalDevicePipelineCreationCacheControlFeatures;
 
+  // wrapper struct for struct VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR.html
   struct PhysicalDevicePipelineExecutablePropertiesFeaturesKHR
   {
     using NativeType = VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR;
@@ -86505,6 +87633,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePipelineExecutablePropertiesFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT.html
   struct PhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT
   {
     using NativeType = VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT;
@@ -86605,6 +87735,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePipelineOpacityMicromapFeaturesARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelineOpacityMicromapFeaturesARM.html
   struct PhysicalDevicePipelineOpacityMicromapFeaturesARM
   {
     using NativeType = VkPhysicalDevicePipelineOpacityMicromapFeaturesARM;
@@ -86704,6 +87836,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePipelineOpacityMicromapFeaturesARM;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePipelinePropertiesFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelinePropertiesFeaturesEXT.html
   struct PhysicalDevicePipelinePropertiesFeaturesEXT
   {
     using NativeType = VkPhysicalDevicePipelinePropertiesFeaturesEXT;
@@ -86802,6 +87936,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePipelinePropertiesFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePipelineProtectedAccessFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelineProtectedAccessFeatures.html
   struct PhysicalDevicePipelineProtectedAccessFeatures
   {
     using NativeType = VkPhysicalDevicePipelineProtectedAccessFeatures;
@@ -86903,6 +88039,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDevicePipelineProtectedAccessFeaturesEXT = PhysicalDevicePipelineProtectedAccessFeatures;
 
+  // wrapper struct for struct VkPhysicalDevicePipelineRobustnessFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelineRobustnessFeatures.html
   struct PhysicalDevicePipelineRobustnessFeatures
   {
     using NativeType = VkPhysicalDevicePipelineRobustnessFeatures;
@@ -87003,6 +88141,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDevicePipelineRobustnessFeaturesEXT = PhysicalDevicePipelineRobustnessFeatures;
 
+  // wrapper struct for struct VkPhysicalDevicePipelineRobustnessProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePipelineRobustnessProperties.html
   struct PhysicalDevicePipelineRobustnessProperties
   {
     using NativeType = VkPhysicalDevicePipelineRobustnessProperties;
@@ -87111,6 +88251,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDevicePipelineRobustnessPropertiesEXT = PhysicalDevicePipelineRobustnessProperties;
 
+  // wrapper struct for struct VkPhysicalDevicePointClippingProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePointClippingProperties.html
   struct PhysicalDevicePointClippingProperties
   {
     using NativeType = VkPhysicalDevicePointClippingProperties;
@@ -87198,6 +88340,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PhysicalDevicePointClippingPropertiesKHR = PhysicalDevicePointClippingProperties;
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDevicePortabilitySubsetFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePortabilitySubsetFeaturesKHR.html
   struct PhysicalDevicePortabilitySubsetFeaturesKHR
   {
     using NativeType = VkPhysicalDevicePortabilitySubsetFeaturesKHR;
@@ -87475,6 +88619,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDevicePortabilitySubsetPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePortabilitySubsetPropertiesKHR.html
   struct PhysicalDevicePortabilitySubsetPropertiesKHR
   {
     using NativeType = VkPhysicalDevicePortabilitySubsetPropertiesKHR;
@@ -87574,6 +88720,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
+  // wrapper struct for struct VkPhysicalDevicePresentBarrierFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePresentBarrierFeaturesNV.html
   struct PhysicalDevicePresentBarrierFeaturesNV
   {
     using NativeType = VkPhysicalDevicePresentBarrierFeaturesNV;
@@ -87671,6 +88819,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePresentBarrierFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePresentIdFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePresentIdFeaturesKHR.html
   struct PhysicalDevicePresentIdFeaturesKHR
   {
     using NativeType = VkPhysicalDevicePresentIdFeaturesKHR;
@@ -87767,6 +88917,109 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePresentIdFeaturesKHR;
   };
 
+#if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDevicePresentMeteringFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePresentMeteringFeaturesNV.html
+  struct PhysicalDevicePresentMeteringFeaturesNV
+  {
+    using NativeType = VkPhysicalDevicePresentMeteringFeaturesNV;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDevicePresentMeteringFeaturesNV;
+
+#  if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDevicePresentMeteringFeaturesNV( VULKAN_HPP_NAMESPACE::Bool32 presentMetering_ = {},
+                                                                  void *                       pNext_           = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , presentMetering{ presentMetering_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDevicePresentMeteringFeaturesNV( PhysicalDevicePresentMeteringFeaturesNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDevicePresentMeteringFeaturesNV( VkPhysicalDevicePresentMeteringFeaturesNV const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDevicePresentMeteringFeaturesNV( *reinterpret_cast<PhysicalDevicePresentMeteringFeaturesNV const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDevicePresentMeteringFeaturesNV & operator=( PhysicalDevicePresentMeteringFeaturesNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#  endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDevicePresentMeteringFeaturesNV & operator=( VkPhysicalDevicePresentMeteringFeaturesNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDevicePresentMeteringFeaturesNV const *>( &rhs );
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePresentMeteringFeaturesNV & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePresentMeteringFeaturesNV & setPresentMetering( VULKAN_HPP_NAMESPACE::Bool32 presentMetering_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentMetering = presentMetering_;
+      return *this;
+    }
+#  endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDevicePresentMeteringFeaturesNV const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDevicePresentMeteringFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDevicePresentMeteringFeaturesNV &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDevicePresentMeteringFeaturesNV *>( this );
+    }
+
+#  if defined( VULKAN_HPP_USE_REFLECT )
+#    if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#    else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, VULKAN_HPP_NAMESPACE::Bool32 const &>
+#    endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, presentMetering );
+    }
+#  endif
+
+#  if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDevicePresentMeteringFeaturesNV const & ) const = default;
+#  else
+    bool operator==( PhysicalDevicePresentMeteringFeaturesNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#    if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#    else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( presentMetering == rhs.presentMetering );
+#    endif
+    }
+
+    bool operator!=( PhysicalDevicePresentMeteringFeaturesNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#  endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType           = StructureType::ePhysicalDevicePresentMeteringFeaturesNV;
+    void *                              pNext           = {};
+    VULKAN_HPP_NAMESPACE::Bool32        presentMetering = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDevicePresentMeteringFeaturesNV>
+  {
+    using Type = PhysicalDevicePresentMeteringFeaturesNV;
+  };
+#endif /*VK_ENABLE_BETA_EXTENSIONS*/
+
+  // wrapper struct for struct VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT.html
   struct PhysicalDevicePresentModeFifoLatestReadyFeaturesEXT
   {
     using NativeType = VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT;
@@ -87867,6 +89120,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePresentModeFifoLatestReadyFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePresentWaitFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePresentWaitFeaturesKHR.html
   struct PhysicalDevicePresentWaitFeaturesKHR
   {
     using NativeType = VkPhysicalDevicePresentWaitFeaturesKHR;
@@ -87963,6 +89218,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePresentWaitFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT.html
   struct PhysicalDevicePrimitiveTopologyListRestartFeaturesEXT
   {
     using NativeType = VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT;
@@ -88074,6 +89331,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePrimitiveTopologyListRestartFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT.html
   struct PhysicalDevicePrimitivesGeneratedQueryFeaturesEXT
   {
     using NativeType = VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT;
@@ -88200,6 +89459,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDevicePrimitivesGeneratedQueryFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePrivateDataFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePrivateDataFeatures.html
   struct PhysicalDevicePrivateDataFeatures
   {
     using NativeType = VkPhysicalDevicePrivateDataFeatures;
@@ -88298,6 +89559,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDevicePrivateDataFeaturesEXT = PhysicalDevicePrivateDataFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceProtectedMemoryFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceProtectedMemoryFeatures.html
   struct PhysicalDeviceProtectedMemoryFeatures
   {
     using NativeType = VkPhysicalDeviceProtectedMemoryFeatures;
@@ -88395,6 +89658,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceProtectedMemoryFeatures;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceProtectedMemoryProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceProtectedMemoryProperties.html
   struct PhysicalDeviceProtectedMemoryProperties
   {
     using NativeType = VkPhysicalDeviceProtectedMemoryProperties;
@@ -88478,6 +89743,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceProtectedMemoryProperties;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceProvokingVertexFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceProvokingVertexFeaturesEXT.html
   struct PhysicalDeviceProvokingVertexFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceProvokingVertexFeaturesEXT;
@@ -88587,6 +89854,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceProvokingVertexFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceProvokingVertexPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceProvokingVertexPropertiesEXT.html
   struct PhysicalDeviceProvokingVertexPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceProvokingVertexPropertiesEXT;
@@ -88674,6 +89943,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceProvokingVertexPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDevicePushDescriptorProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePushDescriptorProperties.html
   struct PhysicalDevicePushDescriptorProperties
   {
     using NativeType = VkPhysicalDevicePushDescriptorProperties;
@@ -88758,6 +90029,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDevicePushDescriptorPropertiesKHR = PhysicalDevicePushDescriptorProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT.html
   struct PhysicalDeviceRGBA10X6FormatsFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT;
@@ -88856,6 +90129,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRGBA10X6FormatsFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT.html
   struct PhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
@@ -88988,6 +90263,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceRasterizationOrderAttachmentAccessFeaturesARM = PhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT;
 
+  // wrapper struct for struct VkPhysicalDeviceRawAccessChainsFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRawAccessChainsFeaturesNV.html
   struct PhysicalDeviceRawAccessChainsFeaturesNV
   {
     using NativeType = VkPhysicalDeviceRawAccessChainsFeaturesNV;
@@ -89086,6 +90363,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRawAccessChainsFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayQueryFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayQueryFeaturesKHR.html
   struct PhysicalDeviceRayQueryFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceRayQueryFeaturesKHR;
@@ -89182,6 +90461,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayQueryFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV.html
   struct PhysicalDeviceRayTracingInvocationReorderFeaturesNV
   {
     using NativeType = VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV;
@@ -89282,6 +90563,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingInvocationReorderFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV.html
   struct PhysicalDeviceRayTracingInvocationReorderPropertiesNV
   {
     using NativeType = VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV;
@@ -89370,6 +90653,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingInvocationReorderPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV.html
   struct PhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV
   {
     using NativeType = VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV;
@@ -89479,6 +90764,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR.html
   struct PhysicalDeviceRayTracingMaintenance1FeaturesKHR
   {
     using NativeType = VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR;
@@ -89589,6 +90876,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingMaintenance1FeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingMotionBlurFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingMotionBlurFeaturesNV.html
   struct PhysicalDeviceRayTracingMotionBlurFeaturesNV
   {
     using NativeType = VkPhysicalDeviceRayTracingMotionBlurFeaturesNV;
@@ -89698,6 +90987,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingMotionBlurFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingPipelineFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingPipelineFeaturesKHR.html
   struct PhysicalDeviceRayTracingPipelineFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceRayTracingPipelineFeaturesKHR;
@@ -89852,6 +91143,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingPipelineFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingPipelinePropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingPipelinePropertiesKHR.html
   struct PhysicalDeviceRayTracingPipelinePropertiesKHR
   {
     using NativeType = VkPhysicalDeviceRayTracingPipelinePropertiesKHR;
@@ -89979,6 +91272,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingPipelinePropertiesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR.html
   struct PhysicalDeviceRayTracingPositionFetchFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR;
@@ -90078,6 +91373,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingPositionFetchFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingPropertiesNV.html
   struct PhysicalDeviceRayTracingPropertiesNV
   {
     using NativeType = VkPhysicalDeviceRayTracingPropertiesNV;
@@ -90204,6 +91501,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRayTracingValidationFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingValidationFeaturesNV.html
   struct PhysicalDeviceRayTracingValidationFeaturesNV
   {
     using NativeType = VkPhysicalDeviceRayTracingValidationFeaturesNV;
@@ -90302,6 +91601,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingValidationFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG.html
   struct PhysicalDeviceRelaxedLineRasterizationFeaturesIMG
   {
     using NativeType = VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG;
@@ -90402,6 +91703,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRelaxedLineRasterizationFeaturesIMG;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRenderPassStripedFeaturesARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRenderPassStripedFeaturesARM.html
   struct PhysicalDeviceRenderPassStripedFeaturesARM
   {
     using NativeType = VkPhysicalDeviceRenderPassStripedFeaturesARM;
@@ -90500,6 +91803,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRenderPassStripedFeaturesARM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRenderPassStripedPropertiesARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRenderPassStripedPropertiesARM.html
   struct PhysicalDeviceRenderPassStripedPropertiesARM
   {
     using NativeType = VkPhysicalDeviceRenderPassStripedPropertiesARM;
@@ -90587,6 +91892,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRenderPassStripedPropertiesARM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV.html
   struct PhysicalDeviceRepresentativeFragmentTestFeaturesNV
   {
     using NativeType = VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV;
@@ -90687,6 +91994,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRepresentativeFragmentTestFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRobustness2FeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRobustness2FeaturesEXT.html
   struct PhysicalDeviceRobustness2FeaturesEXT
   {
     using NativeType = VkPhysicalDeviceRobustness2FeaturesEXT;
@@ -90808,6 +92117,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRobustness2FeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceRobustness2PropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRobustness2PropertiesEXT.html
   struct PhysicalDeviceRobustness2PropertiesEXT
   {
     using NativeType = VkPhysicalDeviceRobustness2PropertiesEXT;
@@ -90895,6 +92206,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRobustness2PropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSampleLocationsPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSampleLocationsPropertiesEXT.html
   struct PhysicalDeviceSampleLocationsPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceSampleLocationsPropertiesEXT;
@@ -91004,6 +92317,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceSampleLocationsPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSamplerFilterMinmaxProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSamplerFilterMinmaxProperties.html
   struct PhysicalDeviceSamplerFilterMinmaxProperties
   {
     using NativeType = VkPhysicalDeviceSamplerFilterMinmaxProperties;
@@ -91093,6 +92408,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceSamplerFilterMinmaxPropertiesEXT = PhysicalDeviceSamplerFilterMinmaxProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceSamplerYcbcrConversionFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSamplerYcbcrConversionFeatures.html
   struct PhysicalDeviceSamplerYcbcrConversionFeatures
   {
     using NativeType = VkPhysicalDeviceSamplerYcbcrConversionFeatures;
@@ -91193,6 +92510,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceSamplerYcbcrConversionFeaturesKHR = PhysicalDeviceSamplerYcbcrConversionFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceScalarBlockLayoutFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceScalarBlockLayoutFeatures.html
   struct PhysicalDeviceScalarBlockLayoutFeatures
   {
     using NativeType = VkPhysicalDeviceScalarBlockLayoutFeatures;
@@ -91293,6 +92612,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceScalarBlockLayoutFeaturesEXT = PhysicalDeviceScalarBlockLayoutFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceSchedulingControlsFeaturesARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSchedulingControlsFeaturesARM.html
   struct PhysicalDeviceSchedulingControlsFeaturesARM
   {
     using NativeType = VkPhysicalDeviceSchedulingControlsFeaturesARM;
@@ -91391,6 +92712,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceSchedulingControlsFeaturesARM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSchedulingControlsPropertiesARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSchedulingControlsPropertiesARM.html
   struct PhysicalDeviceSchedulingControlsPropertiesARM
   {
     using NativeType = VkPhysicalDeviceSchedulingControlsPropertiesARM;
@@ -91423,21 +92746,6 @@ namespace VULKAN_HPP_NAMESPACE
       *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceSchedulingControlsPropertiesARM const *>( &rhs );
       return *this;
     }
-
-#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceSchedulingControlsPropertiesARM & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceSchedulingControlsPropertiesARM &
-      setSchedulingControlsFlags( VULKAN_HPP_NAMESPACE::PhysicalDeviceSchedulingControlsFlagsARM schedulingControlsFlags_ ) VULKAN_HPP_NOEXCEPT
-    {
-      schedulingControlsFlags = schedulingControlsFlags_;
-      return *this;
-    }
-#endif /*VULKAN_HPP_NO_SETTERS*/
 
     operator VkPhysicalDeviceSchedulingControlsPropertiesARM const &() const VULKAN_HPP_NOEXCEPT
     {
@@ -91491,6 +92799,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceSchedulingControlsPropertiesARM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures.html
   struct PhysicalDeviceSeparateDepthStencilLayoutsFeatures
   {
     using NativeType = VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures;
@@ -91593,6 +92903,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceSeparateDepthStencilLayoutsFeaturesKHR = PhysicalDeviceSeparateDepthStencilLayoutsFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV.html
   struct PhysicalDeviceShaderAtomicFloat16VectorFeaturesNV
   {
     using NativeType = VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV;
@@ -91693,6 +93005,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderAtomicFloat16VectorFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT.html
   struct PhysicalDeviceShaderAtomicFloat2FeaturesEXT
   {
     using NativeType = VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT;
@@ -91937,6 +93251,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderAtomicFloat2FeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderAtomicFloatFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderAtomicFloatFeaturesEXT.html
   struct PhysicalDeviceShaderAtomicFloatFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceShaderAtomicFloatFeaturesEXT;
@@ -92177,6 +93493,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderAtomicFloatFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderAtomicInt64Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderAtomicInt64Features.html
   struct PhysicalDeviceShaderAtomicInt64Features
   {
     using NativeType = VkPhysicalDeviceShaderAtomicInt64Features;
@@ -92288,6 +93606,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderAtomicInt64FeaturesKHR = PhysicalDeviceShaderAtomicInt64Features;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderClockFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderClockFeaturesKHR.html
   struct PhysicalDeviceShaderClockFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceShaderClockFeaturesKHR;
@@ -92396,6 +93716,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderClockFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM.html
   struct PhysicalDeviceShaderCoreBuiltinsFeaturesARM
   {
     using NativeType = VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM;
@@ -92494,6 +93816,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderCoreBuiltinsFeaturesARM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM.html
   struct PhysicalDeviceShaderCoreBuiltinsPropertiesARM
   {
     using NativeType = VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM;
@@ -92585,6 +93909,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderCoreBuiltinsPropertiesARM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderCoreProperties2AMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderCoreProperties2AMD.html
   struct PhysicalDeviceShaderCoreProperties2AMD
   {
     using NativeType = VkPhysicalDeviceShaderCoreProperties2AMD;
@@ -92672,6 +93998,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderCoreProperties2AMD;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderCorePropertiesAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderCorePropertiesAMD.html
   struct PhysicalDeviceShaderCorePropertiesAMD
   {
     using NativeType = VkPhysicalDeviceShaderCorePropertiesAMD;
@@ -92830,6 +94158,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderCorePropertiesAMD;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderCorePropertiesARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderCorePropertiesARM.html
   struct PhysicalDeviceShaderCorePropertiesARM
   {
     using NativeType = VkPhysicalDeviceShaderCorePropertiesARM;
@@ -92919,6 +94249,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderCorePropertiesARM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures.html
   struct PhysicalDeviceShaderDemoteToHelperInvocationFeatures
   {
     using NativeType = VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures;
@@ -93021,6 +94353,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderDemoteToHelperInvocationFeaturesEXT = PhysicalDeviceShaderDemoteToHelperInvocationFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderDrawParametersFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderDrawParametersFeatures.html
   struct PhysicalDeviceShaderDrawParametersFeatures
   {
     using NativeType = VkPhysicalDeviceShaderDrawParametersFeatures;
@@ -93121,6 +94455,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderDrawParameterFeatures = PhysicalDeviceShaderDrawParametersFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD.html
   struct PhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD
   {
     using NativeType = VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD;
@@ -93223,6 +94559,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDeviceShaderEnqueueFeaturesAMDX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderEnqueueFeaturesAMDX.html
   struct PhysicalDeviceShaderEnqueueFeaturesAMDX
   {
     using NativeType = VkPhysicalDeviceShaderEnqueueFeaturesAMDX;
@@ -93332,6 +94670,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDeviceShaderEnqueuePropertiesAMDX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderEnqueuePropertiesAMDX.html
   struct PhysicalDeviceShaderEnqueuePropertiesAMDX
   {
     using NativeType = VkPhysicalDeviceShaderEnqueuePropertiesAMDX;
@@ -93511,6 +94851,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
+  // wrapper struct for struct VkPhysicalDeviceShaderExpectAssumeFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderExpectAssumeFeatures.html
   struct PhysicalDeviceShaderExpectAssumeFeatures
   {
     using NativeType = VkPhysicalDeviceShaderExpectAssumeFeatures;
@@ -93611,6 +94953,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderExpectAssumeFeaturesKHR = PhysicalDeviceShaderExpectAssumeFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderFloat16Int8Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderFloat16Int8Features.html
   struct PhysicalDeviceShaderFloat16Int8Features
   {
     using NativeType = VkPhysicalDeviceShaderFloat16Int8Features;
@@ -93720,6 +95064,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PhysicalDeviceFloat16Int8FeaturesKHR       = PhysicalDeviceShaderFloat16Int8Features;
   using PhysicalDeviceShaderFloat16Int8FeaturesKHR = PhysicalDeviceShaderFloat16Int8Features;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderFloatControls2Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderFloatControls2Features.html
   struct PhysicalDeviceShaderFloatControls2Features
   {
     using NativeType = VkPhysicalDeviceShaderFloatControls2Features;
@@ -93820,6 +95166,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderFloatControls2FeaturesKHR = PhysicalDeviceShaderFloatControls2Features;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT.html
   struct PhysicalDeviceShaderImageAtomicInt64FeaturesEXT
   {
     using NativeType = VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT;
@@ -93930,6 +95278,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderImageAtomicInt64FeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderImageFootprintFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderImageFootprintFeaturesNV.html
   struct PhysicalDeviceShaderImageFootprintFeaturesNV
   {
     using NativeType = VkPhysicalDeviceShaderImageFootprintFeaturesNV;
@@ -94027,6 +95377,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderImageFootprintFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderIntegerDotProductFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderIntegerDotProductFeatures.html
   struct PhysicalDeviceShaderIntegerDotProductFeatures
   {
     using NativeType = VkPhysicalDeviceShaderIntegerDotProductFeatures;
@@ -94128,6 +95480,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderIntegerDotProductFeaturesKHR = PhysicalDeviceShaderIntegerDotProductFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderIntegerDotProductProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderIntegerDotProductProperties.html
   struct PhysicalDeviceShaderIntegerDotProductProperties
   {
     using NativeType = VkPhysicalDeviceShaderIntegerDotProductProperties;
@@ -94400,6 +95754,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderIntegerDotProductPropertiesKHR = PhysicalDeviceShaderIntegerDotProductProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL.html
   struct PhysicalDeviceShaderIntegerFunctions2FeaturesINTEL
   {
     using NativeType = VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL;
@@ -94500,6 +95856,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderIntegerFunctions2FeaturesINTEL;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR.html
   struct PhysicalDeviceShaderMaximalReconvergenceFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR;
@@ -94600,6 +95958,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderMaximalReconvergenceFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT.html
   struct PhysicalDeviceShaderModuleIdentifierFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT;
@@ -94699,6 +96059,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderModuleIdentifierFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT.html
   struct PhysicalDeviceShaderModuleIdentifierPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT;
@@ -94785,6 +96147,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderModuleIdentifierPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderObjectFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderObjectFeaturesEXT.html
   struct PhysicalDeviceShaderObjectFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceShaderObjectFeaturesEXT;
@@ -94881,6 +96245,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderObjectFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderObjectPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderObjectPropertiesEXT.html
   struct PhysicalDeviceShaderObjectPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceShaderObjectPropertiesEXT;
@@ -94969,6 +96335,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderObjectPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderQuadControlFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderQuadControlFeaturesKHR.html
   struct PhysicalDeviceShaderQuadControlFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceShaderQuadControlFeaturesKHR;
@@ -95067,6 +96435,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderQuadControlFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR.html
   struct PhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR;
@@ -95169,6 +96539,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT.html
   struct PhysicalDeviceShaderReplicatedCompositesFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT;
@@ -95269,6 +96641,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderReplicatedCompositesFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderSMBuiltinsFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderSMBuiltinsFeaturesNV.html
   struct PhysicalDeviceShaderSMBuiltinsFeaturesNV
   {
     using NativeType = VkPhysicalDeviceShaderSMBuiltinsFeaturesNV;
@@ -95366,6 +96740,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderSMBuiltinsFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderSMBuiltinsPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderSMBuiltinsPropertiesNV.html
   struct PhysicalDeviceShaderSMBuiltinsPropertiesNV
   {
     using NativeType = VkPhysicalDeviceShaderSMBuiltinsPropertiesNV;
@@ -95451,6 +96827,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderSMBuiltinsPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures.html
   struct PhysicalDeviceShaderSubgroupExtendedTypesFeatures
   {
     using NativeType = VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures;
@@ -95553,6 +96931,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderSubgroupExtendedTypesFeaturesKHR = PhysicalDeviceShaderSubgroupExtendedTypesFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderSubgroupRotateFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderSubgroupRotateFeatures.html
   struct PhysicalDeviceShaderSubgroupRotateFeatures
   {
     using NativeType = VkPhysicalDeviceShaderSubgroupRotateFeatures;
@@ -95664,6 +97044,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderSubgroupRotateFeaturesKHR = PhysicalDeviceShaderSubgroupRotateFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR.html
   struct PhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR;
@@ -95766,6 +97148,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderTerminateInvocationFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderTerminateInvocationFeatures.html
   struct PhysicalDeviceShaderTerminateInvocationFeatures
   {
     using NativeType = VkPhysicalDeviceShaderTerminateInvocationFeatures;
@@ -95867,6 +97251,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceShaderTerminateInvocationFeaturesKHR = PhysicalDeviceShaderTerminateInvocationFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceShaderTileImageFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderTileImageFeaturesEXT.html
   struct PhysicalDeviceShaderTileImageFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceShaderTileImageFeaturesEXT;
@@ -95991,6 +97377,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderTileImageFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShaderTileImagePropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderTileImagePropertiesEXT.html
   struct PhysicalDeviceShaderTileImagePropertiesEXT
   {
     using NativeType = VkPhysicalDeviceShaderTileImagePropertiesEXT;
@@ -96087,6 +97475,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShaderTileImagePropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShadingRateImageFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShadingRateImageFeaturesNV.html
   struct PhysicalDeviceShadingRateImageFeaturesNV
   {
     using NativeType = VkPhysicalDeviceShadingRateImageFeaturesNV;
@@ -96195,6 +97585,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShadingRateImageFeaturesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceShadingRateImagePropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShadingRateImagePropertiesNV.html
   struct PhysicalDeviceShadingRateImagePropertiesNV
   {
     using NativeType = VkPhysicalDeviceShadingRateImagePropertiesNV;
@@ -96285,6 +97677,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceShadingRateImagePropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSparseImageFormatInfo2, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSparseImageFormatInfo2.html
   struct PhysicalDeviceSparseImageFormatInfo2
   {
     using NativeType = VkPhysicalDeviceSparseImageFormatInfo2;
@@ -96428,6 +97822,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceSparseImageFormatInfo2KHR = PhysicalDeviceSparseImageFormatInfo2;
 
+  // wrapper struct for struct VkPhysicalDeviceSubgroupProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSubgroupProperties.html
   struct PhysicalDeviceSubgroupProperties
   {
     using NativeType = VkPhysicalDeviceSubgroupProperties;
@@ -96526,6 +97922,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceSubgroupProperties;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSubgroupSizeControlFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSubgroupSizeControlFeatures.html
   struct PhysicalDeviceSubgroupSizeControlFeatures
   {
     using NativeType = VkPhysicalDeviceSubgroupSizeControlFeatures;
@@ -96637,6 +98035,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceSubgroupSizeControlFeaturesEXT = PhysicalDeviceSubgroupSizeControlFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceSubgroupSizeControlProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSubgroupSizeControlProperties.html
   struct PhysicalDeviceSubgroupSizeControlProperties
   {
     using NativeType = VkPhysicalDeviceSubgroupSizeControlProperties;
@@ -96737,6 +98137,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceSubgroupSizeControlPropertiesEXT = PhysicalDeviceSubgroupSizeControlProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT.html
   struct PhysicalDeviceSubpassMergeFeedbackFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT;
@@ -96836,6 +98238,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceSubpassMergeFeedbackFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSubpassShadingFeaturesHUAWEI, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSubpassShadingFeaturesHUAWEI.html
   struct PhysicalDeviceSubpassShadingFeaturesHUAWEI
   {
     using NativeType = VkPhysicalDeviceSubpassShadingFeaturesHUAWEI;
@@ -96933,6 +98337,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceSubpassShadingFeaturesHUAWEI;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSubpassShadingPropertiesHUAWEI, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSubpassShadingPropertiesHUAWEI.html
   struct PhysicalDeviceSubpassShadingPropertiesHUAWEI
   {
     using NativeType = VkPhysicalDeviceSubpassShadingPropertiesHUAWEI;
@@ -97016,6 +98422,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceSubpassShadingPropertiesHUAWEI;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSurfaceInfo2KHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSurfaceInfo2KHR.html
   struct PhysicalDeviceSurfaceInfo2KHR
   {
     using NativeType = VkPhysicalDeviceSurfaceInfo2KHR;
@@ -97112,6 +98520,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceSurfaceInfo2KHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT.html
   struct PhysicalDeviceSwapchainMaintenance1FeaturesEXT
   {
     using NativeType = VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT;
@@ -97211,6 +98621,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceSwapchainMaintenance1FeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceSynchronization2Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSynchronization2Features.html
   struct PhysicalDeviceSynchronization2Features
   {
     using NativeType = VkPhysicalDeviceSynchronization2Features;
@@ -97310,6 +98722,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceSynchronization2FeaturesKHR = PhysicalDeviceSynchronization2Features;
 
+  // wrapper struct for struct VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT.html
   struct PhysicalDeviceTexelBufferAlignmentFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT;
@@ -97409,6 +98823,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceTexelBufferAlignmentFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceTexelBufferAlignmentProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTexelBufferAlignmentProperties.html
   struct PhysicalDeviceTexelBufferAlignmentProperties
   {
     using NativeType = VkPhysicalDeviceTexelBufferAlignmentProperties;
@@ -97516,6 +98932,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceTexelBufferAlignmentPropertiesEXT = PhysicalDeviceTexelBufferAlignmentProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceTextureCompressionASTCHDRFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTextureCompressionASTCHDRFeatures.html
   struct PhysicalDeviceTextureCompressionASTCHDRFeatures
   {
     using NativeType = VkPhysicalDeviceTextureCompressionASTCHDRFeatures;
@@ -97617,6 +99035,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceTextureCompressionASTCHDRFeaturesEXT = PhysicalDeviceTextureCompressionASTCHDRFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceTilePropertiesFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTilePropertiesFeaturesQCOM.html
   struct PhysicalDeviceTilePropertiesFeaturesQCOM
   {
     using NativeType = VkPhysicalDeviceTilePropertiesFeaturesQCOM;
@@ -97714,6 +99134,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceTilePropertiesFeaturesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceTimelineSemaphoreFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTimelineSemaphoreFeatures.html
   struct PhysicalDeviceTimelineSemaphoreFeatures
   {
     using NativeType = VkPhysicalDeviceTimelineSemaphoreFeatures;
@@ -97814,6 +99236,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceTimelineSemaphoreFeaturesKHR = PhysicalDeviceTimelineSemaphoreFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceTimelineSemaphoreProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTimelineSemaphoreProperties.html
   struct PhysicalDeviceTimelineSemaphoreProperties
   {
     using NativeType = VkPhysicalDeviceTimelineSemaphoreProperties;
@@ -97899,6 +99323,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceTimelineSemaphorePropertiesKHR = PhysicalDeviceTimelineSemaphoreProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceToolProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceToolProperties.html
   struct PhysicalDeviceToolProperties
   {
     using NativeType = VkPhysicalDeviceToolProperties;
@@ -98017,6 +99442,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceToolPropertiesEXT = PhysicalDeviceToolProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceTransformFeedbackFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTransformFeedbackFeaturesEXT.html
   struct PhysicalDeviceTransformFeedbackFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceTransformFeedbackFeaturesEXT;
@@ -98124,6 +99551,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceTransformFeedbackFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceTransformFeedbackPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTransformFeedbackPropertiesEXT.html
   struct PhysicalDeviceTransformFeedbackPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceTransformFeedbackPropertiesEXT;
@@ -98264,6 +99693,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceTransformFeedbackPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceUniformBufferStandardLayoutFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceUniformBufferStandardLayoutFeatures.html
   struct PhysicalDeviceUniformBufferStandardLayoutFeatures
   {
     using NativeType = VkPhysicalDeviceUniformBufferStandardLayoutFeatures;
@@ -98366,6 +99797,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceUniformBufferStandardLayoutFeaturesKHR = PhysicalDeviceUniformBufferStandardLayoutFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceVariablePointersFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVariablePointersFeatures.html
   struct PhysicalDeviceVariablePointersFeatures
   {
     using NativeType = VkPhysicalDeviceVariablePointersFeatures;
@@ -98478,6 +99911,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PhysicalDeviceVariablePointerFeaturesKHR  = PhysicalDeviceVariablePointersFeatures;
   using PhysicalDeviceVariablePointersFeaturesKHR = PhysicalDeviceVariablePointersFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceVertexAttributeDivisorFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVertexAttributeDivisorFeatures.html
   struct PhysicalDeviceVertexAttributeDivisorFeatures
   {
     using NativeType = VkPhysicalDeviceVertexAttributeDivisorFeatures;
@@ -98590,6 +100025,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PhysicalDeviceVertexAttributeDivisorFeaturesEXT = PhysicalDeviceVertexAttributeDivisorFeatures;
   using PhysicalDeviceVertexAttributeDivisorFeaturesKHR = PhysicalDeviceVertexAttributeDivisorFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceVertexAttributeDivisorProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVertexAttributeDivisorProperties.html
   struct PhysicalDeviceVertexAttributeDivisorProperties
   {
     using NativeType = VkPhysicalDeviceVertexAttributeDivisorProperties;
@@ -98680,6 +100117,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceVertexAttributeDivisorPropertiesKHR = PhysicalDeviceVertexAttributeDivisorProperties;
 
+  // wrapper struct for struct VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT.html
   struct PhysicalDeviceVertexAttributeDivisorPropertiesEXT
   {
     using NativeType = VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT;
@@ -98764,6 +100203,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVertexAttributeDivisorPropertiesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT.html
   struct PhysicalDeviceVertexAttributeRobustnessFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT;
@@ -98864,6 +100305,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVertexAttributeRobustnessFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html
   struct PhysicalDeviceVertexInputDynamicStateFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT;
@@ -98963,6 +100406,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVertexInputDynamicStateFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVideoEncodeAV1FeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVideoEncodeAV1FeaturesKHR.html
   struct PhysicalDeviceVideoEncodeAV1FeaturesKHR
   {
     using NativeType = VkPhysicalDeviceVideoEncodeAV1FeaturesKHR;
@@ -99060,6 +100505,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVideoEncodeAV1FeaturesKHR;
   };
 
+  // wrapper struct for struct VkVideoProfileInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoProfileInfoKHR.html
   struct VideoProfileInfoKHR
   {
     using NativeType = VkVideoProfileInfoKHR;
@@ -99192,6 +100638,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoProfileInfoKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR.html
   struct PhysicalDeviceVideoEncodeQualityLevelInfoKHR
   {
     using NativeType = VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR;
@@ -99299,6 +100747,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVideoEncodeQualityLevelInfoKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR.html
   struct PhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR;
@@ -99399,6 +100849,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVideoFormatInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVideoFormatInfoKHR.html
   struct PhysicalDeviceVideoFormatInfoKHR
   {
     using NativeType = VkPhysicalDeviceVideoFormatInfoKHR;
@@ -99496,6 +100948,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVideoFormatInfoKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVideoMaintenance1FeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVideoMaintenance1FeaturesKHR.html
   struct PhysicalDeviceVideoMaintenance1FeaturesKHR
   {
     using NativeType = VkPhysicalDeviceVideoMaintenance1FeaturesKHR;
@@ -99594,6 +101048,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVideoMaintenance1FeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVideoMaintenance2FeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVideoMaintenance2FeaturesKHR.html
   struct PhysicalDeviceVideoMaintenance2FeaturesKHR
   {
     using NativeType = VkPhysicalDeviceVideoMaintenance2FeaturesKHR;
@@ -99692,6 +101148,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVideoMaintenance2FeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVulkan11Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVulkan11Features.html
   struct PhysicalDeviceVulkan11Features
   {
     using NativeType = VkPhysicalDeviceVulkan11Features;
@@ -99926,6 +101384,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVulkan11Features;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVulkan11Properties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVulkan11Properties.html
   struct PhysicalDeviceVulkan11Properties
   {
     using NativeType = VkPhysicalDeviceVulkan11Properties;
@@ -100091,6 +101551,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVulkan11Properties;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVulkan12Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVulkan12Features.html
   struct PhysicalDeviceVulkan12Features
   {
     using NativeType = VkPhysicalDeviceVulkan12Features;
@@ -100766,6 +102228,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVulkan12Features;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVulkan12Properties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVulkan12Properties.html
   struct PhysicalDeviceVulkan12Properties
   {
     using NativeType = VkPhysicalDeviceVulkan12Properties;
@@ -101257,6 +102721,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVulkan12Properties;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVulkan13Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVulkan13Features.html
   struct PhysicalDeviceVulkan13Features
   {
     using NativeType = VkPhysicalDeviceVulkan13Features;
@@ -101527,6 +102993,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVulkan13Features;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVulkan13Properties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVulkan13Properties.html
   struct PhysicalDeviceVulkan13Properties
   {
     using NativeType = VkPhysicalDeviceVulkan13Properties;
@@ -101883,6 +103351,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVulkan13Properties;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVulkan14Features, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVulkan14Features.html
   struct PhysicalDeviceVulkan14Features
   {
     using NativeType = VkPhysicalDeviceVulkan14Features;
@@ -102220,6 +103690,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVulkan14Features;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVulkan14Properties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVulkan14Properties.html
   struct PhysicalDeviceVulkan14Properties
   {
     using NativeType = VkPhysicalDeviceVulkan14Properties;
@@ -102452,6 +103924,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceVulkan14Properties;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceVulkanMemoryModelFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceVulkanMemoryModelFeatures.html
   struct PhysicalDeviceVulkanMemoryModelFeatures
   {
     using NativeType = VkPhysicalDeviceVulkanMemoryModelFeatures;
@@ -102578,6 +104052,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceVulkanMemoryModelFeaturesKHR = PhysicalDeviceVulkanMemoryModelFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR.html
   struct PhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR
   {
     using NativeType = VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR;
@@ -102723,6 +104199,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT.html
   struct PhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT;
@@ -102822,6 +104300,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceYcbcrDegammaFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceYcbcrDegammaFeaturesQCOM.html
   struct PhysicalDeviceYcbcrDegammaFeaturesQCOM
   {
     using NativeType = VkPhysicalDeviceYcbcrDegammaFeaturesQCOM;
@@ -102918,6 +104398,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceYcbcrDegammaFeaturesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceYcbcrImageArraysFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceYcbcrImageArraysFeaturesEXT.html
   struct PhysicalDeviceYcbcrImageArraysFeaturesEXT
   {
     using NativeType = VkPhysicalDeviceYcbcrImageArraysFeaturesEXT;
@@ -103016,6 +104498,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceYcbcrImageArraysFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html
   struct PhysicalDeviceZeroInitializeWorkgroupMemoryFeatures
   {
     using NativeType = VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
@@ -103118,6 +104602,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceZeroInitializeWorkgroupMemoryFeaturesKHR = PhysicalDeviceZeroInitializeWorkgroupMemoryFeatures;
 
+  // wrapper struct for struct VkPipelineBinaryKeyKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineBinaryKeyKHR.html
   struct PipelineBinaryKeyKHR
   {
     using NativeType = VkPipelineBinaryKeyKHR;
@@ -103227,6 +104712,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineBinaryKeyKHR;
   };
 
+  // wrapper struct for struct VkPipelineBinaryDataKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineBinaryDataKHR.html
   struct PipelineBinaryDataKHR
   {
     using NativeType = VkPipelineBinaryDataKHR;
@@ -103330,6 +104816,7 @@ namespace VULKAN_HPP_NAMESPACE
     void * pData    = {};
   };
 
+  // wrapper struct for struct VkPipelineBinaryKeysAndDataKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineBinaryKeysAndDataKHR.html
   struct PipelineBinaryKeysAndDataKHR
   {
     using NativeType = VkPipelineBinaryKeysAndDataKHR;
@@ -103468,6 +104955,7 @@ namespace VULKAN_HPP_NAMESPACE
     const VULKAN_HPP_NAMESPACE::PipelineBinaryDataKHR * pPipelineBinaryData = {};
   };
 
+  // wrapper struct for struct VkPipelineCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCreateInfoKHR.html
   struct PipelineCreateInfoKHR
   {
     using NativeType = VkPipelineCreateInfoKHR;
@@ -103553,6 +105041,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkPipelineBinaryCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineBinaryCreateInfoKHR.html
   struct PipelineBinaryCreateInfoKHR
   {
     using NativeType = VkPipelineBinaryCreateInfoKHR;
@@ -103675,6 +105164,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineBinaryCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkPipelineBinaryDataInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineBinaryDataInfoKHR.html
   struct PipelineBinaryDataInfoKHR
   {
     using NativeType = VkPipelineBinaryDataInfoKHR;
@@ -103771,6 +105261,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineBinaryDataInfoKHR;
   };
 
+  // wrapper struct for struct VkPipelineBinaryHandlesInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineBinaryHandlesInfoKHR.html
   struct PipelineBinaryHandlesInfoKHR
   {
     using NativeType = VkPipelineBinaryHandlesInfoKHR;
@@ -103897,6 +105388,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineBinaryHandlesInfoKHR;
   };
 
+  // wrapper struct for struct VkPipelineBinaryInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineBinaryInfoKHR.html
   struct PipelineBinaryInfoKHR
   {
     using NativeType = VkPipelineBinaryInfoKHR;
@@ -104022,6 +105514,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineBinaryInfoKHR;
   };
 
+  // wrapper struct for struct VkPipelineCacheCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCacheCreateInfo.html
   struct PipelineCacheCreateInfo
   {
     using NativeType = VkPipelineCacheCreateInfo;
@@ -104162,6 +105655,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineCacheCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelineCacheHeaderVersionOne, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCacheHeaderVersionOne.html
   struct PipelineCacheHeaderVersionOne
   {
     using NativeType = VkPipelineCacheHeaderVersionOne;
@@ -104283,6 +105778,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ArrayWrapper1D<uint8_t, VK_UUID_SIZE> pipelineCacheUUID = {};
   };
 
+  // wrapper struct for struct VkPipelineColorBlendAdvancedStateCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineColorBlendAdvancedStateCreateInfoEXT.html
   struct PipelineColorBlendAdvancedStateCreateInfoEXT
   {
     using NativeType = VkPipelineColorBlendAdvancedStateCreateInfoEXT;
@@ -104407,6 +105904,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineColorBlendAdvancedStateCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineColorWriteCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineColorWriteCreateInfoEXT.html
   struct PipelineColorWriteCreateInfoEXT
   {
     using NativeType = VkPipelineColorWriteCreateInfoEXT;
@@ -104532,6 +106031,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineColorWriteCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineCompilerControlCreateInfoAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCompilerControlCreateInfoAMD.html
   struct PipelineCompilerControlCreateInfoAMD
   {
     using NativeType = VkPipelineCompilerControlCreateInfoAMD;
@@ -104630,6 +106131,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineCompilerControlCreateInfoAMD;
   };
 
+  // wrapper struct for struct VkPipelineCoverageModulationStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCoverageModulationStateCreateInfoNV.html
   struct PipelineCoverageModulationStateCreateInfoNV
   {
     using NativeType = VkPipelineCoverageModulationStateCreateInfoNV;
@@ -104803,6 +106306,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineCoverageModulationStateCreateInfoNV;
   };
 
+  // wrapper struct for struct VkPipelineCoverageReductionStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCoverageReductionStateCreateInfoNV.html
   struct PipelineCoverageReductionStateCreateInfoNV
   {
     using NativeType = VkPipelineCoverageReductionStateCreateInfoNV;
@@ -104915,6 +106420,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineCoverageReductionStateCreateInfoNV;
   };
 
+  // wrapper struct for struct VkPipelineCoverageToColorStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCoverageToColorStateCreateInfoNV.html
   struct PipelineCoverageToColorStateCreateInfoNV
   {
     using NativeType = VkPipelineCoverageToColorStateCreateInfoNV;
@@ -105037,6 +106544,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineCoverageToColorStateCreateInfoNV;
   };
 
+  // wrapper struct for struct VkPipelineCreateFlags2CreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCreateFlags2CreateInfo.html
   struct PipelineCreateFlags2CreateInfo
   {
     using NativeType = VkPipelineCreateFlags2CreateInfo;
@@ -105136,6 +106645,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PipelineCreateFlags2CreateInfoKHR = PipelineCreateFlags2CreateInfo;
 
+  // wrapper struct for struct VkPipelineCreationFeedback, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCreationFeedback.html
   struct PipelineCreationFeedback
   {
     using NativeType = VkPipelineCreationFeedback;
@@ -105211,6 +106721,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PipelineCreationFeedbackEXT = PipelineCreationFeedback;
 
+  // wrapper struct for struct VkPipelineCreationFeedbackCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCreationFeedbackCreateInfo.html
   struct PipelineCreationFeedbackCreateInfo
   {
     using NativeType = VkPipelineCreationFeedbackCreateInfo;
@@ -105361,6 +106873,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PipelineCreationFeedbackCreateInfoEXT = PipelineCreationFeedbackCreateInfo;
 
+  // wrapper struct for struct VkPipelineDiscardRectangleStateCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineDiscardRectangleStateCreateInfoEXT.html
   struct PipelineDiscardRectangleStateCreateInfoEXT
   {
     using NativeType = VkPipelineDiscardRectangleStateCreateInfoEXT;
@@ -105519,6 +107033,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineDiscardRectangleStateCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineExecutableInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineExecutableInfoKHR.html
   struct PipelineExecutableInfoKHR
   {
     using NativeType = VkPipelineExecutableInfoKHR;
@@ -105625,6 +107140,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineExecutableInfoKHR;
   };
 
+  // wrapper struct for struct VkPipelineExecutableInternalRepresentationKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineExecutableInternalRepresentationKHR.html
   struct PipelineExecutableInternalRepresentationKHR
   {
     using NativeType = VkPipelineExecutableInternalRepresentationKHR;
@@ -105742,6 +107259,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineExecutableInternalRepresentationKHR;
   };
 
+  // wrapper struct for struct VkPipelineExecutablePropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineExecutablePropertiesKHR.html
   struct PipelineExecutablePropertiesKHR
   {
     using NativeType = VkPipelineExecutablePropertiesKHR;
@@ -105915,6 +107434,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VULKAN_HPP_HAS_UNRESTRICTED_UNIONS*/
   };
 
+  // wrapper struct for struct VkPipelineExecutableStatisticKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineExecutableStatisticKHR.html
   struct PipelineExecutableStatisticKHR
   {
     using NativeType = VkPipelineExecutableStatisticKHR;
@@ -105995,6 +107516,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineExecutableStatisticKHR;
   };
 
+  // wrapper struct for struct VkPipelineFragmentShadingRateEnumStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineFragmentShadingRateEnumStateCreateInfoNV.html
   struct PipelineFragmentShadingRateEnumStateCreateInfoNV
   {
     using NativeType = VkPipelineFragmentShadingRateEnumStateCreateInfoNV;
@@ -106121,6 +107644,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineFragmentShadingRateEnumStateCreateInfoNV;
   };
 
+  // wrapper struct for struct VkPipelineFragmentShadingRateStateCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineFragmentShadingRateStateCreateInfoKHR.html
   struct PipelineFragmentShadingRateStateCreateInfoKHR
   {
     using NativeType = VkPipelineFragmentShadingRateStateCreateInfoKHR;
@@ -106235,6 +107760,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineFragmentShadingRateStateCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkPipelineIndirectDeviceAddressInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineIndirectDeviceAddressInfoNV.html
   struct PipelineIndirectDeviceAddressInfoNV
   {
     using NativeType = VkPipelineIndirectDeviceAddressInfoNV;
@@ -106346,6 +107873,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineIndirectDeviceAddressInfoNV;
   };
 
+  // wrapper struct for struct VkPipelineInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineInfoKHR.html
   struct PipelineInfoKHR
   {
     using NativeType = VkPipelineInfoKHR;
@@ -106441,6 +107969,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PipelineInfoEXT = PipelineInfoKHR;
 
+  // wrapper struct for struct VkPipelineLayoutCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineLayoutCreateInfo.html
   struct PipelineLayoutCreateInfo
   {
     using NativeType = VkPipelineLayoutCreateInfo;
@@ -106618,6 +108147,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineLayoutCreateInfo;
   };
 
+  // wrapper struct for struct VkPipelinePropertiesIdentifierEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelinePropertiesIdentifierEXT.html
   struct PipelinePropertiesIdentifierEXT
   {
     using NativeType = VkPipelinePropertiesIdentifierEXT;
@@ -106701,6 +108232,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelinePropertiesIdentifierEXT;
   };
 
+  // wrapper struct for struct VkPipelineRasterizationConservativeStateCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRasterizationConservativeStateCreateInfoEXT.html
   struct PipelineRasterizationConservativeStateCreateInfoEXT
   {
     using NativeType = VkPipelineRasterizationConservativeStateCreateInfoEXT;
@@ -106828,6 +108361,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineRasterizationConservativeStateCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineRasterizationDepthClipStateCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRasterizationDepthClipStateCreateInfoEXT.html
   struct PipelineRasterizationDepthClipStateCreateInfoEXT
   {
     using NativeType = VkPipelineRasterizationDepthClipStateCreateInfoEXT;
@@ -106940,6 +108475,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineRasterizationDepthClipStateCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineRasterizationLineStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRasterizationLineStateCreateInfo.html
   struct PipelineRasterizationLineStateCreateInfo
   {
     using NativeType = VkPipelineRasterizationLineStateCreateInfo;
@@ -107077,6 +108614,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PipelineRasterizationLineStateCreateInfoEXT = PipelineRasterizationLineStateCreateInfo;
   using PipelineRasterizationLineStateCreateInfoKHR = PipelineRasterizationLineStateCreateInfo;
 
+  // wrapper struct for struct VkPipelineRasterizationProvokingVertexStateCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRasterizationProvokingVertexStateCreateInfoEXT.html
   struct PipelineRasterizationProvokingVertexStateCreateInfoEXT
   {
     using NativeType = VkPipelineRasterizationProvokingVertexStateCreateInfoEXT;
@@ -107179,6 +108718,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineRasterizationProvokingVertexStateCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineRasterizationStateRasterizationOrderAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRasterizationStateRasterizationOrderAMD.html
   struct PipelineRasterizationStateRasterizationOrderAMD
   {
     using NativeType = VkPipelineRasterizationStateRasterizationOrderAMD;
@@ -107279,6 +108820,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineRasterizationStateRasterizationOrderAMD;
   };
 
+  // wrapper struct for struct VkPipelineRasterizationStateStreamCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRasterizationStateStreamCreateInfoEXT.html
   struct PipelineRasterizationStateStreamCreateInfoEXT
   {
     using NativeType = VkPipelineRasterizationStateStreamCreateInfoEXT;
@@ -107390,6 +108933,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineRasterizationStateStreamCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineRenderingCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRenderingCreateInfo.html
   struct PipelineRenderingCreateInfo
   {
     using NativeType = VkPipelineRenderingCreateInfo;
@@ -107561,6 +109105,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PipelineRenderingCreateInfoKHR = PipelineRenderingCreateInfo;
 
+  // wrapper struct for struct VkPipelineRepresentativeFragmentTestStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRepresentativeFragmentTestStateCreateInfoNV.html
   struct PipelineRepresentativeFragmentTestStateCreateInfoNV
   {
     using NativeType = VkPipelineRepresentativeFragmentTestStateCreateInfoNV;
@@ -107661,6 +109207,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineRepresentativeFragmentTestStateCreateInfoNV;
   };
 
+  // wrapper struct for struct VkPipelineRobustnessCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineRobustnessCreateInfo.html
   struct PipelineRobustnessCreateInfo
   {
     using NativeType = VkPipelineRobustnessCreateInfo;
@@ -107797,6 +109344,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PipelineRobustnessCreateInfoEXT = PipelineRobustnessCreateInfo;
 
+  // wrapper struct for struct VkPipelineSampleLocationsStateCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineSampleLocationsStateCreateInfoEXT.html
   struct PipelineSampleLocationsStateCreateInfoEXT
   {
     using NativeType = VkPipelineSampleLocationsStateCreateInfoEXT;
@@ -107909,6 +109458,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineSampleLocationsStateCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineShaderStageModuleIdentifierCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineShaderStageModuleIdentifierCreateInfoEXT.html
   struct PipelineShaderStageModuleIdentifierCreateInfoEXT
   {
     using NativeType = VkPipelineShaderStageModuleIdentifierCreateInfoEXT;
@@ -108035,6 +109586,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPipelineShaderStageNodeCreateInfoAMDX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineShaderStageNodeCreateInfoAMDX.html
   struct PipelineShaderStageNodeCreateInfoAMDX
   {
     using NativeType = VkPipelineShaderStageNodeCreateInfoAMDX;
@@ -108150,6 +109703,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
+  // wrapper struct for struct VkPipelineShaderStageRequiredSubgroupSizeCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineShaderStageRequiredSubgroupSizeCreateInfo.html
   struct PipelineShaderStageRequiredSubgroupSizeCreateInfo
   {
     using NativeType = VkPipelineShaderStageRequiredSubgroupSizeCreateInfo;
@@ -108237,6 +109792,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PipelineShaderStageRequiredSubgroupSizeCreateInfoEXT = PipelineShaderStageRequiredSubgroupSizeCreateInfo;
   using ShaderRequiredSubgroupSizeCreateInfoEXT              = PipelineShaderStageRequiredSubgroupSizeCreateInfo;
 
+  // wrapper struct for struct VkPipelineTessellationDomainOriginStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineTessellationDomainOriginStateCreateInfo.html
   struct PipelineTessellationDomainOriginStateCreateInfo
   {
     using NativeType = VkPipelineTessellationDomainOriginStateCreateInfo;
@@ -108339,6 +109896,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PipelineTessellationDomainOriginStateCreateInfoKHR = PipelineTessellationDomainOriginStateCreateInfo;
 
+  // wrapper struct for struct VkVertexInputBindingDivisorDescription, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVertexInputBindingDivisorDescription.html
   struct VertexInputBindingDivisorDescription
   {
     using NativeType = VkVertexInputBindingDivisorDescription;
@@ -108428,6 +109987,8 @@ namespace VULKAN_HPP_NAMESPACE
   using VertexInputBindingDivisorDescriptionEXT = VertexInputBindingDivisorDescription;
   using VertexInputBindingDivisorDescriptionKHR = VertexInputBindingDivisorDescription;
 
+  // wrapper struct for struct VkPipelineVertexInputDivisorStateCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineVertexInputDivisorStateCreateInfo.html
   struct PipelineVertexInputDivisorStateCreateInfo
   {
     using NativeType = VkPipelineVertexInputDivisorStateCreateInfo;
@@ -108565,6 +110126,8 @@ namespace VULKAN_HPP_NAMESPACE
   using PipelineVertexInputDivisorStateCreateInfoEXT = PipelineVertexInputDivisorStateCreateInfo;
   using PipelineVertexInputDivisorStateCreateInfoKHR = PipelineVertexInputDivisorStateCreateInfo;
 
+  // wrapper struct for struct VkPipelineViewportCoarseSampleOrderStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineViewportCoarseSampleOrderStateCreateInfoNV.html
   struct PipelineViewportCoarseSampleOrderStateCreateInfoNV
   {
     using NativeType = VkPipelineViewportCoarseSampleOrderStateCreateInfoNV;
@@ -108714,6 +110277,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineViewportCoarseSampleOrderStateCreateInfoNV;
   };
 
+  // wrapper struct for struct VkPipelineViewportDepthClampControlCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineViewportDepthClampControlCreateInfoEXT.html
   struct PipelineViewportDepthClampControlCreateInfoEXT
   {
     using NativeType = VkPipelineViewportDepthClampControlCreateInfoEXT;
@@ -108827,6 +110392,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineViewportDepthClampControlCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineViewportDepthClipControlCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineViewportDepthClipControlCreateInfoEXT.html
   struct PipelineViewportDepthClipControlCreateInfoEXT
   {
     using NativeType = VkPipelineViewportDepthClipControlCreateInfoEXT;
@@ -108926,6 +110493,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineViewportDepthClipControlCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkPipelineViewportExclusiveScissorStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineViewportExclusiveScissorStateCreateInfoNV.html
   struct PipelineViewportExclusiveScissorStateCreateInfoNV
   {
     using NativeType = VkPipelineViewportExclusiveScissorStateCreateInfoNV;
@@ -109054,6 +110623,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineViewportExclusiveScissorStateCreateInfoNV;
   };
 
+  // wrapper struct for struct VkShadingRatePaletteNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkShadingRatePaletteNV.html
   struct ShadingRatePaletteNV
   {
     using NativeType = VkShadingRatePaletteNV;
@@ -109162,6 +110732,8 @@ namespace VULKAN_HPP_NAMESPACE
     const VULKAN_HPP_NAMESPACE::ShadingRatePaletteEntryNV * pShadingRatePaletteEntries   = {};
   };
 
+  // wrapper struct for struct VkPipelineViewportShadingRateImageStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineViewportShadingRateImageStateCreateInfoNV.html
   struct PipelineViewportShadingRateImageStateCreateInfoNV
   {
     using NativeType = VkPipelineViewportShadingRateImageStateCreateInfoNV;
@@ -109309,6 +110881,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineViewportShadingRateImageStateCreateInfoNV;
   };
 
+  // wrapper struct for struct VkViewportSwizzleNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkViewportSwizzleNV.html
   struct ViewportSwizzleNV
   {
     using NativeType = VkViewportSwizzleNV;
@@ -109415,6 +110988,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ViewportCoordinateSwizzleNV w = VULKAN_HPP_NAMESPACE::ViewportCoordinateSwizzleNV::ePositiveX;
   };
 
+  // wrapper struct for struct VkPipelineViewportSwizzleStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineViewportSwizzleStateCreateInfoNV.html
   struct PipelineViewportSwizzleStateCreateInfoNV
   {
     using NativeType = VkPipelineViewportSwizzleStateCreateInfoNV;
@@ -109557,6 +111132,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PipelineViewportSwizzleStateCreateInfoNV;
   };
 
+  // wrapper struct for struct VkViewportWScalingNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkViewportWScalingNV.html
   struct ViewportWScalingNV
   {
     using NativeType = VkViewportWScalingNV;
@@ -109640,6 +111216,8 @@ namespace VULKAN_HPP_NAMESPACE
     float ycoeff = {};
   };
 
+  // wrapper struct for struct VkPipelineViewportWScalingStateCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineViewportWScalingStateCreateInfoNV.html
   struct PipelineViewportWScalingStateCreateInfoNV
   {
     using NativeType = VkPipelineViewportWScalingStateCreateInfoNV;
@@ -109786,6 +111364,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_GGP )
+  // wrapper struct for struct VkPresentFrameTokenGGP, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentFrameTokenGGP.html
   struct PresentFrameTokenGGP
   {
     using NativeType = VkPresentFrameTokenGGP;
@@ -109889,6 +111468,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_GGP*/
 
+  // wrapper struct for struct VkPresentIdKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentIdKHR.html
   struct PresentIdKHR
   {
     using NativeType = VkPresentIdKHR;
@@ -110006,6 +111586,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PresentIdKHR;
   };
 
+  // wrapper struct for struct VkPresentInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentInfoKHR.html
   struct PresentInfoKHR
   {
     using NativeType = VkPresentInfoKHR;
@@ -110227,6 +111808,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PresentInfoKHR;
   };
 
+  // wrapper struct for struct VkRectLayerKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRectLayerKHR.html
   struct RectLayerKHR
   {
     using NativeType = VkRectLayerKHR;
@@ -110321,6 +111903,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                       layer  = {};
   };
 
+  // wrapper struct for struct VkPresentRegionKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentRegionKHR.html
   struct PresentRegionKHR
   {
     using NativeType = VkPresentRegionKHR;
@@ -110421,6 +112004,7 @@ namespace VULKAN_HPP_NAMESPACE
     const VULKAN_HPP_NAMESPACE::RectLayerKHR * pRectangles    = {};
   };
 
+  // wrapper struct for struct VkPresentRegionsKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentRegionsKHR.html
   struct PresentRegionsKHR
   {
     using NativeType = VkPresentRegionsKHR;
@@ -110542,6 +112126,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PresentRegionsKHR;
   };
 
+  // wrapper struct for struct VkPresentTimeGOOGLE, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentTimeGOOGLE.html
   struct PresentTimeGOOGLE
   {
     using NativeType = VkPresentTimeGOOGLE;
@@ -110625,6 +112210,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t desiredPresentTime = {};
   };
 
+  // wrapper struct for struct VkPresentTimesInfoGOOGLE, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentTimesInfoGOOGLE.html
   struct PresentTimesInfoGOOGLE
   {
     using NativeType = VkPresentTimesInfoGOOGLE;
@@ -110749,6 +112335,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PresentTimesInfoGOOGLE;
   };
 
+  // wrapper struct for struct VkPrivateDataSlotCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPrivateDataSlotCreateInfo.html
   struct PrivateDataSlotCreateInfo
   {
     using NativeType = VkPrivateDataSlotCreateInfo;
@@ -110848,6 +112435,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PrivateDataSlotCreateInfoEXT = PrivateDataSlotCreateInfo;
 
+  // wrapper struct for struct VkProtectedSubmitInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkProtectedSubmitInfo.html
   struct ProtectedSubmitInfo
   {
     using NativeType = VkProtectedSubmitInfo;
@@ -110943,6 +112531,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ProtectedSubmitInfo;
   };
 
+  // wrapper struct for struct VkPushConstantsInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPushConstantsInfo.html
   struct PushConstantsInfo
   {
     using NativeType = VkPushConstantsInfo;
@@ -111109,6 +112698,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PushConstantsInfoKHR = PushConstantsInfo;
 
+  // wrapper struct for struct VkWriteDescriptorSet, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkWriteDescriptorSet.html
   struct WriteDescriptorSet
   {
     using NativeType = VkWriteDescriptorSet;
@@ -111340,6 +112930,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = WriteDescriptorSet;
   };
 
+  // wrapper struct for struct VkPushDescriptorSetInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPushDescriptorSetInfo.html
   struct PushDescriptorSetInfo
   {
     using NativeType = VkPushDescriptorSetInfo;
@@ -111509,6 +113100,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PushDescriptorSetInfoKHR = PushDescriptorSetInfo;
 
+  // wrapper struct for struct VkPushDescriptorSetWithTemplateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPushDescriptorSetWithTemplateInfo.html
   struct PushDescriptorSetWithTemplateInfo
   {
     using NativeType = VkPushDescriptorSetWithTemplateInfo;
@@ -111642,6 +113235,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PushDescriptorSetWithTemplateInfoKHR = PushDescriptorSetWithTemplateInfo;
 
+  // wrapper struct for struct VkQueryLowLatencySupportNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueryLowLatencySupportNV.html
   struct QueryLowLatencySupportNV
   {
     using NativeType = VkQueryLowLatencySupportNV;
@@ -111738,6 +113332,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = QueryLowLatencySupportNV;
   };
 
+  // wrapper struct for struct VkQueryPoolCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueryPoolCreateInfo.html
   struct QueryPoolCreateInfo
   {
     using NativeType = VkQueryPoolCreateInfo;
@@ -111868,6 +113463,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = QueryPoolCreateInfo;
   };
 
+  // wrapper struct for struct VkQueryPoolPerformanceCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueryPoolPerformanceCreateInfoKHR.html
   struct QueryPoolPerformanceCreateInfoKHR
   {
     using NativeType = VkQueryPoolPerformanceCreateInfoKHR;
@@ -112006,6 +113603,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = QueryPoolPerformanceCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkQueryPoolPerformanceQueryCreateInfoINTEL, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueryPoolPerformanceQueryCreateInfoINTEL.html
   struct QueryPoolPerformanceQueryCreateInfoINTEL
   {
     using NativeType = VkQueryPoolPerformanceQueryCreateInfoINTEL;
@@ -112107,6 +113706,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using QueryPoolCreateInfoINTEL = QueryPoolPerformanceQueryCreateInfoINTEL;
 
+  // wrapper struct for struct VkQueryPoolVideoEncodeFeedbackCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueryPoolVideoEncodeFeedbackCreateInfoKHR.html
   struct QueryPoolVideoEncodeFeedbackCreateInfoKHR
   {
     using NativeType = VkQueryPoolVideoEncodeFeedbackCreateInfoKHR;
@@ -112205,6 +113806,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = QueryPoolVideoEncodeFeedbackCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkQueueFamilyCheckpointProperties2NV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueueFamilyCheckpointProperties2NV.html
   struct QueueFamilyCheckpointProperties2NV
   {
     using NativeType = VkQueueFamilyCheckpointProperties2NV;
@@ -112288,6 +113891,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = QueueFamilyCheckpointProperties2NV;
   };
 
+  // wrapper struct for struct VkQueueFamilyCheckpointPropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueueFamilyCheckpointPropertiesNV.html
   struct QueueFamilyCheckpointPropertiesNV
   {
     using NativeType = VkQueueFamilyCheckpointPropertiesNV;
@@ -112371,6 +113976,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = QueueFamilyCheckpointPropertiesNV;
   };
 
+  // wrapper struct for struct VkQueueFamilyGlobalPriorityProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueueFamilyGlobalPriorityProperties.html
   struct QueueFamilyGlobalPriorityProperties
   {
     using NativeType = VkQueueFamilyGlobalPriorityProperties;
@@ -112491,6 +114098,7 @@ namespace VULKAN_HPP_NAMESPACE
   using QueueFamilyGlobalPriorityPropertiesEXT = QueueFamilyGlobalPriorityProperties;
   using QueueFamilyGlobalPriorityPropertiesKHR = QueueFamilyGlobalPriorityProperties;
 
+  // wrapper struct for struct VkQueueFamilyProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueueFamilyProperties.html
   struct QueueFamilyProperties
   {
     using NativeType = VkQueueFamilyProperties;
@@ -112571,6 +114179,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::Extent3D   minImageTransferGranularity = {};
   };
 
+  // wrapper struct for struct VkQueueFamilyProperties2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueueFamilyProperties2.html
   struct QueueFamilyProperties2
   {
     using NativeType = VkQueueFamilyProperties2;
@@ -112656,6 +114265,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using QueueFamilyProperties2KHR = QueueFamilyProperties2;
 
+  // wrapper struct for struct VkQueueFamilyQueryResultStatusPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueueFamilyQueryResultStatusPropertiesKHR.html
   struct QueueFamilyQueryResultStatusPropertiesKHR
   {
     using NativeType = VkQueueFamilyQueryResultStatusPropertiesKHR;
@@ -112739,6 +114350,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = QueueFamilyQueryResultStatusPropertiesKHR;
   };
 
+  // wrapper struct for struct VkQueueFamilyVideoPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkQueueFamilyVideoPropertiesKHR.html
   struct QueueFamilyVideoPropertiesKHR
   {
     using NativeType = VkQueueFamilyVideoPropertiesKHR;
@@ -112822,6 +114435,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = QueueFamilyVideoPropertiesKHR;
   };
 
+  // wrapper struct for struct VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV.html
   struct RayTracingPipelineClusterAccelerationStructureCreateInfoNV
   {
     using NativeType = VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV;
@@ -112924,6 +114539,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RayTracingPipelineClusterAccelerationStructureCreateInfoNV;
   };
 
+  // wrapper struct for struct VkRayTracingShaderGroupCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRayTracingShaderGroupCreateInfoKHR.html
   struct RayTracingShaderGroupCreateInfoKHR
   {
     using NativeType = VkRayTracingShaderGroupCreateInfoKHR;
@@ -113077,6 +114694,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RayTracingShaderGroupCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkRayTracingPipelineInterfaceCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRayTracingPipelineInterfaceCreateInfoKHR.html
   struct RayTracingPipelineInterfaceCreateInfoKHR
   {
     using NativeType = VkRayTracingPipelineInterfaceCreateInfoKHR;
@@ -113185,6 +114804,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RayTracingPipelineInterfaceCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkRayTracingPipelineCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRayTracingPipelineCreateInfoKHR.html
   struct RayTracingPipelineCreateInfoKHR
   {
     using NativeType = VkRayTracingPipelineCreateInfoKHR;
@@ -113465,6 +115086,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RayTracingPipelineCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkRayTracingShaderGroupCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRayTracingShaderGroupCreateInfoNV.html
   struct RayTracingShaderGroupCreateInfoNV
   {
     using NativeType = VkRayTracingShaderGroupCreateInfoNV;
@@ -113606,6 +115229,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RayTracingShaderGroupCreateInfoNV;
   };
 
+  // wrapper struct for struct VkRayTracingPipelineCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRayTracingPipelineCreateInfoNV.html
   struct RayTracingPipelineCreateInfoNV
   {
     using NativeType = VkRayTracingPipelineCreateInfoNV;
@@ -113833,6 +115458,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RayTracingPipelineCreateInfoNV;
   };
 
+  // wrapper struct for struct VkRefreshCycleDurationGOOGLE, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRefreshCycleDurationGOOGLE.html
   struct RefreshCycleDurationGOOGLE
   {
     using NativeType = VkRefreshCycleDurationGOOGLE;
@@ -113900,6 +115526,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t refreshDuration = {};
   };
 
+  // wrapper struct for struct VkReleaseCapturedPipelineDataInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkReleaseCapturedPipelineDataInfoKHR.html
   struct ReleaseCapturedPipelineDataInfoKHR
   {
     using NativeType = VkReleaseCapturedPipelineDataInfoKHR;
@@ -113996,6 +115624,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ReleaseCapturedPipelineDataInfoKHR;
   };
 
+  // wrapper struct for struct VkReleaseSwapchainImagesInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkReleaseSwapchainImagesInfoEXT.html
   struct ReleaseSwapchainImagesInfoEXT
   {
     using NativeType = VkReleaseSwapchainImagesInfoEXT;
@@ -114134,6 +115764,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ReleaseSwapchainImagesInfoEXT;
   };
 
+  // wrapper struct for struct VkRenderPassAttachmentBeginInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassAttachmentBeginInfo.html
   struct RenderPassAttachmentBeginInfo
   {
     using NativeType = VkRenderPassAttachmentBeginInfo;
@@ -114260,6 +115892,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using RenderPassAttachmentBeginInfoKHR = RenderPassAttachmentBeginInfo;
 
+  // wrapper struct for struct VkRenderPassBeginInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassBeginInfo.html
   struct RenderPassBeginInfo
   {
     using NativeType = VkRenderPassBeginInfo;
@@ -114425,6 +116058,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassBeginInfo;
   };
 
+  // wrapper struct for struct VkSubpassDescription, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassDescription.html
   struct SubpassDescription
   {
     using NativeType = VkSubpassDescription;
@@ -114679,6 +116313,7 @@ namespace VULKAN_HPP_NAMESPACE
     const uint32_t *                                  pPreserveAttachments    = {};
   };
 
+  // wrapper struct for struct VkSubpassDependency, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassDependency.html
   struct SubpassDependency
   {
     using NativeType = VkSubpassDependency;
@@ -114816,6 +116451,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DependencyFlags    dependencyFlags = {};
   };
 
+  // wrapper struct for struct VkRenderPassCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassCreateInfo.html
   struct RenderPassCreateInfo
   {
     using NativeType = VkRenderPassCreateInfo;
@@ -115025,6 +116661,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassCreateInfo;
   };
 
+  // wrapper struct for struct VkSubpassDescription2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassDescription2.html
   struct SubpassDescription2
   {
     using NativeType = VkSubpassDescription2;
@@ -115321,6 +116958,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SubpassDescription2KHR = SubpassDescription2;
 
+  // wrapper struct for struct VkSubpassDependency2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassDependency2.html
   struct SubpassDependency2
   {
     using NativeType = VkSubpassDependency2;
@@ -115491,6 +117129,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SubpassDependency2KHR = SubpassDependency2;
 
+  // wrapper struct for struct VkRenderPassCreateInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassCreateInfo2.html
   struct RenderPassCreateInfo2
   {
     using NativeType = VkRenderPassCreateInfo2;
@@ -115746,6 +117385,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using RenderPassCreateInfo2KHR = RenderPassCreateInfo2;
 
+  // wrapper struct for struct VkRenderPassCreationControlEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassCreationControlEXT.html
   struct RenderPassCreationControlEXT
   {
     using NativeType = VkRenderPassCreationControlEXT;
@@ -115842,6 +117482,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassCreationControlEXT;
   };
 
+  // wrapper struct for struct VkRenderPassCreationFeedbackInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassCreationFeedbackInfoEXT.html
   struct RenderPassCreationFeedbackInfoEXT
   {
     using NativeType = VkRenderPassCreationFeedbackInfoEXT;
@@ -115912,6 +117554,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t postMergeSubpassCount = {};
   };
 
+  // wrapper struct for struct VkRenderPassCreationFeedbackCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassCreationFeedbackCreateInfoEXT.html
   struct RenderPassCreationFeedbackCreateInfoEXT
   {
     using NativeType = VkRenderPassCreationFeedbackCreateInfoEXT;
@@ -116010,6 +117654,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassCreationFeedbackCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkRenderPassFragmentDensityMapCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassFragmentDensityMapCreateInfoEXT.html
   struct RenderPassFragmentDensityMapCreateInfoEXT
   {
     using NativeType = VkRenderPassFragmentDensityMapCreateInfoEXT;
@@ -116108,6 +117754,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassFragmentDensityMapCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkRenderPassInputAttachmentAspectCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassInputAttachmentAspectCreateInfo.html
   struct RenderPassInputAttachmentAspectCreateInfo
   {
     using NativeType = VkRenderPassInputAttachmentAspectCreateInfo;
@@ -116240,6 +117888,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using RenderPassInputAttachmentAspectCreateInfoKHR = RenderPassInputAttachmentAspectCreateInfo;
 
+  // wrapper struct for struct VkRenderPassMultiviewCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassMultiviewCreateInfo.html
   struct RenderPassMultiviewCreateInfo
   {
     using NativeType = VkRenderPassMultiviewCreateInfo;
@@ -116437,6 +118087,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using RenderPassMultiviewCreateInfoKHR = RenderPassMultiviewCreateInfo;
 
+  // wrapper struct for struct VkSubpassSampleLocationsEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassSampleLocationsEXT.html
   struct SubpassSampleLocationsEXT
   {
     using NativeType = VkSubpassSampleLocationsEXT;
@@ -116525,6 +118176,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::SampleLocationsInfoEXT sampleLocationsInfo = {};
   };
 
+  // wrapper struct for struct VkRenderPassSampleLocationsBeginInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassSampleLocationsBeginInfoEXT.html
   struct RenderPassSampleLocationsBeginInfoEXT
   {
     using NativeType = VkRenderPassSampleLocationsBeginInfoEXT;
@@ -116698,6 +118351,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassSampleLocationsBeginInfoEXT;
   };
 
+  // wrapper struct for struct VkRenderPassStripeInfoARM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassStripeInfoARM.html
   struct RenderPassStripeInfoARM
   {
     using NativeType = VkRenderPassStripeInfoARM;
@@ -116794,6 +118448,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassStripeInfoARM;
   };
 
+  // wrapper struct for struct VkRenderPassStripeBeginInfoARM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassStripeBeginInfoARM.html
   struct RenderPassStripeBeginInfoARM
   {
     using NativeType = VkRenderPassStripeBeginInfoARM;
@@ -116920,6 +118575,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassStripeBeginInfoARM;
   };
 
+  // wrapper struct for struct VkSemaphoreSubmitInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSemaphoreSubmitInfo.html
   struct SemaphoreSubmitInfo
   {
     using NativeType = VkSemaphoreSubmitInfo;
@@ -117051,6 +118707,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SemaphoreSubmitInfoKHR = SemaphoreSubmitInfo;
 
+  // wrapper struct for struct VkRenderPassStripeSubmitInfoARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassStripeSubmitInfoARM.html
   struct RenderPassStripeSubmitInfoARM
   {
     using NativeType = VkRenderPassStripeSubmitInfoARM;
@@ -117179,6 +118837,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassStripeSubmitInfoARM;
   };
 
+  // wrapper struct for struct VkRenderPassSubpassFeedbackInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassSubpassFeedbackInfoEXT.html
   struct RenderPassSubpassFeedbackInfoEXT
   {
     using NativeType = VkRenderPassSubpassFeedbackInfoEXT;
@@ -117263,6 +118923,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                                                            postMergeIndex     = {};
   };
 
+  // wrapper struct for struct VkRenderPassSubpassFeedbackCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassSubpassFeedbackCreateInfoEXT.html
   struct RenderPassSubpassFeedbackCreateInfoEXT
   {
     using NativeType = VkRenderPassSubpassFeedbackCreateInfoEXT;
@@ -117361,6 +119023,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassSubpassFeedbackCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkRenderPassTransformBeginInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassTransformBeginInfoQCOM.html
   struct RenderPassTransformBeginInfoQCOM
   {
     using NativeType = VkRenderPassTransformBeginInfoQCOM;
@@ -117459,6 +119123,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassTransformBeginInfoQCOM;
   };
 
+  // wrapper struct for struct VkRenderingAreaInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderingAreaInfo.html
   struct RenderingAreaInfo
   {
     using NativeType = VkRenderingAreaInfo;
@@ -117625,6 +119290,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using RenderingAreaInfoKHR = RenderingAreaInfo;
 
+  // wrapper struct for struct VkRenderingAttachmentInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderingAttachmentInfo.html
   struct RenderingAttachmentInfo
   {
     using NativeType = VkRenderingAttachmentInfo;
@@ -117778,6 +119444,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using RenderingAttachmentInfoKHR = RenderingAttachmentInfo;
 
+  // wrapper struct for struct VkRenderingAttachmentLocationInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderingAttachmentLocationInfo.html
   struct RenderingAttachmentLocationInfo
   {
     using NativeType = VkRenderingAttachmentLocationInfo;
@@ -117907,6 +119575,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using RenderingAttachmentLocationInfoKHR = RenderingAttachmentLocationInfo;
 
+  // wrapper struct for struct VkRenderingFragmentDensityMapAttachmentInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderingFragmentDensityMapAttachmentInfoEXT.html
   struct RenderingFragmentDensityMapAttachmentInfoEXT
   {
     using NativeType = VkRenderingFragmentDensityMapAttachmentInfoEXT;
@@ -118017,6 +119687,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderingFragmentDensityMapAttachmentInfoEXT;
   };
 
+  // wrapper struct for struct VkRenderingFragmentShadingRateAttachmentInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderingFragmentShadingRateAttachmentInfoKHR.html
   struct RenderingFragmentShadingRateAttachmentInfoKHR
   {
     using NativeType = VkRenderingFragmentShadingRateAttachmentInfoKHR;
@@ -118140,6 +119812,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderingFragmentShadingRateAttachmentInfoKHR;
   };
 
+  // wrapper struct for struct VkRenderingInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderingInfo.html
   struct RenderingInfo
   {
     using NativeType = VkRenderingInfo;
@@ -118343,6 +120016,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using RenderingInfoKHR = RenderingInfo;
 
+  // wrapper struct for struct VkRenderingInputAttachmentIndexInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderingInputAttachmentIndexInfo.html
   struct RenderingInputAttachmentIndexInfo
   {
     using NativeType = VkRenderingInputAttachmentIndexInfo;
@@ -118503,6 +120178,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using RenderingInputAttachmentIndexInfoKHR = RenderingInputAttachmentIndexInfo;
 
+  // wrapper struct for struct VkResolveImageInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkResolveImageInfo2.html
   struct ResolveImageInfo2
   {
     using NativeType = VkResolveImageInfo2;
@@ -118680,6 +120356,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using ResolveImageInfo2KHR = ResolveImageInfo2;
 
+  // wrapper struct for struct VkSamplerBlockMatchWindowCreateInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerBlockMatchWindowCreateInfoQCOM.html
   struct SamplerBlockMatchWindowCreateInfoQCOM
   {
     using NativeType = VkSamplerBlockMatchWindowCreateInfoQCOM;
@@ -118791,6 +120469,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SamplerBlockMatchWindowCreateInfoQCOM;
   };
 
+  // wrapper struct for struct VkSamplerBorderColorComponentMappingCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerBorderColorComponentMappingCreateInfoEXT.html
   struct SamplerBorderColorComponentMappingCreateInfoEXT
   {
     using NativeType = VkSamplerBorderColorComponentMappingCreateInfoEXT;
@@ -118902,6 +120582,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SamplerBorderColorComponentMappingCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkSamplerCaptureDescriptorDataInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerCaptureDescriptorDataInfoEXT.html
   struct SamplerCaptureDescriptorDataInfoEXT
   {
     using NativeType = VkSamplerCaptureDescriptorDataInfoEXT;
@@ -118998,6 +120680,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SamplerCaptureDescriptorDataInfoEXT;
   };
 
+  // wrapper struct for struct VkSamplerCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerCreateInfo.html
   struct SamplerCreateInfo
   {
     using NativeType = VkSamplerCreateInfo;
@@ -119265,6 +120948,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SamplerCreateInfo;
   };
 
+  // wrapper struct for struct VkSamplerCubicWeightsCreateInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerCubicWeightsCreateInfoQCOM.html
   struct SamplerCubicWeightsCreateInfoQCOM
   {
     using NativeType = VkSamplerCubicWeightsCreateInfoQCOM;
@@ -119364,6 +121049,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SamplerCubicWeightsCreateInfoQCOM;
   };
 
+  // wrapper struct for struct VkSamplerCustomBorderColorCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerCustomBorderColorCreateInfoEXT.html
   struct SamplerCustomBorderColorCreateInfoEXT
   {
     using NativeType = VkSamplerCustomBorderColorCreateInfoEXT;
@@ -119456,6 +121143,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SamplerCustomBorderColorCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkSamplerReductionModeCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerReductionModeCreateInfo.html
   struct SamplerReductionModeCreateInfo
   {
     using NativeType = VkSamplerReductionModeCreateInfo;
@@ -119556,6 +121245,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SamplerReductionModeCreateInfoEXT = SamplerReductionModeCreateInfo;
 
+  // wrapper struct for struct VkSamplerYcbcrConversionCreateInfo, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerYcbcrConversionCreateInfo.html
   struct SamplerYcbcrConversionCreateInfo
   {
     using NativeType = VkSamplerYcbcrConversionCreateInfo;
@@ -119733,6 +121424,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SamplerYcbcrConversionCreateInfoKHR = SamplerYcbcrConversionCreateInfo;
 
+  // wrapper struct for struct VkSamplerYcbcrConversionImageFormatProperties, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerYcbcrConversionImageFormatProperties.html
   struct SamplerYcbcrConversionImageFormatProperties
   {
     using NativeType = VkSamplerYcbcrConversionImageFormatProperties;
@@ -119818,6 +121511,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SamplerYcbcrConversionImageFormatPropertiesKHR = SamplerYcbcrConversionImageFormatProperties;
 
+  // wrapper struct for struct VkSamplerYcbcrConversionInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerYcbcrConversionInfo.html
   struct SamplerYcbcrConversionInfo
   {
     using NativeType = VkSamplerYcbcrConversionInfo;
@@ -119917,6 +121611,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SamplerYcbcrConversionInfoKHR = SamplerYcbcrConversionInfo;
 
+  // wrapper struct for struct VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM.html
   struct SamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM
   {
     using NativeType = VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM;
@@ -120027,6 +121723,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_SCREEN_QNX )
+  // wrapper struct for struct VkScreenBufferFormatPropertiesQNX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkScreenBufferFormatPropertiesQNX.html
   struct ScreenBufferFormatPropertiesQNX
   {
     using NativeType = VkScreenBufferFormatPropertiesQNX;
@@ -120161,6 +121859,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_SCREEN_QNX*/
 
 #if defined( VK_USE_PLATFORM_SCREEN_QNX )
+  // wrapper struct for struct VkScreenBufferPropertiesQNX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkScreenBufferPropertiesQNX.html
   struct ScreenBufferPropertiesQNX
   {
     using NativeType = VkScreenBufferPropertiesQNX;
@@ -120249,6 +121948,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_SCREEN_QNX*/
 
 #if defined( VK_USE_PLATFORM_SCREEN_QNX )
+  // wrapper struct for struct VkScreenSurfaceCreateInfoQNX, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkScreenSurfaceCreateInfoQNX.html
   struct ScreenSurfaceCreateInfoQNX
   {
     using NativeType = VkScreenSurfaceCreateInfoQNX;
@@ -120369,6 +122069,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_SCREEN_QNX*/
 
+  // wrapper struct for struct VkSemaphoreCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSemaphoreCreateInfo.html
   struct SemaphoreCreateInfo
   {
     using NativeType = VkSemaphoreCreateInfo;
@@ -120464,6 +122165,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SemaphoreCreateInfo;
   };
 
+  // wrapper struct for struct VkSemaphoreGetFdInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSemaphoreGetFdInfoKHR.html
   struct SemaphoreGetFdInfoKHR
   {
     using NativeType = VkSemaphoreGetFdInfoKHR;
@@ -120575,6 +122277,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkSemaphoreGetWin32HandleInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSemaphoreGetWin32HandleInfoKHR.html
   struct SemaphoreGetWin32HandleInfoKHR
   {
     using NativeType = VkSemaphoreGetWin32HandleInfoKHR;
@@ -120688,6 +122392,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_FUCHSIA )
+  // wrapper struct for struct VkSemaphoreGetZirconHandleInfoFUCHSIA, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSemaphoreGetZirconHandleInfoFUCHSIA.html
   struct SemaphoreGetZirconHandleInfoFUCHSIA
   {
     using NativeType = VkSemaphoreGetZirconHandleInfoFUCHSIA;
@@ -120800,6 +122506,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_FUCHSIA*/
 
+  // wrapper struct for struct VkSemaphoreSignalInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSemaphoreSignalInfo.html
   struct SemaphoreSignalInfo
   {
     using NativeType = VkSemaphoreSignalInfo;
@@ -120906,6 +122613,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SemaphoreSignalInfoKHR = SemaphoreSignalInfo;
 
+  // wrapper struct for struct VkSemaphoreTypeCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSemaphoreTypeCreateInfo.html
   struct SemaphoreTypeCreateInfo
   {
     using NativeType = VkSemaphoreTypeCreateInfo;
@@ -121014,6 +122722,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SemaphoreTypeCreateInfoKHR = SemaphoreTypeCreateInfo;
 
+  // wrapper struct for struct VkSemaphoreWaitInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSemaphoreWaitInfo.html
   struct SemaphoreWaitInfo
   {
     using NativeType = VkSemaphoreWaitInfo;
@@ -121184,6 +122893,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SemaphoreWaitInfoKHR = SemaphoreWaitInfo;
 
+  // wrapper struct for struct VkSetDescriptorBufferOffsetsInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSetDescriptorBufferOffsetsInfoEXT.html
   struct SetDescriptorBufferOffsetsInfoEXT
   {
     using NativeType = VkSetDescriptorBufferOffsetsInfoEXT;
@@ -121381,6 +123092,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SetDescriptorBufferOffsetsInfoEXT;
   };
 
+  // wrapper struct for struct VkSetLatencyMarkerInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSetLatencyMarkerInfoNV.html
   struct SetLatencyMarkerInfoNV
   {
     using NativeType = VkSetLatencyMarkerInfoNV;
@@ -121487,6 +123199,114 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SetLatencyMarkerInfoNV;
   };
 
+#if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkSetPresentConfigNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSetPresentConfigNV.html
+  struct SetPresentConfigNV
+  {
+    using NativeType = VkSetPresentConfigNV;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eSetPresentConfigNV;
+
+#  if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR
+      SetPresentConfigNV( uint32_t numFramesPerBatch_ = {}, uint32_t presentConfigFeedback_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , numFramesPerBatch{ numFramesPerBatch_ }
+      , presentConfigFeedback{ presentConfigFeedback_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR SetPresentConfigNV( SetPresentConfigNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    SetPresentConfigNV( VkSetPresentConfigNV const & rhs ) VULKAN_HPP_NOEXCEPT : SetPresentConfigNV( *reinterpret_cast<SetPresentConfigNV const *>( &rhs ) ) {}
+
+    SetPresentConfigNV & operator=( SetPresentConfigNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#  endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    SetPresentConfigNV & operator=( VkSetPresentConfigNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::SetPresentConfigNV const *>( &rhs );
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 SetPresentConfigNV & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SetPresentConfigNV & setNumFramesPerBatch( uint32_t numFramesPerBatch_ ) VULKAN_HPP_NOEXCEPT
+    {
+      numFramesPerBatch = numFramesPerBatch_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SetPresentConfigNV & setPresentConfigFeedback( uint32_t presentConfigFeedback_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentConfigFeedback = presentConfigFeedback_;
+      return *this;
+    }
+#  endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkSetPresentConfigNV const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkSetPresentConfigNV *>( this );
+    }
+
+    operator VkSetPresentConfigNV &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkSetPresentConfigNV *>( this );
+    }
+
+#  if defined( VULKAN_HPP_USE_REFLECT )
+#    if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#    else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, uint32_t const &, uint32_t const &>
+#    endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, numFramesPerBatch, presentConfigFeedback );
+    }
+#  endif
+
+#  if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( SetPresentConfigNV const & ) const = default;
+#  else
+    bool operator==( SetPresentConfigNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#    if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#    else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( numFramesPerBatch == rhs.numFramesPerBatch ) &&
+             ( presentConfigFeedback == rhs.presentConfigFeedback );
+#    endif
+    }
+
+    bool operator!=( SetPresentConfigNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#  endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType                 = StructureType::eSetPresentConfigNV;
+    const void *                        pNext                 = {};
+    uint32_t                            numFramesPerBatch     = {};
+    uint32_t                            presentConfigFeedback = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eSetPresentConfigNV>
+  {
+    using Type = SetPresentConfigNV;
+  };
+#endif /*VK_ENABLE_BETA_EXTENSIONS*/
+
+  // wrapper struct for struct VkSetStateFlagsIndirectCommandNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSetStateFlagsIndirectCommandNV.html
   struct SetStateFlagsIndirectCommandNV
   {
     using NativeType = VkSetStateFlagsIndirectCommandNV;
@@ -121562,6 +123382,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t data = {};
   };
 
+  // wrapper struct for struct VkShaderCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkShaderCreateInfoEXT.html
   struct ShaderCreateInfoEXT
   {
     using NativeType = VkShaderCreateInfoEXT;
@@ -121877,6 +123698,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ShaderCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkShaderModuleCreateInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkShaderModuleCreateInfo.html
   struct ShaderModuleCreateInfo
   {
     using NativeType = VkShaderModuleCreateInfo;
@@ -122014,6 +123836,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ShaderModuleCreateInfo;
   };
 
+  // wrapper struct for struct VkShaderModuleIdentifierEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkShaderModuleIdentifierEXT.html
   struct ShaderModuleIdentifierEXT
   {
     using NativeType = VkShaderModuleIdentifierEXT;
@@ -122115,6 +123938,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ShaderModuleIdentifierEXT;
   };
 
+  // wrapper struct for struct VkShaderModuleValidationCacheCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkShaderModuleValidationCacheCreateInfoEXT.html
   struct ShaderModuleValidationCacheCreateInfoEXT
   {
     using NativeType = VkShaderModuleValidationCacheCreateInfoEXT;
@@ -122213,6 +124038,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ShaderModuleValidationCacheCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkShaderResourceUsageAMD, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkShaderResourceUsageAMD.html
   struct ShaderResourceUsageAMD
   {
     using NativeType = VkShaderResourceUsageAMD;
@@ -122296,6 +124122,7 @@ namespace VULKAN_HPP_NAMESPACE
     size_t   scratchMemUsageInBytes   = {};
   };
 
+  // wrapper struct for struct VkShaderStatisticsInfoAMD, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkShaderStatisticsInfoAMD.html
   struct ShaderStatisticsInfoAMD
   {
     using NativeType = VkShaderStatisticsInfoAMD;
@@ -122392,6 +124219,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ArrayWrapper1D<uint32_t, 3> computeWorkGroupSize = {};
   };
 
+  // wrapper struct for struct VkSharedPresentSurfaceCapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSharedPresentSurfaceCapabilitiesKHR.html
   struct SharedPresentSurfaceCapabilitiesKHR
   {
     using NativeType = VkSharedPresentSurfaceCapabilitiesKHR;
@@ -122475,6 +124304,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SharedPresentSurfaceCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkSparseImageFormatProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSparseImageFormatProperties.html
   struct SparseImageFormatProperties
   {
     using NativeType = VkSparseImageFormatProperties;
@@ -122551,6 +124381,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::SparseImageFormatFlags flags            = {};
   };
 
+  // wrapper struct for struct VkSparseImageFormatProperties2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSparseImageFormatProperties2.html
   struct SparseImageFormatProperties2
   {
     using NativeType = VkSparseImageFormatProperties2;
@@ -122636,6 +124467,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SparseImageFormatProperties2KHR = SparseImageFormatProperties2;
 
+  // wrapper struct for struct VkSparseImageMemoryRequirements, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSparseImageMemoryRequirements.html
   struct SparseImageMemoryRequirements
   {
     using NativeType = VkSparseImageMemoryRequirements;
@@ -122724,6 +124557,8 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::DeviceSize                  imageMipTailStride   = {};
   };
 
+  // wrapper struct for struct VkSparseImageMemoryRequirements2, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSparseImageMemoryRequirements2.html
   struct SparseImageMemoryRequirements2
   {
     using NativeType = VkSparseImageMemoryRequirements2;
@@ -122810,6 +124645,8 @@ namespace VULKAN_HPP_NAMESPACE
   using SparseImageMemoryRequirements2KHR = SparseImageMemoryRequirements2;
 
 #if defined( VK_USE_PLATFORM_GGP )
+  // wrapper struct for struct VkStreamDescriptorSurfaceCreateInfoGGP, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkStreamDescriptorSurfaceCreateInfoGGP.html
   struct StreamDescriptorSurfaceCreateInfoGGP
   {
     using NativeType = VkStreamDescriptorSurfaceCreateInfoGGP;
@@ -122930,6 +124767,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_GGP*/
 
+  // wrapper struct for struct VkSubmitInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubmitInfo.html
   struct SubmitInfo
   {
     using NativeType = VkSubmitInfo;
@@ -123156,6 +124994,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SubmitInfo;
   };
 
+  // wrapper struct for struct VkSubmitInfo2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubmitInfo2.html
   struct SubmitInfo2
   {
     using NativeType = VkSubmitInfo2;
@@ -123375,6 +125214,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SubmitInfo2KHR = SubmitInfo2;
 
+  // wrapper struct for struct VkSubpassBeginInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassBeginInfo.html
   struct SubpassBeginInfo
   {
     using NativeType = VkSubpassBeginInfo;
@@ -123471,6 +125311,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SubpassBeginInfoKHR = SubpassBeginInfo;
 
+  // wrapper struct for struct VkSubpassDescriptionDepthStencilResolve, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassDescriptionDepthStencilResolve.html
   struct SubpassDescriptionDepthStencilResolve
   {
     using NativeType = VkSubpassDescriptionDepthStencilResolve;
@@ -123597,6 +125439,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SubpassDescriptionDepthStencilResolveKHR = SubpassDescriptionDepthStencilResolve;
 
+  // wrapper struct for struct VkSubpassEndInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassEndInfo.html
   struct SubpassEndInfo
   {
     using NativeType = VkSubpassEndInfo;
@@ -123681,6 +125524,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SubpassEndInfoKHR = SubpassEndInfo;
 
+  // wrapper struct for struct VkSubpassFragmentDensityMapOffsetEndInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassFragmentDensityMapOffsetEndInfoQCOM.html
   struct SubpassFragmentDensityMapOffsetEndInfoQCOM
   {
     using NativeType = VkSubpassFragmentDensityMapOffsetEndInfoQCOM;
@@ -123810,6 +125655,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SubpassFragmentDensityMapOffsetEndInfoQCOM;
   };
 
+  // wrapper struct for struct VkSubpassResolvePerformanceQueryEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassResolvePerformanceQueryEXT.html
   struct SubpassResolvePerformanceQueryEXT
   {
     using NativeType = VkSubpassResolvePerformanceQueryEXT;
@@ -123892,6 +125739,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SubpassResolvePerformanceQueryEXT;
   };
 
+  // wrapper struct for struct VkSubpassShadingPipelineCreateInfoHUAWEI, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassShadingPipelineCreateInfoHUAWEI.html
   struct SubpassShadingPipelineCreateInfoHUAWEI
   {
     using NativeType = VkSubpassShadingPipelineCreateInfoHUAWEI;
@@ -123998,6 +125847,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SubpassShadingPipelineCreateInfoHUAWEI;
   };
 
+  // wrapper struct for struct VkSubresourceHostMemcpySize, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubresourceHostMemcpySize.html
   struct SubresourceHostMemcpySize
   {
     using NativeType = VkSubresourceHostMemcpySize;
@@ -124082,6 +125932,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using SubresourceHostMemcpySizeEXT = SubresourceHostMemcpySize;
 
+  // wrapper struct for struct VkSubresourceLayout2, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubresourceLayout2.html
   struct SubresourceLayout2
   {
     using NativeType = VkSubresourceLayout2;
@@ -124164,6 +126015,7 @@ namespace VULKAN_HPP_NAMESPACE
   using SubresourceLayout2EXT = SubresourceLayout2;
   using SubresourceLayout2KHR = SubresourceLayout2;
 
+  // wrapper struct for struct VkSurfaceCapabilities2EXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceCapabilities2EXT.html
   struct SurfaceCapabilities2EXT
   {
     using NativeType = VkSurfaceCapabilities2EXT;
@@ -124306,6 +126158,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SurfaceCapabilities2EXT;
   };
 
+  // wrapper struct for struct VkSurfaceCapabilitiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceCapabilitiesKHR.html
   struct SurfaceCapabilitiesKHR
   {
     using NativeType = VkSurfaceCapabilitiesKHR;
@@ -124425,6 +126278,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ImageUsageFlags             supportedUsageFlags     = {};
   };
 
+  // wrapper struct for struct VkSurfaceCapabilities2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceCapabilities2KHR.html
   struct SurfaceCapabilities2KHR
   {
     using NativeType = VkSurfaceCapabilities2KHR;
@@ -124509,6 +126363,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkSurfaceCapabilitiesFullScreenExclusiveEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceCapabilitiesFullScreenExclusiveEXT.html
   struct SurfaceCapabilitiesFullScreenExclusiveEXT
   {
     using NativeType = VkSurfaceCapabilitiesFullScreenExclusiveEXT;
@@ -124593,6 +126449,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
+  // wrapper struct for struct VkSurfaceCapabilitiesPresentBarrierNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceCapabilitiesPresentBarrierNV.html
   struct SurfaceCapabilitiesPresentBarrierNV
   {
     using NativeType = VkSurfaceCapabilitiesPresentBarrierNV;
@@ -124676,6 +126534,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SurfaceCapabilitiesPresentBarrierNV;
   };
 
+  // wrapper struct for struct VkSurfaceFormatKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceFormatKHR.html
   struct SurfaceFormatKHR
   {
     using NativeType = VkSurfaceFormatKHR;
@@ -124747,6 +126606,7 @@ namespace VULKAN_HPP_NAMESPACE
     VULKAN_HPP_NAMESPACE::ColorSpaceKHR colorSpace = VULKAN_HPP_NAMESPACE::ColorSpaceKHR::eSrgbNonlinear;
   };
 
+  // wrapper struct for struct VkSurfaceFormat2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceFormat2KHR.html
   struct SurfaceFormat2KHR
   {
     using NativeType = VkSurfaceFormat2KHR;
@@ -124827,6 +126687,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkSurfaceFullScreenExclusiveInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceFullScreenExclusiveInfoEXT.html
   struct SurfaceFullScreenExclusiveInfoEXT
   {
     using NativeType = VkSurfaceFullScreenExclusiveInfoEXT;
@@ -124928,6 +126790,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkSurfaceFullScreenExclusiveWin32InfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceFullScreenExclusiveWin32InfoEXT.html
   struct SurfaceFullScreenExclusiveWin32InfoEXT
   {
     using NativeType = VkSurfaceFullScreenExclusiveWin32InfoEXT;
@@ -125025,6 +126889,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
+  // wrapper struct for struct VkSurfacePresentModeCompatibilityEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfacePresentModeCompatibilityEXT.html
   struct SurfacePresentModeCompatibilityEXT
   {
     using NativeType = VkSurfacePresentModeCompatibilityEXT;
@@ -125149,6 +127015,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SurfacePresentModeCompatibilityEXT;
   };
 
+  // wrapper struct for struct VkSurfacePresentModeEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfacePresentModeEXT.html
   struct SurfacePresentModeEXT
   {
     using NativeType = VkSurfacePresentModeEXT;
@@ -125246,6 +127113,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SurfacePresentModeEXT;
   };
 
+  // wrapper struct for struct VkSurfacePresentScalingCapabilitiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfacePresentScalingCapabilitiesEXT.html
   struct SurfacePresentScalingCapabilitiesEXT
   {
     using NativeType = VkSurfacePresentScalingCapabilitiesEXT;
@@ -125349,6 +127218,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SurfacePresentScalingCapabilitiesEXT;
   };
 
+  // wrapper struct for struct VkSurfaceProtectedCapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceProtectedCapabilitiesKHR.html
   struct SurfaceProtectedCapabilitiesKHR
   {
     using NativeType = VkSurfaceProtectedCapabilitiesKHR;
@@ -125432,6 +127303,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SurfaceProtectedCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkSwapchainCounterCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainCounterCreateInfoEXT.html
   struct SwapchainCounterCreateInfoEXT
   {
     using NativeType = VkSwapchainCounterCreateInfoEXT;
@@ -125530,6 +127403,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SwapchainCounterCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkSwapchainCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainCreateInfoKHR.html
   struct SwapchainCreateInfoKHR
   {
     using NativeType = VkSwapchainCreateInfoKHR;
@@ -125850,6 +127724,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SwapchainCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkSwapchainDisplayNativeHdrCreateInfoAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainDisplayNativeHdrCreateInfoAMD.html
   struct SwapchainDisplayNativeHdrCreateInfoAMD
   {
     using NativeType = VkSwapchainDisplayNativeHdrCreateInfoAMD;
@@ -125948,6 +127824,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SwapchainDisplayNativeHdrCreateInfoAMD;
   };
 
+  // wrapper struct for struct VkSwapchainLatencyCreateInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainLatencyCreateInfoNV.html
   struct SwapchainLatencyCreateInfoNV
   {
     using NativeType = VkSwapchainLatencyCreateInfoNV;
@@ -126044,6 +127921,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SwapchainLatencyCreateInfoNV;
   };
 
+  // wrapper struct for struct VkSwapchainPresentBarrierCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainPresentBarrierCreateInfoNV.html
   struct SwapchainPresentBarrierCreateInfoNV
   {
     using NativeType = VkSwapchainPresentBarrierCreateInfoNV;
@@ -126142,6 +128021,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SwapchainPresentBarrierCreateInfoNV;
   };
 
+  // wrapper struct for struct VkSwapchainPresentFenceInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainPresentFenceInfoEXT.html
   struct SwapchainPresentFenceInfoEXT
   {
     using NativeType = VkSwapchainPresentFenceInfoEXT;
@@ -126266,6 +128146,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SwapchainPresentFenceInfoEXT;
   };
 
+  // wrapper struct for struct VkSwapchainPresentModeInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainPresentModeInfoEXT.html
   struct SwapchainPresentModeInfoEXT
   {
     using NativeType = VkSwapchainPresentModeInfoEXT;
@@ -126390,6 +128271,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SwapchainPresentModeInfoEXT;
   };
 
+  // wrapper struct for struct VkSwapchainPresentModesCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainPresentModesCreateInfoEXT.html
   struct SwapchainPresentModesCreateInfoEXT
   {
     using NativeType = VkSwapchainPresentModesCreateInfoEXT;
@@ -126515,6 +128398,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SwapchainPresentModesCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkSwapchainPresentScalingCreateInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainPresentScalingCreateInfoEXT.html
   struct SwapchainPresentScalingCreateInfoEXT
   {
     using NativeType = VkSwapchainPresentScalingCreateInfoEXT;
@@ -126638,6 +128523,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SwapchainPresentScalingCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkTextureLODGatherFormatPropertiesAMD, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkTextureLODGatherFormatPropertiesAMD.html
   struct TextureLODGatherFormatPropertiesAMD
   {
     using NativeType = VkTextureLODGatherFormatPropertiesAMD;
@@ -126721,6 +128608,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = TextureLODGatherFormatPropertiesAMD;
   };
 
+  // wrapper struct for struct VkTilePropertiesQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkTilePropertiesQCOM.html
   struct TilePropertiesQCOM
   {
     using NativeType = VkTilePropertiesQCOM;
@@ -126837,6 +128725,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = TilePropertiesQCOM;
   };
 
+  // wrapper struct for struct VkTimelineSemaphoreSubmitInfo, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkTimelineSemaphoreSubmitInfo.html
   struct TimelineSemaphoreSubmitInfo
   {
     using NativeType = VkTimelineSemaphoreSubmitInfo;
@@ -127003,6 +128892,7 @@ namespace VULKAN_HPP_NAMESPACE
 
   using TimelineSemaphoreSubmitInfoKHR = TimelineSemaphoreSubmitInfo;
 
+  // wrapper struct for struct VkTraceRaysIndirectCommand2KHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkTraceRaysIndirectCommand2KHR.html
   struct TraceRaysIndirectCommand2KHR
   {
     using NativeType = VkTraceRaysIndirectCommand2KHR;
@@ -127242,6 +129132,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t                            depth                             = {};
   };
 
+  // wrapper struct for struct VkTraceRaysIndirectCommandKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkTraceRaysIndirectCommandKHR.html
   struct TraceRaysIndirectCommandKHR
   {
     using NativeType = VkTraceRaysIndirectCommandKHR;
@@ -127341,6 +129232,7 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t depth  = {};
   };
 
+  // wrapper struct for struct VkValidationCacheCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkValidationCacheCreateInfoEXT.html
   struct ValidationCacheCreateInfoEXT
   {
     using NativeType = VkValidationCacheCreateInfoEXT;
@@ -127481,6 +129373,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ValidationCacheCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkValidationFeaturesEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkValidationFeaturesEXT.html
   struct ValidationFeaturesEXT
   {
     using NativeType = VkValidationFeaturesEXT;
@@ -127650,6 +129543,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ValidationFeaturesEXT;
   };
 
+  // wrapper struct for struct VkValidationFlagsEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkValidationFlagsEXT.html
   struct ValidationFlagsEXT
   {
     using NativeType = VkValidationFlagsEXT;
@@ -127775,6 +129669,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = ValidationFlagsEXT;
   };
 
+  // wrapper struct for struct VkVertexInputAttributeDescription2EXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVertexInputAttributeDescription2EXT.html
   struct VertexInputAttributeDescription2EXT
   {
     using NativeType = VkVertexInputAttributeDescription2EXT;
@@ -127905,6 +129801,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VertexInputAttributeDescription2EXT;
   };
 
+  // wrapper struct for struct VkVertexInputBindingDescription2EXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVertexInputBindingDescription2EXT.html
   struct VertexInputBindingDescription2EXT
   {
     using NativeType = VkVertexInputBindingDescription2EXT;
@@ -128036,6 +129934,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_VI_NN )
+  // wrapper struct for struct VkViSurfaceCreateInfoNN, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkViSurfaceCreateInfoNN.html
   struct ViSurfaceCreateInfoNN
   {
     using NativeType = VkViSurfaceCreateInfoNN;
@@ -128142,6 +130041,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_VI_NN*/
 
+  // wrapper struct for struct VkVideoPictureResourceInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoPictureResourceInfoKHR.html
   struct VideoPictureResourceInfoKHR
   {
     using NativeType = VkVideoPictureResourceInfoKHR;
@@ -128272,6 +130172,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoPictureResourceInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoReferenceSlotInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoReferenceSlotInfoKHR.html
   struct VideoReferenceSlotInfoKHR
   {
     using NativeType = VkVideoReferenceSlotInfoKHR;
@@ -128382,6 +130283,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoReferenceSlotInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoBeginCodingInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoBeginCodingInfoKHR.html
   struct VideoBeginCodingInfoKHR
   {
     using NativeType = VkVideoBeginCodingInfoKHR;
@@ -128551,6 +130453,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoBeginCodingInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoCapabilitiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoCapabilitiesKHR.html
   struct VideoCapabilitiesKHR
   {
     using NativeType = VkVideoCapabilitiesKHR;
@@ -128682,6 +130585,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoCodingControlInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoCodingControlInfoKHR.html
   struct VideoCodingControlInfoKHR
   {
     using NativeType = VkVideoCodingControlInfoKHR;
@@ -128779,6 +130683,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoCodingControlInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeAV1CapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeAV1CapabilitiesKHR.html
   struct VideoDecodeAV1CapabilitiesKHR
   {
     using NativeType = VkVideoDecodeAV1CapabilitiesKHR;
@@ -128867,6 +130773,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeAV1CapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeAV1DpbSlotInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeAV1DpbSlotInfoKHR.html
   struct VideoDecodeAV1DpbSlotInfoKHR
   {
     using NativeType = VkVideoDecodeAV1DpbSlotInfoKHR;
@@ -128964,6 +130871,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeAV1DpbSlotInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeAV1InlineSessionParametersInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeAV1InlineSessionParametersInfoKHR.html
   struct VideoDecodeAV1InlineSessionParametersInfoKHR
   {
     using NativeType = VkVideoDecodeAV1InlineSessionParametersInfoKHR;
@@ -129062,6 +130971,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeAV1InlineSessionParametersInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeAV1PictureInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeAV1PictureInfoKHR.html
   struct VideoDecodeAV1PictureInfoKHR
   {
     using NativeType = VkVideoDecodeAV1PictureInfoKHR;
@@ -129259,6 +131169,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeAV1PictureInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeAV1ProfileInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeAV1ProfileInfoKHR.html
   struct VideoDecodeAV1ProfileInfoKHR
   {
     using NativeType = VkVideoDecodeAV1ProfileInfoKHR;
@@ -129374,6 +131285,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeAV1ProfileInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeAV1SessionParametersCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeAV1SessionParametersCreateInfoKHR.html
   struct VideoDecodeAV1SessionParametersCreateInfoKHR
   {
     using NativeType = VkVideoDecodeAV1SessionParametersCreateInfoKHR;
@@ -129472,6 +131385,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeAV1SessionParametersCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeCapabilitiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeCapabilitiesKHR.html
   struct VideoDecodeCapabilitiesKHR
   {
     using NativeType = VkVideoDecodeCapabilitiesKHR;
@@ -129555,6 +131469,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH264CapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH264CapabilitiesKHR.html
   struct VideoDecodeH264CapabilitiesKHR
   {
     using NativeType = VkVideoDecodeH264CapabilitiesKHR;
@@ -129650,6 +131566,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH264CapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH264DpbSlotInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH264DpbSlotInfoKHR.html
   struct VideoDecodeH264DpbSlotInfoKHR
   {
     using NativeType = VkVideoDecodeH264DpbSlotInfoKHR;
@@ -129748,6 +131666,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH264DpbSlotInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH264InlineSessionParametersInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH264InlineSessionParametersInfoKHR.html
   struct VideoDecodeH264InlineSessionParametersInfoKHR
   {
     using NativeType = VkVideoDecodeH264InlineSessionParametersInfoKHR;
@@ -129858,6 +131778,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH264InlineSessionParametersInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH264PictureInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH264PictureInfoKHR.html
   struct VideoDecodeH264PictureInfoKHR
   {
     using NativeType = VkVideoDecodeH264PictureInfoKHR;
@@ -129996,6 +131918,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH264PictureInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH264ProfileInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH264ProfileInfoKHR.html
   struct VideoDecodeH264ProfileInfoKHR
   {
     using NativeType = VkVideoDecodeH264ProfileInfoKHR;
@@ -130116,6 +132040,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH264ProfileInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH264SessionParametersAddInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH264SessionParametersAddInfoKHR.html
   struct VideoDecodeH264SessionParametersAddInfoKHR
   {
     using NativeType = VkVideoDecodeH264SessionParametersAddInfoKHR;
@@ -130279,6 +132205,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH264SessionParametersAddInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH264SessionParametersCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH264SessionParametersCreateInfoKHR.html
   struct VideoDecodeH264SessionParametersCreateInfoKHR
   {
     using NativeType = VkVideoDecodeH264SessionParametersCreateInfoKHR;
@@ -130402,6 +132330,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH264SessionParametersCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH265CapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH265CapabilitiesKHR.html
   struct VideoDecodeH265CapabilitiesKHR
   {
     using NativeType = VkVideoDecodeH265CapabilitiesKHR;
@@ -130490,6 +132420,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH265CapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH265DpbSlotInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH265DpbSlotInfoKHR.html
   struct VideoDecodeH265DpbSlotInfoKHR
   {
     using NativeType = VkVideoDecodeH265DpbSlotInfoKHR;
@@ -130588,6 +132520,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH265DpbSlotInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH265InlineSessionParametersInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH265InlineSessionParametersInfoKHR.html
   struct VideoDecodeH265InlineSessionParametersInfoKHR
   {
     using NativeType = VkVideoDecodeH265InlineSessionParametersInfoKHR;
@@ -130708,6 +132642,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH265InlineSessionParametersInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH265PictureInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH265PictureInfoKHR.html
   struct VideoDecodeH265PictureInfoKHR
   {
     using NativeType = VkVideoDecodeH265PictureInfoKHR;
@@ -130850,6 +132786,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH265PictureInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH265ProfileInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH265ProfileInfoKHR.html
   struct VideoDecodeH265ProfileInfoKHR
   {
     using NativeType = VkVideoDecodeH265ProfileInfoKHR;
@@ -130952,6 +132890,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH265ProfileInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH265SessionParametersAddInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH265SessionParametersAddInfoKHR.html
   struct VideoDecodeH265SessionParametersAddInfoKHR
   {
     using NativeType = VkVideoDecodeH265SessionParametersAddInfoKHR;
@@ -131148,6 +133088,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH265SessionParametersAddInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeH265SessionParametersCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeH265SessionParametersCreateInfoKHR.html
   struct VideoDecodeH265SessionParametersCreateInfoKHR
   {
     using NativeType = VkVideoDecodeH265SessionParametersCreateInfoKHR;
@@ -131281,6 +133223,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeH265SessionParametersCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeInfoKHR.html
   struct VideoDecodeInfoKHR
   {
     using NativeType = VkVideoDecodeInfoKHR;
@@ -131486,6 +133429,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoDecodeUsageInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoDecodeUsageInfoKHR.html
   struct VideoDecodeUsageInfoKHR
   {
     using NativeType = VkVideoDecodeUsageInfoKHR;
@@ -131583,6 +133527,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoDecodeUsageInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1CapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1CapabilitiesKHR.html
   struct VideoEncodeAV1CapabilitiesKHR
   {
     using NativeType = VkVideoEncodeAV1CapabilitiesKHR;
@@ -131852,6 +133798,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1CapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1DpbSlotInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1DpbSlotInfoKHR.html
   struct VideoEncodeAV1DpbSlotInfoKHR
   {
     using NativeType = VkVideoEncodeAV1DpbSlotInfoKHR;
@@ -131949,6 +133896,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1DpbSlotInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1FrameSizeKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1FrameSizeKHR.html
   struct VideoEncodeAV1FrameSizeKHR
   {
     using NativeType = VkVideoEncodeAV1FrameSizeKHR;
@@ -132045,6 +133993,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t bipredictiveFrameSize = {};
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1GopRemainingFrameInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1GopRemainingFrameInfoKHR.html
   struct VideoEncodeAV1GopRemainingFrameInfoKHR
   {
     using NativeType = VkVideoEncodeAV1GopRemainingFrameInfoKHR;
@@ -132177,6 +134127,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1GopRemainingFrameInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1PictureInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1PictureInfoKHR.html
   struct VideoEncodeAV1PictureInfoKHR
   {
     using NativeType = VkVideoEncodeAV1PictureInfoKHR;
@@ -132353,6 +134304,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1PictureInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1ProfileInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1ProfileInfoKHR.html
   struct VideoEncodeAV1ProfileInfoKHR
   {
     using NativeType = VkVideoEncodeAV1ProfileInfoKHR;
@@ -132455,6 +134407,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1ProfileInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1QIndexKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1QIndexKHR.html
   struct VideoEncodeAV1QIndexKHR
   {
     using NativeType = VkVideoEncodeAV1QIndexKHR;
@@ -132550,6 +134503,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t bipredictiveQIndex = {};
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1QualityLevelPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1QualityLevelPropertiesKHR.html
   struct VideoEncodeAV1QualityLevelPropertiesKHR
   {
     using NativeType = VkVideoEncodeAV1QualityLevelPropertiesKHR;
@@ -132719,6 +134674,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1QualityLevelPropertiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1QuantizationMapCapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1QuantizationMapCapabilitiesKHR.html
   struct VideoEncodeAV1QuantizationMapCapabilitiesKHR
   {
     using NativeType = VkVideoEncodeAV1QuantizationMapCapabilitiesKHR;
@@ -132804,6 +134761,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1QuantizationMapCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1RateControlInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1RateControlInfoKHR.html
   struct VideoEncodeAV1RateControlInfoKHR
   {
     using NativeType = VkVideoEncodeAV1RateControlInfoKHR;
@@ -132946,6 +134905,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1RateControlInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1RateControlLayerInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1RateControlLayerInfoKHR.html
   struct VideoEncodeAV1RateControlLayerInfoKHR
   {
     using NativeType = VkVideoEncodeAV1RateControlLayerInfoKHR;
@@ -133100,6 +135061,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1RateControlLayerInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1SessionCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1SessionCreateInfoKHR.html
   struct VideoEncodeAV1SessionCreateInfoKHR
   {
     using NativeType = VkVideoEncodeAV1SessionCreateInfoKHR;
@@ -133215,6 +135178,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1SessionCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeAV1SessionParametersCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeAV1SessionParametersCreateInfoKHR.html
   struct VideoEncodeAV1SessionParametersCreateInfoKHR
   {
     using NativeType = VkVideoEncodeAV1SessionParametersCreateInfoKHR;
@@ -133374,6 +135339,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeAV1SessionParametersCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeCapabilitiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeCapabilitiesKHR.html
   struct VideoEncodeCapabilitiesKHR
   {
     using NativeType = VkVideoEncodeCapabilitiesKHR;
@@ -133493,6 +135459,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264CapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264CapabilitiesKHR.html
   struct VideoEncodeH264CapabilitiesKHR
   {
     using NativeType = VkVideoEncodeH264CapabilitiesKHR;
@@ -133676,6 +135644,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264CapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264DpbSlotInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264DpbSlotInfoKHR.html
   struct VideoEncodeH264DpbSlotInfoKHR
   {
     using NativeType = VkVideoEncodeH264DpbSlotInfoKHR;
@@ -133774,6 +135744,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264DpbSlotInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264FrameSizeKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264FrameSizeKHR.html
   struct VideoEncodeH264FrameSizeKHR
   {
     using NativeType = VkVideoEncodeH264FrameSizeKHR;
@@ -133868,6 +135839,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t frameBSize = {};
   };
 
+  // wrapper struct for struct VkVideoEncodeH264GopRemainingFrameInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264GopRemainingFrameInfoKHR.html
   struct VideoEncodeH264GopRemainingFrameInfoKHR
   {
     using NativeType = VkVideoEncodeH264GopRemainingFrameInfoKHR;
@@ -133999,6 +135972,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264GopRemainingFrameInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264NaluSliceInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264NaluSliceInfoKHR.html
   struct VideoEncodeH264NaluSliceInfoKHR
   {
     using NativeType = VkVideoEncodeH264NaluSliceInfoKHR;
@@ -134105,6 +136080,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264NaluSliceInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264PictureInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264PictureInfoKHR.html
   struct VideoEncodeH264PictureInfoKHR
   {
     using NativeType = VkVideoEncodeH264PictureInfoKHR;
@@ -134261,6 +136238,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264PictureInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264ProfileInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264ProfileInfoKHR.html
   struct VideoEncodeH264ProfileInfoKHR
   {
     using NativeType = VkVideoEncodeH264ProfileInfoKHR;
@@ -134363,6 +136342,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264ProfileInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264QpKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264QpKHR.html
   struct VideoEncodeH264QpKHR
   {
     using NativeType = VkVideoEncodeH264QpKHR;
@@ -134457,6 +136437,8 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t qpB = {};
   };
 
+  // wrapper struct for struct VkVideoEncodeH264QualityLevelPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264QualityLevelPropertiesKHR.html
   struct VideoEncodeH264QualityLevelPropertiesKHR
   {
     using NativeType = VkVideoEncodeH264QualityLevelPropertiesKHR;
@@ -134589,6 +136571,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264QualityLevelPropertiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264QuantizationMapCapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264QuantizationMapCapabilitiesKHR.html
   struct VideoEncodeH264QuantizationMapCapabilitiesKHR
   {
     using NativeType = VkVideoEncodeH264QuantizationMapCapabilitiesKHR;
@@ -134675,6 +136659,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264QuantizationMapCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264RateControlInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264RateControlInfoKHR.html
   struct VideoEncodeH264RateControlInfoKHR
   {
     using NativeType = VkVideoEncodeH264RateControlInfoKHR;
@@ -134815,6 +136801,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264RateControlInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264RateControlLayerInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264RateControlLayerInfoKHR.html
   struct VideoEncodeH264RateControlLayerInfoKHR
   {
     using NativeType = VkVideoEncodeH264RateControlLayerInfoKHR;
@@ -134966,6 +136954,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264RateControlLayerInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264SessionCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264SessionCreateInfoKHR.html
   struct VideoEncodeH264SessionCreateInfoKHR
   {
     using NativeType = VkVideoEncodeH264SessionCreateInfoKHR;
@@ -135081,6 +137071,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264SessionCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264SessionParametersAddInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264SessionParametersAddInfoKHR.html
   struct VideoEncodeH264SessionParametersAddInfoKHR
   {
     using NativeType = VkVideoEncodeH264SessionParametersAddInfoKHR;
@@ -135244,6 +137236,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264SessionParametersAddInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264SessionParametersCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264SessionParametersCreateInfoKHR.html
   struct VideoEncodeH264SessionParametersCreateInfoKHR
   {
     using NativeType = VkVideoEncodeH264SessionParametersCreateInfoKHR;
@@ -135367,6 +137361,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264SessionParametersCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264SessionParametersFeedbackInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264SessionParametersFeedbackInfoKHR.html
   struct VideoEncodeH264SessionParametersFeedbackInfoKHR
   {
     using NativeType = VkVideoEncodeH264SessionParametersFeedbackInfoKHR;
@@ -135455,6 +137451,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264SessionParametersFeedbackInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH264SessionParametersGetInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH264SessionParametersGetInfoKHR.html
   struct VideoEncodeH264SessionParametersGetInfoKHR
   {
     using NativeType = VkVideoEncodeH264SessionParametersGetInfoKHR;
@@ -135585,6 +137583,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH264SessionParametersGetInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265CapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265CapabilitiesKHR.html
   struct VideoEncodeH265CapabilitiesKHR
   {
     using NativeType = VkVideoEncodeH265CapabilitiesKHR;
@@ -135790,6 +137790,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265CapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265DpbSlotInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265DpbSlotInfoKHR.html
   struct VideoEncodeH265DpbSlotInfoKHR
   {
     using NativeType = VkVideoEncodeH265DpbSlotInfoKHR;
@@ -135888,6 +137890,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265DpbSlotInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265FrameSizeKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265FrameSizeKHR.html
   struct VideoEncodeH265FrameSizeKHR
   {
     using NativeType = VkVideoEncodeH265FrameSizeKHR;
@@ -135982,6 +137985,8 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t frameBSize = {};
   };
 
+  // wrapper struct for struct VkVideoEncodeH265GopRemainingFrameInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265GopRemainingFrameInfoKHR.html
   struct VideoEncodeH265GopRemainingFrameInfoKHR
   {
     using NativeType = VkVideoEncodeH265GopRemainingFrameInfoKHR;
@@ -136113,6 +138118,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265GopRemainingFrameInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265NaluSliceSegmentInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265NaluSliceSegmentInfoKHR.html
   struct VideoEncodeH265NaluSliceSegmentInfoKHR
   {
     using NativeType = VkVideoEncodeH265NaluSliceSegmentInfoKHR;
@@ -136220,6 +138227,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265NaluSliceSegmentInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265PictureInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265PictureInfoKHR.html
   struct VideoEncodeH265PictureInfoKHR
   {
     using NativeType = VkVideoEncodeH265PictureInfoKHR;
@@ -136365,6 +138374,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265PictureInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265ProfileInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265ProfileInfoKHR.html
   struct VideoEncodeH265ProfileInfoKHR
   {
     using NativeType = VkVideoEncodeH265ProfileInfoKHR;
@@ -136467,6 +138478,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265ProfileInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265QpKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265QpKHR.html
   struct VideoEncodeH265QpKHR
   {
     using NativeType = VkVideoEncodeH265QpKHR;
@@ -136561,6 +138573,8 @@ namespace VULKAN_HPP_NAMESPACE
     int32_t qpB = {};
   };
 
+  // wrapper struct for struct VkVideoEncodeH265QualityLevelPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265QualityLevelPropertiesKHR.html
   struct VideoEncodeH265QualityLevelPropertiesKHR
   {
     using NativeType = VkVideoEncodeH265QualityLevelPropertiesKHR;
@@ -136687,6 +138701,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265QualityLevelPropertiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265QuantizationMapCapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265QuantizationMapCapabilitiesKHR.html
   struct VideoEncodeH265QuantizationMapCapabilitiesKHR
   {
     using NativeType = VkVideoEncodeH265QuantizationMapCapabilitiesKHR;
@@ -136773,6 +138789,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265QuantizationMapCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265RateControlInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265RateControlInfoKHR.html
   struct VideoEncodeH265RateControlInfoKHR
   {
     using NativeType = VkVideoEncodeH265RateControlInfoKHR;
@@ -136913,6 +138931,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265RateControlInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265RateControlLayerInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265RateControlLayerInfoKHR.html
   struct VideoEncodeH265RateControlLayerInfoKHR
   {
     using NativeType = VkVideoEncodeH265RateControlLayerInfoKHR;
@@ -137064,6 +139084,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265RateControlLayerInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265SessionCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265SessionCreateInfoKHR.html
   struct VideoEncodeH265SessionCreateInfoKHR
   {
     using NativeType = VkVideoEncodeH265SessionCreateInfoKHR;
@@ -137179,6 +139201,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265SessionCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265SessionParametersAddInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265SessionParametersAddInfoKHR.html
   struct VideoEncodeH265SessionParametersAddInfoKHR
   {
     using NativeType = VkVideoEncodeH265SessionParametersAddInfoKHR;
@@ -137375,6 +139399,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265SessionParametersAddInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265SessionParametersCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265SessionParametersCreateInfoKHR.html
   struct VideoEncodeH265SessionParametersCreateInfoKHR
   {
     using NativeType = VkVideoEncodeH265SessionParametersCreateInfoKHR;
@@ -137508,6 +139534,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265SessionParametersCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265SessionParametersFeedbackInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265SessionParametersFeedbackInfoKHR.html
   struct VideoEncodeH265SessionParametersFeedbackInfoKHR
   {
     using NativeType = VkVideoEncodeH265SessionParametersFeedbackInfoKHR;
@@ -137603,6 +139631,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265SessionParametersFeedbackInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeH265SessionParametersGetInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeH265SessionParametersGetInfoKHR.html
   struct VideoEncodeH265SessionParametersGetInfoKHR
   {
     using NativeType = VkVideoEncodeH265SessionParametersGetInfoKHR;
@@ -137753,6 +139783,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeH265SessionParametersGetInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeInfoKHR.html
   struct VideoEncodeInfoKHR
   {
     using NativeType = VkVideoEncodeInfoKHR;
@@ -137979,6 +140010,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeQualityLevelInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeQualityLevelInfoKHR.html
   struct VideoEncodeQualityLevelInfoKHR
   {
     using NativeType = VkVideoEncodeQualityLevelInfoKHR;
@@ -138075,6 +140108,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeQualityLevelInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeQualityLevelPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeQualityLevelPropertiesKHR.html
   struct VideoEncodeQualityLevelPropertiesKHR
   {
     using NativeType = VkVideoEncodeQualityLevelPropertiesKHR;
@@ -138165,6 +140200,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeQualityLevelPropertiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeQuantizationMapCapabilitiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeQuantizationMapCapabilitiesKHR.html
   struct VideoEncodeQuantizationMapCapabilitiesKHR
   {
     using NativeType = VkVideoEncodeQuantizationMapCapabilitiesKHR;
@@ -138248,6 +140285,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeQuantizationMapCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeQuantizationMapInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeQuantizationMapInfoKHR.html
   struct VideoEncodeQuantizationMapInfoKHR
   {
     using NativeType = VkVideoEncodeQuantizationMapInfoKHR;
@@ -138357,6 +140396,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeQuantizationMapInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR.html
   struct VideoEncodeQuantizationMapSessionParametersCreateInfoKHR
   {
     using NativeType = VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR;
@@ -138458,6 +140499,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeQuantizationMapSessionParametersCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeRateControlLayerInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeRateControlLayerInfoKHR.html
   struct VideoEncodeRateControlLayerInfoKHR
   {
     using NativeType = VkVideoEncodeRateControlLayerInfoKHR;
@@ -138583,6 +140626,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeRateControlLayerInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeRateControlInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeRateControlInfoKHR.html
   struct VideoEncodeRateControlInfoKHR
   {
     using NativeType = VkVideoEncodeRateControlInfoKHR;
@@ -138766,6 +140811,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeRateControlInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeSessionParametersFeedbackInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeSessionParametersFeedbackInfoKHR.html
   struct VideoEncodeSessionParametersFeedbackInfoKHR
   {
     using NativeType = VkVideoEncodeSessionParametersFeedbackInfoKHR;
@@ -138849,6 +140896,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeSessionParametersFeedbackInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeSessionParametersGetInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeSessionParametersGetInfoKHR.html
   struct VideoEncodeSessionParametersGetInfoKHR
   {
     using NativeType = VkVideoEncodeSessionParametersGetInfoKHR;
@@ -138947,6 +140996,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeSessionParametersGetInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEncodeUsageInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEncodeUsageInfoKHR.html
   struct VideoEncodeUsageInfoKHR
   {
     using NativeType = VkVideoEncodeUsageInfoKHR;
@@ -139069,6 +141119,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEncodeUsageInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoEndCodingInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoEndCodingInfoKHR.html
   struct VideoEndCodingInfoKHR
   {
     using NativeType = VkVideoEndCodingInfoKHR;
@@ -139165,6 +141216,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoEndCodingInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoFormatAV1QuantizationMapPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoFormatAV1QuantizationMapPropertiesKHR.html
   struct VideoFormatAV1QuantizationMapPropertiesKHR
   {
     using NativeType = VkVideoFormatAV1QuantizationMapPropertiesKHR;
@@ -139248,6 +141301,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoFormatAV1QuantizationMapPropertiesKHR;
   };
 
+  // wrapper struct for struct VkVideoFormatH265QuantizationMapPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoFormatH265QuantizationMapPropertiesKHR.html
   struct VideoFormatH265QuantizationMapPropertiesKHR
   {
     using NativeType = VkVideoFormatH265QuantizationMapPropertiesKHR;
@@ -139331,6 +141386,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoFormatH265QuantizationMapPropertiesKHR;
   };
 
+  // wrapper struct for struct VkVideoFormatPropertiesKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoFormatPropertiesKHR.html
   struct VideoFormatPropertiesKHR
   {
     using NativeType = VkVideoFormatPropertiesKHR;
@@ -139438,6 +141494,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoFormatPropertiesKHR;
   };
 
+  // wrapper struct for struct VkVideoFormatQuantizationMapPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoFormatQuantizationMapPropertiesKHR.html
   struct VideoFormatQuantizationMapPropertiesKHR
   {
     using NativeType = VkVideoFormatQuantizationMapPropertiesKHR;
@@ -139521,6 +141579,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoFormatQuantizationMapPropertiesKHR;
   };
 
+  // wrapper struct for struct VkVideoInlineQueryInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoInlineQueryInfoKHR.html
   struct VideoInlineQueryInfoKHR
   {
     using NativeType = VkVideoInlineQueryInfoKHR;
@@ -139637,6 +141696,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoInlineQueryInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoProfileListInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoProfileListInfoKHR.html
   struct VideoProfileListInfoKHR
   {
     using NativeType = VkVideoProfileListInfoKHR;
@@ -139761,6 +141821,7 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoProfileListInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoSessionCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoSessionCreateInfoKHR.html
   struct VideoSessionCreateInfoKHR
   {
     using NativeType = VkVideoSessionCreateInfoKHR;
@@ -139954,6 +142015,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoSessionCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoSessionMemoryRequirementsKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoSessionMemoryRequirementsKHR.html
   struct VideoSessionMemoryRequirementsKHR
   {
     using NativeType = VkVideoSessionMemoryRequirementsKHR;
@@ -140040,6 +142103,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoSessionMemoryRequirementsKHR;
   };
 
+  // wrapper struct for struct VkVideoSessionParametersCreateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoSessionParametersCreateInfoKHR.html
   struct VideoSessionParametersCreateInfoKHR
   {
     using NativeType = VkVideoSessionParametersCreateInfoKHR;
@@ -140162,6 +142227,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = VideoSessionParametersCreateInfoKHR;
   };
 
+  // wrapper struct for struct VkVideoSessionParametersUpdateInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkVideoSessionParametersUpdateInfoKHR.html
   struct VideoSessionParametersUpdateInfoKHR
   {
     using NativeType = VkVideoSessionParametersUpdateInfoKHR;
@@ -140259,6 +142326,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_WAYLAND_KHR )
+  // wrapper struct for struct VkWaylandSurfaceCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkWaylandSurfaceCreateInfoKHR.html
   struct WaylandSurfaceCreateInfoKHR
   {
     using NativeType = VkWaylandSurfaceCreateInfoKHR;
@@ -140380,6 +142448,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WAYLAND_KHR*/
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkWin32KeyedMutexAcquireReleaseInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkWin32KeyedMutexAcquireReleaseInfoKHR.html
   struct Win32KeyedMutexAcquireReleaseInfoKHR
   {
     using NativeType = VkWin32KeyedMutexAcquireReleaseInfoKHR;
@@ -140645,6 +142715,8 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkWin32KeyedMutexAcquireReleaseInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkWin32KeyedMutexAcquireReleaseInfoNV.html
   struct Win32KeyedMutexAcquireReleaseInfoNV
   {
     using NativeType = VkWin32KeyedMutexAcquireReleaseInfoNV;
@@ -140913,6 +142985,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
 #if defined( VK_USE_PLATFORM_WIN32_KHR )
+  // wrapper struct for struct VkWin32SurfaceCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkWin32SurfaceCreateInfoKHR.html
   struct Win32SurfaceCreateInfoKHR
   {
     using NativeType = VkWin32SurfaceCreateInfoKHR;
@@ -141033,6 +143106,8 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
+  // wrapper struct for struct VkWriteDescriptorSetAccelerationStructureKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkWriteDescriptorSetAccelerationStructureKHR.html
   struct WriteDescriptorSetAccelerationStructureKHR
   {
     using NativeType = VkWriteDescriptorSetAccelerationStructureKHR;
@@ -141164,6 +143239,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = WriteDescriptorSetAccelerationStructureKHR;
   };
 
+  // wrapper struct for struct VkWriteDescriptorSetAccelerationStructureNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkWriteDescriptorSetAccelerationStructureNV.html
   struct WriteDescriptorSetAccelerationStructureNV
   {
     using NativeType = VkWriteDescriptorSetAccelerationStructureNV;
@@ -141295,6 +143372,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = WriteDescriptorSetAccelerationStructureNV;
   };
 
+  // wrapper struct for struct VkWriteDescriptorSetInlineUniformBlock, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkWriteDescriptorSetInlineUniformBlock.html
   struct WriteDescriptorSetInlineUniformBlock
   {
     using NativeType = VkWriteDescriptorSetInlineUniformBlock;
@@ -141420,6 +143499,8 @@ namespace VULKAN_HPP_NAMESPACE
 
   using WriteDescriptorSetInlineUniformBlockEXT = WriteDescriptorSetInlineUniformBlock;
 
+  // wrapper struct for struct VkWriteDescriptorSetPartitionedAccelerationStructureNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkWriteDescriptorSetPartitionedAccelerationStructureNV.html
   struct WriteDescriptorSetPartitionedAccelerationStructureNV
   {
     using NativeType = VkWriteDescriptorSetPartitionedAccelerationStructureNV;
@@ -141551,6 +143632,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = WriteDescriptorSetPartitionedAccelerationStructureNV;
   };
 
+  // wrapper struct for struct VkWriteIndirectExecutionSetPipelineEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkWriteIndirectExecutionSetPipelineEXT.html
   struct WriteIndirectExecutionSetPipelineEXT
   {
     using NativeType = VkWriteIndirectExecutionSetPipelineEXT;
@@ -141657,6 +143740,8 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = WriteIndirectExecutionSetPipelineEXT;
   };
 
+  // wrapper struct for struct VkWriteIndirectExecutionSetShaderEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkWriteIndirectExecutionSetShaderEXT.html
   struct WriteIndirectExecutionSetShaderEXT
   {
     using NativeType = VkWriteIndirectExecutionSetShaderEXT;
@@ -141764,6 +143849,7 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
 #if defined( VK_USE_PLATFORM_XCB_KHR )
+  // wrapper struct for struct VkXcbSurfaceCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkXcbSurfaceCreateInfoKHR.html
   struct XcbSurfaceCreateInfoKHR
   {
     using NativeType = VkXcbSurfaceCreateInfoKHR;
@@ -141896,6 +143982,7 @@ namespace VULKAN_HPP_NAMESPACE
 #endif /*VK_USE_PLATFORM_XCB_KHR*/
 
 #if defined( VK_USE_PLATFORM_XLIB_KHR )
+  // wrapper struct for struct VkXlibSurfaceCreateInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkXlibSurfaceCreateInfoKHR.html
   struct XlibSurfaceCreateInfoKHR
   {
     using NativeType = VkXlibSurfaceCreateInfoKHR;
