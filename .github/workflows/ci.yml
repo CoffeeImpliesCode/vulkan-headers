@@ -76,8 +76,9 @@ jobs:
       shell: 'bash'
       run: |
         opts="$(printf '%s' "${PR_BODY}" | sed -n "s/^\[${REPO} fetch opts\] \(.*\)/\1/p" | xargs)"
+        opts="${opts#"${opts%%[![:space:]]*}"}"
+        opts="${opts%"${opts##*[![:space:]]}"}"
         set -f
-        printf '%s' "${opts}" | hexdump -cx
         case "${REPO}" in
         ( 'cimgui' )
           source "${RUNNER_TMP}/venv/${ACTIVATE_DIR:-Scripts}/activate"
