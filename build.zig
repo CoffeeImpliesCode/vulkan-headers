@@ -63,13 +63,13 @@ pub fn build(builder: *std.Build) !void {
         "vulkan",
     });
 
-    const dependencies = try toolbox.Dependencies.init(builder, "vulkan.zig", &.{
+    const dependencies = try toolbox.Dependencies.init(builder, .vulkan_zig, "0xe457756cde206ca7", &.{
         "vulkan",
     }, .{
         .toolbox = .{
             .name = "tiawl/toolbox",
             .host = toolbox.Repository.Host.github,
-            .ref = toolbox.Repository.Reference.tag,
+            .ref = toolbox.Repository.Reference.commit,
         },
     }, .{
         .vulkan = .{
