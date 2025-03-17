@@ -98,6 +98,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAabbPositionsKHR *>( this );
     }
 
+    operator VkAabbPositionsKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAabbPositionsKHR *>( this );
+    }
+
+    operator VkAabbPositionsKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAabbPositionsKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -293,6 +303,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureGeometryTrianglesDataKHR *>( this );
     }
 
+    operator VkAccelerationStructureGeometryTrianglesDataKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureGeometryTrianglesDataKHR *>( this );
+    }
+
+    operator VkAccelerationStructureGeometryTrianglesDataKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureGeometryTrianglesDataKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -397,6 +417,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureGeometryAabbsDataKHR *>( this );
     }
 
+    operator VkAccelerationStructureGeometryAabbsDataKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureGeometryAabbsDataKHR *>( this );
+    }
+
+    operator VkAccelerationStructureGeometryAabbsDataKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureGeometryAabbsDataKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -491,6 +521,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureGeometryInstancesDataKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureGeometryInstancesDataKHR *>( this );
+    }
+
+    operator VkAccelerationStructureGeometryInstancesDataKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureGeometryInstancesDataKHR *>( this );
+    }
+
+    operator VkAccelerationStructureGeometryInstancesDataKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureGeometryInstancesDataKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -656,6 +696,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureGeometryKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureGeometryKHR *>( this );
+    }
+
+    operator VkAccelerationStructureGeometryKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureGeometryKHR *>( this );
+    }
+
+    operator VkAccelerationStructureGeometryKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureGeometryKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -916,6 +966,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureBuildGeometryInfoKHR *>( this );
     }
 
+    operator VkAccelerationStructureBuildGeometryInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureBuildGeometryInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureBuildGeometryInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureBuildGeometryInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -1029,6 +1089,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureBuildRangeInfoKHR *>( this );
     }
 
+    operator VkAccelerationStructureBuildRangeInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureBuildRangeInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureBuildRangeInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureBuildRangeInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -1112,6 +1182,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureBuildSizesInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureBuildSizesInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureBuildSizesInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureBuildSizesInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureBuildSizesInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureBuildSizesInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -1230,6 +1310,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureCaptureDescriptorDataInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureCaptureDescriptorDataInfoEXT *>( this );
+    }
+
+    operator VkAccelerationStructureCaptureDescriptorDataInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureCaptureDescriptorDataInfoEXT *>( this );
+    }
+
+    operator VkAccelerationStructureCaptureDescriptorDataInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureCaptureDescriptorDataInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -1376,6 +1466,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureCreateInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureCreateInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -1568,6 +1668,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGeometryTrianglesNV *>( this );
     }
 
+    operator VkGeometryTrianglesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeometryTrianglesNV *>( this );
+    }
+
+    operator VkGeometryTrianglesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeometryTrianglesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -1724,6 +1834,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGeometryAABBNV *>( this );
     }
 
+    operator VkGeometryAABBNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeometryAABBNV *>( this );
+    }
+
+    operator VkGeometryAABBNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeometryAABBNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -1823,6 +1943,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkGeometryDataNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkGeometryDataNV *>( this );
+    }
+
+    operator VkGeometryDataNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeometryDataNV *>( this );
+    }
+
+    operator VkGeometryDataNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeometryDataNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -1927,6 +2057,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkGeometryNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkGeometryNV *>( this );
+    }
+
+    operator VkGeometryNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeometryNV *>( this );
+    }
+
+    operator VkGeometryNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeometryNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -2091,6 +2231,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureInfoNV *>( this );
     }
 
+    operator VkAccelerationStructureInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureInfoNV *>( this );
+    }
+
+    operator VkAccelerationStructureInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -2209,6 +2359,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureCreateInfoNV *>( this );
     }
 
+    operator VkAccelerationStructureCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureCreateInfoNV *>( this );
+    }
+
+    operator VkAccelerationStructureCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -2311,6 +2471,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureDeviceAddressInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureDeviceAddressInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureDeviceAddressInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureDeviceAddressInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureDeviceAddressInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureDeviceAddressInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -2506,6 +2676,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureGeometryLinearSweptSpheresDataNV *>( this );
     }
 
+    operator VkAccelerationStructureGeometryLinearSweptSpheresDataNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureGeometryLinearSweptSpheresDataNV *>( this );
+    }
+
+    operator VkAccelerationStructureGeometryLinearSweptSpheresDataNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureGeometryLinearSweptSpheresDataNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -2622,6 +2802,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureGeometryMotionTrianglesDataNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureGeometryMotionTrianglesDataNV *>( this );
+    }
+
+    operator VkAccelerationStructureGeometryMotionTrianglesDataNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureGeometryMotionTrianglesDataNV *>( this );
+    }
+
+    operator VkAccelerationStructureGeometryMotionTrianglesDataNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureGeometryMotionTrianglesDataNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -2772,6 +2962,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureGeometrySpheresDataNV *>( this );
     }
 
+    operator VkAccelerationStructureGeometrySpheresDataNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureGeometrySpheresDataNV *>( this );
+    }
+
+    operator VkAccelerationStructureGeometrySpheresDataNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureGeometrySpheresDataNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -2851,6 +3051,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkTransformMatrixKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkTransformMatrixKHR *>( this );
+    }
+
+    operator VkTransformMatrixKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkTransformMatrixKHR *>( this );
+    }
+
+    operator VkTransformMatrixKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkTransformMatrixKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -2974,6 +3184,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureInstanceKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureInstanceKHR *>( this );
+    }
+
+    operator VkAccelerationStructureInstanceKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureInstanceKHR *>( this );
+    }
+
+    operator VkAccelerationStructureInstanceKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureInstanceKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -3123,6 +3343,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureMatrixMotionInstanceNV *>( this );
     }
 
+    operator VkAccelerationStructureMatrixMotionInstanceNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureMatrixMotionInstanceNV *>( this );
+    }
+
+    operator VkAccelerationStructureMatrixMotionInstanceNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureMatrixMotionInstanceNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -3240,6 +3470,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureMemoryRequirementsInfoNV *>( this );
     }
 
+    operator VkAccelerationStructureMemoryRequirementsInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureMemoryRequirementsInfoNV *>( this );
+    }
+
+    operator VkAccelerationStructureMemoryRequirementsInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureMemoryRequirementsInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -3350,6 +3590,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureMotionInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureMotionInfoNV *>( this );
+    }
+
+    operator VkAccelerationStructureMotionInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureMotionInfoNV *>( this );
+    }
+
+    operator VkAccelerationStructureMotionInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureMotionInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -3560,6 +3810,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSRTDataNV *>( this );
     }
 
+    operator VkSRTDataNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSRTDataNV *>( this );
+    }
+
+    operator VkSRTDataNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSRTDataNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -3722,6 +3982,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureSRTMotionInstanceNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureSRTMotionInstanceNV *>( this );
+    }
+
+    operator VkAccelerationStructureSRTMotionInstanceNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureSRTMotionInstanceNV *>( this );
+    }
+
+    operator VkAccelerationStructureSRTMotionInstanceNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureSRTMotionInstanceNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -3903,6 +4173,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureMotionInstanceNV *>( this );
     }
 
+    operator VkAccelerationStructureMotionInstanceNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureMotionInstanceNV *>( this );
+    }
+
+    operator VkAccelerationStructureMotionInstanceNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureMotionInstanceNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -3977,6 +4257,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMicromapUsageEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMicromapUsageEXT *>( this );
+    }
+
+    operator VkMicromapUsageEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMicromapUsageEXT *>( this );
+    }
+
+    operator VkMicromapUsageEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMicromapUsageEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -4279,6 +4569,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureTrianglesDisplacementMicromapNV *>( this );
     }
 
+    operator VkAccelerationStructureTrianglesDisplacementMicromapNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureTrianglesDisplacementMicromapNV *>( this );
+    }
+
+    operator VkAccelerationStructureTrianglesDisplacementMicromapNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureTrianglesDisplacementMicromapNV *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -4525,6 +4825,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAccelerationStructureTrianglesOpacityMicromapEXT *>( this );
     }
 
+    operator VkAccelerationStructureTrianglesOpacityMicromapEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureTrianglesOpacityMicromapEXT *>( this );
+    }
+
+    operator VkAccelerationStructureTrianglesOpacityMicromapEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureTrianglesOpacityMicromapEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -4619,6 +4929,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAccelerationStructureVersionInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAccelerationStructureVersionInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureVersionInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureVersionInfoKHR *>( this );
+    }
+
+    operator VkAccelerationStructureVersionInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureVersionInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -4751,6 +5071,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAcquireNextImageInfoKHR *>( this );
     }
 
+    operator VkAcquireNextImageInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAcquireNextImageInfoKHR *>( this );
+    }
+
+    operator VkAcquireNextImageInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAcquireNextImageInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -4866,6 +5196,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAcquireProfilingLockInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAcquireProfilingLockInfoKHR *>( this );
+    }
+
+    operator VkAcquireProfilingLockInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAcquireProfilingLockInfoKHR *>( this );
+    }
+
+    operator VkAcquireProfilingLockInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAcquireProfilingLockInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -5081,6 +5421,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAllocationCallbacks *>( this );
     }
 
+    operator VkAllocationCallbacks const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAllocationCallbacks *>( this );
+    }
+
+    operator VkAllocationCallbacks *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAllocationCallbacks *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -5183,6 +5533,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAmigoProfilingSubmitInfoSEC &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAmigoProfilingSubmitInfoSEC *>( this );
+    }
+
+    operator VkAmigoProfilingSubmitInfoSEC const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAmigoProfilingSubmitInfoSEC *>( this );
+    }
+
+    operator VkAmigoProfilingSubmitInfoSEC *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAmigoProfilingSubmitInfoSEC *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -5295,6 +5655,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkComponentMapping *>( this );
     }
 
+    operator VkComponentMapping const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkComponentMapping *>( this );
+    }
+
+    operator VkComponentMapping *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkComponentMapping *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -5393,6 +5763,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAndroidHardwareBufferFormatProperties2ANDROID &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAndroidHardwareBufferFormatProperties2ANDROID *>( this );
+    }
+
+    operator VkAndroidHardwareBufferFormatProperties2ANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAndroidHardwareBufferFormatProperties2ANDROID *>( this );
+    }
+
+    operator VkAndroidHardwareBufferFormatProperties2ANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAndroidHardwareBufferFormatProperties2ANDROID *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -5525,6 +5905,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAndroidHardwareBufferFormatPropertiesANDROID *>( this );
     }
 
+    operator VkAndroidHardwareBufferFormatPropertiesANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAndroidHardwareBufferFormatPropertiesANDROID *>( this );
+    }
+
+    operator VkAndroidHardwareBufferFormatPropertiesANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAndroidHardwareBufferFormatPropertiesANDROID *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -5643,6 +6033,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAndroidHardwareBufferFormatResolvePropertiesANDROID *>( this );
     }
 
+    operator VkAndroidHardwareBufferFormatResolvePropertiesANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAndroidHardwareBufferFormatResolvePropertiesANDROID *>( this );
+    }
+
+    operator VkAndroidHardwareBufferFormatResolvePropertiesANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAndroidHardwareBufferFormatResolvePropertiesANDROID *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -5732,6 +6132,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAndroidHardwareBufferPropertiesANDROID *>( this );
     }
 
+    operator VkAndroidHardwareBufferPropertiesANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAndroidHardwareBufferPropertiesANDROID *>( this );
+    }
+
+    operator VkAndroidHardwareBufferPropertiesANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAndroidHardwareBufferPropertiesANDROID *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -5817,6 +6227,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAndroidHardwareBufferUsageANDROID &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAndroidHardwareBufferUsageANDROID *>( this );
+    }
+
+    operator VkAndroidHardwareBufferUsageANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAndroidHardwareBufferUsageANDROID *>( this );
+    }
+
+    operator VkAndroidHardwareBufferUsageANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAndroidHardwareBufferUsageANDROID *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -5925,6 +6345,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAndroidSurfaceCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAndroidSurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkAndroidSurfaceCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAndroidSurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkAndroidSurfaceCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAndroidSurfaceCreateInfoKHR *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -6038,6 +6468,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAntiLagPresentationInfoAMD *>( this );
     }
 
+    operator VkAntiLagPresentationInfoAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAntiLagPresentationInfoAMD *>( this );
+    }
+
+    operator VkAntiLagPresentationInfoAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAntiLagPresentationInfoAMD *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -6149,6 +6589,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAntiLagDataAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAntiLagDataAMD *>( this );
+    }
+
+    operator VkAntiLagDataAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAntiLagDataAMD *>( this );
+    }
+
+    operator VkAntiLagDataAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAntiLagDataAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -6283,6 +6733,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkApplicationInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkApplicationInfo *>( this );
+    }
+
+    operator VkApplicationInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkApplicationInfo *>( this );
+    }
+
+    operator VkApplicationInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkApplicationInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -6466,6 +6926,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAttachmentDescription *>( this );
     }
 
+    operator VkAttachmentDescription const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAttachmentDescription *>( this );
+    }
+
+    operator VkAttachmentDescription *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAttachmentDescription *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -6638,6 +7108,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAttachmentDescription2 *>( this );
     }
 
+    operator VkAttachmentDescription2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAttachmentDescription2 *>( this );
+    }
+
+    operator VkAttachmentDescription2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAttachmentDescription2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -6770,6 +7250,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAttachmentDescriptionStencilLayout *>( this );
     }
 
+    operator VkAttachmentDescriptionStencilLayout const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAttachmentDescriptionStencilLayout *>( this );
+    }
+
+    operator VkAttachmentDescriptionStencilLayout *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAttachmentDescriptionStencilLayout *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -6867,6 +7357,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAttachmentReference &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAttachmentReference *>( this );
+    }
+
+    operator VkAttachmentReference const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAttachmentReference *>( this );
+    }
+
+    operator VkAttachmentReference *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAttachmentReference *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -6976,6 +7476,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAttachmentReference2 *>( this );
     }
 
+    operator VkAttachmentReference2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAttachmentReference2 *>( this );
+    }
+
+    operator VkAttachmentReference2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAttachmentReference2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -7082,6 +7592,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkAttachmentReferenceStencilLayout &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkAttachmentReferenceStencilLayout *>( this );
+    }
+
+    operator VkAttachmentReferenceStencilLayout const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAttachmentReferenceStencilLayout *>( this );
+    }
+
+    operator VkAttachmentReferenceStencilLayout *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAttachmentReferenceStencilLayout *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -7226,6 +7746,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAttachmentSampleCountInfoAMD *>( this );
     }
 
+    operator VkAttachmentSampleCountInfoAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAttachmentSampleCountInfoAMD *>( this );
+    }
+
+    operator VkAttachmentSampleCountInfoAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAttachmentSampleCountInfoAMD *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -7326,6 +7856,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExtent2D *>( this );
     }
 
+    operator VkExtent2D const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExtent2D *>( this );
+    }
+
+    operator VkExtent2D *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExtent2D *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -7408,6 +7948,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSampleLocationEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSampleLocationEXT *>( this );
+    }
+
+    operator VkSampleLocationEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSampleLocationEXT *>( this );
+    }
+
+    operator VkSampleLocationEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSampleLocationEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -7553,6 +8103,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSampleLocationsInfoEXT *>( this );
     }
 
+    operator VkSampleLocationsInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSampleLocationsInfoEXT *>( this );
+    }
+
+    operator VkSampleLocationsInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSampleLocationsInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -7659,6 +8219,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkAttachmentSampleLocationsEXT *>( this );
     }
 
+    operator VkAttachmentSampleLocationsEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAttachmentSampleLocationsEXT *>( this );
+    }
+
+    operator VkAttachmentSampleLocationsEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAttachmentSampleLocationsEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -7738,6 +8308,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBaseInStructure *>( this );
     }
 
+    operator VkBaseInStructure const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBaseInStructure *>( this );
+    }
+
+    operator VkBaseInStructure *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBaseInStructure *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -7815,6 +8395,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBaseOutStructure &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBaseOutStructure *>( this );
+    }
+
+    operator VkBaseOutStructure const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBaseOutStructure *>( this );
+    }
+
+    operator VkBaseOutStructure *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBaseOutStructure *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -7968,6 +8558,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindAccelerationStructureMemoryInfoNV *>( this );
     }
 
+    operator VkBindAccelerationStructureMemoryInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindAccelerationStructureMemoryInfoNV *>( this );
+    }
+
+    operator VkBindAccelerationStructureMemoryInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindAccelerationStructureMemoryInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -8103,6 +8703,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindBufferMemoryDeviceGroupInfo *>( this );
     }
 
+    operator VkBindBufferMemoryDeviceGroupInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindBufferMemoryDeviceGroupInfo *>( this );
+    }
+
+    operator VkBindBufferMemoryDeviceGroupInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindBufferMemoryDeviceGroupInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -8218,6 +8828,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBindBufferMemoryInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBindBufferMemoryInfo *>( this );
+    }
+
+    operator VkBindBufferMemoryInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindBufferMemoryInfo *>( this );
+    }
+
+    operator VkBindBufferMemoryInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindBufferMemoryInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -8342,6 +8962,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBindDescriptorBufferEmbeddedSamplersInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBindDescriptorBufferEmbeddedSamplersInfoEXT *>( this );
+    }
+
+    operator VkBindDescriptorBufferEmbeddedSamplersInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindDescriptorBufferEmbeddedSamplersInfoEXT *>( this );
+    }
+
+    operator VkBindDescriptorBufferEmbeddedSamplersInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindDescriptorBufferEmbeddedSamplersInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -8534,6 +9164,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindDescriptorSetsInfo *>( this );
     }
 
+    operator VkBindDescriptorSetsInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindDescriptorSetsInfo *>( this );
+    }
+
+    operator VkBindDescriptorSetsInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindDescriptorSetsInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -8643,6 +9283,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkOffset2D *>( this );
     }
 
+    operator VkOffset2D const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOffset2D *>( this );
+    }
+
+    operator VkOffset2D *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOffset2D *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -8725,6 +9375,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRect2D &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRect2D *>( this );
+    }
+
+    operator VkRect2D const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRect2D *>( this );
+    }
+
+    operator VkRect2D *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRect2D *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -8877,6 +9537,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindImageMemoryDeviceGroupInfo *>( this );
     }
 
+    operator VkBindImageMemoryDeviceGroupInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindImageMemoryDeviceGroupInfo *>( this );
+    }
+
+    operator VkBindImageMemoryDeviceGroupInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindImageMemoryDeviceGroupInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -9001,6 +9671,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindImageMemoryInfo *>( this );
     }
 
+    operator VkBindImageMemoryInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindImageMemoryInfo *>( this );
+    }
+
+    operator VkBindImageMemoryInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindImageMemoryInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -9116,6 +9796,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindImageMemorySwapchainInfoKHR *>( this );
     }
 
+    operator VkBindImageMemorySwapchainInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindImageMemorySwapchainInfoKHR *>( this );
+    }
+
+    operator VkBindImageMemorySwapchainInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindImageMemorySwapchainInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -9213,6 +9903,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBindImagePlaneMemoryInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBindImagePlaneMemoryInfo *>( this );
+    }
+
+    operator VkBindImagePlaneMemoryInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindImagePlaneMemoryInfo *>( this );
+    }
+
+    operator VkBindImagePlaneMemoryInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindImagePlaneMemoryInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -9322,6 +10022,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindIndexBufferIndirectCommandEXT *>( this );
     }
 
+    operator VkBindIndexBufferIndirectCommandEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindIndexBufferIndirectCommandEXT *>( this );
+    }
+
+    operator VkBindIndexBufferIndirectCommandEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindIndexBufferIndirectCommandEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -9421,6 +10131,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindIndexBufferIndirectCommandNV *>( this );
     }
 
+    operator VkBindIndexBufferIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindIndexBufferIndirectCommandNV *>( this );
+    }
+
+    operator VkBindIndexBufferIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindIndexBufferIndirectCommandNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -9507,6 +10227,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBindMemoryStatus &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBindMemoryStatus *>( this );
+    }
+
+    operator VkBindMemoryStatus const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindMemoryStatus *>( this );
+    }
+
+    operator VkBindMemoryStatus *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindMemoryStatus *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -9599,6 +10329,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindPipelineIndirectCommandNV *>( this );
     }
 
+    operator VkBindPipelineIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindPipelineIndirectCommandNV *>( this );
+    }
+
+    operator VkBindPipelineIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindPipelineIndirectCommandNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -9674,6 +10414,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBindShaderGroupIndirectCommandNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBindShaderGroupIndirectCommandNV *>( this );
+    }
+
+    operator VkBindShaderGroupIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindShaderGroupIndirectCommandNV *>( this );
+    }
+
+    operator VkBindShaderGroupIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindShaderGroupIndirectCommandNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -9782,6 +10532,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSparseMemoryBind &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSparseMemoryBind *>( this );
+    }
+
+    operator VkSparseMemoryBind const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSparseMemoryBind *>( this );
+    }
+
+    operator VkSparseMemoryBind *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSparseMemoryBind *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -9906,6 +10666,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSparseBufferMemoryBindInfo *>( this );
     }
 
+    operator VkSparseBufferMemoryBindInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSparseBufferMemoryBindInfo *>( this );
+    }
+
+    operator VkSparseBufferMemoryBindInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSparseBufferMemoryBindInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -10022,6 +10792,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSparseImageOpaqueMemoryBindInfo *>( this );
     }
 
+    operator VkSparseImageOpaqueMemoryBindInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSparseImageOpaqueMemoryBindInfo *>( this );
+    }
+
+    operator VkSparseImageOpaqueMemoryBindInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSparseImageOpaqueMemoryBindInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -10113,6 +10893,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageSubresource &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageSubresource *>( this );
+    }
+
+    operator VkImageSubresource const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageSubresource *>( this );
+    }
+
+    operator VkImageSubresource *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageSubresource *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -10209,6 +10999,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkOffset3D *>( this );
     }
 
+    operator VkOffset3D const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOffset3D *>( this );
+    }
+
+    operator VkOffset3D *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOffset3D *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -10301,6 +11101,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExtent3D &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExtent3D *>( this );
+    }
+
+    operator VkExtent3D const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExtent3D *>( this );
+    }
+
+    operator VkExtent3D *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExtent3D *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -10422,6 +11232,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSparseImageMemoryBind &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSparseImageMemoryBind *>( this );
+    }
+
+    operator VkSparseImageMemoryBind const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSparseImageMemoryBind *>( this );
+    }
+
+    operator VkSparseImageMemoryBind *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSparseImageMemoryBind *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -10546,6 +11366,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSparseImageMemoryBindInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSparseImageMemoryBindInfo *>( this );
+    }
+
+    operator VkSparseImageMemoryBindInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSparseImageMemoryBindInfo *>( this );
+    }
+
+    operator VkSparseImageMemoryBindInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSparseImageMemoryBindInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -10782,6 +11612,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindSparseInfo *>( this );
     }
 
+    operator VkBindSparseInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindSparseInfo *>( this );
+    }
+
+    operator VkBindSparseInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindSparseInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -10921,6 +11761,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindVertexBufferIndirectCommandEXT *>( this );
     }
 
+    operator VkBindVertexBufferIndirectCommandEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindVertexBufferIndirectCommandEXT *>( this );
+    }
+
+    operator VkBindVertexBufferIndirectCommandEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindVertexBufferIndirectCommandEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -11017,6 +11867,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBindVertexBufferIndirectCommandNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBindVertexBufferIndirectCommandNV *>( this );
+    }
+
+    operator VkBindVertexBufferIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindVertexBufferIndirectCommandNV *>( this );
+    }
+
+    operator VkBindVertexBufferIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindVertexBufferIndirectCommandNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -11136,6 +11996,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBindVideoSessionMemoryInfoKHR *>( this );
     }
 
+    operator VkBindVideoSessionMemoryInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBindVideoSessionMemoryInfoKHR *>( this );
+    }
+
+    operator VkBindVideoSessionMemoryInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBindVideoSessionMemoryInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -11243,6 +12113,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBlitImageCubicWeightsInfoQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBlitImageCubicWeightsInfoQCOM *>( this );
+    }
+
+    operator VkBlitImageCubicWeightsInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBlitImageCubicWeightsInfoQCOM *>( this );
+    }
+
+    operator VkBlitImageCubicWeightsInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBlitImageCubicWeightsInfoQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -11354,6 +12234,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageSubresourceLayers &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageSubresourceLayers *>( this );
+    }
+
+    operator VkImageSubresourceLayers const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageSubresourceLayers *>( this );
+    }
+
+    operator VkImageSubresourceLayers *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageSubresourceLayers *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -11468,6 +12358,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageBlit2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageBlit2 *>( this );
+    }
+
+    operator VkImageBlit2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageBlit2 *>( this );
+    }
+
+    operator VkImageBlit2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageBlit2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -11653,6 +12553,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBlitImageInfo2 *>( this );
     }
 
+    operator VkBlitImageInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBlitImageInfo2 *>( this );
+    }
+
+    operator VkBlitImageInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBlitImageInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -11769,6 +12679,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferCaptureDescriptorDataInfoEXT *>( this );
     }
 
+    operator VkBufferCaptureDescriptorDataInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferCaptureDescriptorDataInfoEXT *>( this );
+    }
+
+    operator VkBufferCaptureDescriptorDataInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferCaptureDescriptorDataInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -11876,6 +12796,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBufferCollectionBufferCreateInfoFUCHSIA &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBufferCollectionBufferCreateInfoFUCHSIA *>( this );
+    }
+
+    operator VkBufferCollectionBufferCreateInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferCollectionBufferCreateInfoFUCHSIA *>( this );
+    }
+
+    operator VkBufferCollectionBufferCreateInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferCollectionBufferCreateInfoFUCHSIA *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -12014,6 +12944,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferCollectionConstraintsInfoFUCHSIA *>( this );
     }
 
+    operator VkBufferCollectionConstraintsInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferCollectionConstraintsInfoFUCHSIA *>( this );
+    }
+
+    operator VkBufferCollectionConstraintsInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferCollectionConstraintsInfoFUCHSIA *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -12124,6 +13064,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBufferCollectionCreateInfoFUCHSIA &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBufferCollectionCreateInfoFUCHSIA *>( this );
+    }
+
+    operator VkBufferCollectionCreateInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferCollectionCreateInfoFUCHSIA *>( this );
+    }
+
+    operator VkBufferCollectionCreateInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferCollectionCreateInfoFUCHSIA *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -12242,6 +13192,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferCollectionImageCreateInfoFUCHSIA *>( this );
     }
 
+    operator VkBufferCollectionImageCreateInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferCollectionImageCreateInfoFUCHSIA *>( this );
+    }
+
+    operator VkBufferCollectionImageCreateInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferCollectionImageCreateInfoFUCHSIA *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -12340,6 +13300,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSysmemColorSpaceFUCHSIA &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSysmemColorSpaceFUCHSIA *>( this );
+    }
+
+    operator VkSysmemColorSpaceFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSysmemColorSpaceFUCHSIA *>( this );
+    }
+
+    operator VkSysmemColorSpaceFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSysmemColorSpaceFUCHSIA *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -12448,6 +13418,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBufferCollectionPropertiesFUCHSIA &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBufferCollectionPropertiesFUCHSIA *>( this );
+    }
+
+    operator VkBufferCollectionPropertiesFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferCollectionPropertiesFUCHSIA *>( this );
+    }
+
+    operator VkBufferCollectionPropertiesFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferCollectionPropertiesFUCHSIA *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -12651,6 +13631,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferCreateInfo *>( this );
     }
 
+    operator VkBufferCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferCreateInfo *>( this );
+    }
+
+    operator VkBufferCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -12781,6 +13771,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferConstraintsInfoFUCHSIA *>( this );
     }
 
+    operator VkBufferConstraintsInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferConstraintsInfoFUCHSIA *>( this );
+    }
+
+    operator VkBufferConstraintsInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferConstraintsInfoFUCHSIA *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -12889,6 +13889,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferCopy *>( this );
     }
 
+    operator VkBufferCopy const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferCopy *>( this );
+    }
+
+    operator VkBufferCopy *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferCopy *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -12992,6 +14002,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBufferCopy2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBufferCopy2 *>( this );
+    }
+
+    operator VkBufferCopy2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferCopy2 *>( this );
+    }
+
+    operator VkBufferCopy2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferCopy2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -13101,6 +14121,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferDeviceAddressCreateInfoEXT *>( this );
     }
 
+    operator VkBufferDeviceAddressCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferDeviceAddressCreateInfoEXT *>( this );
+    }
+
+    operator VkBufferDeviceAddressCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferDeviceAddressCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -13196,6 +14226,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBufferDeviceAddressInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBufferDeviceAddressInfo *>( this );
+    }
+
+    operator VkBufferDeviceAddressInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferDeviceAddressInfo *>( this );
+    }
+
+    operator VkBufferDeviceAddressInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferDeviceAddressInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -13323,6 +14363,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBufferImageCopy &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBufferImageCopy *>( this );
+    }
+
+    operator VkBufferImageCopy const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferImageCopy *>( this );
+    }
+
+    operator VkBufferImageCopy *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferImageCopy *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -13461,6 +14511,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBufferImageCopy2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBufferImageCopy2 *>( this );
+    }
+
+    operator VkBufferImageCopy2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferImageCopy2 *>( this );
+    }
+
+    operator VkBufferImageCopy2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferImageCopy2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -13622,6 +14682,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBufferMemoryBarrier &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBufferMemoryBarrier *>( this );
+    }
+
+    operator VkBufferMemoryBarrier const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferMemoryBarrier *>( this );
+    }
+
+    operator VkBufferMemoryBarrier *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferMemoryBarrier *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -13802,6 +14872,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferMemoryBarrier2 *>( this );
     }
 
+    operator VkBufferMemoryBarrier2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferMemoryBarrier2 *>( this );
+    }
+
+    operator VkBufferMemoryBarrier2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferMemoryBarrier2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -13922,6 +15002,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferMemoryRequirementsInfo2 *>( this );
     }
 
+    operator VkBufferMemoryRequirementsInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferMemoryRequirementsInfo2 *>( this );
+    }
+
+    operator VkBufferMemoryRequirementsInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferMemoryRequirementsInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -14022,6 +15112,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferOpaqueCaptureAddressCreateInfo *>( this );
     }
 
+    operator VkBufferOpaqueCaptureAddressCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferOpaqueCaptureAddressCreateInfo *>( this );
+    }
+
+    operator VkBufferOpaqueCaptureAddressCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferOpaqueCaptureAddressCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -14119,6 +15219,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBufferUsageFlags2CreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBufferUsageFlags2CreateInfo *>( this );
+    }
+
+    operator VkBufferUsageFlags2CreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferUsageFlags2CreateInfo *>( this );
+    }
+
+    operator VkBufferUsageFlags2CreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferUsageFlags2CreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -14253,6 +15363,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBufferViewCreateInfo *>( this );
     }
 
+    operator VkBufferViewCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBufferViewCreateInfo *>( this );
+    }
+
+    operator VkBufferViewCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBufferViewCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -14359,6 +15479,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkStridedDeviceAddressNV *>( this );
     }
 
+    operator VkStridedDeviceAddressNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkStridedDeviceAddressNV *>( this );
+    }
+
+    operator VkStridedDeviceAddressNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkStridedDeviceAddressNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -14460,6 +15590,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkBuildPartitionedAccelerationStructureIndirectCommandNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkBuildPartitionedAccelerationStructureIndirectCommandNV *>( this );
+    }
+
+    operator VkBuildPartitionedAccelerationStructureIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBuildPartitionedAccelerationStructureIndirectCommandNV *>( this );
+    }
+
+    operator VkBuildPartitionedAccelerationStructureIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBuildPartitionedAccelerationStructureIndirectCommandNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -14589,6 +15729,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPartitionedAccelerationStructureInstancesInputNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPartitionedAccelerationStructureInstancesInputNV *>( this );
+    }
+
+    operator VkPartitionedAccelerationStructureInstancesInputNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPartitionedAccelerationStructureInstancesInputNV *>( this );
+    }
+
+    operator VkPartitionedAccelerationStructureInstancesInputNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPartitionedAccelerationStructureInstancesInputNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -14746,6 +15896,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkBuildPartitionedAccelerationStructureInfoNV *>( this );
     }
 
+    operator VkBuildPartitionedAccelerationStructureInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkBuildPartitionedAccelerationStructureInfoNV *>( this );
+    }
+
+    operator VkBuildPartitionedAccelerationStructureInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkBuildPartitionedAccelerationStructureInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -14858,6 +16018,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCalibratedTimestampInfoKHR *>( this );
     }
 
+    operator VkCalibratedTimestampInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCalibratedTimestampInfoKHR *>( this );
+    }
+
+    operator VkCalibratedTimestampInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCalibratedTimestampInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -14942,6 +16112,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCheckpointData2NV *>( this );
     }
 
+    operator VkCheckpointData2NV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCheckpointData2NV *>( this );
+    }
+
+    operator VkCheckpointData2NV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCheckpointData2NV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -15024,6 +16204,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCheckpointDataNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCheckpointDataNV *>( this );
+    }
+
+    operator VkCheckpointDataNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCheckpointDataNV *>( this );
+    }
+
+    operator VkCheckpointDataNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCheckpointDataNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -15183,6 +16373,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkClearDepthStencilValue *>( this );
     }
 
+    operator VkClearDepthStencilValue const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClearDepthStencilValue *>( this );
+    }
+
+    operator VkClearDepthStencilValue *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClearDepthStencilValue *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -15319,6 +16519,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkClearAttachment *>( this );
     }
 
+    operator VkClearAttachment const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClearAttachment *>( this );
+    }
+
+    operator VkClearAttachment *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClearAttachment *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -15391,6 +16601,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkClearRect &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkClearRect *>( this );
+    }
+
+    operator VkClearRect const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClearRect *>( this );
+    }
+
+    operator VkClearRect *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClearRect *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -15499,6 +16719,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV *>( this );
     }
 
+    operator VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureBuildClustersBottomLevelInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -15600,6 +16830,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureGeometryIndexAndGeometryFlagsNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -15825,6 +17065,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkClusterAccelerationStructureBuildTriangleClusterInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkClusterAccelerationStructureBuildTriangleClusterInfoNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureBuildTriangleClusterInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureBuildTriangleClusterInfoNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureBuildTriangleClusterInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureBuildTriangleClusterInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -16142,6 +17392,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV *>( this );
     }
 
+    operator VkClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureBuildTriangleClusterTemplateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -16303,6 +17563,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkClusterAccelerationStructureClustersBottomLevelInputNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkClusterAccelerationStructureClustersBottomLevelInputNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureClustersBottomLevelInputNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureClustersBottomLevelInputNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureClustersBottomLevelInputNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureClustersBottomLevelInputNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -16469,6 +17739,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkClusterAccelerationStructureTriangleClusterInputNV *>( this );
     }
 
+    operator VkClusterAccelerationStructureTriangleClusterInputNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureTriangleClusterInputNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureTriangleClusterInputNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureTriangleClusterInputNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -16615,6 +17895,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkClusterAccelerationStructureMoveObjectsInputNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkClusterAccelerationStructureMoveObjectsInputNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureMoveObjectsInputNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureMoveObjectsInputNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureMoveObjectsInputNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureMoveObjectsInputNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -16828,6 +18118,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkClusterAccelerationStructureInputInfoNV *>( this );
     }
 
+    operator VkClusterAccelerationStructureInputInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureInputInfoNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureInputInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureInputInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -16922,6 +18222,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkStridedDeviceAddressRegionKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkStridedDeviceAddressRegionKHR *>( this );
+    }
+
+    operator VkStridedDeviceAddressRegionKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkStridedDeviceAddressRegionKHR *>( this );
+    }
+
+    operator VkStridedDeviceAddressRegionKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkStridedDeviceAddressRegionKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -17081,6 +18391,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkClusterAccelerationStructureCommandsInfoNV *>( this );
     }
 
+    operator VkClusterAccelerationStructureCommandsInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureCommandsInfoNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureCommandsInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureCommandsInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -17205,6 +18525,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkClusterAccelerationStructureInstantiateClusterInfoNV *>( this );
     }
 
+    operator VkClusterAccelerationStructureInstantiateClusterInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureInstantiateClusterInfoNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureInstantiateClusterInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureInstantiateClusterInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -17294,6 +18624,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkClusterAccelerationStructureMoveObjectsInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkClusterAccelerationStructureMoveObjectsInfoNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureMoveObjectsInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkClusterAccelerationStructureMoveObjectsInfoNV *>( this );
+    }
+
+    operator VkClusterAccelerationStructureMoveObjectsInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkClusterAccelerationStructureMoveObjectsInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -17387,6 +18727,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCoarseSampleLocationNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCoarseSampleLocationNV *>( this );
+    }
+
+    operator VkCoarseSampleLocationNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCoarseSampleLocationNV *>( this );
+    }
+
+    operator VkCoarseSampleLocationNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCoarseSampleLocationNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -17518,6 +18868,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCoarseSampleOrderCustomNV *>( this );
     }
 
+    operator VkCoarseSampleOrderCustomNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCoarseSampleOrderCustomNV *>( this );
+    }
+
+    operator VkCoarseSampleOrderCustomNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCoarseSampleOrderCustomNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -17634,6 +18994,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkColorBlendAdvancedEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkColorBlendAdvancedEXT *>( this );
+    }
+
+    operator VkColorBlendAdvancedEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkColorBlendAdvancedEXT *>( this );
+    }
+
+    operator VkColorBlendAdvancedEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkColorBlendAdvancedEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -17764,6 +19134,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkColorBlendEquationEXT *>( this );
     }
 
+    operator VkColorBlendEquationEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkColorBlendEquationEXT *>( this );
+    }
+
+    operator VkColorBlendEquationEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkColorBlendEquationEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -17879,6 +19259,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCommandBufferAllocateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCommandBufferAllocateInfo *>( this );
+    }
+
+    operator VkCommandBufferAllocateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCommandBufferAllocateInfo *>( this );
+    }
+
+    operator VkCommandBufferAllocateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCommandBufferAllocateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -18027,6 +19417,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCommandBufferInheritanceInfo *>( this );
     }
 
+    operator VkCommandBufferInheritanceInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCommandBufferInheritanceInfo *>( this );
+    }
+
+    operator VkCommandBufferInheritanceInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCommandBufferInheritanceInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -18148,6 +19548,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCommandBufferBeginInfo *>( this );
     }
 
+    operator VkCommandBufferBeginInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCommandBufferBeginInfo *>( this );
+    }
+
+    operator VkCommandBufferBeginInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCommandBufferBeginInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -18252,6 +19662,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCommandBufferInheritanceConditionalRenderingInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCommandBufferInheritanceConditionalRenderingInfoEXT *>( this );
+    }
+
+    operator VkCommandBufferInheritanceConditionalRenderingInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCommandBufferInheritanceConditionalRenderingInfoEXT *>( this );
+    }
+
+    operator VkCommandBufferInheritanceConditionalRenderingInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCommandBufferInheritanceConditionalRenderingInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -18364,6 +19784,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCommandBufferInheritanceRenderPassTransformInfoQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCommandBufferInheritanceRenderPassTransformInfoQCOM *>( this );
+    }
+
+    operator VkCommandBufferInheritanceRenderPassTransformInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCommandBufferInheritanceRenderPassTransformInfoQCOM *>( this );
+    }
+
+    operator VkCommandBufferInheritanceRenderPassTransformInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCommandBufferInheritanceRenderPassTransformInfoQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -18552,6 +19982,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCommandBufferInheritanceRenderingInfo *>( this );
     }
 
+    operator VkCommandBufferInheritanceRenderingInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCommandBufferInheritanceRenderingInfo *>( this );
+    }
+
+    operator VkCommandBufferInheritanceRenderingInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCommandBufferInheritanceRenderingInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -18692,6 +20132,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkViewport *>( this );
     }
 
+    operator VkViewport const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkViewport *>( this );
+    }
+
+    operator VkViewport *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkViewport *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -18808,6 +20258,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCommandBufferInheritanceViewportScissorInfoNV *>( this );
     }
 
+    operator VkCommandBufferInheritanceViewportScissorInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCommandBufferInheritanceViewportScissorInfoNV *>( this );
+    }
+
+    operator VkCommandBufferInheritanceViewportScissorInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCommandBufferInheritanceViewportScissorInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -18921,6 +20381,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCommandBufferSubmitInfo *>( this );
     }
 
+    operator VkCommandBufferSubmitInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCommandBufferSubmitInfo *>( this );
+    }
+
+    operator VkCommandBufferSubmitInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCommandBufferSubmitInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -19030,6 +20500,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCommandPoolCreateInfo *>( this );
     }
 
+    operator VkCommandPoolCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCommandPoolCreateInfo *>( this );
+    }
+
+    operator VkCommandPoolCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCommandPoolCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -19130,6 +20610,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSpecializationMapEntry &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSpecializationMapEntry *>( this );
+    }
+
+    operator VkSpecializationMapEntry const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSpecializationMapEntry *>( this );
+    }
+
+    operator VkSpecializationMapEntry *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSpecializationMapEntry *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -19266,6 +20756,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSpecializationInfo *>( this );
     }
 
+    operator VkSpecializationInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSpecializationInfo *>( this );
+    }
+
+    operator VkSpecializationInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSpecializationInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -19391,6 +20891,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineShaderStageCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineShaderStageCreateInfo *>( this );
+    }
+
+    operator VkPipelineShaderStageCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineShaderStageCreateInfo *>( this );
+    }
+
+    operator VkPipelineShaderStageCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineShaderStageCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -19549,6 +21059,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkComputePipelineCreateInfo *>( this );
     }
 
+    operator VkComputePipelineCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkComputePipelineCreateInfo *>( this );
+    }
+
+    operator VkComputePipelineCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkComputePipelineCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -19676,6 +21196,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkComputePipelineIndirectBufferInfoNV *>( this );
     }
 
+    operator VkComputePipelineIndirectBufferInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkComputePipelineIndirectBufferInfoNV *>( this );
+    }
+
+    operator VkComputePipelineIndirectBufferInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkComputePipelineIndirectBufferInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -19798,6 +21328,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkConditionalRenderingBeginInfoEXT *>( this );
     }
 
+    operator VkConditionalRenderingBeginInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkConditionalRenderingBeginInfoEXT *>( this );
+    }
+
+    operator VkConditionalRenderingBeginInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkConditionalRenderingBeginInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -19907,6 +21447,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkConformanceVersion &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkConformanceVersion *>( this );
+    }
+
+    operator VkConformanceVersion const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkConformanceVersion *>( this );
+    }
+
+    operator VkConformanceVersion *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkConformanceVersion *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -20100,6 +21650,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkConvertCooperativeVectorMatrixInfoNV *>( this );
     }
 
+    operator VkConvertCooperativeVectorMatrixInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkConvertCooperativeVectorMatrixInfoNV *>( this );
+    }
+
+    operator VkConvertCooperativeVectorMatrixInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkConvertCooperativeVectorMatrixInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -20222,6 +21782,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCooperativeMatrixFlexibleDimensionsPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCooperativeMatrixFlexibleDimensionsPropertiesNV *>( this );
+    }
+
+    operator VkCooperativeMatrixFlexibleDimensionsPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCooperativeMatrixFlexibleDimensionsPropertiesNV *>( this );
+    }
+
+    operator VkCooperativeMatrixFlexibleDimensionsPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCooperativeMatrixFlexibleDimensionsPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -20349,6 +21919,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCooperativeMatrixPropertiesKHR *>( this );
     }
 
+    operator VkCooperativeMatrixPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCooperativeMatrixPropertiesKHR *>( this );
+    }
+
+    operator VkCooperativeMatrixPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCooperativeMatrixPropertiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -20466,6 +22046,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCooperativeMatrixPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCooperativeMatrixPropertiesNV *>( this );
+    }
+
+    operator VkCooperativeMatrixPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCooperativeMatrixPropertiesNV *>( this );
+    }
+
+    operator VkCooperativeMatrixPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCooperativeMatrixPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -20628,6 +22218,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCooperativeVectorPropertiesNV *>( this );
     }
 
+    operator VkCooperativeVectorPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCooperativeVectorPropertiesNV *>( this );
+    }
+
+    operator VkCooperativeVectorPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCooperativeVectorPropertiesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -20758,6 +22358,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyAccelerationStructureInfoKHR *>( this );
     }
 
+    operator VkCopyAccelerationStructureInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyAccelerationStructureInfoKHR *>( this );
+    }
+
+    operator VkCopyAccelerationStructureInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyAccelerationStructureInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -20879,6 +22489,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCopyAccelerationStructureToMemoryInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCopyAccelerationStructureToMemoryInfoKHR *>( this );
+    }
+
+    operator VkCopyAccelerationStructureToMemoryInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyAccelerationStructureToMemoryInfoKHR *>( this );
+    }
+
+    operator VkCopyAccelerationStructureToMemoryInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyAccelerationStructureToMemoryInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -21005,6 +22625,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCopyBufferInfo2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCopyBufferInfo2 *>( this );
+    }
+
+    operator VkCopyBufferInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyBufferInfo2 *>( this );
+    }
+
+    operator VkCopyBufferInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyBufferInfo2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -21174,6 +22804,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyBufferToImageInfo2 *>( this );
     }
 
+    operator VkCopyBufferToImageInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyBufferToImageInfo2 *>( this );
+    }
+
+    operator VkCopyBufferToImageInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyBufferToImageInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -21284,6 +22924,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCopyCommandTransformInfoQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCopyCommandTransformInfoQCOM *>( this );
+    }
+
+    operator VkCopyCommandTransformInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyCommandTransformInfoQCOM *>( this );
+    }
+
+    operator VkCopyCommandTransformInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyCommandTransformInfoQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -21429,6 +23079,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyDescriptorSet *>( this );
     }
 
+    operator VkCopyDescriptorSet const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyDescriptorSet *>( this );
+    }
+
+    operator VkCopyDescriptorSet *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyDescriptorSet *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -21570,6 +23230,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageCopy2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageCopy2 *>( this );
+    }
+
+    operator VkImageCopy2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageCopy2 *>( this );
+    }
+
+    operator VkImageCopy2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageCopy2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -21747,6 +23417,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyImageInfo2 *>( this );
     }
 
+    operator VkCopyImageInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyImageInfo2 *>( this );
+    }
+
+    operator VkCopyImageInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyImageInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -21916,6 +23596,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCopyImageToBufferInfo2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCopyImageToBufferInfo2 *>( this );
+    }
+
+    operator VkCopyImageToBufferInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyImageToBufferInfo2 *>( this );
+    }
+
+    operator VkCopyImageToBufferInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyImageToBufferInfo2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -22107,6 +23797,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyImageToImageInfo *>( this );
     }
 
+    operator VkCopyImageToImageInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyImageToImageInfo *>( this );
+    }
+
+    operator VkCopyImageToImageInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyImageToImageInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -22259,6 +23959,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageToMemoryCopy &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageToMemoryCopy *>( this );
+    }
+
+    operator VkImageToMemoryCopy const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageToMemoryCopy *>( this );
+    }
+
+    operator VkImageToMemoryCopy *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageToMemoryCopy *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -22433,6 +24143,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyImageToMemoryInfo *>( this );
     }
 
+    operator VkCopyImageToMemoryInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyImageToMemoryInfo *>( this );
+    }
+
+    operator VkCopyImageToMemoryInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyImageToMemoryInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -22549,6 +24269,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyMemoryIndirectCommandNV *>( this );
     }
 
+    operator VkCopyMemoryIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyMemoryIndirectCommandNV *>( this );
+    }
+
+    operator VkCopyMemoryIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyMemoryIndirectCommandNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -22659,6 +24389,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCopyMemoryToAccelerationStructureInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCopyMemoryToAccelerationStructureInfoKHR *>( this );
+    }
+
+    operator VkCopyMemoryToAccelerationStructureInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyMemoryToAccelerationStructureInfoKHR *>( this );
+    }
+
+    operator VkCopyMemoryToAccelerationStructureInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyMemoryToAccelerationStructureInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -22776,6 +24516,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCopyMemoryToImageIndirectCommandNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCopyMemoryToImageIndirectCommandNV *>( this );
+    }
+
+    operator VkCopyMemoryToImageIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyMemoryToImageIndirectCommandNV *>( this );
+    }
+
+    operator VkCopyMemoryToImageIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyMemoryToImageIndirectCommandNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -22915,6 +24665,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryToImageCopy &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryToImageCopy *>( this );
+    }
+
+    operator VkMemoryToImageCopy const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryToImageCopy *>( this );
+    }
+
+    operator VkMemoryToImageCopy *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryToImageCopy *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -23089,6 +24849,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyMemoryToImageInfo *>( this );
     }
 
+    operator VkCopyMemoryToImageInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyMemoryToImageInfo *>( this );
+    }
+
+    operator VkCopyMemoryToImageInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyMemoryToImageInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -23216,6 +24986,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyMemoryToMicromapInfoEXT *>( this );
     }
 
+    operator VkCopyMemoryToMicromapInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyMemoryToMicromapInfoEXT *>( this );
+    }
+
+    operator VkCopyMemoryToMicromapInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyMemoryToMicromapInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -23315,6 +25095,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCopyMicromapInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCopyMicromapInfoEXT *>( this );
+    }
+
+    operator VkCopyMicromapInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyMicromapInfoEXT *>( this );
+    }
+
+    operator VkCopyMicromapInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyMicromapInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -23437,6 +25227,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCopyMicromapToMemoryInfoEXT *>( this );
     }
 
+    operator VkCopyMicromapToMemoryInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyMicromapToMemoryInfoEXT *>( this );
+    }
+
+    operator VkCopyMicromapToMemoryInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyMicromapToMemoryInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -23528,6 +25328,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCuFunctionCreateInfoNVX &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCuFunctionCreateInfoNVX *>( this );
+    }
+
+    operator VkCuFunctionCreateInfoNVX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCuFunctionCreateInfoNVX *>( this );
+    }
+
+    operator VkCuFunctionCreateInfoNVX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCuFunctionCreateInfoNVX *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -23770,6 +25580,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCuLaunchInfoNVX *>( this );
     }
 
+    operator VkCuLaunchInfoNVX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCuLaunchInfoNVX *>( this );
+    }
+
+    operator VkCuLaunchInfoNVX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCuLaunchInfoNVX *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -23920,6 +25740,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCuModuleCreateInfoNVX *>( this );
     }
 
+    operator VkCuModuleCreateInfoNVX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCuModuleCreateInfoNVX *>( this );
+    }
+
+    operator VkCuModuleCreateInfoNVX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCuModuleCreateInfoNVX *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -24018,6 +25848,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCuModuleTexturingModeCreateInfoNVX &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCuModuleTexturingModeCreateInfoNVX *>( this );
+    }
+
+    operator VkCuModuleTexturingModeCreateInfoNVX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCuModuleTexturingModeCreateInfoNVX *>( this );
+    }
+
+    operator VkCuModuleTexturingModeCreateInfoNVX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCuModuleTexturingModeCreateInfoNVX *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -24124,6 +25964,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCudaFunctionCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCudaFunctionCreateInfoNV *>( this );
+    }
+
+    operator VkCudaFunctionCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCudaFunctionCreateInfoNV *>( this );
+    }
+
+    operator VkCudaFunctionCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCudaFunctionCreateInfoNV *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -24368,6 +26218,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkCudaLaunchInfoNV *>( this );
     }
 
+    operator VkCudaLaunchInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCudaLaunchInfoNV *>( this );
+    }
+
+    operator VkCudaLaunchInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCudaLaunchInfoNV *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -24518,6 +26378,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkCudaModuleCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkCudaModuleCreateInfoNV *>( this );
+    }
+
+    operator VkCudaModuleCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCudaModuleCreateInfoNV *>( this );
+    }
+
+    operator VkCudaModuleCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCudaModuleCreateInfoNV *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -24678,6 +26548,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkD3D12FenceSubmitInfoKHR *>( this );
     }
 
+    operator VkD3D12FenceSubmitInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkD3D12FenceSubmitInfoKHR *>( this );
+    }
+
+    operator VkD3D12FenceSubmitInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkD3D12FenceSubmitInfoKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -24792,6 +26672,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDebugMarkerMarkerInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDebugMarkerMarkerInfoEXT *>( this );
+    }
+
+    operator VkDebugMarkerMarkerInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDebugMarkerMarkerInfoEXT *>( this );
+    }
+
+    operator VkDebugMarkerMarkerInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDebugMarkerMarkerInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -24918,6 +26808,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDebugMarkerObjectNameInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDebugMarkerObjectNameInfoEXT *>( this );
+    }
+
+    operator VkDebugMarkerObjectNameInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDebugMarkerObjectNameInfoEXT *>( this );
+    }
+
+    operator VkDebugMarkerObjectNameInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDebugMarkerObjectNameInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -25089,6 +26989,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDebugMarkerObjectTagInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDebugMarkerObjectTagInfoEXT *>( this );
+    }
+
+    operator VkDebugMarkerObjectTagInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDebugMarkerObjectTagInfoEXT *>( this );
+    }
+
+    operator VkDebugMarkerObjectTagInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDebugMarkerObjectTagInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -25264,6 +27174,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDebugReportCallbackCreateInfoEXT *>( this );
     }
 
+    operator VkDebugReportCallbackCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDebugReportCallbackCreateInfoEXT *>( this );
+    }
+
+    operator VkDebugReportCallbackCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDebugReportCallbackCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -25366,6 +27286,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDebugUtilsLabelEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDebugUtilsLabelEXT *>( this );
+    }
+
+    operator VkDebugUtilsLabelEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDebugUtilsLabelEXT *>( this );
+    }
+
+    operator VkDebugUtilsLabelEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDebugUtilsLabelEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -25491,6 +27421,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDebugUtilsObjectNameInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDebugUtilsObjectNameInfoEXT *>( this );
+    }
+
+    operator VkDebugUtilsObjectNameInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDebugUtilsObjectNameInfoEXT *>( this );
+    }
+
+    operator VkDebugUtilsObjectNameInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDebugUtilsObjectNameInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -25738,6 +27678,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDebugUtilsMessengerCallbackDataEXT *>( this );
     }
 
+    operator VkDebugUtilsMessengerCallbackDataEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDebugUtilsMessengerCallbackDataEXT *>( this );
+    }
+
+    operator VkDebugUtilsMessengerCallbackDataEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDebugUtilsMessengerCallbackDataEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -25973,6 +27923,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDebugUtilsMessengerCreateInfoEXT *>( this );
     }
 
+    operator VkDebugUtilsMessengerCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDebugUtilsMessengerCreateInfoEXT *>( this );
+    }
+
+    operator VkDebugUtilsMessengerCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDebugUtilsMessengerCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -26137,6 +28097,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDebugUtilsObjectTagInfoEXT *>( this );
     }
 
+    operator VkDebugUtilsObjectTagInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDebugUtilsObjectTagInfoEXT *>( this );
+    }
+
+    operator VkDebugUtilsObjectTagInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDebugUtilsObjectTagInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -26268,6 +28238,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDecompressMemoryRegionNV *>( this );
     }
 
+    operator VkDecompressMemoryRegionNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDecompressMemoryRegionNV *>( this );
+    }
+
+    operator VkDecompressMemoryRegionNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDecompressMemoryRegionNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -26369,6 +28349,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDedicatedAllocationBufferCreateInfoNV *>( this );
     }
 
+    operator VkDedicatedAllocationBufferCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDedicatedAllocationBufferCreateInfoNV *>( this );
+    }
+
+    operator VkDedicatedAllocationBufferCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDedicatedAllocationBufferCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -26467,6 +28457,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDedicatedAllocationImageCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDedicatedAllocationImageCreateInfoNV *>( this );
+    }
+
+    operator VkDedicatedAllocationImageCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDedicatedAllocationImageCreateInfoNV *>( this );
+    }
+
+    operator VkDedicatedAllocationImageCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDedicatedAllocationImageCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -26574,6 +28574,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDedicatedAllocationMemoryAllocateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDedicatedAllocationMemoryAllocateInfoNV *>( this );
+    }
+
+    operator VkDedicatedAllocationMemoryAllocateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDedicatedAllocationMemoryAllocateInfoNV *>( this );
+    }
+
+    operator VkDedicatedAllocationMemoryAllocateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDedicatedAllocationMemoryAllocateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -26694,6 +28704,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryBarrier2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryBarrier2 *>( this );
+    }
+
+    operator VkMemoryBarrier2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryBarrier2 *>( this );
+    }
+
+    operator VkMemoryBarrier2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryBarrier2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -26824,6 +28844,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageSubresourceRange &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageSubresourceRange *>( this );
+    }
+
+    operator VkImageSubresourceRange const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageSubresourceRange *>( this );
+    }
+
+    operator VkImageSubresourceRange *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageSubresourceRange *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -26991,6 +29021,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageMemoryBarrier2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageMemoryBarrier2 *>( this );
+    }
+
+    operator VkImageMemoryBarrier2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageMemoryBarrier2 *>( this );
+    }
+
+    operator VkImageMemoryBarrier2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageMemoryBarrier2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -27222,6 +29262,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDependencyInfo *>( this );
     }
 
+    operator VkDependencyInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDependencyInfo *>( this );
+    }
+
+    operator VkDependencyInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDependencyInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -27360,6 +29410,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDepthBiasInfoEXT *>( this );
     }
 
+    operator VkDepthBiasInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDepthBiasInfoEXT *>( this );
+    }
+
+    operator VkDepthBiasInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDepthBiasInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -27472,6 +29532,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDepthBiasRepresentationInfoEXT *>( this );
     }
 
+    operator VkDepthBiasRepresentationInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDepthBiasRepresentationInfoEXT *>( this );
+    }
+
+    operator VkDepthBiasRepresentationInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDepthBiasRepresentationInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -27566,6 +29636,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDepthClampRangeEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDepthClampRangeEXT *>( this );
+    }
+
+    operator VkDepthClampRangeEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDepthClampRangeEXT *>( this );
+    }
+
+    operator VkDepthClampRangeEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDepthClampRangeEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -27673,6 +29753,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDescriptorAddressInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDescriptorAddressInfoEXT *>( this );
+    }
+
+    operator VkDescriptorAddressInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorAddressInfoEXT *>( this );
+    }
+
+    operator VkDescriptorAddressInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorAddressInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -27788,6 +29878,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorBufferBindingInfoEXT *>( this );
     }
 
+    operator VkDescriptorBufferBindingInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorBufferBindingInfoEXT *>( this );
+    }
+
+    operator VkDescriptorBufferBindingInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorBufferBindingInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -27893,6 +29993,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorBufferBindingPushDescriptorBufferHandleEXT *>( this );
     }
 
+    operator VkDescriptorBufferBindingPushDescriptorBufferHandleEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorBufferBindingPushDescriptorBufferHandleEXT *>( this );
+    }
+
+    operator VkDescriptorBufferBindingPushDescriptorBufferHandleEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorBufferBindingPushDescriptorBufferHandleEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -27996,6 +30106,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorBufferInfo *>( this );
     }
 
+    operator VkDescriptorBufferInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorBufferInfo *>( this );
+    }
+
+    operator VkDescriptorBufferInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorBufferInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -28091,6 +30211,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDescriptorImageInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDescriptorImageInfo *>( this );
+    }
+
+    operator VkDescriptorImageInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorImageInfo *>( this );
+    }
+
+    operator VkDescriptorImageInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorImageInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -28314,6 +30444,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorGetInfoEXT *>( this );
     }
 
+    operator VkDescriptorGetInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorGetInfoEXT *>( this );
+    }
+
+    operator VkDescriptorGetInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorGetInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -28390,6 +30530,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDescriptorPoolSize &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDescriptorPoolSize *>( this );
+    }
+
+    operator VkDescriptorPoolSize const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorPoolSize *>( this );
+    }
+
+    operator VkDescriptorPoolSize *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorPoolSize *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -28527,6 +30677,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorPoolCreateInfo *>( this );
     }
 
+    operator VkDescriptorPoolCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorPoolCreateInfo *>( this );
+    }
+
+    operator VkDescriptorPoolCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorPoolCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -28634,6 +30794,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDescriptorPoolInlineUniformBlockCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDescriptorPoolInlineUniformBlockCreateInfo *>( this );
+    }
+
+    operator VkDescriptorPoolInlineUniformBlockCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorPoolInlineUniformBlockCreateInfo *>( this );
+    }
+
+    operator VkDescriptorPoolInlineUniformBlockCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorPoolInlineUniformBlockCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -28771,6 +30941,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorSetAllocateInfo *>( this );
     }
 
+    operator VkDescriptorSetAllocateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorSetAllocateInfo *>( this );
+    }
+
+    operator VkDescriptorSetAllocateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorSetAllocateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -28884,6 +31064,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDescriptorSetBindingReferenceVALVE &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDescriptorSetBindingReferenceVALVE *>( this );
+    }
+
+    operator VkDescriptorSetBindingReferenceVALVE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorSetBindingReferenceVALVE *>( this );
+    }
+
+    operator VkDescriptorSetBindingReferenceVALVE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorSetBindingReferenceVALVE *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -29030,6 +31220,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorSetLayoutBinding *>( this );
     }
 
+    operator VkDescriptorSetLayoutBinding const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorSetLayoutBinding *>( this );
+    }
+
+    operator VkDescriptorSetLayoutBinding *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorSetLayoutBinding *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -29155,6 +31355,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDescriptorSetLayoutBindingFlagsCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDescriptorSetLayoutBindingFlagsCreateInfo *>( this );
+    }
+
+    operator VkDescriptorSetLayoutBindingFlagsCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorSetLayoutBindingFlagsCreateInfo *>( this );
+    }
+
+    operator VkDescriptorSetLayoutBindingFlagsCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorSetLayoutBindingFlagsCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -29296,6 +31506,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorSetLayoutCreateInfo *>( this );
     }
 
+    operator VkDescriptorSetLayoutCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorSetLayoutCreateInfo *>( this );
+    }
+
+    operator VkDescriptorSetLayoutCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorSetLayoutCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -29409,6 +31629,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorSetLayoutHostMappingInfoVALVE *>( this );
     }
 
+    operator VkDescriptorSetLayoutHostMappingInfoVALVE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorSetLayoutHostMappingInfoVALVE *>( this );
+    }
+
+    operator VkDescriptorSetLayoutHostMappingInfoVALVE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorSetLayoutHostMappingInfoVALVE *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -29491,6 +31721,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDescriptorSetLayoutSupport &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDescriptorSetLayoutSupport *>( this );
+    }
+
+    operator VkDescriptorSetLayoutSupport const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorSetLayoutSupport *>( this );
+    }
+
+    operator VkDescriptorSetLayoutSupport *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorSetLayoutSupport *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -29621,6 +31861,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorSetVariableDescriptorCountAllocateInfo *>( this );
     }
 
+    operator VkDescriptorSetVariableDescriptorCountAllocateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorSetVariableDescriptorCountAllocateInfo *>( this );
+    }
+
+    operator VkDescriptorSetVariableDescriptorCountAllocateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorSetVariableDescriptorCountAllocateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -29710,6 +31960,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDescriptorSetVariableDescriptorCountLayoutSupport &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDescriptorSetVariableDescriptorCountLayoutSupport *>( this );
+    }
+
+    operator VkDescriptorSetVariableDescriptorCountLayoutSupport const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorSetVariableDescriptorCountLayoutSupport *>( this );
+    }
+
+    operator VkDescriptorSetVariableDescriptorCountLayoutSupport *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorSetVariableDescriptorCountLayoutSupport *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -29840,6 +32100,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDescriptorUpdateTemplateEntry &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDescriptorUpdateTemplateEntry *>( this );
+    }
+
+    operator VkDescriptorUpdateTemplateEntry const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorUpdateTemplateEntry *>( this );
+    }
+
+    operator VkDescriptorUpdateTemplateEntry *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorUpdateTemplateEntry *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -30037,6 +32307,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDescriptorUpdateTemplateCreateInfo *>( this );
     }
 
+    operator VkDescriptorUpdateTemplateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDescriptorUpdateTemplateCreateInfo *>( this );
+    }
+
+    operator VkDescriptorUpdateTemplateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDescriptorUpdateTemplateCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -30184,6 +32464,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceAddressBindingCallbackDataEXT *>( this );
     }
 
+    operator VkDeviceAddressBindingCallbackDataEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceAddressBindingCallbackDataEXT *>( this );
+    }
+
+    operator VkDeviceAddressBindingCallbackDataEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceAddressBindingCallbackDataEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -30290,6 +32580,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceBufferMemoryRequirements &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceBufferMemoryRequirements *>( this );
+    }
+
+    operator VkDeviceBufferMemoryRequirements const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceBufferMemoryRequirements *>( this );
+    }
+
+    operator VkDeviceBufferMemoryRequirements *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceBufferMemoryRequirements *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -30437,6 +32737,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceQueueCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceQueueCreateInfo *>( this );
+    }
+
+    operator VkDeviceQueueCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceQueueCreateInfo *>( this );
+    }
+
+    operator VkDeviceQueueCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceQueueCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -30978,6 +33288,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -31361,6 +33681,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceCreateInfo *>( this );
     }
 
+    operator VkDeviceCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceCreateInfo *>( this );
+    }
+
+    operator VkDeviceCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -31521,6 +33851,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceMemoryReportCallbackDataEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceMemoryReportCallbackDataEXT *>( this );
+    }
+
+    operator VkDeviceMemoryReportCallbackDataEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceMemoryReportCallbackDataEXT *>( this );
+    }
+
+    operator VkDeviceMemoryReportCallbackDataEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceMemoryReportCallbackDataEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -31697,6 +34037,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceDeviceMemoryReportCreateInfoEXT *>( this );
     }
 
+    operator VkDeviceDeviceMemoryReportCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceDeviceMemoryReportCreateInfoEXT *>( this );
+    }
+
+    operator VkDeviceDeviceMemoryReportCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceDeviceMemoryReportCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -31799,6 +34149,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceDiagnosticsConfigCreateInfoNV *>( this );
     }
 
+    operator VkDeviceDiagnosticsConfigCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceDiagnosticsConfigCreateInfoNV *>( this );
+    }
+
+    operator VkDeviceDiagnosticsConfigCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceDiagnosticsConfigCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -31892,6 +34252,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceEventInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceEventInfoEXT *>( this );
+    }
+
+    operator VkDeviceEventInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceEventInfoEXT *>( this );
+    }
+
+    operator VkDeviceEventInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceEventInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -31996,6 +34366,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceFaultAddressInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceFaultAddressInfoEXT *>( this );
+    }
+
+    operator VkDeviceFaultAddressInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceFaultAddressInfoEXT *>( this );
+    }
+
+    operator VkDeviceFaultAddressInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceFaultAddressInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -32104,6 +34484,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceFaultCountsEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceFaultCountsEXT *>( this );
+    }
+
+    operator VkDeviceFaultCountsEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceFaultCountsEXT *>( this );
+    }
+
+    operator VkDeviceFaultCountsEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceFaultCountsEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -32238,6 +34628,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceFaultVendorInfoEXT *>( this );
     }
 
+    operator VkDeviceFaultVendorInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceFaultVendorInfoEXT *>( this );
+    }
+
+    operator VkDeviceFaultVendorInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceFaultVendorInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -32365,6 +34765,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceFaultInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceFaultInfoEXT *>( this );
+    }
+
+    operator VkDeviceFaultInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceFaultInfoEXT *>( this );
+    }
+
+    operator VkDeviceFaultInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceFaultInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -32559,6 +34969,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceFaultVendorBinaryHeaderVersionOneEXT *>( this );
     }
 
+    operator VkDeviceFaultVendorBinaryHeaderVersionOneEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceFaultVendorBinaryHeaderVersionOneEXT *>( this );
+    }
+
+    operator VkDeviceFaultVendorBinaryHeaderVersionOneEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceFaultVendorBinaryHeaderVersionOneEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -32689,6 +35109,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceGroupBindSparseInfo *>( this );
     }
 
+    operator VkDeviceGroupBindSparseInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceGroupBindSparseInfo *>( this );
+    }
+
+    operator VkDeviceGroupBindSparseInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceGroupBindSparseInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -32789,6 +35219,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceGroupCommandBufferBeginInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceGroupCommandBufferBeginInfo *>( this );
+    }
+
+    operator VkDeviceGroupCommandBufferBeginInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceGroupCommandBufferBeginInfo *>( this );
+    }
+
+    operator VkDeviceGroupCommandBufferBeginInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceGroupCommandBufferBeginInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -32918,6 +35358,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceGroupDeviceCreateInfo *>( this );
     }
 
+    operator VkDeviceGroupDeviceCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceGroupDeviceCreateInfo *>( this );
+    }
+
+    operator VkDeviceGroupDeviceCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceGroupDeviceCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -33007,6 +35457,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceGroupPresentCapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceGroupPresentCapabilitiesKHR *>( this );
+    }
+
+    operator VkDeviceGroupPresentCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceGroupPresentCapabilitiesKHR *>( this );
+    }
+
+    operator VkDeviceGroupPresentCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceGroupPresentCapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -33144,6 +35604,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceGroupPresentInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceGroupPresentInfoKHR *>( this );
+    }
+
+    operator VkDeviceGroupPresentInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceGroupPresentInfoKHR *>( this );
+    }
+
+    operator VkDeviceGroupPresentInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceGroupPresentInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -33289,6 +35759,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceGroupRenderPassBeginInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceGroupRenderPassBeginInfo *>( this );
+    }
+
+    operator VkDeviceGroupRenderPassBeginInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceGroupRenderPassBeginInfo *>( this );
+    }
+
+    operator VkDeviceGroupRenderPassBeginInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceGroupRenderPassBeginInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -33481,6 +35961,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceGroupSubmitInfo *>( this );
     }
 
+    operator VkDeviceGroupSubmitInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceGroupSubmitInfo *>( this );
+    }
+
+    operator VkDeviceGroupSubmitInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceGroupSubmitInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -33602,6 +36092,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceGroupSwapchainCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceGroupSwapchainCreateInfoKHR *>( this );
+    }
+
+    operator VkDeviceGroupSwapchainCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceGroupSwapchainCreateInfoKHR *>( this );
+    }
+
+    operator VkDeviceGroupSwapchainCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceGroupSwapchainCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -33836,6 +36336,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageCreateInfo *>( this );
     }
 
+    operator VkImageCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageCreateInfo *>( this );
+    }
+
+    operator VkImageCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -33988,6 +36498,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceImageMemoryRequirements *>( this );
     }
 
+    operator VkDeviceImageMemoryRequirements const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceImageMemoryRequirements *>( this );
+    }
+
+    operator VkDeviceImageMemoryRequirements *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceImageMemoryRequirements *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -34086,6 +36606,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageSubresource2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageSubresource2 *>( this );
+    }
+
+    operator VkImageSubresource2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageSubresource2 *>( this );
+    }
+
+    operator VkImageSubresource2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageSubresource2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -34197,6 +36727,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceImageSubresourceInfo *>( this );
     }
 
+    operator VkDeviceImageSubresourceInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceImageSubresourceInfo *>( this );
+    }
+
+    operator VkDeviceImageSubresourceInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceImageSubresourceInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -34302,6 +36842,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceMemoryOpaqueCaptureAddressInfo *>( this );
     }
 
+    operator VkDeviceMemoryOpaqueCaptureAddressInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceMemoryOpaqueCaptureAddressInfo *>( this );
+    }
+
+    operator VkDeviceMemoryOpaqueCaptureAddressInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceMemoryOpaqueCaptureAddressInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -34403,6 +36953,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceMemoryOverallocationCreateInfoAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceMemoryOverallocationCreateInfoAMD *>( this );
+    }
+
+    operator VkDeviceMemoryOverallocationCreateInfoAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceMemoryOverallocationCreateInfoAMD *>( this );
+    }
+
+    operator VkDeviceMemoryOverallocationCreateInfoAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceMemoryOverallocationCreateInfoAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -34550,6 +37110,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDevicePipelineBinaryInternalCacheControlKHR *>( this );
     }
 
+    operator VkDevicePipelineBinaryInternalCacheControlKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDevicePipelineBinaryInternalCacheControlKHR *>( this );
+    }
+
+    operator VkDevicePipelineBinaryInternalCacheControlKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDevicePipelineBinaryInternalCacheControlKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -34645,6 +37215,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDevicePrivateDataCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDevicePrivateDataCreateInfo *>( this );
+    }
+
+    operator VkDevicePrivateDataCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDevicePrivateDataCreateInfo *>( this );
+    }
+
+    operator VkDevicePrivateDataCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDevicePrivateDataCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -34748,6 +37328,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceQueueGlobalPriorityCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceQueueGlobalPriorityCreateInfo *>( this );
+    }
+
+    operator VkDeviceQueueGlobalPriorityCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceQueueGlobalPriorityCreateInfo *>( this );
+    }
+
+    operator VkDeviceQueueGlobalPriorityCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceQueueGlobalPriorityCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -34864,6 +37454,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDeviceQueueInfo2 *>( this );
     }
 
+    operator VkDeviceQueueInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceQueueInfo2 *>( this );
+    }
+
+    operator VkDeviceQueueInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceQueueInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -34967,6 +37567,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDeviceQueueShaderCoreControlCreateInfoARM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDeviceQueueShaderCoreControlCreateInfoARM *>( this );
+    }
+
+    operator VkDeviceQueueShaderCoreControlCreateInfoARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDeviceQueueShaderCoreControlCreateInfoARM *>( this );
+    }
+
+    operator VkDeviceQueueShaderCoreControlCreateInfoARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDeviceQueueShaderCoreControlCreateInfoARM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -35077,6 +37687,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDirectDriverLoadingInfoLUNARG &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDirectDriverLoadingInfoLUNARG *>( this );
+    }
+
+    operator VkDirectDriverLoadingInfoLUNARG const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDirectDriverLoadingInfoLUNARG *>( this );
+    }
+
+    operator VkDirectDriverLoadingInfoLUNARG *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDirectDriverLoadingInfoLUNARG *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -35215,6 +37835,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDirectDriverLoadingListLUNARG *>( this );
     }
 
+    operator VkDirectDriverLoadingListLUNARG const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDirectDriverLoadingListLUNARG *>( this );
+    }
+
+    operator VkDirectDriverLoadingListLUNARG *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDirectDriverLoadingListLUNARG *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -35332,6 +37962,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDirectFBSurfaceCreateInfoEXT *>( this );
     }
 
+    operator VkDirectFBSurfaceCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDirectFBSurfaceCreateInfoEXT *>( this );
+    }
+
+    operator VkDirectFBSurfaceCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDirectFBSurfaceCreateInfoEXT *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -35443,6 +38083,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDispatchGraphCountInfoAMDX *>( this );
     }
 
+    operator VkDispatchGraphCountInfoAMDX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDispatchGraphCountInfoAMDX *>( this );
+    }
+
+    operator VkDispatchGraphCountInfoAMDX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDispatchGraphCountInfoAMDX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -35532,6 +38182,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDispatchGraphInfoAMDX *>( this );
     }
 
+    operator VkDispatchGraphInfoAMDX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDispatchGraphInfoAMDX *>( this );
+    }
+
+    operator VkDispatchGraphInfoAMDX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDispatchGraphInfoAMDX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -35609,6 +38269,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDispatchIndirectCommand &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDispatchIndirectCommand *>( this );
+    }
+
+    operator VkDispatchIndirectCommand const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDispatchIndirectCommand *>( this );
+    }
+
+    operator VkDispatchIndirectCommand *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDispatchIndirectCommand *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -35703,6 +38373,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDisplayEventInfoEXT *>( this );
     }
 
+    operator VkDisplayEventInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayEventInfoEXT *>( this );
+    }
+
+    operator VkDisplayEventInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayEventInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -35795,6 +38475,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDisplayModeParametersKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDisplayModeParametersKHR *>( this );
+    }
+
+    operator VkDisplayModeParametersKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayModeParametersKHR *>( this );
+    }
+
+    operator VkDisplayModeParametersKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayModeParametersKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -35896,6 +38586,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDisplayModeCreateInfoKHR *>( this );
     }
 
+    operator VkDisplayModeCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayModeCreateInfoKHR *>( this );
+    }
+
+    operator VkDisplayModeCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayModeCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -35981,6 +38681,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDisplayModePropertiesKHR *>( this );
     }
 
+    operator VkDisplayModePropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayModePropertiesKHR *>( this );
+    }
+
+    operator VkDisplayModePropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayModePropertiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -36056,6 +38766,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDisplayModeProperties2KHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDisplayModeProperties2KHR *>( this );
+    }
+
+    operator VkDisplayModeProperties2KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayModeProperties2KHR *>( this );
+    }
+
+    operator VkDisplayModeProperties2KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayModeProperties2KHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -36142,6 +38862,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDisplayModeStereoPropertiesNV *>( this );
     }
 
+    operator VkDisplayModeStereoPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayModeStereoPropertiesNV *>( this );
+    }
+
+    operator VkDisplayModeStereoPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayModeStereoPropertiesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -36225,6 +38955,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDisplayNativeHdrSurfaceCapabilitiesAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDisplayNativeHdrSurfaceCapabilitiesAMD *>( this );
+    }
+
+    operator VkDisplayNativeHdrSurfaceCapabilitiesAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayNativeHdrSurfaceCapabilitiesAMD *>( this );
+    }
+
+    operator VkDisplayNativeHdrSurfaceCapabilitiesAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayNativeHdrSurfaceCapabilitiesAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -36322,6 +39062,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDisplayPlaneCapabilitiesKHR *>( this );
     }
 
+    operator VkDisplayPlaneCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayPlaneCapabilitiesKHR *>( this );
+    }
+
+    operator VkDisplayPlaneCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayPlaneCapabilitiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -36414,6 +39164,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDisplayPlaneCapabilities2KHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDisplayPlaneCapabilities2KHR *>( this );
+    }
+
+    operator VkDisplayPlaneCapabilities2KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayPlaneCapabilities2KHR *>( this );
+    }
+
+    operator VkDisplayPlaneCapabilities2KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayPlaneCapabilities2KHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -36521,6 +39281,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDisplayPlaneInfo2KHR *>( this );
     }
 
+    operator VkDisplayPlaneInfo2KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayPlaneInfo2KHR *>( this );
+    }
+
+    operator VkDisplayPlaneInfo2KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayPlaneInfo2KHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -36603,6 +39373,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDisplayPlanePropertiesKHR *>( this );
     }
 
+    operator VkDisplayPlanePropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayPlanePropertiesKHR *>( this );
+    }
+
+    operator VkDisplayPlanePropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayPlanePropertiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -36678,6 +39458,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDisplayPlaneProperties2KHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDisplayPlaneProperties2KHR *>( this );
+    }
+
+    operator VkDisplayPlaneProperties2KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayPlaneProperties2KHR *>( this );
+    }
+
+    operator VkDisplayPlaneProperties2KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayPlaneProperties2KHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -36775,6 +39565,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDisplayPowerInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDisplayPowerInfoEXT *>( this );
+    }
+
+    operator VkDisplayPowerInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayPowerInfoEXT *>( this );
+    }
+
+    operator VkDisplayPowerInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayPowerInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -36891,6 +39691,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDisplayPresentInfoKHR *>( this );
     }
 
+    operator VkDisplayPresentInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayPresentInfoKHR *>( this );
+    }
+
+    operator VkDisplayPresentInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayPresentInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -36986,6 +39796,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDisplayPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDisplayPropertiesKHR *>( this );
+    }
+
+    operator VkDisplayPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayPropertiesKHR *>( this );
+    }
+
+    operator VkDisplayPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -37092,6 +39912,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDisplayProperties2KHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDisplayProperties2KHR *>( this );
+    }
+
+    operator VkDisplayProperties2KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplayProperties2KHR *>( this );
+    }
+
+    operator VkDisplayProperties2KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplayProperties2KHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -37249,6 +40079,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDisplaySurfaceCreateInfoKHR *>( this );
     }
 
+    operator VkDisplaySurfaceCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplaySurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkDisplaySurfaceCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplaySurfaceCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -37365,6 +40205,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDisplaySurfaceStereoCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDisplaySurfaceStereoCreateInfoNV *>( this );
+    }
+
+    operator VkDisplaySurfaceStereoCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDisplaySurfaceStereoCreateInfoNV *>( this );
+    }
+
+    operator VkDisplaySurfaceStereoCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDisplaySurfaceStereoCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -37486,6 +40336,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDrawIndexedIndirectCommand *>( this );
     }
 
+    operator VkDrawIndexedIndirectCommand const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDrawIndexedIndirectCommand *>( this );
+    }
+
+    operator VkDrawIndexedIndirectCommand *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDrawIndexedIndirectCommand *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -37593,6 +40453,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDrawIndirectCommand *>( this );
     }
 
+    operator VkDrawIndirectCommand const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDrawIndirectCommand *>( this );
+    }
+
+    operator VkDrawIndirectCommand *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDrawIndirectCommand *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -37693,6 +40563,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDrawIndirectCountIndirectCommandEXT *>( this );
     }
 
+    operator VkDrawIndirectCountIndirectCommandEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDrawIndirectCountIndirectCommandEXT *>( this );
+    }
+
+    operator VkDrawIndirectCountIndirectCommandEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDrawIndirectCountIndirectCommandEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -37790,6 +40670,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDrawMeshTasksIndirectCommandEXT *>( this );
     }
 
+    operator VkDrawMeshTasksIndirectCommandEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDrawMeshTasksIndirectCommandEXT *>( this );
+    }
+
+    operator VkDrawMeshTasksIndirectCommandEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDrawMeshTasksIndirectCommandEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -37879,6 +40769,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkDrawMeshTasksIndirectCommandNV *>( this );
     }
 
+    operator VkDrawMeshTasksIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDrawMeshTasksIndirectCommandNV *>( this );
+    }
+
+    operator VkDrawMeshTasksIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDrawMeshTasksIndirectCommandNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -37954,6 +40854,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDrmFormatModifierProperties2EXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDrmFormatModifierProperties2EXT *>( this );
+    }
+
+    operator VkDrmFormatModifierProperties2EXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDrmFormatModifierProperties2EXT *>( this );
+    }
+
+    operator VkDrmFormatModifierProperties2EXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDrmFormatModifierProperties2EXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -38033,6 +40943,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDrmFormatModifierPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDrmFormatModifierPropertiesEXT *>( this );
+    }
+
+    operator VkDrmFormatModifierPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDrmFormatModifierPropertiesEXT *>( this );
+    }
+
+    operator VkDrmFormatModifierPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDrmFormatModifierPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -38115,6 +41035,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDrmFormatModifierPropertiesList2EXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDrmFormatModifierPropertiesList2EXT *>( this );
+    }
+
+    operator VkDrmFormatModifierPropertiesList2EXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDrmFormatModifierPropertiesList2EXT *>( this );
+    }
+
+    operator VkDrmFormatModifierPropertiesList2EXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDrmFormatModifierPropertiesList2EXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -38204,6 +41134,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkDrmFormatModifierPropertiesListEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkDrmFormatModifierPropertiesListEXT *>( this );
+    }
+
+    operator VkDrmFormatModifierPropertiesListEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDrmFormatModifierPropertiesListEXT *>( this );
+    }
+
+    operator VkDrmFormatModifierPropertiesListEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDrmFormatModifierPropertiesListEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -38300,6 +41240,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkEventCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkEventCreateInfo *>( this );
+    }
+
+    operator VkEventCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkEventCreateInfo *>( this );
+    }
+
+    operator VkEventCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkEventCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -38424,6 +41374,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineLibraryCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineLibraryCreateInfoKHR *>( this );
+    }
+
+    operator VkPipelineLibraryCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineLibraryCreateInfoKHR *>( this );
+    }
+
+    operator VkPipelineLibraryCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineLibraryCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -38609,6 +41569,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExecutionGraphPipelineCreateInfoAMDX *>( this );
     }
 
+    operator VkExecutionGraphPipelineCreateInfoAMDX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExecutionGraphPipelineCreateInfoAMDX *>( this );
+    }
+
+    operator VkExecutionGraphPipelineCreateInfoAMDX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExecutionGraphPipelineCreateInfoAMDX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -38742,6 +41712,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExecutionGraphPipelineScratchSizeAMDX *>( this );
     }
 
+    operator VkExecutionGraphPipelineScratchSizeAMDX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExecutionGraphPipelineScratchSizeAMDX *>( this );
+    }
+
+    operator VkExecutionGraphPipelineScratchSizeAMDX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExecutionGraphPipelineScratchSizeAMDX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -38846,6 +41826,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExportFenceCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExportFenceCreateInfo *>( this );
+    }
+
+    operator VkExportFenceCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportFenceCreateInfo *>( this );
+    }
+
+    operator VkExportFenceCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportFenceCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -38966,6 +41956,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExportFenceWin32HandleInfoKHR *>( this );
     }
 
+    operator VkExportFenceWin32HandleInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportFenceWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkExportFenceWin32HandleInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportFenceWin32HandleInfoKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -39067,6 +42067,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExportMemoryAllocateInfo *>( this );
     }
 
+    operator VkExportMemoryAllocateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMemoryAllocateInfo *>( this );
+    }
+
+    operator VkExportMemoryAllocateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMemoryAllocateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -39166,6 +42176,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExportMemoryAllocateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExportMemoryAllocateInfoNV *>( this );
+    }
+
+    operator VkExportMemoryAllocateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMemoryAllocateInfoNV *>( this );
+    }
+
+    operator VkExportMemoryAllocateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMemoryAllocateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -39284,6 +42304,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExportMemoryWin32HandleInfoKHR *>( this );
     }
 
+    operator VkExportMemoryWin32HandleInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMemoryWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkExportMemoryWin32HandleInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMemoryWin32HandleInfoKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -39394,6 +42424,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExportMemoryWin32HandleInfoNV *>( this );
     }
 
+    operator VkExportMemoryWin32HandleInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMemoryWin32HandleInfoNV *>( this );
+    }
+
+    operator VkExportMemoryWin32HandleInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMemoryWin32HandleInfoNV *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -39501,6 +42541,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExportMetalBufferInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExportMetalBufferInfoEXT *>( this );
+    }
+
+    operator VkExportMetalBufferInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMetalBufferInfoEXT *>( this );
+    }
+
+    operator VkExportMetalBufferInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMetalBufferInfoEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -39613,6 +42663,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExportMetalCommandQueueInfoEXT *>( this );
     }
 
+    operator VkExportMetalCommandQueueInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMetalCommandQueueInfoEXT *>( this );
+    }
+
+    operator VkExportMetalCommandQueueInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMetalCommandQueueInfoEXT *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -39711,6 +42771,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExportMetalDeviceInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExportMetalDeviceInfoEXT *>( this );
+    }
+
+    operator VkExportMetalDeviceInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMetalDeviceInfoEXT *>( this );
+    }
+
+    operator VkExportMetalDeviceInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMetalDeviceInfoEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -39820,6 +42890,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExportMetalIOSurfaceInfoEXT *>( this );
     }
 
+    operator VkExportMetalIOSurfaceInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMetalIOSurfaceInfoEXT *>( this );
+    }
+
+    operator VkExportMetalIOSurfaceInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMetalIOSurfaceInfoEXT *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -39924,6 +43004,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExportMetalObjectCreateInfoEXT *>( this );
     }
 
+    operator VkExportMetalObjectCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMetalObjectCreateInfoEXT *>( this );
+    }
+
+    operator VkExportMetalObjectCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMetalObjectCreateInfoEXT *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -40011,6 +43101,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExportMetalObjectsInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExportMetalObjectsInfoEXT *>( this );
+    }
+
+    operator VkExportMetalObjectsInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMetalObjectsInfoEXT *>( this );
+    }
+
+    operator VkExportMetalObjectsInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMetalObjectsInfoEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -40127,6 +43227,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExportMetalSharedEventInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExportMetalSharedEventInfoEXT *>( this );
+    }
+
+    operator VkExportMetalSharedEventInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMetalSharedEventInfoEXT *>( this );
+    }
+
+    operator VkExportMetalSharedEventInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMetalSharedEventInfoEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -40268,6 +43378,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExportMetalTextureInfoEXT *>( this );
     }
 
+    operator VkExportMetalTextureInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportMetalTextureInfoEXT *>( this );
+    }
+
+    operator VkExportMetalTextureInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportMetalTextureInfoEXT *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -40377,6 +43497,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExportSemaphoreCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExportSemaphoreCreateInfo *>( this );
+    }
+
+    operator VkExportSemaphoreCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportSemaphoreCreateInfo *>( this );
+    }
+
+    operator VkExportSemaphoreCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportSemaphoreCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -40497,6 +43627,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExportSemaphoreWin32HandleInfoKHR *>( this );
     }
 
+    operator VkExportSemaphoreWin32HandleInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExportSemaphoreWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkExportSemaphoreWin32HandleInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExportSemaphoreWin32HandleInfoKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -40580,6 +43720,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExtensionProperties *>( this );
     }
 
+    operator VkExtensionProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExtensionProperties *>( this );
+    }
+
+    operator VkExtensionProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExtensionProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -40658,6 +43808,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExternalMemoryProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExternalMemoryProperties *>( this );
+    }
+
+    operator VkExternalMemoryProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalMemoryProperties *>( this );
+    }
+
+    operator VkExternalMemoryProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalMemoryProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -40741,6 +43901,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExternalBufferProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExternalBufferProperties *>( this );
+    }
+
+    operator VkExternalBufferProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalBufferProperties *>( this );
+    }
+
+    operator VkExternalBufferProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalBufferProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -40831,6 +44001,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExternalFenceProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExternalFenceProperties *>( this );
+    }
+
+    operator VkExternalFenceProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalFenceProperties *>( this );
+    }
+
+    operator VkExternalFenceProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalFenceProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -40940,6 +44120,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExternalFormatANDROID *>( this );
     }
 
+    operator VkExternalFormatANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalFormatANDROID *>( this );
+    }
+
+    operator VkExternalFormatANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalFormatANDROID *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -41036,6 +44226,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExternalFormatQNX *>( this );
     }
 
+    operator VkExternalFormatQNX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalFormatQNX *>( this );
+    }
+
+    operator VkExternalFormatQNX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalFormatQNX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -41120,6 +44320,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExternalImageFormatProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExternalImageFormatProperties *>( this );
+    }
+
+    operator VkExternalImageFormatProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalImageFormatProperties *>( this );
+    }
+
+    operator VkExternalImageFormatProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalImageFormatProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -41211,6 +44421,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageFormatProperties *>( this );
     }
 
+    operator VkImageFormatProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageFormatProperties *>( this );
+    }
+
+    operator VkImageFormatProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageFormatProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -41297,6 +44517,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExternalImageFormatPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExternalImageFormatPropertiesNV *>( this );
+    }
+
+    operator VkExternalImageFormatPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalImageFormatPropertiesNV *>( this );
+    }
+
+    operator VkExternalImageFormatPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalImageFormatPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -41398,6 +44628,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExternalMemoryAcquireUnmodifiedEXT *>( this );
     }
 
+    operator VkExternalMemoryAcquireUnmodifiedEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalMemoryAcquireUnmodifiedEXT *>( this );
+    }
+
+    operator VkExternalMemoryAcquireUnmodifiedEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalMemoryAcquireUnmodifiedEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -41496,6 +44736,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExternalMemoryBufferCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExternalMemoryBufferCreateInfo *>( this );
+    }
+
+    operator VkExternalMemoryBufferCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalMemoryBufferCreateInfo *>( this );
+    }
+
+    operator VkExternalMemoryBufferCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalMemoryBufferCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -41600,6 +44850,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExternalMemoryImageCreateInfo *>( this );
     }
 
+    operator VkExternalMemoryImageCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalMemoryImageCreateInfo *>( this );
+    }
+
+    operator VkExternalMemoryImageCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalMemoryImageCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -41702,6 +44962,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkExternalMemoryImageCreateInfoNV *>( this );
     }
 
+    operator VkExternalMemoryImageCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalMemoryImageCreateInfoNV *>( this );
+    }
+
+    operator VkExternalMemoryImageCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalMemoryImageCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -41788,6 +45058,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkExternalSemaphoreProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkExternalSemaphoreProperties *>( this );
+    }
+
+    operator VkExternalSemaphoreProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalSemaphoreProperties *>( this );
+    }
+
+    operator VkExternalSemaphoreProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalSemaphoreProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -41893,6 +45173,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkFenceCreateInfo *>( this );
     }
 
+    operator VkFenceCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFenceCreateInfo *>( this );
+    }
+
+    operator VkFenceCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFenceCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -41995,6 +45285,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkFenceGetFdInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkFenceGetFdInfoKHR *>( this );
+    }
+
+    operator VkFenceGetFdInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFenceGetFdInfoKHR *>( this );
+    }
+
+    operator VkFenceGetFdInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFenceGetFdInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -42109,6 +45409,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkFenceGetWin32HandleInfoKHR *>( this );
     }
 
+    operator VkFenceGetWin32HandleInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFenceGetWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkFenceGetWin32HandleInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFenceGetWin32HandleInfoKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -42201,6 +45511,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkFilterCubicImageViewImageFormatPropertiesEXT *>( this );
     }
 
+    operator VkFilterCubicImageViewImageFormatPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFilterCubicImageViewImageFormatPropertiesEXT *>( this );
+    }
+
+    operator VkFilterCubicImageViewImageFormatPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFilterCubicImageViewImageFormatPropertiesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -42282,6 +45602,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkFormatProperties *>( this );
     }
 
+    operator VkFormatProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFormatProperties *>( this );
+    }
+
+    operator VkFormatProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFormatProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -42357,6 +45687,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkFormatProperties2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkFormatProperties2 *>( this );
+    }
+
+    operator VkFormatProperties2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFormatProperties2 *>( this );
+    }
+
+    operator VkFormatProperties2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFormatProperties2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -42444,6 +45784,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkFormatProperties3 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkFormatProperties3 *>( this );
+    }
+
+    operator VkFormatProperties3 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFormatProperties3 *>( this );
+    }
+
+    operator VkFormatProperties3 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFormatProperties3 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -42562,6 +45912,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkFragmentShadingRateAttachmentInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkFragmentShadingRateAttachmentInfoKHR *>( this );
+    }
+
+    operator VkFragmentShadingRateAttachmentInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFragmentShadingRateAttachmentInfoKHR *>( this );
+    }
+
+    operator VkFragmentShadingRateAttachmentInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFragmentShadingRateAttachmentInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -42779,6 +46139,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkFrameBoundaryEXT *>( this );
     }
 
+    operator VkFrameBoundaryEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFrameBoundaryEXT *>( this );
+    }
+
+    operator VkFrameBoundaryEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFrameBoundaryEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -42976,6 +46346,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkFramebufferAttachmentImageInfo *>( this );
     }
 
+    operator VkFramebufferAttachmentImageInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFramebufferAttachmentImageInfo *>( this );
+    }
+
+    operator VkFramebufferAttachmentImageInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFramebufferAttachmentImageInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -43121,6 +46501,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkFramebufferAttachmentsCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkFramebufferAttachmentsCreateInfo *>( this );
+    }
+
+    operator VkFramebufferAttachmentsCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFramebufferAttachmentsCreateInfo *>( this );
+    }
+
+    operator VkFramebufferAttachmentsCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFramebufferAttachmentsCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -43306,6 +46696,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkFramebufferCreateInfo *>( this );
     }
 
+    operator VkFramebufferCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFramebufferCreateInfo *>( this );
+    }
+
+    operator VkFramebufferCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFramebufferCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -43412,6 +46812,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkFramebufferMixedSamplesCombinationNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkFramebufferMixedSamplesCombinationNV *>( this );
+    }
+
+    operator VkFramebufferMixedSamplesCombinationNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkFramebufferMixedSamplesCombinationNV *>( this );
+    }
+
+    operator VkFramebufferMixedSamplesCombinationNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkFramebufferMixedSamplesCombinationNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -43595,6 +47005,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGeneratedCommandsInfoEXT *>( this );
     }
 
+    operator VkGeneratedCommandsInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeneratedCommandsInfoEXT *>( this );
+    }
+
+    operator VkGeneratedCommandsInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeneratedCommandsInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -43722,6 +47142,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkIndirectCommandsStreamNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkIndirectCommandsStreamNV *>( this );
+    }
+
+    operator VkIndirectCommandsStreamNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectCommandsStreamNV *>( this );
+    }
+
+    operator VkIndirectCommandsStreamNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectCommandsStreamNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -43955,6 +47385,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGeneratedCommandsInfoNV *>( this );
     }
 
+    operator VkGeneratedCommandsInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeneratedCommandsInfoNV *>( this );
+    }
+
+    operator VkGeneratedCommandsInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeneratedCommandsInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -44125,6 +47565,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGeneratedCommandsMemoryRequirementsInfoEXT *>( this );
     }
 
+    operator VkGeneratedCommandsMemoryRequirementsInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeneratedCommandsMemoryRequirementsInfoEXT *>( this );
+    }
+
+    operator VkGeneratedCommandsMemoryRequirementsInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeneratedCommandsMemoryRequirementsInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -44260,6 +47710,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGeneratedCommandsMemoryRequirementsInfoNV *>( this );
     }
 
+    operator VkGeneratedCommandsMemoryRequirementsInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeneratedCommandsMemoryRequirementsInfoNV *>( this );
+    }
+
+    operator VkGeneratedCommandsMemoryRequirementsInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeneratedCommandsMemoryRequirementsInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -44365,6 +47825,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkGeneratedCommandsPipelineInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkGeneratedCommandsPipelineInfoEXT *>( this );
+    }
+
+    operator VkGeneratedCommandsPipelineInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeneratedCommandsPipelineInfoEXT *>( this );
+    }
+
+    operator VkGeneratedCommandsPipelineInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeneratedCommandsPipelineInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -44492,6 +47962,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGeneratedCommandsShaderInfoEXT *>( this );
     }
 
+    operator VkGeneratedCommandsShaderInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGeneratedCommandsShaderInfoEXT *>( this );
+    }
+
+    operator VkGeneratedCommandsShaderInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGeneratedCommandsShaderInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -44601,6 +48081,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkLatencyTimingsFrameReportNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkLatencyTimingsFrameReportNV *>( this );
+    }
+
+    operator VkLatencyTimingsFrameReportNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkLatencyTimingsFrameReportNV *>( this );
+    }
+
+    operator VkLatencyTimingsFrameReportNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkLatencyTimingsFrameReportNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -44775,6 +48265,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGetLatencyMarkerInfoNV *>( this );
     }
 
+    operator VkGetLatencyMarkerInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGetLatencyMarkerInfoNV *>( this );
+    }
+
+    operator VkGetLatencyMarkerInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGetLatencyMarkerInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -44881,6 +48381,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVertexInputBindingDescription *>( this );
     }
 
+    operator VkVertexInputBindingDescription const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVertexInputBindingDescription *>( this );
+    }
+
+    operator VkVertexInputBindingDescription *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVertexInputBindingDescription *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -44985,6 +48495,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVertexInputAttributeDescription &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVertexInputAttributeDescription *>( this );
+    }
+
+    operator VkVertexInputAttributeDescription const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVertexInputAttributeDescription *>( this );
+    }
+
+    operator VkVertexInputAttributeDescription *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVertexInputAttributeDescription *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -45155,6 +48675,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineVertexInputStateCreateInfo *>( this );
     }
 
+    operator VkPipelineVertexInputStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineVertexInputStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineVertexInputStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineVertexInputStateCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -45286,6 +48816,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineInputAssemblyStateCreateInfo *>( this );
     }
 
+    operator VkPipelineInputAssemblyStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineInputAssemblyStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineInputAssemblyStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineInputAssemblyStateCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -45399,6 +48939,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineTessellationStateCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineTessellationStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineTessellationStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineTessellationStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineTessellationStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineTessellationStateCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -45569,6 +49119,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineViewportStateCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineViewportStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineViewportStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineViewportStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineViewportStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineViewportStateCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -45763,6 +49323,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineRasterizationStateCreateInfo *>( this );
     }
 
+    operator VkPipelineRasterizationStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRasterizationStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineRasterizationStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRasterizationStateCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -45951,6 +49521,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineMultisampleStateCreateInfo *>( this );
     }
 
+    operator VkPipelineMultisampleStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineMultisampleStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineMultisampleStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineMultisampleStateCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -46097,6 +49677,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkStencilOpState &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkStencilOpState *>( this );
+    }
+
+    operator VkStencilOpState const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkStencilOpState *>( this );
+    }
+
+    operator VkStencilOpState *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkStencilOpState *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -46275,6 +49865,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineDepthStencilStateCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineDepthStencilStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineDepthStencilStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineDepthStencilStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineDepthStencilStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineDepthStencilStateCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -46460,6 +50060,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineColorBlendAttachmentState *>( this );
     }
 
+    operator VkPipelineColorBlendAttachmentState const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineColorBlendAttachmentState *>( this );
+    }
+
+    operator VkPipelineColorBlendAttachmentState *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineColorBlendAttachmentState *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -46638,6 +50248,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineColorBlendStateCreateInfo *>( this );
     }
 
+    operator VkPipelineColorBlendStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineColorBlendStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineColorBlendStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineColorBlendStateCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -46784,6 +50404,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineDynamicStateCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineDynamicStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineDynamicStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineDynamicStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineDynamicStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineDynamicStateCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -47078,6 +50708,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGraphicsPipelineCreateInfo *>( this );
     }
 
+    operator VkGraphicsPipelineCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGraphicsPipelineCreateInfo *>( this );
+    }
+
+    operator VkGraphicsPipelineCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGraphicsPipelineCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -47235,6 +50875,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGraphicsPipelineLibraryCreateInfoEXT *>( this );
     }
 
+    operator VkGraphicsPipelineLibraryCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGraphicsPipelineLibraryCreateInfoEXT *>( this );
+    }
+
+    operator VkGraphicsPipelineLibraryCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGraphicsPipelineLibraryCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -47383,6 +51033,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkGraphicsShaderGroupCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkGraphicsShaderGroupCreateInfoNV *>( this );
+    }
+
+    operator VkGraphicsShaderGroupCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGraphicsShaderGroupCreateInfoNV *>( this );
+    }
+
+    operator VkGraphicsShaderGroupCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGraphicsShaderGroupCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -47552,6 +51212,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkGraphicsPipelineShaderGroupsCreateInfoNV *>( this );
     }
 
+    operator VkGraphicsPipelineShaderGroupsCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkGraphicsPipelineShaderGroupsCreateInfoNV *>( this );
+    }
+
+    operator VkGraphicsPipelineShaderGroupsCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkGraphicsPipelineShaderGroupsCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -47650,6 +51320,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkXYColorEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkXYColorEXT *>( this );
+    }
+
+    operator VkXYColorEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkXYColorEXT *>( this );
+    }
+
+    operator VkXYColorEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkXYColorEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -47794,6 +51474,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkHdrMetadataEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkHdrMetadataEXT *>( this );
+    }
+
+    operator VkHdrMetadataEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkHdrMetadataEXT *>( this );
+    }
+
+    operator VkHdrMetadataEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkHdrMetadataEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -47948,6 +51638,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkHdrVividDynamicMetadataHUAWEI *>( this );
     }
 
+    operator VkHdrVividDynamicMetadataHUAWEI const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkHdrVividDynamicMetadataHUAWEI *>( this );
+    }
+
+    operator VkHdrVividDynamicMetadataHUAWEI *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkHdrVividDynamicMetadataHUAWEI *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -48048,6 +51748,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkHeadlessSurfaceCreateInfoEXT *>( this );
     }
 
+    operator VkHeadlessSurfaceCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkHeadlessSurfaceCreateInfoEXT *>( this );
+    }
+
+    operator VkHeadlessSurfaceCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkHeadlessSurfaceCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -48133,6 +51843,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkHostImageCopyDevicePerformanceQuery &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkHostImageCopyDevicePerformanceQuery *>( this );
+    }
+
+    operator VkHostImageCopyDevicePerformanceQuery const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkHostImageCopyDevicePerformanceQuery *>( this );
+    }
+
+    operator VkHostImageCopyDevicePerformanceQuery *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkHostImageCopyDevicePerformanceQuery *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -48263,6 +51983,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkHostImageLayoutTransitionInfo *>( this );
     }
 
+    operator VkHostImageLayoutTransitionInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkHostImageLayoutTransitionInfo *>( this );
+    }
+
+    operator VkHostImageLayoutTransitionInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkHostImageLayoutTransitionInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -48381,6 +52111,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkIOSSurfaceCreateInfoMVK *>( this );
     }
 
+    operator VkIOSSurfaceCreateInfoMVK const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIOSSurfaceCreateInfoMVK *>( this );
+    }
+
+    operator VkIOSSurfaceCreateInfoMVK *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIOSSurfaceCreateInfoMVK *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -48479,6 +52219,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageAlignmentControlCreateInfoMESA &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageAlignmentControlCreateInfoMESA *>( this );
+    }
+
+    operator VkImageAlignmentControlCreateInfoMESA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageAlignmentControlCreateInfoMESA *>( this );
+    }
+
+    operator VkImageAlignmentControlCreateInfoMESA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageAlignmentControlCreateInfoMESA *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -48589,6 +52339,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageBlit *>( this );
     }
 
+    operator VkImageBlit const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageBlit *>( this );
+    }
+
+    operator VkImageBlit *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageBlit *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -48684,6 +52444,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageCaptureDescriptorDataInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageCaptureDescriptorDataInfoEXT *>( this );
+    }
+
+    operator VkImageCaptureDescriptorDataInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageCaptureDescriptorDataInfoEXT *>( this );
+    }
+
+    operator VkImageCaptureDescriptorDataInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageCaptureDescriptorDataInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -48823,6 +52593,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageCompressionControlEXT *>( this );
     }
 
+    operator VkImageCompressionControlEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageCompressionControlEXT *>( this );
+    }
+
+    operator VkImageCompressionControlEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageCompressionControlEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -48915,6 +52695,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageCompressionPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageCompressionPropertiesEXT *>( this );
+    }
+
+    operator VkImageCompressionPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageCompressionPropertiesEXT *>( this );
+    }
+
+    operator VkImageCompressionPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageCompressionPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -49093,6 +52883,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageFormatConstraintsInfoFUCHSIA *>( this );
     }
 
+    operator VkImageFormatConstraintsInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageFormatConstraintsInfoFUCHSIA *>( this );
+    }
+
+    operator VkImageFormatConstraintsInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageFormatConstraintsInfoFUCHSIA *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -49259,6 +53059,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageConstraintsInfoFUCHSIA *>( this );
     }
 
+    operator VkImageConstraintsInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageConstraintsInfoFUCHSIA *>( this );
+    }
+
+    operator VkImageConstraintsInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageConstraintsInfoFUCHSIA *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -49385,6 +53195,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageCopy *>( this );
     }
 
+    operator VkImageCopy const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageCopy *>( this );
+    }
+
+    operator VkImageCopy *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageCopy *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -49500,6 +53320,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSubresourceLayout &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSubresourceLayout *>( this );
+    }
+
+    operator VkSubresourceLayout const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubresourceLayout *>( this );
+    }
+
+    operator VkSubresourceLayout *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubresourceLayout *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -49643,6 +53473,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageDrmFormatModifierExplicitCreateInfoEXT *>( this );
     }
 
+    operator VkImageDrmFormatModifierExplicitCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageDrmFormatModifierExplicitCreateInfoEXT *>( this );
+    }
+
+    operator VkImageDrmFormatModifierExplicitCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageDrmFormatModifierExplicitCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -49775,6 +53615,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageDrmFormatModifierListCreateInfoEXT *>( this );
     }
 
+    operator VkImageDrmFormatModifierListCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageDrmFormatModifierListCreateInfoEXT *>( this );
+    }
+
+    operator VkImageDrmFormatModifierListCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageDrmFormatModifierListCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -49859,6 +53709,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageDrmFormatModifierPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageDrmFormatModifierPropertiesEXT *>( this );
+    }
+
+    operator VkImageDrmFormatModifierPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageDrmFormatModifierPropertiesEXT *>( this );
+    }
+
+    operator VkImageDrmFormatModifierPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageDrmFormatModifierPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -49985,6 +53845,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageFormatListCreateInfo *>( this );
     }
 
+    operator VkImageFormatListCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageFormatListCreateInfo *>( this );
+    }
+
+    operator VkImageFormatListCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageFormatListCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -50070,6 +53940,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageFormatProperties2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageFormatProperties2 *>( this );
+    }
+
+    operator VkImageFormatProperties2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageFormatProperties2 *>( this );
+    }
+
+    operator VkImageFormatProperties2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageFormatProperties2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -50226,6 +54106,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageMemoryBarrier *>( this );
     }
 
+    operator VkImageMemoryBarrier const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageMemoryBarrier *>( this );
+    }
+
+    operator VkImageMemoryBarrier *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageMemoryBarrier *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -50341,6 +54231,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageMemoryRequirementsInfo2 *>( this );
     }
 
+    operator VkImageMemoryRequirementsInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageMemoryRequirementsInfo2 *>( this );
+    }
+
+    operator VkImageMemoryRequirementsInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageMemoryRequirementsInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -50449,6 +54349,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImagePipeSurfaceCreateInfoFUCHSIA &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImagePipeSurfaceCreateInfoFUCHSIA *>( this );
+    }
+
+    operator VkImagePipeSurfaceCreateInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImagePipeSurfaceCreateInfoFUCHSIA *>( this );
+    }
+
+    operator VkImagePipeSurfaceCreateInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImagePipeSurfaceCreateInfoFUCHSIA *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -50563,6 +54473,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImagePlaneMemoryRequirementsInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImagePlaneMemoryRequirementsInfo *>( this );
+    }
+
+    operator VkImagePlaneMemoryRequirementsInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImagePlaneMemoryRequirementsInfo *>( this );
+    }
+
+    operator VkImagePlaneMemoryRequirementsInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImagePlaneMemoryRequirementsInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -50681,6 +54601,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageResolve &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageResolve *>( this );
+    }
+
+    operator VkImageResolve const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageResolve *>( this );
+    }
+
+    operator VkImageResolve *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageResolve *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -50811,6 +54741,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageResolve2 *>( this );
     }
 
+    operator VkImageResolve2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageResolve2 *>( this );
+    }
+
+    operator VkImageResolve2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageResolve2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -50922,6 +54862,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageSparseMemoryRequirementsInfo2 *>( this );
     }
 
+    operator VkImageSparseMemoryRequirementsInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageSparseMemoryRequirementsInfo2 *>( this );
+    }
+
+    operator VkImageSparseMemoryRequirementsInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageSparseMemoryRequirementsInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -51020,6 +54970,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageStencilUsageCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageStencilUsageCreateInfo *>( this );
+    }
+
+    operator VkImageStencilUsageCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageStencilUsageCreateInfo *>( this );
+    }
+
+    operator VkImageStencilUsageCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageStencilUsageCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -51121,6 +55081,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageSwapchainCreateInfoKHR *>( this );
     }
 
+    operator VkImageSwapchainCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageSwapchainCreateInfoKHR *>( this );
+    }
+
+    operator VkImageSwapchainCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageSwapchainCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -51219,6 +55189,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageViewASTCDecodeModeEXT *>( this );
     }
 
+    operator VkImageViewASTCDecodeModeEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageViewASTCDecodeModeEXT *>( this );
+    }
+
+    operator VkImageViewASTCDecodeModeEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageViewASTCDecodeModeEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -51304,6 +55284,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageViewAddressPropertiesNVX &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageViewAddressPropertiesNVX *>( this );
+    }
+
+    operator VkImageViewAddressPropertiesNVX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageViewAddressPropertiesNVX *>( this );
+    }
+
+    operator VkImageViewAddressPropertiesNVX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageViewAddressPropertiesNVX *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -51405,6 +55395,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageViewCaptureDescriptorDataInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageViewCaptureDescriptorDataInfoEXT *>( this );
+    }
+
+    operator VkImageViewCaptureDescriptorDataInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageViewCaptureDescriptorDataInfoEXT *>( this );
+    }
+
+    operator VkImageViewCaptureDescriptorDataInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageViewCaptureDescriptorDataInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -51545,6 +55545,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageViewCreateInfo *>( this );
     }
 
+    operator VkImageViewCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageViewCreateInfo *>( this );
+    }
+
+    operator VkImageViewCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageViewCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -51672,6 +55682,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageViewHandleInfoNVX *>( this );
     }
 
+    operator VkImageViewHandleInfoNVX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageViewHandleInfoNVX *>( this );
+    }
+
+    operator VkImageViewHandleInfoNVX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageViewHandleInfoNVX *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -51774,6 +55794,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageViewMinLodCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageViewMinLodCreateInfoEXT *>( this );
+    }
+
+    operator VkImageViewMinLodCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageViewMinLodCreateInfoEXT *>( this );
+    }
+
+    operator VkImageViewMinLodCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageViewMinLodCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -51891,6 +55921,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageViewSampleWeightCreateInfoQCOM *>( this );
     }
 
+    operator VkImageViewSampleWeightCreateInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageViewSampleWeightCreateInfoQCOM *>( this );
+    }
+
+    operator VkImageViewSampleWeightCreateInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageViewSampleWeightCreateInfoQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -52003,6 +56043,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImageViewSlicedCreateInfoEXT *>( this );
     }
 
+    operator VkImageViewSlicedCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageViewSlicedCreateInfoEXT *>( this );
+    }
+
+    operator VkImageViewSlicedCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageViewSlicedCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -52099,6 +56149,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImageViewUsageCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImageViewUsageCreateInfo *>( this );
+    }
+
+    operator VkImageViewUsageCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImageViewUsageCreateInfo *>( this );
+    }
+
+    operator VkImageViewUsageCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImageViewUsageCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -52200,6 +56260,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImportAndroidHardwareBufferInfoANDROID &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImportAndroidHardwareBufferInfoANDROID *>( this );
+    }
+
+    operator VkImportAndroidHardwareBufferInfoANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportAndroidHardwareBufferInfoANDROID *>( this );
+    }
+
+    operator VkImportAndroidHardwareBufferInfoANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportAndroidHardwareBufferInfoANDROID *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -52324,6 +56394,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImportFenceFdInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImportFenceFdInfoKHR *>( this );
+    }
+
+    operator VkImportFenceFdInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportFenceFdInfoKHR *>( this );
+    }
+
+    operator VkImportFenceFdInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportFenceFdInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -52469,6 +56549,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImportFenceWin32HandleInfoKHR *>( this );
     }
 
+    operator VkImportFenceWin32HandleInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportFenceWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkImportFenceWin32HandleInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportFenceWin32HandleInfoKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -52589,6 +56679,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImportMemoryBufferCollectionFUCHSIA *>( this );
     }
 
+    operator VkImportMemoryBufferCollectionFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMemoryBufferCollectionFUCHSIA *>( this );
+    }
+
+    operator VkImportMemoryBufferCollectionFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMemoryBufferCollectionFUCHSIA *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -52696,6 +56796,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImportMemoryFdInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImportMemoryFdInfoKHR *>( this );
+    }
+
+    operator VkImportMemoryFdInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMemoryFdInfoKHR *>( this );
+    }
+
+    operator VkImportMemoryFdInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMemoryFdInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -52808,6 +56918,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImportMemoryHostPointerInfoEXT *>( this );
     }
 
+    operator VkImportMemoryHostPointerInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMemoryHostPointerInfoEXT *>( this );
+    }
+
+    operator VkImportMemoryHostPointerInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMemoryHostPointerInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -52918,6 +57038,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImportMemoryMetalHandleInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImportMemoryMetalHandleInfoEXT *>( this );
+    }
+
+    operator VkImportMemoryMetalHandleInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMemoryMetalHandleInfoEXT *>( this );
+    }
+
+    operator VkImportMemoryMetalHandleInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMemoryMetalHandleInfoEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -53041,6 +57171,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImportMemoryWin32HandleInfoKHR *>( this );
     }
 
+    operator VkImportMemoryWin32HandleInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMemoryWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkImportMemoryWin32HandleInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMemoryWin32HandleInfoKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -53157,6 +57297,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImportMemoryWin32HandleInfoNV *>( this );
     }
 
+    operator VkImportMemoryWin32HandleInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMemoryWin32HandleInfoNV *>( this );
+    }
+
+    operator VkImportMemoryWin32HandleInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMemoryWin32HandleInfoNV *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -53267,6 +57417,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImportMemoryZirconHandleInfoFUCHSIA &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImportMemoryZirconHandleInfoFUCHSIA *>( this );
+    }
+
+    operator VkImportMemoryZirconHandleInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMemoryZirconHandleInfoFUCHSIA *>( this );
+    }
+
+    operator VkImportMemoryZirconHandleInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMemoryZirconHandleInfoFUCHSIA *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -53381,6 +57541,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImportMetalBufferInfoEXT *>( this );
     }
 
+    operator VkImportMetalBufferInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMetalBufferInfoEXT *>( this );
+    }
+
+    operator VkImportMetalBufferInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMetalBufferInfoEXT *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -53478,6 +57648,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImportMetalIOSurfaceInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImportMetalIOSurfaceInfoEXT *>( this );
+    }
+
+    operator VkImportMetalIOSurfaceInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMetalIOSurfaceInfoEXT *>( this );
+    }
+
+    operator VkImportMetalIOSurfaceInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMetalIOSurfaceInfoEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -53578,6 +57758,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImportMetalSharedEventInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImportMetalSharedEventInfoEXT *>( this );
+    }
+
+    operator VkImportMetalSharedEventInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMetalSharedEventInfoEXT *>( this );
+    }
+
+    operator VkImportMetalSharedEventInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMetalSharedEventInfoEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -53688,6 +57878,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImportMetalTextureInfoEXT *>( this );
     }
 
+    operator VkImportMetalTextureInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportMetalTextureInfoEXT *>( this );
+    }
+
+    operator VkImportMetalTextureInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportMetalTextureInfoEXT *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -53786,6 +57986,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImportScreenBufferInfoQNX &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImportScreenBufferInfoQNX *>( this );
+    }
+
+    operator VkImportScreenBufferInfoQNX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportScreenBufferInfoQNX *>( this );
+    }
+
+    operator VkImportScreenBufferInfoQNX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportScreenBufferInfoQNX *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -53911,6 +58121,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkImportSemaphoreFdInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkImportSemaphoreFdInfoKHR *>( this );
+    }
+
+    operator VkImportSemaphoreFdInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportSemaphoreFdInfoKHR *>( this );
+    }
+
+    operator VkImportSemaphoreFdInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportSemaphoreFdInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -54056,6 +58276,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImportSemaphoreWin32HandleInfoKHR *>( this );
     }
 
+    operator VkImportSemaphoreWin32HandleInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportSemaphoreWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkImportSemaphoreWin32HandleInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportSemaphoreWin32HandleInfoKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -54194,6 +58424,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkImportSemaphoreZirconHandleInfoFUCHSIA *>( this );
     }
 
+    operator VkImportSemaphoreZirconHandleInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkImportSemaphoreZirconHandleInfoFUCHSIA *>( this );
+    }
+
+    operator VkImportSemaphoreZirconHandleInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkImportSemaphoreZirconHandleInfoFUCHSIA *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -54313,6 +58553,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkIndirectCommandsExecutionSetTokenEXT *>( this );
     }
 
+    operator VkIndirectCommandsExecutionSetTokenEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectCommandsExecutionSetTokenEXT *>( this );
+    }
+
+    operator VkIndirectCommandsExecutionSetTokenEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectCommandsExecutionSetTokenEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -54395,6 +58645,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkIndirectCommandsIndexBufferTokenEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkIndirectCommandsIndexBufferTokenEXT *>( this );
+    }
+
+    operator VkIndirectCommandsIndexBufferTokenEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectCommandsIndexBufferTokenEXT *>( this );
+    }
+
+    operator VkIndirectCommandsIndexBufferTokenEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectCommandsIndexBufferTokenEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -54488,6 +58748,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPushConstantRange *>( this );
     }
 
+    operator VkPushConstantRange const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPushConstantRange *>( this );
+    }
+
+    operator VkPushConstantRange *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPushConstantRange *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -54571,6 +58841,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkIndirectCommandsPushConstantTokenEXT *>( this );
     }
 
+    operator VkIndirectCommandsPushConstantTokenEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectCommandsPushConstantTokenEXT *>( this );
+    }
+
+    operator VkIndirectCommandsPushConstantTokenEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectCommandsPushConstantTokenEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -54648,6 +58928,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkIndirectCommandsVertexBufferTokenEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkIndirectCommandsVertexBufferTokenEXT *>( this );
+    }
+
+    operator VkIndirectCommandsVertexBufferTokenEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectCommandsVertexBufferTokenEXT *>( this );
+    }
+
+    operator VkIndirectCommandsVertexBufferTokenEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectCommandsVertexBufferTokenEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -54837,6 +59127,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkIndirectCommandsLayoutTokenEXT *>( this );
     }
 
+    operator VkIndirectCommandsLayoutTokenEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectCommandsLayoutTokenEXT *>( this );
+    }
+
+    operator VkIndirectCommandsLayoutTokenEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectCommandsLayoutTokenEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -54993,6 +59293,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkIndirectCommandsLayoutCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkIndirectCommandsLayoutCreateInfoEXT *>( this );
+    }
+
+    operator VkIndirectCommandsLayoutCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectCommandsLayoutCreateInfoEXT *>( this );
+    }
+
+    operator VkIndirectCommandsLayoutCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectCommandsLayoutCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -55269,6 +59579,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkIndirectCommandsLayoutTokenNV *>( this );
     }
 
+    operator VkIndirectCommandsLayoutTokenNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectCommandsLayoutTokenNV *>( this );
+    }
+
+    operator VkIndirectCommandsLayoutTokenNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectCommandsLayoutTokenNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -55494,6 +59814,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkIndirectCommandsLayoutCreateInfoNV *>( this );
     }
 
+    operator VkIndirectCommandsLayoutCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectCommandsLayoutCreateInfoNV *>( this );
+    }
+
+    operator VkIndirectCommandsLayoutCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectCommandsLayoutCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -55612,6 +59942,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkIndirectExecutionSetPipelineInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkIndirectExecutionSetPipelineInfoEXT *>( this );
+    }
+
+    operator VkIndirectExecutionSetPipelineInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectExecutionSetPipelineInfoEXT *>( this );
+    }
+
+    operator VkIndirectExecutionSetPipelineInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectExecutionSetPipelineInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -55739,6 +60079,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkIndirectExecutionSetShaderLayoutInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkIndirectExecutionSetShaderLayoutInfoEXT *>( this );
+    }
+
+    operator VkIndirectExecutionSetShaderLayoutInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectExecutionSetShaderLayoutInfoEXT *>( this );
+    }
+
+    operator VkIndirectExecutionSetShaderLayoutInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectExecutionSetShaderLayoutInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -55943,6 +60293,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkIndirectExecutionSetShaderInfoEXT *>( this );
     }
 
+    operator VkIndirectExecutionSetShaderInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectExecutionSetShaderInfoEXT *>( this );
+    }
+
+    operator VkIndirectExecutionSetShaderInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectExecutionSetShaderInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -56116,6 +60476,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkIndirectExecutionSetCreateInfoEXT *>( this );
     }
 
+    operator VkIndirectExecutionSetCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkIndirectExecutionSetCreateInfoEXT *>( this );
+    }
+
+    operator VkIndirectExecutionSetCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkIndirectExecutionSetCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -56198,6 +60568,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkInitializePerformanceApiInfoINTEL &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkInitializePerformanceApiInfoINTEL *>( this );
+    }
+
+    operator VkInitializePerformanceApiInfoINTEL const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkInitializePerformanceApiInfoINTEL *>( this );
+    }
+
+    operator VkInitializePerformanceApiInfoINTEL *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkInitializePerformanceApiInfoINTEL *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -56302,6 +60682,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkInputAttachmentAspectReference &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkInputAttachmentAspectReference *>( this );
+    }
+
+    operator VkInputAttachmentAspectReference const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkInputAttachmentAspectReference *>( this );
+    }
+
+    operator VkInputAttachmentAspectReference *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkInputAttachmentAspectReference *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -56472,6 +60862,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkInstanceCreateInfo *>( this );
     }
 
+    operator VkInstanceCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkInstanceCreateInfo *>( this );
+    }
+
+    operator VkInstanceCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkInstanceCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -56620,6 +61020,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkLatencySleepInfoNV *>( this );
     }
 
+    operator VkLatencySleepInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkLatencySleepInfoNV *>( this );
+    }
+
+    operator VkLatencySleepInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkLatencySleepInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -56735,6 +61145,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkLatencySleepModeInfoNV *>( this );
     }
 
+    operator VkLatencySleepModeInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkLatencySleepModeInfoNV *>( this );
+    }
+
+    operator VkLatencySleepModeInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkLatencySleepModeInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -56837,6 +61257,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkLatencySubmissionPresentIdNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkLatencySubmissionPresentIdNV *>( this );
+    }
+
+    operator VkLatencySubmissionPresentIdNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkLatencySubmissionPresentIdNV *>( this );
+    }
+
+    operator VkLatencySubmissionPresentIdNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkLatencySubmissionPresentIdNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -56963,6 +61393,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkLatencySurfaceCapabilitiesNV *>( this );
     }
 
+    operator VkLatencySurfaceCapabilitiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkLatencySurfaceCapabilitiesNV *>( this );
+    }
+
+    operator VkLatencySurfaceCapabilitiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkLatencySurfaceCapabilitiesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -57046,6 +61486,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkLayerProperties *>( this );
     }
 
+    operator VkLayerProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkLayerProperties *>( this );
+    }
+
+    operator VkLayerProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkLayerProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -57119,11 +61569,11 @@ namespace VULKAN_HPP_NAMESPACE
     LayerSettingEXT( VkLayerSettingEXT const & rhs ) VULKAN_HPP_NOEXCEPT : LayerSettingEXT( *reinterpret_cast<LayerSettingEXT const *>( &rhs ) ) {}
 
 #  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
-    // NOTE: you need to provide the type because vk::Bool32 and uint32_t are indistinguishable!
-    LayerSettingEXT( char const *                                       pLayerName_,
-                     char const *                                       pSettingName_,
-                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT          type_,
-                     vk::ArrayProxyNoTemporaries<const int32_t> const & values_ )
+    // NOTE: you need to provide the type because VULKAN_HPP_NAMESPACE::Bool32 and uint32_t are indistinguishable!
+    LayerSettingEXT( char const *                                                         pLayerName_,
+                     char const *                                                         pSettingName_,
+                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT                            type_,
+                     VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const int32_t> const & values_ )
       : pLayerName( pLayerName_ )
       , pSettingName( pSettingName_ )
       , type( type_ )
@@ -57133,10 +61583,10 @@ namespace VULKAN_HPP_NAMESPACE
       VULKAN_HPP_ASSERT( VULKAN_HPP_NAMESPACE::isSameType<int32_t>( type ) );
     }
 
-    LayerSettingEXT( char const *                                       pLayerName_,
-                     char const *                                       pSettingName_,
-                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT          type_,
-                     vk::ArrayProxyNoTemporaries<const int64_t> const & values_ )
+    LayerSettingEXT( char const *                                                         pLayerName_,
+                     char const *                                                         pSettingName_,
+                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT                            type_,
+                     VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const int64_t> const & values_ )
       : pLayerName( pLayerName_ )
       , pSettingName( pSettingName_ )
       , type( type_ )
@@ -57146,10 +61596,10 @@ namespace VULKAN_HPP_NAMESPACE
       VULKAN_HPP_ASSERT( VULKAN_HPP_NAMESPACE::isSameType<int64_t>( type ) );
     }
 
-    LayerSettingEXT( char const *                                        pLayerName_,
-                     char const *                                        pSettingName_,
-                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT           type_,
-                     vk::ArrayProxyNoTemporaries<const uint32_t> const & values_ )
+    LayerSettingEXT( char const *                                                          pLayerName_,
+                     char const *                                                          pSettingName_,
+                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT                             type_,
+                     VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const uint32_t> const & values_ )
       : pLayerName( pLayerName_ )
       , pSettingName( pSettingName_ )
       , type( type_ )
@@ -57159,10 +61609,10 @@ namespace VULKAN_HPP_NAMESPACE
       VULKAN_HPP_ASSERT( VULKAN_HPP_NAMESPACE::isSameType<uint32_t>( type ) );
     }
 
-    LayerSettingEXT( char const *                                        pLayerName_,
-                     char const *                                        pSettingName_,
-                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT           type_,
-                     vk::ArrayProxyNoTemporaries<const uint64_t> const & values_ )
+    LayerSettingEXT( char const *                                                          pLayerName_,
+                     char const *                                                          pSettingName_,
+                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT                             type_,
+                     VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const uint64_t> const & values_ )
       : pLayerName( pLayerName_ )
       , pSettingName( pSettingName_ )
       , type( type_ )
@@ -57172,10 +61622,10 @@ namespace VULKAN_HPP_NAMESPACE
       VULKAN_HPP_ASSERT( VULKAN_HPP_NAMESPACE::isSameType<uint64_t>( type ) );
     }
 
-    LayerSettingEXT( char const *                                     pLayerName_,
-                     char const *                                     pSettingName_,
-                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT        type_,
-                     vk::ArrayProxyNoTemporaries<const float> const & values_ )
+    LayerSettingEXT( char const *                                                       pLayerName_,
+                     char const *                                                       pSettingName_,
+                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT                          type_,
+                     VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const float> const & values_ )
       : pLayerName( pLayerName_ )
       , pSettingName( pSettingName_ )
       , type( type_ )
@@ -57185,10 +61635,10 @@ namespace VULKAN_HPP_NAMESPACE
       VULKAN_HPP_ASSERT( VULKAN_HPP_NAMESPACE::isSameType<float>( type ) );
     }
 
-    LayerSettingEXT( char const *                                      pLayerName_,
-                     char const *                                      pSettingName_,
-                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT         type_,
-                     vk::ArrayProxyNoTemporaries<const double> const & values_ )
+    LayerSettingEXT( char const *                                                        pLayerName_,
+                     char const *                                                        pSettingName_,
+                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT                           type_,
+                     VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const double> const & values_ )
       : pLayerName( pLayerName_ )
       , pSettingName( pSettingName_ )
       , type( type_ )
@@ -57198,10 +61648,10 @@ namespace VULKAN_HPP_NAMESPACE
       VULKAN_HPP_ASSERT( VULKAN_HPP_NAMESPACE::isSameType<double>( type ) );
     }
 
-    LayerSettingEXT( char const *                                      pLayerName_,
-                     char const *                                      pSettingName_,
-                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT         type_,
-                     vk::ArrayProxyNoTemporaries<const char *> const & values_ )
+    LayerSettingEXT( char const *                                                        pLayerName_,
+                     char const *                                                        pSettingName_,
+                     VULKAN_HPP_NAMESPACE::LayerSettingTypeEXT                           type_,
+                     VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const char *> const & values_ )
       : pLayerName( pLayerName_ )
       , pSettingName( pSettingName_ )
       , type( type_ )
@@ -57306,6 +61756,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkLayerSettingEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkLayerSettingEXT *>( this );
+    }
+
+    operator VkLayerSettingEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkLayerSettingEXT *>( this );
+    }
+
+    operator VkLayerSettingEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkLayerSettingEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -57442,6 +61902,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkLayerSettingsCreateInfoEXT *>( this );
     }
 
+    operator VkLayerSettingsCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkLayerSettingsCreateInfoEXT *>( this );
+    }
+
+    operator VkLayerSettingsCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkLayerSettingsCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -57548,6 +62018,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMacOSSurfaceCreateInfoMVK &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMacOSSurfaceCreateInfoMVK *>( this );
+    }
+
+    operator VkMacOSSurfaceCreateInfoMVK const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMacOSSurfaceCreateInfoMVK *>( this );
+    }
+
+    operator VkMacOSSurfaceCreateInfoMVK *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMacOSSurfaceCreateInfoMVK *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -57664,6 +62144,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMappedMemoryRange *>( this );
     }
 
+    operator VkMappedMemoryRange const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMappedMemoryRange *>( this );
+    }
+
+    operator VkMappedMemoryRange *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMappedMemoryRange *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -57776,6 +62266,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryAllocateFlagsInfo *>( this );
     }
 
+    operator VkMemoryAllocateFlagsInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryAllocateFlagsInfo *>( this );
+    }
+
+    operator VkMemoryAllocateFlagsInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryAllocateFlagsInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -57882,6 +62382,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryAllocateInfo *>( this );
     }
 
+    operator VkMemoryAllocateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryAllocateInfo *>( this );
+    }
+
+    operator VkMemoryAllocateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryAllocateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -57984,6 +62494,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryBarrier &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryBarrier *>( this );
+    }
+
+    operator VkMemoryBarrier const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryBarrier *>( this );
+    }
+
+    operator VkMemoryBarrier *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryBarrier *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -58096,6 +62616,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryBarrierAccessFlags3KHR *>( this );
     }
 
+    operator VkMemoryBarrierAccessFlags3KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryBarrierAccessFlags3KHR *>( this );
+    }
+
+    operator VkMemoryBarrierAccessFlags3KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryBarrierAccessFlags3KHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -58206,6 +62736,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryDedicatedAllocateInfo *>( this );
     }
 
+    operator VkMemoryDedicatedAllocateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryDedicatedAllocateInfo *>( this );
+    }
+
+    operator VkMemoryDedicatedAllocateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryDedicatedAllocateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -58295,6 +62835,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryDedicatedRequirements *>( this );
     }
 
+    operator VkMemoryDedicatedRequirements const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryDedicatedRequirements *>( this );
+    }
+
+    operator VkMemoryDedicatedRequirements *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryDedicatedRequirements *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -58380,6 +62930,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryFdPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryFdPropertiesKHR *>( this );
+    }
+
+    operator VkMemoryFdPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryFdPropertiesKHR *>( this );
+    }
+
+    operator VkMemoryFdPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryFdPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -58480,6 +63040,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryGetAndroidHardwareBufferInfoANDROID &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryGetAndroidHardwareBufferInfoANDROID *>( this );
+    }
+
+    operator VkMemoryGetAndroidHardwareBufferInfoANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryGetAndroidHardwareBufferInfoANDROID *>( this );
+    }
+
+    operator VkMemoryGetAndroidHardwareBufferInfoANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryGetAndroidHardwareBufferInfoANDROID *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -58585,6 +63155,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryGetFdInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryGetFdInfoKHR *>( this );
+    }
+
+    operator VkMemoryGetFdInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryGetFdInfoKHR *>( this );
+    }
+
+    operator VkMemoryGetFdInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryGetFdInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -58700,6 +63280,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryGetMetalHandleInfoEXT *>( this );
     }
 
+    operator VkMemoryGetMetalHandleInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryGetMetalHandleInfoEXT *>( this );
+    }
+
+    operator VkMemoryGetMetalHandleInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryGetMetalHandleInfoEXT *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -58813,6 +63403,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryGetRemoteAddressInfoNV *>( this );
     }
 
+    operator VkMemoryGetRemoteAddressInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryGetRemoteAddressInfoNV *>( this );
+    }
+
+    operator VkMemoryGetRemoteAddressInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryGetRemoteAddressInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -58924,6 +63524,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryGetWin32HandleInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryGetWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkMemoryGetWin32HandleInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryGetWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkMemoryGetWin32HandleInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryGetWin32HandleInfoKHR *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -59041,6 +63651,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryGetZirconHandleInfoFUCHSIA *>( this );
     }
 
+    operator VkMemoryGetZirconHandleInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryGetZirconHandleInfoFUCHSIA *>( this );
+    }
+
+    operator VkMemoryGetZirconHandleInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryGetZirconHandleInfoFUCHSIA *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -59123,6 +63743,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryHeap *>( this );
     }
 
+    operator VkMemoryHeap const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryHeap *>( this );
+    }
+
+    operator VkMemoryHeap *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryHeap *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -59198,6 +63828,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryHostPointerPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryHostPointerPropertiesEXT *>( this );
+    }
+
+    operator VkMemoryHostPointerPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryHostPointerPropertiesEXT *>( this );
+    }
+
+    operator VkMemoryHostPointerPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryHostPointerPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -59319,6 +63959,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryMapInfo *>( this );
     }
 
+    operator VkMemoryMapInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryMapInfo *>( this );
+    }
+
+    operator VkMemoryMapInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryMapInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -59427,6 +64077,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryMapPlacedInfoEXT *>( this );
     }
 
+    operator VkMemoryMapPlacedInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryMapPlacedInfoEXT *>( this );
+    }
+
+    operator VkMemoryMapPlacedInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryMapPlacedInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -59510,6 +64170,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryMetalHandlePropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryMetalHandlePropertiesEXT *>( this );
+    }
+
+    operator VkMemoryMetalHandlePropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryMetalHandlePropertiesEXT *>( this );
+    }
+
+    operator VkMemoryMetalHandlePropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryMetalHandlePropertiesEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -59609,6 +64279,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryOpaqueCaptureAddressAllocateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryOpaqueCaptureAddressAllocateInfo *>( this );
+    }
+
+    operator VkMemoryOpaqueCaptureAddressAllocateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryOpaqueCaptureAddressAllocateInfo *>( this );
+    }
+
+    operator VkMemoryOpaqueCaptureAddressAllocateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryOpaqueCaptureAddressAllocateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -59711,6 +64391,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryPriorityAllocateInfoEXT *>( this );
     }
 
+    operator VkMemoryPriorityAllocateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryPriorityAllocateInfoEXT *>( this );
+    }
+
+    operator VkMemoryPriorityAllocateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryPriorityAllocateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -59791,6 +64481,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryRequirements *>( this );
     }
 
+    operator VkMemoryRequirements const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryRequirements *>( this );
+    }
+
+    operator VkMemoryRequirements *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryRequirements *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -59865,6 +64565,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryRequirements2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryRequirements2 *>( this );
+    }
+
+    operator VkMemoryRequirements2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryRequirements2 *>( this );
+    }
+
+    operator VkMemoryRequirements2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryRequirements2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -59944,6 +64654,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryType &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryType *>( this );
+    }
+
+    operator VkMemoryType const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryType *>( this );
+    }
+
+    operator VkMemoryType *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryType *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -60042,6 +64762,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryUnmapInfo *>( this );
     }
 
+    operator VkMemoryUnmapInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryUnmapInfo *>( this );
+    }
+
+    operator VkMemoryUnmapInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryUnmapInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -60133,6 +64863,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMemoryWin32HandlePropertiesKHR *>( this );
     }
 
+    operator VkMemoryWin32HandlePropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryWin32HandlePropertiesKHR *>( this );
+    }
+
+    operator VkMemoryWin32HandlePropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryWin32HandlePropertiesKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -60217,6 +64957,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMemoryZirconHandlePropertiesFUCHSIA &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMemoryZirconHandlePropertiesFUCHSIA *>( this );
+    }
+
+    operator VkMemoryZirconHandlePropertiesFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMemoryZirconHandlePropertiesFUCHSIA *>( this );
+    }
+
+    operator VkMemoryZirconHandlePropertiesFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMemoryZirconHandlePropertiesFUCHSIA *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -60325,6 +65075,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMetalSurfaceCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMetalSurfaceCreateInfoEXT *>( this );
+    }
+
+    operator VkMetalSurfaceCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMetalSurfaceCreateInfoEXT *>( this );
+    }
+
+    operator VkMetalSurfaceCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMetalSurfaceCreateInfoEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -60567,6 +65327,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMicromapBuildInfoEXT *>( this );
     }
 
+    operator VkMicromapBuildInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMicromapBuildInfoEXT *>( this );
+    }
+
+    operator VkMicromapBuildInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMicromapBuildInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -60684,6 +65454,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMicromapBuildSizesInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMicromapBuildSizesInfoEXT *>( this );
+    }
+
+    operator VkMicromapBuildSizesInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMicromapBuildSizesInfoEXT *>( this );
+    }
+
+    operator VkMicromapBuildSizesInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMicromapBuildSizesInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -60831,6 +65611,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMicromapCreateInfoEXT *>( this );
     }
 
+    operator VkMicromapCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMicromapCreateInfoEXT *>( this );
+    }
+
+    operator VkMicromapCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMicromapCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -60944,6 +65734,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMicromapTriangleEXT *>( this );
     }
 
+    operator VkMicromapTriangleEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMicromapTriangleEXT *>( this );
+    }
+
+    operator VkMicromapTriangleEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMicromapTriangleEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -61033,6 +65833,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMicromapVersionInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMicromapVersionInfoEXT *>( this );
+    }
+
+    operator VkMicromapVersionInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMicromapVersionInfoEXT *>( this );
+    }
+
+    operator VkMicromapVersionInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMicromapVersionInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -61136,6 +65946,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMultiDrawIndexedInfoEXT *>( this );
     }
 
+    operator VkMultiDrawIndexedInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMultiDrawIndexedInfoEXT *>( this );
+    }
+
+    operator VkMultiDrawIndexedInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMultiDrawIndexedInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -61221,6 +66041,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMultiDrawInfoEXT *>( this );
     }
 
+    operator VkMultiDrawInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMultiDrawInfoEXT *>( this );
+    }
+
+    operator VkMultiDrawInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMultiDrawInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -61295,6 +66125,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMultisamplePropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMultisamplePropertiesEXT *>( this );
+    }
+
+    operator VkMultisamplePropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMultisamplePropertiesEXT *>( this );
+    }
+
+    operator VkMultisamplePropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMultisamplePropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -61405,6 +66245,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMultisampledRenderToSingleSampledInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMultisampledRenderToSingleSampledInfoEXT *>( this );
+    }
+
+    operator VkMultisampledRenderToSingleSampledInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMultisampledRenderToSingleSampledInfoEXT *>( this );
+    }
+
+    operator VkMultisampledRenderToSingleSampledInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMultisampledRenderToSingleSampledInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -61518,6 +66368,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMultiviewPerViewAttributesInfoNVX &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMultiviewPerViewAttributesInfoNVX *>( this );
+    }
+
+    operator VkMultiviewPerViewAttributesInfoNVX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMultiviewPerViewAttributesInfoNVX *>( this );
+    }
+
+    operator VkMultiviewPerViewAttributesInfoNVX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMultiviewPerViewAttributesInfoNVX *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -61651,6 +66511,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM *>( this );
     }
 
+    operator VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM *>( this );
+    }
+
+    operator VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMultiviewPerViewRenderAreasRenderPassBeginInfoQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -61764,6 +66634,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkMutableDescriptorTypeListEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkMutableDescriptorTypeListEXT *>( this );
+    }
+
+    operator VkMutableDescriptorTypeListEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMutableDescriptorTypeListEXT *>( this );
+    }
+
+    operator VkMutableDescriptorTypeListEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMutableDescriptorTypeListEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -61892,6 +66772,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkMutableDescriptorTypeCreateInfoEXT *>( this );
     }
 
+    operator VkMutableDescriptorTypeCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkMutableDescriptorTypeCreateInfoEXT *>( this );
+    }
+
+    operator VkMutableDescriptorTypeCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkMutableDescriptorTypeCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -61997,6 +66887,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkOpaqueCaptureDescriptorDataCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkOpaqueCaptureDescriptorDataCreateInfoEXT *>( this );
+    }
+
+    operator VkOpaqueCaptureDescriptorDataCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOpaqueCaptureDescriptorDataCreateInfoEXT *>( this );
+    }
+
+    operator VkOpaqueCaptureDescriptorDataCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOpaqueCaptureDescriptorDataCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -62132,6 +67032,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkOpticalFlowExecuteInfoNV *>( this );
     }
 
+    operator VkOpticalFlowExecuteInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOpticalFlowExecuteInfoNV *>( this );
+    }
+
+    operator VkOpticalFlowExecuteInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOpticalFlowExecuteInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -62236,6 +67146,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkOpticalFlowImageFormatInfoNV *>( this );
     }
 
+    operator VkOpticalFlowImageFormatInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOpticalFlowImageFormatInfoNV *>( this );
+    }
+
+    operator VkOpticalFlowImageFormatInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOpticalFlowImageFormatInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -62319,6 +67239,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkOpticalFlowImageFormatPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkOpticalFlowImageFormatPropertiesNV *>( this );
+    }
+
+    operator VkOpticalFlowImageFormatPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOpticalFlowImageFormatPropertiesNV *>( this );
+    }
+
+    operator VkOpticalFlowImageFormatPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOpticalFlowImageFormatPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -62488,6 +67418,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkOpticalFlowSessionCreateInfoNV *>( this );
     }
 
+    operator VkOpticalFlowSessionCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOpticalFlowSessionCreateInfoNV *>( this );
+    }
+
+    operator VkOpticalFlowSessionCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOpticalFlowSessionCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -62623,6 +67563,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkOpticalFlowSessionCreatePrivateDataInfoNV *>( this );
     }
 
+    operator VkOpticalFlowSessionCreatePrivateDataInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOpticalFlowSessionCreatePrivateDataInfoNV *>( this );
+    }
+
+    operator VkOpticalFlowSessionCreatePrivateDataInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOpticalFlowSessionCreatePrivateDataInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -62723,6 +67673,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkOutOfBandQueueTypeInfoNV *>( this );
     }
 
+    operator VkOutOfBandQueueTypeInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOutOfBandQueueTypeInfoNV *>( this );
+    }
+
+    operator VkOutOfBandQueueTypeInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOutOfBandQueueTypeInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -62821,6 +67781,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPartitionedAccelerationStructureFlagsNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPartitionedAccelerationStructureFlagsNV *>( this );
+    }
+
+    operator VkPartitionedAccelerationStructureFlagsNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPartitionedAccelerationStructureFlagsNV *>( this );
+    }
+
+    operator VkPartitionedAccelerationStructureFlagsNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPartitionedAccelerationStructureFlagsNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -62930,6 +67900,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPartitionedAccelerationStructureUpdateInstanceDataNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPartitionedAccelerationStructureUpdateInstanceDataNV *>( this );
+    }
+
+    operator VkPartitionedAccelerationStructureUpdateInstanceDataNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPartitionedAccelerationStructureUpdateInstanceDataNV *>( this );
+    }
+
+    operator VkPartitionedAccelerationStructureUpdateInstanceDataNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPartitionedAccelerationStructureUpdateInstanceDataNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -63086,6 +68066,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPartitionedAccelerationStructureWriteInstanceDataNV *>( this );
     }
 
+    operator VkPartitionedAccelerationStructureWriteInstanceDataNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPartitionedAccelerationStructureWriteInstanceDataNV *>( this );
+    }
+
+    operator VkPartitionedAccelerationStructureWriteInstanceDataNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPartitionedAccelerationStructureWriteInstanceDataNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -63208,6 +68198,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPartitionedAccelerationStructureWritePartitionTranslationDataNV *>( this );
     }
 
+    operator VkPartitionedAccelerationStructureWritePartitionTranslationDataNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPartitionedAccelerationStructureWritePartitionTranslationDataNV *>( this );
+    }
+
+    operator VkPartitionedAccelerationStructureWritePartitionTranslationDataNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPartitionedAccelerationStructureWritePartitionTranslationDataNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -63286,6 +68286,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPastPresentationTimingGOOGLE &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPastPresentationTimingGOOGLE *>( this );
+    }
+
+    operator VkPastPresentationTimingGOOGLE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPastPresentationTimingGOOGLE *>( this );
+    }
+
+    operator VkPastPresentationTimingGOOGLE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPastPresentationTimingGOOGLE *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -63387,6 +68397,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPerformanceConfigurationAcquireInfoINTEL *>( this );
     }
 
+    operator VkPerformanceConfigurationAcquireInfoINTEL const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerformanceConfigurationAcquireInfoINTEL *>( this );
+    }
+
+    operator VkPerformanceConfigurationAcquireInfoINTEL *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerformanceConfigurationAcquireInfoINTEL *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -63477,6 +68497,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPerformanceCounterDescriptionKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPerformanceCounterDescriptionKHR *>( this );
+    }
+
+    operator VkPerformanceCounterDescriptionKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerformanceCounterDescriptionKHR *>( this );
+    }
+
+    operator VkPerformanceCounterDescriptionKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerformanceCounterDescriptionKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -63589,6 +68619,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPerformanceCounterKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPerformanceCounterKHR *>( this );
+    }
+
+    operator VkPerformanceCounterKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerformanceCounterKHR *>( this );
+    }
+
+    operator VkPerformanceCounterKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerformanceCounterKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -63771,6 +68811,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPerformanceMarkerInfoINTEL *>( this );
     }
 
+    operator VkPerformanceMarkerInfoINTEL const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerformanceMarkerInfoINTEL *>( this );
+    }
+
+    operator VkPerformanceMarkerInfoINTEL *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerformanceMarkerInfoINTEL *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -63886,6 +68936,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPerformanceOverrideInfoINTEL *>( this );
     }
 
+    operator VkPerformanceOverrideInfoINTEL const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerformanceOverrideInfoINTEL *>( this );
+    }
+
+    operator VkPerformanceOverrideInfoINTEL *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerformanceOverrideInfoINTEL *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -63990,6 +69050,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPerformanceQuerySubmitInfoKHR *>( this );
     }
 
+    operator VkPerformanceQuerySubmitInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerformanceQuerySubmitInfoKHR *>( this );
+    }
+
+    operator VkPerformanceQuerySubmitInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerformanceQuerySubmitInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -64086,6 +69156,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPerformanceStreamMarkerInfoINTEL &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPerformanceStreamMarkerInfoINTEL *>( this );
+    }
+
+    operator VkPerformanceStreamMarkerInfoINTEL const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerformanceStreamMarkerInfoINTEL *>( this );
+    }
+
+    operator VkPerformanceStreamMarkerInfoINTEL *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerformanceStreamMarkerInfoINTEL *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -64241,6 +69321,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPerformanceValueINTEL *>( this );
     }
 
+    operator VkPerformanceValueINTEL const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerformanceValueINTEL *>( this );
+    }
+
+    operator VkPerformanceValueINTEL *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerformanceValueINTEL *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -64341,6 +69431,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevice16BitStorageFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevice16BitStorageFeatures *>( this );
+    }
+
+    operator VkPhysicalDevice16BitStorageFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevice16BitStorageFeatures *>( this );
+    }
+
+    operator VkPhysicalDevice16BitStorageFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevice16BitStorageFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -64462,6 +69562,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevice4444FormatsFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDevice4444FormatsFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevice4444FormatsFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevice4444FormatsFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevice4444FormatsFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -64581,6 +69691,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevice8BitStorageFeatures *>( this );
     }
 
+    operator VkPhysicalDevice8BitStorageFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevice8BitStorageFeatures *>( this );
+    }
+
+    operator VkPhysicalDevice8BitStorageFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevice8BitStorageFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -64688,6 +69808,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceASTCDecodeFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceASTCDecodeFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceASTCDecodeFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceASTCDecodeFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceASTCDecodeFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceASTCDecodeFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -64828,6 +69958,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceAccelerationStructureFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceAccelerationStructureFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceAccelerationStructureFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceAccelerationStructureFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceAccelerationStructureFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -64946,6 +70086,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceAccelerationStructurePropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceAccelerationStructurePropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceAccelerationStructurePropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceAccelerationStructurePropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceAccelerationStructurePropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceAccelerationStructurePropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -65080,6 +70230,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceAddressBindingReportFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceAddressBindingReportFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceAddressBindingReportFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceAddressBindingReportFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceAddressBindingReportFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -65179,6 +70339,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceAmigoProfilingFeaturesSEC *>( this );
     }
 
+    operator VkPhysicalDeviceAmigoProfilingFeaturesSEC const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceAmigoProfilingFeaturesSEC *>( this );
+    }
+
+    operator VkPhysicalDeviceAmigoProfilingFeaturesSEC *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceAmigoProfilingFeaturesSEC *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -65275,6 +70445,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceAntiLagFeaturesAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceAntiLagFeaturesAMD *>( this );
+    }
+
+    operator VkPhysicalDeviceAntiLagFeaturesAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceAntiLagFeaturesAMD *>( this );
+    }
+
+    operator VkPhysicalDeviceAntiLagFeaturesAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceAntiLagFeaturesAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -65381,6 +70561,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceAttachmentFeedbackLoopDynamicStateFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -65481,6 +70671,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceAttachmentFeedbackLoopLayoutFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -65584,6 +70784,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceBlendOperationAdvancedFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -65679,6 +70889,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceBlendOperationAdvancedPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -65813,6 +71033,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceBorderColorSwizzleFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceBorderColorSwizzleFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceBorderColorSwizzleFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceBorderColorSwizzleFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceBorderColorSwizzleFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -65931,6 +71161,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceBufferDeviceAddressFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceBufferDeviceAddressFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceBufferDeviceAddressFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceBufferDeviceAddressFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceBufferDeviceAddressFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceBufferDeviceAddressFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -66061,6 +71301,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceBufferDeviceAddressFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceBufferDeviceAddressFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceBufferDeviceAddressFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceBufferDeviceAddressFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceBufferDeviceAddressFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -66173,6 +71423,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceClusterAccelerationStructureFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceClusterAccelerationStructureFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceClusterAccelerationStructureFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceClusterAccelerationStructureFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceClusterAccelerationStructureFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -66273,6 +71533,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceClusterAccelerationStructurePropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceClusterAccelerationStructurePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceClusterAccelerationStructurePropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceClusterAccelerationStructurePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceClusterAccelerationStructurePropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceClusterAccelerationStructurePropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -66414,6 +71684,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI *>( this );
     }
 
+    operator VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceClusterCullingShaderFeaturesHUAWEI *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -66507,6 +71787,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceClusterCullingShaderPropertiesHUAWEI *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -66621,6 +71911,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI *>( this );
     }
 
+    operator VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceClusterCullingShaderVrsFeaturesHUAWEI *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -66719,6 +72019,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCoherentMemoryFeaturesAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCoherentMemoryFeaturesAMD *>( this );
+    }
+
+    operator VkPhysicalDeviceCoherentMemoryFeaturesAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCoherentMemoryFeaturesAMD *>( this );
+    }
+
+    operator VkPhysicalDeviceCoherentMemoryFeaturesAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCoherentMemoryFeaturesAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -66821,6 +72131,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceColorWriteEnableFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceColorWriteEnableFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceColorWriteEnableFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceColorWriteEnableFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceColorWriteEnableFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -66920,6 +72240,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCommandBufferInheritanceFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCommandBufferInheritanceFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCommandBufferInheritanceFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCommandBufferInheritanceFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCommandBufferInheritanceFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCommandBufferInheritanceFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -67033,6 +72363,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceComputeShaderDerivativesFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -67122,6 +72462,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceComputeShaderDerivativesPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -67234,6 +72584,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceConditionalRenderingFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceConditionalRenderingFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceConditionalRenderingFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceConditionalRenderingFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceConditionalRenderingFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -67337,6 +72697,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceConservativeRasterizationPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceConservativeRasterizationPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceConservativeRasterizationPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceConservativeRasterizationPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceConservativeRasterizationPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceConservativeRasterizationPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -67528,6 +72898,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceCooperativeMatrix2FeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceCooperativeMatrix2FeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCooperativeMatrix2FeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrix2FeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCooperativeMatrix2FeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -67642,6 +73022,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCooperativeMatrix2PropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCooperativeMatrix2PropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrix2PropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCooperativeMatrix2PropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrix2PropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCooperativeMatrix2PropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -67762,6 +73152,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceCooperativeMatrixFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceCooperativeMatrixFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCooperativeMatrixFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrixFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCooperativeMatrixFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -67873,6 +73273,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceCooperativeMatrixFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceCooperativeMatrixFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCooperativeMatrixFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrixFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCooperativeMatrixFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -67960,6 +73370,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceCooperativeMatrixPropertiesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceCooperativeMatrixPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCooperativeMatrixPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrixPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCooperativeMatrixPropertiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -68043,6 +73463,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCooperativeMatrixPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCooperativeMatrixPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrixPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCooperativeMatrixPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrixPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCooperativeMatrixPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -68154,6 +73584,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceCooperativeVectorFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceCooperativeVectorFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCooperativeVectorFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeVectorFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCooperativeVectorFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -68245,6 +73685,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCooperativeVectorPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCooperativeVectorPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeVectorPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCooperativeVectorPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeVectorPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCooperativeVectorPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -68362,6 +73812,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceCopyMemoryIndirectFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCopyMemoryIndirectFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCopyMemoryIndirectFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -68445,6 +73905,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCopyMemoryIndirectPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCopyMemoryIndirectPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -68545,6 +74015,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCornerSampledImageFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCornerSampledImageFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCornerSampledImageFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCornerSampledImageFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCornerSampledImageFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCornerSampledImageFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -68648,6 +74128,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceCoverageReductionModeFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceCoverageReductionModeFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCoverageReductionModeFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCoverageReductionModeFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCoverageReductionModeFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -68744,6 +74234,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCubicClampFeaturesQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCubicClampFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceCubicClampFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCubicClampFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceCubicClampFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCubicClampFeaturesQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -68844,6 +74344,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCubicWeightsFeaturesQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCubicWeightsFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceCubicWeightsFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCubicWeightsFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceCubicWeightsFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCubicWeightsFeaturesQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -68947,6 +74457,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceCudaKernelLaunchFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceCudaKernelLaunchFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCudaKernelLaunchFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCudaKernelLaunchFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCudaKernelLaunchFeaturesNV *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -69034,6 +74554,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCudaKernelLaunchPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCudaKernelLaunchPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCudaKernelLaunchPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCudaKernelLaunchPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceCudaKernelLaunchPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCudaKernelLaunchPropertiesNV *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -69148,6 +74678,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceCustomBorderColorFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceCustomBorderColorFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCustomBorderColorFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceCustomBorderColorFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCustomBorderColorFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -69233,6 +74773,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceCustomBorderColorPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceCustomBorderColorPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceCustomBorderColorPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCustomBorderColorPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceCustomBorderColorPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCustomBorderColorPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -69336,6 +74886,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -69464,6 +75024,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDepthBiasControlFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceDepthBiasControlFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDepthBiasControlFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDepthBiasControlFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDepthBiasControlFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -69574,6 +75144,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDepthClampControlFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceDepthClampControlFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDepthClampControlFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDepthClampControlFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDepthClampControlFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -69672,6 +75252,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDepthClampZeroOneFeaturesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDepthClampZeroOneFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceDepthClampZeroOneFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDepthClampZeroOneFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceDepthClampZeroOneFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDepthClampZeroOneFeaturesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -69776,6 +75366,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDepthClipControlFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceDepthClipControlFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDepthClipControlFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDepthClipControlFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDepthClipControlFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -69875,6 +75475,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDepthClipEnableFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceDepthClipEnableFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDepthClipEnableFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDepthClipEnableFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDepthClipEnableFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -69964,6 +75574,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDepthStencilResolveProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDepthStencilResolveProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceDepthStencilResolveProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDepthStencilResolveProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceDepthStencilResolveProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDepthStencilResolveProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -70063,6 +75683,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDescriptorBufferDensityMapPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -70191,6 +75821,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDescriptorBufferFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDescriptorBufferFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorBufferFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDescriptorBufferFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorBufferFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDescriptorBufferFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -70351,6 +75991,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDescriptorBufferPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDescriptorBufferPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorBufferPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDescriptorBufferPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorBufferPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDescriptorBufferPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -70754,6 +76404,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDescriptorIndexingFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceDescriptorIndexingFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDescriptorIndexingFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorIndexingFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDescriptorIndexingFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -70966,6 +76626,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDescriptorIndexingProperties *>( this );
     }
 
+    operator VkPhysicalDeviceDescriptorIndexingProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDescriptorIndexingProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorIndexingProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDescriptorIndexingProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -71161,6 +76831,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDescriptorPoolOverallocationFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -71261,6 +76941,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE *>( this );
+    }
+
+    operator VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDescriptorSetHostMappingFeaturesVALVE *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -71384,6 +77074,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsComputeFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -71502,6 +77202,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -71603,6 +77313,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -71713,6 +77433,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -71865,6 +77595,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV *>( this );
     }
 
+    operator VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDeviceGeneratedCommandsPropertiesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -72000,6 +77740,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDeviceMemoryReportFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceDeviceMemoryReportFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDeviceMemoryReportFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDeviceMemoryReportFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDeviceMemoryReportFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -72100,6 +77850,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDiagnosticsConfigFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceDiagnosticsConfigFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDiagnosticsConfigFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDiagnosticsConfigFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDiagnosticsConfigFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -72182,6 +77942,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDiscardRectanglePropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDiscardRectanglePropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDiscardRectanglePropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDiscardRectanglePropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDiscardRectanglePropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDiscardRectanglePropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -72285,6 +78055,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDisplacementMicromapFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceDisplacementMicromapFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDisplacementMicromapFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDisplacementMicromapFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDisplacementMicromapFeaturesNV *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -72371,6 +78151,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDisplacementMicromapPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDisplacementMicromapPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDisplacementMicromapPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDisplacementMicromapPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceDisplacementMicromapPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDisplacementMicromapPropertiesNV *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -72463,6 +78253,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDriverProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDriverProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceDriverProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDriverProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceDriverProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDriverProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -72583,6 +78383,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDrmPropertiesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceDrmPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDrmPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDrmPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDrmPropertiesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -72696,6 +78506,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDynamicRenderingFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceDynamicRenderingFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDynamicRenderingFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceDynamicRenderingFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDynamicRenderingFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -72797,6 +78617,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceDynamicRenderingLocalReadFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceDynamicRenderingLocalReadFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceDynamicRenderingLocalReadFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDynamicRenderingLocalReadFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceDynamicRenderingLocalReadFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDynamicRenderingLocalReadFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -72905,6 +78735,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDynamicRenderingUnusedAttachmentsFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -73002,6 +78842,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceExclusiveScissorFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceExclusiveScissorFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExclusiveScissorFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExclusiveScissorFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExclusiveScissorFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExclusiveScissorFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -73121,6 +78971,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceExtendedDynamicState2FeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceExtendedDynamicState2FeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedDynamicState2FeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExtendedDynamicState2FeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedDynamicState2FeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExtendedDynamicState2FeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -73503,6 +79363,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceExtendedDynamicState3FeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceExtendedDynamicState3FeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExtendedDynamicState3FeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedDynamicState3FeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExtendedDynamicState3FeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -73704,21 +79574,6 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceExtendedDynamicState3PropertiesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceExtendedDynamicState3PropertiesEXT &
-      setDynamicPrimitiveTopologyUnrestricted( VULKAN_HPP_NAMESPACE::Bool32 dynamicPrimitiveTopologyUnrestricted_ ) VULKAN_HPP_NOEXCEPT
-    {
-      dynamicPrimitiveTopologyUnrestricted = dynamicPrimitiveTopologyUnrestricted_;
-      return *this;
-    }
-#endif /*VULKAN_HPP_NO_SETTERS*/
-
     operator VkPhysicalDeviceExtendedDynamicState3PropertiesEXT const &() const VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<const VkPhysicalDeviceExtendedDynamicState3PropertiesEXT *>( this );
@@ -73727,6 +79582,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceExtendedDynamicState3PropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceExtendedDynamicState3PropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedDynamicState3PropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExtendedDynamicState3PropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedDynamicState3PropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExtendedDynamicState3PropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -73828,6 +79693,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceExtendedDynamicStateFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceExtendedDynamicStateFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedDynamicStateFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExtendedDynamicStateFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedDynamicStateFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExtendedDynamicStateFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -73932,6 +79807,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExtendedSparseAddressSpaceFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -74021,6 +79906,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExtendedSparseAddressSpacePropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -74147,6 +80042,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceExternalBufferInfo *>( this );
     }
 
+    operator VkPhysicalDeviceExternalBufferInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalBufferInfo *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalBufferInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalBufferInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -74256,6 +80161,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceExternalFenceInfo *>( this );
     }
 
+    operator VkPhysicalDeviceExternalFenceInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalFenceInfo *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalFenceInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalFenceInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -74361,6 +80276,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceExternalFormatResolveFeaturesANDROID *>( this );
     }
 
+    operator VkPhysicalDeviceExternalFormatResolveFeaturesANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalFormatResolveFeaturesANDROID *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalFormatResolveFeaturesANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalFormatResolveFeaturesANDROID *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -74453,6 +80378,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceExternalFormatResolvePropertiesANDROID &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceExternalFormatResolvePropertiesANDROID *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalFormatResolvePropertiesANDROID const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalFormatResolvePropertiesANDROID *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalFormatResolvePropertiesANDROID *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalFormatResolvePropertiesANDROID *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -74566,6 +80501,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceExternalImageFormatInfo *>( this );
     }
 
+    operator VkPhysicalDeviceExternalImageFormatInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalImageFormatInfo *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalImageFormatInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalImageFormatInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -74652,6 +80597,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceExternalMemoryHostPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceExternalMemoryHostPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalMemoryHostPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalMemoryHostPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalMemoryHostPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalMemoryHostPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -74752,6 +80707,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceExternalMemoryRDMAFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceExternalMemoryRDMAFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalMemoryRDMAFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalMemoryRDMAFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalMemoryRDMAFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalMemoryRDMAFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -74857,6 +80822,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceExternalMemoryScreenBufferFeaturesQNX *>( this );
     }
 
+    operator VkPhysicalDeviceExternalMemoryScreenBufferFeaturesQNX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalMemoryScreenBufferFeaturesQNX *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalMemoryScreenBufferFeaturesQNX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalMemoryScreenBufferFeaturesQNX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -74957,6 +80932,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceExternalSemaphoreInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceExternalSemaphoreInfo *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalSemaphoreInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalSemaphoreInfo *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalSemaphoreInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalSemaphoreInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -75069,6 +81054,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceFaultFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceFaultFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFaultFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFaultFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFaultFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -75166,6 +81161,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFeatures2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFeatures2 *>( this );
+    }
+
+    operator VkPhysicalDeviceFeatures2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFeatures2 *>( this );
+    }
+
+    operator VkPhysicalDeviceFeatures2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFeatures2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -75286,6 +81291,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFloatControlsProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFloatControlsProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceFloatControlsProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFloatControlsProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceFloatControlsProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFloatControlsProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -75453,6 +81468,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMap2FeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceFragmentDensityMap2FeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMap2FeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMap2FeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMap2FeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -75543,6 +81568,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFragmentDensityMap2PropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMap2PropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMap2PropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMap2PropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMap2PropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMap2PropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -75673,6 +81708,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceFragmentDensityMapFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -75783,6 +81828,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM *>( this );
     }
 
+    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -75868,6 +81923,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -75958,6 +82023,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFragmentDensityMapPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -76069,6 +82144,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentShaderBarycentricFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -76157,6 +82242,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentShaderBarycentricPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -76277,6 +82372,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentShaderInterlockFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -76406,6 +82511,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -76500,6 +82615,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -76620,6 +82745,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceFragmentShadingRateFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceFragmentShadingRateFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentShadingRateFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShadingRateFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentShadingRateFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -76712,6 +82847,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFragmentShadingRateKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentShadingRateKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShadingRateKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentShadingRateKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShadingRateKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentShadingRateKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -76833,6 +82978,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceFragmentShadingRatePropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceFragmentShadingRatePropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShadingRatePropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentShadingRatePropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentShadingRatePropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentShadingRatePropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -77001,6 +83156,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceFrameBoundaryFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceFrameBoundaryFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFrameBoundaryFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceFrameBoundaryFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFrameBoundaryFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -77099,6 +83264,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceGlobalPriorityQueryFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceGlobalPriorityQueryFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceGlobalPriorityQueryFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceGlobalPriorityQueryFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceGlobalPriorityQueryFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceGlobalPriorityQueryFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -77205,6 +83380,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -77285,28 +83470,6 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceGraphicsPipelineLibraryPropertiesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceGraphicsPipelineLibraryPropertiesEXT &
-      setGraphicsPipelineLibraryFastLinking( VULKAN_HPP_NAMESPACE::Bool32 graphicsPipelineLibraryFastLinking_ ) VULKAN_HPP_NOEXCEPT
-    {
-      graphicsPipelineLibraryFastLinking = graphicsPipelineLibraryFastLinking_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceGraphicsPipelineLibraryPropertiesEXT & setGraphicsPipelineLibraryIndependentInterpolationDecoration(
-      VULKAN_HPP_NAMESPACE::Bool32 graphicsPipelineLibraryIndependentInterpolationDecoration_ ) VULKAN_HPP_NOEXCEPT
-    {
-      graphicsPipelineLibraryIndependentInterpolationDecoration = graphicsPipelineLibraryIndependentInterpolationDecoration_;
-      return *this;
-    }
-#endif /*VULKAN_HPP_NO_SETTERS*/
-
     operator VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT const &() const VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<const VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT *>( this );
@@ -77315,6 +83478,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -77407,6 +83580,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceGroupProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceGroupProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceGroupProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceGroupProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceGroupProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceGroupProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -77530,6 +83713,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceHdrVividFeaturesHUAWEI *>( this );
     }
 
+    operator VkPhysicalDeviceHdrVividFeaturesHUAWEI const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceHdrVividFeaturesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceHdrVividFeaturesHUAWEI *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceHdrVividFeaturesHUAWEI *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -77626,6 +83819,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceHostImageCopyFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceHostImageCopyFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceHostImageCopyFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceHostImageCopyFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceHostImageCopyFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceHostImageCopyFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -77810,6 +84013,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceHostImageCopyProperties *>( this );
     }
 
+    operator VkPhysicalDeviceHostImageCopyProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceHostImageCopyProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceHostImageCopyProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceHostImageCopyProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -77925,6 +84138,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceHostQueryResetFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceHostQueryResetFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceHostQueryResetFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceHostQueryResetFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceHostQueryResetFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -78017,6 +84240,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceIDProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceIDProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceIDProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceIDProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceIDProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceIDProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -78140,6 +84373,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceImage2DViewOf3DFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceImage2DViewOf3DFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImage2DViewOf3DFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImage2DViewOf3DFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImage2DViewOf3DFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -78242,6 +84485,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceImageAlignmentControlFeaturesMESA *>( this );
     }
 
+    operator VkPhysicalDeviceImageAlignmentControlFeaturesMESA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageAlignmentControlFeaturesMESA *>( this );
+    }
+
+    operator VkPhysicalDeviceImageAlignmentControlFeaturesMESA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageAlignmentControlFeaturesMESA *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -78319,21 +84572,6 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceImageAlignmentControlPropertiesMESA & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceImageAlignmentControlPropertiesMESA &
-      setSupportedImageAlignmentMask( uint32_t supportedImageAlignmentMask_ ) VULKAN_HPP_NOEXCEPT
-    {
-      supportedImageAlignmentMask = supportedImageAlignmentMask_;
-      return *this;
-    }
-#endif /*VULKAN_HPP_NO_SETTERS*/
-
     operator VkPhysicalDeviceImageAlignmentControlPropertiesMESA const &() const VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<const VkPhysicalDeviceImageAlignmentControlPropertiesMESA *>( this );
@@ -78342,6 +84580,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceImageAlignmentControlPropertiesMESA &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceImageAlignmentControlPropertiesMESA *>( this );
+    }
+
+    operator VkPhysicalDeviceImageAlignmentControlPropertiesMESA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageAlignmentControlPropertiesMESA *>( this );
+    }
+
+    operator VkPhysicalDeviceImageAlignmentControlPropertiesMESA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageAlignmentControlPropertiesMESA *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -78443,6 +84691,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceImageCompressionControlFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceImageCompressionControlFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageCompressionControlFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageCompressionControlFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageCompressionControlFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageCompressionControlFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -78547,6 +84805,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageCompressionControlSwapchainFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -78697,6 +84965,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceImageDrmFormatModifierInfoEXT *>( this );
     }
 
+    operator VkPhysicalDeviceImageDrmFormatModifierInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageDrmFormatModifierInfoEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageDrmFormatModifierInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageDrmFormatModifierInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -78837,6 +85115,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceImageFormatInfo2 *>( this );
     }
 
+    operator VkPhysicalDeviceImageFormatInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageFormatInfo2 *>( this );
+    }
+
+    operator VkPhysicalDeviceImageFormatInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageFormatInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -78950,6 +85238,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceImageProcessing2FeaturesQCOM *>( this );
     }
 
+    operator VkPhysicalDeviceImageProcessing2FeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageProcessing2FeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceImageProcessing2FeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageProcessing2FeaturesQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -79033,6 +85331,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceImageProcessing2PropertiesQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceImageProcessing2PropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceImageProcessing2PropertiesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageProcessing2PropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceImageProcessing2PropertiesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageProcessing2PropertiesQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -79153,6 +85461,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceImageProcessingFeaturesQCOM *>( this );
     }
 
+    operator VkPhysicalDeviceImageProcessingFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageProcessingFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceImageProcessingFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageProcessingFeaturesQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -79249,6 +85567,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceImageProcessingPropertiesQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceImageProcessingPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceImageProcessingPropertiesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageProcessingPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceImageProcessingPropertiesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageProcessingPropertiesQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -79360,6 +85688,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceImageRobustnessFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceImageRobustnessFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageRobustnessFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceImageRobustnessFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageRobustnessFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -79460,6 +85798,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageSlicedViewOf3DFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -79563,6 +85911,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceImageViewImageFormatInfoEXT *>( this );
     }
 
+    operator VkPhysicalDeviceImageViewImageFormatInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageViewImageFormatInfoEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageViewImageFormatInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageViewImageFormatInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -79659,6 +86017,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceImageViewMinLodFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceImageViewMinLodFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageViewMinLodFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImageViewMinLodFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceImageViewMinLodFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImageViewMinLodFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -79761,6 +86129,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceImagelessFramebufferFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceImagelessFramebufferFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceImagelessFramebufferFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceImagelessFramebufferFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceImagelessFramebufferFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -79859,6 +86237,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceIndexTypeUint8Features &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceIndexTypeUint8Features *>( this );
+    }
+
+    operator VkPhysicalDeviceIndexTypeUint8Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceIndexTypeUint8Features *>( this );
+    }
+
+    operator VkPhysicalDeviceIndexTypeUint8Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceIndexTypeUint8Features *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -79963,6 +86351,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceInheritedViewportScissorFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceInheritedViewportScissorFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceInheritedViewportScissorFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceInheritedViewportScissorFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceInheritedViewportScissorFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceInheritedViewportScissorFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -80074,6 +86472,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceInlineUniformBlockFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceInlineUniformBlockFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceInlineUniformBlockFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceInlineUniformBlockFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceInlineUniformBlockFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -80169,6 +86577,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceInlineUniformBlockProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceInlineUniformBlockProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceInlineUniformBlockProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceInlineUniformBlockProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceInlineUniformBlockProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceInlineUniformBlockProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -80292,6 +86710,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceInvocationMaskFeaturesHUAWEI *>( this );
     }
 
+    operator VkPhysicalDeviceInvocationMaskFeaturesHUAWEI const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceInvocationMaskFeaturesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceInvocationMaskFeaturesHUAWEI *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceInvocationMaskFeaturesHUAWEI *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -80382,6 +86810,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceLayeredApiPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceLayeredApiPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceLayeredApiPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLayeredApiPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceLayeredApiPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLayeredApiPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -80517,6 +86955,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceLayeredApiPropertiesListKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceLayeredApiPropertiesListKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceLayeredApiPropertiesListKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLayeredApiPropertiesListKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceLayeredApiPropertiesListKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLayeredApiPropertiesListKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -80810,6 +87258,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceLimits &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceLimits *>( this );
+    }
+
+    operator VkPhysicalDeviceLimits const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLimits *>( this );
+    }
+
+    operator VkPhysicalDeviceLimits *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLimits *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -81268,6 +87726,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSparseProperties *>( this );
     }
 
+    operator VkPhysicalDeviceSparseProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSparseProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceSparseProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSparseProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -81368,6 +87836,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -81482,6 +87960,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceProperties2 *>( this );
     }
 
+    operator VkPhysicalDeviceProperties2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceProperties2 *>( this );
+    }
+
+    operator VkPhysicalDeviceProperties2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceProperties2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -81570,6 +88058,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceLayeredApiVulkanPropertiesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceLayeredApiVulkanPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLayeredApiVulkanPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceLayeredApiVulkanPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLayeredApiVulkanPropertiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -81654,6 +88152,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceLayeredDriverPropertiesMSFT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceLayeredDriverPropertiesMSFT *>( this );
+    }
+
+    operator VkPhysicalDeviceLayeredDriverPropertiesMSFT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLayeredDriverPropertiesMSFT *>( this );
+    }
+
+    operator VkPhysicalDeviceLayeredDriverPropertiesMSFT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLayeredDriverPropertiesMSFT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -81753,6 +88261,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceLegacyDitheringFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceLegacyDitheringFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceLegacyDitheringFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLegacyDitheringFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceLegacyDitheringFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLegacyDitheringFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -81856,6 +88374,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLegacyVertexAttributesFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -81933,21 +88461,6 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceLegacyVertexAttributesPropertiesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceLegacyVertexAttributesPropertiesEXT &
-      setNativeUnalignedPerformance( VULKAN_HPP_NAMESPACE::Bool32 nativeUnalignedPerformance_ ) VULKAN_HPP_NOEXCEPT
-    {
-      nativeUnalignedPerformance = nativeUnalignedPerformance_;
-      return *this;
-    }
-#endif /*VULKAN_HPP_NO_SETTERS*/
-
     operator VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT const &() const VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<const VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT *>( this );
@@ -81956,6 +88469,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLegacyVertexAttributesPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -82100,6 +88623,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceLineRasterizationFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceLineRasterizationFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLineRasterizationFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceLineRasterizationFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLineRasterizationFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -82199,6 +88732,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceLineRasterizationProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceLineRasterizationProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceLineRasterizationProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLineRasterizationProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceLineRasterizationProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLineRasterizationProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -82305,6 +88848,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceLinearColorAttachmentFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceLinearColorAttachmentFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceLinearColorAttachmentFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceLinearColorAttachmentFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceLinearColorAttachmentFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -82390,6 +88943,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMaintenance3Properties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMaintenance3Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance3Properties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance3Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance3Properties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance3Properties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -82494,6 +89057,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMaintenance4Features *>( this );
     }
 
+    operator VkPhysicalDeviceMaintenance4Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance4Features *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance4Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance4Features *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -82579,6 +89152,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMaintenance4Properties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMaintenance4Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance4Properties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance4Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance4Properties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance4Properties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -82681,6 +89264,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMaintenance5Features *>( this );
     }
 
+    operator VkPhysicalDeviceMaintenance5Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance5Features *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance5Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance5Features *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -82776,6 +89369,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMaintenance5Properties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMaintenance5Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance5Properties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance5Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance5Properties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance5Properties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -82902,6 +89505,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMaintenance6Features *>( this );
     }
 
+    operator VkPhysicalDeviceMaintenance6Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance6Features *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance6Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance6Features *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -82991,6 +89604,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMaintenance6Properties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMaintenance6Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance6Properties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance6Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance6Properties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance6Properties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -83101,6 +89724,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMaintenance7FeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceMaintenance7FeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance7FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance7FeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance7FeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -83198,6 +89831,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMaintenance7PropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMaintenance7PropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance7PropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance7PropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance7PropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance7PropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -83331,6 +89974,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMaintenance8FeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceMaintenance8FeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMaintenance8FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceMaintenance8FeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMaintenance8FeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -83448,6 +90101,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMapMemoryPlacedFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceMapMemoryPlacedFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMapMemoryPlacedFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMapMemoryPlacedFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMapMemoryPlacedFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -83540,6 +90203,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMapMemoryPlacedPropertiesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceMapMemoryPlacedPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMapMemoryPlacedPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMapMemoryPlacedPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMapMemoryPlacedPropertiesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -83625,6 +90298,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMemoryBudgetPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMemoryBudgetPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryBudgetPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMemoryBudgetPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryBudgetPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMemoryBudgetPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -83731,6 +90414,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMemoryDecompressionFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceMemoryDecompressionFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMemoryDecompressionFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryDecompressionFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMemoryDecompressionFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -83817,6 +90510,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMemoryDecompressionPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMemoryDecompressionPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryDecompressionPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMemoryDecompressionPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryDecompressionPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMemoryDecompressionPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -83920,6 +90623,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMemoryPriorityFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceMemoryPriorityFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMemoryPriorityFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryPriorityFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMemoryPriorityFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -84005,6 +90718,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMemoryProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMemoryProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMemoryProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMemoryProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -84105,6 +90828,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMemoryProperties2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMemoryProperties2 *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryProperties2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMemoryProperties2 *>( this );
+    }
+
+    operator VkPhysicalDeviceMemoryProperties2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMemoryProperties2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -84242,6 +90975,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMeshShaderFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceMeshShaderFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMeshShaderFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMeshShaderFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMeshShaderFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -84359,6 +91102,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMeshShaderFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMeshShaderFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceMeshShaderFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMeshShaderFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceMeshShaderFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMeshShaderFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -84499,6 +91252,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMeshShaderPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMeshShaderPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMeshShaderPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMeshShaderPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMeshShaderPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMeshShaderPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -84711,6 +91474,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMeshShaderPropertiesNV *>( this );
     }
 
+    operator VkPhysicalDeviceMeshShaderPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMeshShaderPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceMeshShaderPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMeshShaderPropertiesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -84856,6 +91629,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMultiDrawFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceMultiDrawFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMultiDrawFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiDrawFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMultiDrawFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -84938,6 +91721,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMultiDrawPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMultiDrawPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiDrawPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMultiDrawPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiDrawPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMultiDrawPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -85042,6 +91835,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -85161,6 +91964,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMultiviewFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceMultiviewFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMultiviewFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiviewFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMultiviewFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -85255,6 +92068,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMultiviewPerViewAttributesPropertiesNVX *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -85359,6 +92182,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM *>( this );
     }
 
+    operator VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMultiviewPerViewRenderAreasFeaturesQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -85461,6 +92294,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM *>( this );
     }
 
+    operator VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMultiviewPerViewViewportsFeaturesQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -85546,6 +92389,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMultiviewProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMultiviewProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiviewProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMultiviewProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceMultiviewProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMultiviewProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -85651,6 +92504,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceMutableDescriptorTypeFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -85773,6 +92636,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceNestedCommandBufferFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceNestedCommandBufferFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceNestedCommandBufferFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceNestedCommandBufferFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceNestedCommandBufferFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -85857,21 +92730,6 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceNestedCommandBufferPropertiesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceNestedCommandBufferPropertiesEXT &
-      setMaxCommandBufferNestingLevel( uint32_t maxCommandBufferNestingLevel_ ) VULKAN_HPP_NOEXCEPT
-    {
-      maxCommandBufferNestingLevel = maxCommandBufferNestingLevel_;
-      return *this;
-    }
-#endif /*VULKAN_HPP_NO_SETTERS*/
-
     operator VkPhysicalDeviceNestedCommandBufferPropertiesEXT const &() const VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<const VkPhysicalDeviceNestedCommandBufferPropertiesEXT *>( this );
@@ -85880,6 +92738,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceNestedCommandBufferPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceNestedCommandBufferPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceNestedCommandBufferPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceNestedCommandBufferPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceNestedCommandBufferPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceNestedCommandBufferPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -85980,6 +92848,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -86099,6 +92977,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceOpacityMicromapFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceOpacityMicromapFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceOpacityMicromapFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceOpacityMicromapFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceOpacityMicromapFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -86191,6 +93079,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceOpacityMicromapPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceOpacityMicromapPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceOpacityMicromapPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceOpacityMicromapPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceOpacityMicromapPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceOpacityMicromapPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -86291,6 +93189,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceOpticalFlowFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceOpticalFlowFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceOpticalFlowFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceOpticalFlowFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceOpticalFlowFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceOpticalFlowFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -86396,6 +93304,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceOpticalFlowPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceOpticalFlowPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceOpticalFlowPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceOpticalFlowPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceOpticalFlowPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceOpticalFlowPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -86524,6 +93442,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePCIBusInfoPropertiesEXT *>( this );
     }
 
+    operator VkPhysicalDevicePCIBusInfoPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePCIBusInfoPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePCIBusInfoPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePCIBusInfoPropertiesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -86630,6 +93558,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePageableDeviceLocalMemoryFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -86733,6 +93671,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePartitionedAccelerationStructureFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -86820,6 +93768,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePartitionedAccelerationStructurePropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -86930,6 +93888,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePerStageDescriptorSetFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePerStageDescriptorSetFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDevicePerStageDescriptorSetFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePerStageDescriptorSetFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDevicePerStageDescriptorSetFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePerStageDescriptorSetFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -87043,6 +94011,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePerformanceQueryFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDevicePerformanceQueryFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePerformanceQueryFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePerformanceQueryFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePerformanceQueryFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -87128,6 +94106,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePerformanceQueryPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePerformanceQueryPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePerformanceQueryPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePerformanceQueryPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePerformanceQueryPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePerformanceQueryPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -87229,6 +94217,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePipelineBinaryFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDevicePipelineBinaryFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelineBinaryFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineBinaryFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelineBinaryFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -87312,49 +94310,6 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePipelineBinaryPropertiesKHR & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePipelineBinaryPropertiesKHR &
-      setPipelineBinaryInternalCache( VULKAN_HPP_NAMESPACE::Bool32 pipelineBinaryInternalCache_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pipelineBinaryInternalCache = pipelineBinaryInternalCache_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePipelineBinaryPropertiesKHR &
-      setPipelineBinaryInternalCacheControl( VULKAN_HPP_NAMESPACE::Bool32 pipelineBinaryInternalCacheControl_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pipelineBinaryInternalCacheControl = pipelineBinaryInternalCacheControl_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePipelineBinaryPropertiesKHR &
-      setPipelineBinaryPrefersInternalCache( VULKAN_HPP_NAMESPACE::Bool32 pipelineBinaryPrefersInternalCache_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pipelineBinaryPrefersInternalCache = pipelineBinaryPrefersInternalCache_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePipelineBinaryPropertiesKHR &
-      setPipelineBinaryPrecompiledInternalCache( VULKAN_HPP_NAMESPACE::Bool32 pipelineBinaryPrecompiledInternalCache_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pipelineBinaryPrecompiledInternalCache = pipelineBinaryPrecompiledInternalCache_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePipelineBinaryPropertiesKHR &
-      setPipelineBinaryCompressedData( VULKAN_HPP_NAMESPACE::Bool32 pipelineBinaryCompressedData_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pipelineBinaryCompressedData = pipelineBinaryCompressedData_;
-      return *this;
-    }
-#endif /*VULKAN_HPP_NO_SETTERS*/
-
     operator VkPhysicalDevicePipelineBinaryPropertiesKHR const &() const VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<const VkPhysicalDevicePipelineBinaryPropertiesKHR *>( this );
@@ -87363,6 +94318,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePipelineBinaryPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePipelineBinaryPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineBinaryPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelineBinaryPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineBinaryPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelineBinaryPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -87487,6 +94452,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePipelineCreationCacheControlFeatures *>( this );
     }
 
+    operator VkPhysicalDevicePipelineCreationCacheControlFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelineCreationCacheControlFeatures *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineCreationCacheControlFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelineCreationCacheControlFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -87591,6 +94566,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelineExecutablePropertiesFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -87691,6 +94676,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelineLibraryGroupHandlesFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -87794,6 +94789,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePipelineOpacityMicromapFeaturesARM *>( this );
     }
 
+    operator VkPhysicalDevicePipelineOpacityMicromapFeaturesARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelineOpacityMicromapFeaturesARM *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineOpacityMicromapFeaturesARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelineOpacityMicromapFeaturesARM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -87892,6 +94897,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePipelinePropertiesFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePipelinePropertiesFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePipelinePropertiesFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelinePropertiesFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePipelinePropertiesFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelinePropertiesFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -87993,6 +95008,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePipelineProtectedAccessFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePipelineProtectedAccessFeatures *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineProtectedAccessFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelineProtectedAccessFeatures *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineProtectedAccessFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelineProtectedAccessFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -88097,6 +95122,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePipelineRobustnessFeatures *>( this );
     }
 
+    operator VkPhysicalDevicePipelineRobustnessFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelineRobustnessFeatures *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineRobustnessFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelineRobustnessFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -88192,6 +95227,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePipelineRobustnessProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePipelineRobustnessProperties *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineRobustnessProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePipelineRobustnessProperties *>( this );
+    }
+
+    operator VkPhysicalDevicePipelineRobustnessProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePipelineRobustnessProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -88293,6 +95338,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePointClippingProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePointClippingProperties *>( this );
+    }
+
+    operator VkPhysicalDevicePointClippingProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePointClippingProperties *>( this );
+    }
+
+    operator VkPhysicalDevicePointClippingProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePointClippingProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -88521,6 +95576,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePortabilitySubsetFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDevicePortabilitySubsetFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePortabilitySubsetFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePortabilitySubsetFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePortabilitySubsetFeaturesKHR *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -88652,21 +95717,6 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-#  if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePortabilitySubsetPropertiesKHR & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePortabilitySubsetPropertiesKHR &
-      setMinVertexInputBindingStrideAlignment( uint32_t minVertexInputBindingStrideAlignment_ ) VULKAN_HPP_NOEXCEPT
-    {
-      minVertexInputBindingStrideAlignment = minVertexInputBindingStrideAlignment_;
-      return *this;
-    }
-#  endif /*VULKAN_HPP_NO_SETTERS*/
-
     operator VkPhysicalDevicePortabilitySubsetPropertiesKHR const &() const VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<const VkPhysicalDevicePortabilitySubsetPropertiesKHR *>( this );
@@ -88675,6 +95725,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePortabilitySubsetPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePortabilitySubsetPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePortabilitySubsetPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePortabilitySubsetPropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePortabilitySubsetPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePortabilitySubsetPropertiesKHR *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -88777,6 +95837,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePresentBarrierFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDevicePresentBarrierFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePresentBarrierFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDevicePresentBarrierFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePresentBarrierFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -88873,6 +95943,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePresentIdFeaturesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePresentIdFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePresentIdFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePresentIdFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePresentIdFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePresentIdFeaturesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -88973,6 +96053,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePresentMeteringFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePresentMeteringFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDevicePresentMeteringFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePresentMeteringFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDevicePresentMeteringFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePresentMeteringFeaturesNV *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -89078,6 +96168,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePresentModeFifoLatestReadyFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -89174,6 +96274,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePresentWaitFeaturesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePresentWaitFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePresentWaitFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePresentWaitFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDevicePresentWaitFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePresentWaitFeaturesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -89285,6 +96395,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePrimitiveTopologyListRestartFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -89409,6 +96529,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePrimitivesGeneratedQueryFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -89515,6 +96645,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDevicePrivateDataFeatures *>( this );
     }
 
+    operator VkPhysicalDevicePrivateDataFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePrivateDataFeatures *>( this );
+    }
+
+    operator VkPhysicalDevicePrivateDataFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePrivateDataFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -89616,6 +96756,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceProtectedMemoryFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceProtectedMemoryFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceProtectedMemoryFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceProtectedMemoryFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceProtectedMemoryFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -89699,6 +96849,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceProtectedMemoryProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceProtectedMemoryProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceProtectedMemoryProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceProtectedMemoryProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceProtectedMemoryProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceProtectedMemoryProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -89810,6 +96970,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceProvokingVertexFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceProvokingVertexFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceProvokingVertexFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceProvokingVertexFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceProvokingVertexFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -89899,6 +97069,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceProvokingVertexPropertiesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceProvokingVertexPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceProvokingVertexPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceProvokingVertexPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceProvokingVertexPropertiesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -89983,6 +97163,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDevicePushDescriptorProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDevicePushDescriptorProperties *>( this );
+    }
+
+    operator VkPhysicalDevicePushDescriptorProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePushDescriptorProperties *>( this );
+    }
+
+    operator VkPhysicalDevicePushDescriptorProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePushDescriptorProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -90085,6 +97275,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRGBA10X6FormatsFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -90210,6 +97410,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRasterizationOrderAttachmentAccessFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -90321,6 +97531,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRawAccessChainsFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceRawAccessChainsFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRawAccessChainsFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRawAccessChainsFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRawAccessChainsFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -90417,6 +97637,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceRayQueryFeaturesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceRayQueryFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceRayQueryFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayQueryFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceRayQueryFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayQueryFeaturesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -90521,6 +97751,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -90608,6 +97848,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingInvocationReorderPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -90721,6 +97971,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingLinearSweptSpheresFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -90832,6 +98092,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingMaintenance1FeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -90941,6 +98211,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceRayTracingMotionBlurFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceRayTracingMotionBlurFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingMotionBlurFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingMotionBlurFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingMotionBlurFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingMotionBlurFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -91081,6 +98361,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRayTracingPipelineFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceRayTracingPipelineFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingPipelineFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingPipelineFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingPipelineFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -91199,6 +98489,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceRayTracingPipelinePropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceRayTracingPipelinePropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingPipelinePropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingPipelinePropertiesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingPipelinePropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingPipelinePropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -91331,6 +98631,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingPositionFetchFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -91428,6 +98738,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceRayTracingPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceRayTracingPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -91559,6 +98879,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRayTracingValidationFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceRayTracingValidationFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingValidationFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingValidationFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingValidationFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -91661,6 +98991,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG *>( this );
     }
 
+    operator VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG *>( this );
+    }
+
+    operator VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRelaxedLineRasterizationFeaturesIMG *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -91761,6 +99101,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRenderPassStripedFeaturesARM *>( this );
     }
 
+    operator VkPhysicalDeviceRenderPassStripedFeaturesARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRenderPassStripedFeaturesARM *>( this );
+    }
+
+    operator VkPhysicalDeviceRenderPassStripedFeaturesARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRenderPassStripedFeaturesARM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -91846,6 +99196,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceRenderPassStripedPropertiesARM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceRenderPassStripedPropertiesARM *>( this );
+    }
+
+    operator VkPhysicalDeviceRenderPassStripedPropertiesARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRenderPassStripedPropertiesARM *>( this );
+    }
+
+    operator VkPhysicalDeviceRenderPassStripedPropertiesARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRenderPassStripedPropertiesARM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -91950,6 +99310,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRepresentativeFragmentTestFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -92068,6 +99438,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceRobustness2FeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceRobustness2FeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRobustness2FeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceRobustness2FeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRobustness2FeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -92160,6 +99540,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceRobustness2PropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceRobustness2PropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceRobustness2PropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRobustness2PropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceRobustness2PropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRobustness2PropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -92255,6 +99645,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceSampleLocationsPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceSampleLocationsPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceSampleLocationsPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSampleLocationsPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceSampleLocationsPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSampleLocationsPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -92362,6 +99762,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSamplerFilterMinmaxProperties *>( this );
     }
 
+    operator VkPhysicalDeviceSamplerFilterMinmaxProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSamplerFilterMinmaxProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceSamplerFilterMinmaxProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSamplerFilterMinmaxProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -92466,6 +99876,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSamplerYcbcrConversionFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceSamplerYcbcrConversionFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSamplerYcbcrConversionFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceSamplerYcbcrConversionFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSamplerYcbcrConversionFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -92566,6 +99986,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceScalarBlockLayoutFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceScalarBlockLayoutFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceScalarBlockLayoutFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceScalarBlockLayoutFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceScalarBlockLayoutFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceScalarBlockLayoutFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -92670,6 +100100,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSchedulingControlsFeaturesARM *>( this );
     }
 
+    operator VkPhysicalDeviceSchedulingControlsFeaturesARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSchedulingControlsFeaturesARM *>( this );
+    }
+
+    operator VkPhysicalDeviceSchedulingControlsFeaturesARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSchedulingControlsFeaturesARM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -92755,6 +100195,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceSchedulingControlsPropertiesARM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceSchedulingControlsPropertiesARM *>( this );
+    }
+
+    operator VkPhysicalDeviceSchedulingControlsPropertiesARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSchedulingControlsPropertiesARM *>( this );
+    }
+
+    operator VkPhysicalDeviceSchedulingControlsPropertiesARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSchedulingControlsPropertiesARM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -92859,6 +100309,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSeparateDepthStencilLayoutsFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -92961,6 +100421,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderAtomicFloat16VectorFeaturesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -93160,6 +100630,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderAtomicFloat2FeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -93408,6 +100888,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderAtomicFloatFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceShaderAtomicFloatFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderAtomicFloatFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderAtomicFloatFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderAtomicFloatFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -93560,6 +101050,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderAtomicInt64Features *>( this );
     }
 
+    operator VkPhysicalDeviceShaderAtomicInt64Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderAtomicInt64Features *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderAtomicInt64Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderAtomicInt64Features *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -93672,6 +101172,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderClockFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceShaderClockFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderClockFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderClockFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderClockFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -93774,6 +101284,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM *>( this );
     }
 
+    operator VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderCoreBuiltinsFeaturesARM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -93864,6 +101384,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM *>( this );
     }
 
+    operator VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderCoreBuiltinsPropertiesARM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -93952,6 +101482,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderCoreProperties2AMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderCoreProperties2AMD *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderCoreProperties2AMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderCoreProperties2AMD *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderCoreProperties2AMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderCoreProperties2AMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -94065,6 +101605,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderCorePropertiesAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderCorePropertiesAMD *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderCorePropertiesAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderCorePropertiesAMD *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderCorePropertiesAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderCorePropertiesAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -94205,6 +101755,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderCorePropertiesARM *>( this );
     }
 
+    operator VkPhysicalDeviceShaderCorePropertiesARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderCorePropertiesARM *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderCorePropertiesARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderCorePropertiesARM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -94309,6 +101869,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderDemoteToHelperInvocationFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -94409,6 +101979,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderDrawParametersFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderDrawParametersFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderDrawParametersFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderDrawParametersFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderDrawParametersFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderDrawParametersFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -94514,6 +102094,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderEarlyAndLateFragmentTestsFeaturesAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -94625,6 +102215,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderEnqueueFeaturesAMDX *>( this );
     }
 
+    operator VkPhysicalDeviceShaderEnqueueFeaturesAMDX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderEnqueueFeaturesAMDX *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderEnqueueFeaturesAMDX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderEnqueueFeaturesAMDX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -94715,62 +102315,6 @@ namespace VULKAN_HPP_NAMESPACE
       return *this;
     }
 
-#  if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderEnqueuePropertiesAMDX & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderEnqueuePropertiesAMDX & setMaxExecutionGraphDepth( uint32_t maxExecutionGraphDepth_ ) VULKAN_HPP_NOEXCEPT
-    {
-      maxExecutionGraphDepth = maxExecutionGraphDepth_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderEnqueuePropertiesAMDX &
-      setMaxExecutionGraphShaderOutputNodes( uint32_t maxExecutionGraphShaderOutputNodes_ ) VULKAN_HPP_NOEXCEPT
-    {
-      maxExecutionGraphShaderOutputNodes = maxExecutionGraphShaderOutputNodes_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderEnqueuePropertiesAMDX &
-      setMaxExecutionGraphShaderPayloadSize( uint32_t maxExecutionGraphShaderPayloadSize_ ) VULKAN_HPP_NOEXCEPT
-    {
-      maxExecutionGraphShaderPayloadSize = maxExecutionGraphShaderPayloadSize_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderEnqueuePropertiesAMDX &
-      setMaxExecutionGraphShaderPayloadCount( uint32_t maxExecutionGraphShaderPayloadCount_ ) VULKAN_HPP_NOEXCEPT
-    {
-      maxExecutionGraphShaderPayloadCount = maxExecutionGraphShaderPayloadCount_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderEnqueuePropertiesAMDX &
-      setExecutionGraphDispatchAddressAlignment( uint32_t executionGraphDispatchAddressAlignment_ ) VULKAN_HPP_NOEXCEPT
-    {
-      executionGraphDispatchAddressAlignment = executionGraphDispatchAddressAlignment_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderEnqueuePropertiesAMDX &
-      setMaxExecutionGraphWorkgroupCount( std::array<uint32_t, 3> maxExecutionGraphWorkgroupCount_ ) VULKAN_HPP_NOEXCEPT
-    {
-      maxExecutionGraphWorkgroupCount = maxExecutionGraphWorkgroupCount_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderEnqueuePropertiesAMDX &
-      setMaxExecutionGraphWorkgroups( uint32_t maxExecutionGraphWorkgroups_ ) VULKAN_HPP_NOEXCEPT
-    {
-      maxExecutionGraphWorkgroups = maxExecutionGraphWorkgroups_;
-      return *this;
-    }
-#  endif /*VULKAN_HPP_NO_SETTERS*/
-
     operator VkPhysicalDeviceShaderEnqueuePropertiesAMDX const &() const VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<const VkPhysicalDeviceShaderEnqueuePropertiesAMDX *>( this );
@@ -94779,6 +102323,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderEnqueuePropertiesAMDX &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderEnqueuePropertiesAMDX *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderEnqueuePropertiesAMDX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderEnqueuePropertiesAMDX *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderEnqueuePropertiesAMDX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderEnqueuePropertiesAMDX *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -94909,6 +102463,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderExpectAssumeFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceShaderExpectAssumeFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderExpectAssumeFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderExpectAssumeFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderExpectAssumeFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -95018,6 +102582,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderFloat16Int8Features *>( this );
     }
 
+    operator VkPhysicalDeviceShaderFloat16Int8Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderFloat16Int8Features *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderFloat16Int8Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderFloat16Int8Features *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -95120,6 +102694,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderFloatControls2Features &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderFloatControls2Features *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderFloatControls2Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderFloatControls2Features *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderFloatControls2Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderFloatControls2Features *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -95234,6 +102818,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -95335,6 +102929,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderImageFootprintFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceShaderImageFootprintFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderImageFootprintFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderImageFootprintFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderImageFootprintFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -95434,6 +103038,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderIntegerDotProductFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderIntegerDotProductFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderIntegerDotProductFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderIntegerDotProductFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderIntegerDotProductFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderIntegerDotProductFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -95581,6 +103195,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderIntegerDotProductProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderIntegerDotProductProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderIntegerDotProductProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderIntegerDotProductProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderIntegerDotProductProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderIntegerDotProductProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -95814,6 +103438,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL *>( this );
     }
 
+    operator VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderIntegerFunctions2FeaturesINTEL *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -95914,6 +103548,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -96017,6 +103661,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderModuleIdentifierFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -96103,6 +103757,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderModuleIdentifierPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -96203,6 +103867,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderObjectFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceShaderObjectFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderObjectFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderObjectFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderObjectFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -96288,6 +103962,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderObjectPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderObjectPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderObjectPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderObjectPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderObjectPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderObjectPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -96391,6 +104075,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderQuadControlFeaturesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderQuadControlFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderQuadControlFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderQuadControlFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderQuadControlFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderQuadControlFeaturesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -96497,6 +104191,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderRelaxedExtendedInstructionFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -96599,6 +104303,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderReplicatedCompositesFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -96698,6 +104412,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderSMBuiltinsFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceShaderSMBuiltinsFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderSMBuiltinsFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderSMBuiltinsFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderSMBuiltinsFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -96782,6 +104506,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderSMBuiltinsPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderSMBuiltinsPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderSMBuiltinsPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderSMBuiltinsPropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderSMBuiltinsPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderSMBuiltinsPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -96885,6 +104619,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderSubgroupExtendedTypesFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -96998,6 +104742,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderSubgroupRotateFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceShaderSubgroupRotateFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderSubgroupRotateFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderSubgroupRotateFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderSubgroupRotateFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -97106,6 +104860,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderSubgroupUniformControlFlowFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -97205,6 +104969,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderTerminateInvocationFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderTerminateInvocationFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderTerminateInvocationFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderTerminateInvocationFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderTerminateInvocationFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderTerminateInvocationFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -97327,6 +105101,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShaderTileImageFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceShaderTileImageFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderTileImageFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderTileImageFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderTileImageFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -97422,6 +105206,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShaderTileImagePropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShaderTileImagePropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderTileImagePropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderTileImagePropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderTileImagePropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderTileImagePropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -97541,6 +105335,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceShadingRateImageFeaturesNV *>( this );
     }
 
+    operator VkPhysicalDeviceShadingRateImageFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShadingRateImageFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceShadingRateImageFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShadingRateImageFeaturesNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -97630,6 +105434,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceShadingRateImagePropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceShadingRateImagePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceShadingRateImagePropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShadingRateImagePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceShadingRateImagePropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShadingRateImagePropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -97767,6 +105581,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSparseImageFormatInfo2 *>( this );
     }
 
+    operator VkPhysicalDeviceSparseImageFormatInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSparseImageFormatInfo2 *>( this );
+    }
+
+    operator VkPhysicalDeviceSparseImageFormatInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSparseImageFormatInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -97869,6 +105693,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceSubgroupProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceSubgroupProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceSubgroupProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSubgroupProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceSubgroupProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSubgroupProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -97989,6 +105823,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSubgroupSizeControlFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceSubgroupSizeControlFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSubgroupSizeControlFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceSubgroupSizeControlFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSubgroupSizeControlFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -98082,6 +105926,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceSubgroupSizeControlProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceSubgroupSizeControlProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceSubgroupSizeControlProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSubgroupSizeControlProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceSubgroupSizeControlProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSubgroupSizeControlProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -98196,6 +106050,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSubpassMergeFeedbackFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -98295,6 +106159,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSubpassShadingFeaturesHUAWEI *>( this );
     }
 
+    operator VkPhysicalDeviceSubpassShadingFeaturesHUAWEI const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSubpassShadingFeaturesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceSubpassShadingFeaturesHUAWEI *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSubpassShadingFeaturesHUAWEI *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -98378,6 +106252,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceSubpassShadingPropertiesHUAWEI &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceSubpassShadingPropertiesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceSubpassShadingPropertiesHUAWEI const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSubpassShadingPropertiesHUAWEI *>( this );
+    }
+
+    operator VkPhysicalDeviceSubpassShadingPropertiesHUAWEI *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSubpassShadingPropertiesHUAWEI *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -98476,6 +106360,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceSurfaceInfo2KHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceSurfaceInfo2KHR *>( this );
+    }
+
+    operator VkPhysicalDeviceSurfaceInfo2KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSurfaceInfo2KHR *>( this );
+    }
+
+    operator VkPhysicalDeviceSurfaceInfo2KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSurfaceInfo2KHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -98579,6 +106473,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSwapchainMaintenance1FeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -98676,6 +106580,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceSynchronization2Features &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceSynchronization2Features *>( this );
+    }
+
+    operator VkPhysicalDeviceSynchronization2Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceSynchronization2Features *>( this );
+    }
+
+    operator VkPhysicalDeviceSynchronization2Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceSynchronization2Features *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -98781,6 +106695,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTexelBufferAlignmentFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -98870,6 +106794,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceTexelBufferAlignmentProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceTexelBufferAlignmentProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceTexelBufferAlignmentProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTexelBufferAlignmentProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceTexelBufferAlignmentProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTexelBufferAlignmentProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -98991,6 +106925,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceTextureCompressionASTCHDRFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceTextureCompressionASTCHDRFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTextureCompressionASTCHDRFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceTextureCompressionASTCHDRFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTextureCompressionASTCHDRFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -99090,6 +107034,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceTilePropertiesFeaturesQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceTilePropertiesFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTilePropertiesFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTilePropertiesFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTilePropertiesFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTilePropertiesFeaturesQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -99192,6 +107146,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceTimelineSemaphoreFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceTimelineSemaphoreFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTimelineSemaphoreFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceTimelineSemaphoreFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTimelineSemaphoreFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -99277,6 +107241,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceTimelineSemaphoreProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceTimelineSemaphoreProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceTimelineSemaphoreProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTimelineSemaphoreProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceTimelineSemaphoreProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTimelineSemaphoreProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -99371,6 +107345,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceToolProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceToolProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceToolProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceToolProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceToolProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceToolProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -99508,6 +107492,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceTransformFeedbackFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceTransformFeedbackFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTransformFeedbackFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceTransformFeedbackFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTransformFeedbackFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -99610,6 +107604,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceTransformFeedbackPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceTransformFeedbackPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceTransformFeedbackPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTransformFeedbackPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceTransformFeedbackPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTransformFeedbackPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -99753,6 +107757,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceUniformBufferStandardLayoutFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceUniformBufferStandardLayoutFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceUniformBufferStandardLayoutFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceUniformBufferStandardLayoutFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceUniformBufferStandardLayoutFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -99861,6 +107875,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceVariablePointersFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceVariablePointersFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceVariablePointersFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVariablePointersFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceVariablePointersFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVariablePointersFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -99978,6 +108002,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVertexAttributeDivisorFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceVertexAttributeDivisorFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVertexAttributeDivisorFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceVertexAttributeDivisorFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVertexAttributeDivisorFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -100071,6 +108105,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVertexAttributeDivisorProperties *>( this );
     }
 
+    operator VkPhysicalDeviceVertexAttributeDivisorProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVertexAttributeDivisorProperties *>( this );
+    }
+
+    operator VkPhysicalDeviceVertexAttributeDivisorProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVertexAttributeDivisorProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -100159,6 +108203,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVertexAttributeDivisorPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -100263,6 +108317,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVertexAttributeRobustnessFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -100364,6 +108428,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVertexInputDynamicStateFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -100461,6 +108535,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceVideoEncodeAV1FeaturesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceVideoEncodeAV1FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceVideoEncodeAV1FeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVideoEncodeAV1FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceVideoEncodeAV1FeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVideoEncodeAV1FeaturesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -100587,6 +108671,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoProfileInfoKHR *>( this );
     }
 
+    operator VkVideoProfileInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoProfileInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoProfileInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -100704,6 +108798,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR *>( this );
     }
 
+    operator VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVideoEncodeQualityLevelInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -100807,6 +108911,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVideoEncodeQuantizationMapFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -100904,6 +109018,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceVideoFormatInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceVideoFormatInfoKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceVideoFormatInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVideoFormatInfoKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceVideoFormatInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVideoFormatInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -101006,6 +109130,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVideoMaintenance1FeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceVideoMaintenance1FeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVideoMaintenance1FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceVideoMaintenance1FeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVideoMaintenance1FeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -101104,6 +109238,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceVideoMaintenance2FeaturesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceVideoMaintenance2FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceVideoMaintenance2FeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVideoMaintenance2FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceVideoMaintenance2FeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVideoMaintenance2FeaturesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -101299,6 +109443,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVulkan11Features *>( this );
     }
 
+    operator VkPhysicalDeviceVulkan11Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVulkan11Features *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan11Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVulkan11Features *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -101454,6 +109608,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceVulkan11Properties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceVulkan11Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan11Properties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVulkan11Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan11Properties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVulkan11Properties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -102010,6 +110174,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVulkan12Features *>( this );
     }
 
+    operator VkPhysicalDeviceVulkan12Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVulkan12Features *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan12Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVulkan12Features *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -102372,6 +110546,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceVulkan12Properties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceVulkan12Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan12Properties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVulkan12Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan12Properties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVulkan12Properties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -102897,6 +111081,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVulkan13Features *>( this );
     }
 
+    operator VkPhysicalDeviceVulkan13Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVulkan13Features *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan13Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVulkan13Features *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -103123,6 +111317,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceVulkan13Properties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceVulkan13Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan13Properties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVulkan13Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan13Properties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVulkan13Properties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -103575,6 +111779,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVulkan14Features *>( this );
     }
 
+    operator VkPhysicalDeviceVulkan14Features const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVulkan14Features *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan14Features *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVulkan14Features *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -103783,6 +111997,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceVulkan14Properties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceVulkan14Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan14Properties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVulkan14Properties *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkan14Properties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVulkan14Properties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -104000,6 +112224,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceVulkanMemoryModelFeatures *>( this );
     }
 
+    operator VkPhysicalDeviceVulkanMemoryModelFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceVulkanMemoryModelFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceVulkanMemoryModelFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceVulkanMemoryModelFeatures *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -104141,6 +112375,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR *>( this );
     }
 
+    operator VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceWorkgroupMemoryExplicitLayoutFeaturesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -104258,6 +112502,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceYcbcr2Plane444FormatsFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -104354,6 +112608,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceYcbcrDegammaFeaturesQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceYcbcrDegammaFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceYcbcrDegammaFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceYcbcrDegammaFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceYcbcrDegammaFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceYcbcrDegammaFeaturesQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -104456,6 +112720,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPhysicalDeviceYcbcrImageArraysFeaturesEXT *>( this );
     }
 
+    operator VkPhysicalDeviceYcbcrImageArraysFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceYcbcrImageArraysFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceYcbcrImageArraysFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceYcbcrImageArraysFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -104556,6 +112830,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures *>( this );
+    }
+
+    operator VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -104664,6 +112948,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineBinaryKeyKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineBinaryKeyKHR *>( this );
+    }
+
+    operator VkPipelineBinaryKeyKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineBinaryKeyKHR *>( this );
+    }
+
+    operator VkPipelineBinaryKeyKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineBinaryKeyKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -104779,6 +113073,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineBinaryDataKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineBinaryDataKHR *>( this );
+    }
+
+    operator VkPipelineBinaryDataKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineBinaryDataKHR *>( this );
+    }
+
+    operator VkPipelineBinaryDataKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineBinaryDataKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -104919,6 +113223,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineBinaryKeysAndDataKHR *>( this );
     }
 
+    operator VkPipelineBinaryKeysAndDataKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineBinaryKeysAndDataKHR *>( this );
+    }
+
+    operator VkPipelineBinaryKeysAndDataKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineBinaryKeysAndDataKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -104998,6 +113312,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineCreateInfoKHR *>( this );
+    }
+
+    operator VkPipelineCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCreateInfoKHR *>( this );
+    }
+
+    operator VkPipelineCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -105115,6 +113439,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineBinaryCreateInfoKHR *>( this );
     }
 
+    operator VkPipelineBinaryCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineBinaryCreateInfoKHR *>( this );
+    }
+
+    operator VkPipelineBinaryCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineBinaryCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -105217,6 +113551,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineBinaryDataInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineBinaryDataInfoKHR *>( this );
+    }
+
+    operator VkPipelineBinaryDataInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineBinaryDataInfoKHR *>( this );
+    }
+
+    operator VkPipelineBinaryDataInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineBinaryDataInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -105344,6 +113688,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineBinaryHandlesInfoKHR *>( this );
     }
 
+    operator VkPipelineBinaryHandlesInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineBinaryHandlesInfoKHR *>( this );
+    }
+
+    operator VkPipelineBinaryHandlesInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineBinaryHandlesInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -105469,6 +113823,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineBinaryInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineBinaryInfoKHR *>( this );
+    }
+
+    operator VkPipelineBinaryInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineBinaryInfoKHR *>( this );
+    }
+
+    operator VkPipelineBinaryInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineBinaryInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -105606,6 +113970,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineCacheCreateInfo *>( this );
     }
 
+    operator VkPipelineCacheCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCacheCreateInfo *>( this );
+    }
+
+    operator VkPipelineCacheCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCacheCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -105735,6 +114109,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineCacheHeaderVersionOne *>( this );
     }
 
+    operator VkPipelineCacheHeaderVersionOne const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCacheHeaderVersionOne *>( this );
+    }
+
+    operator VkPipelineCacheHeaderVersionOne *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCacheHeaderVersionOne *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -105853,6 +114237,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineColorBlendAdvancedStateCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineColorBlendAdvancedStateCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineColorBlendAdvancedStateCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineColorBlendAdvancedStateCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineColorBlendAdvancedStateCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineColorBlendAdvancedStateCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -105988,6 +114382,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineColorWriteCreateInfoEXT *>( this );
     }
 
+    operator VkPipelineColorWriteCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineColorWriteCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineColorWriteCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineColorWriteCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -106087,6 +114491,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineCompilerControlCreateInfoAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineCompilerControlCreateInfoAMD *>( this );
+    }
+
+    operator VkPipelineCompilerControlCreateInfoAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCompilerControlCreateInfoAMD *>( this );
+    }
+
+    operator VkPipelineCompilerControlCreateInfoAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCompilerControlCreateInfoAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -106252,6 +114666,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineCoverageModulationStateCreateInfoNV *>( this );
     }
 
+    operator VkPipelineCoverageModulationStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCoverageModulationStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineCoverageModulationStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCoverageModulationStateCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -106372,6 +114796,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineCoverageReductionStateCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineCoverageReductionStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineCoverageReductionStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCoverageReductionStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineCoverageReductionStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCoverageReductionStateCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -106495,6 +114929,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineCoverageToColorStateCreateInfoNV *>( this );
     }
 
+    operator VkPipelineCoverageToColorStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCoverageToColorStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineCoverageToColorStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCoverageToColorStateCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -106601,6 +115045,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineCreateFlags2CreateInfo *>( this );
     }
 
+    operator VkPipelineCreateFlags2CreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCreateFlags2CreateInfo *>( this );
+    }
+
+    operator VkPipelineCreateFlags2CreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCreateFlags2CreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -106682,6 +115136,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineCreationFeedback &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineCreationFeedback *>( this );
+    }
+
+    operator VkPipelineCreationFeedback const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCreationFeedback *>( this );
+    }
+
+    operator VkPipelineCreationFeedback *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCreationFeedback *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -106819,6 +115283,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineCreationFeedbackCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineCreationFeedbackCreateInfo *>( this );
+    }
+
+    operator VkPipelineCreationFeedbackCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCreationFeedbackCreateInfo *>( this );
+    }
+
+    operator VkPipelineCreationFeedbackCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCreationFeedbackCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -106982,6 +115456,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineDiscardRectangleStateCreateInfoEXT *>( this );
     }
 
+    operator VkPipelineDiscardRectangleStateCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineDiscardRectangleStateCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineDiscardRectangleStateCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineDiscardRectangleStateCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -107097,6 +115581,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineExecutableInfoKHR *>( this );
     }
 
+    operator VkPipelineExecutableInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineExecutableInfoKHR *>( this );
+    }
+
+    operator VkPipelineExecutableInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineExecutableInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -107190,6 +115684,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineExecutableInternalRepresentationKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineExecutableInternalRepresentationKHR *>( this );
+    }
+
+    operator VkPipelineExecutableInternalRepresentationKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineExecutableInternalRepresentationKHR *>( this );
+    }
+
+    operator VkPipelineExecutableInternalRepresentationKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineExecutableInternalRepresentationKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -107306,6 +115810,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineExecutablePropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineExecutablePropertiesKHR *>( this );
+    }
+
+    operator VkPipelineExecutablePropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineExecutablePropertiesKHR *>( this );
+    }
+
+    operator VkPipelineExecutablePropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineExecutablePropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -107484,6 +115998,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineExecutableStatisticKHR *>( this );
     }
 
+    operator VkPipelineExecutableStatisticKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineExecutableStatisticKHR *>( this );
+    }
+
+    operator VkPipelineExecutableStatisticKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineExecutableStatisticKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -107593,6 +116117,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineFragmentShadingRateEnumStateCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineFragmentShadingRateEnumStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineFragmentShadingRateEnumStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineFragmentShadingRateEnumStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineFragmentShadingRateEnumStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineFragmentShadingRateEnumStateCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -107714,6 +116248,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineFragmentShadingRateStateCreateInfoKHR *>( this );
     }
 
+    operator VkPipelineFragmentShadingRateStateCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineFragmentShadingRateStateCreateInfoKHR *>( this );
+    }
+
+    operator VkPipelineFragmentShadingRateStateCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineFragmentShadingRateStateCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -107827,6 +116371,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineIndirectDeviceAddressInfoNV *>( this );
     }
 
+    operator VkPipelineIndirectDeviceAddressInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineIndirectDeviceAddressInfoNV *>( this );
+    }
+
+    operator VkPipelineIndirectDeviceAddressInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineIndirectDeviceAddressInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -107923,6 +116477,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineInfoKHR *>( this );
+    }
+
+    operator VkPipelineInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineInfoKHR *>( this );
+    }
+
+    operator VkPipelineInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -108093,6 +116657,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineLayoutCreateInfo *>( this );
     }
 
+    operator VkPipelineLayoutCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineLayoutCreateInfo *>( this );
+    }
+
+    operator VkPipelineLayoutCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineLayoutCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -108188,6 +116762,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelinePropertiesIdentifierEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelinePropertiesIdentifierEXT *>( this );
+    }
+
+    operator VkPipelinePropertiesIdentifierEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelinePropertiesIdentifierEXT *>( this );
+    }
+
+    operator VkPipelinePropertiesIdentifierEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelinePropertiesIdentifierEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -108311,6 +116895,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineRasterizationConservativeStateCreateInfoEXT *>( this );
     }
 
+    operator VkPipelineRasterizationConservativeStateCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRasterizationConservativeStateCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineRasterizationConservativeStateCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRasterizationConservativeStateCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -108427,6 +117021,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineRasterizationDepthClipStateCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineRasterizationDepthClipStateCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineRasterizationDepthClipStateCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRasterizationDepthClipStateCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineRasterizationDepthClipStateCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRasterizationDepthClipStateCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -108559,6 +117163,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineRasterizationLineStateCreateInfo *>( this );
     }
 
+    operator VkPipelineRasterizationLineStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRasterizationLineStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineRasterizationLineStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRasterizationLineStateCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -108676,6 +117290,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineRasterizationProvokingVertexStateCreateInfoEXT *>( this );
     }
 
+    operator VkPipelineRasterizationProvokingVertexStateCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRasterizationProvokingVertexStateCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineRasterizationProvokingVertexStateCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRasterizationProvokingVertexStateCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -108776,6 +117400,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineRasterizationStateRasterizationOrderAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineRasterizationStateRasterizationOrderAMD *>( this );
+    }
+
+    operator VkPipelineRasterizationStateRasterizationOrderAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRasterizationStateRasterizationOrderAMD *>( this );
+    }
+
+    operator VkPipelineRasterizationStateRasterizationOrderAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRasterizationStateRasterizationOrderAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -108885,6 +117519,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineRasterizationStateStreamCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineRasterizationStateStreamCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineRasterizationStateStreamCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRasterizationStateStreamCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineRasterizationStateStreamCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRasterizationStateStreamCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -109049,6 +117693,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineRenderingCreateInfo *>( this );
     }
 
+    operator VkPipelineRenderingCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRenderingCreateInfo *>( this );
+    }
+
+    operator VkPipelineRenderingCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRenderingCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -109163,6 +117817,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineRepresentativeFragmentTestStateCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineRepresentativeFragmentTestStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineRepresentativeFragmentTestStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRepresentativeFragmentTestStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineRepresentativeFragmentTestStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRepresentativeFragmentTestStateCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -109291,6 +117955,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineRobustnessCreateInfo *>( this );
     }
 
+    operator VkPipelineRobustnessCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineRobustnessCreateInfo *>( this );
+    }
+
+    operator VkPipelineRobustnessCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineRobustnessCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -109409,6 +118083,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineSampleLocationsStateCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineSampleLocationsStateCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineSampleLocationsStateCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineSampleLocationsStateCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineSampleLocationsStateCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineSampleLocationsStateCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -109542,6 +118226,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineShaderStageModuleIdentifierCreateInfoEXT *>( this );
     }
 
+    operator VkPipelineShaderStageModuleIdentifierCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineShaderStageModuleIdentifierCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineShaderStageModuleIdentifierCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineShaderStageModuleIdentifierCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -109650,6 +118344,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineShaderStageNodeCreateInfoAMDX *>( this );
     }
 
+    operator VkPipelineShaderStageNodeCreateInfoAMDX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineShaderStageNodeCreateInfoAMDX *>( this );
+    }
+
+    operator VkPipelineShaderStageNodeCreateInfoAMDX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineShaderStageNodeCreateInfoAMDX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -109745,6 +118449,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineShaderStageRequiredSubgroupSizeCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineShaderStageRequiredSubgroupSizeCreateInfo *>( this );
+    }
+
+    operator VkPipelineShaderStageRequiredSubgroupSizeCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineShaderStageRequiredSubgroupSizeCreateInfo *>( this );
+    }
+
+    operator VkPipelineShaderStageRequiredSubgroupSizeCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineShaderStageRequiredSubgroupSizeCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -109852,6 +118566,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineTessellationDomainOriginStateCreateInfo *>( this );
     }
 
+    operator VkPipelineTessellationDomainOriginStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineTessellationDomainOriginStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineTessellationDomainOriginStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineTessellationDomainOriginStateCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -109947,6 +118671,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVertexInputBindingDivisorDescription &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVertexInputBindingDivisorDescription *>( this );
+    }
+
+    operator VkVertexInputBindingDivisorDescription const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVertexInputBindingDivisorDescription *>( this );
+    }
+
+    operator VkVertexInputBindingDivisorDescription *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVertexInputBindingDivisorDescription *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -110074,6 +118808,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineVertexInputDivisorStateCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineVertexInputDivisorStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineVertexInputDivisorStateCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineVertexInputDivisorStateCreateInfo *>( this );
+    }
+
+    operator VkPipelineVertexInputDivisorStateCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineVertexInputDivisorStateCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -110228,6 +118972,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineViewportCoarseSampleOrderStateCreateInfoNV *>( this );
     }
 
+    operator VkPipelineViewportCoarseSampleOrderStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineViewportCoarseSampleOrderStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineViewportCoarseSampleOrderStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineViewportCoarseSampleOrderStateCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -110346,6 +119100,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineViewportDepthClampControlCreateInfoEXT *>( this );
     }
 
+    operator VkPipelineViewportDepthClampControlCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineViewportDepthClampControlCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineViewportDepthClampControlCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineViewportDepthClampControlCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -110449,6 +119213,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPipelineViewportDepthClipControlCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPipelineViewportDepthClipControlCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineViewportDepthClipControlCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineViewportDepthClipControlCreateInfoEXT *>( this );
+    }
+
+    operator VkPipelineViewportDepthClipControlCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineViewportDepthClipControlCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -110579,6 +119353,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineViewportExclusiveScissorStateCreateInfoNV *>( this );
     }
 
+    operator VkPipelineViewportExclusiveScissorStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineViewportExclusiveScissorStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineViewportExclusiveScissorStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineViewportExclusiveScissorStateCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -110695,6 +119479,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkShadingRatePaletteNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkShadingRatePaletteNV *>( this );
+    }
+
+    operator VkShadingRatePaletteNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkShadingRatePaletteNV *>( this );
+    }
+
+    operator VkShadingRatePaletteNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkShadingRatePaletteNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -110832,6 +119626,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineViewportShadingRateImageStateCreateInfoNV *>( this );
     }
 
+    operator VkPipelineViewportShadingRateImageStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineViewportShadingRateImageStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineViewportShadingRateImageStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineViewportShadingRateImageStateCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -110946,6 +119750,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkViewportSwizzleNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkViewportSwizzleNV *>( this );
+    }
+
+    operator VkViewportSwizzleNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkViewportSwizzleNV *>( this );
+    }
+
+    operator VkViewportSwizzleNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkViewportSwizzleNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -111083,6 +119897,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineViewportSwizzleStateCreateInfoNV *>( this );
     }
 
+    operator VkPipelineViewportSwizzleStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineViewportSwizzleStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineViewportSwizzleStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineViewportSwizzleStateCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -111179,6 +120003,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkViewportWScalingNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkViewportWScalingNV *>( this );
+    }
+
+    operator VkViewportWScalingNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkViewportWScalingNV *>( this );
+    }
+
+    operator VkViewportWScalingNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkViewportWScalingNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -111314,6 +120148,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPipelineViewportWScalingStateCreateInfoNV *>( this );
     }
 
+    operator VkPipelineViewportWScalingStateCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineViewportWScalingStateCreateInfoNV *>( this );
+    }
+
+    operator VkPipelineViewportWScalingStateCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineViewportWScalingStateCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -111417,6 +120261,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPresentFrameTokenGGP &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPresentFrameTokenGGP *>( this );
+    }
+
+    operator VkPresentFrameTokenGGP const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentFrameTokenGGP *>( this );
+    }
+
+    operator VkPresentFrameTokenGGP *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentFrameTokenGGP *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -111541,6 +120395,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPresentIdKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPresentIdKHR *>( this );
+    }
+
+    operator VkPresentIdKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentIdKHR *>( this );
+    }
+
+    operator VkPresentIdKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentIdKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -111752,6 +120616,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPresentInfoKHR *>( this );
     }
 
+    operator VkPresentInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentInfoKHR *>( this );
+    }
+
+    operator VkPresentInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -111867,6 +120741,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRectLayerKHR *>( this );
     }
 
+    operator VkRectLayerKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRectLayerKHR *>( this );
+    }
+
+    operator VkRectLayerKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRectLayerKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -111967,6 +120851,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPresentRegionKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPresentRegionKHR *>( this );
+    }
+
+    operator VkPresentRegionKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentRegionKHR *>( this );
+    }
+
+    operator VkPresentRegionKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentRegionKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -112083,6 +120977,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPresentRegionsKHR *>( this );
     }
 
+    operator VkPresentRegionsKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentRegionsKHR *>( this );
+    }
+
+    operator VkPresentRegionsKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentRegionsKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -112173,6 +121077,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPresentTimeGOOGLE &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPresentTimeGOOGLE *>( this );
+    }
+
+    operator VkPresentTimeGOOGLE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentTimeGOOGLE *>( this );
+    }
+
+    operator VkPresentTimeGOOGLE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentTimeGOOGLE *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -112292,6 +121206,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPresentTimesInfoGOOGLE *>( this );
     }
 
+    operator VkPresentTimesInfoGOOGLE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentTimesInfoGOOGLE *>( this );
+    }
+
+    operator VkPresentTimesInfoGOOGLE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentTimesInfoGOOGLE *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -112391,6 +121315,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPrivateDataSlotCreateInfo *>( this );
     }
 
+    operator VkPrivateDataSlotCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPrivateDataSlotCreateInfo *>( this );
+    }
+
+    operator VkPrivateDataSlotCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPrivateDataSlotCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -112487,6 +121421,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkProtectedSubmitInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkProtectedSubmitInfo *>( this );
+    }
+
+    operator VkProtectedSubmitInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkProtectedSubmitInfo *>( this );
+    }
+
+    operator VkProtectedSubmitInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkProtectedSubmitInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -112641,6 +121585,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkPushConstantsInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkPushConstantsInfo *>( this );
+    }
+
+    operator VkPushConstantsInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPushConstantsInfo *>( this );
+    }
+
+    operator VkPushConstantsInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPushConstantsInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -112870,6 +121824,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkWriteDescriptorSet *>( this );
     }
 
+    operator VkWriteDescriptorSet const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWriteDescriptorSet *>( this );
+    }
+
+    operator VkWriteDescriptorSet *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWriteDescriptorSet *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -113045,6 +122009,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPushDescriptorSetInfo *>( this );
     }
 
+    operator VkPushDescriptorSetInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPushDescriptorSetInfo *>( this );
+    }
+
+    operator VkPushDescriptorSetInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPushDescriptorSetInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -113182,6 +122156,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkPushDescriptorSetWithTemplateInfo *>( this );
     }
 
+    operator VkPushDescriptorSetWithTemplateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPushDescriptorSetWithTemplateInfo *>( this );
+    }
+
+    operator VkPushDescriptorSetWithTemplateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPushDescriptorSetWithTemplateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -113288,6 +122272,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkQueryLowLatencySupportNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkQueryLowLatencySupportNV *>( this );
+    }
+
+    operator VkQueryLowLatencySupportNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueryLowLatencySupportNV *>( this );
+    }
+
+    operator VkQueryLowLatencySupportNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueryLowLatencySupportNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -113410,6 +122404,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkQueryPoolCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkQueryPoolCreateInfo *>( this );
+    }
+
+    operator VkQueryPoolCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueryPoolCreateInfo *>( this );
+    }
+
+    operator VkQueryPoolCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueryPoolCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -113558,6 +122562,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkQueryPoolPerformanceCreateInfoKHR *>( this );
     }
 
+    operator VkQueryPoolPerformanceCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueryPoolPerformanceCreateInfoKHR *>( this );
+    }
+
+    operator VkQueryPoolPerformanceCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueryPoolPerformanceCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -113662,6 +122676,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkQueryPoolPerformanceQueryCreateInfoINTEL *>( this );
     }
 
+    operator VkQueryPoolPerformanceQueryCreateInfoINTEL const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueryPoolPerformanceQueryCreateInfoINTEL *>( this );
+    }
+
+    operator VkQueryPoolPerformanceQueryCreateInfoINTEL *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueryPoolPerformanceQueryCreateInfoINTEL *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -113764,6 +122788,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkQueryPoolVideoEncodeFeedbackCreateInfoKHR *>( this );
     }
 
+    operator VkQueryPoolVideoEncodeFeedbackCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueryPoolVideoEncodeFeedbackCreateInfoKHR *>( this );
+    }
+
+    operator VkQueryPoolVideoEncodeFeedbackCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueryPoolVideoEncodeFeedbackCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -113849,6 +122883,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkQueueFamilyCheckpointProperties2NV *>( this );
     }
 
+    operator VkQueueFamilyCheckpointProperties2NV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueueFamilyCheckpointProperties2NV *>( this );
+    }
+
+    operator VkQueueFamilyCheckpointProperties2NV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueueFamilyCheckpointProperties2NV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -113932,6 +122976,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkQueueFamilyCheckpointPropertiesNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkQueueFamilyCheckpointPropertiesNV *>( this );
+    }
+
+    operator VkQueueFamilyCheckpointPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueueFamilyCheckpointPropertiesNV *>( this );
+    }
+
+    operator VkQueueFamilyCheckpointPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueueFamilyCheckpointPropertiesNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -114035,6 +123089,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkQueueFamilyGlobalPriorityProperties &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkQueueFamilyGlobalPriorityProperties *>( this );
+    }
+
+    operator VkQueueFamilyGlobalPriorityProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueueFamilyGlobalPriorityProperties *>( this );
+    }
+
+    operator VkQueueFamilyGlobalPriorityProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueueFamilyGlobalPriorityProperties *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -114141,6 +123205,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkQueueFamilyProperties *>( this );
     }
 
+    operator VkQueueFamilyProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueueFamilyProperties *>( this );
+    }
+
+    operator VkQueueFamilyProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueueFamilyProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -114219,6 +123293,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkQueueFamilyProperties2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkQueueFamilyProperties2 *>( this );
+    }
+
+    operator VkQueueFamilyProperties2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueueFamilyProperties2 *>( this );
+    }
+
+    operator VkQueueFamilyProperties2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueueFamilyProperties2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -114308,6 +123392,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkQueueFamilyQueryResultStatusPropertiesKHR *>( this );
     }
 
+    operator VkQueueFamilyQueryResultStatusPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueueFamilyQueryResultStatusPropertiesKHR *>( this );
+    }
+
+    operator VkQueueFamilyQueryResultStatusPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueueFamilyQueryResultStatusPropertiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -114391,6 +123485,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkQueueFamilyVideoPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkQueueFamilyVideoPropertiesKHR *>( this );
+    }
+
+    operator VkQueueFamilyVideoPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkQueueFamilyVideoPropertiesKHR *>( this );
+    }
+
+    operator VkQueueFamilyVideoPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkQueueFamilyVideoPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -114495,6 +123599,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV *>( this );
+    }
+
+    operator VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV *>( this );
+    }
+
+    operator VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRayTracingPipelineClusterAccelerationStructureCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -114638,6 +123752,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRayTracingShaderGroupCreateInfoKHR *>( this );
     }
 
+    operator VkRayTracingShaderGroupCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRayTracingShaderGroupCreateInfoKHR *>( this );
+    }
+
+    operator VkRayTracingShaderGroupCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRayTracingShaderGroupCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -114758,6 +123882,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRayTracingPipelineInterfaceCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRayTracingPipelineInterfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkRayTracingPipelineInterfaceCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRayTracingPipelineInterfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkRayTracingPipelineInterfaceCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRayTracingPipelineInterfaceCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -115004,6 +124138,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRayTracingPipelineCreateInfoKHR *>( this );
     }
 
+    operator VkRayTracingPipelineCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRayTracingPipelineCreateInfoKHR *>( this );
+    }
+
+    operator VkRayTracingPipelineCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRayTracingPipelineCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -115174,6 +124318,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRayTracingShaderGroupCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRayTracingShaderGroupCreateInfoNV *>( this );
+    }
+
+    operator VkRayTracingShaderGroupCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRayTracingShaderGroupCreateInfoNV *>( this );
+    }
+
+    operator VkRayTracingShaderGroupCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRayTracingShaderGroupCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -115396,6 +124550,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRayTracingPipelineCreateInfoNV *>( this );
     }
 
+    operator VkRayTracingPipelineCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRayTracingPipelineCreateInfoNV *>( this );
+    }
+
+    operator VkRayTracingPipelineCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRayTracingPipelineCreateInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -115492,6 +124656,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRefreshCycleDurationGOOGLE *>( this );
     }
 
+    operator VkRefreshCycleDurationGOOGLE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRefreshCycleDurationGOOGLE *>( this );
+    }
+
+    operator VkRefreshCycleDurationGOOGLE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRefreshCycleDurationGOOGLE *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -115580,6 +124754,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkReleaseCapturedPipelineDataInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkReleaseCapturedPipelineDataInfoKHR *>( this );
+    }
+
+    operator VkReleaseCapturedPipelineDataInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkReleaseCapturedPipelineDataInfoKHR *>( this );
+    }
+
+    operator VkReleaseCapturedPipelineDataInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkReleaseCapturedPipelineDataInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -115715,6 +124899,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkReleaseSwapchainImagesInfoEXT *>( this );
     }
 
+    operator VkReleaseSwapchainImagesInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkReleaseSwapchainImagesInfoEXT *>( this );
+    }
+
+    operator VkReleaseSwapchainImagesInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkReleaseSwapchainImagesInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -115845,6 +125039,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassAttachmentBeginInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassAttachmentBeginInfo *>( this );
+    }
+
+    operator VkRenderPassAttachmentBeginInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassAttachmentBeginInfo *>( this );
+    }
+
+    operator VkRenderPassAttachmentBeginInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassAttachmentBeginInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -116003,6 +125207,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassBeginInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassBeginInfo *>( this );
+    }
+
+    operator VkRenderPassBeginInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassBeginInfo *>( this );
+    }
+
+    operator VkRenderPassBeginInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassBeginInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -116248,6 +125462,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSubpassDescription *>( this );
     }
 
+    operator VkSubpassDescription const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassDescription *>( this );
+    }
+
+    operator VkSubpassDescription *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassDescription *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -116401,6 +125625,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSubpassDependency &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSubpassDependency *>( this );
+    }
+
+    operator VkSubpassDependency const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassDependency *>( this );
+    }
+
+    operator VkSubpassDependency *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassDependency *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -116601,6 +125835,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassCreateInfo *>( this );
+    }
+
+    operator VkRenderPassCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassCreateInfo *>( this );
+    }
+
+    operator VkRenderPassCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -116876,6 +126120,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSubpassDescription2 *>( this );
     }
 
+    operator VkSubpassDescription2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassDescription2 *>( this );
+    }
+
+    operator VkSubpassDescription2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassDescription2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -117065,6 +126319,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSubpassDependency2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSubpassDependency2 *>( this );
+    }
+
+    operator VkSubpassDependency2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassDependency2 *>( this );
+    }
+
+    operator VkSubpassDependency2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassDependency2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -117310,6 +126574,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderPassCreateInfo2 *>( this );
     }
 
+    operator VkRenderPassCreateInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassCreateInfo2 *>( this );
+    }
+
+    operator VkRenderPassCreateInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassCreateInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -117440,6 +126714,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderPassCreationControlEXT *>( this );
     }
 
+    operator VkRenderPassCreationControlEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassCreationControlEXT *>( this );
+    }
+
+    operator VkRenderPassCreationControlEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassCreationControlEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -117518,6 +126802,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassCreationFeedbackInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassCreationFeedbackInfoEXT *>( this );
+    }
+
+    operator VkRenderPassCreationFeedbackInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassCreationFeedbackInfoEXT *>( this );
+    }
+
+    operator VkRenderPassCreationFeedbackInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassCreationFeedbackInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -117610,6 +126904,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassCreationFeedbackCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassCreationFeedbackCreateInfoEXT *>( this );
+    }
+
+    operator VkRenderPassCreationFeedbackCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassCreationFeedbackCreateInfoEXT *>( this );
+    }
+
+    operator VkRenderPassCreationFeedbackCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassCreationFeedbackCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -117710,6 +127014,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassFragmentDensityMapCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassFragmentDensityMapCreateInfoEXT *>( this );
+    }
+
+    operator VkRenderPassFragmentDensityMapCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassFragmentDensityMapCreateInfoEXT *>( this );
+    }
+
+    operator VkRenderPassFragmentDensityMapCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassFragmentDensityMapCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -117837,6 +127151,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassInputAttachmentAspectCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassInputAttachmentAspectCreateInfo *>( this );
+    }
+
+    operator VkRenderPassInputAttachmentAspectCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassInputAttachmentAspectCreateInfo *>( this );
+    }
+
+    operator VkRenderPassInputAttachmentAspectCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassInputAttachmentAspectCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -118029,6 +127353,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderPassMultiviewCreateInfo *>( this );
     }
 
+    operator VkRenderPassMultiviewCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassMultiviewCreateInfo *>( this );
+    }
+
+    operator VkRenderPassMultiviewCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassMultiviewCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -118139,6 +127473,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSubpassSampleLocationsEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSubpassSampleLocationsEXT *>( this );
+    }
+
+    operator VkSubpassSampleLocationsEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassSampleLocationsEXT *>( this );
+    }
+
+    operator VkSubpassSampleLocationsEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassSampleLocationsEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -118298,6 +127642,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderPassSampleLocationsBeginInfoEXT *>( this );
     }
 
+    operator VkRenderPassSampleLocationsBeginInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassSampleLocationsBeginInfoEXT *>( this );
+    }
+
+    operator VkRenderPassSampleLocationsBeginInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassSampleLocationsBeginInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -118404,6 +127758,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassStripeInfoARM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassStripeInfoARM *>( this );
+    }
+
+    operator VkRenderPassStripeInfoARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassStripeInfoARM *>( this );
+    }
+
+    operator VkRenderPassStripeInfoARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassStripeInfoARM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -118531,6 +127895,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderPassStripeBeginInfoARM *>( this );
     }
 
+    operator VkRenderPassStripeBeginInfoARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassStripeBeginInfoARM *>( this );
+    }
+
+    operator VkRenderPassStripeBeginInfoARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassStripeBeginInfoARM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -118652,6 +128026,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSemaphoreSubmitInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSemaphoreSubmitInfo *>( this );
+    }
+
+    operator VkSemaphoreSubmitInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSemaphoreSubmitInfo *>( this );
+    }
+
+    operator VkSemaphoreSubmitInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSemaphoreSubmitInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -118793,6 +128177,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderPassStripeSubmitInfoARM *>( this );
     }
 
+    operator VkRenderPassStripeSubmitInfoARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassStripeSubmitInfoARM *>( this );
+    }
+
+    operator VkRenderPassStripeSubmitInfoARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassStripeSubmitInfoARM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -118878,6 +128272,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassSubpassFeedbackInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassSubpassFeedbackInfoEXT *>( this );
+    }
+
+    operator VkRenderPassSubpassFeedbackInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassSubpassFeedbackInfoEXT *>( this );
+    }
+
+    operator VkRenderPassSubpassFeedbackInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassSubpassFeedbackInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -118981,6 +128385,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderPassSubpassFeedbackCreateInfoEXT *>( this );
     }
 
+    operator VkRenderPassSubpassFeedbackCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassSubpassFeedbackCreateInfoEXT *>( this );
+    }
+
+    operator VkRenderPassSubpassFeedbackCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassSubpassFeedbackCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -119079,6 +128493,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderPassTransformBeginInfoQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderPassTransformBeginInfoQCOM *>( this );
+    }
+
+    operator VkRenderPassTransformBeginInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassTransformBeginInfoQCOM *>( this );
+    }
+
+    operator VkRenderPassTransformBeginInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassTransformBeginInfoQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -119232,6 +128656,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderingAreaInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderingAreaInfo *>( this );
+    }
+
+    operator VkRenderingAreaInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderingAreaInfo *>( this );
+    }
+
+    operator VkRenderingAreaInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderingAreaInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -119402,6 +128836,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderingAttachmentInfo *>( this );
     }
 
+    operator VkRenderingAttachmentInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderingAttachmentInfo *>( this );
+    }
+
+    operator VkRenderingAttachmentInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderingAttachmentInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -119529,6 +128973,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderingAttachmentLocationInfo *>( this );
     }
 
+    operator VkRenderingAttachmentLocationInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderingAttachmentLocationInfo *>( this );
+    }
+
+    operator VkRenderingAttachmentLocationInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderingAttachmentLocationInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -119639,6 +129093,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderingFragmentDensityMapAttachmentInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderingFragmentDensityMapAttachmentInfoEXT *>( this );
+    }
+
+    operator VkRenderingFragmentDensityMapAttachmentInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderingFragmentDensityMapAttachmentInfoEXT *>( this );
+    }
+
+    operator VkRenderingFragmentDensityMapAttachmentInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderingFragmentDensityMapAttachmentInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -119761,6 +129225,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderingFragmentShadingRateAttachmentInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderingFragmentShadingRateAttachmentInfoKHR *>( this );
+    }
+
+    operator VkRenderingFragmentShadingRateAttachmentInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderingFragmentShadingRateAttachmentInfoKHR *>( this );
+    }
+
+    operator VkRenderingFragmentShadingRateAttachmentInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderingFragmentShadingRateAttachmentInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -119954,6 +129428,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkRenderingInfo *>( this );
     }
 
+    operator VkRenderingInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderingInfo *>( this );
+    }
+
+    operator VkRenderingInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderingInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -120122,6 +129606,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkRenderingInputAttachmentIndexInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkRenderingInputAttachmentIndexInfo *>( this );
+    }
+
+    operator VkRenderingInputAttachmentIndexInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderingInputAttachmentIndexInfo *>( this );
+    }
+
+    operator VkRenderingInputAttachmentIndexInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderingInputAttachmentIndexInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -120299,6 +129793,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkResolveImageInfo2 *>( this );
     }
 
+    operator VkResolveImageInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkResolveImageInfo2 *>( this );
+    }
+
+    operator VkResolveImageInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkResolveImageInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -120423,6 +129927,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSamplerBlockMatchWindowCreateInfoQCOM *>( this );
     }
 
+    operator VkSamplerBlockMatchWindowCreateInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerBlockMatchWindowCreateInfoQCOM *>( this );
+    }
+
+    operator VkSamplerBlockMatchWindowCreateInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerBlockMatchWindowCreateInfoQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -120536,6 +130050,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSamplerBorderColorComponentMappingCreateInfoEXT *>( this );
     }
 
+    operator VkSamplerBorderColorComponentMappingCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerBorderColorComponentMappingCreateInfoEXT *>( this );
+    }
+
+    operator VkSamplerBorderColorComponentMappingCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerBorderColorComponentMappingCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -120636,6 +130160,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSamplerCaptureDescriptorDataInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSamplerCaptureDescriptorDataInfoEXT *>( this );
+    }
+
+    operator VkSamplerCaptureDescriptorDataInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerCaptureDescriptorDataInfoEXT *>( this );
+    }
+
+    operator VkSamplerCaptureDescriptorDataInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerCaptureDescriptorDataInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -120853,6 +130387,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSamplerCreateInfo *>( this );
     }
 
+    operator VkSamplerCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerCreateInfo *>( this );
+    }
+
+    operator VkSamplerCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -121007,6 +130551,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSamplerCubicWeightsCreateInfoQCOM *>( this );
     }
 
+    operator VkSamplerCubicWeightsCreateInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerCubicWeightsCreateInfoQCOM *>( this );
+    }
+
+    operator VkSamplerCubicWeightsCreateInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerCubicWeightsCreateInfoQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -121115,6 +130669,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSamplerCustomBorderColorCreateInfoEXT *>( this );
     }
 
+    operator VkSamplerCustomBorderColorCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerCustomBorderColorCreateInfoEXT *>( this );
+    }
+
+    operator VkSamplerCustomBorderColorCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerCustomBorderColorCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -121199,6 +130763,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSamplerReductionModeCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSamplerReductionModeCreateInfo *>( this );
+    }
+
+    operator VkSamplerReductionModeCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerReductionModeCreateInfo *>( this );
+    }
+
+    operator VkSamplerReductionModeCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerReductionModeCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -121361,6 +130935,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSamplerYcbcrConversionCreateInfo *>( this );
     }
 
+    operator VkSamplerYcbcrConversionCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerYcbcrConversionCreateInfo *>( this );
+    }
+
+    operator VkSamplerYcbcrConversionCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerYcbcrConversionCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -121467,6 +131051,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSamplerYcbcrConversionImageFormatProperties *>( this );
     }
 
+    operator VkSamplerYcbcrConversionImageFormatProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerYcbcrConversionImageFormatProperties *>( this );
+    }
+
+    operator VkSamplerYcbcrConversionImageFormatProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerYcbcrConversionImageFormatProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -121565,6 +131159,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSamplerYcbcrConversionInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSamplerYcbcrConversionInfo *>( this );
+    }
+
+    operator VkSamplerYcbcrConversionInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerYcbcrConversionInfo *>( this );
+    }
+
+    operator VkSamplerYcbcrConversionInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerYcbcrConversionInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -121679,6 +131283,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM *>( this );
     }
 
+    operator VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM *>( this );
+    }
+
+    operator VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSamplerYcbcrConversionYcbcrDegammaCreateInfoQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -121781,6 +131395,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkScreenBufferFormatPropertiesQNX &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkScreenBufferFormatPropertiesQNX *>( this );
+    }
+
+    operator VkScreenBufferFormatPropertiesQNX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkScreenBufferFormatPropertiesQNX *>( this );
+    }
+
+    operator VkScreenBufferFormatPropertiesQNX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkScreenBufferFormatPropertiesQNX *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -121903,6 +131527,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkScreenBufferPropertiesQNX *>( this );
     }
 
+    operator VkScreenBufferPropertiesQNX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkScreenBufferPropertiesQNX *>( this );
+    }
+
+    operator VkScreenBufferPropertiesQNX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkScreenBufferPropertiesQNX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -122020,6 +131654,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkScreenSurfaceCreateInfoQNX *>( this );
     }
 
+    operator VkScreenSurfaceCreateInfoQNX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkScreenSurfaceCreateInfoQNX *>( this );
+    }
+
+    operator VkScreenSurfaceCreateInfoQNX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkScreenSurfaceCreateInfoQNX *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -122121,6 +131765,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSemaphoreCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSemaphoreCreateInfo *>( this );
+    }
+
+    operator VkSemaphoreCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSemaphoreCreateInfo *>( this );
+    }
+
+    operator VkSemaphoreCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSemaphoreCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -122228,6 +131882,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSemaphoreGetFdInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSemaphoreGetFdInfoKHR *>( this );
+    }
+
+    operator VkSemaphoreGetFdInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSemaphoreGetFdInfoKHR *>( this );
+    }
+
+    operator VkSemaphoreGetFdInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSemaphoreGetFdInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -122342,6 +132006,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSemaphoreGetWin32HandleInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSemaphoreGetWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkSemaphoreGetWin32HandleInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSemaphoreGetWin32HandleInfoKHR *>( this );
+    }
+
+    operator VkSemaphoreGetWin32HandleInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSemaphoreGetWin32HandleInfoKHR *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -122459,6 +132133,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSemaphoreGetZirconHandleInfoFUCHSIA *>( this );
     }
 
+    operator VkSemaphoreGetZirconHandleInfoFUCHSIA const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSemaphoreGetZirconHandleInfoFUCHSIA *>( this );
+    }
+
+    operator VkSemaphoreGetZirconHandleInfoFUCHSIA *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSemaphoreGetZirconHandleInfoFUCHSIA *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -122568,6 +132252,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSemaphoreSignalInfo *>( this );
     }
 
+    operator VkSemaphoreSignalInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSemaphoreSignalInfo *>( this );
+    }
+
+    operator VkSemaphoreSignalInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSemaphoreSignalInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -122675,6 +132369,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSemaphoreTypeCreateInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSemaphoreTypeCreateInfo *>( this );
+    }
+
+    operator VkSemaphoreTypeCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSemaphoreTypeCreateInfo *>( this );
+    }
+
+    operator VkSemaphoreTypeCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSemaphoreTypeCreateInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -122838,6 +132542,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSemaphoreWaitInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSemaphoreWaitInfo *>( this );
+    }
+
+    operator VkSemaphoreWaitInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSemaphoreWaitInfo *>( this );
+    }
+
+    operator VkSemaphoreWaitInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSemaphoreWaitInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -123037,6 +132751,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSetDescriptorBufferOffsetsInfoEXT *>( this );
     }
 
+    operator VkSetDescriptorBufferOffsetsInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSetDescriptorBufferOffsetsInfoEXT *>( this );
+    }
+
+    operator VkSetDescriptorBufferOffsetsInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSetDescriptorBufferOffsetsInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -123156,6 +132880,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSetLatencyMarkerInfoNV *>( this );
     }
 
+    operator VkSetLatencyMarkerInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSetLatencyMarkerInfoNV *>( this );
+    }
+
+    operator VkSetLatencyMarkerInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSetLatencyMarkerInfoNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -123260,6 +132994,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSetPresentConfigNV *>( this );
     }
 
+    operator VkSetPresentConfigNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSetPresentConfigNV *>( this );
+    }
+
+    operator VkSetPresentConfigNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSetPresentConfigNV *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -123346,6 +133090,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSetStateFlagsIndirectCommandNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSetStateFlagsIndirectCommandNV *>( this );
+    }
+
+    operator VkSetStateFlagsIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSetStateFlagsIndirectCommandNV *>( this );
+    }
+
+    operator VkSetStateFlagsIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSetStateFlagsIndirectCommandNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -123586,6 +133340,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkShaderCreateInfoEXT *>( this );
     }
 
+    operator VkShaderCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkShaderCreateInfoEXT *>( this );
+    }
+
+    operator VkShaderCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkShaderCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -123788,6 +133552,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkShaderModuleCreateInfo *>( this );
     }
 
+    operator VkShaderModuleCreateInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkShaderModuleCreateInfo *>( this );
+    }
+
+    operator VkShaderModuleCreateInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkShaderModuleCreateInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -123878,6 +133652,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkShaderModuleIdentifierEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkShaderModuleIdentifierEXT *>( this );
+    }
+
+    operator VkShaderModuleIdentifierEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkShaderModuleIdentifierEXT *>( this );
+    }
+
+    operator VkShaderModuleIdentifierEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkShaderModuleIdentifierEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -123996,6 +133780,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkShaderModuleValidationCacheCreateInfoEXT *>( this );
     }
 
+    operator VkShaderModuleValidationCacheCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkShaderModuleValidationCacheCreateInfoEXT *>( this );
+    }
+
+    operator VkShaderModuleValidationCacheCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkShaderModuleValidationCacheCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -124081,6 +133875,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkShaderResourceUsageAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkShaderResourceUsageAMD *>( this );
+    }
+
+    operator VkShaderResourceUsageAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkShaderResourceUsageAMD *>( this );
+    }
+
+    operator VkShaderResourceUsageAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkShaderResourceUsageAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -124169,6 +133973,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkShaderStatisticsInfoAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkShaderStatisticsInfoAMD *>( this );
+    }
+
+    operator VkShaderStatisticsInfoAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkShaderStatisticsInfoAMD *>( this );
+    }
+
+    operator VkShaderStatisticsInfoAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkShaderStatisticsInfoAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -124262,6 +134076,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSharedPresentSurfaceCapabilitiesKHR *>( this );
     }
 
+    operator VkSharedPresentSurfaceCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSharedPresentSurfaceCapabilitiesKHR *>( this );
+    }
+
+    operator VkSharedPresentSurfaceCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSharedPresentSurfaceCapabilitiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -124345,6 +134169,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSparseImageFormatProperties *>( this );
     }
 
+    operator VkSparseImageFormatProperties const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSparseImageFormatProperties *>( this );
+    }
+
+    operator VkSparseImageFormatProperties *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSparseImageFormatProperties *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -124421,6 +134255,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSparseImageFormatProperties2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSparseImageFormatProperties2 *>( this );
+    }
+
+    operator VkSparseImageFormatProperties2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSparseImageFormatProperties2 *>( this );
+    }
+
+    operator VkSparseImageFormatProperties2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSparseImageFormatProperties2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -124513,6 +134357,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSparseImageMemoryRequirements *>( this );
     }
 
+    operator VkSparseImageMemoryRequirements const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSparseImageMemoryRequirements *>( this );
+    }
+
+    operator VkSparseImageMemoryRequirements *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSparseImageMemoryRequirements *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -124598,6 +134452,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSparseImageMemoryRequirements2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSparseImageMemoryRequirements2 *>( this );
+    }
+
+    operator VkSparseImageMemoryRequirements2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSparseImageMemoryRequirements2 *>( this );
+    }
+
+    operator VkSparseImageMemoryRequirements2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSparseImageMemoryRequirements2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -124709,6 +134573,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkStreamDescriptorSurfaceCreateInfoGGP &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkStreamDescriptorSurfaceCreateInfoGGP *>( this );
+    }
+
+    operator VkStreamDescriptorSurfaceCreateInfoGGP const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkStreamDescriptorSurfaceCreateInfoGGP *>( this );
+    }
+
+    operator VkStreamDescriptorSurfaceCreateInfoGGP *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkStreamDescriptorSurfaceCreateInfoGGP *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -124934,6 +134808,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSubmitInfo *>( this );
     }
 
+    operator VkSubmitInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubmitInfo *>( this );
+    }
+
+    operator VkSubmitInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubmitInfo *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -125145,6 +135029,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSubmitInfo2 *>( this );
     }
 
+    operator VkSubmitInfo2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubmitInfo2 *>( this );
+    }
+
+    operator VkSubmitInfo2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubmitInfo2 *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -125265,6 +135159,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSubpassBeginInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSubpassBeginInfo *>( this );
+    }
+
+    operator VkSubpassBeginInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassBeginInfo *>( this );
+    }
+
+    operator VkSubpassBeginInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassBeginInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -125388,6 +135292,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSubpassDescriptionDepthStencilResolve *>( this );
     }
 
+    operator VkSubpassDescriptionDepthStencilResolve const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassDescriptionDepthStencilResolve *>( this );
+    }
+
+    operator VkSubpassDescriptionDepthStencilResolve *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassDescriptionDepthStencilResolve *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -125479,6 +135393,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSubpassEndInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSubpassEndInfo *>( this );
+    }
+
+    operator VkSubpassEndInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassEndInfo *>( this );
+    }
+
+    operator VkSubpassEndInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassEndInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -125611,6 +135535,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSubpassFragmentDensityMapOffsetEndInfoQCOM *>( this );
     }
 
+    operator VkSubpassFragmentDensityMapOffsetEndInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassFragmentDensityMapOffsetEndInfoQCOM *>( this );
+    }
+
+    operator VkSubpassFragmentDensityMapOffsetEndInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassFragmentDensityMapOffsetEndInfoQCOM *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -125695,6 +135629,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSubpassResolvePerformanceQueryEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSubpassResolvePerformanceQueryEXT *>( this );
+    }
+
+    operator VkSubpassResolvePerformanceQueryEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassResolvePerformanceQueryEXT *>( this );
+    }
+
+    operator VkSubpassResolvePerformanceQueryEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassResolvePerformanceQueryEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -125804,6 +135748,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSubpassShadingPipelineCreateInfoHUAWEI *>( this );
     }
 
+    operator VkSubpassShadingPipelineCreateInfoHUAWEI const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubpassShadingPipelineCreateInfoHUAWEI *>( this );
+    }
+
+    operator VkSubpassShadingPipelineCreateInfoHUAWEI *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubpassShadingPipelineCreateInfoHUAWEI *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -125888,6 +135842,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSubresourceHostMemcpySize *>( this );
     }
 
+    operator VkSubresourceHostMemcpySize const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubresourceHostMemcpySize *>( this );
+    }
+
+    operator VkSubresourceHostMemcpySize *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubresourceHostMemcpySize *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -125968,6 +135932,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSubresourceLayout2 &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSubresourceLayout2 *>( this );
+    }
+
+    operator VkSubresourceLayout2 const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSubresourceLayout2 *>( this );
+    }
+
+    operator VkSubresourceLayout2 *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSubresourceLayout2 *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -126076,6 +136050,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSurfaceCapabilities2EXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSurfaceCapabilities2EXT *>( this );
+    }
+
+    operator VkSurfaceCapabilities2EXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceCapabilities2EXT *>( this );
+    }
+
+    operator VkSurfaceCapabilities2EXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceCapabilities2EXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -126214,6 +136198,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSurfaceCapabilitiesKHR *>( this );
     }
 
+    operator VkSurfaceCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceCapabilitiesKHR *>( this );
+    }
+
+    operator VkSurfaceCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceCapabilitiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -126320,6 +136314,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSurfaceCapabilities2KHR *>( this );
     }
 
+    operator VkSurfaceCapabilities2KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceCapabilities2KHR *>( this );
+    }
+
+    operator VkSurfaceCapabilities2KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceCapabilities2KHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -126404,6 +136408,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSurfaceCapabilitiesFullScreenExclusiveEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSurfaceCapabilitiesFullScreenExclusiveEXT *>( this );
+    }
+
+    operator VkSurfaceCapabilitiesFullScreenExclusiveEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceCapabilitiesFullScreenExclusiveEXT *>( this );
+    }
+
+    operator VkSurfaceCapabilitiesFullScreenExclusiveEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceCapabilitiesFullScreenExclusiveEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -126492,6 +136506,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSurfaceCapabilitiesPresentBarrierNV *>( this );
     }
 
+    operator VkSurfaceCapabilitiesPresentBarrierNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceCapabilitiesPresentBarrierNV *>( this );
+    }
+
+    operator VkSurfaceCapabilitiesPresentBarrierNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceCapabilitiesPresentBarrierNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -126571,6 +136595,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSurfaceFormatKHR *>( this );
     }
 
+    operator VkSurfaceFormatKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceFormatKHR *>( this );
+    }
+
+    operator VkSurfaceFormatKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceFormatKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -126642,6 +136676,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSurfaceFormat2KHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSurfaceFormat2KHR *>( this );
+    }
+
+    operator VkSurfaceFormat2KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceFormat2KHR *>( this );
+    }
+
+    operator VkSurfaceFormat2KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceFormat2KHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -126746,6 +136790,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSurfaceFullScreenExclusiveInfoEXT *>( this );
     }
 
+    operator VkSurfaceFullScreenExclusiveInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceFullScreenExclusiveInfoEXT *>( this );
+    }
+
+    operator VkSurfaceFullScreenExclusiveInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceFullScreenExclusiveInfoEXT *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -126844,6 +136898,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSurfaceFullScreenExclusiveWin32InfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSurfaceFullScreenExclusiveWin32InfoEXT *>( this );
+    }
+
+    operator VkSurfaceFullScreenExclusiveWin32InfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceFullScreenExclusiveWin32InfoEXT *>( this );
+    }
+
+    operator VkSurfaceFullScreenExclusiveWin32InfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceFullScreenExclusiveWin32InfoEXT *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -126972,6 +137036,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSurfacePresentModeCompatibilityEXT *>( this );
     }
 
+    operator VkSurfacePresentModeCompatibilityEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfacePresentModeCompatibilityEXT *>( this );
+    }
+
+    operator VkSurfacePresentModeCompatibilityEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfacePresentModeCompatibilityEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -127071,6 +137145,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSurfacePresentModeEXT *>( this );
     }
 
+    operator VkSurfacePresentModeEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfacePresentModeEXT *>( this );
+    }
+
+    operator VkSurfacePresentModeEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfacePresentModeEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -127162,6 +137246,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSurfacePresentScalingCapabilitiesEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSurfacePresentScalingCapabilitiesEXT *>( this );
+    }
+
+    operator VkSurfacePresentScalingCapabilitiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfacePresentScalingCapabilitiesEXT *>( this );
+    }
+
+    operator VkSurfacePresentScalingCapabilitiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfacePresentScalingCapabilitiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -127259,6 +137353,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSurfaceProtectedCapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSurfaceProtectedCapabilitiesKHR *>( this );
+    }
+
+    operator VkSurfaceProtectedCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceProtectedCapabilitiesKHR *>( this );
+    }
+
+    operator VkSurfaceProtectedCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceProtectedCapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -127359,6 +137463,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSwapchainCounterCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSwapchainCounterCreateInfoEXT *>( this );
+    }
+
+    operator VkSwapchainCounterCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainCounterCreateInfoEXT *>( this );
+    }
+
+    operator VkSwapchainCounterCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainCounterCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -127628,6 +137742,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSwapchainCreateInfoKHR *>( this );
     }
 
+    operator VkSwapchainCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainCreateInfoKHR *>( this );
+    }
+
+    operator VkSwapchainCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -127782,6 +137906,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSwapchainDisplayNativeHdrCreateInfoAMD *>( this );
     }
 
+    operator VkSwapchainDisplayNativeHdrCreateInfoAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainDisplayNativeHdrCreateInfoAMD *>( this );
+    }
+
+    operator VkSwapchainDisplayNativeHdrCreateInfoAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainDisplayNativeHdrCreateInfoAMD *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -127877,6 +138011,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSwapchainLatencyCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSwapchainLatencyCreateInfoNV *>( this );
+    }
+
+    operator VkSwapchainLatencyCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainLatencyCreateInfoNV *>( this );
+    }
+
+    operator VkSwapchainLatencyCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainLatencyCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -127977,6 +138121,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSwapchainPresentBarrierCreateInfoNV &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSwapchainPresentBarrierCreateInfoNV *>( this );
+    }
+
+    operator VkSwapchainPresentBarrierCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainPresentBarrierCreateInfoNV *>( this );
+    }
+
+    operator VkSwapchainPresentBarrierCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainPresentBarrierCreateInfoNV *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -128103,6 +138257,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSwapchainPresentFenceInfoEXT *>( this );
     }
 
+    operator VkSwapchainPresentFenceInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainPresentFenceInfoEXT *>( this );
+    }
+
+    operator VkSwapchainPresentFenceInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainPresentFenceInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -128226,6 +138390,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkSwapchainPresentModeInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkSwapchainPresentModeInfoEXT *>( this );
+    }
+
+    operator VkSwapchainPresentModeInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainPresentModeInfoEXT *>( this );
+    }
+
+    operator VkSwapchainPresentModeInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainPresentModeInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -128355,6 +138529,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSwapchainPresentModesCreateInfoEXT *>( this );
     }
 
+    operator VkSwapchainPresentModesCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainPresentModesCreateInfoEXT *>( this );
+    }
+
+    operator VkSwapchainPresentModesCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainPresentModesCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -128474,6 +138658,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkSwapchainPresentScalingCreateInfoEXT *>( this );
     }
 
+    operator VkSwapchainPresentScalingCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainPresentScalingCreateInfoEXT *>( this );
+    }
+
+    operator VkSwapchainPresentScalingCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainPresentScalingCreateInfoEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -128564,6 +138758,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkTextureLODGatherFormatPropertiesAMD &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkTextureLODGatherFormatPropertiesAMD *>( this );
+    }
+
+    operator VkTextureLODGatherFormatPropertiesAMD const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkTextureLODGatherFormatPropertiesAMD *>( this );
+    }
+
+    operator VkTextureLODGatherFormatPropertiesAMD *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkTextureLODGatherFormatPropertiesAMD *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -128675,6 +138879,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkTilePropertiesQCOM &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkTilePropertiesQCOM *>( this );
+    }
+
+    operator VkTilePropertiesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkTilePropertiesQCOM *>( this );
+    }
+
+    operator VkTilePropertiesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkTilePropertiesQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -128836,6 +139050,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkTimelineSemaphoreSubmitInfo &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkTimelineSemaphoreSubmitInfo *>( this );
+    }
+
+    operator VkTimelineSemaphoreSubmitInfo const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkTimelineSemaphoreSubmitInfo *>( this );
+    }
+
+    operator VkTimelineSemaphoreSubmitInfo *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkTimelineSemaphoreSubmitInfo *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -129052,6 +139276,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkTraceRaysIndirectCommand2KHR *>( this );
     }
 
+    operator VkTraceRaysIndirectCommand2KHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkTraceRaysIndirectCommand2KHR *>( this );
+    }
+
+    operator VkTraceRaysIndirectCommand2KHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkTraceRaysIndirectCommand2KHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -129196,6 +139430,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkTraceRaysIndirectCommandKHR *>( this );
     }
 
+    operator VkTraceRaysIndirectCommandKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkTraceRaysIndirectCommandKHR *>( this );
+    }
+
+    operator VkTraceRaysIndirectCommandKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkTraceRaysIndirectCommandKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -129322,6 +139566,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkValidationCacheCreateInfoEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkValidationCacheCreateInfoEXT *>( this );
+    }
+
+    operator VkValidationCacheCreateInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkValidationCacheCreateInfoEXT *>( this );
+    }
+
+    operator VkValidationCacheCreateInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkValidationCacheCreateInfoEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -129491,6 +139745,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkValidationFeaturesEXT *>( this );
     }
 
+    operator VkValidationFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkValidationFeaturesEXT *>( this );
+    }
+
+    operator VkValidationFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkValidationFeaturesEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -129625,6 +139889,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkValidationFlagsEXT *>( this );
     }
 
+    operator VkValidationFlagsEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkValidationFlagsEXT *>( this );
+    }
+
+    operator VkValidationFlagsEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkValidationFlagsEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -129748,6 +140022,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVertexInputAttributeDescription2EXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVertexInputAttributeDescription2EXT *>( this );
+    }
+
+    operator VkVertexInputAttributeDescription2EXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVertexInputAttributeDescription2EXT *>( this );
+    }
+
+    operator VkVertexInputAttributeDescription2EXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVertexInputAttributeDescription2EXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -129882,6 +140166,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVertexInputBindingDescription2EXT *>( this );
     }
 
+    operator VkVertexInputBindingDescription2EXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVertexInputBindingDescription2EXT *>( this );
+    }
+
+    operator VkVertexInputBindingDescription2EXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVertexInputBindingDescription2EXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -129995,6 +140289,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkViSurfaceCreateInfoNN &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkViSurfaceCreateInfoNN *>( this );
+    }
+
+    operator VkViSurfaceCreateInfoNN const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkViSurfaceCreateInfoNN *>( this );
+    }
+
+    operator VkViSurfaceCreateInfoNN *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkViSurfaceCreateInfoNN *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -130121,6 +140425,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoPictureResourceInfoKHR *>( this );
     }
 
+    operator VkVideoPictureResourceInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoPictureResourceInfoKHR *>( this );
+    }
+
+    operator VkVideoPictureResourceInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoPictureResourceInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -130235,6 +140549,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoReferenceSlotInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoReferenceSlotInfoKHR *>( this );
+    }
+
+    operator VkVideoReferenceSlotInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoReferenceSlotInfoKHR *>( this );
+    }
+
+    operator VkVideoReferenceSlotInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoReferenceSlotInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -130399,6 +140723,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoBeginCodingInfoKHR *>( this );
     }
 
+    operator VkVideoBeginCodingInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoBeginCodingInfoKHR *>( this );
+    }
+
+    operator VkVideoBeginCodingInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoBeginCodingInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -130509,6 +140843,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoCapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoCapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -130641,6 +140985,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoCodingControlInfoKHR *>( this );
     }
 
+    operator VkVideoCodingControlInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoCodingControlInfoKHR *>( this );
+    }
+
+    operator VkVideoCodingControlInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoCodingControlInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -130723,6 +141077,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeAV1CapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeAV1CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoDecodeAV1CapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeAV1CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoDecodeAV1CapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeAV1CapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -130829,6 +141193,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeAV1DpbSlotInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeAV1DpbSlotInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeAV1DpbSlotInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeAV1DpbSlotInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeAV1DpbSlotInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -130927,6 +141301,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeAV1InlineSessionParametersInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeAV1InlineSessionParametersInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeAV1InlineSessionParametersInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeAV1InlineSessionParametersInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeAV1InlineSessionParametersInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeAV1InlineSessionParametersInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -131113,6 +141497,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeAV1PictureInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeAV1PictureInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeAV1PictureInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeAV1PictureInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeAV1PictureInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -131233,6 +141627,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeAV1ProfileInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeAV1ProfileInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeAV1ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeAV1ProfileInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeAV1ProfileInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -131343,6 +141747,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeAV1SessionParametersCreateInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeAV1SessionParametersCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeAV1SessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeAV1SessionParametersCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeAV1SessionParametersCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -131425,6 +141839,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeCapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoDecodeCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoDecodeCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeCapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -131512,6 +141936,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeH264CapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeH264CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264CapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH264CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264CapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH264CapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -131624,6 +142058,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeH264DpbSlotInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeH264DpbSlotInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH264DpbSlotInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264DpbSlotInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH264DpbSlotInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -131730,6 +142174,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeH264InlineSessionParametersInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeH264InlineSessionParametersInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264InlineSessionParametersInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH264InlineSessionParametersInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264InlineSessionParametersInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH264InlineSessionParametersInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -131869,6 +142323,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeH264PictureInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeH264PictureInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH264PictureInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264PictureInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH264PictureInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -131983,6 +142447,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeH264ProfileInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeH264ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264ProfileInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH264ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264ProfileInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH264ProfileInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -132154,6 +142628,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeH264SessionParametersAddInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeH264SessionParametersAddInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH264SessionParametersAddInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264SessionParametersAddInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH264SessionParametersAddInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -132281,6 +142765,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeH264SessionParametersCreateInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeH264SessionParametersCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH264SessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH264SessionParametersCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH264SessionParametersCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -132370,6 +142864,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeH265CapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeH265CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265CapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH265CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265CapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH265CapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -132476,6 +142980,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeH265DpbSlotInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeH265DpbSlotInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265DpbSlotInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH265DpbSlotInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265DpbSlotInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH265DpbSlotInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -132592,6 +143106,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeH265InlineSessionParametersInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeH265InlineSessionParametersInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265InlineSessionParametersInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH265InlineSessionParametersInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265InlineSessionParametersInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH265InlineSessionParametersInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -132737,6 +143261,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeH265PictureInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeH265PictureInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH265PictureInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265PictureInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH265PictureInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -132840,6 +143374,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeH265ProfileInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeH265ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265ProfileInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH265ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265ProfileInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH265ProfileInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -133033,6 +143577,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeH265SessionParametersAddInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeH265SessionParametersAddInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH265SessionParametersAddInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265SessionParametersAddInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH265SessionParametersAddInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -133170,6 +143724,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeH265SessionParametersCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeH265SessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265SessionParametersCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeH265SessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeH265SessionParametersCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeH265SessionParametersCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -133367,6 +143931,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoDecodeInfoKHR *>( this );
     }
 
+    operator VkVideoDecodeInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -133483,6 +144057,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoDecodeUsageInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoDecodeUsageInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeUsageInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoDecodeUsageInfoKHR *>( this );
+    }
+
+    operator VkVideoDecodeUsageInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoDecodeUsageInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -133614,6 +144198,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeAV1CapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeAV1CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1CapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1CapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1CapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -133854,6 +144448,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeAV1DpbSlotInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeAV1DpbSlotInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1DpbSlotInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1DpbSlotInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1DpbSlotInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -133954,6 +144558,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeAV1FrameSizeKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeAV1FrameSizeKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1FrameSizeKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1FrameSizeKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1FrameSizeKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1FrameSizeKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -134073,6 +144687,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeAV1GopRemainingFrameInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeAV1GopRemainingFrameInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1GopRemainingFrameInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1GopRemainingFrameInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1GopRemainingFrameInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1GopRemainingFrameInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -134237,6 +144861,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeAV1PictureInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeAV1PictureInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1PictureInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1PictureInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1PictureInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -134359,6 +144993,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeAV1ProfileInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeAV1ProfileInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1ProfileInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1ProfileInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -134467,6 +145111,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeAV1QIndexKHR *>( this );
     }
 
+    operator VkVideoEncodeAV1QIndexKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1QIndexKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1QIndexKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1QIndexKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -134572,6 +145226,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeAV1QualityLevelPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeAV1QualityLevelPropertiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1QualityLevelPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1QualityLevelPropertiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1QualityLevelPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1QualityLevelPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -134718,6 +145382,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeAV1QuantizationMapCapabilitiesKHR *>( this );
     }
 
+    operator VkVideoEncodeAV1QuantizationMapCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1QuantizationMapCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1QuantizationMapCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1QuantizationMapCapabilitiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -134849,6 +145523,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeAV1RateControlInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeAV1RateControlInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1RateControlInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1RateControlInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1RateControlInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1RateControlInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -135005,6 +145689,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeAV1RateControlLayerInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeAV1RateControlLayerInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1RateControlLayerInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1RateControlLayerInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1RateControlLayerInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -135124,6 +145818,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeAV1SessionCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeAV1SessionCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1SessionCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1SessionCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1SessionCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1SessionCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -135287,6 +145991,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeAV1SessionParametersCreateInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeAV1SessionParametersCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeAV1SessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeAV1SessionParametersCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeAV1SessionParametersCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -135391,6 +146105,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeCapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeCapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -135524,6 +146248,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH264CapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH264CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264CapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264CapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264CapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -135702,6 +146436,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH264DpbSlotInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH264DpbSlotInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264DpbSlotInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264DpbSlotInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264DpbSlotInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -135801,6 +146545,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH264FrameSizeKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH264FrameSizeKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264FrameSizeKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264FrameSizeKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264FrameSizeKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264FrameSizeKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -135921,6 +146675,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH264GopRemainingFrameInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH264GopRemainingFrameInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264GopRemainingFrameInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264GopRemainingFrameInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264GopRemainingFrameInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -136035,6 +146799,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH264NaluSliceInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH264NaluSliceInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264NaluSliceInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264NaluSliceInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264NaluSliceInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264NaluSliceInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -136187,6 +146961,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH264PictureInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH264PictureInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264PictureInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264PictureInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264PictureInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -136292,6 +147076,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH264ProfileInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH264ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264ProfileInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264ProfileInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264ProfileInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -136401,6 +147195,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH264QpKHR *>( this );
     }
 
+    operator VkVideoEncodeH264QpKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264QpKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264QpKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264QpKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -136494,6 +147298,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH264QualityLevelPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH264QualityLevelPropertiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264QualityLevelPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264QualityLevelPropertiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264QualityLevelPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264QualityLevelPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -136614,6 +147428,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH264QuantizationMapCapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH264QuantizationMapCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264QuantizationMapCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264QuantizationMapCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264QuantizationMapCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264QuantizationMapCapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -136746,6 +147570,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH264RateControlInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH264RateControlInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264RateControlInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264RateControlInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264RateControlInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264RateControlInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -136899,6 +147733,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH264RateControlLayerInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH264RateControlLayerInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264RateControlLayerInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264RateControlLayerInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264RateControlLayerInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -137017,6 +147861,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH264SessionCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH264SessionCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264SessionCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264SessionCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264SessionCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264SessionCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -137185,6 +148039,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH264SessionParametersAddInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH264SessionParametersAddInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264SessionParametersAddInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264SessionParametersAddInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264SessionParametersAddInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -137312,6 +148176,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH264SessionParametersCreateInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH264SessionParametersCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264SessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264SessionParametersCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264SessionParametersCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -137405,6 +148279,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH264SessionParametersFeedbackInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH264SessionParametersFeedbackInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264SessionParametersFeedbackInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264SessionParametersFeedbackInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264SessionParametersFeedbackInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264SessionParametersFeedbackInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -137532,6 +148416,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH264SessionParametersGetInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH264SessionParametersGetInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH264SessionParametersGetInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH264SessionParametersGetInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH264SessionParametersGetInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -137654,6 +148548,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265CapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265CapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265CapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265CapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265CapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -137848,6 +148752,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH265DpbSlotInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH265DpbSlotInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265DpbSlotInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265DpbSlotInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265DpbSlotInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -137947,6 +148861,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265FrameSizeKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265FrameSizeKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265FrameSizeKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265FrameSizeKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265FrameSizeKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265FrameSizeKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -138067,6 +148991,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH265GopRemainingFrameInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH265GopRemainingFrameInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265GopRemainingFrameInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265GopRemainingFrameInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265GopRemainingFrameInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -138182,6 +149116,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265NaluSliceSegmentInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265NaluSliceSegmentInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265NaluSliceSegmentInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265NaluSliceSegmentInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265NaluSliceSegmentInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265NaluSliceSegmentInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -138325,6 +149269,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH265PictureInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH265PictureInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265PictureInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265PictureInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265PictureInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -138428,6 +149382,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265ProfileInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265ProfileInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265ProfileInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265ProfileInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265ProfileInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -138537,6 +149501,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH265QpKHR *>( this );
     }
 
+    operator VkVideoEncodeH265QpKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265QpKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265QpKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265QpKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -138628,6 +149602,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265QualityLevelPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265QualityLevelPropertiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265QualityLevelPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265QualityLevelPropertiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265QualityLevelPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265QualityLevelPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -138744,6 +149728,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265QuantizationMapCapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265QuantizationMapCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265QuantizationMapCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265QuantizationMapCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265QuantizationMapCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265QuantizationMapCapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -138876,6 +149870,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265RateControlInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265RateControlInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265RateControlInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265RateControlInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265RateControlInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265RateControlInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -139029,6 +150033,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH265RateControlLayerInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH265RateControlLayerInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265RateControlLayerInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265RateControlLayerInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265RateControlLayerInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -139147,6 +150161,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265SessionCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265SessionCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265SessionCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265SessionCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265SessionCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265SessionCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -139344,6 +150368,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH265SessionParametersAddInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH265SessionParametersAddInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265SessionParametersAddInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265SessionParametersAddInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265SessionParametersAddInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -139483,6 +150517,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeH265SessionParametersCreateInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeH265SessionParametersCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265SessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265SessionParametersCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265SessionParametersCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -139580,6 +150624,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265SessionParametersFeedbackInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265SessionParametersFeedbackInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265SessionParametersFeedbackInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265SessionParametersFeedbackInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265SessionParametersFeedbackInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265SessionParametersFeedbackInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -139726,6 +150780,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeH265SessionParametersGetInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeH265SessionParametersGetInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265SessionParametersGetInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeH265SessionParametersGetInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeH265SessionParametersGetInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeH265SessionParametersGetInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -139937,6 +151001,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -140066,6 +151140,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeQualityLevelInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeQualityLevelInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeQualityLevelInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeQualityLevelInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeQualityLevelInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -140152,6 +151236,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeQualityLevelPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeQualityLevelPropertiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeQualityLevelPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeQualityLevelPropertiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeQualityLevelPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeQualityLevelPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -140241,6 +151335,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeQuantizationMapCapabilitiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeQuantizationMapCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeQuantizationMapCapabilitiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeQuantizationMapCapabilitiesKHR *>( this );
+    }
+
+    operator VkVideoEncodeQuantizationMapCapabilitiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeQuantizationMapCapabilitiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -140351,6 +151455,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeQuantizationMapInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeQuantizationMapInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeQuantizationMapInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeQuantizationMapInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeQuantizationMapInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -140455,6 +151569,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeQuantizationMapSessionParametersCreateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -140578,6 +151702,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeRateControlLayerInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeRateControlLayerInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeRateControlLayerInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeRateControlLayerInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeRateControlLayerInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeRateControlLayerInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -140755,6 +151889,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeRateControlInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeRateControlInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeRateControlInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeRateControlInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeRateControlInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -140852,6 +151996,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeSessionParametersFeedbackInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeSessionParametersFeedbackInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeSessionParametersFeedbackInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeSessionParametersFeedbackInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeSessionParametersFeedbackInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeSessionParametersFeedbackInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -140952,6 +152106,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoEncodeSessionParametersGetInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoEncodeSessionParametersGetInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeSessionParametersGetInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeSessionParametersGetInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeSessionParametersGetInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeSessionParametersGetInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -141070,6 +152234,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEncodeUsageInfoKHR *>( this );
     }
 
+    operator VkVideoEncodeUsageInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEncodeUsageInfoKHR *>( this );
+    }
+
+    operator VkVideoEncodeUsageInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEncodeUsageInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -141174,6 +152348,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoEndCodingInfoKHR *>( this );
     }
 
+    operator VkVideoEndCodingInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoEndCodingInfoKHR *>( this );
+    }
+
+    operator VkVideoEndCodingInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoEndCodingInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -141259,6 +152443,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoFormatAV1QuantizationMapPropertiesKHR *>( this );
     }
 
+    operator VkVideoFormatAV1QuantizationMapPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoFormatAV1QuantizationMapPropertiesKHR *>( this );
+    }
+
+    operator VkVideoFormatAV1QuantizationMapPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoFormatAV1QuantizationMapPropertiesKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -141342,6 +152536,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoFormatH265QuantizationMapPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoFormatH265QuantizationMapPropertiesKHR *>( this );
+    }
+
+    operator VkVideoFormatH265QuantizationMapPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoFormatH265QuantizationMapPropertiesKHR *>( this );
+    }
+
+    operator VkVideoFormatH265QuantizationMapPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoFormatH265QuantizationMapPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -141436,6 +152640,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoFormatPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoFormatPropertiesKHR *>( this );
+    }
+
+    operator VkVideoFormatPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoFormatPropertiesKHR *>( this );
+    }
+
+    operator VkVideoFormatPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoFormatPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -141535,6 +152749,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoFormatQuantizationMapPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoFormatQuantizationMapPropertiesKHR *>( this );
+    }
+
+    operator VkVideoFormatQuantizationMapPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoFormatQuantizationMapPropertiesKHR *>( this );
+    }
+
+    operator VkVideoFormatQuantizationMapPropertiesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoFormatQuantizationMapPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -141649,6 +152873,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoInlineQueryInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoInlineQueryInfoKHR *>( this );
+    }
+
+    operator VkVideoInlineQueryInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoInlineQueryInfoKHR *>( this );
+    }
+
+    operator VkVideoInlineQueryInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoInlineQueryInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -141776,6 +153010,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoProfileListInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoProfileListInfoKHR *>( this );
+    }
+
+    operator VkVideoProfileListInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoProfileListInfoKHR *>( this );
+    }
+
+    operator VkVideoProfileListInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoProfileListInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -141942,6 +153186,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoSessionCreateInfoKHR *>( this );
     }
 
+    operator VkVideoSessionCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoSessionCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoSessionCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoSessionCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -142058,6 +153312,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoSessionMemoryRequirementsKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoSessionMemoryRequirementsKHR *>( this );
+    }
+
+    operator VkVideoSessionMemoryRequirementsKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoSessionMemoryRequirementsKHR *>( this );
+    }
+
+    operator VkVideoSessionMemoryRequirementsKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoSessionMemoryRequirementsKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -142178,6 +153442,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkVideoSessionParametersCreateInfoKHR *>( this );
     }
 
+    operator VkVideoSessionParametersCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoSessionParametersCreateInfoKHR *>( this );
+    }
+
+    operator VkVideoSessionParametersCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoSessionParametersCreateInfoKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -142281,6 +153555,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkVideoSessionParametersUpdateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkVideoSessionParametersUpdateInfoKHR *>( this );
+    }
+
+    operator VkVideoSessionParametersUpdateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkVideoSessionParametersUpdateInfoKHR *>( this );
+    }
+
+    operator VkVideoSessionParametersUpdateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkVideoSessionParametersUpdateInfoKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -142396,6 +153680,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkWaylandSurfaceCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkWaylandSurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkWaylandSurfaceCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWaylandSurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkWaylandSurfaceCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWaylandSurfaceCreateInfoKHR *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -142653,6 +153947,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkWin32KeyedMutexAcquireReleaseInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkWin32KeyedMutexAcquireReleaseInfoKHR *>( this );
+    }
+
+    operator VkWin32KeyedMutexAcquireReleaseInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWin32KeyedMutexAcquireReleaseInfoKHR *>( this );
+    }
+
+    operator VkWin32KeyedMutexAcquireReleaseInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWin32KeyedMutexAcquireReleaseInfoKHR *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -142925,6 +154229,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkWin32KeyedMutexAcquireReleaseInfoNV *>( this );
     }
 
+    operator VkWin32KeyedMutexAcquireReleaseInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWin32KeyedMutexAcquireReleaseInfoNV *>( this );
+    }
+
+    operator VkWin32KeyedMutexAcquireReleaseInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWin32KeyedMutexAcquireReleaseInfoNV *>( this );
+    }
+
 #  if defined( VULKAN_HPP_USE_REFLECT )
 #    if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -143055,6 +154369,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkWin32SurfaceCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkWin32SurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkWin32SurfaceCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWin32SurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkWin32SurfaceCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWin32SurfaceCreateInfoKHR *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -143194,6 +154518,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkWriteDescriptorSetAccelerationStructureKHR *>( this );
     }
 
+    operator VkWriteDescriptorSetAccelerationStructureKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWriteDescriptorSetAccelerationStructureKHR *>( this );
+    }
+
+    operator VkWriteDescriptorSetAccelerationStructureKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWriteDescriptorSetAccelerationStructureKHR *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -143327,6 +154661,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkWriteDescriptorSetAccelerationStructureNV *>( this );
     }
 
+    operator VkWriteDescriptorSetAccelerationStructureNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWriteDescriptorSetAccelerationStructureNV *>( this );
+    }
+
+    operator VkWriteDescriptorSetAccelerationStructureNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWriteDescriptorSetAccelerationStructureNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -143452,6 +154796,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkWriteDescriptorSetInlineUniformBlock &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkWriteDescriptorSetInlineUniformBlock *>( this );
+    }
+
+    operator VkWriteDescriptorSetInlineUniformBlock const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWriteDescriptorSetInlineUniformBlock *>( this );
+    }
+
+    operator VkWriteDescriptorSetInlineUniformBlock *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWriteDescriptorSetInlineUniformBlock *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -143588,6 +154942,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkWriteDescriptorSetPartitionedAccelerationStructureNV *>( this );
     }
 
+    operator VkWriteDescriptorSetPartitionedAccelerationStructureNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWriteDescriptorSetPartitionedAccelerationStructureNV *>( this );
+    }
+
+    operator VkWriteDescriptorSetPartitionedAccelerationStructureNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWriteDescriptorSetPartitionedAccelerationStructureNV *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -143697,6 +155061,16 @@ namespace VULKAN_HPP_NAMESPACE
       return *reinterpret_cast<VkWriteIndirectExecutionSetPipelineEXT *>( this );
     }
 
+    operator VkWriteIndirectExecutionSetPipelineEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWriteIndirectExecutionSetPipelineEXT *>( this );
+    }
+
+    operator VkWriteIndirectExecutionSetPipelineEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWriteIndirectExecutionSetPipelineEXT *>( this );
+    }
+
 #if defined( VULKAN_HPP_USE_REFLECT )
 #  if 14 <= VULKAN_HPP_CPP_VERSION
     auto
@@ -143803,6 +155177,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkWriteIndirectExecutionSetShaderEXT &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkWriteIndirectExecutionSetShaderEXT *>( this );
+    }
+
+    operator VkWriteIndirectExecutionSetShaderEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkWriteIndirectExecutionSetShaderEXT *>( this );
+    }
+
+    operator VkWriteIndirectExecutionSetShaderEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkWriteIndirectExecutionSetShaderEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -143919,6 +155303,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkXcbSurfaceCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkXcbSurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkXcbSurfaceCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkXcbSurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkXcbSurfaceCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkXcbSurfaceCreateInfoKHR *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
@@ -144052,6 +155446,16 @@ namespace VULKAN_HPP_NAMESPACE
     operator VkXlibSurfaceCreateInfoKHR &() VULKAN_HPP_NOEXCEPT
     {
       return *reinterpret_cast<VkXlibSurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkXlibSurfaceCreateInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkXlibSurfaceCreateInfoKHR *>( this );
+    }
+
+    operator VkXlibSurfaceCreateInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkXlibSurfaceCreateInfoKHR *>( this );
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
