@@ -4,7 +4,7 @@ This is a fork of [hexops/vulkan-headers][1] which is itself a fork of [KhronosG
 
 ## Why this forkception ?
 
-The intention under this fork is the same as [hexops][10] had when they forked [KhronosGroup/Vulkan-Headers][2]: package the headers for [Zig][3]. So:
+The intention under this fork is the same as [hexops][6] had when they forked [KhronosGroup/Vulkan-Headers][2]: package the headers for [Zig][3]. So:
 * Unnecessary files have been deleted,
 * The build system has been replaced with `build.zig`.
 
@@ -31,10 +31,6 @@ These repositories are automatically updated when a new release is available:
 This repository is automatically updated when a new release is available from these repositories:
 * [KhronosGroup/Vulkan-Headers][2]
 * [tiawl/toolbox][5]
-* [tiawl/spaceporn-action-bot][6]
-* [tiawl/spaceporn-action-ci][7]
-* [tiawl/spaceporn-action-cd-ping][8]
-* [tiawl/spaceporn-action-cd-pong][9]
 
 ## `zig build` options
 
@@ -57,8 +53,4 @@ The parts of this repository originated from this repository are dedicated to th
 [3]:https://github.com/ziglang/zig
 [4]:https://github.com/tiawl/glfw.zig
 [5]:https://github.com/tiawl/toolbox
-[6]:https://github.com/tiawl/spaceporn-action-bot
-[7]:https://github.com/tiawl/spaceporn-action-ci
-[8]:https://github.com/tiawl/spaceporn-action-cd-ping
-[9]:https://github.com/tiawl/spaceporn-action-cd-pong
-[10]:https://github.com/hexops
+[6]:https://github.com/hexops
