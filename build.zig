@@ -4,21 +4,21 @@ const toolbox = @import("toolbox");
 fn update(builder: *std.Build, vulkan_path: []const u8, dependencies: *const toolbox.Dependencies) !void {
     const tmp_path =
         try builder.build_root.join(builder.allocator, &.{
-        "tmp",
-    });
+            "tmp",
+        });
     const include_path =
         try std.fs.path.join(builder.allocator, &.{
-        tmp_path,
-        "include",
-    });
+            tmp_path,
+            "include",
+        });
 
     std.fs.deleteTreeAbsolute(vulkan_path) catch |err|
         {
-        switch (err) {
-            error.FileNotFound => {},
-            else => return err,
-        }
-    };
+            switch (err) {
+                error.FileNotFound => {},
+                else => return err,
+            }
+        };
 
     try dependencies.clone(builder, "vulkan", tmp_path);
 
@@ -60,8 +60,8 @@ pub fn build(builder: *std.Build) !void {
 
     const vulkan_path =
         try builder.build_root.join(builder.allocator, &.{
-        "vulkan",
-    });
+            "vulkan",
+        });
 
     const dependencies = try toolbox.Dependencies.init(builder, .vulkan_zig, "0xe457756cde206ca7", &.{
         "vulkan",
@@ -91,8 +91,8 @@ pub fn build(builder: *std.Build) !void {
 
     var vulkan_dir =
         try std.fs.openDirAbsolute(vulkan_path, .{
-        .iterate = true,
-    });
+            .iterate = true,
+        });
     defer vulkan_dir.close();
 
     var it = vulkan_dir.iterate();
