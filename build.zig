@@ -1,55 +1,49 @@
 const std = @import("std");
 const toolbox = @import("toolbox");
 
-fn update(builder: *std.Build, vulkan_path: []const u8, dependencies: *const toolbox.Dependencies) !void {
-    const tmp_path =
-        try builder.build_root.join(builder.allocator, &.{
-            "tmp",
-        });
-    const include_path =
-        try std.fs.path.join(builder.allocator, &.{
-            tmp_path,
-            "include",
-        });
+fn update(vulkan_path: []const u8, dependencies: *const toolbox.Dependencies) !void {
+    const tmp_path = try toolbox.instance().getBuilder().build_root.join(toolbox.instance().getBuilder().allocator, &.{
+        "tmp",
+    });
+    const include_path = toolbox.instance().ptrBuilder().pathJoin(&.{
+        tmp_path, "include",
+    });
 
-    std.fs.deleteTreeAbsolute(vulkan_path) catch |err|
-        {
-            switch (err) {
-                error.FileNotFound => {},
-                else => return err,
-            }
-        };
+    std.fs.deleteTreeAbsolute(vulkan_path) catch |err| {
+        switch (err) {
+            error.FileNotFound => {},
+            else => return err,
+        }
+    };
 
-    try dependencies.clone(builder, "vulkan", tmp_path);
+    try dependencies.clone("vulkan", tmp_path);
 
     var include_dir = try std.fs.openDirAbsolute(include_path, .{
         .iterate = true,
     });
     defer include_dir.close();
 
-    var walker = try include_dir.walk(builder.allocator);
+    var walker = try include_dir.walk(toolbox.instance().getBuilder().allocator);
     defer walker.deinit();
 
-    try toolbox.make(vulkan_path);
+    try toolbox.instance().make(vulkan_path);
 
     while (try walker.next()) |*entry| {
-        const dest = try std.fs.path.join(builder.allocator, &.{
-            vulkan_path,
-            entry.path,
+        const dest = toolbox.instance().ptrBuilder().pathJoin(&.{
+            vulkan_path, entry.path,
         });
         switch (entry.kind) {
-            .file => try toolbox.copy(try std.fs.path.join(builder.allocator, &.{
-                include_path,
-                entry.path,
+            .file => try toolbox.instance().copy(toolbox.instance().ptrBuilder().pathJoin(&.{
+                include_path, entry.path,
             }), dest),
-            .directory => try toolbox.make(dest),
+            .directory => try toolbox.instance().make(dest),
             else => return error.UnexpectedEntryKind,
         }
     }
 
     try std.fs.deleteTreeAbsolute(tmp_path);
 
-    try toolbox.clean(builder, &.{
+    try toolbox.instance().clean(&.{
         "vulkan",
     }, &.{});
 }
@@ -58,12 +52,9 @@ pub fn build(builder: *std.Build) !void {
     const target = builder.standardTargetOptions(.{});
     const optimize = builder.standardOptimizeOption(.{});
 
-    const vulkan_path =
-        try builder.build_root.join(builder.allocator, &.{
-            "vulkan",
-        });
-
-    const dependencies = try toolbox.Dependencies.init(builder, .vulkan_zig, "0xe457756cde206ca7", &.{
+    toolbox.init(builder, optimize);
+    defer toolbox.deinit();
+    const dependencies = try toolbox.Dependencies.init(.vulkan_zig, "0xe457756cde206ca7", &.{
         "vulkan",
     }, .{
         .toolbox = .{
@@ -79,34 +70,36 @@ pub fn build(builder: *std.Build) !void {
         },
     });
 
-    if (builder.option(bool, "update", "Update binding") orelse false)
-        try update(builder, vulkan_path, &dependencies);
+    const vulkan_path = try toolbox.instance().getBuilder().build_root.join(toolbox.instance().getBuilder().allocator, &.{
+        "vulkan",
+    });
 
-    const lib = builder.addStaticLibrary(.{
+    if (toolbox.instance().ptrBuilder().option(bool, "update", "Update binding") orelse false) {
+        try update(vulkan_path, &dependencies);
+    }
+
+    const lib = toolbox.instance().ptrBuilder().addStaticLibrary(.{
         .name = "vulkan",
-        .root_source_file = builder.addWriteFiles().add("empty.c", ""),
+        .root_source_file = toolbox.instance().ptrBuilder().addWriteFiles().add("empty.c", ""),
         .target = target,
         .optimize = optimize,
     });
 
-    var vulkan_dir =
-        try std.fs.openDirAbsolute(vulkan_path, .{
-            .iterate = true,
-        });
+    var vulkan_dir = try std.fs.openDirAbsolute(vulkan_path, .{
+        .iterate = true,
+    });
     defer vulkan_dir.close();
 
     var it = vulkan_dir.iterate();
     while (try it.next()) |*entry| {
         if (entry.kind == .directory) {
-            toolbox.addHeader(lib, try std.fs.path.join(builder.allocator, &.{
-                vulkan_path,
-                entry.name,
+            toolbox.instance().addHeader(lib, toolbox.instance().ptrBuilder().pathJoin(&.{
+                vulkan_path, entry.name,
             }), entry.name, &.{
-                ".h",
-                ".hpp",
+                ".h", ".hpp",
             });
         }
     }
 
-    builder.installArtifact(lib);
+    toolbox.instance().ptrBuilder().installArtifact(lib);
 }
