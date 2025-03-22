@@ -74,7 +74,7 @@ pub fn build(builder: *std.Build) !void {
         "vulkan",
     });
 
-    if (toolbox.instance().ptrBuilder().option(bool, "update", "Update binding") orelse false) {
+    if (toolbox.instance().getUpdate()) {
         try update(vulkan_path, &dependencies);
     }
 
