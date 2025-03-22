@@ -81768,49 +81768,49 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceFragmentDensityMapFeaturesEXT;
   };
 
-  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM.html
-  struct PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT.html
+  struct PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT
   {
-    using NativeType = VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM;
+    using NativeType = VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT;
 
     static const bool                                  allowDuplicate = false;
-    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceFragmentDensityMapOffsetFeaturesEXT;
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM( VULKAN_HPP_NAMESPACE::Bool32 fragmentDensityMapOffset_ = {},
-                                                                             void *                       pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT( VULKAN_HPP_NAMESPACE::Bool32 fragmentDensityMapOffset_ = {},
+                                                                            void *                       pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
       : pNext{ pNext_ }
       , fragmentDensityMapOffset{ fragmentDensityMapOffset_ }
     {
     }
 
     VULKAN_HPP_CONSTEXPR
-      PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM( PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+      PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT( PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
-    PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM( VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
-      : PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM( *reinterpret_cast<PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const *>( &rhs ) )
+    PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT( VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT( *reinterpret_cast<PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const *>( &rhs ) )
     {
     }
 
-    PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM &
-      operator=( PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT &
+      operator=( PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
-    PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM & operator=( VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT & operator=( VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const *>( &rhs );
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const *>( &rhs );
       return *this;
     }
 
 #if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
     {
       pNext = pNext_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM &
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT &
       setFragmentDensityMapOffset( VULKAN_HPP_NAMESPACE::Bool32 fragmentDensityMapOffset_ ) VULKAN_HPP_NOEXCEPT
     {
       fragmentDensityMapOffset = fragmentDensityMapOffset_;
@@ -81818,24 +81818,24 @@ namespace VULKAN_HPP_NAMESPACE
     }
 #endif /*VULKAN_HPP_NO_SETTERS*/
 
-    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const &() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const &() const VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM *>( this );
+      return *reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT *>( this );
     }
 
-    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM &() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT &() VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM *>( this );
+      return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT *>( this );
     }
 
-    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM *>( this );
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT *>( this );
     }
 
-    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT *() VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM *>( this );
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -81851,9 +81851,9 @@ namespace VULKAN_HPP_NAMESPACE
 #endif
 
 #if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const & ) const = default;
+    auto operator<=>( PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const & ) const = default;
 #else
-    bool operator==( PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator==( PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
 #  if defined( VULKAN_HPP_USE_REFLECT )
       return this->reflect() == rhs.reflect();
@@ -81862,77 +81862,79 @@ namespace VULKAN_HPP_NAMESPACE
 #  endif
     }
 
-    bool operator!=( PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator!=( PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
       return !operator==( rhs );
     }
 #endif
 
   public:
-    VULKAN_HPP_NAMESPACE::StructureType sType                    = StructureType::ePhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM;
+    VULKAN_HPP_NAMESPACE::StructureType sType                    = StructureType::ePhysicalDeviceFragmentDensityMapOffsetFeaturesEXT;
     void *                              pNext                    = {};
     VULKAN_HPP_NAMESPACE::Bool32        fragmentDensityMapOffset = {};
   };
 
   template <>
-  struct CppType<StructureType, StructureType::ePhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceFragmentDensityMapOffsetFeaturesEXT>
   {
-    using Type = PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM;
+    using Type = PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT;
   };
 
-  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM.html
-  struct PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM
+  using PhysicalDeviceFragmentDensityMapOffsetFeaturesQCOM = PhysicalDeviceFragmentDensityMapOffsetFeaturesEXT;
+
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT.html
+  struct PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT
   {
-    using NativeType = VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM;
+    using NativeType = VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT;
 
     static const bool                                  allowDuplicate = false;
-    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceFragmentDensityMapOffsetPropertiesEXT;
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM( VULKAN_HPP_NAMESPACE::Extent2D fragmentDensityOffsetGranularity_ = {},
-                                                                               void *                         pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT( VULKAN_HPP_NAMESPACE::Extent2D fragmentDensityOffsetGranularity_ = {},
+                                                                              void *                         pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
       : pNext{ pNext_ }
       , fragmentDensityOffsetGranularity{ fragmentDensityOffsetGranularity_ }
     {
     }
 
     VULKAN_HPP_CONSTEXPR
-      PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM( PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+      PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT( PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
-    PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM( VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
-      : PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM( *reinterpret_cast<PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const *>( &rhs ) )
+    PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT( VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT( *reinterpret_cast<PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const *>( &rhs ) )
     {
     }
 
-    PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM &
-      operator=( PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT &
+      operator=( PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
-    PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM & operator=( VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT & operator=( VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const *>( &rhs );
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const *>( &rhs );
       return *this;
     }
 
-    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const &() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const &() const VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM *>( this );
+      return *reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT *>( this );
     }
 
-    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM &() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT &() VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM *>( this );
+      return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT *>( this );
     }
 
-    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM *>( this );
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT *>( this );
     }
 
-    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM *() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT *() VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM *>( this );
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapOffsetPropertiesEXT *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -81948,9 +81950,9 @@ namespace VULKAN_HPP_NAMESPACE
 #endif
 
 #if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const & ) const = default;
+    auto operator<=>( PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const & ) const = default;
 #else
-    bool operator==( PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator==( PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
 #  if defined( VULKAN_HPP_USE_REFLECT )
       return this->reflect() == rhs.reflect();
@@ -81959,23 +81961,25 @@ namespace VULKAN_HPP_NAMESPACE
 #  endif
     }
 
-    bool operator!=( PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator!=( PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
       return !operator==( rhs );
     }
 #endif
 
   public:
-    VULKAN_HPP_NAMESPACE::StructureType sType                            = StructureType::ePhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM;
+    VULKAN_HPP_NAMESPACE::StructureType sType                            = StructureType::ePhysicalDeviceFragmentDensityMapOffsetPropertiesEXT;
     void *                              pNext                            = {};
     VULKAN_HPP_NAMESPACE::Extent2D      fragmentDensityOffsetGranularity = {};
   };
 
   template <>
-  struct CppType<StructureType, StructureType::ePhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceFragmentDensityMapOffsetPropertiesEXT>
   {
-    using Type = PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM;
+    using Type = PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT;
   };
+
+  using PhysicalDeviceFragmentDensityMapOffsetPropertiesQCOM = PhysicalDeviceFragmentDensityMapOffsetPropertiesEXT;
 
   // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapPropertiesEXT, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapPropertiesEXT.html
@@ -101105,6 +101109,141 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   using PhysicalDeviceShaderAtomicInt64FeaturesKHR = PhysicalDeviceShaderAtomicInt64Features;
+
+  // wrapper struct for struct VkPhysicalDeviceShaderBfloat16FeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderBfloat16FeaturesKHR.html
+  struct PhysicalDeviceShaderBfloat16FeaturesKHR
+  {
+    using NativeType = VkPhysicalDeviceShaderBfloat16FeaturesKHR;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceShaderBfloat16FeaturesKHR;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceShaderBfloat16FeaturesKHR( VULKAN_HPP_NAMESPACE::Bool32 shaderBFloat16Type_              = {},
+                                                                  VULKAN_HPP_NAMESPACE::Bool32 shaderBFloat16DotProduct_        = {},
+                                                                  VULKAN_HPP_NAMESPACE::Bool32 shaderBFloat16CooperativeMatrix_ = {},
+                                                                  void *                       pNext_                           = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , shaderBFloat16Type{ shaderBFloat16Type_ }
+      , shaderBFloat16DotProduct{ shaderBFloat16DotProduct_ }
+      , shaderBFloat16CooperativeMatrix{ shaderBFloat16CooperativeMatrix_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceShaderBfloat16FeaturesKHR( PhysicalDeviceShaderBfloat16FeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceShaderBfloat16FeaturesKHR( VkPhysicalDeviceShaderBfloat16FeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceShaderBfloat16FeaturesKHR( *reinterpret_cast<PhysicalDeviceShaderBfloat16FeaturesKHR const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceShaderBfloat16FeaturesKHR & operator=( PhysicalDeviceShaderBfloat16FeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceShaderBfloat16FeaturesKHR & operator=( VkPhysicalDeviceShaderBfloat16FeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceShaderBfloat16FeaturesKHR const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderBfloat16FeaturesKHR & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderBfloat16FeaturesKHR &
+      setShaderBFloat16Type( VULKAN_HPP_NAMESPACE::Bool32 shaderBFloat16Type_ ) VULKAN_HPP_NOEXCEPT
+    {
+      shaderBFloat16Type = shaderBFloat16Type_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderBfloat16FeaturesKHR &
+      setShaderBFloat16DotProduct( VULKAN_HPP_NAMESPACE::Bool32 shaderBFloat16DotProduct_ ) VULKAN_HPP_NOEXCEPT
+    {
+      shaderBFloat16DotProduct = shaderBFloat16DotProduct_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderBfloat16FeaturesKHR &
+      setShaderBFloat16CooperativeMatrix( VULKAN_HPP_NAMESPACE::Bool32 shaderBFloat16CooperativeMatrix_ ) VULKAN_HPP_NOEXCEPT
+    {
+      shaderBFloat16CooperativeMatrix = shaderBFloat16CooperativeMatrix_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceShaderBfloat16FeaturesKHR const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceShaderBfloat16FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderBfloat16FeaturesKHR &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceShaderBfloat16FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderBfloat16FeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderBfloat16FeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderBfloat16FeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderBfloat16FeaturesKHR *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &,
+               void * const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, shaderBFloat16Type, shaderBFloat16DotProduct, shaderBFloat16CooperativeMatrix );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceShaderBfloat16FeaturesKHR const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceShaderBfloat16FeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( shaderBFloat16Type == rhs.shaderBFloat16Type ) &&
+             ( shaderBFloat16DotProduct == rhs.shaderBFloat16DotProduct ) && ( shaderBFloat16CooperativeMatrix == rhs.shaderBFloat16CooperativeMatrix );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceShaderBfloat16FeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType                           = StructureType::ePhysicalDeviceShaderBfloat16FeaturesKHR;
+    void *                              pNext                           = {};
+    VULKAN_HPP_NAMESPACE::Bool32        shaderBFloat16Type              = {};
+    VULKAN_HPP_NAMESPACE::Bool32        shaderBFloat16DotProduct        = {};
+    VULKAN_HPP_NAMESPACE::Bool32        shaderBFloat16CooperativeMatrix = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceShaderBfloat16FeaturesKHR>
+  {
+    using Type = PhysicalDeviceShaderBfloat16FeaturesKHR;
+  };
 
   // wrapper struct for struct VkPhysicalDeviceShaderClockFeaturesKHR, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderClockFeaturesKHR.html
@@ -127068,6 +127207,149 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = RenderPassFragmentDensityMapCreateInfoEXT;
   };
 
+  // wrapper struct for struct VkRenderPassFragmentDensityMapOffsetEndInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassFragmentDensityMapOffsetEndInfoEXT.html
+  struct RenderPassFragmentDensityMapOffsetEndInfoEXT
+  {
+    using NativeType = VkRenderPassFragmentDensityMapOffsetEndInfoEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eRenderPassFragmentDensityMapOffsetEndInfoEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR RenderPassFragmentDensityMapOffsetEndInfoEXT( uint32_t                               fragmentDensityOffsetCount_ = {},
+                                                                       const VULKAN_HPP_NAMESPACE::Offset2D * pFragmentDensityOffsets_    = {},
+                                                                       const void *                           pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , fragmentDensityOffsetCount{ fragmentDensityOffsetCount_ }
+      , pFragmentDensityOffsets{ pFragmentDensityOffsets_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR RenderPassFragmentDensityMapOffsetEndInfoEXT( RenderPassFragmentDensityMapOffsetEndInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    RenderPassFragmentDensityMapOffsetEndInfoEXT( VkRenderPassFragmentDensityMapOffsetEndInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : RenderPassFragmentDensityMapOffsetEndInfoEXT( *reinterpret_cast<RenderPassFragmentDensityMapOffsetEndInfoEXT const *>( &rhs ) )
+    {
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    RenderPassFragmentDensityMapOffsetEndInfoEXT(
+      VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const VULKAN_HPP_NAMESPACE::Offset2D> const & fragmentDensityOffsets_, const void * pNext_ = nullptr )
+      : pNext( pNext_ )
+      , fragmentDensityOffsetCount( static_cast<uint32_t>( fragmentDensityOffsets_.size() ) )
+      , pFragmentDensityOffsets( fragmentDensityOffsets_.data() )
+    {
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    RenderPassFragmentDensityMapOffsetEndInfoEXT & operator=( RenderPassFragmentDensityMapOffsetEndInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    RenderPassFragmentDensityMapOffsetEndInfoEXT & operator=( VkRenderPassFragmentDensityMapOffsetEndInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::RenderPassFragmentDensityMapOffsetEndInfoEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 RenderPassFragmentDensityMapOffsetEndInfoEXT & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 RenderPassFragmentDensityMapOffsetEndInfoEXT &
+      setFragmentDensityOffsetCount( uint32_t fragmentDensityOffsetCount_ ) VULKAN_HPP_NOEXCEPT
+    {
+      fragmentDensityOffsetCount = fragmentDensityOffsetCount_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 RenderPassFragmentDensityMapOffsetEndInfoEXT &
+      setPFragmentDensityOffsets( const VULKAN_HPP_NAMESPACE::Offset2D * pFragmentDensityOffsets_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pFragmentDensityOffsets = pFragmentDensityOffsets_;
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    RenderPassFragmentDensityMapOffsetEndInfoEXT & setFragmentDensityOffsets(
+      VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const VULKAN_HPP_NAMESPACE::Offset2D> const & fragmentDensityOffsets_ ) VULKAN_HPP_NOEXCEPT
+    {
+      fragmentDensityOffsetCount = static_cast<uint32_t>( fragmentDensityOffsets_.size() );
+      pFragmentDensityOffsets    = fragmentDensityOffsets_.data();
+      return *this;
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+#endif   /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkRenderPassFragmentDensityMapOffsetEndInfoEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkRenderPassFragmentDensityMapOffsetEndInfoEXT *>( this );
+    }
+
+    operator VkRenderPassFragmentDensityMapOffsetEndInfoEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkRenderPassFragmentDensityMapOffsetEndInfoEXT *>( this );
+    }
+
+    operator VkRenderPassFragmentDensityMapOffsetEndInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassFragmentDensityMapOffsetEndInfoEXT *>( this );
+    }
+
+    operator VkRenderPassFragmentDensityMapOffsetEndInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassFragmentDensityMapOffsetEndInfoEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, uint32_t const &, const VULKAN_HPP_NAMESPACE::Offset2D * const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, fragmentDensityOffsetCount, pFragmentDensityOffsets );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( RenderPassFragmentDensityMapOffsetEndInfoEXT const & ) const = default;
+#else
+    bool operator==( RenderPassFragmentDensityMapOffsetEndInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( fragmentDensityOffsetCount == rhs.fragmentDensityOffsetCount ) &&
+             ( pFragmentDensityOffsets == rhs.pFragmentDensityOffsets );
+#  endif
+    }
+
+    bool operator!=( RenderPassFragmentDensityMapOffsetEndInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType    sType                      = StructureType::eRenderPassFragmentDensityMapOffsetEndInfoEXT;
+    const void *                           pNext                      = {};
+    uint32_t                               fragmentDensityOffsetCount = {};
+    const VULKAN_HPP_NAMESPACE::Offset2D * pFragmentDensityOffsets    = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eRenderPassFragmentDensityMapOffsetEndInfoEXT>
+  {
+    using Type = RenderPassFragmentDensityMapOffsetEndInfoEXT;
+  };
+
+  using SubpassFragmentDensityMapOffsetEndInfoQCOM = RenderPassFragmentDensityMapOffsetEndInfoEXT;
+
   // wrapper struct for struct VkRenderPassInputAttachmentAspectCreateInfo, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassInputAttachmentAspectCreateInfo.html
   struct RenderPassInputAttachmentAspectCreateInfo
@@ -129028,6 +129310,101 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   using RenderingAttachmentLocationInfoKHR = RenderingAttachmentLocationInfo;
+
+  // wrapper struct for struct VkRenderingEndInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderingEndInfoEXT.html
+  struct RenderingEndInfoEXT
+  {
+    using NativeType = VkRenderingEndInfoEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eRenderingEndInfoEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR RenderingEndInfoEXT( const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT : pNext{ pNext_ } {}
+
+    VULKAN_HPP_CONSTEXPR RenderingEndInfoEXT( RenderingEndInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    RenderingEndInfoEXT( VkRenderingEndInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT : RenderingEndInfoEXT( *reinterpret_cast<RenderingEndInfoEXT const *>( &rhs ) )
+    {
+    }
+
+    RenderingEndInfoEXT & operator=( RenderingEndInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    RenderingEndInfoEXT & operator=( VkRenderingEndInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::RenderingEndInfoEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 RenderingEndInfoEXT & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkRenderingEndInfoEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkRenderingEndInfoEXT *>( this );
+    }
+
+    operator VkRenderingEndInfoEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkRenderingEndInfoEXT *>( this );
+    }
+
+    operator VkRenderingEndInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderingEndInfoEXT *>( this );
+    }
+
+    operator VkRenderingEndInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderingEndInfoEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( RenderingEndInfoEXT const & ) const = default;
+#else
+    bool operator==( RenderingEndInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext );
+#  endif
+    }
+
+    bool operator!=( RenderingEndInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::eRenderingEndInfoEXT;
+    const void *                        pNext = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eRenderingEndInfoEXT>
+  {
+    using Type = RenderingEndInfoEXT;
+  };
 
   // wrapper struct for struct VkRenderingFragmentDensityMapAttachmentInfoEXT, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderingFragmentDensityMapAttachmentInfoEXT.html
@@ -135447,147 +135824,6 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   using SubpassEndInfoKHR = SubpassEndInfo;
-
-  // wrapper struct for struct VkSubpassFragmentDensityMapOffsetEndInfoQCOM, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassFragmentDensityMapOffsetEndInfoQCOM.html
-  struct SubpassFragmentDensityMapOffsetEndInfoQCOM
-  {
-    using NativeType = VkSubpassFragmentDensityMapOffsetEndInfoQCOM;
-
-    static const bool                                  allowDuplicate = false;
-    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eSubpassFragmentDensityMapOffsetEndInfoQCOM;
-
-#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR SubpassFragmentDensityMapOffsetEndInfoQCOM( uint32_t                               fragmentDensityOffsetCount_ = {},
-                                                                     const VULKAN_HPP_NAMESPACE::Offset2D * pFragmentDensityOffsets_    = {},
-                                                                     const void *                           pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
-      : pNext{ pNext_ }
-      , fragmentDensityOffsetCount{ fragmentDensityOffsetCount_ }
-      , pFragmentDensityOffsets{ pFragmentDensityOffsets_ }
-    {
-    }
-
-    VULKAN_HPP_CONSTEXPR SubpassFragmentDensityMapOffsetEndInfoQCOM( SubpassFragmentDensityMapOffsetEndInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
-
-    SubpassFragmentDensityMapOffsetEndInfoQCOM( VkSubpassFragmentDensityMapOffsetEndInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
-      : SubpassFragmentDensityMapOffsetEndInfoQCOM( *reinterpret_cast<SubpassFragmentDensityMapOffsetEndInfoQCOM const *>( &rhs ) )
-    {
-    }
-
-#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
-    SubpassFragmentDensityMapOffsetEndInfoQCOM(
-      VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const VULKAN_HPP_NAMESPACE::Offset2D> const & fragmentDensityOffsets_, const void * pNext_ = nullptr )
-      : pNext( pNext_ )
-      , fragmentDensityOffsetCount( static_cast<uint32_t>( fragmentDensityOffsets_.size() ) )
-      , pFragmentDensityOffsets( fragmentDensityOffsets_.data() )
-    {
-    }
-#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
-
-    SubpassFragmentDensityMapOffsetEndInfoQCOM & operator=( SubpassFragmentDensityMapOffsetEndInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
-#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
-
-    SubpassFragmentDensityMapOffsetEndInfoQCOM & operator=( VkSubpassFragmentDensityMapOffsetEndInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
-    {
-      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::SubpassFragmentDensityMapOffsetEndInfoQCOM const *>( &rhs );
-      return *this;
-    }
-
-#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 SubpassFragmentDensityMapOffsetEndInfoQCOM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 SubpassFragmentDensityMapOffsetEndInfoQCOM &
-      setFragmentDensityOffsetCount( uint32_t fragmentDensityOffsetCount_ ) VULKAN_HPP_NOEXCEPT
-    {
-      fragmentDensityOffsetCount = fragmentDensityOffsetCount_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 SubpassFragmentDensityMapOffsetEndInfoQCOM &
-      setPFragmentDensityOffsets( const VULKAN_HPP_NAMESPACE::Offset2D * pFragmentDensityOffsets_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pFragmentDensityOffsets = pFragmentDensityOffsets_;
-      return *this;
-    }
-
-#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
-    SubpassFragmentDensityMapOffsetEndInfoQCOM & setFragmentDensityOffsets(
-      VULKAN_HPP_NAMESPACE::ArrayProxyNoTemporaries<const VULKAN_HPP_NAMESPACE::Offset2D> const & fragmentDensityOffsets_ ) VULKAN_HPP_NOEXCEPT
-    {
-      fragmentDensityOffsetCount = static_cast<uint32_t>( fragmentDensityOffsets_.size() );
-      pFragmentDensityOffsets    = fragmentDensityOffsets_.data();
-      return *this;
-    }
-#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
-#endif   /*VULKAN_HPP_NO_SETTERS*/
-
-    operator VkSubpassFragmentDensityMapOffsetEndInfoQCOM const &() const VULKAN_HPP_NOEXCEPT
-    {
-      return *reinterpret_cast<const VkSubpassFragmentDensityMapOffsetEndInfoQCOM *>( this );
-    }
-
-    operator VkSubpassFragmentDensityMapOffsetEndInfoQCOM &() VULKAN_HPP_NOEXCEPT
-    {
-      return *reinterpret_cast<VkSubpassFragmentDensityMapOffsetEndInfoQCOM *>( this );
-    }
-
-    operator VkSubpassFragmentDensityMapOffsetEndInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
-    {
-      return reinterpret_cast<const VkSubpassFragmentDensityMapOffsetEndInfoQCOM *>( this );
-    }
-
-    operator VkSubpassFragmentDensityMapOffsetEndInfoQCOM *() VULKAN_HPP_NOEXCEPT
-    {
-      return reinterpret_cast<VkSubpassFragmentDensityMapOffsetEndInfoQCOM *>( this );
-    }
-
-#if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, uint32_t const &, const VULKAN_HPP_NAMESPACE::Offset2D * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
-    {
-      return std::tie( sType, pNext, fragmentDensityOffsetCount, pFragmentDensityOffsets );
-    }
-#endif
-
-#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( SubpassFragmentDensityMapOffsetEndInfoQCOM const & ) const = default;
-#else
-    bool operator==( SubpassFragmentDensityMapOffsetEndInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
-    {
-#  if defined( VULKAN_HPP_USE_REFLECT )
-      return this->reflect() == rhs.reflect();
-#  else
-      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( fragmentDensityOffsetCount == rhs.fragmentDensityOffsetCount ) &&
-             ( pFragmentDensityOffsets == rhs.pFragmentDensityOffsets );
-#  endif
-    }
-
-    bool operator!=( SubpassFragmentDensityMapOffsetEndInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
-    {
-      return !operator==( rhs );
-    }
-#endif
-
-  public:
-    VULKAN_HPP_NAMESPACE::StructureType    sType                      = StructureType::eSubpassFragmentDensityMapOffsetEndInfoQCOM;
-    const void *                           pNext                      = {};
-    uint32_t                               fragmentDensityOffsetCount = {};
-    const VULKAN_HPP_NAMESPACE::Offset2D * pFragmentDensityOffsets    = {};
-  };
-
-  template <>
-  struct CppType<StructureType, StructureType::eSubpassFragmentDensityMapOffsetEndInfoQCOM>
-  {
-    using Type = SubpassFragmentDensityMapOffsetEndInfoQCOM;
-  };
 
   // wrapper struct for struct VkSubpassResolvePerformanceQueryEXT, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSubpassResolvePerformanceQueryEXT.html
