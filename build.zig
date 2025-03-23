@@ -1,7 +1,7 @@
 const std = @import("std");
 const toolbox = @import("toolbox");
 
-fn update(vulkan_path: []const u8, dependencies: *const toolbox.Dependencies) !void {
+fn update(vulkan_path: []const u8) !void {
     const tmp_path = try toolbox.instance().getBuilder().build_root.join(toolbox.instance().getBuilder().allocator, &.{
         "tmp",
     });
@@ -16,7 +16,7 @@ fn update(vulkan_path: []const u8, dependencies: *const toolbox.Dependencies) !v
         }
     };
 
-    try dependencies.clone("vulkan", tmp_path);
+    try toolbox.instance().clone("vulkan", tmp_path);
 
     var include_dir = try std.fs.openDirAbsolute(include_path, .{
         .iterate = true,
@@ -48,34 +48,41 @@ fn update(vulkan_path: []const u8, dependencies: *const toolbox.Dependencies) !v
     }, &.{});
 }
 
+const FromZon = toolbox.Repositories(.{
+    .toolbox,
+});
+
+const DuringExec = toolbox.Repositories(.{
+    .vulkan,
+});
+
 pub fn build(builder: *std.Build) !void {
     const target = builder.standardTargetOptions(.{});
     const optimize = builder.standardOptimizeOption(.{});
 
-    toolbox.init(builder, optimize);
-    defer toolbox.deinit();
-    const dependencies = try toolbox.Dependencies.init(.vulkan_zig, "0xe457756cde206ca7", &.{
+    try toolbox.init(FromZon, DuringExec, builder, optimize, .vulkan_zig, "0xe457756cde206ca7", &.{
         "vulkan",
     }, .{
         .toolbox = .{
             .name = "tiawl/toolbox",
-            .host = toolbox.Repository.Host.github,
-            .ref = toolbox.Repository.Reference.tag,
+            .host = .github,
+            .ref = .tag,
         },
     }, .{
         .vulkan = .{
             .name = "KhronosGroup/Vulkan-Headers",
-            .host = toolbox.Repository.Host.github,
-            .ref = toolbox.Repository.Reference.tag,
+            .host = .github,
+            .ref = .tag,
         },
     });
+    defer toolbox.deinit();
 
     const vulkan_path = try toolbox.instance().getBuilder().build_root.join(toolbox.instance().getBuilder().allocator, &.{
         "vulkan",
     });
 
-    if (toolbox.instance().ptrBuilder().option(bool, "update", "Update binding") orelse false) {
-        try update(vulkan_path, &dependencies);
+    if (toolbox.instance().getUpdate()) {
+        try update(vulkan_path);
     }
 
     const lib = toolbox.instance().ptrBuilder().addStaticLibrary(.{
