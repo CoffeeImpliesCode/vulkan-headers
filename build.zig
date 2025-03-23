@@ -1,11 +1,12 @@
 const std = @import("std");
-const toolbox = @import("toolbox");
+const toolbox_pkg = @import("toolbox");
+const Toolbox = toolbox_pkg.Toolbox;
 
-fn update(vulkan_path: []const u8) !void {
-    const tmp_path = try toolbox.instance().buildRootJoin(&.{
+fn update(toolbox: *Toolbox, vulkan_path: []const u8) !void {
+    const tmp_path = try toolbox.buildRootJoin(&.{
         "tmp",
     });
-    const include_path = toolbox.instance().pathJoin(&.{
+    const include_path = toolbox.pathJoin(&.{
         tmp_path, "include",
     });
 
@@ -16,43 +17,43 @@ fn update(vulkan_path: []const u8) !void {
         }
     };
 
-    try toolbox.instance().clone(.vulkan, tmp_path);
+    try toolbox.clone(.vulkan, tmp_path);
 
     var include_dir = try std.fs.openDirAbsolute(include_path, .{
         .iterate = true,
     });
     defer include_dir.close();
 
-    var walker = try include_dir.walk(toolbox.instance().getBuilder().allocator);
+    var walker = try include_dir.walk(toolbox.getAllocator());
     defer walker.deinit();
 
-    try toolbox.instance().make(vulkan_path);
+    try toolbox.make(vulkan_path);
 
     while (try walker.next()) |*entry| {
-        const dest = toolbox.instance().pathJoin(&.{
+        const dest = toolbox.pathJoin(&.{
             vulkan_path, entry.path,
         });
         switch (entry.kind) {
-            .file => try toolbox.instance().copy(toolbox.instance().pathJoin(&.{
+            .file => try toolbox.copy(toolbox.pathJoin(&.{
                 include_path, entry.path,
             }), dest),
-            .directory => try toolbox.instance().make(dest),
+            .directory => try toolbox.make(dest),
             else => return error.UnexpectedEntryKind,
         }
     }
 
     try std.fs.deleteTreeAbsolute(tmp_path);
 
-    try toolbox.instance().clean(&.{
+    try toolbox.clean(&.{
         "vulkan",
     }, &.{});
 }
 
-const FromZon = toolbox.Repositories(.{
+const FromZon = toolbox_pkg.Repositories(.{
     .toolbox,
 });
 
-const DuringExec = toolbox.Repositories(.{
+const DuringExec = toolbox_pkg.Repositories(.{
     .vulkan,
 });
 
@@ -60,7 +61,7 @@ pub fn build(builder: *std.Build) !void {
     const target = builder.standardTargetOptions(.{});
     const optimize = builder.standardOptimizeOption(.{});
 
-    try toolbox.init(FromZon, DuringExec, builder, optimize, .vulkan_zig, "0xe457756cde206ca7", &.{
+    var toolbox = try Toolbox.init(FromZon, DuringExec, builder, optimize, .vulkan_zig, "0xe457756cde206ca7", &.{
         "vulkan",
     }, .{
         .toolbox = .{
@@ -81,8 +82,8 @@ pub fn build(builder: *std.Build) !void {
         "vulkan",
     });
 
-    if (toolbox.instance().getUpdate()) {
-        try update(vulkan_path);
+    if (toolbox.getUpdate()) {
+        try update(&toolbox, vulkan_path);
     }
 
     const lib = builder.addStaticLibrary(.{
@@ -100,7 +101,7 @@ pub fn build(builder: *std.Build) !void {
     var it = vulkan_dir.iterate();
     while (try it.next()) |*entry| {
         if (entry.kind == .directory) {
-            toolbox.instance().addHeader(lib, builder.pathJoin(&.{
+            toolbox.addHeader(lib, builder.pathJoin(&.{
                 vulkan_path, entry.name,
             }), entry.name, &.{
                 ".h", ".hpp",
