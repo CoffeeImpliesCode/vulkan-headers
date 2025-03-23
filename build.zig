@@ -2,10 +2,10 @@ const std = @import("std");
 const toolbox = @import("toolbox");
 
 fn update(vulkan_path: []const u8) !void {
-    const tmp_path = try toolbox.instance().getBuilder().build_root.join(toolbox.instance().getBuilder().allocator, &.{
+    const tmp_path = try toolbox.instance().buildRootJoin(&.{
         "tmp",
     });
-    const include_path = toolbox.instance().ptrBuilder().pathJoin(&.{
+    const include_path = toolbox.instance().pathJoin(&.{
         tmp_path, "include",
     });
 
@@ -16,7 +16,7 @@ fn update(vulkan_path: []const u8) !void {
         }
     };
 
-    try toolbox.instance().clone("vulkan", tmp_path);
+    try toolbox.instance().clone(.vulkan, tmp_path);
 
     var include_dir = try std.fs.openDirAbsolute(include_path, .{
         .iterate = true,
@@ -29,11 +29,11 @@ fn update(vulkan_path: []const u8) !void {
     try toolbox.instance().make(vulkan_path);
 
     while (try walker.next()) |*entry| {
-        const dest = toolbox.instance().ptrBuilder().pathJoin(&.{
+        const dest = toolbox.instance().pathJoin(&.{
             vulkan_path, entry.path,
         });
         switch (entry.kind) {
-            .file => try toolbox.instance().copy(toolbox.instance().ptrBuilder().pathJoin(&.{
+            .file => try toolbox.instance().copy(toolbox.instance().pathJoin(&.{
                 include_path, entry.path,
             }), dest),
             .directory => try toolbox.instance().make(dest),
@@ -77,7 +77,7 @@ pub fn build(builder: *std.Build) !void {
     });
     defer toolbox.deinit();
 
-    const vulkan_path = try toolbox.instance().getBuilder().build_root.join(toolbox.instance().getBuilder().allocator, &.{
+    const vulkan_path = try builder.build_root.join(builder.allocator, &.{
         "vulkan",
     });
 
@@ -85,9 +85,9 @@ pub fn build(builder: *std.Build) !void {
         try update(vulkan_path);
     }
 
-    const lib = toolbox.instance().ptrBuilder().addStaticLibrary(.{
+    const lib = builder.addStaticLibrary(.{
         .name = "vulkan",
-        .root_source_file = toolbox.instance().ptrBuilder().addWriteFiles().add("empty.c", ""),
+        .root_source_file = builder.addWriteFiles().add("empty.c", ""),
         .target = target,
         .optimize = optimize,
     });
@@ -100,7 +100,7 @@ pub fn build(builder: *std.Build) !void {
     var it = vulkan_dir.iterate();
     while (try it.next()) |*entry| {
         if (entry.kind == .directory) {
-            toolbox.instance().addHeader(lib, toolbox.instance().ptrBuilder().pathJoin(&.{
+            toolbox.instance().addHeader(lib, builder.pathJoin(&.{
                 vulkan_path, entry.name,
             }), entry.name, &.{
                 ".h", ".hpp",
@@ -108,5 +108,5 @@ pub fn build(builder: *std.Build) !void {
         }
     }
 
-    toolbox.instance().ptrBuilder().installArtifact(lib);
+    builder.installArtifact(lib);
 }
