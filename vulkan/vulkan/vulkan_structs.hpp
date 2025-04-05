@@ -38317,6 +38317,102 @@ namespace VULKAN_HPP_NAMESPACE
     uint32_t z = {};
   };
 
+  // wrapper struct for struct VkDispatchTileInfoQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDispatchTileInfoQCOM.html
+  struct DispatchTileInfoQCOM
+  {
+    using NativeType = VkDispatchTileInfoQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eDispatchTileInfoQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR DispatchTileInfoQCOM( const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT : pNext{ pNext_ } {}
+
+    VULKAN_HPP_CONSTEXPR DispatchTileInfoQCOM( DispatchTileInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    DispatchTileInfoQCOM( VkDispatchTileInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : DispatchTileInfoQCOM( *reinterpret_cast<DispatchTileInfoQCOM const *>( &rhs ) )
+    {
+    }
+
+    DispatchTileInfoQCOM & operator=( DispatchTileInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    DispatchTileInfoQCOM & operator=( VkDispatchTileInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::DispatchTileInfoQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 DispatchTileInfoQCOM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkDispatchTileInfoQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkDispatchTileInfoQCOM *>( this );
+    }
+
+    operator VkDispatchTileInfoQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkDispatchTileInfoQCOM *>( this );
+    }
+
+    operator VkDispatchTileInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDispatchTileInfoQCOM *>( this );
+    }
+
+    operator VkDispatchTileInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDispatchTileInfoQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( DispatchTileInfoQCOM const & ) const = default;
+#else
+    bool operator==( DispatchTileInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext );
+#  endif
+    }
+
+    bool operator!=( DispatchTileInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::eDispatchTileInfoQCOM;
+    const void *                        pNext = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eDispatchTileInfoQCOM>
+  {
+    using Type = DispatchTileInfoQCOM;
+  };
+
   // wrapper struct for struct VkDisplayEventInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkDisplayEventInfoEXT.html
   struct DisplayEventInfoEXT
   {
@@ -43956,6 +44052,330 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   using ExternalBufferPropertiesKHR = ExternalBufferProperties;
+
+  // wrapper struct for struct VkExternalComputeQueueCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalComputeQueueCreateInfoNV.html
+  struct ExternalComputeQueueCreateInfoNV
+  {
+    using NativeType = VkExternalComputeQueueCreateInfoNV;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eExternalComputeQueueCreateInfoNV;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR ExternalComputeQueueCreateInfoNV( VULKAN_HPP_NAMESPACE::Queue preferredQueue_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , preferredQueue{ preferredQueue_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR ExternalComputeQueueCreateInfoNV( ExternalComputeQueueCreateInfoNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    ExternalComputeQueueCreateInfoNV( VkExternalComputeQueueCreateInfoNV const & rhs ) VULKAN_HPP_NOEXCEPT
+      : ExternalComputeQueueCreateInfoNV( *reinterpret_cast<ExternalComputeQueueCreateInfoNV const *>( &rhs ) )
+    {
+    }
+
+    ExternalComputeQueueCreateInfoNV & operator=( ExternalComputeQueueCreateInfoNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    ExternalComputeQueueCreateInfoNV & operator=( VkExternalComputeQueueCreateInfoNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::ExternalComputeQueueCreateInfoNV const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 ExternalComputeQueueCreateInfoNV & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 ExternalComputeQueueCreateInfoNV & setPreferredQueue( VULKAN_HPP_NAMESPACE::Queue preferredQueue_ ) VULKAN_HPP_NOEXCEPT
+    {
+      preferredQueue = preferredQueue_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkExternalComputeQueueCreateInfoNV const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkExternalComputeQueueCreateInfoNV *>( this );
+    }
+
+    operator VkExternalComputeQueueCreateInfoNV &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkExternalComputeQueueCreateInfoNV *>( this );
+    }
+
+    operator VkExternalComputeQueueCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalComputeQueueCreateInfoNV *>( this );
+    }
+
+    operator VkExternalComputeQueueCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalComputeQueueCreateInfoNV *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, VULKAN_HPP_NAMESPACE::Queue const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, preferredQueue );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( ExternalComputeQueueCreateInfoNV const & ) const = default;
+#else
+    bool operator==( ExternalComputeQueueCreateInfoNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( preferredQueue == rhs.preferredQueue );
+#  endif
+    }
+
+    bool operator!=( ExternalComputeQueueCreateInfoNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType          = StructureType::eExternalComputeQueueCreateInfoNV;
+    const void *                        pNext          = {};
+    VULKAN_HPP_NAMESPACE::Queue         preferredQueue = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eExternalComputeQueueCreateInfoNV>
+  {
+    using Type = ExternalComputeQueueCreateInfoNV;
+  };
+
+  // wrapper struct for struct VkExternalComputeQueueDataParamsNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalComputeQueueDataParamsNV.html
+  struct ExternalComputeQueueDataParamsNV
+  {
+    using NativeType = VkExternalComputeQueueDataParamsNV;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eExternalComputeQueueDataParamsNV;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR ExternalComputeQueueDataParamsNV( uint32_t deviceIndex_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , deviceIndex{ deviceIndex_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR ExternalComputeQueueDataParamsNV( ExternalComputeQueueDataParamsNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    ExternalComputeQueueDataParamsNV( VkExternalComputeQueueDataParamsNV const & rhs ) VULKAN_HPP_NOEXCEPT
+      : ExternalComputeQueueDataParamsNV( *reinterpret_cast<ExternalComputeQueueDataParamsNV const *>( &rhs ) )
+    {
+    }
+
+    ExternalComputeQueueDataParamsNV & operator=( ExternalComputeQueueDataParamsNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    ExternalComputeQueueDataParamsNV & operator=( VkExternalComputeQueueDataParamsNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::ExternalComputeQueueDataParamsNV const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 ExternalComputeQueueDataParamsNV & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 ExternalComputeQueueDataParamsNV & setDeviceIndex( uint32_t deviceIndex_ ) VULKAN_HPP_NOEXCEPT
+    {
+      deviceIndex = deviceIndex_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkExternalComputeQueueDataParamsNV const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkExternalComputeQueueDataParamsNV *>( this );
+    }
+
+    operator VkExternalComputeQueueDataParamsNV &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkExternalComputeQueueDataParamsNV *>( this );
+    }
+
+    operator VkExternalComputeQueueDataParamsNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalComputeQueueDataParamsNV *>( this );
+    }
+
+    operator VkExternalComputeQueueDataParamsNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalComputeQueueDataParamsNV *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, uint32_t const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, deviceIndex );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( ExternalComputeQueueDataParamsNV const & ) const = default;
+#else
+    bool operator==( ExternalComputeQueueDataParamsNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( deviceIndex == rhs.deviceIndex );
+#  endif
+    }
+
+    bool operator!=( ExternalComputeQueueDataParamsNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType       = StructureType::eExternalComputeQueueDataParamsNV;
+    const void *                        pNext       = {};
+    uint32_t                            deviceIndex = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eExternalComputeQueueDataParamsNV>
+  {
+    using Type = ExternalComputeQueueDataParamsNV;
+  };
+
+  // wrapper struct for struct VkExternalComputeQueueDeviceCreateInfoNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalComputeQueueDeviceCreateInfoNV.html
+  struct ExternalComputeQueueDeviceCreateInfoNV
+  {
+    using NativeType = VkExternalComputeQueueDeviceCreateInfoNV;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eExternalComputeQueueDeviceCreateInfoNV;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR ExternalComputeQueueDeviceCreateInfoNV( uint32_t reservedExternalQueues_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , reservedExternalQueues{ reservedExternalQueues_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR ExternalComputeQueueDeviceCreateInfoNV( ExternalComputeQueueDeviceCreateInfoNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    ExternalComputeQueueDeviceCreateInfoNV( VkExternalComputeQueueDeviceCreateInfoNV const & rhs ) VULKAN_HPP_NOEXCEPT
+      : ExternalComputeQueueDeviceCreateInfoNV( *reinterpret_cast<ExternalComputeQueueDeviceCreateInfoNV const *>( &rhs ) )
+    {
+    }
+
+    ExternalComputeQueueDeviceCreateInfoNV & operator=( ExternalComputeQueueDeviceCreateInfoNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    ExternalComputeQueueDeviceCreateInfoNV & operator=( VkExternalComputeQueueDeviceCreateInfoNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::ExternalComputeQueueDeviceCreateInfoNV const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 ExternalComputeQueueDeviceCreateInfoNV & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 ExternalComputeQueueDeviceCreateInfoNV & setReservedExternalQueues( uint32_t reservedExternalQueues_ ) VULKAN_HPP_NOEXCEPT
+    {
+      reservedExternalQueues = reservedExternalQueues_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkExternalComputeQueueDeviceCreateInfoNV const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkExternalComputeQueueDeviceCreateInfoNV *>( this );
+    }
+
+    operator VkExternalComputeQueueDeviceCreateInfoNV &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkExternalComputeQueueDeviceCreateInfoNV *>( this );
+    }
+
+    operator VkExternalComputeQueueDeviceCreateInfoNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkExternalComputeQueueDeviceCreateInfoNV *>( this );
+    }
+
+    operator VkExternalComputeQueueDeviceCreateInfoNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkExternalComputeQueueDeviceCreateInfoNV *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, uint32_t const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, reservedExternalQueues );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( ExternalComputeQueueDeviceCreateInfoNV const & ) const = default;
+#else
+    bool operator==( ExternalComputeQueueDeviceCreateInfoNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( reservedExternalQueues == rhs.reservedExternalQueues );
+#  endif
+    }
+
+    bool operator!=( ExternalComputeQueueDeviceCreateInfoNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType                  = StructureType::eExternalComputeQueueDeviceCreateInfoNV;
+    const void *                        pNext                  = {};
+    uint32_t                            reservedExternalQueues = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eExternalComputeQueueDeviceCreateInfoNV>
+  {
+    using Type = ExternalComputeQueueDeviceCreateInfoNV;
+  };
 
   // wrapper struct for struct VkExternalFenceProperties, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkExternalFenceProperties.html
   struct ExternalFenceProperties
@@ -68337,6 +68757,195 @@ namespace VULKAN_HPP_NAMESPACE
     uint64_t presentMargin       = {};
   };
 
+  // wrapper struct for struct VkPerTileBeginInfoQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerTileBeginInfoQCOM.html
+  struct PerTileBeginInfoQCOM
+  {
+    using NativeType = VkPerTileBeginInfoQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePerTileBeginInfoQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PerTileBeginInfoQCOM( const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT : pNext{ pNext_ } {}
+
+    VULKAN_HPP_CONSTEXPR PerTileBeginInfoQCOM( PerTileBeginInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PerTileBeginInfoQCOM( VkPerTileBeginInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PerTileBeginInfoQCOM( *reinterpret_cast<PerTileBeginInfoQCOM const *>( &rhs ) )
+    {
+    }
+
+    PerTileBeginInfoQCOM & operator=( PerTileBeginInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PerTileBeginInfoQCOM & operator=( VkPerTileBeginInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PerTileBeginInfoQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PerTileBeginInfoQCOM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPerTileBeginInfoQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPerTileBeginInfoQCOM *>( this );
+    }
+
+    operator VkPerTileBeginInfoQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPerTileBeginInfoQCOM *>( this );
+    }
+
+    operator VkPerTileBeginInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerTileBeginInfoQCOM *>( this );
+    }
+
+    operator VkPerTileBeginInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerTileBeginInfoQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PerTileBeginInfoQCOM const & ) const = default;
+#else
+    bool operator==( PerTileBeginInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext );
+#  endif
+    }
+
+    bool operator!=( PerTileBeginInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::ePerTileBeginInfoQCOM;
+    const void *                        pNext = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePerTileBeginInfoQCOM>
+  {
+    using Type = PerTileBeginInfoQCOM;
+  };
+
+  // wrapper struct for struct VkPerTileEndInfoQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerTileEndInfoQCOM.html
+  struct PerTileEndInfoQCOM
+  {
+    using NativeType = VkPerTileEndInfoQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePerTileEndInfoQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PerTileEndInfoQCOM( const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT : pNext{ pNext_ } {}
+
+    VULKAN_HPP_CONSTEXPR PerTileEndInfoQCOM( PerTileEndInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PerTileEndInfoQCOM( VkPerTileEndInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT : PerTileEndInfoQCOM( *reinterpret_cast<PerTileEndInfoQCOM const *>( &rhs ) ) {}
+
+    PerTileEndInfoQCOM & operator=( PerTileEndInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PerTileEndInfoQCOM & operator=( VkPerTileEndInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PerTileEndInfoQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PerTileEndInfoQCOM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPerTileEndInfoQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPerTileEndInfoQCOM *>( this );
+    }
+
+    operator VkPerTileEndInfoQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPerTileEndInfoQCOM *>( this );
+    }
+
+    operator VkPerTileEndInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPerTileEndInfoQCOM *>( this );
+    }
+
+    operator VkPerTileEndInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPerTileEndInfoQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PerTileEndInfoQCOM const & ) const = default;
+#else
+    bool operator==( PerTileEndInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext );
+#  endif
+    }
+
+    bool operator!=( PerTileEndInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::ePerTileEndInfoQCOM;
+    const void *                        pNext = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePerTileEndInfoQCOM>
+  {
+    using Type = PerTileEndInfoQCOM;
+  };
+
   // wrapper struct for struct VkPerformanceConfigurationAcquireInfoINTEL, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerformanceConfigurationAcquireInfoINTEL.html
   struct PerformanceConfigurationAcquireInfoINTEL
@@ -80101,6 +80710,105 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   using PhysicalDeviceExternalBufferInfoKHR = PhysicalDeviceExternalBufferInfo;
+
+  // wrapper struct for struct VkPhysicalDeviceExternalComputeQueuePropertiesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalComputeQueuePropertiesNV.html
+  struct PhysicalDeviceExternalComputeQueuePropertiesNV
+  {
+    using NativeType = VkPhysicalDeviceExternalComputeQueuePropertiesNV;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceExternalComputeQueuePropertiesNV;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceExternalComputeQueuePropertiesNV( uint32_t externalDataSize_  = {},
+                                                                         uint32_t maxExternalQueues_ = {},
+                                                                         void *   pNext_             = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , externalDataSize{ externalDataSize_ }
+      , maxExternalQueues{ maxExternalQueues_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR
+      PhysicalDeviceExternalComputeQueuePropertiesNV( PhysicalDeviceExternalComputeQueuePropertiesNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceExternalComputeQueuePropertiesNV( VkPhysicalDeviceExternalComputeQueuePropertiesNV const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceExternalComputeQueuePropertiesNV( *reinterpret_cast<PhysicalDeviceExternalComputeQueuePropertiesNV const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceExternalComputeQueuePropertiesNV & operator=( PhysicalDeviceExternalComputeQueuePropertiesNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceExternalComputeQueuePropertiesNV & operator=( VkPhysicalDeviceExternalComputeQueuePropertiesNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceExternalComputeQueuePropertiesNV const *>( &rhs );
+      return *this;
+    }
+
+    operator VkPhysicalDeviceExternalComputeQueuePropertiesNV const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceExternalComputeQueuePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalComputeQueuePropertiesNV &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceExternalComputeQueuePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalComputeQueuePropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceExternalComputeQueuePropertiesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceExternalComputeQueuePropertiesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceExternalComputeQueuePropertiesNV *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, uint32_t const &, uint32_t const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, externalDataSize, maxExternalQueues );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceExternalComputeQueuePropertiesNV const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceExternalComputeQueuePropertiesNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( externalDataSize == rhs.externalDataSize ) && ( maxExternalQueues == rhs.maxExternalQueues );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceExternalComputeQueuePropertiesNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType             = StructureType::ePhysicalDeviceExternalComputeQueuePropertiesNV;
+    void *                              pNext             = {};
+    uint32_t                            externalDataSize  = {};
+    uint32_t                            maxExternalQueues = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceExternalComputeQueuePropertiesNV>
+  {
+    using Type = PhysicalDeviceExternalComputeQueuePropertiesNV;
+  };
 
   // wrapper struct for struct VkPhysicalDeviceExternalFenceInfo, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceExternalFenceInfo.html
@@ -107227,6 +107935,391 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceTilePropertiesFeaturesQCOM;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceTileShadingFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTileShadingFeaturesQCOM.html
+  struct PhysicalDeviceTileShadingFeaturesQCOM
+  {
+    using NativeType = VkPhysicalDeviceTileShadingFeaturesQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceTileShadingFeaturesQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceTileShadingFeaturesQCOM( VULKAN_HPP_NAMESPACE::Bool32 tileShading_                   = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingFragmentStage_      = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingColorAttachments_   = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingDepthAttachments_   = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingStencilAttachments_ = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingInputAttachments_   = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingSampledAttachments_ = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingPerTileDraw_        = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingPerTileDispatch_    = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingDispatchTile_       = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingApron_              = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingAnisotropicApron_   = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingAtomicOps_          = {},
+                                                                VULKAN_HPP_NAMESPACE::Bool32 tileShadingImageProcessing_    = {},
+                                                                void *                       pNext_                         = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , tileShading{ tileShading_ }
+      , tileShadingFragmentStage{ tileShadingFragmentStage_ }
+      , tileShadingColorAttachments{ tileShadingColorAttachments_ }
+      , tileShadingDepthAttachments{ tileShadingDepthAttachments_ }
+      , tileShadingStencilAttachments{ tileShadingStencilAttachments_ }
+      , tileShadingInputAttachments{ tileShadingInputAttachments_ }
+      , tileShadingSampledAttachments{ tileShadingSampledAttachments_ }
+      , tileShadingPerTileDraw{ tileShadingPerTileDraw_ }
+      , tileShadingPerTileDispatch{ tileShadingPerTileDispatch_ }
+      , tileShadingDispatchTile{ tileShadingDispatchTile_ }
+      , tileShadingApron{ tileShadingApron_ }
+      , tileShadingAnisotropicApron{ tileShadingAnisotropicApron_ }
+      , tileShadingAtomicOps{ tileShadingAtomicOps_ }
+      , tileShadingImageProcessing{ tileShadingImageProcessing_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceTileShadingFeaturesQCOM( PhysicalDeviceTileShadingFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceTileShadingFeaturesQCOM( VkPhysicalDeviceTileShadingFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceTileShadingFeaturesQCOM( *reinterpret_cast<PhysicalDeviceTileShadingFeaturesQCOM const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceTileShadingFeaturesQCOM & operator=( PhysicalDeviceTileShadingFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceTileShadingFeaturesQCOM & operator=( VkPhysicalDeviceTileShadingFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceTileShadingFeaturesQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM & setTileShading( VULKAN_HPP_NAMESPACE::Bool32 tileShading_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShading = tileShading_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingFragmentStage( VULKAN_HPP_NAMESPACE::Bool32 tileShadingFragmentStage_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingFragmentStage = tileShadingFragmentStage_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingColorAttachments( VULKAN_HPP_NAMESPACE::Bool32 tileShadingColorAttachments_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingColorAttachments = tileShadingColorAttachments_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingDepthAttachments( VULKAN_HPP_NAMESPACE::Bool32 tileShadingDepthAttachments_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingDepthAttachments = tileShadingDepthAttachments_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingStencilAttachments( VULKAN_HPP_NAMESPACE::Bool32 tileShadingStencilAttachments_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingStencilAttachments = tileShadingStencilAttachments_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingInputAttachments( VULKAN_HPP_NAMESPACE::Bool32 tileShadingInputAttachments_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingInputAttachments = tileShadingInputAttachments_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingSampledAttachments( VULKAN_HPP_NAMESPACE::Bool32 tileShadingSampledAttachments_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingSampledAttachments = tileShadingSampledAttachments_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingPerTileDraw( VULKAN_HPP_NAMESPACE::Bool32 tileShadingPerTileDraw_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingPerTileDraw = tileShadingPerTileDraw_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingPerTileDispatch( VULKAN_HPP_NAMESPACE::Bool32 tileShadingPerTileDispatch_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingPerTileDispatch = tileShadingPerTileDispatch_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingDispatchTile( VULKAN_HPP_NAMESPACE::Bool32 tileShadingDispatchTile_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingDispatchTile = tileShadingDispatchTile_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM & setTileShadingApron( VULKAN_HPP_NAMESPACE::Bool32 tileShadingApron_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingApron = tileShadingApron_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingAnisotropicApron( VULKAN_HPP_NAMESPACE::Bool32 tileShadingAnisotropicApron_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingAnisotropicApron = tileShadingAnisotropicApron_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingAtomicOps( VULKAN_HPP_NAMESPACE::Bool32 tileShadingAtomicOps_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingAtomicOps = tileShadingAtomicOps_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileShadingFeaturesQCOM &
+      setTileShadingImageProcessing( VULKAN_HPP_NAMESPACE::Bool32 tileShadingImageProcessing_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileShadingImageProcessing = tileShadingImageProcessing_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceTileShadingFeaturesQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceTileShadingFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileShadingFeaturesQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceTileShadingFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileShadingFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTileShadingFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileShadingFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTileShadingFeaturesQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &,
+               void * const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType,
+                       pNext,
+                       tileShading,
+                       tileShadingFragmentStage,
+                       tileShadingColorAttachments,
+                       tileShadingDepthAttachments,
+                       tileShadingStencilAttachments,
+                       tileShadingInputAttachments,
+                       tileShadingSampledAttachments,
+                       tileShadingPerTileDraw,
+                       tileShadingPerTileDispatch,
+                       tileShadingDispatchTile,
+                       tileShadingApron,
+                       tileShadingAnisotropicApron,
+                       tileShadingAtomicOps,
+                       tileShadingImageProcessing );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceTileShadingFeaturesQCOM const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceTileShadingFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( tileShading == rhs.tileShading ) &&
+             ( tileShadingFragmentStage == rhs.tileShadingFragmentStage ) && ( tileShadingColorAttachments == rhs.tileShadingColorAttachments ) &&
+             ( tileShadingDepthAttachments == rhs.tileShadingDepthAttachments ) && ( tileShadingStencilAttachments == rhs.tileShadingStencilAttachments ) &&
+             ( tileShadingInputAttachments == rhs.tileShadingInputAttachments ) && ( tileShadingSampledAttachments == rhs.tileShadingSampledAttachments ) &&
+             ( tileShadingPerTileDraw == rhs.tileShadingPerTileDraw ) && ( tileShadingPerTileDispatch == rhs.tileShadingPerTileDispatch ) &&
+             ( tileShadingDispatchTile == rhs.tileShadingDispatchTile ) && ( tileShadingApron == rhs.tileShadingApron ) &&
+             ( tileShadingAnisotropicApron == rhs.tileShadingAnisotropicApron ) && ( tileShadingAtomicOps == rhs.tileShadingAtomicOps ) &&
+             ( tileShadingImageProcessing == rhs.tileShadingImageProcessing );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceTileShadingFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType                         = StructureType::ePhysicalDeviceTileShadingFeaturesQCOM;
+    void *                              pNext                         = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShading                   = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingFragmentStage      = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingColorAttachments   = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingDepthAttachments   = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingStencilAttachments = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingInputAttachments   = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingSampledAttachments = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingPerTileDraw        = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingPerTileDispatch    = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingDispatchTile       = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingApron              = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingAnisotropicApron   = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingAtomicOps          = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileShadingImageProcessing    = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceTileShadingFeaturesQCOM>
+  {
+    using Type = PhysicalDeviceTileShadingFeaturesQCOM;
+  };
+
+  // wrapper struct for struct VkPhysicalDeviceTileShadingPropertiesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTileShadingPropertiesQCOM.html
+  struct PhysicalDeviceTileShadingPropertiesQCOM
+  {
+    using NativeType = VkPhysicalDeviceTileShadingPropertiesQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceTileShadingPropertiesQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceTileShadingPropertiesQCOM( uint32_t                       maxApronSize_       = {},
+                                                                  VULKAN_HPP_NAMESPACE::Bool32   preferNonCoherent_  = {},
+                                                                  VULKAN_HPP_NAMESPACE::Extent2D tileGranularity_    = {},
+                                                                  VULKAN_HPP_NAMESPACE::Extent2D maxTileShadingRate_ = {},
+                                                                  void *                         pNext_              = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , maxApronSize{ maxApronSize_ }
+      , preferNonCoherent{ preferNonCoherent_ }
+      , tileGranularity{ tileGranularity_ }
+      , maxTileShadingRate{ maxTileShadingRate_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceTileShadingPropertiesQCOM( PhysicalDeviceTileShadingPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceTileShadingPropertiesQCOM( VkPhysicalDeviceTileShadingPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceTileShadingPropertiesQCOM( *reinterpret_cast<PhysicalDeviceTileShadingPropertiesQCOM const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceTileShadingPropertiesQCOM & operator=( PhysicalDeviceTileShadingPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceTileShadingPropertiesQCOM & operator=( VkPhysicalDeviceTileShadingPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceTileShadingPropertiesQCOM const *>( &rhs );
+      return *this;
+    }
+
+    operator VkPhysicalDeviceTileShadingPropertiesQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceTileShadingPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileShadingPropertiesQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceTileShadingPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileShadingPropertiesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTileShadingPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileShadingPropertiesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTileShadingPropertiesQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &,
+               void * const &,
+               uint32_t const &,
+               VULKAN_HPP_NAMESPACE::Bool32 const &,
+               VULKAN_HPP_NAMESPACE::Extent2D const &,
+               VULKAN_HPP_NAMESPACE::Extent2D const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, maxApronSize, preferNonCoherent, tileGranularity, maxTileShadingRate );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceTileShadingPropertiesQCOM const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceTileShadingPropertiesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( maxApronSize == rhs.maxApronSize ) && ( preferNonCoherent == rhs.preferNonCoherent ) &&
+             ( tileGranularity == rhs.tileGranularity ) && ( maxTileShadingRate == rhs.maxTileShadingRate );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceTileShadingPropertiesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType              = StructureType::ePhysicalDeviceTileShadingPropertiesQCOM;
+    void *                              pNext              = {};
+    uint32_t                            maxApronSize       = {};
+    VULKAN_HPP_NAMESPACE::Bool32        preferNonCoherent  = {};
+    VULKAN_HPP_NAMESPACE::Extent2D      tileGranularity    = {};
+    VULKAN_HPP_NAMESPACE::Extent2D      maxTileShadingRate = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceTileShadingPropertiesQCOM>
+  {
+    using Type = PhysicalDeviceTileShadingPropertiesQCOM;
+  };
+
   // wrapper struct for struct VkPhysicalDeviceTimelineSemaphoreFeatures, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTimelineSemaphoreFeatures.html
   struct PhysicalDeviceTimelineSemaphoreFeatures
@@ -128717,6 +129810,127 @@ namespace VULKAN_HPP_NAMESPACE
   struct CppType<StructureType, StructureType::eRenderPassSubpassFeedbackCreateInfoEXT>
   {
     using Type = RenderPassSubpassFeedbackCreateInfoEXT;
+  };
+
+  // wrapper struct for struct VkRenderPassTileShadingCreateInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkRenderPassTileShadingCreateInfoQCOM.html
+  struct RenderPassTileShadingCreateInfoQCOM
+  {
+    using NativeType = VkRenderPassTileShadingCreateInfoQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eRenderPassTileShadingCreateInfoQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR RenderPassTileShadingCreateInfoQCOM( VULKAN_HPP_NAMESPACE::TileShadingRenderPassFlagsQCOM flags_         = {},
+                                                              VULKAN_HPP_NAMESPACE::Extent2D                       tileApronSize_ = {},
+                                                              const void *                                         pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , flags{ flags_ }
+      , tileApronSize{ tileApronSize_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR RenderPassTileShadingCreateInfoQCOM( RenderPassTileShadingCreateInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    RenderPassTileShadingCreateInfoQCOM( VkRenderPassTileShadingCreateInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : RenderPassTileShadingCreateInfoQCOM( *reinterpret_cast<RenderPassTileShadingCreateInfoQCOM const *>( &rhs ) )
+    {
+    }
+
+    RenderPassTileShadingCreateInfoQCOM & operator=( RenderPassTileShadingCreateInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    RenderPassTileShadingCreateInfoQCOM & operator=( VkRenderPassTileShadingCreateInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::RenderPassTileShadingCreateInfoQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 RenderPassTileShadingCreateInfoQCOM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 RenderPassTileShadingCreateInfoQCOM & setFlags( VULKAN_HPP_NAMESPACE::TileShadingRenderPassFlagsQCOM flags_ ) VULKAN_HPP_NOEXCEPT
+    {
+      flags = flags_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 RenderPassTileShadingCreateInfoQCOM & setTileApronSize( VULKAN_HPP_NAMESPACE::Extent2D const & tileApronSize_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileApronSize = tileApronSize_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkRenderPassTileShadingCreateInfoQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkRenderPassTileShadingCreateInfoQCOM *>( this );
+    }
+
+    operator VkRenderPassTileShadingCreateInfoQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkRenderPassTileShadingCreateInfoQCOM *>( this );
+    }
+
+    operator VkRenderPassTileShadingCreateInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkRenderPassTileShadingCreateInfoQCOM *>( this );
+    }
+
+    operator VkRenderPassTileShadingCreateInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkRenderPassTileShadingCreateInfoQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &,
+               const void * const &,
+               VULKAN_HPP_NAMESPACE::TileShadingRenderPassFlagsQCOM const &,
+               VULKAN_HPP_NAMESPACE::Extent2D const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, flags, tileApronSize );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( RenderPassTileShadingCreateInfoQCOM const & ) const = default;
+#else
+    bool operator==( RenderPassTileShadingCreateInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( flags == rhs.flags ) && ( tileApronSize == rhs.tileApronSize );
+#  endif
+    }
+
+    bool operator!=( RenderPassTileShadingCreateInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType                  sType         = StructureType::eRenderPassTileShadingCreateInfoQCOM;
+    const void *                                         pNext         = {};
+    VULKAN_HPP_NAMESPACE::TileShadingRenderPassFlagsQCOM flags         = {};
+    VULKAN_HPP_NAMESPACE::Extent2D                       tileApronSize = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eRenderPassTileShadingCreateInfoQCOM>
+  {
+    using Type = RenderPassTileShadingCreateInfoQCOM;
   };
 
   // wrapper struct for struct VkRenderPassTransformBeginInfoQCOM, see
