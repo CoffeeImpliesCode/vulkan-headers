@@ -107826,6 +107826,236 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDeviceTextureCompressionASTCHDRFeaturesEXT = PhysicalDeviceTextureCompressionASTCHDRFeatures;
 
+  // wrapper struct for struct VkPhysicalDeviceTileMemoryHeapFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTileMemoryHeapFeaturesQCOM.html
+  struct PhysicalDeviceTileMemoryHeapFeaturesQCOM
+  {
+    using NativeType = VkPhysicalDeviceTileMemoryHeapFeaturesQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceTileMemoryHeapFeaturesQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceTileMemoryHeapFeaturesQCOM( VULKAN_HPP_NAMESPACE::Bool32 tileMemoryHeap_ = {},
+                                                                   void *                       pNext_          = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , tileMemoryHeap{ tileMemoryHeap_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceTileMemoryHeapFeaturesQCOM( PhysicalDeviceTileMemoryHeapFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceTileMemoryHeapFeaturesQCOM( VkPhysicalDeviceTileMemoryHeapFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceTileMemoryHeapFeaturesQCOM( *reinterpret_cast<PhysicalDeviceTileMemoryHeapFeaturesQCOM const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceTileMemoryHeapFeaturesQCOM & operator=( PhysicalDeviceTileMemoryHeapFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceTileMemoryHeapFeaturesQCOM & operator=( VkPhysicalDeviceTileMemoryHeapFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceTileMemoryHeapFeaturesQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileMemoryHeapFeaturesQCOM & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileMemoryHeapFeaturesQCOM & setTileMemoryHeap( VULKAN_HPP_NAMESPACE::Bool32 tileMemoryHeap_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileMemoryHeap = tileMemoryHeap_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceTileMemoryHeapFeaturesQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceTileMemoryHeapFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileMemoryHeapFeaturesQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceTileMemoryHeapFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileMemoryHeapFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTileMemoryHeapFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileMemoryHeapFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTileMemoryHeapFeaturesQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, VULKAN_HPP_NAMESPACE::Bool32 const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, tileMemoryHeap );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceTileMemoryHeapFeaturesQCOM const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceTileMemoryHeapFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( tileMemoryHeap == rhs.tileMemoryHeap );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceTileMemoryHeapFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType          = StructureType::ePhysicalDeviceTileMemoryHeapFeaturesQCOM;
+    void *                              pNext          = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileMemoryHeap = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceTileMemoryHeapFeaturesQCOM>
+  {
+    using Type = PhysicalDeviceTileMemoryHeapFeaturesQCOM;
+  };
+
+  // wrapper struct for struct VkPhysicalDeviceTileMemoryHeapPropertiesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTileMemoryHeapPropertiesQCOM.html
+  struct PhysicalDeviceTileMemoryHeapPropertiesQCOM
+  {
+    using NativeType = VkPhysicalDeviceTileMemoryHeapPropertiesQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceTileMemoryHeapPropertiesQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceTileMemoryHeapPropertiesQCOM( VULKAN_HPP_NAMESPACE::Bool32 queueSubmitBoundary_ = {},
+                                                                     VULKAN_HPP_NAMESPACE::Bool32 tileBufferTransfers_ = {},
+                                                                     void *                       pNext_               = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , queueSubmitBoundary{ queueSubmitBoundary_ }
+      , tileBufferTransfers{ tileBufferTransfers_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceTileMemoryHeapPropertiesQCOM( PhysicalDeviceTileMemoryHeapPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceTileMemoryHeapPropertiesQCOM( VkPhysicalDeviceTileMemoryHeapPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceTileMemoryHeapPropertiesQCOM( *reinterpret_cast<PhysicalDeviceTileMemoryHeapPropertiesQCOM const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceTileMemoryHeapPropertiesQCOM & operator=( PhysicalDeviceTileMemoryHeapPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceTileMemoryHeapPropertiesQCOM & operator=( VkPhysicalDeviceTileMemoryHeapPropertiesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceTileMemoryHeapPropertiesQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileMemoryHeapPropertiesQCOM & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileMemoryHeapPropertiesQCOM &
+      setQueueSubmitBoundary( VULKAN_HPP_NAMESPACE::Bool32 queueSubmitBoundary_ ) VULKAN_HPP_NOEXCEPT
+    {
+      queueSubmitBoundary = queueSubmitBoundary_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceTileMemoryHeapPropertiesQCOM &
+      setTileBufferTransfers( VULKAN_HPP_NAMESPACE::Bool32 tileBufferTransfers_ ) VULKAN_HPP_NOEXCEPT
+    {
+      tileBufferTransfers = tileBufferTransfers_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceTileMemoryHeapPropertiesQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceTileMemoryHeapPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileMemoryHeapPropertiesQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceTileMemoryHeapPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileMemoryHeapPropertiesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceTileMemoryHeapPropertiesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceTileMemoryHeapPropertiesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceTileMemoryHeapPropertiesQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, VULKAN_HPP_NAMESPACE::Bool32 const &, VULKAN_HPP_NAMESPACE::Bool32 const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, queueSubmitBoundary, tileBufferTransfers );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceTileMemoryHeapPropertiesQCOM const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceTileMemoryHeapPropertiesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( queueSubmitBoundary == rhs.queueSubmitBoundary ) &&
+             ( tileBufferTransfers == rhs.tileBufferTransfers );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceTileMemoryHeapPropertiesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType               = StructureType::ePhysicalDeviceTileMemoryHeapPropertiesQCOM;
+    void *                              pNext               = {};
+    VULKAN_HPP_NAMESPACE::Bool32        queueSubmitBoundary = {};
+    VULKAN_HPP_NAMESPACE::Bool32        tileBufferTransfers = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceTileMemoryHeapPropertiesQCOM>
+  {
+    using Type = PhysicalDeviceTileMemoryHeapPropertiesQCOM;
+  };
+
   // wrapper struct for struct VkPhysicalDeviceTilePropertiesFeaturesQCOM, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceTilePropertiesFeaturesQCOM.html
   struct PhysicalDeviceTilePropertiesFeaturesQCOM
@@ -140260,6 +140490,337 @@ namespace VULKAN_HPP_NAMESPACE
   struct CppType<StructureType, StructureType::eTextureLodGatherFormatPropertiesAMD>
   {
     using Type = TextureLODGatherFormatPropertiesAMD;
+  };
+
+  // wrapper struct for struct VkTileMemoryBindInfoQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkTileMemoryBindInfoQCOM.html
+  struct TileMemoryBindInfoQCOM
+  {
+    using NativeType = VkTileMemoryBindInfoQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eTileMemoryBindInfoQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR TileMemoryBindInfoQCOM( VULKAN_HPP_NAMESPACE::DeviceMemory memory_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , memory{ memory_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR TileMemoryBindInfoQCOM( TileMemoryBindInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    TileMemoryBindInfoQCOM( VkTileMemoryBindInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : TileMemoryBindInfoQCOM( *reinterpret_cast<TileMemoryBindInfoQCOM const *>( &rhs ) )
+    {
+    }
+
+    TileMemoryBindInfoQCOM & operator=( TileMemoryBindInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    TileMemoryBindInfoQCOM & operator=( VkTileMemoryBindInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::TileMemoryBindInfoQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 TileMemoryBindInfoQCOM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 TileMemoryBindInfoQCOM & setMemory( VULKAN_HPP_NAMESPACE::DeviceMemory memory_ ) VULKAN_HPP_NOEXCEPT
+    {
+      memory = memory_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkTileMemoryBindInfoQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkTileMemoryBindInfoQCOM *>( this );
+    }
+
+    operator VkTileMemoryBindInfoQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkTileMemoryBindInfoQCOM *>( this );
+    }
+
+    operator VkTileMemoryBindInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkTileMemoryBindInfoQCOM *>( this );
+    }
+
+    operator VkTileMemoryBindInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkTileMemoryBindInfoQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, VULKAN_HPP_NAMESPACE::DeviceMemory const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, memory );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( TileMemoryBindInfoQCOM const & ) const = default;
+#else
+    bool operator==( TileMemoryBindInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( memory == rhs.memory );
+#  endif
+    }
+
+    bool operator!=( TileMemoryBindInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType  = StructureType::eTileMemoryBindInfoQCOM;
+    const void *                        pNext  = {};
+    VULKAN_HPP_NAMESPACE::DeviceMemory  memory = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eTileMemoryBindInfoQCOM>
+  {
+    using Type = TileMemoryBindInfoQCOM;
+  };
+
+  // wrapper struct for struct VkTileMemoryRequirementsQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkTileMemoryRequirementsQCOM.html
+  struct TileMemoryRequirementsQCOM
+  {
+    using NativeType = VkTileMemoryRequirementsQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eTileMemoryRequirementsQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR TileMemoryRequirementsQCOM( VULKAN_HPP_NAMESPACE::DeviceSize size_      = {},
+                                                     VULKAN_HPP_NAMESPACE::DeviceSize alignment_ = {},
+                                                     void *                           pNext_     = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , size{ size_ }
+      , alignment{ alignment_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR TileMemoryRequirementsQCOM( TileMemoryRequirementsQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    TileMemoryRequirementsQCOM( VkTileMemoryRequirementsQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : TileMemoryRequirementsQCOM( *reinterpret_cast<TileMemoryRequirementsQCOM const *>( &rhs ) )
+    {
+    }
+
+    TileMemoryRequirementsQCOM & operator=( TileMemoryRequirementsQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    TileMemoryRequirementsQCOM & operator=( VkTileMemoryRequirementsQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::TileMemoryRequirementsQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 TileMemoryRequirementsQCOM & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 TileMemoryRequirementsQCOM & setSize( VULKAN_HPP_NAMESPACE::DeviceSize size_ ) VULKAN_HPP_NOEXCEPT
+    {
+      size = size_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 TileMemoryRequirementsQCOM & setAlignment( VULKAN_HPP_NAMESPACE::DeviceSize alignment_ ) VULKAN_HPP_NOEXCEPT
+    {
+      alignment = alignment_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkTileMemoryRequirementsQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkTileMemoryRequirementsQCOM *>( this );
+    }
+
+    operator VkTileMemoryRequirementsQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkTileMemoryRequirementsQCOM *>( this );
+    }
+
+    operator VkTileMemoryRequirementsQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkTileMemoryRequirementsQCOM *>( this );
+    }
+
+    operator VkTileMemoryRequirementsQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkTileMemoryRequirementsQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, VULKAN_HPP_NAMESPACE::DeviceSize const &, VULKAN_HPP_NAMESPACE::DeviceSize const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, size, alignment );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( TileMemoryRequirementsQCOM const & ) const = default;
+#else
+    bool operator==( TileMemoryRequirementsQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( size == rhs.size ) && ( alignment == rhs.alignment );
+#  endif
+    }
+
+    bool operator!=( TileMemoryRequirementsQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType     = StructureType::eTileMemoryRequirementsQCOM;
+    void *                              pNext     = {};
+    VULKAN_HPP_NAMESPACE::DeviceSize    size      = {};
+    VULKAN_HPP_NAMESPACE::DeviceSize    alignment = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eTileMemoryRequirementsQCOM>
+  {
+    using Type = TileMemoryRequirementsQCOM;
+  };
+
+  // wrapper struct for struct VkTileMemorySizeInfoQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkTileMemorySizeInfoQCOM.html
+  struct TileMemorySizeInfoQCOM
+  {
+    using NativeType = VkTileMemorySizeInfoQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eTileMemorySizeInfoQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR TileMemorySizeInfoQCOM( VULKAN_HPP_NAMESPACE::DeviceSize size_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , size{ size_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR TileMemorySizeInfoQCOM( TileMemorySizeInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    TileMemorySizeInfoQCOM( VkTileMemorySizeInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : TileMemorySizeInfoQCOM( *reinterpret_cast<TileMemorySizeInfoQCOM const *>( &rhs ) )
+    {
+    }
+
+    TileMemorySizeInfoQCOM & operator=( TileMemorySizeInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    TileMemorySizeInfoQCOM & operator=( VkTileMemorySizeInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::TileMemorySizeInfoQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 TileMemorySizeInfoQCOM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 TileMemorySizeInfoQCOM & setSize( VULKAN_HPP_NAMESPACE::DeviceSize size_ ) VULKAN_HPP_NOEXCEPT
+    {
+      size = size_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkTileMemorySizeInfoQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkTileMemorySizeInfoQCOM *>( this );
+    }
+
+    operator VkTileMemorySizeInfoQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkTileMemorySizeInfoQCOM *>( this );
+    }
+
+    operator VkTileMemorySizeInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkTileMemorySizeInfoQCOM *>( this );
+    }
+
+    operator VkTileMemorySizeInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkTileMemorySizeInfoQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, VULKAN_HPP_NAMESPACE::DeviceSize const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, size );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( TileMemorySizeInfoQCOM const & ) const = default;
+#else
+    bool operator==( TileMemorySizeInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( size == rhs.size );
+#  endif
+    }
+
+    bool operator!=( TileMemorySizeInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::eTileMemorySizeInfoQCOM;
+    const void *                        pNext = {};
+    VULKAN_HPP_NAMESPACE::DeviceSize    size  = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eTileMemorySizeInfoQCOM>
+  {
+    using Type = TileMemorySizeInfoQCOM;
   };
 
   // wrapper struct for struct VkTilePropertiesQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkTilePropertiesQCOM.html
