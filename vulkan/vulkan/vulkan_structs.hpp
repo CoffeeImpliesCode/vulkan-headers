@@ -100076,17 +100076,17 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRepresentativeFragmentTestFeaturesNV;
   };
 
-  // wrapper struct for struct VkPhysicalDeviceRobustness2FeaturesEXT, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRobustness2FeaturesEXT.html
-  struct PhysicalDeviceRobustness2FeaturesEXT
+  // wrapper struct for struct VkPhysicalDeviceRobustness2FeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRobustness2FeaturesKHR.html
+  struct PhysicalDeviceRobustness2FeaturesKHR
   {
-    using NativeType = VkPhysicalDeviceRobustness2FeaturesEXT;
+    using NativeType = VkPhysicalDeviceRobustness2FeaturesKHR;
 
     static const bool                                  allowDuplicate = false;
-    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceRobustness2FeaturesEXT;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceRobustness2FeaturesKHR;
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR PhysicalDeviceRobustness2FeaturesEXT( VULKAN_HPP_NAMESPACE::Bool32 robustBufferAccess2_ = {},
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceRobustness2FeaturesKHR( VULKAN_HPP_NAMESPACE::Bool32 robustBufferAccess2_ = {},
                                                                VULKAN_HPP_NAMESPACE::Bool32 robustImageAccess2_  = {},
                                                                VULKAN_HPP_NAMESPACE::Bool32 nullDescriptor_      = {},
                                                                void *                       pNext_               = nullptr ) VULKAN_HPP_NOEXCEPT
@@ -100097,67 +100097,67 @@ namespace VULKAN_HPP_NAMESPACE
     {
     }
 
-    VULKAN_HPP_CONSTEXPR PhysicalDeviceRobustness2FeaturesEXT( PhysicalDeviceRobustness2FeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceRobustness2FeaturesKHR( PhysicalDeviceRobustness2FeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
-    PhysicalDeviceRobustness2FeaturesEXT( VkPhysicalDeviceRobustness2FeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
-      : PhysicalDeviceRobustness2FeaturesEXT( *reinterpret_cast<PhysicalDeviceRobustness2FeaturesEXT const *>( &rhs ) )
+    PhysicalDeviceRobustness2FeaturesKHR( VkPhysicalDeviceRobustness2FeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceRobustness2FeaturesKHR( *reinterpret_cast<PhysicalDeviceRobustness2FeaturesKHR const *>( &rhs ) )
     {
     }
 
-    PhysicalDeviceRobustness2FeaturesEXT & operator=( PhysicalDeviceRobustness2FeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    PhysicalDeviceRobustness2FeaturesKHR & operator=( PhysicalDeviceRobustness2FeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
-    PhysicalDeviceRobustness2FeaturesEXT & operator=( VkPhysicalDeviceRobustness2FeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    PhysicalDeviceRobustness2FeaturesKHR & operator=( VkPhysicalDeviceRobustness2FeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceRobustness2FeaturesEXT const *>( &rhs );
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceRobustness2FeaturesKHR const *>( &rhs );
       return *this;
     }
 
 #if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRobustness2FeaturesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRobustness2FeaturesKHR & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
     {
       pNext = pNext_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRobustness2FeaturesEXT &
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRobustness2FeaturesKHR &
       setRobustBufferAccess2( VULKAN_HPP_NAMESPACE::Bool32 robustBufferAccess2_ ) VULKAN_HPP_NOEXCEPT
     {
       robustBufferAccess2 = robustBufferAccess2_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRobustness2FeaturesEXT & setRobustImageAccess2( VULKAN_HPP_NAMESPACE::Bool32 robustImageAccess2_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRobustness2FeaturesKHR & setRobustImageAccess2( VULKAN_HPP_NAMESPACE::Bool32 robustImageAccess2_ ) VULKAN_HPP_NOEXCEPT
     {
       robustImageAccess2 = robustImageAccess2_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRobustness2FeaturesEXT & setNullDescriptor( VULKAN_HPP_NAMESPACE::Bool32 nullDescriptor_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRobustness2FeaturesKHR & setNullDescriptor( VULKAN_HPP_NAMESPACE::Bool32 nullDescriptor_ ) VULKAN_HPP_NOEXCEPT
     {
       nullDescriptor = nullDescriptor_;
       return *this;
     }
 #endif /*VULKAN_HPP_NO_SETTERS*/
 
-    operator VkPhysicalDeviceRobustness2FeaturesEXT const &() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceRobustness2FeaturesKHR const &() const VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<const VkPhysicalDeviceRobustness2FeaturesEXT *>( this );
+      return *reinterpret_cast<const VkPhysicalDeviceRobustness2FeaturesKHR *>( this );
     }
 
-    operator VkPhysicalDeviceRobustness2FeaturesEXT &() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceRobustness2FeaturesKHR &() VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<VkPhysicalDeviceRobustness2FeaturesEXT *>( this );
+      return *reinterpret_cast<VkPhysicalDeviceRobustness2FeaturesKHR *>( this );
     }
 
-    operator VkPhysicalDeviceRobustness2FeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceRobustness2FeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<const VkPhysicalDeviceRobustness2FeaturesEXT *>( this );
+      return reinterpret_cast<const VkPhysicalDeviceRobustness2FeaturesKHR *>( this );
     }
 
-    operator VkPhysicalDeviceRobustness2FeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceRobustness2FeaturesKHR *() VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<VkPhysicalDeviceRobustness2FeaturesEXT *>( this );
+      return reinterpret_cast<VkPhysicalDeviceRobustness2FeaturesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -100177,9 +100177,9 @@ namespace VULKAN_HPP_NAMESPACE
 #endif
 
 #if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( PhysicalDeviceRobustness2FeaturesEXT const & ) const = default;
+    auto operator<=>( PhysicalDeviceRobustness2FeaturesKHR const & ) const = default;
 #else
-    bool operator==( PhysicalDeviceRobustness2FeaturesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator==( PhysicalDeviceRobustness2FeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
 #  if defined( VULKAN_HPP_USE_REFLECT )
       return this->reflect() == rhs.reflect();
@@ -100189,14 +100189,14 @@ namespace VULKAN_HPP_NAMESPACE
 #  endif
     }
 
-    bool operator!=( PhysicalDeviceRobustness2FeaturesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator!=( PhysicalDeviceRobustness2FeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
       return !operator==( rhs );
     }
 #endif
 
   public:
-    VULKAN_HPP_NAMESPACE::StructureType sType               = StructureType::ePhysicalDeviceRobustness2FeaturesEXT;
+    VULKAN_HPP_NAMESPACE::StructureType sType               = StructureType::ePhysicalDeviceRobustness2FeaturesKHR;
     void *                              pNext               = {};
     VULKAN_HPP_NAMESPACE::Bool32        robustBufferAccess2 = {};
     VULKAN_HPP_NAMESPACE::Bool32        robustImageAccess2  = {};
@@ -100204,22 +100204,24 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   template <>
-  struct CppType<StructureType, StructureType::ePhysicalDeviceRobustness2FeaturesEXT>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceRobustness2FeaturesKHR>
   {
-    using Type = PhysicalDeviceRobustness2FeaturesEXT;
+    using Type = PhysicalDeviceRobustness2FeaturesKHR;
   };
 
-  // wrapper struct for struct VkPhysicalDeviceRobustness2PropertiesEXT, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRobustness2PropertiesEXT.html
-  struct PhysicalDeviceRobustness2PropertiesEXT
+  using PhysicalDeviceRobustness2FeaturesEXT = PhysicalDeviceRobustness2FeaturesKHR;
+
+  // wrapper struct for struct VkPhysicalDeviceRobustness2PropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRobustness2PropertiesKHR.html
+  struct PhysicalDeviceRobustness2PropertiesKHR
   {
-    using NativeType = VkPhysicalDeviceRobustness2PropertiesEXT;
+    using NativeType = VkPhysicalDeviceRobustness2PropertiesKHR;
 
     static const bool                                  allowDuplicate = false;
-    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceRobustness2PropertiesEXT;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceRobustness2PropertiesKHR;
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR PhysicalDeviceRobustness2PropertiesEXT( VULKAN_HPP_NAMESPACE::DeviceSize robustStorageBufferAccessSizeAlignment_ = {},
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceRobustness2PropertiesKHR( VULKAN_HPP_NAMESPACE::DeviceSize robustStorageBufferAccessSizeAlignment_ = {},
                                                                  VULKAN_HPP_NAMESPACE::DeviceSize robustUniformBufferAccessSizeAlignment_ = {},
                                                                  void *                           pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
       : pNext{ pNext_ }
@@ -100228,40 +100230,40 @@ namespace VULKAN_HPP_NAMESPACE
     {
     }
 
-    VULKAN_HPP_CONSTEXPR PhysicalDeviceRobustness2PropertiesEXT( PhysicalDeviceRobustness2PropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceRobustness2PropertiesKHR( PhysicalDeviceRobustness2PropertiesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
-    PhysicalDeviceRobustness2PropertiesEXT( VkPhysicalDeviceRobustness2PropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
-      : PhysicalDeviceRobustness2PropertiesEXT( *reinterpret_cast<PhysicalDeviceRobustness2PropertiesEXT const *>( &rhs ) )
+    PhysicalDeviceRobustness2PropertiesKHR( VkPhysicalDeviceRobustness2PropertiesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceRobustness2PropertiesKHR( *reinterpret_cast<PhysicalDeviceRobustness2PropertiesKHR const *>( &rhs ) )
     {
     }
 
-    PhysicalDeviceRobustness2PropertiesEXT & operator=( PhysicalDeviceRobustness2PropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    PhysicalDeviceRobustness2PropertiesKHR & operator=( PhysicalDeviceRobustness2PropertiesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
-    PhysicalDeviceRobustness2PropertiesEXT & operator=( VkPhysicalDeviceRobustness2PropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    PhysicalDeviceRobustness2PropertiesKHR & operator=( VkPhysicalDeviceRobustness2PropertiesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceRobustness2PropertiesEXT const *>( &rhs );
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceRobustness2PropertiesKHR const *>( &rhs );
       return *this;
     }
 
-    operator VkPhysicalDeviceRobustness2PropertiesEXT const &() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceRobustness2PropertiesKHR const &() const VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<const VkPhysicalDeviceRobustness2PropertiesEXT *>( this );
+      return *reinterpret_cast<const VkPhysicalDeviceRobustness2PropertiesKHR *>( this );
     }
 
-    operator VkPhysicalDeviceRobustness2PropertiesEXT &() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceRobustness2PropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<VkPhysicalDeviceRobustness2PropertiesEXT *>( this );
+      return *reinterpret_cast<VkPhysicalDeviceRobustness2PropertiesKHR *>( this );
     }
 
-    operator VkPhysicalDeviceRobustness2PropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceRobustness2PropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<const VkPhysicalDeviceRobustness2PropertiesEXT *>( this );
+      return reinterpret_cast<const VkPhysicalDeviceRobustness2PropertiesKHR *>( this );
     }
 
-    operator VkPhysicalDeviceRobustness2PropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceRobustness2PropertiesKHR *() VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<VkPhysicalDeviceRobustness2PropertiesEXT *>( this );
+      return reinterpret_cast<VkPhysicalDeviceRobustness2PropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -100277,9 +100279,9 @@ namespace VULKAN_HPP_NAMESPACE
 #endif
 
 #if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( PhysicalDeviceRobustness2PropertiesEXT const & ) const = default;
+    auto operator<=>( PhysicalDeviceRobustness2PropertiesKHR const & ) const = default;
 #else
-    bool operator==( PhysicalDeviceRobustness2PropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator==( PhysicalDeviceRobustness2PropertiesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
 #  if defined( VULKAN_HPP_USE_REFLECT )
       return this->reflect() == rhs.reflect();
@@ -100289,24 +100291,26 @@ namespace VULKAN_HPP_NAMESPACE
 #  endif
     }
 
-    bool operator!=( PhysicalDeviceRobustness2PropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator!=( PhysicalDeviceRobustness2PropertiesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
       return !operator==( rhs );
     }
 #endif
 
   public:
-    VULKAN_HPP_NAMESPACE::StructureType sType                                  = StructureType::ePhysicalDeviceRobustness2PropertiesEXT;
+    VULKAN_HPP_NAMESPACE::StructureType sType                                  = StructureType::ePhysicalDeviceRobustness2PropertiesKHR;
     void *                              pNext                                  = {};
     VULKAN_HPP_NAMESPACE::DeviceSize    robustStorageBufferAccessSizeAlignment = {};
     VULKAN_HPP_NAMESPACE::DeviceSize    robustUniformBufferAccessSizeAlignment = {};
   };
 
   template <>
-  struct CppType<StructureType, StructureType::ePhysicalDeviceRobustness2PropertiesEXT>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceRobustness2PropertiesKHR>
   {
-    using Type = PhysicalDeviceRobustness2PropertiesEXT;
+    using Type = PhysicalDeviceRobustness2PropertiesKHR;
   };
+
+  using PhysicalDeviceRobustness2PropertiesEXT = PhysicalDeviceRobustness2PropertiesKHR;
 
   // wrapper struct for struct VkPhysicalDeviceSampleLocationsPropertiesEXT, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceSampleLocationsPropertiesEXT.html
