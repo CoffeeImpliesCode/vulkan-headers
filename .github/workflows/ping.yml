@@ -19,7 +19,7 @@ jobs:
           - cimgui
     runs-on: ubuntu-latest
     steps:
-    - uses: mlugg/setup-zig@v1
+    - uses: mlugg/setup-zig@v2
       with:
         version: ${{ env.ZIG_VERSION }}
 
