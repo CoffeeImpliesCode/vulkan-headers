@@ -114238,6 +114238,118 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceYcbcrImageArraysFeaturesEXT;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT.html
+  struct PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT
+  {
+    using NativeType = VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT( VULKAN_HPP_NAMESPACE::Bool32 zeroInitializeDeviceMemory_ = {},
+                                                                              void *                       pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , zeroInitializeDeviceMemory{ zeroInitializeDeviceMemory_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR
+      PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT( PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT( VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT( *reinterpret_cast<PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT &
+      operator=( PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT & operator=( VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT &
+      setZeroInitializeDeviceMemory( VULKAN_HPP_NAMESPACE::Bool32 zeroInitializeDeviceMemory_ ) VULKAN_HPP_NOEXCEPT
+    {
+      zeroInitializeDeviceMemory = zeroInitializeDeviceMemory_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#  if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#  else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, VULKAN_HPP_NAMESPACE::Bool32 const &>
+#  endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, zeroInitializeDeviceMemory );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( zeroInitializeDeviceMemory == rhs.zeroInitializeDeviceMemory );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    VULKAN_HPP_NAMESPACE::StructureType sType                      = StructureType::ePhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT;
+    void *                              pNext                      = {};
+    VULKAN_HPP_NAMESPACE::Bool32        zeroInitializeDeviceMemory = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT>
+  {
+    using Type = PhysicalDeviceZeroInitializeDeviceMemoryFeaturesEXT;
+  };
+
   // wrapper struct for struct VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html
   struct PhysicalDeviceZeroInitializeWorkgroupMemoryFeatures
