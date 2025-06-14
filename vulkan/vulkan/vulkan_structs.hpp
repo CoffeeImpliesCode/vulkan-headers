@@ -66020,6 +66020,129 @@ auto operator<=>( MutableDescriptorTypeCreateInfoEXT const & ) const = default;
   };
   using MutableDescriptorTypeCreateInfoVALVE = MutableDescriptorTypeCreateInfoEXT;
 
+#if defined( VK_USE_PLATFORM_OHOS )
+  // wrapper struct for struct VkOHSurfaceCreateInfoOHOS, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkOHSurfaceCreateInfoOHOS.html
+  struct OHSurfaceCreateInfoOHOS
+  {
+    using NativeType = VkOHSurfaceCreateInfoOHOS;
+
+    static const bool allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType = StructureType::eOhSurfaceCreateInfoOHOS;
+
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+VULKAN_HPP_CONSTEXPR OHSurfaceCreateInfoOHOS(VULKAN_HPP_NAMESPACE::SurfaceCreateFlagsOHOS flags_ = {}, OHNativeWindow * window_ = {}, const void * pNext_ = nullptr) VULKAN_HPP_NOEXCEPT
+    : pNext{ pNext_ }, flags{ flags_ }, window{ window_ }
+    {}
+
+    VULKAN_HPP_CONSTEXPR OHSurfaceCreateInfoOHOS( OHSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    OHSurfaceCreateInfoOHOS( VkOHSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT
+      : OHSurfaceCreateInfoOHOS( *reinterpret_cast<OHSurfaceCreateInfoOHOS const *>( &rhs ) )
+    {}
+
+
+
+    OHSurfaceCreateInfoOHOS & operator=( OHSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    OHSurfaceCreateInfoOHOS & operator=( VkOHSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::OHSurfaceCreateInfoOHOS const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 OHSurfaceCreateInfoOHOS & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 OHSurfaceCreateInfoOHOS & setFlags( VULKAN_HPP_NAMESPACE::SurfaceCreateFlagsOHOS flags_ ) VULKAN_HPP_NOEXCEPT
+    {
+      flags = flags_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 OHSurfaceCreateInfoOHOS & setWindow( OHNativeWindow * window_ ) VULKAN_HPP_NOEXCEPT
+    {
+      window = window_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+
+    operator VkOHSurfaceCreateInfoOHOS const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkOHSurfaceCreateInfoOHOS*>( this );
+    }
+
+    operator VkOHSurfaceCreateInfoOHOS &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkOHSurfaceCreateInfoOHOS*>( this );
+    }
+
+    operator VkOHSurfaceCreateInfoOHOS const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkOHSurfaceCreateInfoOHOS*>( this );
+    }
+
+    operator VkOHSurfaceCreateInfoOHOS *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkOHSurfaceCreateInfoOHOS*>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, VULKAN_HPP_NAMESPACE::SurfaceCreateFlagsOHOS const &, OHNativeWindow * const &>
+#endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, flags, window );
+    }
+#endif
+
+
+#if defined(VULKAN_HPP_HAS_SPACESHIP_OPERATOR)
+auto operator<=>( OHSurfaceCreateInfoOHOS const & ) const = default;
+#else
+    bool operator==( OHSurfaceCreateInfoOHOS const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#else
+      return ( sType == rhs.sType )
+          && ( pNext == rhs.pNext )
+          && ( flags == rhs.flags )
+          && ( window == rhs.window );
+#endif
+    }
+
+    bool operator!=( OHSurfaceCreateInfoOHOS const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+    public:
+    VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::eOhSurfaceCreateInfoOHOS;
+    const void * pNext = {};
+    VULKAN_HPP_NAMESPACE::SurfaceCreateFlagsOHOS flags = {};
+    OHNativeWindow * window = {};
+
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eOhSurfaceCreateInfoOHOS>
+  {
+    using Type = OHSurfaceCreateInfoOHOS;
+  };
+  using SurfaceCreateInfoOHOS = OHSurfaceCreateInfoOHOS;
+#endif /*VK_USE_PLATFORM_OHOS*/
+
   // wrapper struct for struct VkOpaqueCaptureDescriptorDataCreateInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkOpaqueCaptureDescriptorDataCreateInfoEXT.html
   struct OpaqueCaptureDescriptorDataCreateInfoEXT
   {
@@ -75314,7 +75437,7 @@ auto operator<=>( PhysicalDeviceDescriptorBufferTensorFeaturesARM const & ) cons
 
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-VULKAN_HPP_CONSTEXPR PhysicalDeviceDescriptorBufferTensorPropertiesARM(size_t tensorCaptureReplayDescriptorDataSize_ = {}, size_t tensorViewCaptureReplayDescriptorDataSize_ = {}, size_t tensorDescriptorSize_ = {}, const void * pNext_ = nullptr) VULKAN_HPP_NOEXCEPT
+VULKAN_HPP_CONSTEXPR PhysicalDeviceDescriptorBufferTensorPropertiesARM(size_t tensorCaptureReplayDescriptorDataSize_ = {}, size_t tensorViewCaptureReplayDescriptorDataSize_ = {}, size_t tensorDescriptorSize_ = {}, void * pNext_ = nullptr) VULKAN_HPP_NOEXCEPT
     : pNext{ pNext_ }, tensorCaptureReplayDescriptorDataSize{ tensorCaptureReplayDescriptorDataSize_ }, tensorViewCaptureReplayDescriptorDataSize{ tensorViewCaptureReplayDescriptorDataSize_ }, tensorDescriptorSize{ tensorDescriptorSize_ }
     {}
 
@@ -75336,7 +75459,7 @@ VULKAN_HPP_CONSTEXPR PhysicalDeviceDescriptorBufferTensorPropertiesARM(size_t te
     }
 
 #if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDescriptorBufferTensorPropertiesARM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDescriptorBufferTensorPropertiesARM & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
     {
       pNext = pNext_;
       return *this;
@@ -75386,7 +75509,7 @@ VULKAN_HPP_CONSTEXPR PhysicalDeviceDescriptorBufferTensorPropertiesARM(size_t te
 #if 14 <= VULKAN_HPP_CPP_VERSION
     auto
 #else
-    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, size_t const &, size_t const &, size_t const &>
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, size_t const &, size_t const &, size_t const &>
 #endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
@@ -75419,7 +75542,7 @@ auto operator<=>( PhysicalDeviceDescriptorBufferTensorPropertiesARM const & ) co
 
     public:
     VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::ePhysicalDeviceDescriptorBufferTensorPropertiesARM;
-    const void * pNext = {};
+    void * pNext = {};
     size_t tensorCaptureReplayDescriptorDataSize = {};
     size_t tensorViewCaptureReplayDescriptorDataSize = {};
     size_t tensorDescriptorSize = {};
@@ -80825,6 +80948,202 @@ auto operator<=>( PhysicalDeviceFragmentDensityMapFeaturesEXT const & ) const = 
   struct CppType<StructureType, StructureType::ePhysicalDeviceFragmentDensityMapFeaturesEXT>
   {
     using Type = PhysicalDeviceFragmentDensityMapFeaturesEXT;
+  };
+
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE.html
+  struct PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE
+  {
+    using NativeType = VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE;
+
+    static const bool allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType = StructureType::ePhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE;
+
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+VULKAN_HPP_CONSTEXPR PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE(VULKAN_HPP_NAMESPACE::Bool32 fragmentDensityMapLayered_ = {}, void * pNext_ = nullptr) VULKAN_HPP_NOEXCEPT
+    : pNext{ pNext_ }, fragmentDensityMapLayered{ fragmentDensityMapLayered_ }
+    {}
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE( PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE( VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE( *reinterpret_cast<PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const *>( &rhs ) )
+    {}
+
+
+
+    PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE & operator=( PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE & operator=( VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const *>( &rhs );
+      return *this;
+    }
+
+
+    operator VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE*>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE*>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE*>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE*>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, VULKAN_HPP_NAMESPACE::Bool32 const &>
+#endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, fragmentDensityMapLayered );
+    }
+#endif
+
+
+#if defined(VULKAN_HPP_HAS_SPACESHIP_OPERATOR)
+auto operator<=>( PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#else
+      return ( sType == rhs.sType )
+          && ( pNext == rhs.pNext )
+          && ( fragmentDensityMapLayered == rhs.fragmentDensityMapLayered );
+#endif
+    }
+
+    bool operator!=( PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+    public:
+    VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::ePhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE;
+    void * pNext = {};
+    VULKAN_HPP_NAMESPACE::Bool32 fragmentDensityMapLayered = {};
+
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE>
+  {
+    using Type = PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE;
+  };
+
+  // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE.html
+  struct PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE
+  {
+    using NativeType = VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE;
+
+    static const bool allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType = StructureType::ePhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE;
+
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+VULKAN_HPP_CONSTEXPR PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE(uint32_t maxFragmentDensityMapLayers_ = {}, void * pNext_ = nullptr) VULKAN_HPP_NOEXCEPT
+    : pNext{ pNext_ }, maxFragmentDensityMapLayers{ maxFragmentDensityMapLayers_ }
+    {}
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE( PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE( VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE( *reinterpret_cast<PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const *>( &rhs ) )
+    {}
+
+
+
+    PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE & operator=( PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE & operator=( VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const *>( &rhs );
+      return *this;
+    }
+
+
+    operator VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE*>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE*>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE*>( this );
+    }
+
+    operator VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE*>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, void * const &, uint32_t const &>
+#endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, maxFragmentDensityMapLayers );
+    }
+#endif
+
+
+#if defined(VULKAN_HPP_HAS_SPACESHIP_OPERATOR)
+auto operator<=>( PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#else
+      return ( sType == rhs.sType )
+          && ( pNext == rhs.pNext )
+          && ( maxFragmentDensityMapLayers == rhs.maxFragmentDensityMapLayers );
+#endif
+    }
+
+    bool operator!=( PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+    public:
+    VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::ePhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE;
+    void * pNext = {};
+    uint32_t maxFragmentDensityMapLayers = {};
+
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE>
+  {
+    using Type = PhysicalDeviceFragmentDensityMapLayeredPropertiesVALVE;
   };
 
   // wrapper struct for struct VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceFragmentDensityMapOffsetFeaturesEXT.html
@@ -114507,6 +114826,118 @@ VULKAN_HPP_CONSTEXPR_14 PipelineExecutableStatisticKHR(std::array<char,VK_MAX_DE
   struct CppType<StructureType, StructureType::ePipelineExecutableStatisticKHR>
   {
     using Type = PipelineExecutableStatisticKHR;
+  };
+
+  // wrapper struct for struct VkPipelineFragmentDensityMapLayeredCreateInfoVALVE, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineFragmentDensityMapLayeredCreateInfoVALVE.html
+  struct PipelineFragmentDensityMapLayeredCreateInfoVALVE
+  {
+    using NativeType = VkPipelineFragmentDensityMapLayeredCreateInfoVALVE;
+
+    static const bool allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType = StructureType::ePipelineFragmentDensityMapLayeredCreateInfoVALVE;
+
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+VULKAN_HPP_CONSTEXPR PipelineFragmentDensityMapLayeredCreateInfoVALVE(uint32_t maxFragmentDensityMapLayers_ = {}, const void * pNext_ = nullptr) VULKAN_HPP_NOEXCEPT
+    : pNext{ pNext_ }, maxFragmentDensityMapLayers{ maxFragmentDensityMapLayers_ }
+    {}
+
+    VULKAN_HPP_CONSTEXPR PipelineFragmentDensityMapLayeredCreateInfoVALVE( PipelineFragmentDensityMapLayeredCreateInfoVALVE const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PipelineFragmentDensityMapLayeredCreateInfoVALVE( VkPipelineFragmentDensityMapLayeredCreateInfoVALVE const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PipelineFragmentDensityMapLayeredCreateInfoVALVE( *reinterpret_cast<PipelineFragmentDensityMapLayeredCreateInfoVALVE const *>( &rhs ) )
+    {}
+
+
+
+    PipelineFragmentDensityMapLayeredCreateInfoVALVE & operator=( PipelineFragmentDensityMapLayeredCreateInfoVALVE const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PipelineFragmentDensityMapLayeredCreateInfoVALVE & operator=( VkPipelineFragmentDensityMapLayeredCreateInfoVALVE const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<VULKAN_HPP_NAMESPACE::PipelineFragmentDensityMapLayeredCreateInfoVALVE const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PipelineFragmentDensityMapLayeredCreateInfoVALVE & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PipelineFragmentDensityMapLayeredCreateInfoVALVE & setMaxFragmentDensityMapLayers( uint32_t maxFragmentDensityMapLayers_ ) VULKAN_HPP_NOEXCEPT
+    {
+      maxFragmentDensityMapLayers = maxFragmentDensityMapLayers_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+
+    operator VkPipelineFragmentDensityMapLayeredCreateInfoVALVE const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPipelineFragmentDensityMapLayeredCreateInfoVALVE*>( this );
+    }
+
+    operator VkPipelineFragmentDensityMapLayeredCreateInfoVALVE &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPipelineFragmentDensityMapLayeredCreateInfoVALVE*>( this );
+    }
+
+    operator VkPipelineFragmentDensityMapLayeredCreateInfoVALVE const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineFragmentDensityMapLayeredCreateInfoVALVE*>( this );
+    }
+
+    operator VkPipelineFragmentDensityMapLayeredCreateInfoVALVE *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineFragmentDensityMapLayeredCreateInfoVALVE*>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+#if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#else
+    std::tuple<VULKAN_HPP_NAMESPACE::StructureType const &, const void * const &, uint32_t const &>
+#endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, maxFragmentDensityMapLayers );
+    }
+#endif
+
+
+#if defined(VULKAN_HPP_HAS_SPACESHIP_OPERATOR)
+auto operator<=>( PipelineFragmentDensityMapLayeredCreateInfoVALVE const & ) const = default;
+#else
+    bool operator==( PipelineFragmentDensityMapLayeredCreateInfoVALVE const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#else
+      return ( sType == rhs.sType )
+          && ( pNext == rhs.pNext )
+          && ( maxFragmentDensityMapLayers == rhs.maxFragmentDensityMapLayers );
+#endif
+    }
+
+    bool operator!=( PipelineFragmentDensityMapLayeredCreateInfoVALVE const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+    public:
+    VULKAN_HPP_NAMESPACE::StructureType sType = StructureType::ePipelineFragmentDensityMapLayeredCreateInfoVALVE;
+    const void * pNext = {};
+    uint32_t maxFragmentDensityMapLayers = {};
+
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePipelineFragmentDensityMapLayeredCreateInfoVALVE>
+  {
+    using Type = PipelineFragmentDensityMapLayeredCreateInfoVALVE;
   };
 
   // wrapper struct for struct VkPipelineFragmentShadingRateEnumStateCreateInfoNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineFragmentShadingRateEnumStateCreateInfoNV.html
