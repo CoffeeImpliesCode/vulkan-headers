@@ -2357,6 +2357,167 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = AccelerationStructureCreateInfoNV;
   };
 
+#if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX.html
+  struct AccelerationStructureDenseGeometryFormatTrianglesDataAMDX
+  {
+    using NativeType = VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eAccelerationStructureDenseGeometryFormatTrianglesDataAMDX;
+
+#  if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR_14
+      AccelerationStructureDenseGeometryFormatTrianglesDataAMDX( DeviceOrHostAddressConstKHR  compressedData_    = {},
+                                                                 DeviceSize                   dataSize_          = {},
+                                                                 uint32_t                     numTriangles_      = {},
+                                                                 uint32_t                     numVertices_       = {},
+                                                                 uint32_t                     maxPrimitiveIndex_ = {},
+                                                                 uint32_t                     maxGeometryIndex_  = {},
+                                                                 CompressedTriangleFormatAMDX format_            = CompressedTriangleFormatAMDX::eDgf1,
+                                                                 const void *                 pNext_             = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , compressedData{ compressedData_ }
+      , dataSize{ dataSize_ }
+      , numTriangles{ numTriangles_ }
+      , numVertices{ numVertices_ }
+      , maxPrimitiveIndex{ maxPrimitiveIndex_ }
+      , maxGeometryIndex{ maxGeometryIndex_ }
+      , format{ format_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 AccelerationStructureDenseGeometryFormatTrianglesDataAMDX( AccelerationStructureDenseGeometryFormatTrianglesDataAMDX const & rhs )
+      VULKAN_HPP_NOEXCEPT = default;
+
+    AccelerationStructureDenseGeometryFormatTrianglesDataAMDX( VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX const & rhs ) VULKAN_HPP_NOEXCEPT
+      : AccelerationStructureDenseGeometryFormatTrianglesDataAMDX(
+          *reinterpret_cast<AccelerationStructureDenseGeometryFormatTrianglesDataAMDX const *>( &rhs ) )
+    {
+    }
+
+    AccelerationStructureDenseGeometryFormatTrianglesDataAMDX &
+      operator=( AccelerationStructureDenseGeometryFormatTrianglesDataAMDX const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#  endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    AccelerationStructureDenseGeometryFormatTrianglesDataAMDX &
+      operator=( VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<AccelerationStructureDenseGeometryFormatTrianglesDataAMDX const *>( &rhs );
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 AccelerationStructureDenseGeometryFormatTrianglesDataAMDX & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 AccelerationStructureDenseGeometryFormatTrianglesDataAMDX &
+      setCompressedData( DeviceOrHostAddressConstKHR const & compressedData_ ) VULKAN_HPP_NOEXCEPT
+    {
+      compressedData = compressedData_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 AccelerationStructureDenseGeometryFormatTrianglesDataAMDX & setDataSize( DeviceSize dataSize_ ) VULKAN_HPP_NOEXCEPT
+    {
+      dataSize = dataSize_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 AccelerationStructureDenseGeometryFormatTrianglesDataAMDX & setNumTriangles( uint32_t numTriangles_ ) VULKAN_HPP_NOEXCEPT
+    {
+      numTriangles = numTriangles_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 AccelerationStructureDenseGeometryFormatTrianglesDataAMDX & setNumVertices( uint32_t numVertices_ ) VULKAN_HPP_NOEXCEPT
+    {
+      numVertices = numVertices_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 AccelerationStructureDenseGeometryFormatTrianglesDataAMDX & setMaxPrimitiveIndex( uint32_t maxPrimitiveIndex_ ) VULKAN_HPP_NOEXCEPT
+    {
+      maxPrimitiveIndex = maxPrimitiveIndex_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 AccelerationStructureDenseGeometryFormatTrianglesDataAMDX & setMaxGeometryIndex( uint32_t maxGeometryIndex_ ) VULKAN_HPP_NOEXCEPT
+    {
+      maxGeometryIndex = maxGeometryIndex_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 AccelerationStructureDenseGeometryFormatTrianglesDataAMDX & setFormat( CompressedTriangleFormatAMDX format_ ) VULKAN_HPP_NOEXCEPT
+    {
+      format = format_;
+      return *this;
+    }
+#  endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX *>( this );
+    }
+
+    operator VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX *>( this );
+    }
+
+    operator VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX *>( this );
+    }
+
+    operator VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkAccelerationStructureDenseGeometryFormatTrianglesDataAMDX *>( this );
+    }
+
+#  if defined( VULKAN_HPP_USE_REFLECT )
+#    if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#    else
+    std::tuple<StructureType const &,
+               const void * const &,
+               DeviceOrHostAddressConstKHR const &,
+               DeviceSize const &,
+               uint32_t const &,
+               uint32_t const &,
+               uint32_t const &,
+               uint32_t const &,
+               CompressedTriangleFormatAMDX const &>
+#    endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, compressedData, dataSize, numTriangles, numVertices, maxPrimitiveIndex, maxGeometryIndex, format );
+    }
+#  endif
+
+  public:
+    StructureType                sType             = StructureType::eAccelerationStructureDenseGeometryFormatTrianglesDataAMDX;
+    const void *                 pNext             = {};
+    DeviceOrHostAddressConstKHR  compressedData    = {};
+    DeviceSize                   dataSize          = {};
+    uint32_t                     numTriangles      = {};
+    uint32_t                     numVertices       = {};
+    uint32_t                     maxPrimitiveIndex = {};
+    uint32_t                     maxGeometryIndex  = {};
+    CompressedTriangleFormatAMDX format            = CompressedTriangleFormatAMDX::eDgf1;
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eAccelerationStructureDenseGeometryFormatTrianglesDataAMDX>
+  {
+    using Type = AccelerationStructureDenseGeometryFormatTrianglesDataAMDX;
+  };
+#endif /*VK_ENABLE_BETA_EXTENSIONS*/
+
   // wrapper struct for struct VkAccelerationStructureDeviceAddressInfoKHR, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkAccelerationStructureDeviceAddressInfoKHR.html
   struct AccelerationStructureDeviceAddressInfoKHR
@@ -35995,15 +36156,29 @@ namespace VULKAN_HPP_NAMESPACE
     static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eDeviceCreateInfo;
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR DeviceCreateInfo( DeviceCreateFlags              flags_                   = {},
-                                           uint32_t                       queueCreateInfoCount_    = {},
-                                           const DeviceQueueCreateInfo *  pQueueCreateInfos_       = {},
-                                           uint32_t                       enabledLayerCount_       = {},
-                                           const char * const *           ppEnabledLayerNames_     = {},
-                                           uint32_t                       enabledExtensionCount_   = {},
-                                           const char * const *           ppEnabledExtensionNames_ = {},
-                                           const PhysicalDeviceFeatures * pEnabledFeatures_        = {},
-                                           const void *                   pNext_                   = nullptr ) VULKAN_HPP_NOEXCEPT
+
+#  if defined( _MSC_VER )
+#    pragma warning( push )
+#    pragma warning( disable : 4996 )  // 'function': was declared deprecated
+#  elif defined( __clang__ )
+#    pragma clang diagnostic push
+#    pragma clang diagnostic ignored "-Wdeprecated-declarations"
+#  elif defined( __GNUC__ )
+#    pragma GCC diagnostic push
+#    pragma GCC diagnostic ignored "-Wdeprecated-declarations"
+#  else
+// unknown compiler... just ignore the warnings for yourselves ;)
+#  endif
+
+    VULKAN_HPP_CONSTEXPR_17 DeviceCreateInfo( DeviceCreateFlags              flags_                   = {},
+                                              uint32_t                       queueCreateInfoCount_    = {},
+                                              const DeviceQueueCreateInfo *  pQueueCreateInfos_       = {},
+                                              uint32_t                       enabledLayerCount_       = {},
+                                              const char * const *           ppEnabledLayerNames_     = {},
+                                              uint32_t                       enabledExtensionCount_   = {},
+                                              const char * const *           ppEnabledExtensionNames_ = {},
+                                              const PhysicalDeviceFeatures * pEnabledFeatures_        = {},
+                                              const void *                   pNext_                   = nullptr ) VULKAN_HPP_NOEXCEPT
       : pNext{ pNext_ }
       , flags{ flags_ }
       , queueCreateInfoCount{ queueCreateInfoCount_ }
@@ -36016,7 +36191,7 @@ namespace VULKAN_HPP_NAMESPACE
     {
     }
 
-    VULKAN_HPP_CONSTEXPR DeviceCreateInfo( DeviceCreateInfo const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    VULKAN_HPP_CONSTEXPR_17 DeviceCreateInfo( DeviceCreateInfo const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
     DeviceCreateInfo( VkDeviceCreateInfo const & rhs ) VULKAN_HPP_NOEXCEPT : DeviceCreateInfo( *reinterpret_cast<DeviceCreateInfo const *>( &rhs ) ) {}
 
@@ -36031,21 +36206,37 @@ namespace VULKAN_HPP_NAMESPACE
       , flags( flags_ )
       , queueCreateInfoCount( static_cast<uint32_t>( queueCreateInfos_.size() ) )
       , pQueueCreateInfos( queueCreateInfos_.data() )
-      , enabledLayerCount( static_cast<uint32_t>( pEnabledLayerNames_.size() ) )
-      , ppEnabledLayerNames( pEnabledLayerNames_.data() )
       , enabledExtensionCount( static_cast<uint32_t>( pEnabledExtensionNames_.size() ) )
       , ppEnabledExtensionNames( pEnabledExtensionNames_.data() )
       , pEnabledFeatures( pEnabledFeatures_ )
     {
+      detail::ignore( pEnabledLayerNames_ );
     }
 #  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
 
     DeviceCreateInfo & operator=( DeviceCreateInfo const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+#  if defined( _MSC_VER )
+#    pragma warning( pop )
+#  elif defined( __clang__ )
+#    pragma clang diagnostic pop
+#  elif defined( __GNUC__ )
+#    pragma GCC diagnostic pop
+#  else
+// unknown compiler... just ignore the warnings for yourselves ;)
+#  endif
+
 #endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
     DeviceCreateInfo & operator=( VkDeviceCreateInfo const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      *this = *reinterpret_cast<DeviceCreateInfo const *>( &rhs );
+      pNext                   = rhs.pNext;
+      flags                   = static_cast<DeviceCreateFlags>( rhs.flags );
+      queueCreateInfoCount    = rhs.queueCreateInfoCount;
+      pQueueCreateInfos       = reinterpret_cast<const DeviceQueueCreateInfo *>( rhs.pQueueCreateInfos );
+      enabledExtensionCount   = rhs.enabledExtensionCount;
+      ppEnabledExtensionNames = rhs.ppEnabledExtensionNames;
+      pEnabledFeatures        = reinterpret_cast<const PhysicalDeviceFeatures *>( rhs.pEnabledFeatures );
       return *this;
     }
 
@@ -36083,23 +36274,24 @@ namespace VULKAN_HPP_NAMESPACE
     }
 #  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
 
-    VULKAN_HPP_CONSTEXPR_14 DeviceCreateInfo & setEnabledLayerCount( uint32_t enabledLayerCount_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_DEPRECATED( "ignored" ) VULKAN_HPP_CONSTEXPR_14 DeviceCreateInfo & setEnabledLayerCount( uint32_t enabledLayerCount_ ) VULKAN_HPP_NOEXCEPT
     {
-      enabledLayerCount = enabledLayerCount_;
+      detail::ignore( enabledLayerCount_ );
       return *this;
     }
 
+    VULKAN_HPP_DEPRECATED( "ignored" )
     VULKAN_HPP_CONSTEXPR_14 DeviceCreateInfo & setPpEnabledLayerNames( const char * const * ppEnabledLayerNames_ ) VULKAN_HPP_NOEXCEPT
     {
-      ppEnabledLayerNames = ppEnabledLayerNames_;
+      detail::ignore( ppEnabledLayerNames_ );
       return *this;
     }
 
 #  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    VULKAN_HPP_DEPRECATED( "ignored" )
     DeviceCreateInfo & setPEnabledLayerNames( ArrayProxyNoTemporaries<const char * const> const & pEnabledLayerNames_ ) VULKAN_HPP_NOEXCEPT
     {
-      enabledLayerCount   = static_cast<uint32_t>( pEnabledLayerNames_.size() );
-      ppEnabledLayerNames = pEnabledLayerNames_.data();
+      detail::ignore( pEnabledLayerNames_ );
       return *this;
     }
 #  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
@@ -36195,14 +36387,6 @@ namespace VULKAN_HPP_NAMESPACE
         return cmp;
       if ( auto cmp = pQueueCreateInfos <=> rhs.pQueueCreateInfos; cmp != 0 )
         return cmp;
-      if ( auto cmp = enabledLayerCount <=> rhs.enabledLayerCount; cmp != 0 )
-        return cmp;
-      for ( size_t i = 0; i < enabledLayerCount; ++i )
-      {
-        if ( ppEnabledLayerNames[i] != rhs.ppEnabledLayerNames[i] )
-          if ( auto cmp = strcmp( ppEnabledLayerNames[i], rhs.ppEnabledLayerNames[i] ); cmp != 0 )
-            return cmp < 0 ? std::strong_ordering::less : std::strong_ordering::greater;
-      }
       if ( auto cmp = enabledExtensionCount <=> rhs.enabledExtensionCount; cmp != 0 )
         return cmp;
       for ( size_t i = 0; i < enabledExtensionCount; ++i )
@@ -36221,12 +36405,7 @@ namespace VULKAN_HPP_NAMESPACE
     bool operator==( DeviceCreateInfo const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
       return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( flags == rhs.flags ) && ( queueCreateInfoCount == rhs.queueCreateInfoCount ) &&
-             ( pQueueCreateInfos == rhs.pQueueCreateInfos ) && ( enabledLayerCount == rhs.enabledLayerCount ) &&
-             std::equal( ppEnabledLayerNames,
-                         ppEnabledLayerNames + enabledLayerCount,
-                         rhs.ppEnabledLayerNames,
-                         []( char const * left, char const * right ) { return ( left == right ) || ( strcmp( left, right ) == 0 ); } ) &&
-             ( enabledExtensionCount == rhs.enabledExtensionCount ) &&
+             ( pQueueCreateInfos == rhs.pQueueCreateInfos ) && ( enabledExtensionCount == rhs.enabledExtensionCount ) &&
              std::equal( ppEnabledExtensionNames,
                          ppEnabledExtensionNames + enabledExtensionCount,
                          rhs.ppEnabledExtensionNames,
@@ -36240,13 +36419,13 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
   public:
-    StructureType                  sType                   = StructureType::eDeviceCreateInfo;
-    const void *                   pNext                   = {};
-    DeviceCreateFlags              flags                   = {};
-    uint32_t                       queueCreateInfoCount    = {};
-    const DeviceQueueCreateInfo *  pQueueCreateInfos       = {};
-    uint32_t                       enabledLayerCount       = {};
-    const char * const *           ppEnabledLayerNames     = {};
+    StructureType                 sType                = StructureType::eDeviceCreateInfo;
+    const void *                  pNext                = {};
+    DeviceCreateFlags             flags                = {};
+    uint32_t                      queueCreateInfoCount = {};
+    const DeviceQueueCreateInfo * pQueueCreateInfos    = {};
+    VULKAN_HPP_DEPRECATED( "ignored" ) uint32_t enabledLayerCount;
+    VULKAN_HPP_DEPRECATED( "ignored" ) const char * const * ppEnabledLayerNames;
     uint32_t                       enabledExtensionCount   = {};
     const char * const *           ppEnabledExtensionNames = {};
     const PhysicalDeviceFeatures * pEnabledFeatures        = {};
@@ -78729,6 +78908,117 @@ namespace VULKAN_HPP_NAMESPACE
   {
     using Type = PhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV;
   };
+
+#if defined( VK_ENABLE_BETA_EXTENSIONS )
+  // wrapper struct for struct VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX.html
+  struct PhysicalDeviceDenseGeometryFormatFeaturesAMDX
+  {
+    using NativeType = VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceDenseGeometryFormatFeaturesAMDX;
+
+#  if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceDenseGeometryFormatFeaturesAMDX( Bool32 denseGeometryFormat_ = {}, void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , denseGeometryFormat{ denseGeometryFormat_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR
+      PhysicalDeviceDenseGeometryFormatFeaturesAMDX( PhysicalDeviceDenseGeometryFormatFeaturesAMDX const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceDenseGeometryFormatFeaturesAMDX( VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceDenseGeometryFormatFeaturesAMDX( *reinterpret_cast<PhysicalDeviceDenseGeometryFormatFeaturesAMDX const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceDenseGeometryFormatFeaturesAMDX & operator=( PhysicalDeviceDenseGeometryFormatFeaturesAMDX const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#  endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceDenseGeometryFormatFeaturesAMDX & operator=( VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PhysicalDeviceDenseGeometryFormatFeaturesAMDX const *>( &rhs );
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDenseGeometryFormatFeaturesAMDX & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDenseGeometryFormatFeaturesAMDX & setDenseGeometryFormat( Bool32 denseGeometryFormat_ ) VULKAN_HPP_NOEXCEPT
+    {
+      denseGeometryFormat = denseGeometryFormat_;
+      return *this;
+    }
+#  endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX *>( this );
+    }
+
+    operator VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX *>( this );
+    }
+
+    operator VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX *>( this );
+    }
+
+    operator VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDenseGeometryFormatFeaturesAMDX *>( this );
+    }
+
+#  if defined( VULKAN_HPP_USE_REFLECT )
+#    if 14 <= VULKAN_HPP_CPP_VERSION
+    auto
+#    else
+    std::tuple<StructureType const &, void * const &, Bool32 const &>
+#    endif
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, denseGeometryFormat );
+    }
+#  endif
+
+#  if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceDenseGeometryFormatFeaturesAMDX const & ) const = default;
+#  else
+    bool operator==( PhysicalDeviceDenseGeometryFormatFeaturesAMDX const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#    if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#    else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( denseGeometryFormat == rhs.denseGeometryFormat );
+#    endif
+    }
+
+    bool operator!=( PhysicalDeviceDenseGeometryFormatFeaturesAMDX const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#  endif
+
+  public:
+    StructureType sType               = StructureType::ePhysicalDeviceDenseGeometryFormatFeaturesAMDX;
+    void *        pNext               = {};
+    Bool32        denseGeometryFormat = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceDenseGeometryFormatFeaturesAMDX>
+  {
+    using Type = PhysicalDeviceDenseGeometryFormatFeaturesAMDX;
+  };
+#endif /*VK_ENABLE_BETA_EXTENSIONS*/
 
   // wrapper struct for struct VkPhysicalDeviceDepthBiasControlFeaturesEXT, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDepthBiasControlFeaturesEXT.html
