@@ -109,12 +109,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<float const &, float const &, float const &, float const &, float const &, float const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<float const &, float const &, float const &, float const &, float const &, float const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( minX, minY, minZ, maxX, maxY, maxZ );
     }
@@ -310,9 +305,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Format const &,
@@ -322,7 +314,6 @@ namespace VULKAN_HPP_NAMESPACE
                IndexType const &,
                DeviceOrHostAddressConstKHR const &,
                DeviceOrHostAddressConstKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, vertexFormat, vertexData, vertexStride, maxVertex, indexType, indexData, transformData );
@@ -423,12 +414,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceOrHostAddressConstKHR const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceOrHostAddressConstKHR const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, data, stride );
     }
@@ -524,12 +510,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, DeviceOrHostAddressConstKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, DeviceOrHostAddressConstKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, arrayOfPointers, data );
     }
@@ -687,11 +668,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, GeometryTypeKHR const &, AccelerationStructureGeometryDataKHR const &, GeometryFlagsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, geometryType, geometry, flags );
@@ -945,9 +922,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                AccelerationStructureTypeKHR const &,
@@ -959,7 +933,6 @@ namespace VULKAN_HPP_NAMESPACE
                const AccelerationStructureGeometryKHR * const &,
                const AccelerationStructureGeometryKHR * const * const &,
                DeviceOrHostAddressKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -1068,12 +1041,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( primitiveCount, primitiveOffset, firstVertex, transformOffset );
     }
@@ -1163,12 +1131,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceSize const &, DeviceSize const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceSize const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, accelerationStructureSize, updateScratchSize, buildScratchSize );
     }
@@ -1287,11 +1250,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, AccelerationStructureKHR const &, AccelerationStructureNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, accelerationStructure, accelerationStructureNV );
@@ -1438,9 +1397,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                AccelerationStructureCreateFlagsKHR const &,
@@ -1449,7 +1405,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceSize const &,
                AccelerationStructureTypeKHR const &,
                DeviceAddress const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, createFlags, buffer, offset, size, type, deviceAddress );
@@ -1638,9 +1593,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Buffer const &,
@@ -1654,7 +1606,6 @@ namespace VULKAN_HPP_NAMESPACE
                IndexType const &,
                Buffer const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -1801,11 +1752,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Buffer const &, uint32_t const &, uint32_t const &, DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, aabbData, numAABBs, stride, offset );
@@ -1906,12 +1853,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<GeometryTrianglesNV const &, GeometryAABBNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<GeometryTrianglesNV const &, GeometryAABBNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( triangles, aabbs );
     }
@@ -2020,11 +1962,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, GeometryTypeKHR const &, GeometryDataNV const &, GeometryFlagsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, geometryType, geometry, flags );
@@ -2187,9 +2125,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                AccelerationStructureTypeNV const &,
@@ -2197,7 +2132,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                const GeometryNV * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type, flags, instanceCount, geometryCount, pGeometries );
@@ -2315,12 +2249,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceSize const &, AccelerationStructureInfoNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceSize const &, AccelerationStructureInfoNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, compactedSize, info );
     }
@@ -2480,9 +2409,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                DeviceOrHostAddressConstKHR const &,
@@ -2492,7 +2418,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                CompressedTriangleFormatAMDX const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, compressedData, dataSize, numTriangles, numVertices, maxPrimitiveIndex, maxGeometryIndex, format );
@@ -2587,12 +2512,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, AccelerationStructureKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, AccelerationStructureKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, accelerationStructure );
     }
@@ -2784,9 +2704,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Format const &,
@@ -2800,7 +2717,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceSize const &,
                RayTracingLssIndexingModeNV const &,
                RayTracingLssPrimitiveEndCapsModeNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -2912,12 +2828,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceOrHostAddressConstKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceOrHostAddressConstKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, vertexData );
     }
@@ -3067,9 +2978,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Format const &,
@@ -3081,7 +2989,6 @@ namespace VULKAN_HPP_NAMESPACE
                IndexType const &,
                DeviceOrHostAddressConstKHR const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, vertexFormat, vertexData, vertexStride, radiusFormat, radiusData, radiusStride, indexType, indexData, indexStride );
@@ -3158,12 +3065,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ArrayWrapper2D<float, 3, 4> const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ArrayWrapper2D<float, 3, 4> const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( matrix );
     }
@@ -3291,11 +3193,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<TransformMatrixKHR const &, uint32_t const &, uint32_t const &, uint32_t const &, VkGeometryInstanceFlagsKHR const &, uint64_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( transform, instanceCustomIndex, mask, instanceShaderBindingTableRecordOffset, flags, accelerationStructureReference );
@@ -3441,9 +3339,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<TransformMatrixKHR const &,
                TransformMatrixKHR const &,
                uint32_t const &,
@@ -3451,7 +3346,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                VkGeometryInstanceFlagsKHR const &,
                uint64_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( transformT0, transformT1, instanceCustomIndex, mask, instanceShaderBindingTableRecordOffset, flags, accelerationStructureReference );
@@ -3567,11 +3461,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, AccelerationStructureMemoryRequirementsTypeNV const &, AccelerationStructureNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type, accelerationStructure );
@@ -3685,11 +3575,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, AccelerationStructureMotionInfoFlagsNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxInstances, flags );
@@ -3900,9 +3786,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<float const &,
                float const &,
                float const &,
@@ -3919,7 +3802,6 @@ namespace VULKAN_HPP_NAMESPACE
                float const &,
                float const &,
                float const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sx, a, b, pvx, sy, c, pvy, sz, pvz, qx, qy, qz, qw, tx, ty, tz );
@@ -4072,11 +3954,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<SRTDataNV const &, SRTDataNV const &, uint32_t const &, uint32_t const &, uint32_t const &, VkGeometryInstanceFlagsKHR const &, uint64_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( transformT0, transformT1, instanceCustomIndex, mask, instanceShaderBindingTableRecordOffset, flags, accelerationStructureReference );
@@ -4252,13 +4130,9 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<AccelerationStructureMotionInstanceTypeNV const &,
                AccelerationStructureMotionInstanceFlagsNV const &,
                AccelerationStructureMotionInstanceDataNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( type, flags, data );
@@ -4338,12 +4212,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( count, subdivisionLevel, format );
     }
@@ -4642,9 +4511,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                void * const &,
                Format const &,
@@ -4663,7 +4529,6 @@ namespace VULKAN_HPP_NAMESPACE
                const MicromapUsageEXT * const &,
                const MicromapUsageEXT * const * const &,
                MicromapEXT const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -4894,9 +4759,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                IndexType const &,
@@ -4907,7 +4769,6 @@ namespace VULKAN_HPP_NAMESPACE
                const MicromapUsageEXT * const &,
                const MicromapUsageEXT * const * const &,
                MicromapEXT const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, indexType, indexBuffer, indexStride, baseTriangle, usageCountsCount, pUsageCounts, ppUsageCounts, micromap );
@@ -5000,12 +4861,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const uint8_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const uint8_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pVersionData );
     }
@@ -5140,11 +4996,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, SwapchainKHR const &, uint64_t const &, Semaphore const &, Fence const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchain, timeout, semaphore, fence, deviceMask );
@@ -5260,12 +5112,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, AcquireProfilingLockFlagsKHR const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, AcquireProfilingLockFlagsKHR const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, timeout );
     }
@@ -5479,16 +5326,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<void * const &,
                PFN_AllocationFunction const &,
                PFN_ReallocationFunction const &,
                PFN_FreeFunction const &,
                PFN_InternalAllocationNotification const &,
                PFN_InternalFreeNotification const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( pUserData, pfnAllocation, pfnReallocation, pfnFree, pfnInternalAllocation, pfnInternalFree );
@@ -5593,12 +5436,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint64_t const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint64_t const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, firstDrawTimestamp, swapBufferTimestamp );
     }
@@ -5713,12 +5551,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ComponentSwizzle const &, ComponentSwizzle const &, ComponentSwizzle const &, ComponentSwizzle const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ComponentSwizzle const &, ComponentSwizzle const &, ComponentSwizzle const &, ComponentSwizzle const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( r, g, b, a );
     }
@@ -5820,9 +5653,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                void * const &,
                Format const &,
@@ -5833,7 +5663,6 @@ namespace VULKAN_HPP_NAMESPACE
                SamplerYcbcrRange const &,
                ChromaLocation const &,
                ChromaLocation const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -5960,9 +5789,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                void * const &,
                Format const &,
@@ -5973,7 +5799,6 @@ namespace VULKAN_HPP_NAMESPACE
                SamplerYcbcrRange const &,
                ChromaLocation const &,
                ChromaLocation const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -6087,12 +5912,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Format const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Format const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, colorAttachmentFormat );
     }
@@ -6185,12 +6005,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, allocationSize, memoryTypeBits );
     }
@@ -6282,12 +6097,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, uint64_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, androidHardwareBufferUsage );
     }
@@ -6400,11 +6210,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, AndroidSurfaceCreateFlagsKHR const &, struct ANativeWindow * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, window );
@@ -6517,12 +6323,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, AntiLagStageAMD const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, AntiLagStageAMD const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stage, frameIndex );
     }
@@ -6639,11 +6440,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, AntiLagModeAMD const &, uint32_t const &, const AntiLagPresentationInfoAMD * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, mode, maxFPS, pPresentationInfo );
@@ -6779,11 +6576,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, const char * const &, uint32_t const &, const char * const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pApplicationName, applicationVersion, pEngineName, engineVersion, apiVersion );
@@ -6963,9 +6756,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<AttachmentDescriptionFlags const &,
                Format const &,
                SampleCountFlagBits const &,
@@ -6975,7 +6765,6 @@ namespace VULKAN_HPP_NAMESPACE
                AttachmentStoreOp const &,
                ImageLayout const &,
                ImageLayout const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( flags, format, samples, loadOp, storeOp, stencilLoadOp, stencilStoreOp, initialLayout, finalLayout );
@@ -7145,9 +6934,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                AttachmentDescriptionFlags const &,
@@ -7159,7 +6945,6 @@ namespace VULKAN_HPP_NAMESPACE
                AttachmentStoreOp const &,
                ImageLayout const &,
                ImageLayout const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, format, samples, loadOp, storeOp, stencilLoadOp, stencilStoreOp, initialLayout, finalLayout );
@@ -7284,12 +7069,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ImageLayout const &, ImageLayout const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ImageLayout const &, ImageLayout const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stencilInitialLayout, stencilFinalLayout );
     }
@@ -7396,12 +7176,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, feedbackLoopEnable );
     }
@@ -7499,12 +7274,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, ImageLayout const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, ImageLayout const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( attachment, layout );
     }
@@ -7616,12 +7386,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, ImageLayout const &, ImageAspectFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, ImageLayout const &, ImageAspectFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, attachment, layout, aspectMask );
     }
@@ -7729,12 +7494,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ImageLayout const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ImageLayout const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stencilLayout );
     }
@@ -7879,11 +7639,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const SampleCountFlagBits * const &, SampleCountFlagBits const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, colorAttachmentCount, pColorAttachmentSamples, depthStencilAttachmentSamples );
@@ -7985,12 +7741,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( width, height );
     }
@@ -8079,12 +7830,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<float const &, float const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<float const &, float const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( x, y );
     }
@@ -8227,11 +7973,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, SampleCountFlagBits const &, Extent2D const &, uint32_t const &, const SampleLocationEXT * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, sampleLocationsPerPixel, sampleLocationGridSize, sampleLocationsCount, pSampleLocations );
@@ -8336,12 +8078,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, SampleLocationsInfoEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, SampleLocationsInfoEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( attachmentIndex, sampleLocationsInfo );
     }
@@ -8424,12 +8161,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const struct BaseInStructure * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const struct BaseInStructure * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext );
     }
@@ -8512,12 +8244,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, struct BaseOutStructure * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, struct BaseOutStructure * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext );
     }
@@ -8672,9 +8399,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                AccelerationStructureNV const &,
@@ -8682,7 +8406,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceSize const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, accelerationStructure, memory, memoryOffset, deviceIndexCount, pDeviceIndices );
@@ -8816,12 +8539,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint32_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint32_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceIndexCount, pDeviceIndices );
     }
@@ -8941,12 +8659,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Buffer const &, DeviceMemory const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Buffer const &, DeviceMemory const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, buffer, memory, memoryOffset );
     }
@@ -9087,9 +8800,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DataGraphPipelineSessionARM const &,
@@ -9097,7 +8807,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                DeviceMemory const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, session, bindPoint, objectIndex, memory, memoryOffset );
@@ -9223,11 +8932,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, ShaderStageFlags const &, PipelineLayout const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stageFlags, layout, set );
@@ -9418,9 +9123,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ShaderStageFlags const &,
@@ -9430,7 +9132,6 @@ namespace VULKAN_HPP_NAMESPACE
                const DescriptorSet * const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stageFlags, layout, firstSet, descriptorSetCount, pDescriptorSets, dynamicOffsetCount, pDynamicOffsets );
@@ -9537,12 +9238,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<int32_t const &, int32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<int32_t const &, int32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( x, y );
     }
@@ -9631,12 +9327,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Offset2D const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Offset2D const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( offset, extent );
     }
@@ -9788,11 +9479,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint32_t * const &, uint32_t const &, const Rect2D * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceIndexCount, pDeviceIndices, splitInstanceBindRegionCount, pSplitInstanceBindRegions );
@@ -9915,12 +9602,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Image const &, DeviceMemory const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Image const &, DeviceMemory const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image, memory, memoryOffset );
     }
@@ -10035,12 +9717,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SwapchainKHR const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SwapchainKHR const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchain, imageIndex );
     }
@@ -10144,12 +9821,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageAspectFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageAspectFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, planeAspect );
     }
@@ -10259,12 +9931,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &, uint32_t const &, IndexType const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &, uint32_t const &, IndexType const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( bufferAddress, size, indexType );
     }
@@ -10366,12 +10033,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &, uint32_t const &, IndexType const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &, uint32_t const &, IndexType const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( bufferAddress, size, indexType );
     }
@@ -10464,12 +10126,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Result * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Result * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pResult );
     }
@@ -10561,12 +10218,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( pipelineAddress );
     }
@@ -10648,12 +10300,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( groupIndex );
     }
@@ -10766,11 +10413,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<DeviceSize const &, DeviceSize const &, DeviceMemory const &, DeviceSize const &, SparseMemoryBindFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( resourceOffset, size, memory, memoryOffset, flags );
@@ -10890,12 +10533,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Buffer const &, uint32_t const &, const SparseMemoryBind * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Buffer const &, uint32_t const &, const SparseMemoryBind * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( buffer, bindCount, pBinds );
     }
@@ -11013,12 +10651,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Image const &, uint32_t const &, const SparseMemoryBind * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Image const &, uint32_t const &, const SparseMemoryBind * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( image, bindCount, pBinds );
     }
@@ -11115,12 +10748,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ImageAspectFlags const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ImageAspectFlags const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( aspectMask, mipLevel, arrayLayer );
     }
@@ -11219,12 +10847,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<int32_t const &, int32_t const &, int32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<int32_t const &, int32_t const &, int32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( x, y, z );
     }
@@ -11323,12 +10946,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( width, height, depth );
     }
@@ -11454,11 +11072,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<ImageSubresource const &, Offset3D const &, Extent3D const &, DeviceMemory const &, DeviceSize const &, SparseMemoryBindFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( subresource, offset, extent, memory, memoryOffset, flags );
@@ -11580,12 +11194,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Image const &, uint32_t const &, const SparseImageMemoryBind * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Image const &, uint32_t const &, const SparseImageMemoryBind * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( image, bindCount, pBinds );
     }
@@ -11818,9 +11427,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -11833,7 +11439,6 @@ namespace VULKAN_HPP_NAMESPACE
                const SparseImageMemoryBindInfo * const &,
                uint32_t const &,
                const Semaphore * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -11977,12 +11582,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, TensorARM const &, DeviceMemory const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, TensorARM const &, DeviceMemory const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensor, memory, memoryOffset );
     }
@@ -12091,12 +11691,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( bufferAddress, size, stride );
     }
@@ -12197,12 +11792,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( bufferAddress, size, stride );
     }
@@ -12324,11 +11914,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, DeviceMemory const &, DeviceSize const &, DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryBindIndex, memory, memoryOffset, memorySize );
@@ -12437,12 +12023,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, CubicFilterWeightsQCOM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, CubicFilterWeightsQCOM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cubicWeights );
     }
@@ -12558,12 +12139,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ImageAspectFlags const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ImageAspectFlags const &, uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( aspectMask, mipLevel, baseArrayLayer, layerCount );
     }
@@ -12682,16 +12258,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ImageSubresourceLayers const &,
                ArrayWrapper1D<Offset3D, 2> const &,
                ImageSubresourceLayers const &,
                ArrayWrapper1D<Offset3D, 2> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcSubresource, srcOffsets, dstSubresource, dstOffsets );
@@ -12875,9 +12447,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Image const &,
@@ -12887,7 +12456,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const ImageBlit2 * const &,
                Filter const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcImage, srcImageLayout, dstImage, dstImageLayout, regionCount, pRegions, filter );
@@ -13001,12 +12569,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Buffer const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Buffer const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, buffer );
     }
@@ -13119,12 +12682,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, BufferCollectionFUCHSIA const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, BufferCollectionFUCHSIA const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, collection, index );
     }
@@ -13265,11 +12823,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minBufferCount, maxBufferCount, minBufferCountForCamping, minBufferCountForDedicatedSlack, minBufferCountForSharedSlack );
@@ -13381,12 +12935,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, zx_handle_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, zx_handle_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, collectionToken );
     }
@@ -13506,12 +13055,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, BufferCollectionFUCHSIA const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, BufferCollectionFUCHSIA const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, collection, index );
     }
@@ -13616,12 +13160,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, colorSpace );
     }
@@ -13733,9 +13272,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -13749,7 +13285,6 @@ namespace VULKAN_HPP_NAMESPACE
                SamplerYcbcrRange const &,
                ChromaLocation const &,
                ChromaLocation const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -13944,9 +13479,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                BufferCreateFlags const &,
@@ -13955,7 +13487,6 @@ namespace VULKAN_HPP_NAMESPACE
                SharingMode const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, size, usage, sharingMode, queueFamilyIndexCount, pQueueFamilyIndices );
@@ -14083,12 +13614,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::
       tuple<StructureType const &, const void * const &, BufferCreateInfo const &, FormatFeatureFlags const &, BufferCollectionConstraintsInfoFUCHSIA const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, createInfo, requiredFormatFeatures, bufferCollectionConstraints );
@@ -14196,12 +13723,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceSize const &, DeviceSize const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceSize const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcOffset, dstOffset, size );
     }
@@ -14309,12 +13831,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceSize const &, DeviceSize const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceSize const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcOffset, dstOffset, size );
     }
@@ -14421,12 +13938,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceAddress const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceAddress const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceAddress );
     }
@@ -14528,12 +14040,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Buffer const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Buffer const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, buffer );
     }
@@ -14665,11 +14172,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<DeviceSize const &, uint32_t const &, uint32_t const &, ImageSubresourceLayers const &, Offset3D const &, Extent3D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( bufferOffset, bufferRowLength, bufferImageHeight, imageSubresource, imageOffset, imageExtent );
@@ -14808,9 +14311,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DeviceSize const &,
@@ -14819,7 +14319,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageSubresourceLayers const &,
                Offset3D const &,
                Extent3D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, bufferOffset, bufferRowLength, bufferImageHeight, imageSubresource, imageOffset, imageExtent );
@@ -14979,9 +14478,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                AccessFlags const &,
@@ -14991,7 +14487,6 @@ namespace VULKAN_HPP_NAMESPACE
                Buffer const &,
                DeviceSize const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcAccessMask, dstAccessMask, srcQueueFamilyIndex, dstQueueFamilyIndex, buffer, offset, size );
@@ -15167,9 +14662,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineStageFlags2 const &,
@@ -15181,7 +14673,6 @@ namespace VULKAN_HPP_NAMESPACE
                Buffer const &,
                DeviceSize const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcStageMask, srcAccessMask, dstStageMask, dstAccessMask, srcQueueFamilyIndex, dstQueueFamilyIndex, buffer, offset, size );
@@ -15297,12 +14788,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Buffer const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Buffer const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, buffer );
     }
@@ -15407,12 +14893,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, opaqueCaptureAddress );
     }
@@ -15516,12 +14997,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, BufferUsageFlags2 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, BufferUsageFlags2 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, usage );
     }
@@ -15658,12 +15134,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, BufferViewCreateFlags const &, Buffer const &, Format const &, DeviceSize const &, DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, buffer, format, offset, range );
@@ -15768,12 +15240,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( startAddress, strideInBytes );
     }
@@ -15880,12 +15347,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<PartitionedAccelerationStructureOpTypeNV const &, uint32_t const &, StridedDeviceAddressNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<PartitionedAccelerationStructureOpTypeNV const &, uint32_t const &, StridedDeviceAddressNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( opType, argCount, argData );
     }
@@ -16018,9 +15480,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                BuildAccelerationStructureFlagsKHR const &,
@@ -16028,7 +15487,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, instanceCount, maxInstancePerPartitionCount, partitionCount, maxInstanceInGlobalPartitionCount );
@@ -16182,9 +15640,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                PartitionedAccelerationStructureInstancesInputNV const &,
@@ -16193,7 +15648,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceAddress const &,
                DeviceAddress const &,
                DeviceAddress const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, input, srcAccelerationStructureData, dstAccelerationStructureData, scratchData, srcInfos, srcInfosCount );
@@ -16303,12 +15757,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, TimeDomainKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, TimeDomainKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, timeDomain );
     }
@@ -16396,12 +15845,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PipelineStageFlags2 const &, void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PipelineStageFlags2 const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stage, pCheckpointMarker );
     }
@@ -16490,12 +15934,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PipelineStageFlagBits const &, void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PipelineStageFlagBits const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stage, pCheckpointMarker );
     }
@@ -16657,12 +16096,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<float const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<float const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( depth, stencil );
     }
@@ -16802,12 +16236,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ImageAspectFlags const &, uint32_t const &, ClearValue const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ImageAspectFlags const &, uint32_t const &, ClearValue const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( aspectMask, colorAttachment, clearValue );
     }
@@ -16886,12 +16315,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Rect2D const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Rect2D const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( rect, baseArrayLayer, layerCount );
     }
@@ -17001,12 +16425,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, DeviceAddress const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, DeviceAddress const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( clusterReferencesCount, clusterReferencesStride, clusterReferences );
     }
@@ -17114,12 +16533,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( geometryIndex, reserved, geometryFlags );
     }
@@ -17347,9 +16761,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &,
                ClusterAccelerationStructureClusterFlagsNV const &,
                uint32_t const &,
@@ -17367,7 +16778,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceAddress const &,
                DeviceAddress const &,
                DeviceAddress const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( clusterID,
@@ -17670,9 +17080,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &,
                ClusterAccelerationStructureClusterFlagsNV const &,
                uint32_t const &,
@@ -17691,7 +17098,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceAddress const &,
                DeviceAddress const &,
                DeviceAddress const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( clusterID,
@@ -17843,12 +17249,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxTotalClusterCount, maxClusterCountPerAccelerationStructure );
     }
@@ -18015,9 +17416,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Format const &,
@@ -18028,7 +17426,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -18171,11 +17568,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, ClusterAccelerationStructureTypeNV const &, Bool32 const &, DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type, noMoveOverlap, maxMovedBytes );
@@ -18382,9 +17775,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -18392,7 +17782,6 @@ namespace VULKAN_HPP_NAMESPACE
                ClusterAccelerationStructureOpTypeNV const &,
                ClusterAccelerationStructureOpModeNV const &,
                ClusterAccelerationStructureOpInputNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxAccelerationStructureCount, flags, opType, opMode, opInput );
@@ -18486,12 +17875,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &, DeviceSize const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( deviceAddress, stride, size );
     }
@@ -18649,9 +18033,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ClusterAccelerationStructureInputInfoNV const &,
@@ -18662,7 +18043,6 @@ namespace VULKAN_HPP_NAMESPACE
                StridedDeviceAddressRegionKHR const &,
                DeviceAddress const &,
                ClusterAccelerationStructureAddressResolutionFlagsNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -18749,12 +18129,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( clusterTemplateAddress );
     }
@@ -18875,12 +18250,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, DeviceAddress const &, StridedDeviceAddressNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, DeviceAddress const &, StridedDeviceAddressNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( clusterIdOffset, geometryIndexOffset, reserved, clusterTemplateAddress, vertexBuffer );
     }
@@ -18972,12 +18342,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcAccelerationStructure );
     }
@@ -19075,12 +18440,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( pixelX, pixelY, sample );
     }
@@ -19211,11 +18571,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<ShadingRatePaletteEntryNV const &, uint32_t const &, uint32_t const &, const CoarseSampleLocationNV * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( shadingRate, sampleCount, sampleLocationCount, pSampleLocations );
@@ -19336,12 +18692,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<BlendOp const &, Bool32 const &, Bool32 const &, BlendOverlapEXT const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<BlendOp const &, Bool32 const &, Bool32 const &, BlendOverlapEXT const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( advancedBlendOp, srcPremultiplied, dstPremultiplied, blendOverlap, clampResults );
     }
@@ -19470,11 +18821,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<BlendFactor const &, BlendFactor const &, BlendOp const &, BlendFactor const &, BlendFactor const &, BlendOp const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcColorBlendFactor, dstColorBlendFactor, colorBlendOp, srcAlphaBlendFactor, dstAlphaBlendFactor, alphaBlendOp );
@@ -19592,11 +18939,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, CommandPool const &, CommandBufferLevel const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, commandPool, level, commandBufferCount );
@@ -19743,9 +19086,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                RenderPass const &,
@@ -19754,7 +19094,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                QueryControlFlags const &,
                QueryPipelineStatisticFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, renderPass, subpass, framebuffer, occlusionQueryEnable, queryFlags, pipelineStatistics );
@@ -19873,11 +19212,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, CommandBufferUsageFlags const &, const CommandBufferInheritanceInfo * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pInheritanceInfo );
@@ -19986,12 +19321,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, conditionalRenderingEnable );
     }
@@ -20105,12 +19435,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SurfaceTransformFlagBitsKHR const &, Rect2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SurfaceTransformFlagBitsKHR const &, Rect2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, transform, renderArea );
     }
@@ -20293,9 +19618,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                RenderingFlags const &,
@@ -20305,7 +19627,6 @@ namespace VULKAN_HPP_NAMESPACE
                Format const &,
                Format const &,
                SampleCountFlagBits const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -20443,12 +19764,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<float const &, float const &, float const &, float const &, float const &, float const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<float const &, float const &, float const &, float const &, float const &, float const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( x, y, width, height, minDepth, maxDepth );
     }
@@ -20567,12 +19883,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, uint32_t const &, const Viewport * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, uint32_t const &, const Viewport * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, viewportScissor2D, viewportDepthCount, pViewportDepths );
     }
@@ -20685,12 +19996,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, CommandBuffer const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, CommandBuffer const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, commandBuffer, deviceMask );
     }
@@ -20803,12 +20109,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, CommandPoolCreateFlags const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, CommandPoolCreateFlags const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, queueFamilyIndex );
     }
@@ -20915,12 +20216,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, size_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, size_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( constantID, offset, size );
     }
@@ -21057,12 +20353,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, const SpecializationMapEntry * const &, size_t const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, const SpecializationMapEntry * const &, size_t const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( mapEntryCount, pMapEntries, dataSize, pData );
     }
@@ -21193,9 +20484,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineShaderStageCreateFlags const &,
@@ -21203,7 +20491,6 @@ namespace VULKAN_HPP_NAMESPACE
                ShaderModule const &,
                const char * const &,
                const SpecializationInfo * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, stage, module, pName, pSpecializationInfo );
@@ -21359,9 +20646,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineCreateFlags const &,
@@ -21369,7 +20653,6 @@ namespace VULKAN_HPP_NAMESPACE
                PipelineLayout const &,
                Pipeline const &,
                int32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, stage, layout, basePipelineHandle, basePipelineIndex );
@@ -21496,11 +20779,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DeviceAddress const &, DeviceSize const &, DeviceAddress const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceAddress, size, pipelineDeviceAddressCaptureReplay );
@@ -21624,11 +20903,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Buffer const &, DeviceSize const &, ConditionalRenderingFlagsEXT const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, buffer, offset, flags );
@@ -21741,12 +21016,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint8_t const &, uint8_t const &, uint8_t const &, uint8_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint8_t const &, uint8_t const &, uint8_t const &, uint8_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( major, minor, subminor, patch );
     }
@@ -21935,9 +21205,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                size_t const &,
@@ -21952,7 +21219,6 @@ namespace VULKAN_HPP_NAMESPACE
                size_t const &,
                CooperativeVectorMatrixLayoutNV const &,
                size_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -22068,9 +21334,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -22083,7 +21346,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                ScopeKHR const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -22203,9 +21465,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -22217,7 +21476,6 @@ namespace VULKAN_HPP_NAMESPACE
                ComponentTypeKHR const &,
                Bool32 const &,
                ScopeKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, MSize, NSize, KSize, AType, BType, CType, ResultType, saturatingAccumulation, scope );
@@ -22332,9 +21590,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -22345,7 +21600,6 @@ namespace VULKAN_HPP_NAMESPACE
                ComponentTypeNV const &,
                ComponentTypeNV const &,
                ScopeNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, MSize, NSize, KSize, AType, BType, CType, DType, scope );
@@ -22498,9 +21752,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ComponentTypeKHR const &,
@@ -22509,7 +21760,6 @@ namespace VULKAN_HPP_NAMESPACE
                ComponentTypeKHR const &,
                ComponentTypeKHR const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, inputType, inputInterpretation, matrixInterpretation, biasInterpretation, resultType, transpose );
@@ -22637,15 +21887,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                AccelerationStructureKHR const &,
                AccelerationStructureKHR const &,
                CopyAccelerationStructureModeKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, src, dst, mode );
@@ -22768,15 +22014,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                AccelerationStructureKHR const &,
                DeviceOrHostAddressKHR const &,
                CopyAccelerationStructureModeKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, src, dst, mode );
@@ -22901,11 +22143,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Buffer const &, Buffer const &, uint32_t const &, const BufferCopy2 * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcBuffer, dstBuffer, regionCount, pRegions );
@@ -23072,12 +22310,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, Buffer const &, Image const &, ImageLayout const &, uint32_t const &, const BufferImageCopy2 * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcBuffer, dstImage, dstImageLayout, regionCount, pRegions );
@@ -23188,12 +22422,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SurfaceTransformFlagBitsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SurfaceTransformFlagBitsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, transform );
     }
@@ -23341,9 +22570,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DescriptorSet const &,
@@ -23353,7 +22579,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcSet, srcBinding, srcArrayElement, dstSet, dstBinding, dstArrayElement, descriptorCount );
@@ -23494,9 +22719,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ImageSubresourceLayers const &,
@@ -23504,7 +22726,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageSubresourceLayers const &,
                Offset3D const &,
                Extent3D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcSubresource, srcOffset, dstSubresource, dstOffset, extent );
@@ -23679,9 +22900,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Image const &,
@@ -23690,7 +22908,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageLayout const &,
                uint32_t const &,
                const ImageCopy2 * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcImage, srcImageLayout, dstImage, dstImageLayout, regionCount, pRegions );
@@ -23859,12 +23076,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, Image const &, ImageLayout const &, Buffer const &, uint32_t const &, const BufferImageCopy2 * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcImage, srcImageLayout, dstBuffer, regionCount, pRegions );
@@ -24052,9 +23265,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                HostImageCopyFlags const &,
@@ -24064,7 +23274,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageLayout const &,
                uint32_t const &,
                const ImageCopy2 * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, srcImage, srcImageLayout, dstImage, dstImageLayout, regionCount, pRegions );
@@ -24215,9 +23424,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                void * const &,
@@ -24226,7 +23432,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageSubresourceLayers const &,
                Offset3D const &,
                Extent3D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pHostPointer, memoryRowLength, memoryImageHeight, imageSubresource, imageOffset, imageExtent );
@@ -24396,9 +23601,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                HostImageCopyFlags const &,
@@ -24406,7 +23608,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageLayout const &,
                uint32_t const &,
                const ImageToMemoryCopy * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, srcImage, srcImageLayout, regionCount, pRegions );
@@ -24521,12 +23722,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &, DeviceAddress const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &, DeviceAddress const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcAddress, dstAddress, size );
     }
@@ -24640,15 +23836,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DeviceOrHostAddressConstKHR const &,
                AccelerationStructureKHR const &,
                CopyAccelerationStructureModeKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, src, dst, mode );
@@ -24766,11 +23958,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<DeviceAddress const &, uint32_t const &, uint32_t const &, ImageSubresourceLayers const &, Offset3D const &, Extent3D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcAddress, bufferRowLength, bufferImageHeight, imageSubresource, imageOffset, imageExtent );
@@ -24909,9 +24097,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                const void * const &,
@@ -24920,7 +24105,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageSubresourceLayers const &,
                Offset3D const &,
                Extent3D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pHostPointer, memoryRowLength, memoryImageHeight, imageSubresource, imageOffset, imageExtent );
@@ -25090,9 +24274,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                HostImageCopyFlags const &,
@@ -25100,7 +24281,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageLayout const &,
                uint32_t const &,
                const MemoryToImageCopy * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, dstImage, dstImageLayout, regionCount, pRegions );
@@ -25227,11 +24407,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DeviceOrHostAddressConstKHR const &, MicromapEXT const &, CopyMicromapModeEXT const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, src, dst, mode );
@@ -25334,11 +24510,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, MicromapEXT const &, MicromapEXT const &, CopyMicromapModeEXT const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, src, dst, mode );
@@ -25460,11 +24632,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, MicromapEXT const &, DeviceOrHostAddressKHR const &, CopyMicromapModeEXT const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, src, dst, mode );
@@ -25635,11 +24803,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint64_t * const &, const uint64_t * const &, const uint64_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dimensionCount, pSrcOffset, pDstOffset, pExtent );
@@ -25787,11 +24951,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, TensorARM const &, TensorARM const &, uint32_t const &, const TensorCopyARM * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcTensor, dstTensor, regionCount, pRegions );
@@ -25905,12 +25065,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, CuModuleNVX const &, const char * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, CuModuleNVX const &, const char * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, module, pName );
     }
@@ -26155,9 +25310,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                CuFunctionNVX const &,
@@ -26172,7 +25324,6 @@ namespace VULKAN_HPP_NAMESPACE
                const void * const * const &,
                size_t const &,
                const void * const * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -26315,12 +25466,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, size_t const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, size_t const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dataSize, pData );
     }
@@ -26424,12 +25570,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, use64bitTexturing );
     }
@@ -26539,12 +25680,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, CudaModuleNV const &, const char * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, CudaModuleNV const &, const char * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, module, pName );
     }
@@ -26791,9 +25927,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                CudaFunctionNV const &,
@@ -26808,7 +25941,6 @@ namespace VULKAN_HPP_NAMESPACE
                const void * const * const &,
                size_t const &,
                const void * const * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -26953,12 +26085,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, size_t const &, const void * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, size_t const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dataSize, pData );
     }
@@ -27119,11 +26246,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint64_t * const &, uint32_t const &, const uint64_t * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, waitSemaphoreValuesCount, pWaitSemaphoreValues, signalSemaphoreValuesCount, pSignalSemaphoreValues );
@@ -27234,12 +26357,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const char * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const char * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pVendorOptions );
     }
@@ -27356,12 +26474,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, id, pConstantData );
     }
@@ -27487,12 +26600,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dimension, zeroCount, groupSize );
     }
@@ -27615,12 +26723,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorSet, binding, arrayElement );
     }
@@ -27775,16 +26878,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineCreateFlags2KHR const &,
                PipelineLayout const &,
                uint32_t const &,
                const DataGraphPipelineResourceInfoARM * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, layout, resourceInfoCount, pResourceInfos );
@@ -27892,12 +26991,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DataGraphPipelineDispatchFlagsARM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DataGraphPipelineDispatchFlagsARM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -28025,12 +27119,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint8_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint8_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, identifierSize, pIdentifier );
     }
@@ -28133,12 +27222,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Pipeline const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Pipeline const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dataGraphPipeline );
     }
@@ -28287,11 +27371,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DataGraphPipelinePropertyARM const &, Bool32 const &, size_t const &, void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, property, isText, dataSize, pData );
@@ -28420,15 +27500,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DataGraphPipelineSessionBindPointARM const &,
                DataGraphPipelineSessionBindPointTypeARM const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, bindPoint, bindPointType, numObjects );
@@ -28538,12 +27614,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DataGraphPipelineSessionARM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DataGraphPipelineSessionARM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, session );
     }
@@ -28655,11 +27726,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DataGraphPipelineSessionCreateFlagsARM const &, Pipeline const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, dataGraphPipeline );
@@ -28785,11 +27852,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DataGraphPipelineSessionARM const &, DataGraphPipelineSessionBindPointARM const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, session, bindPoint, objectIndex );
@@ -28956,9 +28019,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ShaderModule const &,
@@ -28966,7 +28026,6 @@ namespace VULKAN_HPP_NAMESPACE
                const SpecializationInfo * const &,
                uint32_t const &,
                const DataGraphPipelineConstantARM * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, module, pName, pSpecializationInfo, constantCount, pConstants );
@@ -29090,12 +28149,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<PhysicalDeviceDataGraphProcessingEngineTypeARM const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<PhysicalDeviceDataGraphProcessingEngineTypeARM const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( type, isForeign );
     }
@@ -29219,11 +28273,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, PhysicalDeviceDataGraphProcessingEngineARM * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, processingEngineCount, pProcessingEngines );
@@ -29336,12 +28386,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const char * const &, ArrayWrapper1D<float, 4> const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const char * const &, ArrayWrapper1D<float, 4> const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pMarkerName, color );
     }
@@ -29471,11 +28516,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DebugReportObjectTypeEXT const &, uint64_t const &, const char * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, objectType, object, pObjectName );
@@ -29644,9 +28685,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DebugReportObjectTypeEXT const &,
@@ -29654,7 +28692,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint64_t const &,
                size_t const &,
                const void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, objectType, object, tagName, tagSize, pTag );
@@ -29826,11 +28863,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DebugReportFlagsEXT const &, PFN_DebugReportCallbackEXT const &, void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pfnCallback, pUserData );
@@ -29936,12 +28969,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const char * const &, ArrayWrapper1D<float, 4> const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const char * const &, ArrayWrapper1D<float, 4> const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pLabelName, color );
     }
@@ -30071,12 +29099,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ObjectType const &, uint64_t const &, const char * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ObjectType const &, uint64_t const &, const char * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, objectType, objectHandle, pObjectName );
     }
@@ -30317,9 +29340,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DebugUtilsMessengerCallbackDataFlagsEXT const &,
@@ -30332,7 +29352,6 @@ namespace VULKAN_HPP_NAMESPACE
                const DebugUtilsLabelEXT * const &,
                uint32_t const &,
                const DebugUtilsObjectNameInfoEXT * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -30554,9 +29573,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DebugUtilsMessengerCreateFlagsEXT const &,
@@ -30564,7 +29580,6 @@ namespace VULKAN_HPP_NAMESPACE
                DebugUtilsMessageTypeFlagsEXT const &,
                PFN_DebugUtilsMessengerCallbackEXT const &,
                void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, messageSeverity, messageType, pfnUserCallback, pUserData );
@@ -30725,11 +29740,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, ObjectType const &, uint64_t const &, uint64_t const &, size_t const &, const void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, objectType, objectHandle, tagName, tagSize, pTag );
@@ -30859,11 +29870,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<DeviceAddress const &, DeviceAddress const &, DeviceSize const &, DeviceSize const &, MemoryDecompressionMethodFlagsNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcAddress, dstAddress, compressedSize, decompressedSize, decompressionMethod );
@@ -30964,12 +29971,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dedicatedAllocation );
     }
@@ -31072,12 +30074,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dedicatedAllocation );
     }
@@ -31187,12 +30184,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Image const &, Buffer const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Image const &, Buffer const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image, buffer );
     }
@@ -31317,12 +30309,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, PipelineStageFlags2 const &, AccessFlags2 const &, PipelineStageFlags2 const &, AccessFlags2 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcStageMask, srcAccessMask, dstStageMask, dstAccessMask );
@@ -31453,12 +30441,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ImageAspectFlags const &, uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ImageAspectFlags const &, uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( aspectMask, baseMipLevel, levelCount, baseArrayLayer, layerCount );
     }
@@ -31629,9 +30612,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineStageFlags2 const &,
@@ -31644,7 +30624,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                Image const &,
                ImageSubresourceRange const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -31863,9 +30842,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DependencyFlags const &,
@@ -31875,7 +30851,6 @@ namespace VULKAN_HPP_NAMESPACE
                const BufferMemoryBarrier2 * const &,
                uint32_t const &,
                const ImageMemoryBarrier2 * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -32011,12 +30986,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, float const &, float const &, float const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, float const &, float const &, float const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, depthBiasConstantFactor, depthBiasClamp, depthBiasSlopeFactor );
     }
@@ -32133,12 +31103,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DepthBiasRepresentationEXT const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DepthBiasRepresentationEXT const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, depthBiasRepresentation, depthBiasExact );
     }
@@ -32236,12 +31201,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<float const &, float const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<float const &, float const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( minDepthClamp, maxDepthClamp );
     }
@@ -32353,12 +31313,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DeviceAddress const &, DeviceSize const &, Format const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceAddress const &, DeviceSize const &, Format const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, address, range, format );
     }
@@ -32471,12 +31426,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceAddress const &, BufferUsageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceAddress const &, BufferUsageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, address, usage );
     }
@@ -32582,12 +31532,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Buffer const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Buffer const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, buffer );
     }
@@ -32693,12 +31638,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Buffer const &, DeviceSize const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Buffer const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( buffer, offset, range );
     }
@@ -32798,12 +31738,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Sampler const &, ImageView const &, ImageLayout const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Sampler const &, ImageView const &, ImageLayout const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sampler, imageView, imageLayout );
     }
@@ -33020,12 +31955,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DescriptorType const &, DescriptorDataEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DescriptorType const &, DescriptorDataEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type, data );
     }
@@ -33110,12 +32040,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, TensorViewARM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, TensorViewARM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensorView );
     }
@@ -33211,12 +32136,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DescriptorType const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DescriptorType const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( type, descriptorCount );
     }
@@ -33355,16 +32275,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DescriptorPoolCreateFlags const &,
                uint32_t const &,
                uint32_t const &,
                const DescriptorPoolSize * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, maxSets, poolSizeCount, pPoolSizes );
@@ -33474,12 +32390,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxInlineUniformBlockBindings );
     }
@@ -33618,11 +32529,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DescriptorPool const &, uint32_t const &, const DescriptorSetLayout * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorPool, descriptorSetCount, pSetLayouts );
@@ -33738,12 +32645,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DescriptorSetLayout const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DescriptorSetLayout const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorSetLayout, binding );
     }
@@ -33891,11 +32793,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &, DescriptorType const &, uint32_t const &, ShaderStageFlags const &, const Sampler * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( binding, descriptorType, descriptorCount, stageFlags, pImmutableSamplers );
@@ -34022,12 +32920,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const DescriptorBindingFlags * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const DescriptorBindingFlags * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, bindingCount, pBindingFlags );
     }
@@ -34168,12 +33061,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, DescriptorSetLayoutCreateFlags const &, uint32_t const &, const DescriptorSetLayoutBinding * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, bindingCount, pBindings );
@@ -34288,12 +33177,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, size_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, size_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorOffset, descriptorSize );
     }
@@ -34382,12 +33266,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, supported );
     }
@@ -34519,12 +33398,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint32_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint32_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorSetCount, pDescriptorCounts );
     }
@@ -34620,12 +33494,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxVariableDescriptorCount );
     }
@@ -34760,12 +33629,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, DescriptorType const &, size_t const &, size_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, DescriptorType const &, size_t const &, size_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( dstBinding, dstArrayElement, descriptorCount, descriptorType, offset, stride );
     }
@@ -34958,9 +33822,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DescriptorUpdateTemplateCreateFlags const &,
@@ -34971,7 +33832,6 @@ namespace VULKAN_HPP_NAMESPACE
                PipelineBindPoint const &,
                PipelineLayout const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -35113,16 +33973,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                DeviceAddressBindingFlagsEXT const &,
                DeviceAddress const &,
                DeviceSize const &,
                DeviceAddressBindingTypeEXT const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, baseAddress, size, bindingType );
@@ -35230,12 +34086,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const BufferCreateInfo * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const BufferCreateInfo * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pCreateInfo );
     }
@@ -35387,11 +34238,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DeviceQueueCreateFlags const &, uint32_t const &, uint32_t const &, const float * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, queueFamilyIndex, queueCount, pQueuePriorities );
@@ -35925,9 +34772,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<Bool32 const &,
                Bool32 const &,
                Bool32 const &,
@@ -35983,7 +34827,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( robustBufferAccess,
@@ -36345,9 +35188,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DeviceCreateFlags const &,
@@ -36358,7 +35198,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const char * const * const &,
                const PhysicalDeviceFeatures * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -36503,9 +35342,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                DeviceMemoryReportFlagsEXT const &,
@@ -36515,7 +35351,6 @@ namespace VULKAN_HPP_NAMESPACE
                ObjectType const &,
                uint64_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, type, memoryObjectId, size, objectType, objectHandle, heapIndex );
@@ -36682,11 +35517,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DeviceMemoryReportFlagsEXT const &, PFN_DeviceMemoryReportCallbackEXT const &, void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pfnUserCallback, pUserData );
@@ -36789,12 +35620,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceDiagnosticsConfigFlagsNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceDiagnosticsConfigFlagsNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -36894,12 +35720,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceEventTypeEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceEventTypeEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceEvent );
     }
@@ -37007,12 +35828,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceFaultAddressTypeEXT const &, DeviceAddress const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceFaultAddressTypeEXT const &, DeviceAddress const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( addressType, reportedAddress, addressPrecision );
     }
@@ -37125,12 +35941,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, addressInfoCount, vendorInfoCount, vendorBinarySize );
     }
@@ -37267,12 +36078,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &, uint64_t const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &, uint64_t const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( description, vendorFaultCode, vendorFaultData );
     }
@@ -37406,16 +36212,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &,
                DeviceFaultAddressInfoEXT * const &,
                DeviceFaultVendorInfoEXT * const &,
                void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, description, pAddressInfos, pVendorInfos, pVendorBinaryData );
@@ -37608,9 +36410,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &,
                DeviceFaultVendorBinaryHeaderVersionEXT const &,
                uint32_t const &,
@@ -37622,7 +36421,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( headerSize,
@@ -37748,12 +36546,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, resourceDeviceIndex, memoryDeviceIndex );
     }
@@ -37860,12 +36653,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceMask );
     }
@@ -37994,12 +36782,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PhysicalDevice * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PhysicalDevice * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, physicalDeviceCount, pPhysicalDevices );
     }
@@ -38095,11 +36878,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, ArrayWrapper1D<uint32_t, VK_MAX_DEVICE_GROUP_SIZE> const &, DeviceGroupPresentModeFlagsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentMask, modes );
@@ -38238,11 +37017,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint32_t * const &, DeviceGroupPresentModeFlagBitsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchainCount, pDeviceMasks, mode );
@@ -38385,12 +37160,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, const Rect2D * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, const Rect2D * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceMask, deviceRenderAreaCount, pDeviceRenderAreas );
     }
@@ -38581,9 +37351,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -38592,7 +37359,6 @@ namespace VULKAN_HPP_NAMESPACE
                const uint32_t * const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -38713,12 +37479,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceGroupPresentModeFlagsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceGroupPresentModeFlagsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, modes );
     }
@@ -38955,9 +37716,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ImageCreateFlags const &,
@@ -38973,7 +37731,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const uint32_t * const &,
                ImageLayout const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -39116,12 +37873,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const ImageCreateInfo * const &, ImageAspectFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const ImageCreateInfo * const &, ImageAspectFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pCreateInfo, planeAspect );
     }
@@ -39223,12 +37975,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ImageSubresource const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ImageSubresource const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageSubresource );
     }
@@ -39342,11 +38089,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, const ImageCreateInfo * const &, const ImageSubresource2 * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pCreateInfo, pSubresource );
@@ -39453,12 +38196,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory );
     }
@@ -39566,12 +38304,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, MemoryOverallocationBehaviorAMD const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, MemoryOverallocationBehaviorAMD const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, overallocationBehavior );
     }
@@ -39719,12 +38452,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, disableInternalCache );
     }
@@ -39826,12 +38554,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, privateDataSlotRequestCount );
     }
@@ -39937,12 +38660,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, QueueGlobalPriority const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, QueueGlobalPriority const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, globalPriority );
     }
@@ -40061,11 +38779,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DeviceQueueCreateFlags const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, queueFamilyIndex, queueIndex );
@@ -40172,12 +38886,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderCoreCount );
     }
@@ -40365,9 +39074,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                TensorTilingARM const &,
@@ -40376,7 +39082,6 @@ namespace VULKAN_HPP_NAMESPACE
                const int64_t * const &,
                const int64_t * const &,
                TensorUsageFlagsARM const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tiling, format, dimensionCount, pDimensions, pStrides, usage );
@@ -40542,9 +39247,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                TensorCreateFlagsARM const &,
@@ -40552,7 +39254,6 @@ namespace VULKAN_HPP_NAMESPACE
                SharingMode const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pDescription, sharingMode, queueFamilyIndexCount, pQueueFamilyIndices );
@@ -40661,12 +39362,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const TensorCreateInfoARM * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const TensorCreateInfoARM * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pCreateInfo );
     }
@@ -40781,11 +39477,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, DirectDriverLoadingFlagsLUNARG const &, PFN_GetInstanceProcAddrLUNARG const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pfnGetInstanceProcAddr );
@@ -40921,12 +39613,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, DirectDriverLoadingModeLUNARG const &, uint32_t const &, const DirectDriverLoadingInfoLUNARG * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, mode, driverCount, pDrivers );
@@ -41045,11 +39733,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, DirectFBSurfaceCreateFlagsEXT const &, IDirectFB * const &, IDirectFBSurface * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, dfb, surface );
@@ -41161,12 +39845,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<uint32_t const &, DeviceOrHostAddressConstAMDX const &, uint64_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, DeviceOrHostAddressConstAMDX const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( count, infos, stride );
     }
@@ -41260,12 +39939,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<uint32_t const &, uint32_t const &, DeviceOrHostAddressConstAMDX const &, uint64_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, DeviceOrHostAddressConstAMDX const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( nodeIndex, payloadCount, payloads, payloadStride );
     }
@@ -41349,12 +40023,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( x, y, z );
     }
@@ -41440,12 +40109,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext );
     }
@@ -41546,12 +40210,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DisplayEventTypeEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DisplayEventTypeEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, displayEvent );
     }
@@ -41650,12 +40309,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Extent2D const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Extent2D const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( visibleRegion, refreshRate );
     }
@@ -41759,11 +40413,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DisplayModeCreateFlagsKHR const &, DisplayModeParametersKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, parameters );
@@ -41850,12 +40500,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DisplayModeKHR const &, DisplayModeParametersKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DisplayModeKHR const &, DisplayModeParametersKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( displayMode, parameters );
     }
@@ -41936,12 +40581,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DisplayModePropertiesKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DisplayModePropertiesKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, displayModeProperties );
     }
@@ -42030,12 +40670,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, hdmi3DSupported );
     }
@@ -42124,12 +40759,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, localDimmingSupport );
     }
@@ -42229,9 +40859,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<DisplayPlaneAlphaFlagsKHR const &,
                Offset2D const &,
                Offset2D const &,
@@ -42241,7 +40868,6 @@ namespace VULKAN_HPP_NAMESPACE
                Offset2D const &,
                Extent2D const &,
                Extent2D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( supportedAlpha, minSrcPosition, maxSrcPosition, minSrcExtent, maxSrcExtent, minDstPosition, maxDstPosition, minDstExtent, maxDstExtent );
@@ -42332,12 +40958,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DisplayPlaneCapabilitiesKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DisplayPlaneCapabilitiesKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, capabilities );
     }
@@ -42446,12 +41067,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DisplayModeKHR const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DisplayModeKHR const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, mode, planeIndex );
     }
@@ -42537,12 +41153,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DisplayKHR const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DisplayKHR const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( currentDisplay, currentStackIndex );
     }
@@ -42623,12 +41234,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DisplayPlanePropertiesKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DisplayPlanePropertiesKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, displayPlaneProperties );
     }
@@ -42729,12 +41335,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DisplayPowerStateEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DisplayPowerStateEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, powerState );
     }
@@ -42851,12 +41452,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Rect2D const &, Rect2D const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Rect2D const &, Rect2D const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcRect, dstRect, persistent );
     }
@@ -42954,11 +41550,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<DisplayKHR const &, const char * const &, Extent2D const &, Extent2D const &, SurfaceTransformFlagsKHR const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( display, displayName, physicalDimensions, physicalResolution, supportedTransforms, planeReorderPossible, persistentContent );
@@ -43063,12 +41655,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DisplayPropertiesKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DisplayPropertiesKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, displayProperties );
     }
@@ -43227,9 +41814,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DisplaySurfaceCreateFlagsKHR const &,
@@ -43240,7 +41824,6 @@ namespace VULKAN_HPP_NAMESPACE
                float const &,
                DisplayPlaneAlphaFlagBitsKHR const &,
                Extent2D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, displayMode, planeIndex, planeStackIndex, transform, globalAlpha, alphaMode, imageExtent );
@@ -43354,12 +41937,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DisplaySurfaceStereoTypeNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DisplaySurfaceStereoTypeNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stereoType );
     }
@@ -43483,12 +42061,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, int32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, int32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( indexCount, instanceCount, firstIndex, vertexOffset, firstInstance );
     }
@@ -43600,12 +42173,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( vertexCount, instanceCount, firstVertex, firstInstance );
     }
@@ -43709,12 +42277,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceAddress const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceAddress const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( bufferAddress, stride, commandCount );
     }
@@ -43816,12 +42379,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( groupCountX, groupCountY, groupCountZ );
     }
@@ -43915,12 +42473,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( taskCount, firstTask );
     }
@@ -44002,12 +42555,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint64_t const &, uint32_t const &, FormatFeatureFlags2 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint64_t const &, uint32_t const &, FormatFeatureFlags2 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( drmFormatModifier, drmFormatModifierPlaneCount, drmFormatModifierTilingFeatures );
     }
@@ -44091,12 +42639,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint64_t const &, uint32_t const &, FormatFeatureFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint64_t const &, uint32_t const &, FormatFeatureFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( drmFormatModifier, drmFormatModifierPlaneCount, drmFormatModifierTilingFeatures );
     }
@@ -44183,12 +42726,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, DrmFormatModifierProperties2EXT * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, DrmFormatModifierProperties2EXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, drmFormatModifierCount, pDrmFormatModifierProperties );
     }
@@ -44282,12 +42820,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, DrmFormatModifierPropertiesEXT * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, DrmFormatModifierPropertiesEXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, drmFormatModifierCount, pDrmFormatModifierProperties );
     }
@@ -44388,12 +42921,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, EventCreateFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, EventCreateFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -44519,12 +43047,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Pipeline * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Pipeline * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, libraryCount, pLibraries );
     }
@@ -44707,9 +43230,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineCreateFlags const &,
@@ -44719,7 +43239,6 @@ namespace VULKAN_HPP_NAMESPACE
                PipelineLayout const &,
                Pipeline const &,
                int32_t const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, stageCount, pStages, pLibraryInfo, layout, basePipelineHandle, basePipelineIndex );
@@ -44850,12 +43369,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &, DeviceSize const &, DeviceSize const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minSize, maxSize, sizeGranularity );
     }
@@ -44961,12 +43475,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalFenceHandleTypeFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalFenceHandleTypeFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleTypes );
     }
@@ -45089,11 +43598,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, const SECURITY_ATTRIBUTES * const &, DWORD const &, LPCWSTR const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pAttributes, dwAccess, name );
@@ -45199,12 +43704,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleTypes );
     }
@@ -45308,12 +43808,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagsNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagsNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleTypes );
     }
@@ -45434,11 +43929,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, const SECURITY_ATTRIBUTES * const &, DWORD const &, LPCWSTR const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pAttributes, dwAccess, name );
@@ -45554,12 +44045,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, const SECURITY_ATTRIBUTES * const &, DWORD const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const SECURITY_ATTRIBUTES * const &, DWORD const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pAttributes, dwAccess );
     }
@@ -45671,12 +44157,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, MTLBuffer_id const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, MTLBuffer_id const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory, mtlBuffer );
     }
@@ -45790,12 +44271,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, Queue const &, MTLCommandQueue_id const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Queue const &, MTLCommandQueue_id const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, queue, mtlCommandQueue );
     }
@@ -45900,12 +44376,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, MTLDevice_id const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, MTLDevice_id const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, mtlDevice );
     }
@@ -46016,12 +44487,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, Image const &, IOSurfaceRef const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Image const &, IOSurfaceRef const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image, ioSurface );
     }
@@ -46128,12 +44594,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, ExportMetalObjectTypeFlagBitsEXT const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExportMetalObjectTypeFlagBitsEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, exportObjectType );
     }
@@ -46227,12 +44688,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext );
     }
@@ -46353,12 +44809,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, Semaphore const &, Event const &, MTLSharedEvent_id const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Semaphore const &, Event const &, MTLSharedEvent_id const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphore, event, mtlSharedEvent );
     }
@@ -46498,9 +44949,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                Image const &,
@@ -46508,7 +44956,6 @@ namespace VULKAN_HPP_NAMESPACE
                BufferView const &,
                ImageAspectFlagBits const &,
                MTLTexture_id const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image, imageView, bufferView, plane, mtlTexture );
@@ -46617,12 +45064,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalSemaphoreHandleTypeFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalSemaphoreHandleTypeFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleTypes );
     }
@@ -46745,11 +45187,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, const SECURITY_ATTRIBUTES * const &, DWORD const &, LPCWSTR const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pAttributes, dwAccess, name );
@@ -46838,12 +45276,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ArrayWrapper1D<char, VK_MAX_EXTENSION_NAME_SIZE> const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ArrayWrapper1D<char, VK_MAX_EXTENSION_NAME_SIZE> const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( extensionName, specVersion );
     }
@@ -46928,11 +45361,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<ExternalMemoryFeatureFlags const &, ExternalMemoryHandleTypeFlags const &, ExternalMemoryHandleTypeFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( externalMemoryFeatures, exportFromImportedHandleTypes, compatibleHandleTypes );
@@ -47018,12 +45447,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ExternalMemoryProperties const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ExternalMemoryProperties const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, externalMemoryProperties );
     }
@@ -47128,12 +45552,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Queue const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Queue const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, preferredQueue );
     }
@@ -47236,12 +45655,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceIndex );
     }
@@ -47344,12 +45758,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, reservedExternalQueues );
     }
@@ -47442,15 +45851,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ExternalFenceHandleTypeFlags const &,
                ExternalFenceHandleTypeFlags const &,
                ExternalFenceFeatureFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, exportFromImportedHandleTypes, compatibleHandleTypes, externalFenceFeatures );
@@ -47559,12 +45964,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, uint64_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, externalFormat );
     }
@@ -47665,12 +46065,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, uint64_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, externalFormat );
     }
@@ -47760,12 +46155,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ExternalMemoryProperties const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ExternalMemoryProperties const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, externalMemoryProperties );
     }
@@ -47859,12 +46249,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Extent3D const &, uint32_t const &, uint32_t const &, SampleCountFlags const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Extent3D const &, uint32_t const &, uint32_t const &, SampleCountFlags const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( maxExtent, maxMipLevels, maxArrayLayers, sampleCounts, maxResourceSize );
     }
@@ -47952,14 +46337,10 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<ImageFormatProperties const &,
                ExternalMemoryFeatureFlagsNV const &,
                ExternalMemoryHandleTypeFlagsNV const &,
                ExternalMemoryHandleTypeFlagsNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( imageFormatProperties, externalMemoryFeatures, exportFromImportedHandleTypes, compatibleHandleTypes );
@@ -48059,12 +46440,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, acquireUnmodifiedMemory );
     }
@@ -48167,12 +46543,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleTypes );
     }
@@ -48277,12 +46648,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleTypes );
     }
@@ -48387,12 +46753,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagsNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagsNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleTypes );
     }
@@ -48495,12 +46856,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleTypes );
     }
@@ -48593,15 +46949,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ExternalSemaphoreHandleTypeFlags const &,
                ExternalSemaphoreHandleTypeFlags const &,
                ExternalSemaphoreFeatureFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, exportFromImportedHandleTypes, compatibleHandleTypes, externalSemaphoreFeatures );
@@ -48711,12 +47063,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryProperties const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryProperties const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, externalMemoryProperties );
     }
@@ -48815,12 +47162,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, FenceCreateFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, FenceCreateFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -48928,12 +47270,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Fence const &, ExternalFenceHandleTypeFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Fence const &, ExternalFenceHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fence, handleType );
     }
@@ -49046,12 +47383,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, Fence const &, ExternalFenceHandleTypeFlagBits const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Fence const &, ExternalFenceHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fence, handleType );
     }
@@ -49144,12 +47476,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, filterCubic, filterCubicMinmax );
     }
@@ -49235,12 +47562,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<FormatFeatureFlags const &, FormatFeatureFlags const &, FormatFeatureFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<FormatFeatureFlags const &, FormatFeatureFlags const &, FormatFeatureFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( linearTilingFeatures, optimalTilingFeatures, bufferFeatures );
     }
@@ -49320,12 +47642,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, FormatProperties const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, FormatProperties const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, formatProperties );
     }
@@ -49417,11 +47734,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, FormatFeatureFlags2 const &, FormatFeatureFlags2 const &, FormatFeatureFlags2 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, linearTilingFeatures, optimalTilingFeatures, bufferFeatures );
@@ -49541,12 +47854,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const AttachmentReference2 * const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const AttachmentReference2 * const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pFragmentShadingRateAttachment, shadingRateAttachmentTexelSize );
     }
@@ -49763,9 +48071,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                FrameBoundaryFlagsEXT const &,
@@ -49777,7 +48082,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint64_t const &,
                size_t const &,
                const void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, frameID, imageCount, pImages, bufferCount, pBuffers, tagName, tagSize, pTag );
@@ -49914,12 +48218,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const TensorARM * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const TensorARM * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensorCount, pTensors );
     }
@@ -50101,9 +48400,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ImageCreateFlags const &,
@@ -50113,7 +48409,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                const Format * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, usage, width, height, layerCount, viewFormatCount, pViewFormats );
@@ -50256,11 +48551,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const FramebufferAttachmentImageInfo * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, attachmentImageInfoCount, pAttachmentImageInfos );
@@ -50445,9 +48736,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                FramebufferCreateFlags const &,
@@ -50457,7 +48745,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, renderPass, attachmentCount, pAttachments, width, height, layers );
@@ -50562,16 +48849,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                CoverageReductionModeNV const &,
                SampleCountFlagBits const &,
                SampleCountFlags const &,
                SampleCountFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, coverageReductionMode, rasterizationSamples, depthStencilSamples, colorSamples );
@@ -50751,9 +49034,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ShaderStageFlags const &,
@@ -50766,7 +49046,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                DeviceAddress const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -50889,12 +49168,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Buffer const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Buffer const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( buffer, offset );
     }
@@ -51127,9 +49401,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineBindPoint const &,
@@ -51145,7 +49416,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceSize const &,
                Buffer const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -51307,12 +49577,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, IndirectExecutionSetEXT const &, IndirectCommandsLayoutEXT const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, indirectExecutionSet, indirectCommandsLayout, maxSequenceCount, maxDrawCount );
@@ -51446,11 +49712,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PipelineBindPoint const &, Pipeline const &, IndirectCommandsLayoutNV const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineBindPoint, pipeline, indirectCommandsLayout, maxSequencesCount );
@@ -51558,12 +49820,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Pipeline const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Pipeline const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipeline );
     }
@@ -51690,12 +49947,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, const ShaderEXT * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, const ShaderEXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderCount, pShaders );
     }
@@ -51811,9 +50063,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint64_t const &,
@@ -51830,7 +50079,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint64_t const &,
                uint64_t const &,
                uint64_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -51990,12 +50238,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, LatencyTimingsFrameReportNV * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, LatencyTimingsFrameReportNV * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, timingCount, pTimings );
     }
@@ -52104,12 +50347,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, VertexInputRate const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, VertexInputRate const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( binding, stride, inputRate );
     }
@@ -52220,12 +50458,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, Format const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, Format const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( location, binding, format, offset );
     }
@@ -52394,9 +50627,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineVertexInputStateCreateFlags const &,
@@ -52404,7 +50634,6 @@ namespace VULKAN_HPP_NAMESPACE
                const VertexInputBindingDescription * const &,
                uint32_t const &,
                const VertexInputAttributeDescription * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -52532,11 +50761,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PipelineInputAssemblyStateCreateFlags const &, PrimitiveTopology const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, topology, primitiveRestartEnable );
@@ -52652,12 +50877,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, PipelineTessellationStateCreateFlags const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, PipelineTessellationStateCreateFlags const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, patchControlPoints );
     }
@@ -52827,9 +51047,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineViewportStateCreateFlags const &,
@@ -52837,7 +51054,6 @@ namespace VULKAN_HPP_NAMESPACE
                const Viewport * const &,
                uint32_t const &,
                const Rect2D * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, viewportCount, pViewports, scissorCount, pScissors );
@@ -53027,9 +51243,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineRasterizationStateCreateFlags const &,
@@ -53043,7 +51256,6 @@ namespace VULKAN_HPP_NAMESPACE
                float const &,
                float const &,
                float const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -53221,9 +51433,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineMultisampleStateCreateFlags const &,
@@ -53233,7 +51442,6 @@ namespace VULKAN_HPP_NAMESPACE
                const SampleMask * const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, rasterizationSamples, sampleShadingEnable, minSampleShading, pSampleMask, alphaToCoverageEnable, alphaToOneEnable );
@@ -53379,11 +51587,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StencilOp const &, StencilOp const &, StencilOp const &, CompareOp const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( failOp, passOp, depthFailOp, compareOp, compareMask, writeMask, reference );
@@ -53559,9 +51763,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineDepthStencilStateCreateFlags const &,
@@ -53574,7 +51775,6 @@ namespace VULKAN_HPP_NAMESPACE
                StencilOpState const &,
                float const &,
                float const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -53747,9 +51947,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<Bool32 const &,
                BlendFactor const &,
                BlendFactor const &,
@@ -53758,7 +51955,6 @@ namespace VULKAN_HPP_NAMESPACE
                BlendFactor const &,
                BlendOp const &,
                ColorComponentFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -53933,9 +52129,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineColorBlendStateCreateFlags const &,
@@ -53944,7 +52137,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const PipelineColorBlendAttachmentState * const &,
                ArrayWrapper1D<float, 4> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, logicOpEnable, logicOp, attachmentCount, pAttachments, blendConstants );
@@ -54090,11 +52282,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PipelineDynamicStateCreateFlags const &, uint32_t const &, const DynamicState * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, dynamicStateCount, pDynamicStates );
@@ -54384,9 +52572,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineCreateFlags const &,
@@ -54406,7 +52591,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                Pipeline const &,
                int32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -54550,12 +52734,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, GraphicsPipelineLibraryFlagsEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, GraphicsPipelineLibraryFlagsEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -54708,16 +52887,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                const PipelineShaderStageCreateInfo * const &,
                const PipelineVertexInputStateCreateInfo * const &,
                const PipelineTessellationStateCreateInfo * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stageCount, pStages, pVertexInputState, pTessellationState );
@@ -54881,16 +53056,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                const GraphicsShaderGroupCreateInfoNV * const &,
                uint32_t const &,
                const Pipeline * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, groupCount, pGroups, pipelineCount, pPipelines );
@@ -54991,12 +53162,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<float const &, float const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<float const &, float const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( x, y );
     }
@@ -55145,9 +53311,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                XYColorEXT const &,
@@ -55158,7 +53321,6 @@ namespace VULKAN_HPP_NAMESPACE
                float const &,
                float const &,
                float const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -55307,12 +53469,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, size_t const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, size_t const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dynamicMetadataSize, pDynamicMetadata );
     }
@@ -55416,12 +53573,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, HeadlessSurfaceCreateFlagsEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, HeadlessSurfaceCreateFlagsEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -55512,12 +53664,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, optimalDeviceAccess, identicalMemoryLayout );
     }
@@ -55649,11 +53796,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Image const &, ImageLayout const &, ImageLayout const &, ImageSubresourceRange const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image, oldLayout, newLayout, subresourceRange );
@@ -55771,12 +53914,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, IOSSurfaceCreateFlagsMVK const &, const void * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, IOSSurfaceCreateFlagsMVK const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pView );
     }
@@ -55881,12 +54019,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maximumRequestedAlignment );
     }
@@ -55999,11 +54132,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<ImageSubresourceLayers const &, ArrayWrapper1D<Offset3D, 2> const &, ImageSubresourceLayers const &, ArrayWrapper1D<Offset3D, 2> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcSubresource, srcOffsets, dstSubresource, dstOffsets );
@@ -56103,12 +54232,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Image const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Image const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image );
     }
@@ -56248,11 +54372,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, ImageCompressionFlagsEXT const &, uint32_t const &, ImageCompressionFixedRateFlagsEXT * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, compressionControlPlaneCount, pFixedRateFlags );
@@ -56348,11 +54468,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, ImageCompressionFlagsEXT const &, ImageCompressionFixedRateFlagsEXT const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageCompressionFlags, imageCompressionFixedRateFlags );
@@ -56527,9 +54643,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                ImageCreateInfo const &,
@@ -56538,7 +54651,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint64_t const &,
                uint32_t const &,
                const SysmemColorSpaceFUCHSIA * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageCreateInfo, requiredFormatFeatures, flags, sysmemPixelFormat, colorSpaceCount, pColorSpaces );
@@ -56701,16 +54813,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                const ImageFormatConstraintsInfoFUCHSIA * const &,
                BufferCollectionConstraintsInfoFUCHSIA const &,
                ImageConstraintsInfoFlagsFUCHSIA const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, formatConstraintsCount, pFormatConstraints, bufferCollectionConstraints, flags );
@@ -56837,11 +54945,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<ImageSubresourceLayers const &, Offset3D const &, ImageSubresourceLayers const &, Offset3D const &, Extent3D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcSubresource, srcOffset, dstSubresource, dstOffset, extent );
@@ -56957,12 +55061,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceSize const &, DeviceSize const &, DeviceSize const &, DeviceSize const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceSize const &, DeviceSize const &, DeviceSize const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( offset, size, rowPitch, arrayPitch, depthPitch );
     }
@@ -57101,11 +55200,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint64_t const &, uint32_t const &, const SubresourceLayout * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, drmFormatModifier, drmFormatModifierPlaneCount, pPlaneLayouts );
@@ -57237,12 +55332,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint64_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint64_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, drmFormatModifierCount, pDrmFormatModifiers );
     }
@@ -57333,12 +55423,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, drmFormatModifier );
     }
@@ -57464,12 +55549,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Format * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Format * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, viewFormatCount, pViewFormats );
     }
@@ -57560,12 +55640,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ImageFormatProperties const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ImageFormatProperties const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageFormatProperties );
     }
@@ -57723,9 +55798,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                AccessFlags const &,
@@ -57736,7 +55808,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                Image const &,
                ImageSubresourceRange const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcAccessMask, dstAccessMask, oldLayout, newLayout, srcQueueFamilyIndex, dstQueueFamilyIndex, image, subresourceRange );
@@ -57848,12 +55919,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Image const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Image const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image );
     }
@@ -57968,12 +56034,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, ImagePipeSurfaceCreateFlagsFUCHSIA const &, zx_handle_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImagePipeSurfaceCreateFlagsFUCHSIA const &, zx_handle_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, imagePipeHandle );
     }
@@ -58088,12 +56149,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageAspectFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageAspectFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, planeAspect );
     }
@@ -58216,11 +56272,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<ImageSubresourceLayers const &, Offset3D const &, ImageSubresourceLayers const &, Offset3D const &, Extent3D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcSubresource, srcOffset, dstSubresource, dstOffset, extent );
@@ -58350,9 +56402,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ImageSubresourceLayers const &,
@@ -58360,7 +56409,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageSubresourceLayers const &,
                Offset3D const &,
                Extent3D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcSubresource, srcOffset, dstSubresource, dstOffset, extent );
@@ -58471,12 +56519,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Image const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Image const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image );
     }
@@ -58580,12 +56623,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageUsageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageUsageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stencilUsage );
     }
@@ -58689,12 +56727,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SwapchainKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SwapchainKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchain );
     }
@@ -58796,12 +56829,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Format const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Format const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, decodeMode );
     }
@@ -58891,12 +56919,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DeviceAddress const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceAddress const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceAddress, size );
     }
@@ -59000,12 +57023,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageView const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageView const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageView );
     }
@@ -59147,9 +57165,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ImageViewCreateFlags const &,
@@ -59158,7 +57173,6 @@ namespace VULKAN_HPP_NAMESPACE
                Format const &,
                ComponentMapping const &,
                ImageSubresourceRange const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, image, viewType, format, components, subresourceRange );
@@ -59284,12 +57298,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageView const &, DescriptorType const &, Sampler const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageView const &, DescriptorType const &, Sampler const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageView, descriptorType, sampler );
     }
@@ -59394,12 +57403,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, float const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, float const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minLod );
     }
@@ -59519,12 +57523,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Offset2D const &, Extent2D const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Offset2D const &, Extent2D const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, filterCenter, filterSize, numPhases );
     }
@@ -59637,12 +57636,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, sliceOffset, sliceCount );
     }
@@ -59745,12 +57739,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageUsageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageUsageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, usage );
     }
@@ -59856,12 +57845,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, struct AHardwareBuffer * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, struct AHardwareBuffer * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, buffer );
     }
@@ -59989,11 +57973,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Fence const &, FenceImportFlags const &, ExternalFenceHandleTypeFlagBits const &, int const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fence, flags, handleType, fd );
@@ -60135,9 +58115,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                Fence const &,
@@ -60145,7 +58122,6 @@ namespace VULKAN_HPP_NAMESPACE
                ExternalFenceHandleTypeFlagBits const &,
                HANDLE const &,
                LPCWSTR const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fence, flags, handleType, handle, name );
@@ -60264,12 +58240,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, BufferCollectionFUCHSIA const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, BufferCollectionFUCHSIA const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, collection, index );
     }
@@ -60382,12 +58353,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &, int const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &, int const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleType, fd );
     }
@@ -60500,12 +58466,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &, void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleType, pHostPointer );
     }
@@ -60619,12 +58580,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &, void * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleType, handle );
     }
@@ -60747,11 +58703,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &, HANDLE const &, LPCWSTR const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleType, handle, name );
@@ -60867,12 +58819,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagsNV const &, HANDLE const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagsNV const &, HANDLE const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleType, handle );
     }
@@ -60987,12 +58934,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &, zx_handle_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &, zx_handle_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleType, handle );
     }
@@ -61106,12 +59048,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, MTLBuffer_id const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, MTLBuffer_id const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, mtlBuffer );
     }
@@ -61215,12 +59152,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, IOSurfaceRef const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, IOSurfaceRef const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, ioSurface );
     }
@@ -61325,12 +59257,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, MTLSharedEvent_id const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, MTLSharedEvent_id const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, mtlSharedEvent );
     }
@@ -61443,12 +59370,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, ImageAspectFlagBits const &, MTLTexture_id const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageAspectFlagBits const &, MTLTexture_id const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, plane, mtlTexture );
     }
@@ -61553,12 +59475,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, struct _screen_buffer * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, struct _screen_buffer * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, buffer );
     }
@@ -61686,16 +59603,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Semaphore const &,
                SemaphoreImportFlags const &,
                ExternalSemaphoreHandleTypeFlagBits const &,
                int const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphore, flags, handleType, fd );
@@ -61837,9 +59750,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                Semaphore const &,
@@ -61847,7 +59757,6 @@ namespace VULKAN_HPP_NAMESPACE
                ExternalSemaphoreHandleTypeFlagBits const &,
                HANDLE const &,
                LPCWSTR const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphore, flags, handleType, handle, name );
@@ -61984,16 +59893,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                Semaphore const &,
                SemaphoreImportFlags const &,
                ExternalSemaphoreHandleTypeFlagBits const &,
                zx_handle_t const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphore, flags, handleType, zirconHandle );
@@ -62112,12 +60017,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<IndirectExecutionSetInfoTypeEXT const &, ShaderStageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<IndirectExecutionSetInfoTypeEXT const &, ShaderStageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( type, shaderStages );
     }
@@ -62203,12 +60103,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<IndirectCommandsInputModeFlagBitsEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<IndirectCommandsInputModeFlagBitsEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( mode );
     }
@@ -62303,12 +60198,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ShaderStageFlags const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ShaderStageFlags const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( stageFlags, offset, size );
     }
@@ -62392,12 +60282,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<PushConstantRange const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<PushConstantRange const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( updateRange );
     }
@@ -62481,12 +60366,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( vertexBindingUnit );
     }
@@ -62663,11 +60543,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, IndirectCommandsTokenTypeEXT const &, IndirectCommandsTokenDataEXT const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type, data, offset );
@@ -62823,9 +60699,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                IndirectCommandsLayoutUsageFlagsEXT const &,
@@ -62834,7 +60707,6 @@ namespace VULKAN_HPP_NAMESPACE
                PipelineLayout const &,
                uint32_t const &,
                const IndirectCommandsLayoutTokenEXT * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, shaderStages, indirectStride, pipelineLayout, tokenCount, pTokens );
@@ -63102,9 +60974,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                IndirectCommandsTokenTypeNV const &,
@@ -63120,7 +60989,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const IndexType * const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -63331,9 +61199,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                IndirectCommandsLayoutUsageFlagsNV const &,
@@ -63342,7 +61207,6 @@ namespace VULKAN_HPP_NAMESPACE
                const IndirectCommandsLayoutTokenNV * const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pipelineBindPoint, tokenCount, pTokens, streamCount, pStreamStrides );
@@ -63460,12 +61324,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Pipeline const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Pipeline const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, initialPipeline, maxPipelineCount );
     }
@@ -63594,12 +61453,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const DescriptorSetLayout * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const DescriptorSetLayout * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, setLayoutCount, pSetLayouts );
     }
@@ -63801,9 +61655,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -63812,7 +61663,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                const PushConstantRange * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderCount, pInitialShaders, pSetLayoutInfos, maxShaderCount, pushConstantRangeCount, pPushConstantRanges );
@@ -63975,11 +61825,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, IndirectExecutionSetInfoTypeEXT const &, IndirectExecutionSetInfoEXT const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type, info );
@@ -64066,12 +61912,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pUserData );
     }
@@ -64179,12 +62020,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, ImageAspectFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, ImageAspectFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( subpass, inputAttachmentIndex, aspectMask );
     }
@@ -64355,9 +62191,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                InstanceCreateFlags const &,
@@ -64366,7 +62199,6 @@ namespace VULKAN_HPP_NAMESPACE
                const char * const * const &,
                uint32_t const &,
                const char * const * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pApplicationInfo, enabledLayerCount, ppEnabledLayerNames, enabledExtensionCount, ppEnabledExtensionNames );
@@ -64512,12 +62344,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Semaphore const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Semaphore const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, signalSemaphore, value );
     }
@@ -64637,12 +62464,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, Bool32 const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, Bool32 const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, lowLatencyMode, lowLatencyBoost, minimumIntervalUs );
     }
@@ -64747,12 +62569,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentID );
     }
@@ -64878,12 +62695,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, PresentModeKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, PresentModeKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentModeCount, pPresentModes );
     }
@@ -64971,12 +62783,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<ArrayWrapper1D<char, VK_MAX_EXTENSION_NAME_SIZE> const &, uint32_t const &, uint32_t const &, ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( layerName, specVersion, implementationVersion, description );
@@ -65220,11 +63028,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<const char * const &, const char * const &, LayerSettingTypeEXT const &, uint32_t const &, const void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( pLayerName, pSettingName, type, valueCount, pValues );
@@ -65361,12 +63165,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const LayerSettingEXT * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const LayerSettingEXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, settingCount, pSettings );
     }
@@ -65478,12 +63277,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, MacOSSurfaceCreateFlagsMVK const &, const void * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, MacOSSurfaceCreateFlagsMVK const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pView );
     }
@@ -65599,12 +63393,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, DeviceSize const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory, offset, size );
     }
@@ -65716,12 +63505,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, MemoryAllocateFlags const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, MemoryAllocateFlags const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, deviceMask );
     }
@@ -65831,12 +63615,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceSize const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceSize const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, allocationSize, memoryTypeIndex );
     }
@@ -65943,12 +63722,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, AccessFlags const &, AccessFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, AccessFlags const &, AccessFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcAccessMask, dstAccessMask );
     }
@@ -66060,12 +63834,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, AccessFlags3KHR const &, AccessFlags3KHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, AccessFlags3KHR const &, AccessFlags3KHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcAccessMask3, dstAccessMask3 );
     }
@@ -66175,12 +63944,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Image const &, Buffer const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Image const &, Buffer const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image, buffer );
     }
@@ -66286,12 +64050,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, TensorARM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, TensorARM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensor );
     }
@@ -66382,12 +64141,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, prefersDedicatedAllocation, requiresDedicatedAllocation );
     }
@@ -66479,12 +64233,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryTypeBits );
     }
@@ -66588,12 +64337,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory );
     }
@@ -66702,12 +64446,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory, handleType );
     }
@@ -66820,12 +64559,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory, handleType );
     }
@@ -66938,12 +64672,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory, handleType );
     }
@@ -67056,12 +64785,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory, handleType );
     }
@@ -67176,12 +64900,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &, ExternalMemoryHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory, handleType );
     }
@@ -67265,12 +64984,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceSize const &, MemoryHeapFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceSize const &, MemoryHeapFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( size, flags );
     }
@@ -67352,12 +65066,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryTypeBits );
     }
@@ -67478,11 +65187,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, MemoryMapFlags const &, DeviceMemory const &, DeviceSize const &, DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, memory, offset, size );
@@ -67591,12 +65296,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pPlacedAddress );
     }
@@ -67686,12 +65386,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryTypeBits );
     }
@@ -67795,12 +65490,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, opaqueCaptureAddress );
     }
@@ -67905,12 +65595,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, float const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, float const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, priority );
     }
@@ -67993,12 +65678,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<DeviceSize const &, DeviceSize const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<DeviceSize const &, DeviceSize const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( size, alignment, memoryTypeBits );
     }
@@ -68079,12 +65759,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, MemoryRequirements const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, MemoryRequirements const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryRequirements );
     }
@@ -68168,12 +65843,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<MemoryPropertyFlags const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<MemoryPropertyFlags const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( propertyFlags, heapIndex );
     }
@@ -68272,12 +65942,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, MemoryUnmapFlags const &, DeviceMemory const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, MemoryUnmapFlags const &, DeviceMemory const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, memory );
     }
@@ -68370,12 +66035,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryTypeBits );
     }
@@ -68466,12 +66126,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryTypeBits );
     }
@@ -68583,11 +66238,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, MetalSurfaceCreateFlagsEXT const &, const CAMetalLayer * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pLayer );
@@ -68827,9 +66478,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                MicromapTypeEXT const &,
@@ -68843,7 +66491,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceOrHostAddressKHR const &,
                DeviceOrHostAddressConstKHR const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -68956,12 +66603,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceSize const &, DeviceSize const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceSize const &, DeviceSize const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, micromapSize, buildScratchSize, discardable );
     }
@@ -69107,9 +66749,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                MicromapCreateFlagsEXT const &,
@@ -69118,7 +66757,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceSize const &,
                MicromapTypeEXT const &,
                DeviceAddress const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, createFlags, buffer, offset, size, type, deviceAddress );
@@ -69230,12 +66868,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint16_t const &, uint16_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint16_t const &, uint16_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( dataOffset, subdivisionLevel, format );
     }
@@ -69331,12 +66964,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const uint8_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const uint8_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pVersionData );
     }
@@ -69442,12 +67070,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, int32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, int32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( firstIndex, indexCount, vertexOffset );
     }
@@ -69537,12 +67160,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( firstVertex, vertexCount );
     }
@@ -69623,12 +67241,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxSampleLocationGridSize );
     }
@@ -69741,12 +67354,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, SampleCountFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, SampleCountFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, multisampledRenderToSingleSampledEnable, rasterizationSamples );
     }
@@ -69860,12 +67468,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, perViewAttributes, perViewAttributesPositionXOnly );
     }
@@ -70000,12 +67603,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Rect2D * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Rect2D * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, perViewRenderAreaCount, pPerViewRenderAreas );
     }
@@ -70122,12 +67720,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, const DescriptorType * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, const DescriptorType * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( descriptorTypeCount, pDescriptorTypes );
     }
@@ -70256,12 +67849,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const MutableDescriptorTypeListEXT * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const MutableDescriptorTypeListEXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, mutableDescriptorTypeListCount, pMutableDescriptorTypeLists );
     }
@@ -70376,12 +67964,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, SurfaceCreateFlagsOHOS const &, OHNativeWindow * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SurfaceCreateFlagsOHOS const &, OHNativeWindow * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, window );
     }
@@ -70490,12 +68073,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, opaqueCaptureDescriptorData );
     }
@@ -70630,11 +68208,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, OpticalFlowExecuteFlagsNV const &, uint32_t const &, const Rect2D * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, regionCount, pRegions );
@@ -70739,12 +68313,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, OpticalFlowUsageFlagsNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, OpticalFlowUsageFlagsNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, usage );
     }
@@ -70833,12 +68402,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Format const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Format const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, format );
     }
@@ -71006,9 +68570,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -71020,7 +68581,6 @@ namespace VULKAN_HPP_NAMESPACE
                OpticalFlowGridSizeFlagsNV const &,
                OpticalFlowPerformanceLevelNV const &,
                OpticalFlowSessionCreateFlagsNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, width, height, imageFormat, flowVectorFormat, costFormat, outputGridSize, hintGridSize, performanceLevel, flags );
@@ -71151,12 +68711,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, id, size, pPrivateData );
     }
@@ -71261,12 +68816,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, OutOfBandQueueTypeNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, OutOfBandQueueTypeNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, queueType );
     }
@@ -71369,12 +68919,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, enablePartitionTranslation );
     }
@@ -71487,12 +69032,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, DeviceAddress const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, DeviceAddress const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( instanceIndex, instanceContributionToHitGroupIndex, accelerationStructure );
     }
@@ -71649,9 +69189,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<TransformMatrixKHR const &,
                ArrayWrapper1D<float, 6> const &,
                uint32_t const &,
@@ -71661,7 +69198,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                DeviceAddress const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( transform,
@@ -71781,12 +69317,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, ArrayWrapper1D<float, 3> const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, ArrayWrapper1D<float, 3> const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( partitionIndex, partitionTranslation );
     }
@@ -71871,12 +69402,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint64_t const &, uint64_t const &, uint64_t const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint64_t const &, uint64_t const &, uint64_t const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( presentID, desiredPresentTime, actualPresentTime, earliestPresentTime, presentMargin );
     }
@@ -71965,12 +69491,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext );
     }
@@ -72058,12 +69579,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext );
     }
@@ -72167,12 +69683,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, PerformanceConfigurationTypeINTEL const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, PerformanceConfigurationTypeINTEL const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type );
     }
@@ -72268,16 +69779,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                PerformanceCounterDescriptionFlagsKHR const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, name, category, description );
@@ -72389,16 +69896,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                PerformanceCounterUnitKHR const &,
                PerformanceCounterScopeKHR const &,
                PerformanceCounterStorageKHR const &,
                ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, unit, scope, storage, uuid );
@@ -72579,12 +70082,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, marker );
     }
@@ -72703,11 +70201,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PerformanceOverrideTypeINTEL const &, Bool32 const &, uint64_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type, enable, parameter );
@@ -72813,12 +70307,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, counterPassIndex );
     }
@@ -72921,12 +70410,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, marker );
     }
@@ -73083,12 +70567,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<PerformanceValueTypeINTEL const &, PerformanceValueDataINTEL const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<PerformanceValueTypeINTEL const &, PerformanceValueDataINTEL const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( type, data );
     }
@@ -73192,12 +70671,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, storageBuffer16BitAccess, uniformAndStorageBuffer16BitAccess, storagePushConstant16, storageInputOutput16 );
     }
@@ -73315,12 +70789,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, formatA4R4G4B4, formatA4B4G4R4 );
     }
@@ -73442,12 +70911,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, storageBuffer8BitAccess, uniformAndStorageBuffer8BitAccess, storagePushConstant8 );
     }
@@ -73555,12 +71019,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, decodeModeSharedExponent );
     }
@@ -73701,11 +71160,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -73825,9 +71280,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint64_t const &,
@@ -73838,7 +71290,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -73965,12 +71416,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, reportAddressBinding );
     }
@@ -74073,12 +71519,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, amigoProfiling );
     }
@@ -74181,12 +71622,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, antiLag );
     }
@@ -74295,12 +71731,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, attachmentFeedbackLoopDynamicState );
     }
@@ -74407,12 +71838,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, attachmentFeedbackLoopLayout );
     }
@@ -74518,12 +71944,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, advancedBlendCoherentOperations );
     }
@@ -74625,11 +72046,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -74759,12 +72176,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, borderColorSwizzle, borderColorSwizzleFromImage );
     }
@@ -74888,12 +72300,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, bufferDeviceAddress, bufferDeviceAddressCaptureReplay, bufferDeviceAddressMultiDevice );
     }
@@ -75021,12 +72428,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, bufferDeviceAddress, bufferDeviceAddressCaptureReplay, bufferDeviceAddressMultiDevice );
     }
@@ -75139,12 +72541,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, clusterAccelerationStructure );
     }
@@ -75251,9 +72648,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -75264,7 +72658,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -75399,12 +72792,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, clustercullingShader, multiviewClusterCullingShader );
     }
@@ -75504,16 +72892,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ArrayWrapper1D<uint32_t, 3> const &,
                ArrayWrapper1D<uint32_t, 3> const &,
                uint32_t const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxWorkGroupCount, maxWorkGroupSize, maxOutputClusterCount, indirectBufferOffsetAlignment );
@@ -75624,12 +73008,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, clusterShadingRate );
     }
@@ -75732,12 +73111,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceCoherentMemory );
     }
@@ -75840,12 +73214,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, colorWriteEnable );
     }
@@ -75950,12 +73319,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, commandBufferInheritance );
     }
@@ -76071,12 +73435,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, computeDerivativeGroupQuads, computeDerivativeGroupLinear );
     }
@@ -76172,12 +73531,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, meshAndTaskShaderDerivatives );
     }
@@ -76291,12 +73645,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, conditionalRendering, inheritedConditionalRendering );
     }
@@ -76406,9 +73755,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                float const &,
@@ -76420,7 +73766,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -76605,9 +73950,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -76617,7 +73959,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -76731,12 +74072,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
                        pNext,
@@ -76858,12 +74194,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cooperativeMatrix, cooperativeMatrixRobustBufferAccess );
     }
@@ -76978,12 +74309,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cooperativeMatrix, cooperativeMatrixRobustBufferAccess );
     }
@@ -77075,12 +74401,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ShaderStageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ShaderStageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cooperativeMatrixSupportedStages );
     }
@@ -77170,12 +74491,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ShaderStageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ShaderStageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cooperativeMatrixSupportedStages );
     }
@@ -77287,12 +74603,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cooperativeVector, cooperativeVectorTraining );
     }
@@ -77390,11 +74701,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, ShaderStageFlags const &, Bool32 const &, Bool32 const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -77509,12 +74816,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, indirectCopy );
     }
@@ -77603,12 +74905,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, QueueFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, QueueFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, supportedQueues );
     }
@@ -77711,12 +75008,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cornerSampledImage );
     }
@@ -77820,12 +75112,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, coverageReductionMode );
     }
@@ -77928,12 +75215,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cubicRangeClamp );
     }
@@ -78036,12 +75318,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, selectableCubicWeights );
     }
@@ -78145,12 +75422,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cudaKernelLaunchFeatures );
     }
@@ -78244,12 +75516,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, computeCapabilityMinor, computeCapabilityMajor );
     }
@@ -78365,12 +75632,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, customBorderColors, customBorderColorWithoutFormat );
     }
@@ -78462,12 +75724,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxCustomBorderColorSamplers );
     }
@@ -78604,11 +75861,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dataGraph, dataGraphUpdateAfterBind, dataGraphSpecializationConstants, dataGraphDescriptorBuffer, dataGraphShaderModule );
@@ -78753,13 +76006,9 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<PhysicalDeviceDataGraphOperationTypeARM const &,
                ArrayWrapper1D<char, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM> const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( operationType, name, version );
@@ -78868,12 +76117,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dedicatedAllocationImageAliasing );
     }
@@ -78978,12 +76222,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, denseGeometryFormat );
     }
@@ -79113,12 +76352,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, depthBiasControl, leastRepresentableValueForceUnormRepresentation, floatRepresentation, depthBiasExact );
     }
@@ -79226,12 +76460,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, depthClampControl );
     }
@@ -79334,12 +76563,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, depthClampZeroOne );
     }
@@ -79444,12 +76668,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, depthClipControl );
     }
@@ -79552,12 +76771,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, depthClipEnable );
     }
@@ -79653,11 +76867,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, ResolveModeFlags const &, ResolveModeFlags const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, supportedDepthResolveModes, supportedStencilResolveModes, independentResolveNone, independentResolve );
@@ -79757,12 +76967,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, size_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, size_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, combinedImageSamplerDensityMapDescriptorSize );
     }
@@ -79894,12 +77099,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorBuffer, descriptorBufferCaptureReplay, descriptorBufferImageLayoutIgnored, descriptorBufferPushDescriptors );
     }
@@ -80059,9 +77259,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -80097,7 +77294,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceSize const &,
                DeviceSize const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -80300,12 +77496,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorBufferTensorDescriptors );
     }
@@ -80429,12 +77620,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, size_t const &, size_t const &, size_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, size_t const &, size_t const &, size_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensorCaptureReplayDescriptorDataSize, tensorViewCaptureReplayDescriptorDataSize, tensorDescriptorSize );
     }
@@ -80713,9 +77899,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -80738,7 +77921,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -80935,9 +78117,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -80963,7 +78142,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -81140,12 +78318,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorPoolOverallocation );
     }
@@ -81252,12 +78425,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorSetHostMapping );
     }
@@ -81383,12 +78551,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceGeneratedCompute, deviceGeneratedComputePipelines, deviceGeneratedComputeCaptureReplay );
     }
@@ -81506,12 +78669,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceGeneratedCommands, dynamicGeneratedPipelineLayout );
     }
@@ -81617,12 +78775,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceGeneratedCommands );
     }
@@ -81736,9 +78889,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -81753,7 +78903,6 @@ namespace VULKAN_HPP_NAMESPACE
                ShaderStageFlags const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -81896,9 +79045,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -81910,7 +79056,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -82039,12 +79184,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceMemoryReport );
     }
@@ -82147,12 +79287,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, diagnosticsConfig );
     }
@@ -82241,12 +79376,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxDiscardRectangles );
     }
@@ -82350,12 +79480,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, displacementMicromap );
     }
@@ -82448,12 +79573,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxDisplacementMicromapSubdivisionLevel );
     }
@@ -82550,16 +79670,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                DriverId const &,
                ArrayWrapper1D<char, VK_MAX_DRIVER_NAME_SIZE> const &,
                ArrayWrapper1D<char, VK_MAX_DRIVER_INFO_SIZE> const &,
                ConformanceVersion const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, driverID, driverName, driverInfo, conformanceVersion );
@@ -82678,11 +79794,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, int64_t const &, int64_t const &, int64_t const &, int64_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, hasPrimary, hasRender, primaryMajor, primaryMinor, renderMajor, renderMinor );
@@ -82793,12 +79905,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dynamicRendering );
     }
@@ -82905,12 +80012,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dynamicRenderingLocalRead );
     }
@@ -83021,12 +80123,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dynamicRenderingUnusedAttachments );
     }
@@ -83129,12 +80226,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, exclusiveScissor );
     }
@@ -83257,12 +80349,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, extendedDynamicState2, extendedDynamicState2LogicOp, extendedDynamicState2PatchControlPoints );
     }
@@ -83642,9 +80729,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -83678,7 +80762,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -83863,12 +80946,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dynamicPrimitiveTopologyUnrestricted );
     }
@@ -83972,12 +81050,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, extendedDynamicState );
     }
@@ -84084,12 +81157,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, extendedSparseAddressSpace );
     }
@@ -84185,12 +81253,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &, ImageUsageFlags const &, BufferUsageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &, ImageUsageFlags const &, BufferUsageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, extendedSparseAddressSpaceSize, extendedSparseImageUsageFlags, extendedSparseBufferUsageFlags );
     }
@@ -84313,11 +81376,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, BufferCreateFlags const &, BufferUsageFlags const &, ExternalMemoryHandleTypeFlagBits const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, usage, handleType );
@@ -84415,12 +81474,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, externalDataSize, maxExternalQueues );
     }
@@ -84525,12 +81579,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalFenceHandleTypeFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalFenceHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleType );
     }
@@ -84638,12 +81687,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, externalFormatResolve );
     }
@@ -84742,12 +81786,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, ChromaLocation const &, ChromaLocation const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, ChromaLocation const &, ChromaLocation const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, nullColorAttachmentWithExternalFormatResolve, externalFormatResolveChromaOffsetX, externalFormatResolveChromaOffsetY );
     }
@@ -84857,12 +81896,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalMemoryHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleType );
     }
@@ -84955,12 +81989,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minImportedHostPointerAlignment );
     }
@@ -85063,12 +82092,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, externalMemoryRDMA );
     }
@@ -85174,12 +82198,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, screenBufferImport );
     }
@@ -85284,12 +82303,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ExternalSemaphoreHandleTypeFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ExternalSemaphoreHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, handleType );
     }
@@ -85411,15 +82425,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                TensorCreateFlagsARM const &,
                const TensorDescriptionARM * const &,
                ExternalMemoryHandleTypeFlagBits const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, pDescription, handleType );
@@ -85534,12 +82544,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceFault, deviceFaultVendorBinary );
     }
@@ -85643,12 +82648,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PhysicalDeviceFeatures const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PhysicalDeviceFeatures const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, features );
     }
@@ -85773,9 +82773,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ShaderFloatControlsIndependence const &,
@@ -85795,7 +82792,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -85946,12 +82942,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, formatPack );
     }
@@ -86055,12 +83046,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentDensityMapDeferred );
     }
@@ -86157,12 +83143,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, subsampledLoads, subsampledCoarseReconstructionEarlyAccess, maxSubsampledArrayLayers, maxDescriptorSetSubsampledSamplers );
     }
@@ -86288,12 +83269,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentDensityMap, fragmentDensityMapDynamic, fragmentDensityMapNonSubsampledImages );
     }
@@ -86389,12 +83365,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentDensityMapLayered );
     }
@@ -86487,12 +83458,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxFragmentDensityMapLayers );
     }
@@ -86598,12 +83564,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentDensityMapOffset );
     }
@@ -86697,12 +83658,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentDensityOffsetGranularity );
     }
@@ -86799,12 +83755,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Extent2D const &, Extent2D const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Extent2D const &, Extent2D const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minFragmentDensityTexelSize, maxFragmentDensityTexelSize, fragmentDensityInvocations );
     }
@@ -86914,12 +83865,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentShaderBarycentric );
     }
@@ -87013,12 +83959,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, triStripVertexOrderIndependentOfProvokingVertex );
     }
@@ -87143,12 +84084,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentShaderSampleInterlock, fragmentShaderPixelInterlock, fragmentShaderShadingRateInterlock );
     }
@@ -87276,12 +84212,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentShadingRateEnums, supersampleFragmentShadingRates, noInvocationFragmentShadingRates );
     }
@@ -87378,12 +84309,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, SampleCountFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, SampleCountFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxFragmentShadingRateInvocationCount );
     }
@@ -87506,12 +84432,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineFragmentShadingRate, primitiveFragmentShadingRate, attachmentFragmentShadingRate );
     }
@@ -87605,12 +84526,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, SampleCountFlags const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, SampleCountFlags const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, sampleCounts, fragmentSize );
     }
@@ -87735,9 +84651,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Extent2D const &,
@@ -87757,7 +84670,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -87911,12 +84823,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, frameBoundary );
     }
@@ -88019,12 +84926,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, globalPriorityQuery );
     }
@@ -88131,12 +85033,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, graphicsPipelineLibrary );
     }
@@ -88230,12 +85127,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, graphicsPipelineLibraryFastLinking, graphicsPipelineLibraryIndependentInterpolationDecoration );
     }
@@ -88331,11 +85223,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, ArrayWrapper1D<PhysicalDevice, VK_MAX_DEVICE_GROUP_SIZE> const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, physicalDeviceCount, physicalDevices, subsetAllocation );
@@ -88458,12 +85346,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, hdrVivid );
     }
@@ -88566,12 +85449,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, hostImageCopy );
     }
@@ -88754,9 +85632,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -88765,7 +85640,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageLayout * const &,
                ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -88879,12 +85753,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, hostQueryReset );
     }
@@ -88983,9 +85852,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &,
@@ -88993,7 +85859,6 @@ namespace VULKAN_HPP_NAMESPACE
                ArrayWrapper1D<uint8_t, VK_LUID_SIZE> const &,
                uint32_t const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, deviceUUID, driverUUID, deviceLUID, deviceNodeMask, deviceLUIDValid );
@@ -89112,12 +85977,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image2DViewOf3D, sampler2DViewOf3D );
     }
@@ -89222,12 +86082,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageAlignmentControl );
     }
@@ -89319,12 +86174,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, supportedImageAlignmentMask );
     }
@@ -89428,12 +86278,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageCompressionControl );
     }
@@ -89542,12 +86387,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageCompressionControlSwapchain );
     }
@@ -89699,11 +86539,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint64_t const &, SharingMode const &, uint32_t const &, const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, drmFormatModifier, sharingMode, queueFamilyIndexCount, pQueueFamilyIndices );
@@ -89844,9 +86680,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Format const &,
@@ -89854,7 +86687,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageTiling const &,
                ImageUsageFlags const &,
                ImageCreateFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, format, type, tiling, usage, flags );
@@ -89965,12 +86797,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, textureBlockMatch2 );
     }
@@ -90059,12 +86886,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxBlockMatchWindow );
     }
@@ -90184,12 +87006,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, textureSampleWeighted, textureBoxFilter, textureBlockMatch );
     }
@@ -90288,11 +87105,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, Extent2D const &, Extent2D const &, Extent2D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxWeightFilterPhases, maxWeightFilterDimension, maxBlockMatchRegion, maxBoxFilterBlockSize );
@@ -90401,12 +87214,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, robustImageAccess );
     }
@@ -90511,12 +87319,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageSlicedViewOf3D );
     }
@@ -90620,12 +87423,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ImageViewType const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ImageViewType const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageViewType );
     }
@@ -90728,12 +87526,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minLod );
     }
@@ -90836,12 +87629,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imagelessFramebuffer );
     }
@@ -90946,12 +87734,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, indexTypeUint8 );
     }
@@ -91060,12 +87843,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, inheritedViewportScissor2D );
     }
@@ -91178,12 +87956,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, inlineUniformBlock, descriptorBindingInlineUniformBlockUpdateAfterBind );
     }
@@ -91285,11 +88058,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -91409,12 +88178,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, invocationMask );
     }
@@ -91510,16 +88274,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
                uint32_t const &,
                PhysicalDeviceLayeredApiKHR const &,
                ArrayWrapper1D<char, VK_MAX_PHYSICAL_DEVICE_NAME_SIZE> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, vendorID, deviceID, layeredAPI, deviceName );
@@ -91654,12 +88414,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, PhysicalDeviceLayeredApiPropertiesKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, PhysicalDeviceLayeredApiPropertiesKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, layeredApiCount, pLayeredApis );
     }
@@ -91954,9 +88709,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &,
                uint32_t const &,
                uint32_t const &,
@@ -92063,7 +88815,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceSize const &,
                DeviceSize const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( maxImageDimension1D,
@@ -92420,12 +89171,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( residencyStandard2DBlockShape,
                        residencyStandard2DMultisampleBlockShape,
@@ -92528,9 +89274,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &,
                uint32_t const &,
                uint32_t const &,
@@ -92540,7 +89283,6 @@ namespace VULKAN_HPP_NAMESPACE
                ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &,
                PhysicalDeviceLimits const &,
                PhysicalDeviceSparseProperties const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( apiVersion, driverVersion, vendorID, deviceID, deviceType, deviceName, pipelineCacheUUID, limits, sparseProperties );
@@ -92649,12 +89391,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PhysicalDeviceProperties const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PhysicalDeviceProperties const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, properties );
     }
@@ -92747,12 +89484,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PhysicalDeviceProperties2 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PhysicalDeviceProperties2 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, properties );
     }
@@ -92842,12 +89574,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, LayeredDriverUnderlyingApiMSFT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, LayeredDriverUnderlyingApiMSFT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, underlyingAPI );
     }
@@ -92950,12 +89677,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, legacyDithering );
     }
@@ -93059,12 +89781,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, legacyVertexAttributes );
     }
@@ -93156,12 +89873,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, nativeUnalignedPerformance );
     }
@@ -93305,11 +90017,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, rectangularLines, bresenhamLines, smoothLines, stippledRectangularLines, stippledBresenhamLines, stippledSmoothLines );
@@ -93409,12 +90117,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, lineSubPixelPrecisionBits );
     }
@@ -93521,12 +90224,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, linearColorAttachment );
     }
@@ -93618,12 +90316,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxPerSetDescriptors, maxMemoryAllocationSize );
     }
@@ -93730,12 +90423,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maintenance4 );
     }
@@ -93826,12 +90514,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxBufferSize );
     }
@@ -93936,12 +90619,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maintenance5 );
     }
@@ -94043,11 +90721,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -94170,12 +90844,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maintenance6 );
     }
@@ -94271,12 +90940,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, uint32_t const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, uint32_t const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, blockTexelViewCompatibleMultipleLayers, maxCombinedImageSamplerDescriptorCount, fragmentShadingRateClampCombinerInputs );
     }
@@ -94385,12 +91049,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maintenance7 );
     }
@@ -94494,9 +91153,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -94507,7 +91163,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -94635,12 +91290,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maintenance8 );
     }
@@ -94743,12 +91393,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maintenance9 );
     }
@@ -94841,12 +91486,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, DefaultVertexAttributeValueKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, DefaultVertexAttributeValueKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, image2DViewOf3DSparse, defaultVertexAttributeValue );
     }
@@ -94968,12 +91608,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryMapPlaced, memoryMapRangePlaced, memoryUnmapReserve );
     }
@@ -95065,12 +91700,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minPlacedMemoryMapAlignment );
     }
@@ -95162,14 +91792,10 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ArrayWrapper1D<DeviceSize, VK_MAX_MEMORY_HEAPS> const &,
                ArrayWrapper1D<DeviceSize, VK_MAX_MEMORY_HEAPS> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, heapBudget, heapUsage );
@@ -95274,12 +91900,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryDecompression );
     }
@@ -95372,12 +91993,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, MemoryDecompressionMethodFlagsNV const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, MemoryDecompressionMethodFlagsNV const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, decompressionMethods, maxDecompressionIndirectCount );
     }
@@ -95482,12 +92098,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryPriority );
     }
@@ -95578,14 +92189,10 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &,
                ArrayWrapper1D<MemoryType, VK_MAX_MEMORY_TYPES> const &,
                uint32_t const &,
                ArrayWrapper1D<MemoryHeap, VK_MAX_MEMORY_HEAPS> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( memoryTypeCount, memoryTypes, memoryHeapCount, memoryHeaps );
@@ -95686,12 +92293,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PhysicalDeviceMemoryProperties const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PhysicalDeviceMemoryProperties const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryProperties );
     }
@@ -95830,11 +92432,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, taskShader, meshShader, multiviewMeshShader, primitiveFragmentShadingRateMeshShader, meshShaderQueries );
@@ -95951,12 +92549,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, taskShader, meshShader );
     }
@@ -96101,9 +92694,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -96134,7 +92724,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -96321,9 +92910,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -96339,7 +92925,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -96476,12 +93061,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, multiDraw );
     }
@@ -96570,12 +93150,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxMultiDrawCount );
     }
@@ -96684,12 +93259,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, multisampledRenderToSingleSampled );
     }
@@ -96809,12 +93379,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, multiview, multiviewGeometryShader, multiviewTessellationShader );
     }
@@ -96911,12 +93476,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, perViewPositionAllComponents );
     }
@@ -97023,12 +93583,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, multiviewPerViewRenderAreas );
     }
@@ -97135,12 +93690,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, multiviewPerViewViewports );
     }
@@ -97232,12 +93782,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxMultiviewViewCount, maxMultiviewInstanceIndex );
     }
@@ -97345,12 +93890,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, mutableDescriptorType );
     }
@@ -97474,12 +94014,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, nestedCommandBuffer, nestedCommandBufferRendering, nestedCommandBufferSimultaneousUse );
     }
@@ -97574,12 +94109,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxCommandBufferNestingLevel );
     }
@@ -97682,12 +94212,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, nonSeamlessCubeMap );
     }
@@ -97807,12 +94332,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, micromap, micromapCaptureReplay, micromapHostCommands );
     }
@@ -97907,12 +94427,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxOpacity2StateSubdivisionLevel, maxOpacity4StateSubdivisionLevel );
     }
@@ -98017,12 +94532,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, opticalFlow );
     }
@@ -98132,9 +94642,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                OpticalFlowGridSizeFlagsNV const &,
@@ -98148,7 +94655,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -98268,11 +94774,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pciDomain, pciBus, pciDevice, pciFunction );
@@ -98384,12 +94886,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pageableDeviceLocalMemory );
     }
@@ -98497,12 +94994,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, partitionedAccelerationStructure );
     }
@@ -98596,12 +95088,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxPartitionCount );
     }
@@ -98714,12 +95201,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, perStageDescriptorSet, dynamicPipelineLayout );
     }
@@ -98835,12 +95317,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, performanceCounterQueryPools, performanceCounterMultipleQueryPools );
     }
@@ -98931,12 +95408,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, allowCommandBufferQueryCopies );
     }
@@ -99039,12 +95511,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineBinaries );
     }
@@ -99142,11 +95609,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -99268,12 +95731,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineCacheIncrementalMode );
     }
@@ -99380,12 +95838,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineCreationCacheControl );
     }
@@ -99494,12 +95947,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineExecutableInfo );
     }
@@ -99606,12 +96054,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineLibraryGroupHandles );
     }
@@ -99715,12 +96158,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineOpacityMicromap );
     }
@@ -99824,12 +96262,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelinePropertiesIdentifier );
     }
@@ -99933,12 +96366,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineProtectedAccess );
     }
@@ -100043,12 +96471,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineRobustness );
     }
@@ -100147,16 +96570,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                PipelineRobustnessBufferBehavior const &,
                PipelineRobustnessBufferBehavior const &,
                PipelineRobustnessBufferBehavior const &,
                PipelineRobustnessImageBehavior const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, defaultRobustnessStorageBuffers, defaultRobustnessUniformBuffers, defaultRobustnessVertexInputs, defaultRobustnessImages );
@@ -100254,12 +96673,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PointClippingBehavior const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PointClippingBehavior const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pointClippingBehavior );
     }
@@ -100482,9 +96896,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -100502,7 +96913,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -100633,12 +97043,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minVertexInputBindingStrideAlignment );
     }
@@ -100742,12 +97147,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentBarrier );
     }
@@ -100850,12 +97250,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentId2 );
     }
@@ -100958,12 +97353,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentId );
     }
@@ -101067,12 +97457,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentMetering );
     }
@@ -101180,12 +97565,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentModeFifoLatestReady );
     }
@@ -101290,12 +97670,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentWait2 );
     }
@@ -101398,12 +97773,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentWait );
     }
@@ -101519,12 +97889,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, primitiveTopologyListRestart, primitiveTopologyPatchListRestart );
     }
@@ -101651,12 +98016,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, primitivesGeneratedQuery, primitivesGeneratedQueryWithRasterizerDiscard, primitivesGeneratedQueryWithNonZeroStreams );
     }
@@ -101763,12 +98123,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, privateData );
     }
@@ -101873,12 +98228,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, protectedMemory );
     }
@@ -101967,12 +98317,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, protectedNoFault );
     }
@@ -102085,12 +98430,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, provokingVertexLast, transformFeedbackPreservesProvokingVertex );
     }
@@ -102184,12 +98524,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, provokingVertexModePerPipeline, transformFeedbackPreservesTriangleFanProvokingVertex );
     }
@@ -102280,12 +98615,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxPushDescriptors );
     }
@@ -102405,11 +98735,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, PhysicalDeviceDataGraphProcessingEngineTypeARM const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, queueFamilyIndex, engineType );
@@ -102515,12 +98841,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, formatRgba10x6WithoutYCbCrSampler );
     }
@@ -102647,12 +98968,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
         sType, pNext, rasterizationOrderColorAttachmentAccess, rasterizationOrderDepthAttachmentAccess, rasterizationOrderStencilAttachmentAccess );
@@ -102762,12 +99078,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderRawAccessChains );
     }
@@ -102870,12 +99181,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, rayQuery );
     }
@@ -102982,12 +99288,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, rayTracingInvocationReorder );
     }
@@ -103080,12 +99381,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, RayTracingInvocationReorderModeNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, RayTracingInvocationReorderModeNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, rayTracingInvocationReorderReorderingHint );
     }
@@ -103198,12 +99494,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, spheres, linearSweptSpheres );
     }
@@ -103318,12 +99609,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, rayTracingMaintenance1, rayTracingPipelineTraceRaysIndirect2 );
     }
@@ -103438,12 +99724,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, rayTracingMotionBlur, rayTracingMotionBlurPipelineTraceRaysIndirect );
     }
@@ -103585,11 +99866,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -103709,9 +99986,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -103722,7 +99996,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -103847,12 +100120,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, rayTracingPositionFetch );
     }
@@ -103956,9 +100224,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -103969,7 +100234,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint64_t const &,
                uint64_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -104093,12 +100357,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, rayTracingValidation );
     }
@@ -104204,12 +100463,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, relaxedLineRasterization );
     }
@@ -104312,12 +100566,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, renderPassStriped );
     }
@@ -104409,12 +100658,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Extent2D const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Extent2D const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, renderPassStripeGranularity, maxRenderPassStripes );
     }
@@ -104523,12 +100767,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, representativeFragmentTest );
     }
@@ -104648,12 +100887,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, robustBufferAccess2, robustImageAccess2, nullDescriptor );
     }
@@ -104750,12 +100984,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, robustStorageBufferAccessSizeAlignment, robustUniformBufferAccessSizeAlignment );
     }
@@ -104857,9 +101086,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                SampleCountFlags const &,
@@ -104867,7 +101093,6 @@ namespace VULKAN_HPP_NAMESPACE
                ArrayWrapper1D<float, 2> const &,
                uint32_t const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -104972,12 +101197,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, filterMinmaxSingleComponentFormats, filterMinmaxImageComponentMapping );
     }
@@ -105084,12 +101304,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, samplerYcbcrConversion );
     }
@@ -105194,12 +101409,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, scalarBlockLayout );
     }
@@ -105304,12 +101514,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, schedulingControls );
     }
@@ -105400,12 +101605,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PhysicalDeviceSchedulingControlsFlagsARM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PhysicalDeviceSchedulingControlsFlagsARM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, schedulingControlsFlags );
     }
@@ -105512,12 +101712,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, separateDepthStencilLayouts );
     }
@@ -105626,12 +101821,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderFloat16VectorAtomics );
     }
@@ -105835,9 +102025,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -105852,7 +102039,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -106085,9 +102271,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -106102,7 +102285,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -106245,12 +102427,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderBufferInt64Atomics, shaderSharedInt64Atomics );
     }
@@ -106375,12 +102552,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderBFloat16Type, shaderBFloat16DotProduct, shaderBFloat16CooperativeMatrix );
     }
@@ -106494,12 +102666,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderSubgroupClock, shaderDeviceClock );
     }
@@ -106604,12 +102771,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderCoreBuiltins );
     }
@@ -106704,12 +102866,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint64_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint64_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderCoreMask, shaderCoreCount, shaderWarpsPerCore );
     }
@@ -106804,12 +102961,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ShaderCorePropertiesFlagsAMD const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ShaderCorePropertiesFlagsAMD const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderCoreFeatures, activeComputeUnitCount );
     }
@@ -106927,9 +103079,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -106946,7 +103095,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -107075,12 +103223,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pixelRate, texelRate, fmaRate );
     }
@@ -107189,12 +103332,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderDemoteToHelperInvocation );
     }
@@ -107299,12 +103437,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderDrawParameters );
     }
@@ -107414,12 +103547,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderEarlyAndLateFragmentTests );
     }
@@ -107531,12 +103659,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderEnqueue, shaderMeshEnqueue );
     }
@@ -107641,9 +103764,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -107653,7 +103773,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                ArrayWrapper1D<uint32_t, 3> const &,
                uint32_t const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -107777,12 +103896,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderExpectAssume );
     }
@@ -107895,12 +104009,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderFloat16, shaderInt8 );
     }
@@ -108017,12 +104126,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderFloat8, shaderFloat8CooperativeMatrix );
     }
@@ -108127,12 +104231,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderFloatControls2 );
     }
@@ -108247,12 +104346,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderImageInt64Atomics, sparseImageInt64Atomics );
     }
@@ -108357,12 +104451,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageFootprint );
     }
@@ -108466,12 +104555,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderIntegerDotProduct );
     }
@@ -108623,9 +104707,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -108658,7 +104739,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -108863,12 +104943,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderIntegerFunctions2 );
     }
@@ -108975,12 +105050,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderMaximalReconvergence );
     }
@@ -109084,12 +105154,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderModuleIdentifier );
     }
@@ -109182,12 +105247,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderModuleIdentifierAlgorithmUUID );
     }
@@ -109290,12 +105350,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderObject );
     }
@@ -109387,12 +105442,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderBinaryUUID, shaderBinaryVersion );
     }
@@ -109497,12 +105547,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderQuadControl );
     }
@@ -109611,12 +105656,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderRelaxedExtendedInstruction );
     }
@@ -109723,12 +105763,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderReplicatedComposites );
     }
@@ -109831,12 +105866,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderSMBuiltins );
     }
@@ -109927,12 +105957,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderSMCount, shaderWarpsPerSM );
     }
@@ -110040,12 +106065,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderSubgroupExtendedTypes );
     }
@@ -110160,12 +106180,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderSubgroupRotate, shaderSubgroupRotateClustered );
     }
@@ -110278,12 +106293,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderSubgroupUniformControlFlow );
     }
@@ -110388,12 +106398,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderTerminateInvocation );
     }
@@ -110518,12 +106523,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderTileImageColorReadAccess, shaderTileImageDepthReadAccess, shaderTileImageStencilReadAccess );
     }
@@ -110621,12 +106621,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
         sType, pNext, shaderTileImageCoherentReadAccelerated, shaderTileImageReadSampleFromPixelRateInvocation, shaderTileImageReadFromHelperInvocation );
@@ -110665,6 +106660,110 @@ namespace VULKAN_HPP_NAMESPACE
   struct CppType<StructureType, StructureType::ePhysicalDeviceShaderTileImagePropertiesEXT>
   {
     using Type = PhysicalDeviceShaderTileImagePropertiesEXT;
+  };
+
+  // wrapper struct for struct VkPhysicalDeviceShaderUntypedPointersFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderUntypedPointersFeaturesKHR.html
+  struct PhysicalDeviceShaderUntypedPointersFeaturesKHR
+  {
+    using NativeType = VkPhysicalDeviceShaderUntypedPointersFeaturesKHR;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceShaderUntypedPointersFeaturesKHR;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceShaderUntypedPointersFeaturesKHR( Bool32 shaderUntypedPointers_ = {}, void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , shaderUntypedPointers{ shaderUntypedPointers_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR
+      PhysicalDeviceShaderUntypedPointersFeaturesKHR( PhysicalDeviceShaderUntypedPointersFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceShaderUntypedPointersFeaturesKHR( VkPhysicalDeviceShaderUntypedPointersFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceShaderUntypedPointersFeaturesKHR( *reinterpret_cast<PhysicalDeviceShaderUntypedPointersFeaturesKHR const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceShaderUntypedPointersFeaturesKHR & operator=( PhysicalDeviceShaderUntypedPointersFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceShaderUntypedPointersFeaturesKHR & operator=( VkPhysicalDeviceShaderUntypedPointersFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PhysicalDeviceShaderUntypedPointersFeaturesKHR const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderUntypedPointersFeaturesKHR & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderUntypedPointersFeaturesKHR & setShaderUntypedPointers( Bool32 shaderUntypedPointers_ ) VULKAN_HPP_NOEXCEPT
+    {
+      shaderUntypedPointers = shaderUntypedPointers_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceShaderUntypedPointersFeaturesKHR const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceShaderUntypedPointersFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderUntypedPointersFeaturesKHR &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceShaderUntypedPointersFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderUntypedPointersFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderUntypedPointersFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderUntypedPointersFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderUntypedPointersFeaturesKHR *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, shaderUntypedPointers );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceShaderUntypedPointersFeaturesKHR const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceShaderUntypedPointersFeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( shaderUntypedPointers == rhs.shaderUntypedPointers );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceShaderUntypedPointersFeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType sType                 = StructureType::ePhysicalDeviceShaderUntypedPointersFeaturesKHR;
+    void *        pNext                 = {};
+    Bool32        shaderUntypedPointers = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceShaderUntypedPointersFeaturesKHR>
+  {
+    using Type = PhysicalDeviceShaderUntypedPointersFeaturesKHR;
   };
 
   // wrapper struct for struct VkPhysicalDeviceShadingRateImageFeaturesNV, see
@@ -110744,12 +106843,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shadingRateImage, shadingRateCoarseSampleOrder );
     }
@@ -110845,12 +106939,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Extent2D const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Extent2D const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shadingRateTexelSize, shadingRatePaletteSize, shadingRateMaxCoarseSamples );
     }
@@ -110989,9 +107078,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Format const &,
@@ -110999,7 +107085,6 @@ namespace VULKAN_HPP_NAMESPACE
                SampleCountFlagBits const &,
                ImageUsageFlags const &,
                ImageTiling const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, format, type, samples, usage, tiling );
@@ -111103,11 +107188,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, ShaderStageFlags const &, SubgroupFeatureFlags const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, subgroupSize, supportedStages, supportedOperations, quadOperationsInAllStages );
@@ -111224,12 +107305,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, subgroupSizeControl, computeFullSubgroups );
     }
@@ -111329,11 +107405,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, uint32_t const &, ShaderStageFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minSubgroupSize, maxSubgroupSize, maxComputeWorkgroupSubgroups, requiredSubgroupSizeStages );
@@ -111444,12 +107516,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, subpassMergeFeedback );
     }
@@ -111552,12 +107619,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, subpassShading );
     }
@@ -111647,12 +107709,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxSubpassShadingWorkgroupSizeAspectRatio );
     }
@@ -111755,12 +107812,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SurfaceKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SurfaceKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, surface );
     }
@@ -111864,12 +107916,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchainMaintenance1 );
     }
@@ -111974,12 +108021,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, synchronization2 );
     }
@@ -112128,11 +108170,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -112262,9 +108300,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -112280,7 +108315,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                Bool32 const &,
                ShaderStageFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -112420,12 +108454,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, texelBufferAlignment );
     }
@@ -112521,11 +108550,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, DeviceSize const &, Bool32 const &, DeviceSize const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -112644,12 +108669,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, textureCompressionASTC_HDR );
     }
@@ -112754,12 +108774,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tileMemoryHeap );
     }
@@ -112871,12 +108886,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, queueSubmitBoundary, tileBufferTransfers );
     }
@@ -112981,12 +108991,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tileProperties );
     }
@@ -113196,9 +109201,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -113215,7 +109217,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -113347,12 +109348,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, Bool32 const &, Extent2D const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, Bool32 const &, Extent2D const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxApronSize, preferNonCoherent, tileGranularity, maxTileShadingRate );
     }
@@ -113459,12 +109455,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, timelineSemaphore );
     }
@@ -113556,12 +109547,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxTimelineSemaphoreValueDifference );
     }
@@ -113660,9 +109646,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ArrayWrapper1D<char, VK_MAX_EXTENSION_NAME_SIZE> const &,
@@ -113670,7 +109653,6 @@ namespace VULKAN_HPP_NAMESPACE
                ToolPurposeFlags const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &,
                ArrayWrapper1D<char, VK_MAX_EXTENSION_NAME_SIZE> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, name, version, purposes, description, layer );
@@ -113803,12 +109785,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, transformFeedback, geometryStreams );
     }
@@ -113917,9 +109894,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -113932,7 +109906,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -114073,12 +110046,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, unifiedImageLayouts, unifiedImageLayoutsVideo );
     }
@@ -114187,12 +110155,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, uniformBufferStandardLayout );
     }
@@ -114307,12 +110270,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, variablePointersStorageBuffer, variablePointers );
     }
@@ -114432,12 +110390,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, vertexAttributeInstanceRateDivisor, vertexAttributeInstanceRateZeroDivisor );
     }
@@ -114535,12 +110488,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxVertexAttribDivisor, supportsNonZeroFirstInstance );
     }
@@ -114635,12 +110583,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxVertexAttribDivisor );
     }
@@ -114747,12 +110690,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, vertexAttributeRobustness );
     }
@@ -114856,12 +110794,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, vertexInputDynamicState );
     }
@@ -114964,12 +110897,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoDecodeVP9 );
     }
@@ -115072,12 +111000,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoEncodeAV1 );
     }
@@ -115181,12 +111104,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoEncodeIntraRefresh );
     }
@@ -115312,16 +111230,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoCodecOperationFlagBitsKHR const &,
                VideoChromaSubsamplingFlagsKHR const &,
                VideoComponentBitDepthFlagsKHR const &,
                VideoComponentBitDepthFlagsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoCodecOperation, chromaSubsampling, lumaBitDepth, chromaBitDepth );
@@ -115438,12 +111352,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const VideoProfileInfoKHR * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const VideoProfileInfoKHR * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pVideoProfile, qualityLevel );
     }
@@ -115551,12 +111460,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoEncodeQuantizationMap );
     }
@@ -115659,12 +111563,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageUsageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageUsageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageUsage );
     }
@@ -115767,12 +111666,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoMaintenance1 );
     }
@@ -115875,12 +111769,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoMaintenance2 );
     }
@@ -116073,9 +111962,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -116090,7 +111976,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -116239,9 +112124,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &,
@@ -116259,7 +112141,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                uint32_t const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -116789,9 +112670,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -116841,7 +112719,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -117163,9 +113040,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                DriverId const &,
@@ -117220,7 +113094,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                uint64_t const &,
                SampleCountFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -117691,9 +113564,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -117711,7 +113581,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -117928,9 +113797,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -117978,7 +113844,6 @@ namespace VULKAN_HPP_NAMESPACE
                DeviceSize const &,
                Bool32 const &,
                DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -118383,9 +114248,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Bool32 const &,
@@ -118409,7 +114271,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -118600,9 +114461,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -118630,7 +114488,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageLayout * const &,
                ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -118821,12 +114678,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, vulkanMemoryModel, vulkanMemoryModelDeviceScope, vulkanMemoryModelAvailabilityVisibilityChains );
     }
@@ -118967,12 +114819,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
                        pNext,
@@ -119087,12 +114934,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, ycbcr2plane444Formats );
     }
@@ -119195,12 +115037,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, ycbcrDegamma );
     }
@@ -119303,12 +115140,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, ycbcrImageArrays );
     }
@@ -119415,12 +115247,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, zeroInitializeDeviceMemory );
     }
@@ -119527,12 +115354,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shaderZeroInitializeWorkgroupMemory );
     }
@@ -119645,11 +115467,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, ArrayWrapper1D<uint8_t, VK_MAX_PIPELINE_BINARY_KEY_SIZE_KHR> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, keySize, key );
@@ -119767,12 +115585,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<size_t const &, void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<size_t const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( dataSize, pData );
     }
@@ -119910,12 +115723,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, const PipelineBinaryKeyKHR * const &, const PipelineBinaryDataKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, const PipelineBinaryKeyKHR * const &, const PipelineBinaryDataKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( binaryCount, pPipelineBinaryKeys, pPipelineBinaryData );
     }
@@ -120001,12 +115809,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext );
     }
@@ -120124,12 +115927,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, const PipelineBinaryKeysAndDataKHR * const &, Pipeline const &, const PipelineCreateInfoKHR * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pKeysAndDataInfo, pipeline, pPipelineCreateInfo );
@@ -120235,12 +116034,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PipelineBinaryKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PipelineBinaryKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineBinary );
     }
@@ -120367,12 +116161,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, PipelineBinaryKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, PipelineBinaryKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineBinaryCount, pPipelineBinaries );
     }
@@ -120500,12 +116289,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PipelineBinaryKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PipelineBinaryKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, binaryCount, pPipelineBinaries );
     }
@@ -120643,11 +116427,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PipelineCacheCreateFlags const &, size_t const &, const void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, initialDataSize, pInitialData );
@@ -120776,11 +116556,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &, PipelineCacheHeaderVersion const &, uint32_t const &, uint32_t const &, ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( headerSize, headerVersion, vendorID, deviceID, pipelineCacheUUID );
@@ -120898,12 +116674,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, Bool32 const &, BlendOverlapEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, Bool32 const &, BlendOverlapEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcPremultiplied, dstPremultiplied, blendOverlap );
     }
@@ -121034,12 +116805,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Bool32 * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Bool32 * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, attachmentCount, pColorWriteEnables );
     }
@@ -121145,12 +116911,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, PipelineCompilerControlFlagsAMD const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, PipelineCompilerControlFlagsAMD const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, compilerControlFlags );
     }
@@ -121316,9 +117077,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineCoverageModulationStateCreateFlagsNV const &,
@@ -121326,7 +117084,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                uint32_t const &,
                const float * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, coverageModulationMode, coverageModulationTableEnable, coverageModulationTableCount, pCoverageModulationTable );
@@ -121446,11 +117203,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PipelineCoverageReductionStateCreateFlagsNV const &, CoverageReductionModeNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, coverageReductionMode );
@@ -121572,11 +117325,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PipelineCoverageToColorStateCreateFlagsNV const &, Bool32 const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, coverageToColorEnable, coverageToColorLocation );
@@ -121683,12 +117432,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, PipelineCreateFlags2 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, PipelineCreateFlags2 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -121775,12 +117519,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<PipelineCreationFeedbackFlags const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<PipelineCreationFeedbackFlags const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( flags, duration );
     }
@@ -121920,11 +117659,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PipelineCreationFeedback * const &, uint32_t const &, PipelineCreationFeedback * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pPipelineCreationFeedback, pipelineStageCreationFeedbackCount, pPipelineStageCreationFeedbacks );
@@ -122083,16 +117818,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineDiscardRectangleStateCreateFlagsEXT const &,
                DiscardRectangleModeEXT const &,
                uint32_t const &,
                const Rect2D * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, discardRectangleMode, discardRectangleCount, pDiscardRectangles );
@@ -122206,12 +117937,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Pipeline const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Pipeline const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipeline, executableIndex );
     }
@@ -122311,9 +118037,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &,
@@ -122321,7 +118044,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                size_t const &,
                void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, name, description, isText, dataSize, pData );
@@ -122437,16 +118159,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ShaderStageFlags const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stages, name, description, subgroupSize );
@@ -122622,16 +118340,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &,
                ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &,
                PipelineExecutableStatisticFormatKHR const &,
                PipelineExecutableStatisticValueKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, name, description, format, value );
@@ -122723,12 +118437,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxFragmentDensityMapLayers );
     }
@@ -122853,15 +118562,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                FragmentShadingRateTypeNV const &,
                FragmentShadingRateNV const &,
                ArrayWrapper1D<FragmentShadingRateCombinerOpKHR, 2> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shadingRateType, shadingRate, combinerOps );
@@ -122981,11 +118686,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Extent2D const &, ArrayWrapper1D<FragmentShadingRateCombinerOpKHR, 2> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentSize, combinerOps );
@@ -123099,12 +118800,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, PipelineBindPoint const &, Pipeline const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, PipelineBindPoint const &, Pipeline const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineBindPoint, pipeline );
     }
@@ -123204,12 +118900,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Pipeline const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Pipeline const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipeline );
     }
@@ -123379,9 +119070,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineLayoutCreateFlags const &,
@@ -123389,7 +119077,6 @@ namespace VULKAN_HPP_NAMESPACE
                const DescriptorSetLayout * const &,
                uint32_t const &,
                const PushConstantRange * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, setLayoutCount, pSetLayouts, pushConstantRangeCount, pPushConstantRanges );
@@ -123486,12 +119173,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ArrayWrapper1D<uint8_t, VK_UUID_SIZE> const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipelineIdentifier );
     }
@@ -123617,15 +119299,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineRasterizationConservativeStateCreateFlagsEXT const &,
                ConservativeRasterizationModeEXT const &,
                float const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, conservativeRasterizationMode, extraPrimitiveOverestimationSize );
@@ -123744,11 +119422,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PipelineRasterizationDepthClipStateCreateFlagsEXT const &, Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, depthClipEnable );
@@ -123879,11 +119553,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, LineRasterizationMode const &, Bool32 const &, uint32_t const &, uint16_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, lineRasterizationMode, stippledLineEnable, lineStippleFactor, lineStipplePattern );
@@ -124001,12 +119671,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ProvokingVertexModeEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ProvokingVertexModeEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, provokingVertexMode );
     }
@@ -124112,12 +119777,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, RasterizationOrderAMD const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, RasterizationOrderAMD const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, rasterizationOrder );
     }
@@ -124231,11 +119891,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PipelineRasterizationStateStreamCreateFlagsEXT const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, rasterizationStream );
@@ -124397,11 +120053,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, const Format * const &, Format const &, Format const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, viewMask, colorAttachmentCount, pColorAttachmentFormats, depthAttachmentFormat, stencilAttachmentFormat );
@@ -124517,12 +120169,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, representativeFragmentTestEnable );
     }
@@ -124649,16 +120296,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineRobustnessBufferBehavior const &,
                PipelineRobustnessBufferBehavior const &,
                PipelineRobustnessBufferBehavior const &,
                PipelineRobustnessImageBehavior const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, storageBuffers, uniformBuffers, vertexInputs, images );
@@ -124778,12 +120421,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, SampleLocationsInfoEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, SampleLocationsInfoEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, sampleLocationsEnable, sampleLocationsInfo );
     }
@@ -124914,12 +120552,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint8_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint8_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, identifierSize, pIdentifier );
     }
@@ -125032,12 +120665,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, const char * const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const char * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pName, index );
     }
@@ -125139,12 +120767,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, requiredSubgroupSize );
     }
@@ -125252,12 +120875,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, TessellationDomainOrigin const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, TessellationDomainOrigin const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, domainOrigin );
     }
@@ -125359,12 +120977,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( binding, divisor );
     }
@@ -125493,11 +121106,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const VertexInputBindingDivisorDescription * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, vertexBindingDivisorCount, pVertexBindingDivisors );
@@ -125650,11 +121259,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, CoarseSampleOrderTypeNV const &, uint32_t const &, const CoarseSampleOrderCustomNV * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, sampleOrderType, customSampleOrderCount, pCustomSampleOrders );
@@ -125772,12 +121377,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DepthClampModeEXT const &, const DepthClampRangeEXT * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DepthClampModeEXT const &, const DepthClampRangeEXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, depthClampMode, pDepthClampRange );
     }
@@ -125882,12 +121482,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, negativeOneToOne );
     }
@@ -126018,12 +121613,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Rect2D * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Rect2D * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, exclusiveScissorCount, pExclusiveScissors );
     }
@@ -126144,12 +121734,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, const ShadingRatePaletteEntryNV * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, const ShadingRatePaletteEntryNV * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( shadingRatePaletteEntryCount, pShadingRatePaletteEntries );
     }
@@ -126287,11 +121872,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Bool32 const &, uint32_t const &, const ShadingRatePaletteNV * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, shadingRateImageEnable, viewportCount, pShadingRatePalettes );
@@ -126408,12 +121989,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<ViewportCoordinateSwizzleNV const &, ViewportCoordinateSwizzleNV const &, ViewportCoordinateSwizzleNV const &, ViewportCoordinateSwizzleNV const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( x, y, z, w );
@@ -126548,12 +122125,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, PipelineViewportSwizzleStateCreateFlagsNV const &, uint32_t const &, const ViewportSwizzleNV * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, viewportCount, pViewportSwizzles );
@@ -126653,12 +122226,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<float const &, float const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<float const &, float const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( xcoeff, ycoeff );
     }
@@ -126794,11 +122362,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Bool32 const &, uint32_t const &, const ViewportWScalingNV * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, viewportWScalingEnable, viewportCount, pViewportWScalings );
@@ -126905,12 +122469,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, GgpFrameToken const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, GgpFrameToken const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, frameToken );
     }
@@ -127039,12 +122598,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint64_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint64_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchainCount, pPresentIds );
     }
@@ -127167,12 +122721,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint64_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint64_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchainCount, pPresentIds );
     }
@@ -127384,9 +122933,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -127395,7 +122941,6 @@ namespace VULKAN_HPP_NAMESPACE
                const SwapchainKHR * const &,
                const uint32_t * const &,
                Result * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, waitSemaphoreCount, pWaitSemaphores, swapchainCount, pSwapchains, pImageIndices, pResults );
@@ -127508,12 +123053,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Offset2D const &, Extent2D const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Offset2D const &, Extent2D const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( offset, extent, layer );
     }
@@ -127619,12 +123159,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, const RectLayerKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, const RectLayerKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( rectangleCount, pRectangles );
     }
@@ -127740,12 +123275,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PresentRegionKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PresentRegionKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchainCount, pRegions );
     }
@@ -127842,12 +123372,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( presentID, desiredPresentTime );
     }
@@ -127966,12 +123491,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PresentTimeGOOGLE * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PresentTimeGOOGLE * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchainCount, pTimes );
     }
@@ -128080,12 +123600,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint64_t const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint64_t const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentId, timeout );
     }
@@ -128188,12 +123703,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, PrivateDataSlotCreateFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, PrivateDataSlotCreateFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -128296,12 +123806,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, protectedSubmit );
     }
@@ -128457,9 +123962,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineLayout const &,
@@ -128467,7 +123969,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                const void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, layout, stageFlags, offset, size, pValues );
@@ -128691,9 +124192,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                DescriptorSet const &,
@@ -128704,7 +124202,6 @@ namespace VULKAN_HPP_NAMESPACE
                const DescriptorImageInfo * const &,
                const DescriptorBufferInfo * const &,
                const BufferView * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dstSet, dstBinding, dstArrayElement, descriptorCount, descriptorType, pImageInfo, pBufferInfo, pTexelBufferView );
@@ -128874,9 +124371,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ShaderStageFlags const &,
@@ -128884,7 +124378,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                const WriteDescriptorSet * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stageFlags, layout, set, descriptorWriteCount, pDescriptorWrites );
@@ -129021,11 +124514,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, DescriptorUpdateTemplate const &, PipelineLayout const &, uint32_t const &, const void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, descriptorUpdateTemplate, layout, set, pData );
@@ -129134,12 +124623,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pQueriedLowLatencyData );
     }
@@ -129265,12 +124749,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, QueryPoolCreateFlags const &, QueryType const &, uint32_t const &, QueryPipelineStatisticFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, queryType, queryCount, pipelineStatistics );
@@ -129416,12 +124896,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, const uint32_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, const uint32_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, queueFamilyIndex, counterIndexCount, pCounterIndices );
     }
@@ -129530,12 +125005,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, QueryPoolSamplingModeINTEL const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, QueryPoolSamplingModeINTEL const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, performanceCountersSampling );
     }
@@ -129642,12 +125112,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, VideoEncodeFeedbackFlagsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, VideoEncodeFeedbackFlagsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, encodeFeedbackFlags );
     }
@@ -129737,12 +125202,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PipelineStageFlags2 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PipelineStageFlags2 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, checkpointExecutionStageMask );
     }
@@ -129831,12 +125291,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PipelineStageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PipelineStageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, checkpointExecutionStageMask );
     }
@@ -129952,11 +125407,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, ExternalSemaphoreHandleTypeFlags const &, ExternalMemoryHandleTypeFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, foreignSemaphoreHandleTypes, foreignMemoryHandleTypes );
@@ -130072,12 +125523,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, PhysicalDeviceDataGraphProcessingEngineARM const &, PhysicalDeviceDataGraphOperationSupportARM const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, engine, operation );
@@ -130187,11 +125634,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, ArrayWrapper1D<QueueGlobalPriority, VK_MAX_GLOBAL_PRIORITY_SIZE> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, priorityCount, priorities );
@@ -130298,12 +125741,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, optimalImageTransferToQueueFamilies );
     }
@@ -130393,12 +125831,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<QueueFlags const &, uint32_t const &, uint32_t const &, Extent3D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<QueueFlags const &, uint32_t const &, uint32_t const &, Extent3D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( queueFlags, queueCount, timestampValidBits, minImageTransferGranularity );
     }
@@ -130482,12 +125915,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, QueueFamilyProperties const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, QueueFamilyProperties const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, queueFamilyProperties );
     }
@@ -130578,12 +126006,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, queryResultStatusSupport );
     }
@@ -130672,12 +126095,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, VideoCodecOperationFlagsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, VideoCodecOperationFlagsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoCodecOperations );
     }
@@ -130786,12 +126204,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, allowClusterAccelerationStructure );
     }
@@ -130936,9 +126349,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                RayTracingShaderGroupTypeKHR const &,
@@ -130947,7 +126357,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                const void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type, generalShader, closestHitShader, anyHitShader, intersectionShader, pShaderGroupCaptureReplayHandle );
@@ -131068,12 +126477,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxPipelineRayPayloadSize, maxPipelineRayHitAttributeSize );
     }
@@ -131315,9 +126719,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineCreateFlags const &,
@@ -131332,7 +126733,6 @@ namespace VULKAN_HPP_NAMESPACE
                PipelineLayout const &,
                Pipeline const &,
                int32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -131496,9 +126896,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                RayTracingShaderGroupTypeKHR const &,
@@ -131506,7 +126903,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, type, generalShader, closestHitShader, anyHitShader, intersectionShader );
@@ -131721,9 +127117,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineCreateFlags const &,
@@ -131735,7 +127128,6 @@ namespace VULKAN_HPP_NAMESPACE
                PipelineLayout const &,
                Pipeline const &,
                int32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, stageCount, pStages, groupCount, pGroups, maxRecursionDepth, layout, basePipelineHandle, basePipelineIndex );
@@ -131827,12 +127219,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( refreshDuration );
     }
@@ -131927,12 +127314,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Pipeline const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Pipeline const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pipeline );
     }
@@ -132068,11 +127450,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, SwapchainKHR const &, uint32_t const &, const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchain, imageIndexCount, pImageIndices );
@@ -132205,12 +127583,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const ImageView * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const ImageView * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, attachmentCount, pAttachments );
     }
@@ -132372,12 +127745,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, RenderPass const &, Framebuffer const &, Rect2D const &, uint32_t const &, const ClearValue * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, renderPass, framebuffer, renderArea, clearValueCount, pClearValues );
@@ -132612,9 +127981,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<SubpassDescriptionFlags const &,
                PipelineBindPoint const &,
                uint32_t const &,
@@ -132625,7 +127991,6 @@ namespace VULKAN_HPP_NAMESPACE
                const AttachmentReference * const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( flags,
@@ -132777,9 +128142,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &,
                uint32_t const &,
                PipelineStageFlags const &,
@@ -132787,7 +128149,6 @@ namespace VULKAN_HPP_NAMESPACE
                AccessFlags const &,
                AccessFlags const &,
                DependencyFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( srcSubpass, dstSubpass, srcStageMask, dstStageMask, srcAccessMask, dstAccessMask, dependencyFlags );
@@ -132984,9 +128345,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                RenderPassCreateFlags const &,
@@ -132996,7 +128354,6 @@ namespace VULKAN_HPP_NAMESPACE
                const SubpassDescription * const &,
                uint32_t const &,
                const SubpassDependency * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, attachmentCount, pAttachments, subpassCount, pSubpasses, dependencyCount, pDependencies );
@@ -133259,9 +128616,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                SubpassDescriptionFlags const &,
@@ -133275,7 +128629,6 @@ namespace VULKAN_HPP_NAMESPACE
                const AttachmentReference2 * const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -133460,9 +128813,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -133473,7 +128823,6 @@ namespace VULKAN_HPP_NAMESPACE
                AccessFlags const &,
                DependencyFlags const &,
                int32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcSubpass, dstSubpass, srcStageMask, dstStageMask, srcAccessMask, dstAccessMask, dependencyFlags, viewOffset );
@@ -133709,9 +129058,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                RenderPassCreateFlags const &,
@@ -133723,7 +129069,6 @@ namespace VULKAN_HPP_NAMESPACE
                const SubpassDependency2 * const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -133849,12 +129194,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, disallowMerging );
     }
@@ -133939,12 +129279,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( postMergeSubpassCount );
     }
@@ -134041,12 +129376,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, RenderPassCreationFeedbackInfoEXT * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, RenderPassCreationFeedbackInfoEXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pRenderPassFeedback );
     }
@@ -134151,12 +129481,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, AttachmentReference const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, AttachmentReference const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentDensityMapAttachment );
     }
@@ -134289,12 +129614,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Offset2D * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Offset2D * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fragmentDensityOffsetCount, pFragmentDensityOffsets );
     }
@@ -134429,11 +129749,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const InputAttachmentAspectReference * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, aspectReferenceCount, pAspectReferences );
@@ -134625,9 +129941,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -134636,7 +129949,6 @@ namespace VULKAN_HPP_NAMESPACE
                const int32_t * const &,
                uint32_t const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, subpassCount, pViewMasks, dependencyCount, pViewOffsets, correlationMaskCount, pCorrelationMasks );
@@ -134745,12 +130057,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, SampleLocationsInfoEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, SampleLocationsInfoEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( subpassIndex, sampleLocationsInfo );
     }
@@ -134908,16 +130215,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                const AttachmentSampleLocationsEXT * const &,
                uint32_t const &,
                const SubpassSampleLocationsEXT * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -135026,12 +130329,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Rect2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Rect2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stripeArea );
     }
@@ -135158,12 +130456,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const RenderPassStripeInfoARM * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const RenderPassStripeInfoARM * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stripeInfoCount, pStripeInfos );
     }
@@ -135290,11 +130583,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Semaphore const &, uint64_t const &, PipelineStageFlags2 const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphore, value, stageMask, deviceIndex );
@@ -135432,12 +130721,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const SemaphoreSubmitInfo * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const SemaphoreSubmitInfo * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stripeSemaphoreInfoCount, pStripeSemaphoreInfos );
     }
@@ -135528,12 +130812,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<SubpassMergeStatusEXT const &, ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<SubpassMergeStatusEXT const &, ArrayWrapper1D<char, VK_MAX_DESCRIPTION_SIZE> const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( subpassMergeStatus, description, postMergeIndex );
     }
@@ -135638,12 +130917,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, RenderPassSubpassFeedbackInfoEXT * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, RenderPassSubpassFeedbackInfoEXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pSubpassFeedback );
     }
@@ -135755,12 +131029,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, TileShadingRenderPassFlagsQCOM const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, TileShadingRenderPassFlagsQCOM const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, tileApronSize );
     }
@@ -135865,12 +131134,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SurfaceTransformFlagBitsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SurfaceTransformFlagBitsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, transform );
     }
@@ -136027,11 +131291,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, const Format * const &, Format const &, Format const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, viewMask, colorAttachmentCount, pColorAttachmentFormats, depthAttachmentFormat, stencilAttachmentFormat );
@@ -136199,9 +131459,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ImageView const &,
@@ -136212,7 +131469,6 @@ namespace VULKAN_HPP_NAMESPACE
                AttachmentLoadOp const &,
                AttachmentStoreOp const &,
                ClearValue const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageView, imageLayout, resolveMode, resolveImageView, resolveImageLayout, loadOp, storeOp, clearValue );
@@ -136335,12 +131591,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint32_t * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint32_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, colorAttachmentCount, pColorAttachmentLocations );
     }
@@ -136435,12 +131686,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext );
     }
@@ -136551,12 +131797,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageView const &, ImageLayout const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageView const &, ImageLayout const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageView, imageLayout );
     }
@@ -136679,12 +131920,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageView const &, ImageLayout const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageView const &, ImageLayout const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, imageView, imageLayout, shadingRateAttachmentTexelSize );
     }
@@ -136874,9 +132110,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                RenderingFlags const &,
@@ -136887,7 +132120,6 @@ namespace VULKAN_HPP_NAMESPACE
                const RenderingAttachmentInfo * const &,
                const RenderingAttachmentInfo * const &,
                const RenderingAttachmentInfo * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, renderArea, layerCount, viewMask, colorAttachmentCount, pColorAttachments, pDepthAttachment, pStencilAttachment );
@@ -137054,11 +132286,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint32_t * const &, const uint32_t * const &, const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, colorAttachmentCount, pColorAttachmentInputIndices, pDepthInputAttachmentIndex, pStencilInputAttachmentIndex );
@@ -137233,9 +132461,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Image const &,
@@ -137244,7 +132469,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageLayout const &,
                uint32_t const &,
                const ImageResolve2 * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcImage, srcImageLayout, dstImage, dstImageLayout, regionCount, pRegions );
@@ -137366,12 +132590,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Extent2D const &, BlockMatchWindowCompareModeQCOM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Extent2D const &, BlockMatchWindowCompareModeQCOM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, windowExtent, windowCompareMode );
     }
@@ -137484,12 +132703,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ComponentMapping const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ComponentMapping const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, components, srgb );
     }
@@ -137593,12 +132807,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Sampler const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Sampler const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, sampler );
     }
@@ -137818,9 +133027,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                SamplerCreateFlags const &,
@@ -137839,7 +133045,6 @@ namespace VULKAN_HPP_NAMESPACE
                float const &,
                BorderColor const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -137980,12 +133185,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, CubicFilterWeightsQCOM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, CubicFilterWeightsQCOM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, cubicWeights );
     }
@@ -138097,12 +133297,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ClearColorValue const &, Format const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ClearColorValue const &, Format const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, customBorderColor, format );
     }
@@ -138189,12 +133384,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SamplerReductionMode const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SamplerReductionMode const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, reductionMode );
     }
@@ -138356,9 +133546,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Format const &,
@@ -138369,7 +133556,6 @@ namespace VULKAN_HPP_NAMESPACE
                ChromaLocation const &,
                Filter const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, format, ycbcrModel, ycbcrRange, components, xChromaOffset, yChromaOffset, chromaFilter, forceExplicitReconstruction );
@@ -138472,12 +133658,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, combinedImageSamplerDescriptorCount );
     }
@@ -138581,12 +133762,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SamplerYcbcrConversion const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SamplerYcbcrConversion const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, conversion );
     }
@@ -138701,12 +133877,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, enableYDegamma, enableCbCrDegamma );
     }
@@ -138814,9 +133985,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                void * const &,
                Format const &,
@@ -138828,7 +133996,6 @@ namespace VULKAN_HPP_NAMESPACE
                SamplerYcbcrRange const &,
                ChromaLocation const &,
                ChromaLocation const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -138943,12 +134110,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, allocationSize, memoryTypeBits );
     }
@@ -139070,12 +134232,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::
       tuple<StructureType const &, const void * const &, ScreenSurfaceCreateFlagsQNX const &, struct _screen_context * const &, struct _screen_window * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, context, window );
@@ -139180,12 +134338,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SemaphoreCreateFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SemaphoreCreateFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -139296,12 +134449,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Semaphore const &, ExternalSemaphoreHandleTypeFlagBits const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Semaphore const &, ExternalSemaphoreHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphore, handleType );
     }
@@ -139415,12 +134563,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, Semaphore const &, ExternalSemaphoreHandleTypeFlagBits const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Semaphore const &, ExternalSemaphoreHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphore, handleType );
     }
@@ -139535,12 +134678,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, Semaphore const &, ExternalSemaphoreHandleTypeFlagBits const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Semaphore const &, ExternalSemaphoreHandleTypeFlagBits const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphore, handleType );
     }
@@ -139650,12 +134788,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Semaphore const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Semaphore const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphore, value );
     }
@@ -139769,12 +134902,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SemaphoreType const &, uint64_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SemaphoreType const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, semaphoreType, initialValue );
     }
@@ -139941,11 +135069,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, SemaphoreWaitFlags const &, uint32_t const &, const Semaphore * const &, const uint64_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, semaphoreCount, pSemaphores, pValues );
@@ -140141,9 +135265,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ShaderStageFlags const &,
@@ -140152,7 +135273,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const uint32_t * const &,
                const DeviceSize * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stageFlags, layout, firstSet, setCount, pBufferIndices, pOffsets );
@@ -140270,12 +135390,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint64_t const &, LatencyMarkerNV const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint64_t const &, LatencyMarkerNV const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentID, marker );
     }
@@ -140384,12 +135499,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, numFramesPerBatch, presentConfigFeedback );
     }
@@ -140482,12 +135592,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( data );
     }
@@ -140726,9 +135831,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                ShaderCreateFlagsEXT const &,
@@ -140743,7 +135845,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const PushConstantRange * const &,
                const SpecializationInfo * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -140936,11 +136037,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, ShaderModuleCreateFlags const &, size_t const &, const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, codeSize, pCode );
@@ -141034,11 +136131,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, ArrayWrapper1D<uint8_t, VK_MAX_SHADER_MODULE_IDENTIFIER_SIZE_EXT> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, identifierSize, identifier );
@@ -141155,12 +136248,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ValidationCacheEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ValidationCacheEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, validationCache );
     }
@@ -141252,12 +136340,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, size_t const &, size_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &, size_t const &, size_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( numUsedVgprs, numUsedSgprs, ldsSizePerLocalWorkGroup, ldsUsageSizeInBytes, scratchMemUsageInBytes );
     }
@@ -141350,9 +136433,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<ShaderStageFlags const &,
                ShaderResourceUsageAMD const &,
                uint32_t const &,
@@ -141360,7 +136440,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                ArrayWrapper1D<uint32_t, 3> const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( shaderStageMask, resourceUsage, numPhysicalVgprs, numPhysicalSgprs, numAvailableVgprs, numAvailableSgprs, computeWorkGroupSize );
@@ -141451,12 +136530,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, ImageUsageFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, ImageUsageFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, sharedPresentSupportedUsageFlags );
     }
@@ -141543,12 +136617,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<ImageAspectFlags const &, Extent3D const &, SparseImageFormatFlags const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<ImageAspectFlags const &, Extent3D const &, SparseImageFormatFlags const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( aspectMask, imageGranularity, flags );
     }
@@ -141630,12 +136699,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, SparseImageFormatProperties const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, SparseImageFormatProperties const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, properties );
     }
@@ -141730,11 +136794,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<SparseImageFormatProperties const &, uint32_t const &, DeviceSize const &, DeviceSize const &, DeviceSize const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( formatProperties, imageMipTailFirstLod, imageMipTailSize, imageMipTailOffset, imageMipTailStride );
@@ -141822,12 +136882,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, SparseImageMemoryRequirements const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, SparseImageMemoryRequirements const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryRequirements );
     }
@@ -141942,11 +136997,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, StreamDescriptorSurfaceCreateFlagsGGP const &, GgpStreamDescriptor const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, streamDescriptor );
@@ -142168,9 +137219,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -142180,7 +137228,6 @@ namespace VULKAN_HPP_NAMESPACE
                const CommandBuffer * const &,
                uint32_t const &,
                const Semaphore * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -142384,9 +137431,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                SubmitFlags const &,
@@ -142396,7 +137440,6 @@ namespace VULKAN_HPP_NAMESPACE
                const CommandBufferSubmitInfo * const &,
                uint32_t const &,
                const SemaphoreSubmitInfo * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -142515,12 +137558,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SubpassContents const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SubpassContents const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, contents );
     }
@@ -142643,11 +137681,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, ResolveModeFlagBits const &, ResolveModeFlagBits const &, const AttachmentReference2 * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, depthResolveMode, stencilResolveMode, pDepthStencilResolveAttachment );
@@ -142742,12 +137776,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext );
     }
@@ -142837,12 +137866,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, optimal );
     }
@@ -142953,12 +137977,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, RenderPass const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, RenderPass const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, renderPass, subpass );
     }
@@ -143047,12 +138066,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, size );
     }
@@ -143139,12 +138153,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, SubresourceLayout const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, SubresourceLayout const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, subresourceLayout );
     }
@@ -143256,9 +138265,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                uint32_t const &,
@@ -143272,7 +138278,6 @@ namespace VULKAN_HPP_NAMESPACE
                CompositeAlphaFlagsKHR const &,
                ImageUsageFlags const &,
                SurfaceCounterFlagsEXT const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -143401,9 +138406,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<uint32_t const &,
                uint32_t const &,
                Extent2D const &,
@@ -143414,7 +138416,6 @@ namespace VULKAN_HPP_NAMESPACE
                SurfaceTransformFlagBitsKHR const &,
                CompositeAlphaFlagsKHR const &,
                ImageUsageFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( minImageCount,
@@ -143516,12 +138517,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, SurfaceCapabilitiesKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, SurfaceCapabilitiesKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, surfaceCapabilities );
     }
@@ -143611,12 +138607,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fullScreenExclusiveSupported );
     }
@@ -143706,12 +138697,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentBarrierSupported );
     }
@@ -143814,12 +138800,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentId2Supported );
     }
@@ -143922,12 +138903,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentWait2Supported );
     }
@@ -144009,12 +138985,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<Format const &, ColorSpaceKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<Format const &, ColorSpaceKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( format, colorSpace );
     }
@@ -144092,12 +139063,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, SurfaceFormatKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, SurfaceFormatKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, surfaceFormat );
     }
@@ -144202,12 +139168,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, void * const &, FullScreenExclusiveEXT const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, FullScreenExclusiveEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, fullScreenExclusive );
     }
@@ -144312,12 +139273,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, HMONITOR const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, HMONITOR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, hmonitor );
     }
@@ -144445,12 +139401,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, PresentModeKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, PresentModeKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentModeCount, pPresentModes );
     }
@@ -144555,12 +139506,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, PresentModeKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, PresentModeKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentMode );
     }
@@ -144701,9 +139647,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                PresentScalingFlagsKHR const &,
@@ -144711,7 +139654,6 @@ namespace VULKAN_HPP_NAMESPACE
                PresentGravityFlagsKHR const &,
                Extent2D const &,
                Extent2D const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, supportedPresentScaling, supportedPresentGravityX, supportedPresentGravityY, minScaledImageExtent, maxScaledImageExtent );
@@ -144809,12 +139751,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, supportsProtected );
     }
@@ -144917,12 +139854,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, SurfaceCounterFlagsEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, SurfaceCounterFlagsEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, surfaceCounters );
     }
@@ -145192,9 +140124,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                SwapchainCreateFlagsKHR const &,
@@ -145213,7 +140142,6 @@ namespace VULKAN_HPP_NAMESPACE
                PresentModeKHR const &,
                Bool32 const &,
                SwapchainKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -145354,12 +140282,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, localDimmingEnable );
     }
@@ -145461,12 +140384,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, latencyModeEnable );
     }
@@ -145569,12 +140487,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentBarrierEnable );
     }
@@ -145700,12 +140613,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Fence * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const Fence * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchainCount, pFences );
     }
@@ -145835,12 +140743,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PresentModeKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PresentModeKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, swapchainCount, pPresentModes );
     }
@@ -145971,12 +140874,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PresentModeKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PresentModeKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, presentModeCount, pPresentModes );
     }
@@ -146099,11 +140997,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, PresentScalingFlagsKHR const &, PresentGravityFlagsKHR const &, PresentGravityFlagsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, scalingBehavior, presentGravityX, presentGravityY );
@@ -146212,12 +141106,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, TensorARM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, TensorARM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensor );
     }
@@ -146368,9 +141257,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                PipelineStageFlags2 const &,
@@ -146380,7 +141266,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                TensorARM const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, srcStageMask, srcAccessMask, dstStageMask, dstAccessMask, srcQueueFamilyIndex, dstQueueFamilyIndex, tensor );
@@ -146500,12 +141385,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const TensorMemoryBarrierARM * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const TensorMemoryBarrierARM * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensorMemoryBarrierCount, pTensorMemoryBarriers );
     }
@@ -146598,12 +141478,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, FormatFeatureFlags2 const &, FormatFeatureFlags2 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, FormatFeatureFlags2 const &, FormatFeatureFlags2 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, optimalTilingTensorFeatures, linearTilingTensorFeatures );
     }
@@ -146708,12 +141583,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, TensorARM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, TensorARM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensor );
     }
@@ -146816,12 +141686,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, TensorViewARM const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, TensorViewARM const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensorView );
     }
@@ -146940,11 +141805,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, TensorViewCreateFlagsARM const &, TensorARM const &, Format const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, tensor, format );
@@ -147036,12 +141897,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, supportsTextureGatherLODBiasAMD );
     }
@@ -147143,12 +141999,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceMemory const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceMemory const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memory );
     }
@@ -147257,12 +142108,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, DeviceSize const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, size, alignment );
     }
@@ -147365,12 +142211,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, DeviceSize const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, size );
     }
@@ -147484,12 +142325,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Extent3D const &, Extent2D const &, Offset2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Extent3D const &, Extent2D const &, Offset2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tileSize, apronSize, origin );
     }
@@ -147649,11 +142485,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, const uint64_t * const &, uint32_t const &, const uint64_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, waitSemaphoreValueCount, pWaitSemaphoreValues, signalSemaphoreValueCount, pSignalSemaphoreValues );
@@ -147859,9 +142691,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<DeviceAddress const &,
                DeviceSize const &,
                DeviceAddress const &,
@@ -147876,7 +142705,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( raygenShaderRecordAddress,
@@ -148013,12 +142841,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( width, height, depth );
     }
@@ -148149,11 +142972,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, ValidationCacheCreateFlagsEXT const &, size_t const &, const void * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, initialDataSize, pInitialData );
@@ -148319,16 +143138,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                const ValidationFeatureEnableEXT * const &,
                uint32_t const &,
                const ValidationFeatureDisableEXT * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, enabledValidationFeatureCount, pEnabledValidationFeatures, disabledValidationFeatureCount, pDisabledValidationFeatures );
@@ -148460,12 +143275,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const ValidationCheckEXT * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const ValidationCheckEXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, disabledValidationCheckCount, pDisabledValidationChecks );
     }
@@ -148592,12 +143402,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, Format const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, Format const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, location, binding, format, offset );
     }
@@ -148729,11 +143534,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, void * const &, uint32_t const &, uint32_t const &, VertexInputRate const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, binding, stride, inputRate, divisor );
@@ -148848,12 +143649,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
-    std::tuple<StructureType const &, const void * const &, ViSurfaceCreateFlagsNN const &, void * const &>
-#    endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ViSurfaceCreateFlagsNN const &, void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, window );
     }
@@ -148982,11 +143778,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Offset2D const &, Extent2D const &, uint32_t const &, ImageView const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, codedOffset, codedExtent, baseArrayLayer, imageViewBinding );
@@ -149102,12 +143894,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, int32_t const &, const VideoPictureResourceInfoKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, int32_t const &, const VideoPictureResourceInfoKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, slotIndex, pPictureResource );
     }
@@ -149268,9 +144055,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoBeginCodingFlagsKHR const &,
@@ -149278,7 +144062,6 @@ namespace VULKAN_HPP_NAMESPACE
                VideoSessionParametersKHR const &,
                uint32_t const &,
                const VideoReferenceSlotInfoKHR * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, videoSession, videoSessionParameters, referenceSlotCount, pReferenceSlots );
@@ -149390,9 +144173,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                VideoCapabilityFlagsKHR const &,
@@ -149404,7 +144184,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                ExtensionProperties const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -149529,12 +144308,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, VideoCodingControlFlagsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, VideoCodingControlFlagsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -149623,12 +144397,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, StdVideoAV1Level const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, StdVideoAV1Level const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxLevel );
     }
@@ -149737,12 +144506,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const StdVideoDecodeAV1ReferenceInfo * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const StdVideoDecodeAV1ReferenceInfo * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdReferenceInfo );
     }
@@ -149847,12 +144611,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const StdVideoAV1SequenceHeader * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const StdVideoAV1SequenceHeader * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdSequenceHeader );
     }
@@ -150041,9 +144800,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                const StdVideoDecodeAV1PictureInfo * const &,
@@ -150052,7 +144808,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const uint32_t * const &,
                const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdPictureInfo, referenceNameSlotIndices, frameHeaderOffset, tileCount, pTileOffsets, pTileSizes );
@@ -150170,12 +144925,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, StdVideoAV1Profile const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, StdVideoAV1Profile const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdProfile, filmGrainSupport );
     }
@@ -150290,12 +145040,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const StdVideoAV1SequenceHeader * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const StdVideoAV1SequenceHeader * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdSequenceHeader );
     }
@@ -150383,12 +145128,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, VideoDecodeCapabilityFlagsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, VideoDecodeCapabilityFlagsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -150480,12 +145220,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, StdVideoH264LevelIdc const &, Offset2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, StdVideoH264LevelIdc const &, Offset2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxLevelIdc, fieldOffsetGranularity );
     }
@@ -150600,12 +145335,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const StdVideoDecodeH264ReferenceInfo * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const StdVideoDecodeH264ReferenceInfo * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdReferenceInfo );
     }
@@ -150718,11 +145448,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, const StdVideoH264SequenceParameterSet * const &, const StdVideoH264PictureParameterSet * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdSPS, pStdPPS );
@@ -150862,11 +145588,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, const StdVideoDecodeH264PictureInfo * const &, uint32_t const &, const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdPictureInfo, sliceCount, pSliceOffsets );
@@ -150983,11 +145705,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, StdVideoH264ProfileIdc const &, VideoDecodeH264PictureLayoutFlagBitsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdProfileIdc, pictureLayout );
@@ -151159,16 +145877,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                const StdVideoH264SequenceParameterSet * const &,
                uint32_t const &,
                const StdVideoH264PictureParameterSet * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdSPSCount, pStdSPSs, stdPPSCount, pStdPPSs );
@@ -151295,11 +146009,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, const VideoDecodeH264SessionParametersAddInfoKHR * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxStdSPSCount, maxStdPPSCount, pParametersAddInfo );
@@ -151392,12 +146102,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, StdVideoH265LevelIdc const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, StdVideoH265LevelIdc const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxLevelIdc );
     }
@@ -151508,12 +146213,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const StdVideoDecodeH265ReferenceInfo * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const StdVideoDecodeH265ReferenceInfo * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdReferenceInfo );
     }
@@ -151634,15 +146334,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                const StdVideoH265VideoParameterSet * const &,
                const StdVideoH265SequenceParameterSet * const &,
                const StdVideoH265PictureParameterSet * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdVPS, pStdSPS, pStdPPS );
@@ -151786,11 +146482,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, const StdVideoDecodeH265PictureInfo * const &, uint32_t const &, const uint32_t * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdPictureInfo, sliceSegmentCount, pSliceSegmentOffsets );
@@ -151897,12 +146589,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, StdVideoH265ProfileIdc const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, StdVideoH265ProfileIdc const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdProfileIdc );
     }
@@ -152097,9 +146784,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -152108,7 +146792,6 @@ namespace VULKAN_HPP_NAMESPACE
                const StdVideoH265SequenceParameterSet * const &,
                uint32_t const &,
                const StdVideoH265PictureParameterSet * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdVPSCount, pStdVPSs, stdSPSCount, pStdSPSs, stdPPSCount, pStdPPSs );
@@ -152245,16 +146928,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                uint32_t const &,
                uint32_t const &,
                const VideoDecodeH265SessionParametersAddInfoKHR * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxStdVPSCount, maxStdSPSCount, maxStdPPSCount, pParametersAddInfo );
@@ -152446,9 +147125,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoDecodeFlagsKHR const &,
@@ -152459,7 +147135,6 @@ namespace VULKAN_HPP_NAMESPACE
                const VideoReferenceSlotInfoKHR * const &,
                uint32_t const &,
                const VideoReferenceSlotInfoKHR * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie(
@@ -152573,12 +147248,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, VideoDecodeUsageFlagsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, VideoDecodeUsageFlagsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoUsageHints );
     }
@@ -152667,12 +147337,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, StdVideoVP9Level const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, StdVideoVP9Level const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxLevel );
     }
@@ -152814,9 +147479,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                const StdVideoDecodeVP9PictureInfo * const &,
@@ -152824,7 +147486,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdPictureInfo, referenceNameSlotIndices, uncompressedHeaderOffset, compressedHeaderOffset, tilesOffset );
@@ -152933,12 +147594,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, StdVideoVP9Profile const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, StdVideoVP9Profile const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdProfile );
     }
@@ -153080,9 +147736,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                VideoEncodeAV1CapabilityFlagsKHR const &,
@@ -153109,7 +147762,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                VideoEncodeAV1StdFlagsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -153328,12 +147980,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const StdVideoEncodeAV1ReferenceInfo * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const StdVideoEncodeAV1ReferenceInfo * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdReferenceInfo );
     }
@@ -153440,12 +148087,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( intraFrameSize, predictiveFrameSize, bipredictiveFrameSize );
     }
@@ -153568,11 +148210,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Bool32 const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, useGopRemainingFrames, gopRemainingIntra, gopRemainingPredictive, gopRemainingBipredictive );
@@ -153730,9 +148368,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoEncodeAV1PredictionModeKHR const &,
@@ -153742,7 +148377,6 @@ namespace VULKAN_HPP_NAMESPACE
                ArrayWrapper1D<int32_t, VK_MAX_VIDEO_AV1_REFERENCES_PER_FRAME_KHR> const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -153862,12 +148496,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, StdVideoAV1Profile const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, StdVideoAV1Profile const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdProfile );
     }
@@ -153980,12 +148609,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( intraQIndex, predictiveQIndex, bipredictiveQIndex );
     }
@@ -154097,9 +148721,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                VideoEncodeAV1RateControlFlagsKHR const &,
@@ -154117,7 +148738,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -154251,12 +148871,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, int32_t const &, int32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, int32_t const &, int32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minQIndexDelta, maxQIndexDelta );
     }
@@ -154394,9 +149009,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoEncodeAV1RateControlFlagsKHR const &,
@@ -154404,7 +149016,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, gopFrameCount, keyFramePeriod, consecutiveBipredictiveFrameCount, temporalLayerCount );
@@ -154555,9 +149166,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Bool32 const &,
@@ -154566,7 +149174,6 @@ namespace VULKAN_HPP_NAMESPACE
                VideoEncodeAV1QIndexKHR const &,
                Bool32 const &,
                VideoEncodeAV1FrameSizeKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, useMinQIndex, minQIndex, useMaxQIndex, maxQIndex, useMaxFrameSize, maxFrameSize );
@@ -154685,12 +149292,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, StdVideoAV1Level const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, StdVideoAV1Level const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, useMaxLevel, maxLevel );
     }
@@ -154855,16 +149457,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                const StdVideoAV1SequenceHeader * const &,
                const StdVideoEncodeAV1DecoderModelInfo * const &,
                uint32_t const &,
                const StdVideoEncodeAV1OperatingPointInfo * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdSequenceHeader, pStdDecoderModelInfo, stdOperatingPointCount, pStdOperatingPoints );
@@ -154971,9 +149569,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                VideoEncodeCapabilityFlagsKHR const &,
@@ -154983,7 +149578,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                Extent2D const &,
                VideoEncodeFeedbackFlagsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -155114,9 +149708,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                VideoEncodeH264CapabilityFlagsKHR const &,
@@ -155132,7 +149723,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                VideoEncodeH264StdFlagsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -155300,12 +149890,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const StdVideoEncodeH264ReferenceInfo * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const StdVideoEncodeH264ReferenceInfo * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdReferenceInfo );
     }
@@ -155411,12 +149996,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( frameISize, framePSize, frameBSize );
     }
@@ -155538,11 +150118,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Bool32 const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, useGopRemainingFrames, gopRemainingI, gopRemainingP, gopRemainingB );
@@ -155659,12 +150235,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, int32_t const &, const StdVideoEncodeH264SliceHeader * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, int32_t const &, const StdVideoEncodeH264SliceHeader * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, constantQp, pStdSliceHeader );
     }
@@ -155818,16 +150389,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                const VideoEncodeH264NaluSliceInfoKHR * const &,
                const StdVideoEncodeH264PictureInfo * const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, naluSliceEntryCount, pNaluSliceEntries, pStdPictureInfo, generatePrefixNalu );
@@ -155935,12 +150502,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, StdVideoH264ProfileIdc const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, StdVideoH264ProfileIdc const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdProfileIdc );
     }
@@ -156052,12 +150614,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<int32_t const &, int32_t const &, int32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<int32_t const &, int32_t const &, int32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( qpI, qpP, qpB );
     }
@@ -156157,9 +150714,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                VideoEncodeH264RateControlFlagsKHR const &,
@@ -156171,7 +150725,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -156287,12 +150840,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, int32_t const &, int32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, int32_t const &, int32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minQpDelta, maxQpDelta );
     }
@@ -156429,9 +150977,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoEncodeH264RateControlFlagsKHR const &,
@@ -156439,7 +150984,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, gopFrameCount, idrPeriod, consecutiveBFrameCount, temporalLayerCount );
@@ -156589,9 +151133,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Bool32 const &,
@@ -156600,7 +151141,6 @@ namespace VULKAN_HPP_NAMESPACE
                VideoEncodeH264QpKHR const &,
                Bool32 const &,
                VideoEncodeH264FrameSizeKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, useMinQp, minQp, useMaxQp, maxQp, useMaxFrameSize, maxFrameSize );
@@ -156719,12 +151259,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, StdVideoH264LevelIdc const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, StdVideoH264LevelIdc const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, useMaxLevelIdc, maxLevelIdc );
     }
@@ -156895,16 +151430,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                const StdVideoH264SequenceParameterSet * const &,
                uint32_t const &,
                const StdVideoH264PictureParameterSet * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdSPSCount, pStdSPSs, stdPPSCount, pStdPPSs );
@@ -157031,11 +151562,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &, const VideoEncodeH264SessionParametersAddInfoKHR * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxStdSPSCount, maxStdPPSCount, pParametersAddInfo );
@@ -157132,12 +151659,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, hasStdSPSOverrides, hasStdPPSOverrides );
     }
@@ -157264,11 +151786,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Bool32 const &, Bool32 const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, writeStdSPS, writeStdPPS, stdSPSId, stdPPSId );
@@ -157393,9 +151911,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                VideoEncodeH265CapabilityFlagsKHR const &,
@@ -157414,7 +151929,6 @@ namespace VULKAN_HPP_NAMESPACE
                Bool32 const &,
                Bool32 const &,
                VideoEncodeH265StdFlagsKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -157595,12 +152109,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, const StdVideoEncodeH265ReferenceInfo * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, const StdVideoEncodeH265ReferenceInfo * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, pStdReferenceInfo );
     }
@@ -157706,12 +152215,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<uint32_t const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( frameISize, framePSize, frameBSize );
     }
@@ -157833,11 +152337,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, Bool32 const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, useGopRemainingFrames, gopRemainingI, gopRemainingP, gopRemainingB );
@@ -157955,11 +152455,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, int32_t const &, const StdVideoEncodeH265SliceSegmentHeader * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, constantQp, pStdSliceSegmentHeader );
@@ -158104,15 +152600,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                const VideoEncodeH265NaluSliceSegmentInfoKHR * const &,
                const StdVideoEncodeH265PictureInfo * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, naluSliceSegmentEntryCount, pNaluSliceSegmentEntries, pStdPictureInfo );
@@ -158219,12 +152711,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, StdVideoH265ProfileIdc const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, StdVideoH265ProfileIdc const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdProfileIdc );
     }
@@ -158336,12 +152823,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<int32_t const &, int32_t const &, int32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<int32_t const &, int32_t const &, int32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( qpI, qpP, qpB );
     }
@@ -158439,9 +152921,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                VideoEncodeH265RateControlFlagsKHR const &,
@@ -158452,7 +152931,6 @@ namespace VULKAN_HPP_NAMESPACE
                VideoEncodeH265QpKHR const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -158565,12 +153043,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, int32_t const &, int32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, int32_t const &, int32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, minQpDelta, maxQpDelta );
     }
@@ -158707,9 +153180,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoEncodeH265RateControlFlagsKHR const &,
@@ -158717,7 +153187,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, gopFrameCount, idrPeriod, consecutiveBFrameCount, subLayerCount );
@@ -158867,9 +153336,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                Bool32 const &,
@@ -158878,7 +153344,6 @@ namespace VULKAN_HPP_NAMESPACE
                VideoEncodeH265QpKHR const &,
                Bool32 const &,
                VideoEncodeH265FrameSizeKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, useMinQp, minQp, useMaxQp, maxQp, useMaxFrameSize, maxFrameSize );
@@ -158997,12 +153462,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Bool32 const &, StdVideoH265LevelIdc const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &, StdVideoH265LevelIdc const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, useMaxLevelIdc, maxLevelIdc );
     }
@@ -159201,9 +153661,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -159212,7 +153669,6 @@ namespace VULKAN_HPP_NAMESPACE
                const StdVideoH265SequenceParameterSet * const &,
                uint32_t const &,
                const StdVideoH265PictureParameterSet * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, stdVPSCount, pStdVPSs, stdSPSCount, pStdSPSs, stdPPSCount, pStdPPSs );
@@ -159349,16 +153805,12 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
                uint32_t const &,
                uint32_t const &,
                const VideoEncodeH265SessionParametersAddInfoKHR * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxStdVPSCount, maxStdSPSCount, maxStdPPSCount, pParametersAddInfo );
@@ -159458,12 +153910,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, hasStdVPSOverrides, hasStdSPSOverrides, hasStdPPSOverrides );
     }
@@ -159610,12 +154057,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, Bool32 const &, Bool32 const &, Bool32 const &, uint32_t const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, writeStdVPS, writeStdSPS, writeStdPPS, stdVPSId, stdSPSId, stdPPSId );
@@ -159819,9 +154262,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoEncodeFlagsKHR const &,
@@ -159833,7 +154273,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const VideoReferenceSlotInfoKHR * const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -159953,9 +154392,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                VideoEncodeIntraRefreshModeFlagsKHR const &,
@@ -159963,7 +154399,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                Bool32 const &,
                Bool32 const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -160090,12 +154525,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, intraRefreshCycleDuration, intraRefreshIndex );
     }
@@ -160200,12 +154630,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, qualityLevel );
     }
@@ -160298,12 +154723,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, VideoEncodeRateControlModeFlagBitsKHR const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, VideoEncodeRateControlModeFlagBitsKHR const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, preferredRateControlMode, preferredRateControlLayerCount );
     }
@@ -160394,12 +154814,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, maxQuantizationMapExtent );
     }
@@ -160511,12 +154926,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, ImageView const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, ImageView const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, quantizationMap, quantizationMapExtent );
     }
@@ -160626,12 +155036,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, quantizationMapTexelSize );
     }
@@ -160759,11 +155164,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &, const void * const &, uint64_t const &, uint64_t const &, uint32_t const &, uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, averageBitrate, maxBitrate, frameRateNumerator, frameRateDenominator );
@@ -160940,9 +155341,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoEncodeRateControlFlagsKHR const &,
@@ -160951,7 +155349,6 @@ namespace VULKAN_HPP_NAMESPACE
                const VideoEncodeRateControlLayerInfoKHR * const &,
                uint32_t const &,
                uint32_t const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, rateControlMode, layerCount, pLayers, virtualBufferSizeInMs, initialVirtualBufferSizeInMs );
@@ -161065,12 +155462,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, VideoEncodeIntraRefreshModeFlagBitsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, VideoEncodeIntraRefreshModeFlagBitsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, intraRefreshMode );
     }
@@ -161159,12 +155551,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Bool32 const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, hasOverrides );
     }
@@ -161269,12 +155656,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, VideoSessionParametersKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, VideoSessionParametersKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoSessionParameters );
     }
@@ -161393,12 +155775,8 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::
       tuple<StructureType const &, const void * const &, VideoEncodeUsageFlagsKHR const &, VideoEncodeContentFlagsKHR const &, VideoEncodeTuningModeKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, videoUsageHints, videoContentHints, tuningMode );
@@ -161504,12 +155882,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, VideoEndCodingFlagsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, VideoEndCodingFlagsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags );
     }
@@ -161599,12 +155972,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, VideoEncodeAV1SuperblockSizeFlagsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, VideoEncodeAV1SuperblockSizeFlagsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, compatibleSuperblockSizes );
     }
@@ -161694,12 +156062,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, VideoEncodeH265CtbSizeFlagsKHR const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, VideoEncodeH265CtbSizeFlagsKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, compatibleCtbSizes );
     }
@@ -161798,9 +156161,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                void * const &,
                Format const &,
@@ -161809,7 +156169,6 @@ namespace VULKAN_HPP_NAMESPACE
                ImageType const &,
                ImageTiling const &,
                ImageUsageFlags const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, format, componentMapping, imageCreateFlags, imageType, imageTiling, imageUsageFlags );
@@ -161906,12 +156265,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, Extent2D const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, Extent2D const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, quantizationMapTexelSize );
     }
@@ -162030,12 +156384,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, QueryPool const &, uint32_t const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, QueryPool const &, uint32_t const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, queryPool, firstQuery, queryCount );
     }
@@ -162164,12 +156513,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const VideoProfileInfoKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const VideoProfileInfoKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, profileCount, pProfiles );
     }
@@ -162273,12 +156617,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dirtyIntraRefreshRegions );
     }
@@ -162445,9 +156784,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -162459,7 +156795,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                uint32_t const &,
                const ExtensionProperties * const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType,
@@ -162573,12 +156908,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, MemoryRequirements const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, MemoryRequirements const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, memoryBindIndex, memoryRequirements );
     }
@@ -162700,15 +157030,11 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
     std::tuple<StructureType const &,
                const void * const &,
                VideoSessionParametersCreateFlagsKHR const &,
                VideoSessionParametersKHR const &,
                VideoSessionKHR const &>
-#  endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, videoSessionParametersTemplate, videoSession );
@@ -162815,12 +157141,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, updateSequenceCount );
     }
@@ -162940,11 +157261,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, WaylandSurfaceCreateFlagsKHR const &, struct wl_display * const &, struct wl_surface * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, display, surface );
@@ -163196,9 +157513,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -163208,7 +157522,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const DeviceMemory * const &,
                const uint64_t * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, acquireCount, pAcquireSyncs, pAcquireKeys, pAcquireTimeouts, releaseCount, pReleaseSyncs, pReleaseKeys );
@@ -163470,9 +157783,6 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &,
                const void * const &,
                uint32_t const &,
@@ -163482,7 +157792,6 @@ namespace VULKAN_HPP_NAMESPACE
                uint32_t const &,
                const DeviceMemory * const &,
                const uint64_t * const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, acquireCount, pAcquireSyncs, pAcquireKeys, pAcquireTimeoutMilliseconds, releaseCount, pReleaseSyncs, pReleaseKeys );
@@ -163612,11 +157921,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, Win32SurfaceCreateFlagsKHR const &, HINSTANCE const &, HWND const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, hinstance, hwnd );
@@ -163754,12 +158059,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const AccelerationStructureKHR * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const AccelerationStructureKHR * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, accelerationStructureCount, pAccelerationStructures );
     }
@@ -163895,12 +158195,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const AccelerationStructureNV * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const AccelerationStructureNV * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, accelerationStructureCount, pAccelerationStructures );
     }
@@ -164031,12 +158326,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const void * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const void * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, dataSize, pData );
     }
@@ -164175,12 +158465,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, void * const &, uint32_t const &, const DeviceAddress * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, void * const &, uint32_t const &, const DeviceAddress * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, accelerationStructureCount, pAccelerationStructures );
     }
@@ -164308,12 +158593,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, const TensorViewARM * const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const TensorViewARM * const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, tensorViewCount, pTensorViews );
     }
@@ -164425,12 +158705,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, Pipeline const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, Pipeline const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, index, pipeline );
     }
@@ -164541,12 +158816,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-#  if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#  else
-    std::tuple<StructureType const &, const void * const &, uint32_t const &, ShaderEXT const &>
-#  endif
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, ShaderEXT const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, index, shader );
     }
@@ -164667,11 +158937,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, XcbSurfaceCreateFlagsKHR const &, xcb_connection_t * const &, xcb_window_t const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, connection, window );
@@ -164806,11 +159072,7 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
 #  if defined( VULKAN_HPP_USE_REFLECT )
-#    if 14 <= VULKAN_HPP_CPP_VERSION
-    auto
-#    else
     std::tuple<StructureType const &, const void * const &, XlibSurfaceCreateFlagsKHR const &, Display * const &, Window const &>
-#    endif
       reflect() const VULKAN_HPP_NOEXCEPT
     {
       return std::tie( sType, pNext, flags, dpy, window );
