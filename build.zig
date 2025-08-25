@@ -86,11 +86,13 @@ pub fn build(builder: *std.Build) !void {
         try update(&toolbox, vulkan_path);
     }
 
-    const lib = builder.addStaticLibrary(.{
+    const lib = builder.addLibrary(.{
         .name = "vulkan",
-        .root_source_file = builder.addWriteFiles().add("empty.c", ""),
-        .target = target,
-        .optimize = optimize,
+        .root_module = std.Build.Module.create(builder, .{
+            .root_source_file = builder.addWriteFiles().add("empty.zig", ""),
+            .target = target,
+            .optimize = optimize,
+        }),
     });
 
     var vulkan_dir = try std.fs.openDirAbsolute(vulkan_path, .{
