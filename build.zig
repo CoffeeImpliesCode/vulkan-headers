@@ -88,7 +88,7 @@ pub fn build(builder: *std.Build) !void {
 
     const lib = builder.addLibrary(.{
         .name = "vulkan",
-        .root_module = std.Builder.Module.create(builder, .{
+        .root_module = std.Build.Module.create(builder, .{
             .root_source_file = builder.addWriteFiles().add("empty.c", ""),
             .target = target,
             .optimize = optimize,
