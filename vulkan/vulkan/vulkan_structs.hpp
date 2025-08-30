@@ -35049,11 +35049,12 @@ namespace VULKAN_HPP_NAMESPACE
       , flags( flags_ )
       , queueCreateInfoCount( static_cast<uint32_t>( queueCreateInfos_.size() ) )
       , pQueueCreateInfos( queueCreateInfos_.data() )
+      , enabledLayerCount( static_cast<uint32_t>( pEnabledLayerNames_.size() ) )
+      , ppEnabledLayerNames( pEnabledLayerNames_.data() )
       , enabledExtensionCount( static_cast<uint32_t>( pEnabledExtensionNames_.size() ) )
       , ppEnabledExtensionNames( pEnabledExtensionNames_.data() )
       , pEnabledFeatures( pEnabledFeatures_ )
     {
-      detail::ignore( pEnabledLayerNames_ );
     }
 #  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
 
@@ -67888,121 +67889,6 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   using MutableDescriptorTypeCreateInfoVALVE = MutableDescriptorTypeCreateInfoEXT;
-
-#if defined( VK_USE_PLATFORM_OHOS )
-  // wrapper struct for struct VkOHSurfaceCreateInfoOHOS, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkOHSurfaceCreateInfoOHOS.html
-  struct OHSurfaceCreateInfoOHOS
-  {
-    using NativeType = VkOHSurfaceCreateInfoOHOS;
-
-    static const bool                                  allowDuplicate = false;
-    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eOhSurfaceCreateInfoOHOS;
-
-#  if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR
-      OHSurfaceCreateInfoOHOS( SurfaceCreateFlagsOHOS flags_ = {}, OHNativeWindow * window_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
-      : pNext{ pNext_ }
-      , flags{ flags_ }
-      , window{ window_ }
-    {
-    }
-
-    VULKAN_HPP_CONSTEXPR OHSurfaceCreateInfoOHOS( OHSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT = default;
-
-    OHSurfaceCreateInfoOHOS( VkOHSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT
-      : OHSurfaceCreateInfoOHOS( *reinterpret_cast<OHSurfaceCreateInfoOHOS const *>( &rhs ) )
-    {
-    }
-
-    OHSurfaceCreateInfoOHOS & operator=( OHSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT = default;
-#  endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
-
-    OHSurfaceCreateInfoOHOS & operator=( VkOHSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT
-    {
-      *this = *reinterpret_cast<OHSurfaceCreateInfoOHOS const *>( &rhs );
-      return *this;
-    }
-
-#  if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 OHSurfaceCreateInfoOHOS & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
-    {
-      pNext = pNext_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 OHSurfaceCreateInfoOHOS & setFlags( SurfaceCreateFlagsOHOS flags_ ) VULKAN_HPP_NOEXCEPT
-    {
-      flags = flags_;
-      return *this;
-    }
-
-    VULKAN_HPP_CONSTEXPR_14 OHSurfaceCreateInfoOHOS & setWindow( OHNativeWindow * window_ ) VULKAN_HPP_NOEXCEPT
-    {
-      window = window_;
-      return *this;
-    }
-#  endif /*VULKAN_HPP_NO_SETTERS*/
-
-    operator VkOHSurfaceCreateInfoOHOS const &() const VULKAN_HPP_NOEXCEPT
-    {
-      return *reinterpret_cast<const VkOHSurfaceCreateInfoOHOS *>( this );
-    }
-
-    operator VkOHSurfaceCreateInfoOHOS &() VULKAN_HPP_NOEXCEPT
-    {
-      return *reinterpret_cast<VkOHSurfaceCreateInfoOHOS *>( this );
-    }
-
-    operator VkOHSurfaceCreateInfoOHOS const *() const VULKAN_HPP_NOEXCEPT
-    {
-      return reinterpret_cast<const VkOHSurfaceCreateInfoOHOS *>( this );
-    }
-
-    operator VkOHSurfaceCreateInfoOHOS *() VULKAN_HPP_NOEXCEPT
-    {
-      return reinterpret_cast<VkOHSurfaceCreateInfoOHOS *>( this );
-    }
-
-#  if defined( VULKAN_HPP_USE_REFLECT )
-    std::tuple<StructureType const &, const void * const &, SurfaceCreateFlagsOHOS const &, OHNativeWindow * const &> reflect() const VULKAN_HPP_NOEXCEPT
-    {
-      return std::tie( sType, pNext, flags, window );
-    }
-#  endif
-
-#  if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( OHSurfaceCreateInfoOHOS const & ) const = default;
-#  else
-    bool operator==( OHSurfaceCreateInfoOHOS const & rhs ) const VULKAN_HPP_NOEXCEPT
-    {
-#    if defined( VULKAN_HPP_USE_REFLECT )
-      return this->reflect() == rhs.reflect();
-#    else
-      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( flags == rhs.flags ) && ( window == rhs.window );
-#    endif
-    }
-
-    bool operator!=( OHSurfaceCreateInfoOHOS const & rhs ) const VULKAN_HPP_NOEXCEPT
-    {
-      return !operator==( rhs );
-    }
-#  endif
-
-  public:
-    StructureType          sType  = StructureType::eOhSurfaceCreateInfoOHOS;
-    const void *           pNext  = {};
-    SurfaceCreateFlagsOHOS flags  = {};
-    OHNativeWindow *       window = {};
-  };
-
-  template <>
-  struct CppType<StructureType, StructureType::eOhSurfaceCreateInfoOHOS>
-  {
-    using Type = OHSurfaceCreateInfoOHOS;
-  };
-
-  using SurfaceCreateInfoOHOS = OHSurfaceCreateInfoOHOS;
-#endif /*VK_USE_PLATFORM_OHOS*/
 
   // wrapper struct for struct VkOpaqueCaptureDescriptorDataCreateInfoEXT, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkOpaqueCaptureDescriptorDataCreateInfoEXT.html
@@ -138938,6 +138824,119 @@ namespace VULKAN_HPP_NAMESPACE
   {
     using Type = SurfaceCapabilitiesPresentWait2KHR;
   };
+
+#if defined( VK_USE_PLATFORM_OHOS )
+  // wrapper struct for struct VkSurfaceCreateInfoOHOS, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceCreateInfoOHOS.html
+  struct SurfaceCreateInfoOHOS
+  {
+    using NativeType = VkSurfaceCreateInfoOHOS;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eSurfaceCreateInfoOHOS;
+
+#  if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR
+      SurfaceCreateInfoOHOS( SurfaceCreateFlagsOHOS flags_ = {}, OHNativeWindow * window_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , flags{ flags_ }
+      , window{ window_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR SurfaceCreateInfoOHOS( SurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    SurfaceCreateInfoOHOS( VkSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT
+      : SurfaceCreateInfoOHOS( *reinterpret_cast<SurfaceCreateInfoOHOS const *>( &rhs ) )
+    {
+    }
+
+    SurfaceCreateInfoOHOS & operator=( SurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#  endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    SurfaceCreateInfoOHOS & operator=( VkSurfaceCreateInfoOHOS const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<SurfaceCreateInfoOHOS const *>( &rhs );
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 SurfaceCreateInfoOHOS & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SurfaceCreateInfoOHOS & setFlags( SurfaceCreateFlagsOHOS flags_ ) VULKAN_HPP_NOEXCEPT
+    {
+      flags = flags_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SurfaceCreateInfoOHOS & setWindow( OHNativeWindow * window_ ) VULKAN_HPP_NOEXCEPT
+    {
+      window = window_;
+      return *this;
+    }
+#  endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkSurfaceCreateInfoOHOS const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkSurfaceCreateInfoOHOS *>( this );
+    }
+
+    operator VkSurfaceCreateInfoOHOS &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkSurfaceCreateInfoOHOS *>( this );
+    }
+
+    operator VkSurfaceCreateInfoOHOS const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSurfaceCreateInfoOHOS *>( this );
+    }
+
+    operator VkSurfaceCreateInfoOHOS *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSurfaceCreateInfoOHOS *>( this );
+    }
+
+#  if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, const void * const &, SurfaceCreateFlagsOHOS const &, OHNativeWindow * const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, flags, window );
+    }
+#  endif
+
+#  if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( SurfaceCreateInfoOHOS const & ) const = default;
+#  else
+    bool operator==( SurfaceCreateInfoOHOS const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#    if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#    else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( flags == rhs.flags ) && ( window == rhs.window );
+#    endif
+    }
+
+    bool operator!=( SurfaceCreateInfoOHOS const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#  endif
+
+  public:
+    StructureType          sType  = StructureType::eSurfaceCreateInfoOHOS;
+    const void *           pNext  = {};
+    SurfaceCreateFlagsOHOS flags  = {};
+    OHNativeWindow *       window = {};
+  };
+
+  template <>
+  struct CppType<StructureType, StructureType::eSurfaceCreateInfoOHOS>
+  {
+    using Type = SurfaceCreateInfoOHOS;
+  };
+#endif /*VK_USE_PLATFORM_OHOS*/
 
   // wrapper struct for struct VkSurfaceFormatKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSurfaceFormatKHR.html
   struct SurfaceFormatKHR
