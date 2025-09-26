@@ -25120,74 +25120,74 @@ namespace VULKAN_HPP_NAMESPACE
 
   using CopyImageToMemoryInfoEXT = CopyImageToMemoryInfo;
 
-  // wrapper struct for struct VkCopyMemoryIndirectCommandNV, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryIndirectCommandNV.html
-  struct CopyMemoryIndirectCommandNV
+  // wrapper struct for struct VkCopyMemoryIndirectCommandKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryIndirectCommandKHR.html
+  struct CopyMemoryIndirectCommandKHR
   {
-    using NativeType = VkCopyMemoryIndirectCommandNV;
+    using NativeType = VkCopyMemoryIndirectCommandKHR;
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
     VULKAN_HPP_CONSTEXPR
-      CopyMemoryIndirectCommandNV( DeviceAddress srcAddress_ = {}, DeviceAddress dstAddress_ = {}, DeviceSize size_ = {} ) VULKAN_HPP_NOEXCEPT
+      CopyMemoryIndirectCommandKHR( DeviceAddress srcAddress_ = {}, DeviceAddress dstAddress_ = {}, DeviceSize size_ = {} ) VULKAN_HPP_NOEXCEPT
       : srcAddress{ srcAddress_ }
       , dstAddress{ dstAddress_ }
       , size{ size_ }
     {
     }
 
-    VULKAN_HPP_CONSTEXPR CopyMemoryIndirectCommandNV( CopyMemoryIndirectCommandNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    VULKAN_HPP_CONSTEXPR CopyMemoryIndirectCommandKHR( CopyMemoryIndirectCommandKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
-    CopyMemoryIndirectCommandNV( VkCopyMemoryIndirectCommandNV const & rhs ) VULKAN_HPP_NOEXCEPT
-      : CopyMemoryIndirectCommandNV( *reinterpret_cast<CopyMemoryIndirectCommandNV const *>( &rhs ) )
+    CopyMemoryIndirectCommandKHR( VkCopyMemoryIndirectCommandKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : CopyMemoryIndirectCommandKHR( *reinterpret_cast<CopyMemoryIndirectCommandKHR const *>( &rhs ) )
     {
     }
 
-    CopyMemoryIndirectCommandNV & operator=( CopyMemoryIndirectCommandNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    CopyMemoryIndirectCommandKHR & operator=( CopyMemoryIndirectCommandKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
-    CopyMemoryIndirectCommandNV & operator=( VkCopyMemoryIndirectCommandNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    CopyMemoryIndirectCommandKHR & operator=( VkCopyMemoryIndirectCommandKHR const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      *this = *reinterpret_cast<CopyMemoryIndirectCommandNV const *>( &rhs );
+      *this = *reinterpret_cast<CopyMemoryIndirectCommandKHR const *>( &rhs );
       return *this;
     }
 
 #if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectCommandNV & setSrcAddress( DeviceAddress srcAddress_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectCommandKHR & setSrcAddress( DeviceAddress srcAddress_ ) VULKAN_HPP_NOEXCEPT
     {
       srcAddress = srcAddress_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectCommandNV & setDstAddress( DeviceAddress dstAddress_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectCommandKHR & setDstAddress( DeviceAddress dstAddress_ ) VULKAN_HPP_NOEXCEPT
     {
       dstAddress = dstAddress_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectCommandNV & setSize( DeviceSize size_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectCommandKHR & setSize( DeviceSize size_ ) VULKAN_HPP_NOEXCEPT
     {
       size = size_;
       return *this;
     }
 #endif /*VULKAN_HPP_NO_SETTERS*/
 
-    operator VkCopyMemoryIndirectCommandNV const &() const VULKAN_HPP_NOEXCEPT
+    operator VkCopyMemoryIndirectCommandKHR const &() const VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<const VkCopyMemoryIndirectCommandNV *>( this );
+      return *reinterpret_cast<const VkCopyMemoryIndirectCommandKHR *>( this );
     }
 
-    operator VkCopyMemoryIndirectCommandNV &() VULKAN_HPP_NOEXCEPT
+    operator VkCopyMemoryIndirectCommandKHR &() VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<VkCopyMemoryIndirectCommandNV *>( this );
+      return *reinterpret_cast<VkCopyMemoryIndirectCommandKHR *>( this );
     }
 
-    operator VkCopyMemoryIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    operator VkCopyMemoryIndirectCommandKHR const *() const VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<const VkCopyMemoryIndirectCommandNV *>( this );
+      return reinterpret_cast<const VkCopyMemoryIndirectCommandKHR *>( this );
     }
 
-    operator VkCopyMemoryIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    operator VkCopyMemoryIndirectCommandKHR *() VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<VkCopyMemoryIndirectCommandNV *>( this );
+      return reinterpret_cast<VkCopyMemoryIndirectCommandKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -25198,9 +25198,9 @@ namespace VULKAN_HPP_NAMESPACE
 #endif
 
 #if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( CopyMemoryIndirectCommandNV const & ) const = default;
+    auto operator<=>( CopyMemoryIndirectCommandKHR const & ) const = default;
 #else
-    bool operator==( CopyMemoryIndirectCommandNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator==( CopyMemoryIndirectCommandKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
 #  if defined( VULKAN_HPP_USE_REFLECT )
       return this->reflect() == rhs.reflect();
@@ -25209,7 +25209,7 @@ namespace VULKAN_HPP_NAMESPACE
 #  endif
     }
 
-    bool operator!=( CopyMemoryIndirectCommandNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator!=( CopyMemoryIndirectCommandKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
       return !operator==( rhs );
     }
@@ -25223,11 +25223,265 @@ namespace VULKAN_HPP_NAMESPACE
 
 #if 20 <= VULKAN_HPP_CPP_VERSION
   template <>
-  struct CppType<VkCopyMemoryIndirectCommandNV>
+  struct CppType<VkCopyMemoryIndirectCommandKHR>
   {
-    using Type = CopyMemoryIndirectCommandNV;
+    using Type = CopyMemoryIndirectCommandKHR;
   };
 #endif
+  using CopyMemoryIndirectCommandNV = CopyMemoryIndirectCommandKHR;
+
+  // wrapper struct for struct VkStridedDeviceAddressRangeKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkStridedDeviceAddressRangeKHR.html
+  struct StridedDeviceAddressRangeKHR
+  {
+    using NativeType = VkStridedDeviceAddressRangeKHR;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR StridedDeviceAddressRangeKHR( DeviceAddress address_ = {}, DeviceSize size_ = {}, DeviceSize stride_ = {} ) VULKAN_HPP_NOEXCEPT
+      : address{ address_ }
+      , size{ size_ }
+      , stride{ stride_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR StridedDeviceAddressRangeKHR( StridedDeviceAddressRangeKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    StridedDeviceAddressRangeKHR( VkStridedDeviceAddressRangeKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : StridedDeviceAddressRangeKHR( *reinterpret_cast<StridedDeviceAddressRangeKHR const *>( &rhs ) )
+    {
+    }
+
+    StridedDeviceAddressRangeKHR & operator=( StridedDeviceAddressRangeKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    StridedDeviceAddressRangeKHR & operator=( VkStridedDeviceAddressRangeKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<StridedDeviceAddressRangeKHR const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 StridedDeviceAddressRangeKHR & setAddress( DeviceAddress address_ ) VULKAN_HPP_NOEXCEPT
+    {
+      address = address_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 StridedDeviceAddressRangeKHR & setSize( DeviceSize size_ ) VULKAN_HPP_NOEXCEPT
+    {
+      size = size_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 StridedDeviceAddressRangeKHR & setStride( DeviceSize stride_ ) VULKAN_HPP_NOEXCEPT
+    {
+      stride = stride_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkStridedDeviceAddressRangeKHR const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkStridedDeviceAddressRangeKHR *>( this );
+    }
+
+    operator VkStridedDeviceAddressRangeKHR &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkStridedDeviceAddressRangeKHR *>( this );
+    }
+
+    operator VkStridedDeviceAddressRangeKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkStridedDeviceAddressRangeKHR *>( this );
+    }
+
+    operator VkStridedDeviceAddressRangeKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkStridedDeviceAddressRangeKHR *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<DeviceAddress const &, DeviceSize const &, DeviceSize const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( address, size, stride );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( StridedDeviceAddressRangeKHR const & ) const = default;
+#else
+    bool operator==( StridedDeviceAddressRangeKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( address == rhs.address ) && ( size == rhs.size ) && ( stride == rhs.stride );
+#  endif
+    }
+
+    bool operator!=( StridedDeviceAddressRangeKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    DeviceAddress address = {};
+    DeviceSize    size    = {};
+    DeviceSize    stride  = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkStridedDeviceAddressRangeKHR>
+  {
+    using Type = StridedDeviceAddressRangeKHR;
+  };
+#endif
+
+  // wrapper struct for struct VkCopyMemoryIndirectInfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryIndirectInfoKHR.html
+  struct CopyMemoryIndirectInfoKHR
+  {
+    using NativeType = VkCopyMemoryIndirectInfoKHR;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eCopyMemoryIndirectInfoKHR;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR CopyMemoryIndirectInfoKHR( AddressCopyFlagsKHR          srcCopyFlags_     = {},
+                                                    AddressCopyFlagsKHR          dstCopyFlags_     = {},
+                                                    uint32_t                     copyCount_        = {},
+                                                    StridedDeviceAddressRangeKHR copyAddressRange_ = {},
+                                                    const void *                 pNext_            = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , srcCopyFlags{ srcCopyFlags_ }
+      , dstCopyFlags{ dstCopyFlags_ }
+      , copyCount{ copyCount_ }
+      , copyAddressRange{ copyAddressRange_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR CopyMemoryIndirectInfoKHR( CopyMemoryIndirectInfoKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    CopyMemoryIndirectInfoKHR( VkCopyMemoryIndirectInfoKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : CopyMemoryIndirectInfoKHR( *reinterpret_cast<CopyMemoryIndirectInfoKHR const *>( &rhs ) )
+    {
+    }
+
+    CopyMemoryIndirectInfoKHR & operator=( CopyMemoryIndirectInfoKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    CopyMemoryIndirectInfoKHR & operator=( VkCopyMemoryIndirectInfoKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<CopyMemoryIndirectInfoKHR const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectInfoKHR & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectInfoKHR & setSrcCopyFlags( AddressCopyFlagsKHR srcCopyFlags_ ) VULKAN_HPP_NOEXCEPT
+    {
+      srcCopyFlags = srcCopyFlags_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectInfoKHR & setDstCopyFlags( AddressCopyFlagsKHR dstCopyFlags_ ) VULKAN_HPP_NOEXCEPT
+    {
+      dstCopyFlags = dstCopyFlags_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectInfoKHR & setCopyCount( uint32_t copyCount_ ) VULKAN_HPP_NOEXCEPT
+    {
+      copyCount = copyCount_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryIndirectInfoKHR & setCopyAddressRange( StridedDeviceAddressRangeKHR const & copyAddressRange_ ) VULKAN_HPP_NOEXCEPT
+    {
+      copyAddressRange = copyAddressRange_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkCopyMemoryIndirectInfoKHR const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkCopyMemoryIndirectInfoKHR *>( this );
+    }
+
+    operator VkCopyMemoryIndirectInfoKHR &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkCopyMemoryIndirectInfoKHR *>( this );
+    }
+
+    operator VkCopyMemoryIndirectInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyMemoryIndirectInfoKHR *>( this );
+    }
+
+    operator VkCopyMemoryIndirectInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyMemoryIndirectInfoKHR *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &,
+               const void * const &,
+               AddressCopyFlagsKHR const &,
+               AddressCopyFlagsKHR const &,
+               uint32_t const &,
+               StridedDeviceAddressRangeKHR const &>
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, srcCopyFlags, dstCopyFlags, copyCount, copyAddressRange );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( CopyMemoryIndirectInfoKHR const & ) const = default;
+#else
+    bool operator==( CopyMemoryIndirectInfoKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( srcCopyFlags == rhs.srcCopyFlags ) && ( dstCopyFlags == rhs.dstCopyFlags ) &&
+             ( copyCount == rhs.copyCount ) && ( copyAddressRange == rhs.copyAddressRange );
+#  endif
+    }
+
+    bool operator!=( CopyMemoryIndirectInfoKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType                sType            = StructureType::eCopyMemoryIndirectInfoKHR;
+    const void *                 pNext            = {};
+    AddressCopyFlagsKHR          srcCopyFlags     = {};
+    AddressCopyFlagsKHR          dstCopyFlags     = {};
+    uint32_t                     copyCount        = {};
+    StridedDeviceAddressRangeKHR copyAddressRange = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkCopyMemoryIndirectInfoKHR>
+  {
+    using Type = CopyMemoryIndirectInfoKHR;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::eCopyMemoryIndirectInfoKHR>
+  {
+    using Type = CopyMemoryIndirectInfoKHR;
+  };
 
   // wrapper struct for struct VkCopyMemoryToAccelerationStructureInfoKHR, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryToAccelerationStructureInfoKHR.html
@@ -25346,19 +25600,19 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = CopyMemoryToAccelerationStructureInfoKHR;
   };
 
-  // wrapper struct for struct VkCopyMemoryToImageIndirectCommandNV, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryToImageIndirectCommandNV.html
-  struct CopyMemoryToImageIndirectCommandNV
+  // wrapper struct for struct VkCopyMemoryToImageIndirectCommandKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryToImageIndirectCommandKHR.html
+  struct CopyMemoryToImageIndirectCommandKHR
   {
-    using NativeType = VkCopyMemoryToImageIndirectCommandNV;
+    using NativeType = VkCopyMemoryToImageIndirectCommandKHR;
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR CopyMemoryToImageIndirectCommandNV( DeviceAddress          srcAddress_        = {},
-                                                             uint32_t               bufferRowLength_   = {},
-                                                             uint32_t               bufferImageHeight_ = {},
-                                                             ImageSubresourceLayers imageSubresource_  = {},
-                                                             Offset3D               imageOffset_       = {},
-                                                             Extent3D               imageExtent_       = {} ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR CopyMemoryToImageIndirectCommandKHR( DeviceAddress          srcAddress_        = {},
+                                                              uint32_t               bufferRowLength_   = {},
+                                                              uint32_t               bufferImageHeight_ = {},
+                                                              ImageSubresourceLayers imageSubresource_  = {},
+                                                              Offset3D               imageOffset_       = {},
+                                                              Extent3D               imageExtent_       = {} ) VULKAN_HPP_NOEXCEPT
       : srcAddress{ srcAddress_ }
       , bufferRowLength{ bufferRowLength_ }
       , bufferImageHeight{ bufferImageHeight_ }
@@ -25368,78 +25622,78 @@ namespace VULKAN_HPP_NAMESPACE
     {
     }
 
-    VULKAN_HPP_CONSTEXPR CopyMemoryToImageIndirectCommandNV( CopyMemoryToImageIndirectCommandNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    VULKAN_HPP_CONSTEXPR CopyMemoryToImageIndirectCommandKHR( CopyMemoryToImageIndirectCommandKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
-    CopyMemoryToImageIndirectCommandNV( VkCopyMemoryToImageIndirectCommandNV const & rhs ) VULKAN_HPP_NOEXCEPT
-      : CopyMemoryToImageIndirectCommandNV( *reinterpret_cast<CopyMemoryToImageIndirectCommandNV const *>( &rhs ) )
+    CopyMemoryToImageIndirectCommandKHR( VkCopyMemoryToImageIndirectCommandKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : CopyMemoryToImageIndirectCommandKHR( *reinterpret_cast<CopyMemoryToImageIndirectCommandKHR const *>( &rhs ) )
     {
     }
 
-    CopyMemoryToImageIndirectCommandNV & operator=( CopyMemoryToImageIndirectCommandNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    CopyMemoryToImageIndirectCommandKHR & operator=( CopyMemoryToImageIndirectCommandKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
-    CopyMemoryToImageIndirectCommandNV & operator=( VkCopyMemoryToImageIndirectCommandNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    CopyMemoryToImageIndirectCommandKHR & operator=( VkCopyMemoryToImageIndirectCommandKHR const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      *this = *reinterpret_cast<CopyMemoryToImageIndirectCommandNV const *>( &rhs );
+      *this = *reinterpret_cast<CopyMemoryToImageIndirectCommandKHR const *>( &rhs );
       return *this;
     }
 
 #if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandNV & setSrcAddress( DeviceAddress srcAddress_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandKHR & setSrcAddress( DeviceAddress srcAddress_ ) VULKAN_HPP_NOEXCEPT
     {
       srcAddress = srcAddress_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandNV & setBufferRowLength( uint32_t bufferRowLength_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandKHR & setBufferRowLength( uint32_t bufferRowLength_ ) VULKAN_HPP_NOEXCEPT
     {
       bufferRowLength = bufferRowLength_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandNV & setBufferImageHeight( uint32_t bufferImageHeight_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandKHR & setBufferImageHeight( uint32_t bufferImageHeight_ ) VULKAN_HPP_NOEXCEPT
     {
       bufferImageHeight = bufferImageHeight_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandNV & setImageSubresource( ImageSubresourceLayers const & imageSubresource_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandKHR & setImageSubresource( ImageSubresourceLayers const & imageSubresource_ ) VULKAN_HPP_NOEXCEPT
     {
       imageSubresource = imageSubresource_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandNV & setImageOffset( Offset3D const & imageOffset_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandKHR & setImageOffset( Offset3D const & imageOffset_ ) VULKAN_HPP_NOEXCEPT
     {
       imageOffset = imageOffset_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandNV & setImageExtent( Extent3D const & imageExtent_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectCommandKHR & setImageExtent( Extent3D const & imageExtent_ ) VULKAN_HPP_NOEXCEPT
     {
       imageExtent = imageExtent_;
       return *this;
     }
 #endif /*VULKAN_HPP_NO_SETTERS*/
 
-    operator VkCopyMemoryToImageIndirectCommandNV const &() const VULKAN_HPP_NOEXCEPT
+    operator VkCopyMemoryToImageIndirectCommandKHR const &() const VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<const VkCopyMemoryToImageIndirectCommandNV *>( this );
+      return *reinterpret_cast<const VkCopyMemoryToImageIndirectCommandKHR *>( this );
     }
 
-    operator VkCopyMemoryToImageIndirectCommandNV &() VULKAN_HPP_NOEXCEPT
+    operator VkCopyMemoryToImageIndirectCommandKHR &() VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<VkCopyMemoryToImageIndirectCommandNV *>( this );
+      return *reinterpret_cast<VkCopyMemoryToImageIndirectCommandKHR *>( this );
     }
 
-    operator VkCopyMemoryToImageIndirectCommandNV const *() const VULKAN_HPP_NOEXCEPT
+    operator VkCopyMemoryToImageIndirectCommandKHR const *() const VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<const VkCopyMemoryToImageIndirectCommandNV *>( this );
+      return reinterpret_cast<const VkCopyMemoryToImageIndirectCommandKHR *>( this );
     }
 
-    operator VkCopyMemoryToImageIndirectCommandNV *() VULKAN_HPP_NOEXCEPT
+    operator VkCopyMemoryToImageIndirectCommandKHR *() VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<VkCopyMemoryToImageIndirectCommandNV *>( this );
+      return reinterpret_cast<VkCopyMemoryToImageIndirectCommandKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -25451,9 +25705,9 @@ namespace VULKAN_HPP_NAMESPACE
 #endif
 
 #if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( CopyMemoryToImageIndirectCommandNV const & ) const = default;
+    auto operator<=>( CopyMemoryToImageIndirectCommandKHR const & ) const = default;
 #else
-    bool operator==( CopyMemoryToImageIndirectCommandNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator==( CopyMemoryToImageIndirectCommandKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
 #  if defined( VULKAN_HPP_USE_REFLECT )
       return this->reflect() == rhs.reflect();
@@ -25463,7 +25717,7 @@ namespace VULKAN_HPP_NAMESPACE
 #  endif
     }
 
-    bool operator!=( CopyMemoryToImageIndirectCommandNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator!=( CopyMemoryToImageIndirectCommandKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
       return !operator==( rhs );
     }
@@ -25480,11 +25734,207 @@ namespace VULKAN_HPP_NAMESPACE
 
 #if 20 <= VULKAN_HPP_CPP_VERSION
   template <>
-  struct CppType<VkCopyMemoryToImageIndirectCommandNV>
+  struct CppType<VkCopyMemoryToImageIndirectCommandKHR>
   {
-    using Type = CopyMemoryToImageIndirectCommandNV;
+    using Type = CopyMemoryToImageIndirectCommandKHR;
   };
 #endif
+  using CopyMemoryToImageIndirectCommandNV = CopyMemoryToImageIndirectCommandKHR;
+
+  // wrapper struct for struct VkCopyMemoryToImageIndirectInfoKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkCopyMemoryToImageIndirectInfoKHR.html
+  struct CopyMemoryToImageIndirectInfoKHR
+  {
+    using NativeType = VkCopyMemoryToImageIndirectInfoKHR;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eCopyMemoryToImageIndirectInfoKHR;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR CopyMemoryToImageIndirectInfoKHR( AddressCopyFlagsKHR            srcCopyFlags_       = {},
+                                                           uint32_t                       copyCount_          = {},
+                                                           StridedDeviceAddressRangeKHR   copyAddressRange_   = {},
+                                                           Image                          dstImage_           = {},
+                                                           ImageLayout                    dstImageLayout_     = ImageLayout::eUndefined,
+                                                           const ImageSubresourceLayers * pImageSubresources_ = {},
+                                                           const void *                   pNext_              = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , srcCopyFlags{ srcCopyFlags_ }
+      , copyCount{ copyCount_ }
+      , copyAddressRange{ copyAddressRange_ }
+      , dstImage{ dstImage_ }
+      , dstImageLayout{ dstImageLayout_ }
+      , pImageSubresources{ pImageSubresources_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR CopyMemoryToImageIndirectInfoKHR( CopyMemoryToImageIndirectInfoKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    CopyMemoryToImageIndirectInfoKHR( VkCopyMemoryToImageIndirectInfoKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : CopyMemoryToImageIndirectInfoKHR( *reinterpret_cast<CopyMemoryToImageIndirectInfoKHR const *>( &rhs ) )
+    {
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    CopyMemoryToImageIndirectInfoKHR( AddressCopyFlagsKHR                                           srcCopyFlags_,
+                                      StridedDeviceAddressRangeKHR                                  copyAddressRange_,
+                                      Image                                                         dstImage_,
+                                      ImageLayout                                                   dstImageLayout_,
+                                      ArrayProxyNoTemporaries<const ImageSubresourceLayers> const & imageSubresources_,
+                                      const void *                                                  pNext_ = nullptr )
+      : pNext( pNext_ )
+      , srcCopyFlags( srcCopyFlags_ )
+      , copyCount( static_cast<uint32_t>( imageSubresources_.size() ) )
+      , copyAddressRange( copyAddressRange_ )
+      , dstImage( dstImage_ )
+      , dstImageLayout( dstImageLayout_ )
+      , pImageSubresources( imageSubresources_.data() )
+    {
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    CopyMemoryToImageIndirectInfoKHR & operator=( CopyMemoryToImageIndirectInfoKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    CopyMemoryToImageIndirectInfoKHR & operator=( VkCopyMemoryToImageIndirectInfoKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<CopyMemoryToImageIndirectInfoKHR const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectInfoKHR & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectInfoKHR & setSrcCopyFlags( AddressCopyFlagsKHR srcCopyFlags_ ) VULKAN_HPP_NOEXCEPT
+    {
+      srcCopyFlags = srcCopyFlags_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectInfoKHR & setCopyCount( uint32_t copyCount_ ) VULKAN_HPP_NOEXCEPT
+    {
+      copyCount = copyCount_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectInfoKHR & setCopyAddressRange( StridedDeviceAddressRangeKHR const & copyAddressRange_ ) VULKAN_HPP_NOEXCEPT
+    {
+      copyAddressRange = copyAddressRange_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectInfoKHR & setDstImage( Image dstImage_ ) VULKAN_HPP_NOEXCEPT
+    {
+      dstImage = dstImage_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectInfoKHR & setDstImageLayout( ImageLayout dstImageLayout_ ) VULKAN_HPP_NOEXCEPT
+    {
+      dstImageLayout = dstImageLayout_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 CopyMemoryToImageIndirectInfoKHR & setPImageSubresources( const ImageSubresourceLayers * pImageSubresources_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pImageSubresources = pImageSubresources_;
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    CopyMemoryToImageIndirectInfoKHR &
+      setImageSubresources( ArrayProxyNoTemporaries<const ImageSubresourceLayers> const & imageSubresources_ ) VULKAN_HPP_NOEXCEPT
+    {
+      copyCount          = static_cast<uint32_t>( imageSubresources_.size() );
+      pImageSubresources = imageSubresources_.data();
+      return *this;
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+#endif   /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkCopyMemoryToImageIndirectInfoKHR const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkCopyMemoryToImageIndirectInfoKHR *>( this );
+    }
+
+    operator VkCopyMemoryToImageIndirectInfoKHR &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkCopyMemoryToImageIndirectInfoKHR *>( this );
+    }
+
+    operator VkCopyMemoryToImageIndirectInfoKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkCopyMemoryToImageIndirectInfoKHR *>( this );
+    }
+
+    operator VkCopyMemoryToImageIndirectInfoKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkCopyMemoryToImageIndirectInfoKHR *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &,
+               const void * const &,
+               AddressCopyFlagsKHR const &,
+               uint32_t const &,
+               StridedDeviceAddressRangeKHR const &,
+               Image const &,
+               ImageLayout const &,
+               const ImageSubresourceLayers * const &>
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, srcCopyFlags, copyCount, copyAddressRange, dstImage, dstImageLayout, pImageSubresources );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( CopyMemoryToImageIndirectInfoKHR const & ) const = default;
+#else
+    bool operator==( CopyMemoryToImageIndirectInfoKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( srcCopyFlags == rhs.srcCopyFlags ) && ( copyCount == rhs.copyCount ) &&
+             ( copyAddressRange == rhs.copyAddressRange ) && ( dstImage == rhs.dstImage ) && ( dstImageLayout == rhs.dstImageLayout ) &&
+             ( pImageSubresources == rhs.pImageSubresources );
+#  endif
+    }
+
+    bool operator!=( CopyMemoryToImageIndirectInfoKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType                  sType              = StructureType::eCopyMemoryToImageIndirectInfoKHR;
+    const void *                   pNext              = {};
+    AddressCopyFlagsKHR            srcCopyFlags       = {};
+    uint32_t                       copyCount          = {};
+    StridedDeviceAddressRangeKHR   copyAddressRange   = {};
+    Image                          dstImage           = {};
+    ImageLayout                    dstImageLayout     = ImageLayout::eUndefined;
+    const ImageSubresourceLayers * pImageSubresources = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkCopyMemoryToImageIndirectInfoKHR>
+  {
+    using Type = CopyMemoryToImageIndirectInfoKHR;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::eCopyMemoryToImageIndirectInfoKHR>
+  {
+    using Type = CopyMemoryToImageIndirectInfoKHR;
+  };
 
   // wrapper struct for struct VkMemoryToImageCopy, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkMemoryToImageCopy.html
   struct MemoryToImageCopy
@@ -79388,6 +79838,128 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeVectorPropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR.html
+  struct PhysicalDeviceCopyMemoryIndirectFeaturesKHR
+  {
+    using NativeType = VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceCopyMemoryIndirectFeaturesKHR;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceCopyMemoryIndirectFeaturesKHR( Bool32 indirectMemoryCopy_        = {},
+                                                                      Bool32 indirectMemoryToImageCopy_ = {},
+                                                                      void * pNext_                     = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , indirectMemoryCopy{ indirectMemoryCopy_ }
+      , indirectMemoryToImageCopy{ indirectMemoryToImageCopy_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceCopyMemoryIndirectFeaturesKHR( PhysicalDeviceCopyMemoryIndirectFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceCopyMemoryIndirectFeaturesKHR( VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceCopyMemoryIndirectFeaturesKHR( *reinterpret_cast<PhysicalDeviceCopyMemoryIndirectFeaturesKHR const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceCopyMemoryIndirectFeaturesKHR & operator=( PhysicalDeviceCopyMemoryIndirectFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceCopyMemoryIndirectFeaturesKHR & operator=( VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PhysicalDeviceCopyMemoryIndirectFeaturesKHR const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceCopyMemoryIndirectFeaturesKHR & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceCopyMemoryIndirectFeaturesKHR & setIndirectMemoryCopy( Bool32 indirectMemoryCopy_ ) VULKAN_HPP_NOEXCEPT
+    {
+      indirectMemoryCopy = indirectMemoryCopy_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceCopyMemoryIndirectFeaturesKHR & setIndirectMemoryToImageCopy( Bool32 indirectMemoryToImageCopy_ ) VULKAN_HPP_NOEXCEPT
+    {
+      indirectMemoryToImageCopy = indirectMemoryToImageCopy_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, indirectMemoryCopy, indirectMemoryToImageCopy );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceCopyMemoryIndirectFeaturesKHR const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceCopyMemoryIndirectFeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( indirectMemoryCopy == rhs.indirectMemoryCopy ) &&
+             ( indirectMemoryToImageCopy == rhs.indirectMemoryToImageCopy );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceCopyMemoryIndirectFeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType sType                     = StructureType::ePhysicalDeviceCopyMemoryIndirectFeaturesKHR;
+    void *        pNext                     = {};
+    Bool32        indirectMemoryCopy        = {};
+    Bool32        indirectMemoryToImageCopy = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPhysicalDeviceCopyMemoryIndirectFeaturesKHR>
+  {
+    using Type = PhysicalDeviceCopyMemoryIndirectFeaturesKHR;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceCopyMemoryIndirectFeaturesKHR>
+  {
+    using Type = PhysicalDeviceCopyMemoryIndirectFeaturesKHR;
+  };
+
   // wrapper struct for struct VkPhysicalDeviceCopyMemoryIndirectFeaturesNV, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html
   struct PhysicalDeviceCopyMemoryIndirectFeaturesNV
@@ -79499,56 +80071,57 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCopyMemoryIndirectFeaturesNV;
   };
 
-  // wrapper struct for struct VkPhysicalDeviceCopyMemoryIndirectPropertiesNV, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html
-  struct PhysicalDeviceCopyMemoryIndirectPropertiesNV
+  // wrapper struct for struct VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR.html
+  struct PhysicalDeviceCopyMemoryIndirectPropertiesKHR
   {
-    using NativeType = VkPhysicalDeviceCopyMemoryIndirectPropertiesNV;
+    using NativeType = VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR;
 
     static const bool                                  allowDuplicate = false;
-    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceCopyMemoryIndirectPropertiesNV;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceCopyMemoryIndirectPropertiesKHR;
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR PhysicalDeviceCopyMemoryIndirectPropertiesNV( QueueFlags supportedQueues_ = {}, void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceCopyMemoryIndirectPropertiesKHR( QueueFlags supportedQueues_ = {}, void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
       : pNext{ pNext_ }
       , supportedQueues{ supportedQueues_ }
     {
     }
 
-    VULKAN_HPP_CONSTEXPR PhysicalDeviceCopyMemoryIndirectPropertiesNV( PhysicalDeviceCopyMemoryIndirectPropertiesNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    VULKAN_HPP_CONSTEXPR
+      PhysicalDeviceCopyMemoryIndirectPropertiesKHR( PhysicalDeviceCopyMemoryIndirectPropertiesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
-    PhysicalDeviceCopyMemoryIndirectPropertiesNV( VkPhysicalDeviceCopyMemoryIndirectPropertiesNV const & rhs ) VULKAN_HPP_NOEXCEPT
-      : PhysicalDeviceCopyMemoryIndirectPropertiesNV( *reinterpret_cast<PhysicalDeviceCopyMemoryIndirectPropertiesNV const *>( &rhs ) )
+    PhysicalDeviceCopyMemoryIndirectPropertiesKHR( VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceCopyMemoryIndirectPropertiesKHR( *reinterpret_cast<PhysicalDeviceCopyMemoryIndirectPropertiesKHR const *>( &rhs ) )
     {
     }
 
-    PhysicalDeviceCopyMemoryIndirectPropertiesNV & operator=( PhysicalDeviceCopyMemoryIndirectPropertiesNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    PhysicalDeviceCopyMemoryIndirectPropertiesKHR & operator=( PhysicalDeviceCopyMemoryIndirectPropertiesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
-    PhysicalDeviceCopyMemoryIndirectPropertiesNV & operator=( VkPhysicalDeviceCopyMemoryIndirectPropertiesNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    PhysicalDeviceCopyMemoryIndirectPropertiesKHR & operator=( VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      *this = *reinterpret_cast<PhysicalDeviceCopyMemoryIndirectPropertiesNV const *>( &rhs );
+      *this = *reinterpret_cast<PhysicalDeviceCopyMemoryIndirectPropertiesKHR const *>( &rhs );
       return *this;
     }
 
-    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesNV const &() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR const &() const VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<const VkPhysicalDeviceCopyMemoryIndirectPropertiesNV *>( this );
+      return *reinterpret_cast<const VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR *>( this );
     }
 
-    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesNV &() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR &() VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectPropertiesNV *>( this );
+      return *reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR *>( this );
     }
 
-    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesNV const *() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR const *() const VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<const VkPhysicalDeviceCopyMemoryIndirectPropertiesNV *>( this );
+      return reinterpret_cast<const VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR *>( this );
     }
 
-    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesNV *() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR *() VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectPropertiesNV *>( this );
+      return reinterpret_cast<VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
@@ -79559,9 +80132,9 @@ namespace VULKAN_HPP_NAMESPACE
 #endif
 
 #if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    auto operator<=>( PhysicalDeviceCopyMemoryIndirectPropertiesNV const & ) const = default;
+    auto operator<=>( PhysicalDeviceCopyMemoryIndirectPropertiesKHR const & ) const = default;
 #else
-    bool operator==( PhysicalDeviceCopyMemoryIndirectPropertiesNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator==( PhysicalDeviceCopyMemoryIndirectPropertiesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
 #  if defined( VULKAN_HPP_USE_REFLECT )
       return this->reflect() == rhs.reflect();
@@ -79570,31 +80143,33 @@ namespace VULKAN_HPP_NAMESPACE
 #  endif
     }
 
-    bool operator!=( PhysicalDeviceCopyMemoryIndirectPropertiesNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator!=( PhysicalDeviceCopyMemoryIndirectPropertiesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
       return !operator==( rhs );
     }
 #endif
 
   public:
-    StructureType sType           = StructureType::ePhysicalDeviceCopyMemoryIndirectPropertiesNV;
+    StructureType sType           = StructureType::ePhysicalDeviceCopyMemoryIndirectPropertiesKHR;
     void *        pNext           = {};
     QueueFlags    supportedQueues = {};
   };
 
 #if 20 <= VULKAN_HPP_CPP_VERSION
   template <>
-  struct CppType<VkPhysicalDeviceCopyMemoryIndirectPropertiesNV>
+  struct CppType<VkPhysicalDeviceCopyMemoryIndirectPropertiesKHR>
   {
-    using Type = PhysicalDeviceCopyMemoryIndirectPropertiesNV;
+    using Type = PhysicalDeviceCopyMemoryIndirectPropertiesKHR;
   };
 #endif
 
   template <>
-  struct CppType<StructureType, StructureType::ePhysicalDeviceCopyMemoryIndirectPropertiesNV>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceCopyMemoryIndirectPropertiesKHR>
   {
-    using Type = PhysicalDeviceCopyMemoryIndirectPropertiesNV;
+    using Type = PhysicalDeviceCopyMemoryIndirectPropertiesKHR;
   };
+
+  using PhysicalDeviceCopyMemoryIndirectPropertiesNV = PhysicalDeviceCopyMemoryIndirectPropertiesKHR;
 
   // wrapper struct for struct VkPhysicalDeviceCornerSampledImageFeaturesNV, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCornerSampledImageFeaturesNV.html
