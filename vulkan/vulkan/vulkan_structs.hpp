@@ -11,8 +11,10 @@
 // include-what-you-use: make sure, vulkan.hpp is used by code-completers
 // IWYU pragma: private, include "vulkan/vulkan.hpp"
 
-#include <cstdlib>  // free
-#include <cstring>  // strcmp
+#if !defined( VULKAN_HPP_CXX_MODULE )
+#  include <cstdlib>  // free
+#  include <cstring>  // strcmp
+#endif
 
 namespace VULKAN_HPP_NAMESPACE
 {
@@ -37817,16 +37819,16 @@ namespace VULKAN_HPP_NAMESPACE
     }
 
   public:
-    StructureType                 sType                = StructureType::eDeviceCreateInfo;
-    const void *                  pNext                = {};
-    DeviceCreateFlags             flags                = {};
-    uint32_t                      queueCreateInfoCount = {};
-    const DeviceQueueCreateInfo * pQueueCreateInfos    = {};
-    VULKAN_HPP_DEPRECATED( "ignored" ) uint32_t enabledLayerCount;
-    VULKAN_HPP_DEPRECATED( "ignored" ) const char * const * ppEnabledLayerNames;
-    uint32_t                       enabledExtensionCount   = {};
-    const char * const *           ppEnabledExtensionNames = {};
-    const PhysicalDeviceFeatures * pEnabledFeatures        = {};
+    StructureType                 sType                                         = StructureType::eDeviceCreateInfo;
+    const void *                  pNext                                         = {};
+    DeviceCreateFlags             flags                                         = {};
+    uint32_t                      queueCreateInfoCount                          = {};
+    const DeviceQueueCreateInfo * pQueueCreateInfos                             = {};
+    VULKAN_HPP_DEPRECATED( "ignored" ) uint32_t enabledLayerCount               = {};
+    VULKAN_HPP_DEPRECATED( "ignored" ) const char * const * ppEnabledLayerNames = {};
+    uint32_t                       enabledExtensionCount                        = {};
+    const char * const *           ppEnabledExtensionNames                      = {};
+    const PhysicalDeviceFeatures * pEnabledFeatures                             = {};
   };
 
 #if 20 <= VULKAN_HPP_CPP_VERSION
@@ -111490,6 +111492,137 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   using PhysicalDeviceShaderFloatControls2FeaturesKHR = PhysicalDeviceShaderFloatControls2Features;
+
+  // wrapper struct for struct VkPhysicalDeviceShaderFmaFeaturesKHR, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderFmaFeaturesKHR.html
+  struct PhysicalDeviceShaderFmaFeaturesKHR
+  {
+    using NativeType = VkPhysicalDeviceShaderFmaFeaturesKHR;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceShaderFmaFeaturesKHR;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceShaderFmaFeaturesKHR( Bool32 shaderFmaFloat16_ = {},
+                                                             Bool32 shaderFmaFloat32_ = {},
+                                                             Bool32 shaderFmaFloat64_ = {},
+                                                             void * pNext_            = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , shaderFmaFloat16{ shaderFmaFloat16_ }
+      , shaderFmaFloat32{ shaderFmaFloat32_ }
+      , shaderFmaFloat64{ shaderFmaFloat64_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceShaderFmaFeaturesKHR( PhysicalDeviceShaderFmaFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceShaderFmaFeaturesKHR( VkPhysicalDeviceShaderFmaFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceShaderFmaFeaturesKHR( *reinterpret_cast<PhysicalDeviceShaderFmaFeaturesKHR const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceShaderFmaFeaturesKHR & operator=( PhysicalDeviceShaderFmaFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceShaderFmaFeaturesKHR & operator=( VkPhysicalDeviceShaderFmaFeaturesKHR const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PhysicalDeviceShaderFmaFeaturesKHR const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderFmaFeaturesKHR & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderFmaFeaturesKHR & setShaderFmaFloat16( Bool32 shaderFmaFloat16_ ) VULKAN_HPP_NOEXCEPT
+    {
+      shaderFmaFloat16 = shaderFmaFloat16_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderFmaFeaturesKHR & setShaderFmaFloat32( Bool32 shaderFmaFloat32_ ) VULKAN_HPP_NOEXCEPT
+    {
+      shaderFmaFloat32 = shaderFmaFloat32_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceShaderFmaFeaturesKHR & setShaderFmaFloat64( Bool32 shaderFmaFloat64_ ) VULKAN_HPP_NOEXCEPT
+    {
+      shaderFmaFloat64 = shaderFmaFloat64_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceShaderFmaFeaturesKHR const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceShaderFmaFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderFmaFeaturesKHR &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceShaderFmaFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderFmaFeaturesKHR const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceShaderFmaFeaturesKHR *>( this );
+    }
+
+    operator VkPhysicalDeviceShaderFmaFeaturesKHR *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceShaderFmaFeaturesKHR *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, shaderFmaFloat16, shaderFmaFloat32, shaderFmaFloat64 );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceShaderFmaFeaturesKHR const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceShaderFmaFeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( shaderFmaFloat16 == rhs.shaderFmaFloat16 ) && ( shaderFmaFloat32 == rhs.shaderFmaFloat32 ) &&
+             ( shaderFmaFloat64 == rhs.shaderFmaFloat64 );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceShaderFmaFeaturesKHR const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType sType            = StructureType::ePhysicalDeviceShaderFmaFeaturesKHR;
+    void *        pNext            = {};
+    Bool32        shaderFmaFloat16 = {};
+    Bool32        shaderFmaFloat32 = {};
+    Bool32        shaderFmaFloat64 = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPhysicalDeviceShaderFmaFeaturesKHR>
+  {
+    using Type = PhysicalDeviceShaderFmaFeaturesKHR;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceShaderFmaFeaturesKHR>
+  {
+    using Type = PhysicalDeviceShaderFmaFeaturesKHR;
+  };
 
   // wrapper struct for struct VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceShaderImageAtomicInt64FeaturesEXT.html
