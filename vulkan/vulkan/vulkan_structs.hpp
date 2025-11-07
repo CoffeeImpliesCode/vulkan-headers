@@ -28354,6 +28354,269 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif /*VK_USE_PLATFORM_WIN32_KHR*/
 
+  // wrapper struct for struct VkPhysicalDeviceDataGraphOperationSupportARM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDataGraphOperationSupportARM.html
+  struct PhysicalDeviceDataGraphOperationSupportARM
+  {
+    using NativeType = VkPhysicalDeviceDataGraphOperationSupportARM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM(
+      PhysicalDeviceDataGraphOperationTypeARM operationType_ = PhysicalDeviceDataGraphOperationTypeARM::eSpirvExtendedInstructionSet,
+      std::array<char, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM> const & name_    = {},
+      uint32_t                                                                                version_ = {} ) VULKAN_HPP_NOEXCEPT
+      : operationType{ operationType_ }
+      , name{ name_ }
+      , version{ version_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceDataGraphOperationSupportARM( VkPhysicalDeviceDataGraphOperationSupportARM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceDataGraphOperationSupportARM( *reinterpret_cast<PhysicalDeviceDataGraphOperationSupportARM const *>( &rhs ) )
+    {
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    PhysicalDeviceDataGraphOperationSupportARM( PhysicalDeviceDataGraphOperationTypeARM operationType_, std::string const & name_, uint32_t version_ = {} )
+      : operationType( operationType_ ), version( version_ )
+    {
+      VULKAN_HPP_ASSERT( name_.size() < VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM );
+#    if defined( _WIN32 )
+      strncpy_s( name, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM, name_.data(), name_.size() );
+#    else
+      strncpy( name, name_.data(), std::min<size_t>( VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM, name_.size() ) );
+#    endif
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    PhysicalDeviceDataGraphOperationSupportARM & operator=( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceDataGraphOperationSupportARM & operator=( VkPhysicalDeviceDataGraphOperationSupportARM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PhysicalDeviceDataGraphOperationSupportARM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM &
+      setOperationType( PhysicalDeviceDataGraphOperationTypeARM operationType_ ) VULKAN_HPP_NOEXCEPT
+    {
+      operationType = operationType_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM &
+      setName( std::array<char, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM> name_ ) VULKAN_HPP_NOEXCEPT
+    {
+      name = name_;
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    PhysicalDeviceDataGraphOperationSupportARM & setName( std::string const & name_ ) VULKAN_HPP_NOEXCEPT
+    {
+      VULKAN_HPP_ASSERT( name_.size() < VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM );
+#    if defined( _WIN32 )
+      strncpy_s( name, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM, name_.data(), name_.size() );
+#    else
+      strncpy( name, name_.data(), std::min<size_t>( VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM, name_.size() ) );
+#    endif
+      return *this;
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM & setVersion( uint32_t version_ ) VULKAN_HPP_NOEXCEPT
+    {
+      version = version_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceDataGraphOperationSupportARM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceDataGraphOperationSupportARM *>( this );
+    }
+
+    operator VkPhysicalDeviceDataGraphOperationSupportARM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceDataGraphOperationSupportARM *>( this );
+    }
+
+    operator VkPhysicalDeviceDataGraphOperationSupportARM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceDataGraphOperationSupportARM *>( this );
+    }
+
+    operator VkPhysicalDeviceDataGraphOperationSupportARM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceDataGraphOperationSupportARM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<PhysicalDeviceDataGraphOperationTypeARM const &,
+               ArrayWrapper1D<char, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM> const &,
+               uint32_t const &>
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( operationType, name, version );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    std::strong_ordering operator<=>( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      if ( auto cmp = operationType <=> rhs.operationType; cmp != 0 )
+        return cmp;
+      if ( auto cmp = strcmp( name, rhs.name ); cmp != 0 )
+        return ( cmp < 0 ) ? std::strong_ordering::less : std::strong_ordering::greater;
+      if ( auto cmp = version <=> rhs.version; cmp != 0 )
+        return cmp;
+
+      return std::strong_ordering::equivalent;
+    }
+#endif
+
+    bool operator==( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return ( operationType == rhs.operationType ) && ( strcmp( name, rhs.name ) == 0 ) && ( version == rhs.version );
+    }
+
+    bool operator!=( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+
+  public:
+    PhysicalDeviceDataGraphOperationTypeARM operationType = PhysicalDeviceDataGraphOperationTypeARM::eSpirvExtendedInstructionSet;
+    ArrayWrapper1D<char, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM> name    = {};
+    uint32_t                                                                            version = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPhysicalDeviceDataGraphOperationSupportARM>
+  {
+    using Type = PhysicalDeviceDataGraphOperationSupportARM;
+  };
+#endif
+
+  // wrapper struct for struct VkDataGraphPipelineBuiltinModelCreateInfoQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDataGraphPipelineBuiltinModelCreateInfoQCOM.html
+  struct DataGraphPipelineBuiltinModelCreateInfoQCOM
+  {
+    using NativeType = VkDataGraphPipelineBuiltinModelCreateInfoQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eDataGraphPipelineBuiltinModelCreateInfoQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR_14 DataGraphPipelineBuiltinModelCreateInfoQCOM( const PhysicalDeviceDataGraphOperationSupportARM * pOperation_ = {},
+                                                                         const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , pOperation{ pOperation_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR_14
+      DataGraphPipelineBuiltinModelCreateInfoQCOM( DataGraphPipelineBuiltinModelCreateInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    DataGraphPipelineBuiltinModelCreateInfoQCOM( VkDataGraphPipelineBuiltinModelCreateInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : DataGraphPipelineBuiltinModelCreateInfoQCOM( *reinterpret_cast<DataGraphPipelineBuiltinModelCreateInfoQCOM const *>( &rhs ) )
+    {
+    }
+
+    DataGraphPipelineBuiltinModelCreateInfoQCOM & operator=( DataGraphPipelineBuiltinModelCreateInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    DataGraphPipelineBuiltinModelCreateInfoQCOM & operator=( VkDataGraphPipelineBuiltinModelCreateInfoQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<DataGraphPipelineBuiltinModelCreateInfoQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 DataGraphPipelineBuiltinModelCreateInfoQCOM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 DataGraphPipelineBuiltinModelCreateInfoQCOM &
+      setPOperation( const PhysicalDeviceDataGraphOperationSupportARM * pOperation_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pOperation = pOperation_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkDataGraphPipelineBuiltinModelCreateInfoQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkDataGraphPipelineBuiltinModelCreateInfoQCOM *>( this );
+    }
+
+    operator VkDataGraphPipelineBuiltinModelCreateInfoQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkDataGraphPipelineBuiltinModelCreateInfoQCOM *>( this );
+    }
+
+    operator VkDataGraphPipelineBuiltinModelCreateInfoQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkDataGraphPipelineBuiltinModelCreateInfoQCOM *>( this );
+    }
+
+    operator VkDataGraphPipelineBuiltinModelCreateInfoQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkDataGraphPipelineBuiltinModelCreateInfoQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, const void * const &, const PhysicalDeviceDataGraphOperationSupportARM * const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, pOperation );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( DataGraphPipelineBuiltinModelCreateInfoQCOM const & ) const = default;
+#else
+    bool operator==( DataGraphPipelineBuiltinModelCreateInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( pOperation == rhs.pOperation );
+#  endif
+    }
+
+    bool operator!=( DataGraphPipelineBuiltinModelCreateInfoQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType                                      sType      = StructureType::eDataGraphPipelineBuiltinModelCreateInfoQCOM;
+    const void *                                       pNext      = {};
+    const PhysicalDeviceDataGraphOperationSupportARM * pOperation = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkDataGraphPipelineBuiltinModelCreateInfoQCOM>
+  {
+    using Type = DataGraphPipelineBuiltinModelCreateInfoQCOM;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::eDataGraphPipelineBuiltinModelCreateInfoQCOM>
+  {
+    using Type = DataGraphPipelineBuiltinModelCreateInfoQCOM;
+  };
+
   // wrapper struct for struct VkDataGraphPipelineCompilerControlCreateInfoARM, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkDataGraphPipelineCompilerControlCreateInfoARM.html
   struct DataGraphPipelineCompilerControlCreateInfoARM
@@ -39031,60 +39294,18 @@ namespace VULKAN_HPP_NAMESPACE
     {
     }
 
-#  ifdef VULKAN_HPP_DISABLE_ENHANCED_MODE
     VULKAN_HPP_CONSTEXPR_14 DeviceFaultInfoEXT( DeviceFaultInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
     DeviceFaultInfoEXT( VkDeviceFaultInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT : DeviceFaultInfoEXT( *reinterpret_cast<DeviceFaultInfoEXT const *>( &rhs ) ) {}
 
     DeviceFaultInfoEXT & operator=( DeviceFaultInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
-#  else
-    DeviceFaultInfoEXT( DeviceFaultInfoEXT const & )             = delete;
-    DeviceFaultInfoEXT & operator=( DeviceFaultInfoEXT const & ) = delete;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
-    DeviceFaultInfoEXT( DeviceFaultInfoEXT && rhs ) VULKAN_HPP_NOEXCEPT
-      : pNext{ rhs.pNext }
-      , pAddressInfos{ rhs.pAddressInfos }
-      , pVendorInfos{ rhs.pVendorInfos }
-      , pVendorBinaryData{ rhs.pVendorBinaryData }
+    DeviceFaultInfoEXT & operator=( VkDeviceFaultInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      memcpy( description, rhs.description, VK_MAX_DESCRIPTION_SIZE );
-
-      rhs.pNext = nullptr;
-      memset( rhs.description, 0, VK_MAX_DESCRIPTION_SIZE );
-      rhs.pAddressInfos     = nullptr;
-      rhs.pVendorInfos      = nullptr;
-      rhs.pVendorBinaryData = nullptr;
-    }
-
-    DeviceFaultInfoEXT & operator=( DeviceFaultInfoEXT && rhs ) VULKAN_HPP_NOEXCEPT
-    {
-      free( pAddressInfos );
-      free( pVendorInfos );
-      free( pVendorBinaryData );
-
-      pNext = rhs.pNext;
-      memcpy( description, rhs.description, VK_MAX_DESCRIPTION_SIZE );
-      pAddressInfos     = rhs.pAddressInfos;
-      pVendorInfos      = rhs.pVendorInfos;
-      pVendorBinaryData = rhs.pVendorBinaryData;
-
-      rhs.pNext = nullptr;
-      memset( rhs.description, 0, VK_MAX_DESCRIPTION_SIZE );
-      rhs.pAddressInfos     = nullptr;
-      rhs.pVendorInfos      = nullptr;
-      rhs.pVendorBinaryData = nullptr;
-
+      *this = *reinterpret_cast<DeviceFaultInfoEXT const *>( &rhs );
       return *this;
     }
-
-    ~DeviceFaultInfoEXT() VULKAN_HPP_NOEXCEPT
-    {
-      free( pAddressInfos );
-      free( pVendorInfos );
-      free( pVendorBinaryData );
-    }
-#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
-#endif   /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
     operator VkDeviceFaultInfoEXT const &() const VULKAN_HPP_NOEXCEPT
     {
@@ -82469,154 +82690,116 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceDataGraphFeaturesARM;
   };
 
-  // wrapper struct for struct VkPhysicalDeviceDataGraphOperationSupportARM, see
-  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDataGraphOperationSupportARM.html
-  struct PhysicalDeviceDataGraphOperationSupportARM
+  // wrapper struct for struct VkPhysicalDeviceDataGraphModelFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDataGraphModelFeaturesQCOM.html
+  struct PhysicalDeviceDataGraphModelFeaturesQCOM
   {
-    using NativeType = VkPhysicalDeviceDataGraphOperationSupportARM;
+    using NativeType = VkPhysicalDeviceDataGraphModelFeaturesQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceDataGraphModelFeaturesQCOM;
 
 #if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM(
-      PhysicalDeviceDataGraphOperationTypeARM operationType_ = PhysicalDeviceDataGraphOperationTypeARM::eSpirvExtendedInstructionSet,
-      std::array<char, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM> const & name_    = {},
-      uint32_t                                                                                version_ = {} ) VULKAN_HPP_NOEXCEPT
-      : operationType{ operationType_ }
-      , name{ name_ }
-      , version{ version_ }
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceDataGraphModelFeaturesQCOM( Bool32 dataGraphModel_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , dataGraphModel{ dataGraphModel_ }
     {
     }
 
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceDataGraphModelFeaturesQCOM( PhysicalDeviceDataGraphModelFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 
-    PhysicalDeviceDataGraphOperationSupportARM( VkPhysicalDeviceDataGraphOperationSupportARM const & rhs ) VULKAN_HPP_NOEXCEPT
-      : PhysicalDeviceDataGraphOperationSupportARM( *reinterpret_cast<PhysicalDeviceDataGraphOperationSupportARM const *>( &rhs ) )
+    PhysicalDeviceDataGraphModelFeaturesQCOM( VkPhysicalDeviceDataGraphModelFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceDataGraphModelFeaturesQCOM( *reinterpret_cast<PhysicalDeviceDataGraphModelFeaturesQCOM const *>( &rhs ) )
     {
     }
 
-#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
-    PhysicalDeviceDataGraphOperationSupportARM( PhysicalDeviceDataGraphOperationTypeARM operationType_, std::string const & name_, uint32_t version_ = {} )
-      : operationType( operationType_ ), version( version_ )
-    {
-      VULKAN_HPP_ASSERT( name_.size() < VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM );
-#    if defined( _WIN32 )
-      strncpy_s( name, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM, name_.data(), name_.size() );
-#    else
-      strncpy( name, name_.data(), std::min<size_t>( VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM, name_.size() ) );
-#    endif
-    }
-#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
-
-    PhysicalDeviceDataGraphOperationSupportARM & operator=( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+    PhysicalDeviceDataGraphModelFeaturesQCOM & operator=( PhysicalDeviceDataGraphModelFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
 #endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
 
-    PhysicalDeviceDataGraphOperationSupportARM & operator=( VkPhysicalDeviceDataGraphOperationSupportARM const & rhs ) VULKAN_HPP_NOEXCEPT
+    PhysicalDeviceDataGraphModelFeaturesQCOM & operator=( VkPhysicalDeviceDataGraphModelFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
     {
-      *this = *reinterpret_cast<PhysicalDeviceDataGraphOperationSupportARM const *>( &rhs );
+      *this = *reinterpret_cast<PhysicalDeviceDataGraphModelFeaturesQCOM const *>( &rhs );
       return *this;
     }
 
 #if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM &
-      setOperationType( PhysicalDeviceDataGraphOperationTypeARM operationType_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphModelFeaturesQCOM & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
     {
-      operationType = operationType_;
+      pNext = pNext_;
       return *this;
     }
 
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM &
-      setName( std::array<char, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM> name_ ) VULKAN_HPP_NOEXCEPT
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphModelFeaturesQCOM & setDataGraphModel( Bool32 dataGraphModel_ ) VULKAN_HPP_NOEXCEPT
     {
-      name = name_;
-      return *this;
-    }
-
-#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
-    PhysicalDeviceDataGraphOperationSupportARM & setName( std::string const & name_ ) VULKAN_HPP_NOEXCEPT
-    {
-      VULKAN_HPP_ASSERT( name_.size() < VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM );
-#    if defined( _WIN32 )
-      strncpy_s( name, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM, name_.data(), name_.size() );
-#    else
-      strncpy( name, name_.data(), std::min<size_t>( VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM, name_.size() ) );
-#    endif
-      return *this;
-    }
-#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
-
-    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceDataGraphOperationSupportARM & setVersion( uint32_t version_ ) VULKAN_HPP_NOEXCEPT
-    {
-      version = version_;
+      dataGraphModel = dataGraphModel_;
       return *this;
     }
 #endif /*VULKAN_HPP_NO_SETTERS*/
 
-    operator VkPhysicalDeviceDataGraphOperationSupportARM const &() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceDataGraphModelFeaturesQCOM const &() const VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<const VkPhysicalDeviceDataGraphOperationSupportARM *>( this );
+      return *reinterpret_cast<const VkPhysicalDeviceDataGraphModelFeaturesQCOM *>( this );
     }
 
-    operator VkPhysicalDeviceDataGraphOperationSupportARM &() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceDataGraphModelFeaturesQCOM &() VULKAN_HPP_NOEXCEPT
     {
-      return *reinterpret_cast<VkPhysicalDeviceDataGraphOperationSupportARM *>( this );
+      return *reinterpret_cast<VkPhysicalDeviceDataGraphModelFeaturesQCOM *>( this );
     }
 
-    operator VkPhysicalDeviceDataGraphOperationSupportARM const *() const VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceDataGraphModelFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<const VkPhysicalDeviceDataGraphOperationSupportARM *>( this );
+      return reinterpret_cast<const VkPhysicalDeviceDataGraphModelFeaturesQCOM *>( this );
     }
 
-    operator VkPhysicalDeviceDataGraphOperationSupportARM *() VULKAN_HPP_NOEXCEPT
+    operator VkPhysicalDeviceDataGraphModelFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
     {
-      return reinterpret_cast<VkPhysicalDeviceDataGraphOperationSupportARM *>( this );
+      return reinterpret_cast<VkPhysicalDeviceDataGraphModelFeaturesQCOM *>( this );
     }
 
 #if defined( VULKAN_HPP_USE_REFLECT )
-    std::tuple<PhysicalDeviceDataGraphOperationTypeARM const &,
-               ArrayWrapper1D<char, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM> const &,
-               uint32_t const &>
-      reflect() const VULKAN_HPP_NOEXCEPT
+    std::tuple<StructureType const &, const void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
     {
-      return std::tie( operationType, name, version );
+      return std::tie( sType, pNext, dataGraphModel );
     }
 #endif
 
 #if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
-    std::strong_ordering operator<=>( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    auto operator<=>( PhysicalDeviceDataGraphModelFeaturesQCOM const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceDataGraphModelFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
-      if ( auto cmp = operationType <=> rhs.operationType; cmp != 0 )
-        return cmp;
-      if ( auto cmp = strcmp( name, rhs.name ); cmp != 0 )
-        return ( cmp < 0 ) ? std::strong_ordering::less : std::strong_ordering::greater;
-      if ( auto cmp = version <=> rhs.version; cmp != 0 )
-        return cmp;
-
-      return std::strong_ordering::equivalent;
-    }
-#endif
-
-    bool operator==( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) const VULKAN_HPP_NOEXCEPT
-    {
-      return ( operationType == rhs.operationType ) && ( strcmp( name, rhs.name ) == 0 ) && ( version == rhs.version );
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( dataGraphModel == rhs.dataGraphModel );
+#  endif
     }
 
-    bool operator!=( PhysicalDeviceDataGraphOperationSupportARM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    bool operator!=( PhysicalDeviceDataGraphModelFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
     {
       return !operator==( rhs );
     }
+#endif
 
   public:
-    PhysicalDeviceDataGraphOperationTypeARM operationType = PhysicalDeviceDataGraphOperationTypeARM::eSpirvExtendedInstructionSet;
-    ArrayWrapper1D<char, VK_MAX_PHYSICAL_DEVICE_DATA_GRAPH_OPERATION_SET_NAME_SIZE_ARM> name    = {};
-    uint32_t                                                                            version = {};
+    StructureType sType          = StructureType::ePhysicalDeviceDataGraphModelFeaturesQCOM;
+    const void *  pNext          = {};
+    Bool32        dataGraphModel = {};
   };
 
 #if 20 <= VULKAN_HPP_CPP_VERSION
   template <>
-  struct CppType<VkPhysicalDeviceDataGraphOperationSupportARM>
+  struct CppType<VkPhysicalDeviceDataGraphModelFeaturesQCOM>
   {
-    using Type = PhysicalDeviceDataGraphOperationSupportARM;
+    using Type = PhysicalDeviceDataGraphModelFeaturesQCOM;
   };
 #endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceDataGraphModelFeaturesQCOM>
+  {
+    using Type = PhysicalDeviceDataGraphModelFeaturesQCOM;
+  };
 
   // wrapper struct for struct VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV.html
@@ -90372,6 +90555,21 @@ namespace VULKAN_HPP_NAMESPACE
       *this = *reinterpret_cast<PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const *>( &rhs );
       return *this;
     }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE &
+      setFragmentDensityMapLayered( Bool32 fragmentDensityMapLayered_ ) VULKAN_HPP_NOEXCEPT
+    {
+      fragmentDensityMapLayered = fragmentDensityMapLayered_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
 
     operator VkPhysicalDeviceFragmentDensityMapLayeredFeaturesVALVE const &() const VULKAN_HPP_NOEXCEPT
     {
@@ -126696,6 +126894,143 @@ namespace VULKAN_HPP_NAMESPACE
   {
     using Type = PipelineCacheCreateInfo;
   };
+
+  // wrapper struct for struct VkPipelineCacheHeaderVersionDataGraphQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCacheHeaderVersionDataGraphQCOM.html
+  struct PipelineCacheHeaderVersionDataGraphQCOM
+  {
+    using NativeType = VkPipelineCacheHeaderVersionDataGraphQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR_14 PipelineCacheHeaderVersionDataGraphQCOM(
+      uint32_t                                                                        headerSize_       = {},
+      PipelineCacheHeaderVersion                                                      headerVersion_    = PipelineCacheHeaderVersion::eOne,
+      DataGraphModelCacheTypeQCOM                                                     cacheType_        = DataGraphModelCacheTypeQCOM::eGenericBinary,
+      uint32_t                                                                        cacheVersion_     = {},
+      std::array<uint32_t, VK_DATA_GRAPH_MODEL_TOOLCHAIN_VERSION_LENGTH_QCOM> const & toolchainVersion_ = {} ) VULKAN_HPP_NOEXCEPT
+      : headerSize{ headerSize_ }
+      , headerVersion{ headerVersion_ }
+      , cacheType{ cacheType_ }
+      , cacheVersion{ cacheVersion_ }
+      , toolchainVersion{ toolchainVersion_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PipelineCacheHeaderVersionDataGraphQCOM( PipelineCacheHeaderVersionDataGraphQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PipelineCacheHeaderVersionDataGraphQCOM( VkPipelineCacheHeaderVersionDataGraphQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PipelineCacheHeaderVersionDataGraphQCOM( *reinterpret_cast<PipelineCacheHeaderVersionDataGraphQCOM const *>( &rhs ) )
+    {
+    }
+
+    PipelineCacheHeaderVersionDataGraphQCOM & operator=( PipelineCacheHeaderVersionDataGraphQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PipelineCacheHeaderVersionDataGraphQCOM & operator=( VkPipelineCacheHeaderVersionDataGraphQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PipelineCacheHeaderVersionDataGraphQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PipelineCacheHeaderVersionDataGraphQCOM & setHeaderSize( uint32_t headerSize_ ) VULKAN_HPP_NOEXCEPT
+    {
+      headerSize = headerSize_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PipelineCacheHeaderVersionDataGraphQCOM & setHeaderVersion( PipelineCacheHeaderVersion headerVersion_ ) VULKAN_HPP_NOEXCEPT
+    {
+      headerVersion = headerVersion_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PipelineCacheHeaderVersionDataGraphQCOM & setCacheType( DataGraphModelCacheTypeQCOM cacheType_ ) VULKAN_HPP_NOEXCEPT
+    {
+      cacheType = cacheType_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PipelineCacheHeaderVersionDataGraphQCOM & setCacheVersion( uint32_t cacheVersion_ ) VULKAN_HPP_NOEXCEPT
+    {
+      cacheVersion = cacheVersion_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PipelineCacheHeaderVersionDataGraphQCOM &
+      setToolchainVersion( std::array<uint32_t, VK_DATA_GRAPH_MODEL_TOOLCHAIN_VERSION_LENGTH_QCOM> toolchainVersion_ ) VULKAN_HPP_NOEXCEPT
+    {
+      toolchainVersion = toolchainVersion_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPipelineCacheHeaderVersionDataGraphQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPipelineCacheHeaderVersionDataGraphQCOM *>( this );
+    }
+
+    operator VkPipelineCacheHeaderVersionDataGraphQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPipelineCacheHeaderVersionDataGraphQCOM *>( this );
+    }
+
+    operator VkPipelineCacheHeaderVersionDataGraphQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPipelineCacheHeaderVersionDataGraphQCOM *>( this );
+    }
+
+    operator VkPipelineCacheHeaderVersionDataGraphQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPipelineCacheHeaderVersionDataGraphQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<uint32_t const &,
+               PipelineCacheHeaderVersion const &,
+               DataGraphModelCacheTypeQCOM const &,
+               uint32_t const &,
+               ArrayWrapper1D<uint32_t, VK_DATA_GRAPH_MODEL_TOOLCHAIN_VERSION_LENGTH_QCOM> const &>
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( headerSize, headerVersion, cacheType, cacheVersion, toolchainVersion );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PipelineCacheHeaderVersionDataGraphQCOM const & ) const = default;
+#else
+    bool operator==( PipelineCacheHeaderVersionDataGraphQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( headerSize == rhs.headerSize ) && ( headerVersion == rhs.headerVersion ) && ( cacheType == rhs.cacheType ) &&
+             ( cacheVersion == rhs.cacheVersion ) && ( toolchainVersion == rhs.toolchainVersion );
+#  endif
+    }
+
+    bool operator!=( PipelineCacheHeaderVersionDataGraphQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    uint32_t                                                                    headerSize       = {};
+    PipelineCacheHeaderVersion                                                  headerVersion    = PipelineCacheHeaderVersion::eOne;
+    DataGraphModelCacheTypeQCOM                                                 cacheType        = DataGraphModelCacheTypeQCOM::eGenericBinary;
+    uint32_t                                                                    cacheVersion     = {};
+    ArrayWrapper1D<uint32_t, VK_DATA_GRAPH_MODEL_TOOLCHAIN_VERSION_LENGTH_QCOM> toolchainVersion = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPipelineCacheHeaderVersionDataGraphQCOM>
+  {
+    using Type = PipelineCacheHeaderVersionDataGraphQCOM;
+  };
+#endif
 
   // wrapper struct for struct VkPipelineCacheHeaderVersionOne, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPipelineCacheHeaderVersionOne.html
