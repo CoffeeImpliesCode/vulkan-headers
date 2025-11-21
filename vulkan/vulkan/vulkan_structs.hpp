@@ -108607,7 +108607,120 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceRayTracingInvocationReorderFeaturesEXT;
   };
 
-  using PhysicalDeviceRayTracingInvocationReorderFeaturesNV = PhysicalDeviceRayTracingInvocationReorderFeaturesEXT;
+  // wrapper struct for struct VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV.html
+  struct PhysicalDeviceRayTracingInvocationReorderFeaturesNV
+  {
+    using NativeType = VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceRayTracingInvocationReorderFeaturesNV;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceRayTracingInvocationReorderFeaturesNV( Bool32 rayTracingInvocationReorder_ = {},
+                                                                              void * pNext_                       = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , rayTracingInvocationReorder{ rayTracingInvocationReorder_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR
+      PhysicalDeviceRayTracingInvocationReorderFeaturesNV( PhysicalDeviceRayTracingInvocationReorderFeaturesNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceRayTracingInvocationReorderFeaturesNV( VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceRayTracingInvocationReorderFeaturesNV( *reinterpret_cast<PhysicalDeviceRayTracingInvocationReorderFeaturesNV const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceRayTracingInvocationReorderFeaturesNV &
+      operator=( PhysicalDeviceRayTracingInvocationReorderFeaturesNV const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceRayTracingInvocationReorderFeaturesNV & operator=( VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PhysicalDeviceRayTracingInvocationReorderFeaturesNV const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRayTracingInvocationReorderFeaturesNV & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceRayTracingInvocationReorderFeaturesNV &
+      setRayTracingInvocationReorder( Bool32 rayTracingInvocationReorder_ ) VULKAN_HPP_NOEXCEPT
+    {
+      rayTracingInvocationReorder = rayTracingInvocationReorder_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV *>( this );
+    }
+
+    operator VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, rayTracingInvocationReorder );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceRayTracingInvocationReorderFeaturesNV const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceRayTracingInvocationReorderFeaturesNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( rayTracingInvocationReorder == rhs.rayTracingInvocationReorder );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceRayTracingInvocationReorderFeaturesNV const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType sType                       = StructureType::ePhysicalDeviceRayTracingInvocationReorderFeaturesNV;
+    void *        pNext                       = {};
+    Bool32        rayTracingInvocationReorder = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPhysicalDeviceRayTracingInvocationReorderFeaturesNV>
+  {
+    using Type = PhysicalDeviceRayTracingInvocationReorderFeaturesNV;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceRayTracingInvocationReorderFeaturesNV>
+  {
+    using Type = PhysicalDeviceRayTracingInvocationReorderFeaturesNV;
+  };
 
   // wrapper struct for struct VkPhysicalDeviceRayTracingInvocationReorderPropertiesEXT, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceRayTracingInvocationReorderPropertiesEXT.html
