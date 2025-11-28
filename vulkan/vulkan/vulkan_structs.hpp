@@ -75594,6 +75594,310 @@ namespace VULKAN_HPP_NAMESPACE
   };
 #endif
 
+  // wrapper struct for struct VkPresentStageTimeEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentStageTimeEXT.html
+  struct PresentStageTimeEXT
+  {
+    using NativeType = VkPresentStageTimeEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PresentStageTimeEXT( PresentStageFlagsEXT stage_ = {}, uint64_t time_ = {} ) VULKAN_HPP_NOEXCEPT
+      : stage{ stage_ }
+      , time{ time_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PresentStageTimeEXT( PresentStageTimeEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PresentStageTimeEXT( VkPresentStageTimeEXT const & rhs ) VULKAN_HPP_NOEXCEPT : PresentStageTimeEXT( *reinterpret_cast<PresentStageTimeEXT const *>( &rhs ) )
+    {
+    }
+
+    PresentStageTimeEXT & operator=( PresentStageTimeEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PresentStageTimeEXT & operator=( VkPresentStageTimeEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PresentStageTimeEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PresentStageTimeEXT & setStage( PresentStageFlagsEXT stage_ ) VULKAN_HPP_NOEXCEPT
+    {
+      stage = stage_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentStageTimeEXT & setTime( uint64_t time_ ) VULKAN_HPP_NOEXCEPT
+    {
+      time = time_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPresentStageTimeEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPresentStageTimeEXT *>( this );
+    }
+
+    operator VkPresentStageTimeEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPresentStageTimeEXT *>( this );
+    }
+
+    operator VkPresentStageTimeEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentStageTimeEXT *>( this );
+    }
+
+    operator VkPresentStageTimeEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentStageTimeEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<PresentStageFlagsEXT const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( stage, time );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PresentStageTimeEXT const & ) const = default;
+#else
+    bool operator==( PresentStageTimeEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( stage == rhs.stage ) && ( time == rhs.time );
+#  endif
+    }
+
+    bool operator!=( PresentStageTimeEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    PresentStageFlagsEXT stage = {};
+    uint64_t             time  = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPresentStageTimeEXT>
+  {
+    using Type = PresentStageTimeEXT;
+  };
+#endif
+
+  // wrapper struct for struct VkPastPresentationTimingEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPastPresentationTimingEXT.html
+  struct PastPresentationTimingEXT
+  {
+    using NativeType = VkPastPresentationTimingEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePastPresentationTimingEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PastPresentationTimingEXT( uint64_t              presentId_         = {},
+                                                    uint64_t              targetTime_        = {},
+                                                    uint32_t              presentStageCount_ = {},
+                                                    PresentStageTimeEXT * pPresentStages_    = {},
+                                                    TimeDomainKHR         timeDomain_        = TimeDomainKHR::eDevice,
+                                                    uint64_t              timeDomainId_      = {},
+                                                    Bool32                reportComplete_    = {},
+                                                    void *                pNext_             = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , presentId{ presentId_ }
+      , targetTime{ targetTime_ }
+      , presentStageCount{ presentStageCount_ }
+      , pPresentStages{ pPresentStages_ }
+      , timeDomain{ timeDomain_ }
+      , timeDomainId{ timeDomainId_ }
+      , reportComplete{ reportComplete_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PastPresentationTimingEXT( PastPresentationTimingEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PastPresentationTimingEXT( VkPastPresentationTimingEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PastPresentationTimingEXT( *reinterpret_cast<PastPresentationTimingEXT const *>( &rhs ) )
+    {
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    PastPresentationTimingEXT( uint64_t                                             presentId_,
+                               uint64_t                                             targetTime_,
+                               ArrayProxyNoTemporaries<PresentStageTimeEXT> const & presentStages_,
+                               TimeDomainKHR                                        timeDomain_     = TimeDomainKHR::eDevice,
+                               uint64_t                                             timeDomainId_   = {},
+                               Bool32                                               reportComplete_ = {},
+                               void *                                               pNext_          = nullptr )
+      : pNext( pNext_ )
+      , presentId( presentId_ )
+      , targetTime( targetTime_ )
+      , presentStageCount( static_cast<uint32_t>( presentStages_.size() ) )
+      , pPresentStages( presentStages_.data() )
+      , timeDomain( timeDomain_ )
+      , timeDomainId( timeDomainId_ )
+      , reportComplete( reportComplete_ )
+    {
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    PastPresentationTimingEXT & operator=( PastPresentationTimingEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PastPresentationTimingEXT & operator=( VkPastPresentationTimingEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PastPresentationTimingEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingEXT & setPresentId( uint64_t presentId_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentId = presentId_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingEXT & setTargetTime( uint64_t targetTime_ ) VULKAN_HPP_NOEXCEPT
+    {
+      targetTime = targetTime_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingEXT & setPresentStageCount( uint32_t presentStageCount_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentStageCount = presentStageCount_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingEXT & setPPresentStages( PresentStageTimeEXT * pPresentStages_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pPresentStages = pPresentStages_;
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    PastPresentationTimingEXT & setPresentStages( ArrayProxyNoTemporaries<PresentStageTimeEXT> const & presentStages_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentStageCount = static_cast<uint32_t>( presentStages_.size() );
+      pPresentStages    = presentStages_.data();
+      return *this;
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingEXT & setTimeDomain( TimeDomainKHR timeDomain_ ) VULKAN_HPP_NOEXCEPT
+    {
+      timeDomain = timeDomain_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingEXT & setTimeDomainId( uint64_t timeDomainId_ ) VULKAN_HPP_NOEXCEPT
+    {
+      timeDomainId = timeDomainId_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingEXT & setReportComplete( Bool32 reportComplete_ ) VULKAN_HPP_NOEXCEPT
+    {
+      reportComplete = reportComplete_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPastPresentationTimingEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPastPresentationTimingEXT *>( this );
+    }
+
+    operator VkPastPresentationTimingEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPastPresentationTimingEXT *>( this );
+    }
+
+    operator VkPastPresentationTimingEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPastPresentationTimingEXT *>( this );
+    }
+
+    operator VkPastPresentationTimingEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPastPresentationTimingEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &,
+               void * const &,
+               uint64_t const &,
+               uint64_t const &,
+               uint32_t const &,
+               PresentStageTimeEXT * const &,
+               TimeDomainKHR const &,
+               uint64_t const &,
+               Bool32 const &>
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, presentId, targetTime, presentStageCount, pPresentStages, timeDomain, timeDomainId, reportComplete );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PastPresentationTimingEXT const & ) const = default;
+#else
+    bool operator==( PastPresentationTimingEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( presentId == rhs.presentId ) && ( targetTime == rhs.targetTime ) &&
+             ( presentStageCount == rhs.presentStageCount ) && ( pPresentStages == rhs.pPresentStages ) && ( timeDomain == rhs.timeDomain ) &&
+             ( timeDomainId == rhs.timeDomainId ) && ( reportComplete == rhs.reportComplete );
+#  endif
+    }
+
+    bool operator!=( PastPresentationTimingEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType         sType             = StructureType::ePastPresentationTimingEXT;
+    void *                pNext             = {};
+    uint64_t              presentId         = {};
+    uint64_t              targetTime        = {};
+    uint32_t              presentStageCount = {};
+    PresentStageTimeEXT * pPresentStages    = {};
+    TimeDomainKHR         timeDomain        = TimeDomainKHR::eDevice;
+    uint64_t              timeDomainId      = {};
+    Bool32                reportComplete    = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPastPresentationTimingEXT>
+  {
+    using Type = PastPresentationTimingEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePastPresentationTimingEXT>
+  {
+    using Type = PastPresentationTimingEXT;
+  };
+
   // wrapper struct for struct VkPastPresentationTimingGOOGLE, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPastPresentationTimingGOOGLE.html
   struct PastPresentationTimingGOOGLE
   {
@@ -75690,6 +75994,294 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PastPresentationTimingGOOGLE;
   };
 #endif
+
+  // wrapper struct for struct VkPastPresentationTimingInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPastPresentationTimingInfoEXT.html
+  struct PastPresentationTimingInfoEXT
+  {
+    using NativeType = VkPastPresentationTimingInfoEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePastPresentationTimingInfoEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PastPresentationTimingInfoEXT( PastPresentationTimingFlagsEXT flags_     = {},
+                                                        SwapchainKHR                   swapchain_ = {},
+                                                        const void *                   pNext_     = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , flags{ flags_ }
+      , swapchain{ swapchain_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PastPresentationTimingInfoEXT( PastPresentationTimingInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PastPresentationTimingInfoEXT( VkPastPresentationTimingInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PastPresentationTimingInfoEXT( *reinterpret_cast<PastPresentationTimingInfoEXT const *>( &rhs ) )
+    {
+    }
+
+    PastPresentationTimingInfoEXT & operator=( PastPresentationTimingInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PastPresentationTimingInfoEXT & operator=( VkPastPresentationTimingInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PastPresentationTimingInfoEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingInfoEXT & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingInfoEXT & setFlags( PastPresentationTimingFlagsEXT flags_ ) VULKAN_HPP_NOEXCEPT
+    {
+      flags = flags_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingInfoEXT & setSwapchain( SwapchainKHR swapchain_ ) VULKAN_HPP_NOEXCEPT
+    {
+      swapchain = swapchain_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPastPresentationTimingInfoEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPastPresentationTimingInfoEXT *>( this );
+    }
+
+    operator VkPastPresentationTimingInfoEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPastPresentationTimingInfoEXT *>( this );
+    }
+
+    operator VkPastPresentationTimingInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPastPresentationTimingInfoEXT *>( this );
+    }
+
+    operator VkPastPresentationTimingInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPastPresentationTimingInfoEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, const void * const &, PastPresentationTimingFlagsEXT const &, SwapchainKHR const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, flags, swapchain );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PastPresentationTimingInfoEXT const & ) const = default;
+#else
+    bool operator==( PastPresentationTimingInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( flags == rhs.flags ) && ( swapchain == rhs.swapchain );
+#  endif
+    }
+
+    bool operator!=( PastPresentationTimingInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType                  sType     = StructureType::ePastPresentationTimingInfoEXT;
+    const void *                   pNext     = {};
+    PastPresentationTimingFlagsEXT flags     = {};
+    SwapchainKHR                   swapchain = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPastPresentationTimingInfoEXT>
+  {
+    using Type = PastPresentationTimingInfoEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePastPresentationTimingInfoEXT>
+  {
+    using Type = PastPresentationTimingInfoEXT;
+  };
+
+  // wrapper struct for struct VkPastPresentationTimingPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPastPresentationTimingPropertiesEXT.html
+  struct PastPresentationTimingPropertiesEXT
+  {
+    using NativeType = VkPastPresentationTimingPropertiesEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePastPresentationTimingPropertiesEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PastPresentationTimingPropertiesEXT( uint64_t                    timingPropertiesCounter_ = {},
+                                                              uint64_t                    timeDomainsCounter_      = {},
+                                                              uint32_t                    presentationTimingCount_ = {},
+                                                              PastPresentationTimingEXT * pPresentationTimings_    = {},
+                                                              void *                      pNext_                   = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , timingPropertiesCounter{ timingPropertiesCounter_ }
+      , timeDomainsCounter{ timeDomainsCounter_ }
+      , presentationTimingCount{ presentationTimingCount_ }
+      , pPresentationTimings{ pPresentationTimings_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PastPresentationTimingPropertiesEXT( PastPresentationTimingPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PastPresentationTimingPropertiesEXT( VkPastPresentationTimingPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PastPresentationTimingPropertiesEXT( *reinterpret_cast<PastPresentationTimingPropertiesEXT const *>( &rhs ) )
+    {
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    PastPresentationTimingPropertiesEXT( uint64_t                                                   timingPropertiesCounter_,
+                                         uint64_t                                                   timeDomainsCounter_,
+                                         ArrayProxyNoTemporaries<PastPresentationTimingEXT> const & presentationTimings_,
+                                         void *                                                     pNext_ = nullptr )
+      : pNext( pNext_ )
+      , timingPropertiesCounter( timingPropertiesCounter_ )
+      , timeDomainsCounter( timeDomainsCounter_ )
+      , presentationTimingCount( static_cast<uint32_t>( presentationTimings_.size() ) )
+      , pPresentationTimings( presentationTimings_.data() )
+    {
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    PastPresentationTimingPropertiesEXT & operator=( PastPresentationTimingPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PastPresentationTimingPropertiesEXT & operator=( VkPastPresentationTimingPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PastPresentationTimingPropertiesEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingPropertiesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingPropertiesEXT & setTimingPropertiesCounter( uint64_t timingPropertiesCounter_ ) VULKAN_HPP_NOEXCEPT
+    {
+      timingPropertiesCounter = timingPropertiesCounter_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingPropertiesEXT & setTimeDomainsCounter( uint64_t timeDomainsCounter_ ) VULKAN_HPP_NOEXCEPT
+    {
+      timeDomainsCounter = timeDomainsCounter_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingPropertiesEXT & setPresentationTimingCount( uint32_t presentationTimingCount_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentationTimingCount = presentationTimingCount_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PastPresentationTimingPropertiesEXT &
+      setPPresentationTimings( PastPresentationTimingEXT * pPresentationTimings_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pPresentationTimings = pPresentationTimings_;
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    PastPresentationTimingPropertiesEXT &
+      setPresentationTimings( ArrayProxyNoTemporaries<PastPresentationTimingEXT> const & presentationTimings_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentationTimingCount = static_cast<uint32_t>( presentationTimings_.size() );
+      pPresentationTimings    = presentationTimings_.data();
+      return *this;
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+#endif   /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPastPresentationTimingPropertiesEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPastPresentationTimingPropertiesEXT *>( this );
+    }
+
+    operator VkPastPresentationTimingPropertiesEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPastPresentationTimingPropertiesEXT *>( this );
+    }
+
+    operator VkPastPresentationTimingPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPastPresentationTimingPropertiesEXT *>( this );
+    }
+
+    operator VkPastPresentationTimingPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPastPresentationTimingPropertiesEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, uint64_t const &, uint64_t const &, uint32_t const &, PastPresentationTimingEXT * const &>
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, timingPropertiesCounter, timeDomainsCounter, presentationTimingCount, pPresentationTimings );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PastPresentationTimingPropertiesEXT const & ) const = default;
+#else
+    bool operator==( PastPresentationTimingPropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( timingPropertiesCounter == rhs.timingPropertiesCounter ) &&
+             ( timeDomainsCounter == rhs.timeDomainsCounter ) && ( presentationTimingCount == rhs.presentationTimingCount ) &&
+             ( pPresentationTimings == rhs.pPresentationTimings );
+#  endif
+    }
+
+    bool operator!=( PastPresentationTimingPropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType               sType                   = StructureType::ePastPresentationTimingPropertiesEXT;
+    void *                      pNext                   = {};
+    uint64_t                    timingPropertiesCounter = {};
+    uint64_t                    timeDomainsCounter      = {};
+    uint32_t                    presentationTimingCount = {};
+    PastPresentationTimingEXT * pPresentationTimings    = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPastPresentationTimingPropertiesEXT>
+  {
+    using Type = PastPresentationTimingPropertiesEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePastPresentationTimingPropertiesEXT>
+  {
+    using Type = PastPresentationTimingPropertiesEXT;
+  };
 
   // wrapper struct for struct VkPerTileBeginInfoQCOM, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPerTileBeginInfoQCOM.html
   struct PerTileBeginInfoQCOM
@@ -106659,6 +107251,137 @@ namespace VULKAN_HPP_NAMESPACE
 
   using PhysicalDevicePresentModeFifoLatestReadyFeaturesEXT = PhysicalDevicePresentModeFifoLatestReadyFeaturesKHR;
 
+  // wrapper struct for struct VkPhysicalDevicePresentTimingFeaturesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePresentTimingFeaturesEXT.html
+  struct PhysicalDevicePresentTimingFeaturesEXT
+  {
+    using NativeType = VkPhysicalDevicePresentTimingFeaturesEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDevicePresentTimingFeaturesEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDevicePresentTimingFeaturesEXT( Bool32 presentTiming_         = {},
+                                                                 Bool32 presentAtAbsoluteTime_ = {},
+                                                                 Bool32 presentAtRelativeTime_ = {},
+                                                                 void * pNext_                 = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , presentTiming{ presentTiming_ }
+      , presentAtAbsoluteTime{ presentAtAbsoluteTime_ }
+      , presentAtRelativeTime{ presentAtRelativeTime_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PhysicalDevicePresentTimingFeaturesEXT( PhysicalDevicePresentTimingFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDevicePresentTimingFeaturesEXT( VkPhysicalDevicePresentTimingFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDevicePresentTimingFeaturesEXT( *reinterpret_cast<PhysicalDevicePresentTimingFeaturesEXT const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDevicePresentTimingFeaturesEXT & operator=( PhysicalDevicePresentTimingFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDevicePresentTimingFeaturesEXT & operator=( VkPhysicalDevicePresentTimingFeaturesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PhysicalDevicePresentTimingFeaturesEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePresentTimingFeaturesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePresentTimingFeaturesEXT & setPresentTiming( Bool32 presentTiming_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentTiming = presentTiming_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePresentTimingFeaturesEXT & setPresentAtAbsoluteTime( Bool32 presentAtAbsoluteTime_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentAtAbsoluteTime = presentAtAbsoluteTime_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDevicePresentTimingFeaturesEXT & setPresentAtRelativeTime( Bool32 presentAtRelativeTime_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentAtRelativeTime = presentAtRelativeTime_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDevicePresentTimingFeaturesEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDevicePresentTimingFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePresentTimingFeaturesEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDevicePresentTimingFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePresentTimingFeaturesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDevicePresentTimingFeaturesEXT *>( this );
+    }
+
+    operator VkPhysicalDevicePresentTimingFeaturesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDevicePresentTimingFeaturesEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, presentTiming, presentAtAbsoluteTime, presentAtRelativeTime );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDevicePresentTimingFeaturesEXT const & ) const = default;
+#else
+    bool operator==( PhysicalDevicePresentTimingFeaturesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( presentTiming == rhs.presentTiming ) &&
+             ( presentAtAbsoluteTime == rhs.presentAtAbsoluteTime ) && ( presentAtRelativeTime == rhs.presentAtRelativeTime );
+#  endif
+    }
+
+    bool operator!=( PhysicalDevicePresentTimingFeaturesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType sType                 = StructureType::ePhysicalDevicePresentTimingFeaturesEXT;
+    void *        pNext                 = {};
+    Bool32        presentTiming         = {};
+    Bool32        presentAtAbsoluteTime = {};
+    Bool32        presentAtRelativeTime = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPhysicalDevicePresentTimingFeaturesEXT>
+  {
+    using Type = PhysicalDevicePresentTimingFeaturesEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDevicePresentTimingFeaturesEXT>
+  {
+    using Type = PhysicalDevicePresentTimingFeaturesEXT;
+  };
+
   // wrapper struct for struct VkPhysicalDevicePresentWait2FeaturesKHR, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDevicePresentWait2FeaturesKHR.html
   struct PhysicalDevicePresentWait2FeaturesKHR
@@ -135176,6 +135899,441 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PresentTimesInfoGOOGLE;
   };
 
+  // wrapper struct for struct VkPresentTimingInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentTimingInfoEXT.html
+  struct PresentTimingInfoEXT
+  {
+    using NativeType = VkPresentTimingInfoEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePresentTimingInfoEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PresentTimingInfoEXT( PresentTimingInfoFlagsEXT flags_                        = {},
+                                               uint64_t                  targetTime_                   = {},
+                                               uint64_t                  timeDomainId_                 = {},
+                                               PresentStageFlagsEXT      presentStageQueries_          = {},
+                                               PresentStageFlagsEXT      targetTimeDomainPresentStage_ = {},
+                                               const void *              pNext_                        = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , flags{ flags_ }
+      , targetTime{ targetTime_ }
+      , timeDomainId{ timeDomainId_ }
+      , presentStageQueries{ presentStageQueries_ }
+      , targetTimeDomainPresentStage{ targetTimeDomainPresentStage_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PresentTimingInfoEXT( PresentTimingInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PresentTimingInfoEXT( VkPresentTimingInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PresentTimingInfoEXT( *reinterpret_cast<PresentTimingInfoEXT const *>( &rhs ) )
+    {
+    }
+
+    PresentTimingInfoEXT & operator=( PresentTimingInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PresentTimingInfoEXT & operator=( VkPresentTimingInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PresentTimingInfoEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingInfoEXT & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingInfoEXT & setFlags( PresentTimingInfoFlagsEXT flags_ ) VULKAN_HPP_NOEXCEPT
+    {
+      flags = flags_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingInfoEXT & setTargetTime( uint64_t targetTime_ ) VULKAN_HPP_NOEXCEPT
+    {
+      targetTime = targetTime_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingInfoEXT & setTimeDomainId( uint64_t timeDomainId_ ) VULKAN_HPP_NOEXCEPT
+    {
+      timeDomainId = timeDomainId_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingInfoEXT & setPresentStageQueries( PresentStageFlagsEXT presentStageQueries_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentStageQueries = presentStageQueries_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingInfoEXT & setTargetTimeDomainPresentStage( PresentStageFlagsEXT targetTimeDomainPresentStage_ ) VULKAN_HPP_NOEXCEPT
+    {
+      targetTimeDomainPresentStage = targetTimeDomainPresentStage_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPresentTimingInfoEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPresentTimingInfoEXT *>( this );
+    }
+
+    operator VkPresentTimingInfoEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPresentTimingInfoEXT *>( this );
+    }
+
+    operator VkPresentTimingInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentTimingInfoEXT *>( this );
+    }
+
+    operator VkPresentTimingInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentTimingInfoEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &,
+               const void * const &,
+               PresentTimingInfoFlagsEXT const &,
+               uint64_t const &,
+               uint64_t const &,
+               PresentStageFlagsEXT const &,
+               PresentStageFlagsEXT const &>
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, flags, targetTime, timeDomainId, presentStageQueries, targetTimeDomainPresentStage );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PresentTimingInfoEXT const & ) const = default;
+#else
+    bool operator==( PresentTimingInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( flags == rhs.flags ) && ( targetTime == rhs.targetTime ) &&
+             ( timeDomainId == rhs.timeDomainId ) && ( presentStageQueries == rhs.presentStageQueries ) &&
+             ( targetTimeDomainPresentStage == rhs.targetTimeDomainPresentStage );
+#  endif
+    }
+
+    bool operator!=( PresentTimingInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType             sType                        = StructureType::ePresentTimingInfoEXT;
+    const void *              pNext                        = {};
+    PresentTimingInfoFlagsEXT flags                        = {};
+    uint64_t                  targetTime                   = {};
+    uint64_t                  timeDomainId                 = {};
+    PresentStageFlagsEXT      presentStageQueries          = {};
+    PresentStageFlagsEXT      targetTimeDomainPresentStage = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPresentTimingInfoEXT>
+  {
+    using Type = PresentTimingInfoEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePresentTimingInfoEXT>
+  {
+    using Type = PresentTimingInfoEXT;
+  };
+
+  // wrapper struct for struct VkPresentTimingSurfaceCapabilitiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentTimingSurfaceCapabilitiesEXT.html
+  struct PresentTimingSurfaceCapabilitiesEXT
+  {
+    using NativeType = VkPresentTimingSurfaceCapabilitiesEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePresentTimingSurfaceCapabilitiesEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PresentTimingSurfaceCapabilitiesEXT( Bool32               presentTimingSupported_         = {},
+                                                              Bool32               presentAtAbsoluteTimeSupported_ = {},
+                                                              Bool32               presentAtRelativeTimeSupported_ = {},
+                                                              PresentStageFlagsEXT presentStageQueries_            = {},
+                                                              void *               pNext_                          = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , presentTimingSupported{ presentTimingSupported_ }
+      , presentAtAbsoluteTimeSupported{ presentAtAbsoluteTimeSupported_ }
+      , presentAtRelativeTimeSupported{ presentAtRelativeTimeSupported_ }
+      , presentStageQueries{ presentStageQueries_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PresentTimingSurfaceCapabilitiesEXT( PresentTimingSurfaceCapabilitiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PresentTimingSurfaceCapabilitiesEXT( VkPresentTimingSurfaceCapabilitiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PresentTimingSurfaceCapabilitiesEXT( *reinterpret_cast<PresentTimingSurfaceCapabilitiesEXT const *>( &rhs ) )
+    {
+    }
+
+    PresentTimingSurfaceCapabilitiesEXT & operator=( PresentTimingSurfaceCapabilitiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PresentTimingSurfaceCapabilitiesEXT & operator=( VkPresentTimingSurfaceCapabilitiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PresentTimingSurfaceCapabilitiesEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingSurfaceCapabilitiesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingSurfaceCapabilitiesEXT & setPresentTimingSupported( Bool32 presentTimingSupported_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentTimingSupported = presentTimingSupported_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingSurfaceCapabilitiesEXT &
+      setPresentAtAbsoluteTimeSupported( Bool32 presentAtAbsoluteTimeSupported_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentAtAbsoluteTimeSupported = presentAtAbsoluteTimeSupported_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingSurfaceCapabilitiesEXT &
+      setPresentAtRelativeTimeSupported( Bool32 presentAtRelativeTimeSupported_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentAtRelativeTimeSupported = presentAtRelativeTimeSupported_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingSurfaceCapabilitiesEXT & setPresentStageQueries( PresentStageFlagsEXT presentStageQueries_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentStageQueries = presentStageQueries_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPresentTimingSurfaceCapabilitiesEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPresentTimingSurfaceCapabilitiesEXT *>( this );
+    }
+
+    operator VkPresentTimingSurfaceCapabilitiesEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPresentTimingSurfaceCapabilitiesEXT *>( this );
+    }
+
+    operator VkPresentTimingSurfaceCapabilitiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentTimingSurfaceCapabilitiesEXT *>( this );
+    }
+
+    operator VkPresentTimingSurfaceCapabilitiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentTimingSurfaceCapabilitiesEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, Bool32 const &, Bool32 const &, Bool32 const &, PresentStageFlagsEXT const &>
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, presentTimingSupported, presentAtAbsoluteTimeSupported, presentAtRelativeTimeSupported, presentStageQueries );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PresentTimingSurfaceCapabilitiesEXT const & ) const = default;
+#else
+    bool operator==( PresentTimingSurfaceCapabilitiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( presentTimingSupported == rhs.presentTimingSupported ) &&
+             ( presentAtAbsoluteTimeSupported == rhs.presentAtAbsoluteTimeSupported ) &&
+             ( presentAtRelativeTimeSupported == rhs.presentAtRelativeTimeSupported ) && ( presentStageQueries == rhs.presentStageQueries );
+#  endif
+    }
+
+    bool operator!=( PresentTimingSurfaceCapabilitiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType        sType                          = StructureType::ePresentTimingSurfaceCapabilitiesEXT;
+    void *               pNext                          = {};
+    Bool32               presentTimingSupported         = {};
+    Bool32               presentAtAbsoluteTimeSupported = {};
+    Bool32               presentAtRelativeTimeSupported = {};
+    PresentStageFlagsEXT presentStageQueries            = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPresentTimingSurfaceCapabilitiesEXT>
+  {
+    using Type = PresentTimingSurfaceCapabilitiesEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePresentTimingSurfaceCapabilitiesEXT>
+  {
+    using Type = PresentTimingSurfaceCapabilitiesEXT;
+  };
+
+  // wrapper struct for struct VkPresentTimingsInfoEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentTimingsInfoEXT.html
+  struct PresentTimingsInfoEXT
+  {
+    using NativeType = VkPresentTimingsInfoEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePresentTimingsInfoEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR
+      PresentTimingsInfoEXT( uint32_t swapchainCount_ = {}, const PresentTimingInfoEXT * pTimingInfos_ = {}, const void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , swapchainCount{ swapchainCount_ }
+      , pTimingInfos{ pTimingInfos_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR PresentTimingsInfoEXT( PresentTimingsInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PresentTimingsInfoEXT( VkPresentTimingsInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PresentTimingsInfoEXT( *reinterpret_cast<PresentTimingsInfoEXT const *>( &rhs ) )
+    {
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    PresentTimingsInfoEXT( ArrayProxyNoTemporaries<const PresentTimingInfoEXT> const & timingInfos_, const void * pNext_ = nullptr )
+      : pNext( pNext_ ), swapchainCount( static_cast<uint32_t>( timingInfos_.size() ) ), pTimingInfos( timingInfos_.data() )
+    {
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    PresentTimingsInfoEXT & operator=( PresentTimingsInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PresentTimingsInfoEXT & operator=( VkPresentTimingsInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PresentTimingsInfoEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingsInfoEXT & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingsInfoEXT & setSwapchainCount( uint32_t swapchainCount_ ) VULKAN_HPP_NOEXCEPT
+    {
+      swapchainCount = swapchainCount_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PresentTimingsInfoEXT & setPTimingInfos( const PresentTimingInfoEXT * pTimingInfos_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pTimingInfos = pTimingInfos_;
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    PresentTimingsInfoEXT & setTimingInfos( ArrayProxyNoTemporaries<const PresentTimingInfoEXT> const & timingInfos_ ) VULKAN_HPP_NOEXCEPT
+    {
+      swapchainCount = static_cast<uint32_t>( timingInfos_.size() );
+      pTimingInfos   = timingInfos_.data();
+      return *this;
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+#endif   /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPresentTimingsInfoEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPresentTimingsInfoEXT *>( this );
+    }
+
+    operator VkPresentTimingsInfoEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPresentTimingsInfoEXT *>( this );
+    }
+
+    operator VkPresentTimingsInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPresentTimingsInfoEXT *>( this );
+    }
+
+    operator VkPresentTimingsInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPresentTimingsInfoEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, const void * const &, uint32_t const &, const PresentTimingInfoEXT * const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, swapchainCount, pTimingInfos );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PresentTimingsInfoEXT const & ) const = default;
+#else
+    bool operator==( PresentTimingsInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( swapchainCount == rhs.swapchainCount ) && ( pTimingInfos == rhs.pTimingInfos );
+#  endif
+    }
+
+    bool operator!=( PresentTimingsInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType                sType          = StructureType::ePresentTimingsInfoEXT;
+    const void *                 pNext          = {};
+    uint32_t                     swapchainCount = {};
+    const PresentTimingInfoEXT * pTimingInfos   = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPresentTimingsInfoEXT>
+  {
+    using Type = PresentTimingsInfoEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePresentTimingsInfoEXT>
+  {
+    using Type = PresentTimingsInfoEXT;
+  };
+
   // wrapper struct for struct VkPresentWait2InfoKHR, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkPresentWait2InfoKHR.html
   struct PresentWait2InfoKHR
   {
@@ -152962,6 +154120,138 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = SurfaceProtectedCapabilitiesKHR;
   };
 
+  // wrapper struct for struct VkSwapchainCalibratedTimestampInfoEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainCalibratedTimestampInfoEXT.html
+  struct SwapchainCalibratedTimestampInfoEXT
+  {
+    using NativeType = VkSwapchainCalibratedTimestampInfoEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eSwapchainCalibratedTimestampInfoEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR SwapchainCalibratedTimestampInfoEXT( SwapchainKHR         swapchain_    = {},
+                                                              PresentStageFlagsEXT presentStage_ = {},
+                                                              uint64_t             timeDomainId_ = {},
+                                                              const void *         pNext_        = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , swapchain{ swapchain_ }
+      , presentStage{ presentStage_ }
+      , timeDomainId{ timeDomainId_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR SwapchainCalibratedTimestampInfoEXT( SwapchainCalibratedTimestampInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    SwapchainCalibratedTimestampInfoEXT( VkSwapchainCalibratedTimestampInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : SwapchainCalibratedTimestampInfoEXT( *reinterpret_cast<SwapchainCalibratedTimestampInfoEXT const *>( &rhs ) )
+    {
+    }
+
+    SwapchainCalibratedTimestampInfoEXT & operator=( SwapchainCalibratedTimestampInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    SwapchainCalibratedTimestampInfoEXT & operator=( VkSwapchainCalibratedTimestampInfoEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<SwapchainCalibratedTimestampInfoEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 SwapchainCalibratedTimestampInfoEXT & setPNext( const void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SwapchainCalibratedTimestampInfoEXT & setSwapchain( SwapchainKHR swapchain_ ) VULKAN_HPP_NOEXCEPT
+    {
+      swapchain = swapchain_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SwapchainCalibratedTimestampInfoEXT & setPresentStage( PresentStageFlagsEXT presentStage_ ) VULKAN_HPP_NOEXCEPT
+    {
+      presentStage = presentStage_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SwapchainCalibratedTimestampInfoEXT & setTimeDomainId( uint64_t timeDomainId_ ) VULKAN_HPP_NOEXCEPT
+    {
+      timeDomainId = timeDomainId_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkSwapchainCalibratedTimestampInfoEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkSwapchainCalibratedTimestampInfoEXT *>( this );
+    }
+
+    operator VkSwapchainCalibratedTimestampInfoEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkSwapchainCalibratedTimestampInfoEXT *>( this );
+    }
+
+    operator VkSwapchainCalibratedTimestampInfoEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainCalibratedTimestampInfoEXT *>( this );
+    }
+
+    operator VkSwapchainCalibratedTimestampInfoEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainCalibratedTimestampInfoEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, const void * const &, SwapchainKHR const &, PresentStageFlagsEXT const &, uint64_t const &>
+      reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, swapchain, presentStage, timeDomainId );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( SwapchainCalibratedTimestampInfoEXT const & ) const = default;
+#else
+    bool operator==( SwapchainCalibratedTimestampInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( swapchain == rhs.swapchain ) && ( presentStage == rhs.presentStage ) &&
+             ( timeDomainId == rhs.timeDomainId );
+#  endif
+    }
+
+    bool operator!=( SwapchainCalibratedTimestampInfoEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType        sType        = StructureType::eSwapchainCalibratedTimestampInfoEXT;
+    const void *         pNext        = {};
+    SwapchainKHR         swapchain    = {};
+    PresentStageFlagsEXT presentStage = {};
+    uint64_t             timeDomainId = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkSwapchainCalibratedTimestampInfoEXT>
+  {
+    using Type = SwapchainCalibratedTimestampInfoEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::eSwapchainCalibratedTimestampInfoEXT>
+  {
+    using Type = SwapchainCalibratedTimestampInfoEXT;
+  };
+
   // wrapper struct for struct VkSwapchainCounterCreateInfoEXT, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainCounterCreateInfoEXT.html
   struct SwapchainCounterCreateInfoEXT
@@ -154397,6 +155687,296 @@ namespace VULKAN_HPP_NAMESPACE
   };
 
   using SwapchainPresentScalingCreateInfoEXT = SwapchainPresentScalingCreateInfoKHR;
+
+  // wrapper struct for struct VkSwapchainTimeDomainPropertiesEXT, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainTimeDomainPropertiesEXT.html
+  struct SwapchainTimeDomainPropertiesEXT
+  {
+    using NativeType = VkSwapchainTimeDomainPropertiesEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eSwapchainTimeDomainPropertiesEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR SwapchainTimeDomainPropertiesEXT( uint32_t        timeDomainCount_ = {},
+                                                           TimeDomainKHR * pTimeDomains_    = {},
+                                                           uint64_t *      pTimeDomainIds_  = {},
+                                                           void *          pNext_           = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , timeDomainCount{ timeDomainCount_ }
+      , pTimeDomains{ pTimeDomains_ }
+      , pTimeDomainIds{ pTimeDomainIds_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR SwapchainTimeDomainPropertiesEXT( SwapchainTimeDomainPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    SwapchainTimeDomainPropertiesEXT( VkSwapchainTimeDomainPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : SwapchainTimeDomainPropertiesEXT( *reinterpret_cast<SwapchainTimeDomainPropertiesEXT const *>( &rhs ) )
+    {
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    SwapchainTimeDomainPropertiesEXT( ArrayProxyNoTemporaries<TimeDomainKHR> const & timeDomains_,
+                                      ArrayProxyNoTemporaries<uint64_t> const &      timeDomainIds_ = {},
+                                      void *                                         pNext_         = nullptr )
+      : pNext( pNext_ )
+      , timeDomainCount( static_cast<uint32_t>( timeDomains_.size() ) )
+      , pTimeDomains( timeDomains_.data() )
+      , pTimeDomainIds( timeDomainIds_.data() )
+    {
+#    ifdef VULKAN_HPP_NO_EXCEPTIONS
+      VULKAN_HPP_ASSERT( timeDomains_.empty() || timeDomainIds_.empty() || ( timeDomains_.size() == timeDomainIds_.size() ) );
+#    else
+      if ( !timeDomains_.empty() && !timeDomainIds_.empty() && ( timeDomains_.size() != timeDomainIds_.size() ) )
+      {
+        throw LogicError(
+          VULKAN_HPP_NAMESPACE_STRING
+          "::SwapchainTimeDomainPropertiesEXT::SwapchainTimeDomainPropertiesEXT: !timeDomains_.empty() && !timeDomainIds_.empty() && ( timeDomains_.size() != timeDomainIds_.size() )" );
+      }
+#    endif /*VULKAN_HPP_NO_EXCEPTIONS*/
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    SwapchainTimeDomainPropertiesEXT & operator=( SwapchainTimeDomainPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    SwapchainTimeDomainPropertiesEXT & operator=( VkSwapchainTimeDomainPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<SwapchainTimeDomainPropertiesEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 SwapchainTimeDomainPropertiesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SwapchainTimeDomainPropertiesEXT & setTimeDomainCount( uint32_t timeDomainCount_ ) VULKAN_HPP_NOEXCEPT
+    {
+      timeDomainCount = timeDomainCount_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SwapchainTimeDomainPropertiesEXT & setPTimeDomains( TimeDomainKHR * pTimeDomains_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pTimeDomains = pTimeDomains_;
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    SwapchainTimeDomainPropertiesEXT & setTimeDomains( ArrayProxyNoTemporaries<TimeDomainKHR> const & timeDomains_ ) VULKAN_HPP_NOEXCEPT
+    {
+      timeDomainCount = static_cast<uint32_t>( timeDomains_.size() );
+      pTimeDomains    = timeDomains_.data();
+      return *this;
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+
+    VULKAN_HPP_CONSTEXPR_14 SwapchainTimeDomainPropertiesEXT & setPTimeDomainIds( uint64_t * pTimeDomainIds_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pTimeDomainIds = pTimeDomainIds_;
+      return *this;
+    }
+
+#  if !defined( VULKAN_HPP_DISABLE_ENHANCED_MODE )
+    SwapchainTimeDomainPropertiesEXT & setTimeDomainIds( ArrayProxyNoTemporaries<uint64_t> const & timeDomainIds_ ) VULKAN_HPP_NOEXCEPT
+    {
+      timeDomainCount = static_cast<uint32_t>( timeDomainIds_.size() );
+      pTimeDomainIds  = timeDomainIds_.data();
+      return *this;
+    }
+#  endif /*VULKAN_HPP_DISABLE_ENHANCED_MODE*/
+#endif   /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkSwapchainTimeDomainPropertiesEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkSwapchainTimeDomainPropertiesEXT *>( this );
+    }
+
+    operator VkSwapchainTimeDomainPropertiesEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkSwapchainTimeDomainPropertiesEXT *>( this );
+    }
+
+    operator VkSwapchainTimeDomainPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainTimeDomainPropertiesEXT *>( this );
+    }
+
+    operator VkSwapchainTimeDomainPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainTimeDomainPropertiesEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, uint32_t const &, TimeDomainKHR * const &, uint64_t * const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, timeDomainCount, pTimeDomains, pTimeDomainIds );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( SwapchainTimeDomainPropertiesEXT const & ) const = default;
+#else
+    bool operator==( SwapchainTimeDomainPropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( timeDomainCount == rhs.timeDomainCount ) && ( pTimeDomains == rhs.pTimeDomains ) &&
+             ( pTimeDomainIds == rhs.pTimeDomainIds );
+#  endif
+    }
+
+    bool operator!=( SwapchainTimeDomainPropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType   sType           = StructureType::eSwapchainTimeDomainPropertiesEXT;
+    void *          pNext           = {};
+    uint32_t        timeDomainCount = {};
+    TimeDomainKHR * pTimeDomains    = {};
+    uint64_t *      pTimeDomainIds  = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkSwapchainTimeDomainPropertiesEXT>
+  {
+    using Type = SwapchainTimeDomainPropertiesEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::eSwapchainTimeDomainPropertiesEXT>
+  {
+    using Type = SwapchainTimeDomainPropertiesEXT;
+  };
+
+  // wrapper struct for struct VkSwapchainTimingPropertiesEXT, see https://registry.khronos.org/vulkan/specs/latest/man/html/VkSwapchainTimingPropertiesEXT.html
+  struct SwapchainTimingPropertiesEXT
+  {
+    using NativeType = VkSwapchainTimingPropertiesEXT;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::eSwapchainTimingPropertiesEXT;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR
+      SwapchainTimingPropertiesEXT( uint64_t refreshDuration_ = {}, uint64_t refreshInterval_ = {}, void * pNext_ = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , refreshDuration{ refreshDuration_ }
+      , refreshInterval{ refreshInterval_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR SwapchainTimingPropertiesEXT( SwapchainTimingPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    SwapchainTimingPropertiesEXT( VkSwapchainTimingPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+      : SwapchainTimingPropertiesEXT( *reinterpret_cast<SwapchainTimingPropertiesEXT const *>( &rhs ) )
+    {
+    }
+
+    SwapchainTimingPropertiesEXT & operator=( SwapchainTimingPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    SwapchainTimingPropertiesEXT & operator=( VkSwapchainTimingPropertiesEXT const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<SwapchainTimingPropertiesEXT const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 SwapchainTimingPropertiesEXT & setPNext( void * pNext_ ) VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SwapchainTimingPropertiesEXT & setRefreshDuration( uint64_t refreshDuration_ ) VULKAN_HPP_NOEXCEPT
+    {
+      refreshDuration = refreshDuration_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 SwapchainTimingPropertiesEXT & setRefreshInterval( uint64_t refreshInterval_ ) VULKAN_HPP_NOEXCEPT
+    {
+      refreshInterval = refreshInterval_;
+      return *this;
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkSwapchainTimingPropertiesEXT const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkSwapchainTimingPropertiesEXT *>( this );
+    }
+
+    operator VkSwapchainTimingPropertiesEXT &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkSwapchainTimingPropertiesEXT *>( this );
+    }
+
+    operator VkSwapchainTimingPropertiesEXT const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkSwapchainTimingPropertiesEXT *>( this );
+    }
+
+    operator VkSwapchainTimingPropertiesEXT *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkSwapchainTimingPropertiesEXT *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, uint64_t const &, uint64_t const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, refreshDuration, refreshInterval );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( SwapchainTimingPropertiesEXT const & ) const = default;
+#else
+    bool operator==( SwapchainTimingPropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( refreshDuration == rhs.refreshDuration ) && ( refreshInterval == rhs.refreshInterval );
+#  endif
+    }
+
+    bool operator!=( SwapchainTimingPropertiesEXT const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType sType           = StructureType::eSwapchainTimingPropertiesEXT;
+    void *        pNext           = {};
+    uint64_t      refreshDuration = {};
+    uint64_t      refreshInterval = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkSwapchainTimingPropertiesEXT>
+  {
+    using Type = SwapchainTimingPropertiesEXT;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::eSwapchainTimingPropertiesEXT>
+  {
+    using Type = SwapchainTimingPropertiesEXT;
+  };
 
   // wrapper struct for struct VkTensorCaptureDescriptorDataInfoARM, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkTensorCaptureDescriptorDataInfoARM.html
