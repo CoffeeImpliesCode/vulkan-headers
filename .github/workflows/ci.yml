@@ -15,7 +15,8 @@ jobs:
       shell: bash
       run: |
         zig fmt --check .
-  build:
+
+  maintainance:
     strategy:
       matrix:
         repo:
@@ -91,13 +92,62 @@ jobs:
         opts="$(printf '%s' "${PR_BODY}" | sed -n "s/^\[${REPO} fetch opts\] \(.*\)/\1/p" | xargs)"
         opts="${opts#"${opts%%[![:space:]]*}"}"
         opts="${opts%"${opts##*[![:space:]]}"}"
-        set -f
         case "${REPO}" in
         ( 'cimgui' )
           source "${RUNNER_TMP}/venv/${ACTIVATE_DIR:-Scripts}/activate"
           platforms="{$(zig build -Dlist-platforms -Dseparator=,)}"
-          source /proc/self/fd/0 <<< "zig build -Dupdate -Drenderers=Vulkan -Dplatforms=${platforms}" ;;
-        ( * ) zig build -Dfetch ${opts} ;;
+          set -f
+          source /proc/self/fd/0 <<< "zig build -Dfetch -Drenderers=Vulkan -Dplatforms=${platforms} ${opts}"
+          set +f ;;
+        ( * )
+          set -f
+          zig build -Dfetch ${opts}
+          set +f ;;
         esac
-        set +f
+
+  build:
+    strategy:
+      matrix:
+        repo:
+          - glfw
+          - cimgui
+        branch:
+          - trunk
+          - docking
+        os:
+          - ubuntu
+          - windows
+          - macos
+        exclude:
+          - repo: glfw
+            branch: docking
+    runs-on: "${{ matrix.os }}-latest"
+    steps:
+    - uses: actions/checkout@v4
+      with:
+        repository: "${{ github.repository_owner }}/${{ matrix.repo }}.zig"
+        ref: "${{ matrix.branch }}"
+
+    - name: Setup Zig
+      uses: mlugg/setup-zig@v2.0.5
+
+    - name: Prepare ${{ matrix.repo }}.zig/build.zig.zon
+      env:
+        URL: "git+${{ github.server_url }}/${{ github.repository }}#${{ github.event.pull_request.head.sha }}"
+      shell: 'bash'
+      run: |
+        zig fetch --save "${URL}"
+
+    - name: Test building ${{ matrix.repo }}.zig
+      env:
+        REPO: "${{ matrix.repo }}"
+        RUNNER_TMP: "${{ runner.temp }}"
+      shell: 'bash'
+      run: |
+        case "${REPO}" in
+        ( 'cimgui' )
+          platforms="{$(zig build -Dlist-platforms -Dseparator=,)}"
+          eval "zig build  -Drenderers=Vulkan -Dplatforms=${platforms}" ;;
+        ( * ) zig build  ;;
+        esac
 
