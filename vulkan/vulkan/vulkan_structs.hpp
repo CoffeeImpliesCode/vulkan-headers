@@ -98495,6 +98495,134 @@ namespace VULKAN_HPP_NAMESPACE
     using Type = PhysicalDeviceCooperativeMatrix2PropertiesNV;
   };
 
+  // wrapper struct for struct VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM, see
+  // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM.html
+  struct PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM
+  {
+    using NativeType = VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM;
+
+    static const bool                                  allowDuplicate = false;
+    static VULKAN_HPP_CONST_OR_CONSTEXPR StructureType structureType  = StructureType::ePhysicalDeviceCooperativeMatrixConversionFeaturesQCOM;
+
+#if !defined( VULKAN_HPP_NO_CONSTRUCTORS ) && !defined( VULKAN_HPP_NO_STRUCT_CONSTRUCTORS )
+    VULKAN_HPP_CONSTEXPR PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM( Bool32 cooperativeMatrixConversion_ = {},
+                                                                                void * pNext_                       = nullptr ) VULKAN_HPP_NOEXCEPT
+      : pNext{ pNext_ }
+      , cooperativeMatrixConversion{ cooperativeMatrixConversion_ }
+    {
+    }
+
+    VULKAN_HPP_CONSTEXPR
+      PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM( PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+
+    PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM( VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+      : PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM( *reinterpret_cast<PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const *>( &rhs ) )
+    {
+    }
+
+    PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM &
+      operator=( PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT = default;
+#endif /*VULKAN_HPP_NO_CONSTRUCTORS*/
+
+    PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM & operator=( VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const & rhs ) VULKAN_HPP_NOEXCEPT
+    {
+      *this = *reinterpret_cast<PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const *>( &rhs );
+      return *this;
+    }
+
+#if !defined( VULKAN_HPP_NO_SETTERS ) && !defined( VULKAN_HPP_NO_STRUCT_SETTERS )
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM & setPNext( void * pNext_ ) & VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM && setPNext( void * pNext_ ) && VULKAN_HPP_NOEXCEPT
+    {
+      pNext = pNext_;
+      return std::move( *this );
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM & setCooperativeMatrixConversion( Bool32 cooperativeMatrixConversion_ ) &
+      VULKAN_HPP_NOEXCEPT
+    {
+      cooperativeMatrixConversion = cooperativeMatrixConversion_;
+      return *this;
+    }
+
+    VULKAN_HPP_CONSTEXPR_14 PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM && setCooperativeMatrixConversion( Bool32 cooperativeMatrixConversion_ ) &&
+      VULKAN_HPP_NOEXCEPT
+    {
+      cooperativeMatrixConversion = cooperativeMatrixConversion_;
+      return std::move( *this );
+    }
+#endif /*VULKAN_HPP_NO_SETTERS*/
+
+    operator VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const &() const VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<const VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM &() VULKAN_HPP_NOEXCEPT
+    {
+      return *reinterpret_cast<VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const *() const VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<const VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM *>( this );
+    }
+
+    operator VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM *() VULKAN_HPP_NOEXCEPT
+    {
+      return reinterpret_cast<VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM *>( this );
+    }
+
+#if defined( VULKAN_HPP_USE_REFLECT )
+    std::tuple<StructureType const &, void * const &, Bool32 const &> reflect() const VULKAN_HPP_NOEXCEPT
+    {
+      return std::tie( sType, pNext, cooperativeMatrixConversion );
+    }
+#endif
+
+#if defined( VULKAN_HPP_HAS_SPACESHIP_OPERATOR )
+    auto operator<=>( PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const & ) const = default;
+#else
+    bool operator==( PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+#  if defined( VULKAN_HPP_USE_REFLECT )
+      return this->reflect() == rhs.reflect();
+#  else
+      return ( sType == rhs.sType ) && ( pNext == rhs.pNext ) && ( cooperativeMatrixConversion == rhs.cooperativeMatrixConversion );
+#  endif
+    }
+
+    bool operator!=( PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM const & rhs ) const VULKAN_HPP_NOEXCEPT
+    {
+      return !operator==( rhs );
+    }
+#endif
+
+  public:
+    StructureType sType                       = StructureType::ePhysicalDeviceCooperativeMatrixConversionFeaturesQCOM;
+    void *        pNext                       = {};
+    Bool32        cooperativeMatrixConversion = {};
+  };
+
+#if 20 <= VULKAN_HPP_CPP_VERSION
+  template <>
+  struct CppType<VkPhysicalDeviceCooperativeMatrixConversionFeaturesQCOM>
+  {
+    using Type = PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM;
+  };
+#endif
+
+  template <>
+  struct CppType<StructureType, StructureType::ePhysicalDeviceCooperativeMatrixConversionFeaturesQCOM>
+  {
+    using Type = PhysicalDeviceCooperativeMatrixConversionFeaturesQCOM;
+  };
+
   // wrapper struct for struct VkPhysicalDeviceCooperativeMatrixFeaturesKHR, see
   // https://registry.khronos.org/vulkan/specs/latest/man/html/VkPhysicalDeviceCooperativeMatrixFeaturesKHR.html
   struct PhysicalDeviceCooperativeMatrixFeaturesKHR
