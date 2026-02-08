@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v4
-    - uses: mlugg/setup-zig@v2.0.5
+    - uses: mlugg/setup-zig@v2
     - name: Check zig is canonical
       shell: bash
       run: |
@@ -49,7 +49,7 @@ jobs:
         ref: "${{ matrix.branch }}"
 
     - name: Setup Zig
-      uses: mlugg/setup-zig@v2.0.5
+      uses: mlugg/setup-zig@v2
 
     - name: Activate python virtual env & install pip packages
       if: matrix.repo == 'cimgui'
@@ -78,8 +78,8 @@ jobs:
         ( 'cimgui' )
           source "${RUNNER_TMP}/venv/${ACTIVATE_DIR:-Scripts}/activate"
           platforms="{$(zig build -Dlist-platforms -Dseparator=,)}"
-          source /proc/self/fd/0 <<< "zig build -Dupdate -Drenderers=Vulkan -Dplatforms=${platforms}" ;;
-        ( * ) zig build -Dupdate ;;
+          source /proc/self/fd/0 <<< "zig build -Dupdate -Dverbose -Drenderers=Vulkan -Dplatforms=${platforms}" ;;
+        ( * ) zig build -Dupdate -Dverbose ;;
         esac
 
     - name: Test fetching ${{ matrix.repo }}.zig
@@ -97,11 +97,11 @@ jobs:
           source "${RUNNER_TMP}/venv/${ACTIVATE_DIR:-Scripts}/activate"
           platforms="{$(zig build -Dlist-platforms -Dseparator=,)}"
           set -f
-          source /proc/self/fd/0 <<< "zig build -Dfetch -Drenderers=Vulkan -Dplatforms=${platforms} ${opts}"
+          source /proc/self/fd/0 <<< "zig build -Dfetch -Dverbose -Drenderers=Vulkan -Dplatforms=${platforms} ${opts}"
           set +f ;;
         ( * )
           set -f
-          zig build -Dfetch ${opts}
+          zig build -Dfetch -Dverbose ${opts}
           set +f ;;
         esac
 
@@ -129,7 +129,7 @@ jobs:
         ref: "${{ matrix.branch }}"
 
     - name: Setup Zig
-      uses: mlugg/setup-zig@v2.0.5
+      uses: mlugg/setup-zig@v2
 
     - name: Prepare ${{ matrix.repo }}.zig/build.zig.zon
       env:
@@ -147,7 +147,7 @@ jobs:
         case "${REPO}" in
         ( 'cimgui' )
           platforms="{$(zig build -Dlist-platforms -Dseparator=,)}"
-          eval "zig build  -Drenderers=Vulkan -Dplatforms=${platforms}" ;;
-        ( * ) zig build  ;;
+          eval "zig build -Dverbose -Drenderers=Vulkan -Dplatforms=${platforms}" ;;
+        ( * ) zig build -Dverbose ;;
         esac
 
