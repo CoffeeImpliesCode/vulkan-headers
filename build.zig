@@ -4,17 +4,17 @@ const toolbox = @import("toolbox");
 const VerboseBuilder = toolbox.VerboseBuilder;
 
 fn updateFn(pkg_builder: *VerboseBuilder) !void {
-    try pkg_builder.remove(&.{ "vulkan" });
-    try pkg_builder.make(&.{ "vulkan" });
+    try pkg_builder.remove(&.{"vulkan"});
+    try pkg_builder.make(&.{"vulkan"});
 
     const vulkan_headers_dep = pkg_builder.dependency("Vulkan-Headers");
     var vulkan_headers_builder = pkg_builder.initFromDependency(vulkan_headers_dep);
 
-    while (try vulkan_headers_builder.walk(&.{ "include" })) |entry| {
+    while (try vulkan_headers_builder.walk(&.{"include"})) |entry| {
         switch (entry.kind) {
             .file => {
                 if (toolbox.isSource(entry.basename) or toolbox.isHeader(entry.basename)) {
-                    try pkg_builder.copy(&.{ "vulkan", entry.path }, &vulkan_headers_builder, &.{ entry.path });
+                    try pkg_builder.copy(&.{ "vulkan", entry.path }, &vulkan_headers_builder, &.{entry.path});
                 }
             },
             .directory => try pkg_builder.make(&.{ "vulkan", entry.path }),
