@@ -8,12 +8,12 @@ fn updateFn(pkg_builder: *VerboseBuilder) !void {
     try pkg_builder.make(&.{"vulkan"});
 
     const vulkan_headers_dep = pkg_builder.dependency("Vulkan-Headers");
-    var vulkan_headers_builder = pkg_builder.initFromDependency(vulkan_headers_dep);
+    var vulkan_headers_builder = VerboseBuilder.initFromDependency(vulkan_headers_dep);
 
     while (try vulkan_headers_builder.walk(&.{"include"})) |entry| {
         switch (entry.kind) {
             .file => {
-                if (toolbox.isSource(entry.basename) or toolbox.isHeader(entry.basename)) {
+                if (toolbox.isCOrCppFile(entry.basename)) {
                     try pkg_builder.copy(&.{ "vulkan", entry.path }, &vulkan_headers_builder, &.{entry.path});
                 }
             },
@@ -26,8 +26,8 @@ fn updateFn(pkg_builder: *VerboseBuilder) !void {
 fn buildFn(pkg_builder: *VerboseBuilder) !void {
     const lib = pkg_builder.addLibrary("vulkan");
 
-    pkg_builder.installHeaders(lib, &.{ "vulkan", "vulkan" }, "vulkan", &toolbox.ext.header.cpp.c_compatible);
-    pkg_builder.installHeaders(lib, &.{ "vulkan", "vk_video" }, "vk_video", &toolbox.ext.header.cpp.c_compatible);
+    pkg_builder.installHeaders(lib, &.{ "vulkan", "vulkan" }, "vulkan", &toolbox.ext.cpp.header.c_compatible);
+    pkg_builder.installHeaders(lib, &.{ "vulkan", "vk_video" }, "vk_video", &toolbox.ext.cpp.header.c_compatible);
 
     pkg_builder.installArtifact(lib);
 }
