@@ -14,7 +14,7 @@ fn updateFn(pkg_builder: *VerboseBuilder) !void {
         switch (entry.kind) {
             .file => {
                 if (toolbox.isCOrCppFile(entry.basename)) {
-                    try pkg_builder.copy(&.{ "vulkan", entry.path }, &vulkan_headers_builder, &.{entry.path});
+                    try pkg_builder.copy(&.{ "vulkan", entry.path }, &vulkan_headers_builder, &.{ "include", entry.path });
                 }
             },
             .directory => try pkg_builder.make(&.{ "vulkan", entry.path }),
