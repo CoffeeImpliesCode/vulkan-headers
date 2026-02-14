@@ -10,7 +10,7 @@
             .hash = "N-V-__8AAOLyQgIPZfsrb-a_A1MAgE_EA22vGuvIZUW-yJwC",
         },
     },
-    .minimum_zig_version = "0.15.1",
+    .minimum_zig_version = "0.15.2",
     .fingerprint = 0xe457756cde206ca7,
     .paths = .{
         "build.zig",

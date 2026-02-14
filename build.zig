@@ -26,8 +26,8 @@ fn updateFn(pkg_builder: *VerboseBuilder) !void {
 fn buildFn(pkg_builder: *VerboseBuilder) !void {
     const lib = pkg_builder.addLibrary("vulkan");
 
-    while (try pkg_builder.walk(&.{ "vulkan" })) |*entry| {
-        if (toolbox.isCHeader(entry.basename)) pkg_builder.installHeader(lib, &.{"vulkan", entry.path }, &.{entry.path});
+    while (try pkg_builder.walk(&.{"vulkan"})) |*entry| {
+        if (toolbox.isCHeader(entry.basename)) pkg_builder.installHeader(lib, &.{ "vulkan", entry.path }, &.{entry.path});
     }
 
     pkg_builder.installArtifact(lib);
