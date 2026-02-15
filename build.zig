@@ -1,115 +1,42 @@
 const std = @import("std");
-const toolbox_pkg = @import("toolbox");
-const Toolbox = toolbox_pkg.Toolbox;
+const build_zig_zon = @import("build.zig.zon");
+const toolbox = @import("toolbox");
+const VerboseBuilder = toolbox.VerboseBuilder;
 
-fn update(toolbox: *Toolbox, vulkan_path: []const u8) !void {
-    const tmp_path = try toolbox.buildRootJoin(&.{
-        "tmp",
-    });
-    const include_path = toolbox.pathJoin(&.{
-        tmp_path, "include",
-    });
+fn updateFn(pkg_builder: *VerboseBuilder) !void {
+    try pkg_builder.remove(&.{"vulkan"});
+    try pkg_builder.make(&.{"vulkan"});
 
-    std.fs.deleteTreeAbsolute(vulkan_path) catch |err| {
-        switch (err) {
-            error.FileNotFound => {},
-            else => return err,
-        }
-    };
+    const vulkan_headers_dep = pkg_builder.verboseDependency("Vulkan-Headers");
+    var vulkan_headers_builder = VerboseBuilder.initFromDependency(vulkan_headers_dep);
 
-    try toolbox.clone(.vulkan, tmp_path);
-
-    var include_dir = try std.fs.openDirAbsolute(include_path, .{
-        .iterate = true,
-    });
-    defer include_dir.close();
-
-    var walker = try include_dir.walk(toolbox.getAllocator());
-    defer walker.deinit();
-
-    try toolbox.make(vulkan_path);
-
-    while (try walker.next()) |*entry| {
-        const dest = toolbox.pathJoin(&.{
-            vulkan_path, entry.path,
-        });
+    while (try vulkan_headers_builder.walk(&.{"include"})) |entry| {
         switch (entry.kind) {
-            .file => try toolbox.copy(toolbox.pathJoin(&.{
-                include_path, entry.path,
-            }), dest),
-            .directory => try toolbox.make(dest),
+            .file => {
+                if (toolbox.isCOrCppFile(entry.basename)) {
+                    try pkg_builder.copy(&.{ "vulkan", entry.path }, &vulkan_headers_builder, &.{ "include", entry.path });
+                }
+            },
+            .directory => try pkg_builder.make(&.{ "vulkan", entry.path }),
             else => return error.UnexpectedEntryKind,
         }
     }
-
-    try std.fs.deleteTreeAbsolute(tmp_path);
-
-    try toolbox.clean(&.{
-        "vulkan",
-    }, &.{});
 }
 
-const FromZon = toolbox_pkg.Repositories(.{
-    .toolbox,
-});
+fn buildFn(pkg_builder: *VerboseBuilder) !void {
+    const lib = pkg_builder.addLibrary("vulkan");
 
-const DuringExec = toolbox_pkg.Repositories(.{
-    .vulkan,
-});
+    while (try pkg_builder.walk(&.{"vulkan"})) |*entry| {
+        if (toolbox.isCHeader(entry.basename)) pkg_builder.installHeader(lib, &.{ "vulkan", entry.path }, &.{entry.path});
+    }
+
+    pkg_builder.installArtifact(lib);
+}
 
 pub fn build(builder: *std.Build) !void {
-    const target = builder.standardTargetOptions(.{});
-    const optimize = builder.standardOptimizeOption(.{});
+    var pkg_builder = try VerboseBuilder.init(builder, build_zig_zon, buildFn, updateFn);
 
-    var toolbox = try Toolbox.init(FromZon, DuringExec, builder, optimize, .vulkan_zig, "0xe457756cde206ca7", &.{
-        "vulkan",
-    }, .{
-        .toolbox = .{
-            .name = "tiawl/toolbox",
-            .host = .github,
-            .ref = .tag,
-        },
-    }, .{
-        .vulkan = .{
-            .name = "KhronosGroup/Vulkan-Headers",
-            .host = .github,
-            .ref = .tag,
-        },
-    });
-    defer toolbox.deinit();
-
-    const vulkan_path = try builder.build_root.join(builder.allocator, &.{
-        "vulkan",
-    });
-
-    if (toolbox.getUpdate()) {
-        try update(&toolbox, vulkan_path);
-    }
-
-    const lib = builder.addLibrary(.{
-        .name = "vulkan",
-        .root_module = std.Build.Module.create(builder, .{
-            .root_source_file = builder.addWriteFiles().add("empty.zig", ""),
-            .target = target,
-            .optimize = optimize,
-        }),
-    });
-
-    var vulkan_dir = try std.fs.openDirAbsolute(vulkan_path, .{
-        .iterate = true,
-    });
-    defer vulkan_dir.close();
-
-    var it = vulkan_dir.iterate();
-    while (try it.next()) |*entry| {
-        if (entry.kind == .directory) {
-            toolbox.addHeader(lib, builder.pathJoin(&.{
-                vulkan_path, entry.name,
-            }), entry.name, &.{
-                ".h", ".hpp",
-            });
-        }
-    }
-
-    builder.installArtifact(lib);
+    try pkg_builder.fetch(build_zig_zon);
+    try pkg_builder.update();
+    try pkg_builder.build();
 }
