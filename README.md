@@ -14,7 +14,7 @@ However this repository has subtle differences for maintainability tasks:
 
 ## How to use it
 
-The current usage of this repository is centered around [tiawl/glfw.zig][3] compilation. But you could use it for your own projects. Headers are here and there are no planned evolution to modify them. See [tiawl/glfw.zig][3] to see how you can use it.
+The current usage of this repository is centered around [tiawl/glfw.zig][4] compilation. But you could use it for your own projects. Headers are here and there are no planned evolution to modify them. See [tiawl/glfw.zig][4] to see how you can use it.
 
 ## Dependencies
 
