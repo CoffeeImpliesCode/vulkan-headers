@@ -13,7 +13,10 @@ jobs:
     - uses: actions/checkout@v6
       with:
         ref: "${{ github.event.pull_request.head.ref }}"
-    - uses: mlugg/setup-zig@v2
+    - name: Setup zig
+      uses: mlugg/setup-zig@v2
+      with:
+        version: "${{ github.event.pull_request.base.ref == 'zig-stable' && 'latest' || 'master' }}"
     - name: Check zig is canonical
       shell: 'bash'
       run: zig fmt --check .
@@ -26,6 +29,8 @@ jobs:
         ref: "${{ github.event.pull_request.head.ref }}"
     - name: Setup Zig
       uses: mlugg/setup-zig@v2
+      with:
+        version: "${{ github.event.pull_request.base.ref == 'zig-stable' && 'latest' || 'master' }}"
 
     - name: Test updating
       shell: 'bash'
@@ -46,10 +51,12 @@ jobs:
     - uses: actions/checkout@v6
       with:
         repository: "${{ github.repository_owner }}/${{ matrix.repo }}.zig"
-        ref: "${{ github.event.pull_request.head.ref }}"
+        ref: "${{ github.event.pull_request.base.ref }}"
 
     - name: Setup Zig
       uses: mlugg/setup-zig@v2
+      with:
+        version: "${{ github.event.pull_request.base.ref == 'zig-stable' && 'latest' || 'master' }}"
 
     - name: Prepare ${{ matrix.repo }}.zig/build.zig.zon
       env:
@@ -63,6 +70,7 @@ jobs:
       shell: 'bash'
       run: |
         set -x
+        rm -rf .zig-cache
         case "${REPO}" in
         ( 'cimgui' )
           platforms="{$(zig build -Dlist-platforms -Dseparator=,)}"
@@ -77,6 +85,6 @@ jobs:
       run: |
         set -x
         case "${REPO}" in
-        ( 'cimgui' ) env -C ./examples zig build ;;
+        ( 'cimgui' ) rm -rf .zig-cache; env -C ./examples zig build ;;
         ( * ) ;;
         esac
