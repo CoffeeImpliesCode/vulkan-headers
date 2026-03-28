@@ -4,39 +4,26 @@ This is a fork of [hexops/vulkan-headers][1] which is itself a fork of [KhronosG
 
 ## Why this forkception ?
 
-The intention under this fork is the same as [hexops][6] had when they forked [KhronosGroup/Vulkan-Headers][2]: package the headers for [Zig][3]. So:
+The intention under this fork is the same as [hexops][4] had when they forked [KhronosGroup/Vulkan-Headers][2]: package the headers for [Zig][3]. So:
 * Unnecessary files have been deleted,
 * The build system has been replaced with `build.zig`.
 
 However this repository has subtle differences for maintainability tasks:
 * No shell scripting,
-* A cron runs every day to check [KhronosGroup/Vulkan-Headers][2]. Then it updates this repository if a new release is available.
-
-## How to use it
-
-The current usage of this repository is centered around [tiawl/glfw.zig][4] compilation. But you could use it for your own projects. Headers are here and there are no planned evolution to modify them. See [tiawl/glfw.zig][4] to see how you can use it.
+* A cron runs every day to check [KhronosGroup/Vulkan-Headers][2] and other dependencies. Then it updates this repository if a new release is available.
 
 ## Dependencies
 
 The [Zig][3] part of this package is relying on the latest [Zig][3] release (0.15.2) and will only be updated for the next one.
+It you use a more recent [Zig][3] version, please consider the `zig-nightly` branch and `*-nightly` tags.
 
-Here the repositories' version used by this fork:
-* [KhronosGroup/Vulkan-Headers](https://github.com/tiawl/vulkan.zig/blob/trunk/.references/vulkan)
-
-## CICD reminder
-
-These repositories are automatically updated when a new release is available:
-* [tiawl/glfw.zig][4]
-
-This repository is automatically updated when a new release is available from these repositories:
-* [KhronosGroup/Vulkan-Headers][2]
-* [tiawl/toolbox][5]
+For other dependencies see [the build.zig.zon](https://github.com/tiawl/vulkan.zig/blob/zig-stable/build.zig.zon)
 
 ## `zig build` options
 
-These additional options have been implemented for maintainability tasks:
+These additional options have mainly been implemented for maintainability tasks but they maybe could be useful for edge usecases:
 ```
-  -Dfetch   Update .references folder and build.zig.zon then stop execution
+  -Dfetch   Update build.zig.zon then stop execution
   -Dupdate  Update binding
 ```
 
@@ -50,7 +37,5 @@ The parts of this repository originated from this repository are dedicated to th
 
 [1]:https://github.com/hexops/vulkan-headers
 [2]:https://github.com/KhronosGroup/Vulkan-Headers
-[3]:https://github.com/ziglang/zig
-[4]:https://github.com/tiawl/glfw.zig
-[5]:https://github.com/tiawl/toolbox
-[6]:https://github.com/hexops
+[3]:https://codeberg.org/ziglang/zig
+[4]:https://github.com/hexops
