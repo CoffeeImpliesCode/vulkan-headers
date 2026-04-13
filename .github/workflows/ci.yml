@@ -70,7 +70,6 @@ jobs:
       shell: 'bash'
       run: |
         set -x
-        rm -rf .zig-cache
         case "${REPO}" in
         ( 'cimgui' )
           platforms="{$(zig build -Dlist-platforms -Dseparator=,)}"
@@ -85,6 +84,6 @@ jobs:
       run: |
         set -x
         case "${REPO}" in
-        ( 'cimgui' ) rm -rf .zig-cache; env -C ./examples zig build ;;
+        ( 'cimgui' ) env -C ./examples zig build ;;
         ( * ) ;;
         esac
