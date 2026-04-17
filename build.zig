@@ -30,6 +30,7 @@ fn buildFn(pkg_builder: *VerboseBuilder) !void {
         if (toolbox.isCHeader(entry.basename)) pkg_builder.installHeader(lib, &.{ "vulkan", entry.path }, &.{entry.path});
     }
 
+    pkg_builder.addInclude(lib, &.{"vulkan"});
     pkg_builder.installArtifact(lib);
 }
 
