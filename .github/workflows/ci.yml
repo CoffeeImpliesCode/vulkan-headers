@@ -7,6 +7,11 @@ on:
 
 jobs:
   linter:
+    strategy:
+      matrix:
+        zig-version:
+          - latest
+          - master
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v6
@@ -16,12 +21,17 @@ jobs:
     - name: Setup zig
       uses: mlugg/setup-zig@v2
       with:
-        version: "master"
+        version: "${{ matrix.zig-version }}"
     - name: Check zig is canonical
       shell: 'bash'
       run: zig fmt --check .
 
   maintainance:
+    strategy:
+      matrix:
+        zig-version:
+          - latest
+          - master
     runs-on: ubuntu-24.04
     steps:
     - uses: actions/checkout@v6
@@ -31,7 +41,7 @@ jobs:
     - name: Setup Zig
       uses: mlugg/setup-zig@v2
       with:
-        version: "master"
+        version: "${{ matrix.zig-version }}"
 
     - name: Test updating
       shell: 'bash'
@@ -40,6 +50,9 @@ jobs:
   user:
     strategy:
       matrix:
+        zig-version:
+          - latest
+          - master
         repo:
           - glfw
           - cimgui
@@ -47,6 +60,10 @@ jobs:
           - ubuntu-24.04
           - windows-2025
           - macos-15
+        exclude: #https://codeberg.org/ziglang/translate-c/issues/346
+          - repo: cimgui
+            zig-version: master
+            os: windows-2025
     runs-on: "${{ matrix.os }}"
     steps:
     - uses: actions/checkout@v6
@@ -57,7 +74,7 @@ jobs:
     - name: Setup Zig
       uses: mlugg/setup-zig@v2
       with:
-        version: "master"
+        version: "${{ matrix.zig-version }}"
 
     - name: Prepare ${{ matrix.repo }}.zig/build.zig.zon
       env:
