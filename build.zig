@@ -21,6 +21,9 @@ fn updateFn(pkg_builder: *VerboseBuilder) !void {
             else => return error.UnexpectedEntryKind,
         }
     }
+
+    try pkg_builder.make(&.{ "vulkan", "registry" });
+    try pkg_builder.copy(&.{ "vulkan", "registry", "vk.xml" }, &vulkan_headers_builder, &.{ "registry", "vk.xml" });
 }
 
 fn buildFn(pkg_builder: *VerboseBuilder) !void {
