@@ -111,8 +111,9 @@ jobs:
           set -x
           case "${REPO}" in
           ( 'cimgui' )
-            platforms="{$(zig build -Dlist-platforms -Dseparator=,)}"
-            eval "zig build -Dverbose -Drenderers=Vulkan -Dplatforms=${platforms}" ;;
+            platforms="$(zig build -Dlist-platforms -Dseparator=,)"
+            platforms="${platforms:+"-Dplatforms={${platforms}}"}"
+            eval "zig build -Dverbose -Drenderers=Vulkan ${platforms}" ;;
           ( * ) zig build -Dverbose ;;
           esac
 
