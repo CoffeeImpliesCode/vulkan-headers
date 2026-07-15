@@ -7,8 +7,8 @@
             .hash = "N-V-__8AAPdJewI-Ti5p45KnTAAngGBG3aURyXJXXTKmPvKW",
         },
         .toolbox = .{
-            .url = "git+https://github.com/tiawl/toolbox?ref=2.2.0#33f68f56fe278ddc140763324d2b2f0f93d0d441",
-            .hash = "toolbox-2.0.2-kRAu4CWwAADgBihQXju-faeZgFKmbmtwgdO25VKfJRDx",
+            .url = "git+https://github.com/tiawl/toolbox?ref=2.2.1#9500ec195e63ef225dc3e7ee8d9362fe6601e684",
+            .hash = "toolbox-2.0.2-kRAu4DK2AAAi9_AlZ6ep1giQz3RMg2BvgN9DB_BPlUT0",
         },
     },
     .minimum_zig_version = "0.16.0",
